@@ -1,0 +1,478 @@
+close antique trunk
+close bath
+close chest drawer
+close refrigerator
+close screen door
+close toilet
+close wooden door
+drop apple
+drop bell pepper
+drop half of a bag of chips
+drop lettuce
+drop milk
+drop note
+drop old key
+drop remote
+drop shovel
+drop soap bar
+drop tomato plant
+drop toothbrush
+eat apple
+eat bell pepper
+eat half of a bag of chips
+eat lettuce
+eat milk
+eat tomato plant
+examine antique trunk
+examine apple
+examine bath
+examine bbq
+examine bell pepper
+examine chest drawer
+examine couch
+examine counter
+examine half of a bag of chips
+examine king-size bed
+examine kitchen island
+examine lettuce
+examine low table
+examine milk
+examine note
+examine old key
+examine patio table
+examine refrigerator
+examine remote
+examine screen door
+examine set of chairs
+examine shovel
+examine sink
+examine soap bar
+examine stove
+examine toilet
+examine tomato plant
+examine toothbrush
+examine tv
+examine wooden door
+go east
+go north
+go south
+go west
+insert apple into antique trunk
+insert apple into bath
+insert apple into chest drawer
+insert apple into refrigerator
+insert apple into toilet
+insert bell pepper into antique trunk
+insert bell pepper into bath
+insert bell pepper into chest drawer
+insert bell pepper into refrigerator
+insert bell pepper into toilet
+insert half of a bag of chips into antique trunk
+insert half of a bag of chips into bath
+insert half of a bag of chips into chest drawer
+insert half of a bag of chips into refrigerator
+insert half of a bag of chips into toilet
+insert lettuce into antique trunk
+insert lettuce into bath
+insert lettuce into chest drawer
+insert lettuce into refrigerator
+insert lettuce into toilet
+insert milk into antique trunk
+insert milk into bath
+insert milk into chest drawer
+insert milk into refrigerator
+insert milk into toilet
+insert note into antique trunk
+insert note into bath
+insert note into chest drawer
+insert note into refrigerator
+insert note into toilet
+insert old key into antique trunk
+insert old key into bath
+insert old key into chest drawer
+insert old key into refrigerator
+insert old key into toilet
+insert remote into antique trunk
+insert remote into bath
+insert remote into chest drawer
+insert remote into refrigerator
+insert remote into toilet
+insert shovel into antique trunk
+insert shovel into bath
+insert shovel into chest drawer
+insert shovel into refrigerator
+insert shovel into toilet
+insert soap bar into antique trunk
+insert soap bar into bath
+insert soap bar into chest drawer
+insert soap bar into refrigerator
+insert soap bar into toilet
+insert tomato plant into antique trunk
+insert tomato plant into bath
+insert tomato plant into chest drawer
+insert tomato plant into refrigerator
+insert tomato plant into toilet
+insert toothbrush into antique trunk
+insert toothbrush into bath
+insert toothbrush into chest drawer
+insert toothbrush into refrigerator
+insert toothbrush into toilet
+inventory
+lock antique trunk with old key
+lock bath with old key
+lock chest drawer with old key
+lock refrigerator with old key
+lock screen door with old key
+lock toilet with old key
+lock wooden door with old key
+look
+open antique trunk
+open bath
+open chest drawer
+open refrigerator
+open screen door
+open toilet
+open wooden door
+put apple on bbq
+put apple on couch
+put apple on counter
+put apple on king-size bed
+put apple on kitchen island
+put apple on low table
+put apple on patio table
+put apple on set of chairs
+put apple on sink
+put apple on stove
+put apple on tv
+put bell pepper on bbq
+put bell pepper on couch
+put bell pepper on counter
+put bell pepper on king-size bed
+put bell pepper on kitchen island
+put bell pepper on low table
+put bell pepper on patio table
+put bell pepper on set of chairs
+put bell pepper on sink
+put bell pepper on stove
+put bell pepper on tv
+put half of a bag of chips on bbq
+put half of a bag of chips on couch
+put half of a bag of chips on counter
+put half of a bag of chips on king-size bed
+put half of a bag of chips on kitchen island
+put half of a bag of chips on low table
+put half of a bag of chips on patio table
+put half of a bag of chips on set of chairs
+put half of a bag of chips on sink
+put half of a bag of chips on stove
+put half of a bag of chips on tv
+put lettuce on bbq
+put lettuce on couch
+put lettuce on counter
+put lettuce on king-size bed
+put lettuce on kitchen island
+put lettuce on low table
+put lettuce on patio table
+put lettuce on set of chairs
+put lettuce on sink
+put lettuce on stove
+put lettuce on tv
+put milk on bbq
+put milk on couch
+put milk on counter
+put milk on king-size bed
+put milk on kitchen island
+put milk on low table
+put milk on patio table
+put milk on set of chairs
+put milk on sink
+put milk on stove
+put milk on tv
+put note on bbq
+put note on couch
+put note on counter
+put note on king-size bed
+put note on kitchen island
+put note on low table
+put note on patio table
+put note on set of chairs
+put note on sink
+put note on stove
+put note on tv
+put old key on bbq
+put old key on couch
+put old key on counter
+put old key on king-size bed
+put old key on kitchen island
+put old key on low table
+put old key on patio table
+put old key on set of chairs
+put old key on sink
+put old key on stove
+put old key on tv
+put remote on bbq
+put remote on couch
+put remote on counter
+put remote on king-size bed
+put remote on kitchen island
+put remote on low table
+put remote on patio table
+put remote on set of chairs
+put remote on sink
+put remote on stove
+put remote on tv
+put shovel on bbq
+put shovel on couch
+put shovel on counter
+put shovel on king-size bed
+put shovel on kitchen island
+put shovel on low table
+put shovel on patio table
+put shovel on set of chairs
+put shovel on sink
+put shovel on stove
+put shovel on tv
+put soap bar on bbq
+put soap bar on couch
+put soap bar on counter
+put soap bar on king-size bed
+put soap bar on kitchen island
+put soap bar on low table
+put soap bar on patio table
+put soap bar on set of chairs
+put soap bar on sink
+put soap bar on stove
+put soap bar on tv
+put tomato plant on bbq
+put tomato plant on couch
+put tomato plant on counter
+put tomato plant on king-size bed
+put tomato plant on kitchen island
+put tomato plant on low table
+put tomato plant on patio table
+put tomato plant on set of chairs
+put tomato plant on sink
+put tomato plant on stove
+put tomato plant on tv
+put toothbrush on bbq
+put toothbrush on couch
+put toothbrush on counter
+put toothbrush on king-size bed
+put toothbrush on kitchen island
+put toothbrush on low table
+put toothbrush on patio table
+put toothbrush on set of chairs
+put toothbrush on sink
+put toothbrush on stove
+put toothbrush on tv
+take apple
+take apple from antique trunk
+take apple from bath
+take apple from bbq
+take apple from chest drawer
+take apple from couch
+take apple from counter
+take apple from king-size bed
+take apple from kitchen island
+take apple from low table
+take apple from patio table
+take apple from refrigerator
+take apple from set of chairs
+take apple from sink
+take apple from stove
+take apple from toilet
+take apple from tv
+take bell pepper
+take bell pepper from antique trunk
+take bell pepper from bath
+take bell pepper from bbq
+take bell pepper from chest drawer
+take bell pepper from couch
+take bell pepper from counter
+take bell pepper from king-size bed
+take bell pepper from kitchen island
+take bell pepper from low table
+take bell pepper from patio table
+take bell pepper from refrigerator
+take bell pepper from set of chairs
+take bell pepper from sink
+take bell pepper from stove
+take bell pepper from toilet
+take bell pepper from tv
+take half of a bag of chips
+take half of a bag of chips from antique trunk
+take half of a bag of chips from bath
+take half of a bag of chips from bbq
+take half of a bag of chips from chest drawer
+take half of a bag of chips from couch
+take half of a bag of chips from counter
+take half of a bag of chips from king-size bed
+take half of a bag of chips from kitchen island
+take half of a bag of chips from low table
+take half of a bag of chips from patio table
+take half of a bag of chips from refrigerator
+take half of a bag of chips from set of chairs
+take half of a bag of chips from sink
+take half of a bag of chips from stove
+take half of a bag of chips from toilet
+take half of a bag of chips from tv
+take lettuce
+take lettuce from antique trunk
+take lettuce from bath
+take lettuce from bbq
+take lettuce from chest drawer
+take lettuce from couch
+take lettuce from counter
+take lettuce from king-size bed
+take lettuce from kitchen island
+take lettuce from low table
+take lettuce from patio table
+take lettuce from refrigerator
+take lettuce from set of chairs
+take lettuce from sink
+take lettuce from stove
+take lettuce from toilet
+take lettuce from tv
+take milk
+take milk from antique trunk
+take milk from bath
+take milk from bbq
+take milk from chest drawer
+take milk from couch
+take milk from counter
+take milk from king-size bed
+take milk from kitchen island
+take milk from low table
+take milk from patio table
+take milk from refrigerator
+take milk from set of chairs
+take milk from sink
+take milk from stove
+take milk from toilet
+take milk from tv
+take note
+take note from antique trunk
+take note from bath
+take note from bbq
+take note from chest drawer
+take note from couch
+take note from counter
+take note from king-size bed
+take note from kitchen island
+take note from low table
+take note from patio table
+take note from refrigerator
+take note from set of chairs
+take note from sink
+take note from stove
+take note from toilet
+take note from tv
+take old key
+take old key from antique trunk
+take old key from bath
+take old key from bbq
+take old key from chest drawer
+take old key from couch
+take old key from counter
+take old key from king-size bed
+take old key from kitchen island
+take old key from low table
+take old key from patio table
+take old key from refrigerator
+take old key from set of chairs
+take old key from sink
+take old key from stove
+take old key from toilet
+take old key from tv
+take remote
+take remote from antique trunk
+take remote from bath
+take remote from bbq
+take remote from chest drawer
+take remote from couch
+take remote from counter
+take remote from king-size bed
+take remote from kitchen island
+take remote from low table
+take remote from patio table
+take remote from refrigerator
+take remote from set of chairs
+take remote from sink
+take remote from stove
+take remote from toilet
+take remote from tv
+take shovel
+take shovel from antique trunk
+take shovel from bath
+take shovel from bbq
+take shovel from chest drawer
+take shovel from couch
+take shovel from counter
+take shovel from king-size bed
+take shovel from kitchen island
+take shovel from low table
+take shovel from patio table
+take shovel from refrigerator
+take shovel from set of chairs
+take shovel from sink
+take shovel from stove
+take shovel from toilet
+take shovel from tv
+take soap bar
+take soap bar from antique trunk
+take soap bar from bath
+take soap bar from bbq
+take soap bar from chest drawer
+take soap bar from couch
+take soap bar from counter
+take soap bar from king-size bed
+take soap bar from kitchen island
+take soap bar from low table
+take soap bar from patio table
+take soap bar from refrigerator
+take soap bar from set of chairs
+take soap bar from sink
+take soap bar from stove
+take soap bar from toilet
+take soap bar from tv
+take tomato plant
+take tomato plant from antique trunk
+take tomato plant from bath
+take tomato plant from bbq
+take tomato plant from chest drawer
+take tomato plant from couch
+take tomato plant from counter
+take tomato plant from king-size bed
+take tomato plant from kitchen island
+take tomato plant from low table
+take tomato plant from patio table
+take tomato plant from refrigerator
+take tomato plant from set of chairs
+take tomato plant from sink
+take tomato plant from stove
+take tomato plant from toilet
+take tomato plant from tv
+take toothbrush
+take toothbrush from antique trunk
+take toothbrush from bath
+take toothbrush from bbq
+take toothbrush from chest drawer
+take toothbrush from couch
+take toothbrush from counter
+take toothbrush from king-size bed
+take toothbrush from kitchen island
+take toothbrush from low table
+take toothbrush from patio table
+take toothbrush from refrigerator
+take toothbrush from set of chairs
+take toothbrush from sink
+take toothbrush from stove
+take toothbrush from toilet
+take toothbrush from tv
+unlock antique trunk with old key
+unlock bath with old key
+unlock chest drawer with old key
+unlock refrigerator with old key
+unlock screen door with old key
+unlock toilet with old key
+unlock wooden door with old key
