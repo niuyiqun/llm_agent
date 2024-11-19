@@ -6,44 +6,56 @@
 @Date    ：2024/7/4 11:13 
 @Desc    ：
 """
-from typing import Union, Any
+from typing import Union, Any, Dict, List
 
 from jinja2 import Template
 
 
-def get_init_prompt() -> str:
+def get_init_prompt(infos: Dict[str, Any]) -> str:
     """
 
-    :return: 任务一开始的prompt，主要是system_prompt + example示例
+    :param infos: 环境额外信息 如目标、可行动作等
+    :return: 任务一开始的prompt，主要是system_prompt
     """
     prompt_str: str = \
         """
 <s>[INST] <<SYS>>
 {{system_prompt}}
+Goal: {{goal}}
 <</SYS>>
         """
     template = Template(prompt_str)
-    prompt: str = template.render(system_prompt=simple_sys + example)
+    prompt: str = template.render(system_prompt=simple_sys + example, goal=infos.get('objective', None))
     return prompt
 
 
-def add_user_message(prompt: str, user_msg: str, first_step: bool = False) -> str:
+def add_user_message(prompt: str, user_msg: str, infos: Dict[str, List[str]], first_step: bool = False) -> str:
     """
+    :param first_step: 是否是第一步，与prompt构建有关，无需关注
     :param prompt: 已存在的prompt
     :param user_msg: 需要添加的环境信息，即state
+    :param infos: {'admissible_commands': ['examine antique trunk', 'examine chest drawer', 'examine king-size bed', 'examine wooden door', 'inventory', 'look', 'open antique trunk', 'open chest drawer']}
     :return: 组合后的新prompt
     """
     if first_step:
         new_prompt = prompt + \
                      f'''
-                    {user_msg}
+                    State:{user_msg}
+                    In order to achieve the goal, please choose an appropriate action from the following list:
+                    Admissible commands:{infos.get('admissible_commands', None)}
+                    and output the answer in JSON in the following format {{"step_by_step_thinking": your thinking[less than 15 words], "action": [action in Admissible commands]}}. 
+                    Only output JSON
                     [/INST]
                     '''
     else:
         new_prompt = prompt + \
                      f'''
                      </s><s>[INST]
-                    {user_msg}
+                    State:{user_msg}
+                    In order to achieve the goal, please choose an appropriate action from the following list:
+                    Admissible commands:{infos.get('admissible_commands', None)}
+                    and output the answer in JSON in the following format {{"step_by_step_thinking": your thinking[less than 15 words], "action": [action in Admissible commands]}}. 
+                    Only output JSON
                     [/INST]
                     '''
 
@@ -76,18 +88,16 @@ def normalize_prompt(prompt: str) -> str:
 
 simple_sys = """
 You're a helpful game expert, Your task is to play a game based on natural language text.
-I will provide you with the environmental information, and you only need to make the next planning action based on the environmental information
-When you receive feedback such as "That's not a verb I recognise." or "You can't see any such thing.", 
-it means that the action you attempted is either not recognized by the environment or too complex and redundant. 
-In such cases, you need to simplify or correct your action.
+I will provide you with the environmental information and admissible commands, and you only need to make the next planning action based on the environmental information
 Finally,Please first think step-by-step and then tell what to do next. 
+Your actions must be in the admissible commands.
 """
 
 example = """
 Example:
 {
     "step_by_step_thinking": in order to get xxx, I need to do ... [in_less_than_fifty_words],
-    "action": xxx [in_less_than_fifteen_words]
+    "action": look
 }
 """
 

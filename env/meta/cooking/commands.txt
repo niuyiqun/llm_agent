@@ -1,0 +1,138 @@
+chop chicken breast with chicken breast
+chop chicken breast with chicken wing
+chop chicken breast with cookbook
+chop chicken breast with knife
+chop chicken breast with meal
+chop chicken wing with chicken breast
+chop chicken wing with chicken wing
+chop chicken wing with cookbook
+chop chicken wing with knife
+chop chicken wing with meal
+chop meal with chicken breast
+chop meal with chicken wing
+chop meal with cookbook
+chop meal with knife
+chop meal with meal
+close fridge
+close oven
+cook chicken breast with oven
+cook chicken breast with stove
+cook chicken wing with oven
+cook chicken wing with stove
+cook meal with oven
+cook meal with stove
+dice chicken breast with chicken breast
+dice chicken breast with chicken wing
+dice chicken breast with cookbook
+dice chicken breast with knife
+dice chicken breast with meal
+dice chicken wing with chicken breast
+dice chicken wing with chicken wing
+dice chicken wing with cookbook
+dice chicken wing with knife
+dice chicken wing with meal
+dice meal with chicken breast
+dice meal with chicken wing
+dice meal with cookbook
+dice meal with knife
+dice meal with meal
+drink chicken breast
+drink chicken wing
+drink meal
+drop chicken breast
+drop chicken wing
+drop cookbook
+drop knife
+drop meal
+eat chicken breast
+eat chicken wing
+eat meal
+examine chicken breast
+examine chicken wing
+examine cookbook
+examine counter
+examine fridge
+examine knife
+examine meal
+examine oven
+examine stove
+examine table
+go east
+go north
+go south
+go west
+insert chicken breast into fridge
+insert chicken breast into oven
+insert chicken wing into fridge
+insert chicken wing into oven
+insert cookbook into fridge
+insert cookbook into oven
+insert knife into fridge
+insert knife into oven
+insert meal into fridge
+insert meal into oven
+inventory
+look
+open fridge
+open oven
+prepare meal
+put chicken breast on counter
+put chicken breast on stove
+put chicken breast on table
+put chicken wing on counter
+put chicken wing on stove
+put chicken wing on table
+put cookbook on counter
+put cookbook on stove
+put cookbook on table
+put knife on counter
+put knife on stove
+put knife on table
+put meal on counter
+put meal on stove
+put meal on table
+slice chicken breast with chicken breast
+slice chicken breast with chicken wing
+slice chicken breast with cookbook
+slice chicken breast with knife
+slice chicken breast with meal
+slice chicken wing with chicken breast
+slice chicken wing with chicken wing
+slice chicken wing with cookbook
+slice chicken wing with knife
+slice chicken wing with meal
+slice meal with chicken breast
+slice meal with chicken wing
+slice meal with cookbook
+slice meal with knife
+slice meal with meal
+take chicken breast
+take chicken breast from counter
+take chicken breast from fridge
+take chicken breast from oven
+take chicken breast from stove
+take chicken breast from table
+take chicken wing
+take chicken wing from counter
+take chicken wing from fridge
+take chicken wing from oven
+take chicken wing from stove
+take chicken wing from table
+take cookbook
+take cookbook from counter
+take cookbook from fridge
+take cookbook from oven
+take cookbook from stove
+take cookbook from table
+take knife
+take knife from counter
+take knife from fridge
+take knife from oven
+take knife from stove
+take knife from table
+take meal
+take meal from counter
+take meal from fridge
+take meal from oven
+take meal from stove
+take meal from table

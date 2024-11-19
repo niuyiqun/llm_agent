@@ -1,0 +1,10 @@
+chicken breast
+chicken wing
+cookbook
+counter
+fridge
+knife
+meal
+oven
+stove
+table

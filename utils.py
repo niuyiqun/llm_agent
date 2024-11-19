@@ -20,6 +20,9 @@ def get_command(generated_text: str) -> Dict[str, str]:
     """
     # get the new generated tokens
     command_str: str = generated_text.split('[/INST]', )[-1].strip()
+    # print("=====================command_str====================")
+    # print(command_str)
+    # print("=====================command_str done====================")
     command_dict: Dict[str, str] = json.loads(command_str)
     return command_dict
 
