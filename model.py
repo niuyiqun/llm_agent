@@ -6,43 +6,53 @@
 @Date    ：2024/5/31 20:51 
 @Desc    ：
 """
-from abc import abstractmethod
+from abc import abstractmethod, ABC
 from typing import List, Dict
 
 import torch
 import transformers
+import yaml
 from transformers import AutoTokenizer
+from zhipuai import ZhipuAI
 
 
-class BaseModel():
-    def __init__(self, path: str = '') -> None:
-        self.path: str = path
+class BaseModel(ABC):
+    def __init__(self, config_path: str) -> None:
+        """
+        初始化基类，加载配置文件
+        :param config_path: 配置文件路径
+        """
+        self.config = self.load_config(config_path)
+
+    def load_config(self, config_path: str) -> Dict[str, Dict]:
+        """
+        从配置文件加载 YAML 配置
+        :param config_path: 配置文件路径
+        :return: 配置字典
+        """
+        try:
+            with open(config_path, "r") as file:
+                return yaml.safe_load(file)
+        except FileNotFoundError as e:
+            raise FileNotFoundError(f"Configuration file not found: {config_path}")
+        except yaml.YAMLError as e:
+            raise ValueError(f"Error parsing YAML file: {e}")
 
     @abstractmethod
     def chat(self, prompt: str) -> str:
+        """
+        抽象方法，用于与模型交互。
+        子类需要实现此方法。
+        """
         pass
 
     @abstractmethod
     def load_model(self) -> None:
+        """
+        抽象方法，用于加载模型。
+        子类需要实现此方法。
+        """
         pass
-
-
-# class InternLM2Chat(BaseModel):
-#     def __init__(self, path: str = '') -> None:
-#         super().__init__(path)
-#         self.load_model()
-#
-#     def chat(self, prompt: str, history: List[dict], meta_instruction: str = '') -> str:
-#         response, history = self.model.chat(self.tokenizer, prompt, history, temperature=0.1,
-#                                             meta_instruction=meta_instruction)
-#         return response, history
-#
-#     def load_model(self) -> None:
-#         print('================ Loading model ================')
-#         self.tokenizer = AutoTokenizer.from_pretrained(self.path, trust_remote_code=True)
-#         self.model = AutoModelForCausalLM.from_pretrained(self.path, torch_dtype=torch.float16,
-#                                                           trust_remote_code=True).cuda().eval()
-#         print('================ Model loaded ================')
 
 
 '''非pipeline形式'''
@@ -88,16 +98,21 @@ class BaseModel():
 # print(ans)
 
 class LlamaChat(BaseModel):
-    def __init__(self, path: str = 'meta-llama/Llama-2-7b-chat-hf') -> None:
-        super().__init__(path)
+    def __init__(self, config_path: str) -> None:
+        super().__init__(config_path)
+        llama_config = self.config.get("llama2", {})
+        self.model_path = llama_config.get("model_path", "")
+        self.tokenizer = None
+        self.pipeline = None
         self.load_model()
 
     def chat(self, prompt: str) -> Dict[str, str]:
+        if self.pipeline is None:
+            raise RuntimeError("Model pipeline is not loaded.")
         answer = self.pipeline(
             prompt,
             do_sample=True,
             top_k=10,
-            # num_return_sequences=1,
             eos_token_id=self.tokenizer.eos_token_id,
             max_new_tokens=150,
             truncation=True
@@ -106,47 +121,61 @@ class LlamaChat(BaseModel):
 
     def load_model(self) -> None:
         print('================ Loading model ================')
-        self.tokenizer = AutoTokenizer.from_pretrained(self.path)
+        self.tokenizer = AutoTokenizer.from_pretrained(self.model_path)
         self.pipeline = transformers.pipeline(
             "text-generation",
-            model=self.path,
+            model=self.model_path,
             torch_dtype=torch.float16,
             device_map="auto",
         )
         print('================ Model loaded ================')
 
-# class ChatgptChat(BaseModel):
-#
-#     def __init__(self, path: str = '') -> None:
-#         super().__init__(path)
-#         self.path = path
-#         self.load_model()
-#
-#     def load_model(self) -> None:
-#         openai.api_key = 'sk-80IvuiCBVX50v3ejF64519DeE73a4f1f944dE3B19582419a'
-#         openai.api_base = "https://ai-yyds.com/v1"
-#         pass
-#
-#     def chat(self, prompt: str, history: List[dict]) -> str:
-#         messages = [
-#             {"role": "system", "content": "你是一个擅长说冷笑话的AI。"},
-#             {"role": "user", "content": "给我讲个笑话。"},
-#         ]
-#
-#         response = openai.ChatCompletion.create(
-#             model="gpt-3.5-turbo",
-#             messages=messages,
-#             temperature=1.0,
-#         )
-#         result = ''
-#         for choice in response.choices:
-#             result += choice.message.content
-#         return result
-#
-#         print("summary_result:\n", result)
+
+class ZhipuChat(BaseModel):
+    def __init__(self, config_path: str) -> None:
+        """
+        初始化 ZhipuChat
+        :param config_path: 配置文件路径
+        """
+        super().__init__(config_path)
+        zhipu_config = self.config.get("zhipu", {})
+        self.api_key = zhipu_config.get("api_key", "")
+        self.model = zhipu_config.get("model", "glm-4-plus")
+        self.client = None
+        self.load_model()
+
+    def load_model(self) -> None:
+        """
+        加载 ZhipuAI 客户端
+        """
+        print('================ Loading ZhipuAI client ================')
+        self.client = ZhipuAI(api_key=self.api_key)
+        print('================ ZhipuAI client loaded ================')
+
+    def chat(self, prompt: str) -> str:
+        """
+        与 ZhipuAI 模型交互
+        :param prompt: 用户输入的文本
+        :return: 模型的生成回复
+        """
+        if self.client is None:
+            raise RuntimeError("ZhipuAI client is not loaded.")
+        try:
+            messages = [
+                {"role": "user", "content": prompt}
+            ]
+            response = self.client.chat.completions.create(
+                model=self.model,
+                messages=messages
+            )
+            return response.choices[0].message
+        except Exception as e:
+            print(f"Error during chat: {e}")
+            return "An error occurred while communicating with the model."
 
 
-# if __name__ == '__main__':
-#     path = "./weight/Llama-2-7b-chat-hf"
-#     agent = LlamaChat(path=path)
-#     print(agent.chat('hello'))
+if __name__ == '__main__':
+    config_path = "./config/llm_config.yaml"
+    agent = ZhipuChat(config_path)
+
+    print(agent.chat('messages').content)
