@@ -1,0 +1,308 @@
+- example1:
+    -
+      role: "system"
+      content:  |
+        You're a helpful game expert. Your task is to play a game based on natural language text.
+        You first generate a sub_goal based on the current state of the environment, and then give an action. 
+        Your actions must be in the admissible commands.
+        
+        Your Goal: Please doublecheck that the American style chest is locked
+
+    -
+      role: "user"
+      content:
+        State:
+          Hey, thanks for coming over to TextWorld! Please doublecheck that the American style chest is locked.
+          -= Pantry =-
+          You are in a pantry. A normal kind of place.
+          You see a shelf. The shelf is ordinary. On the shelf you can make out an
+          American style passkey. You hear a noise behind you and spin around, but you
+          can't see anything other than a stand. But the thing is empty. Oh! Why couldn't
+          there just be stuff on it?
+          
+          There is an unblocked exit to the south.
+
+        Admissible commands: ['drop book', 'examine American style passkey', 'examine book', 'examine shelf', 'examine stand', 'go south', 'inventory', 'look', 'put book on shelf', 'put book on stand', 'take American style passkey from shelf']
+
+    -
+      role: "assistant"
+      content:
+        sub_goal: Retrieve the American style passkey to lock the chest.
+        action: take American style passkey from shelf
+    -
+      role: "user"
+      content:
+        State:
+          You take the American style passkey from the shelf.
+          Your score has just gone up by one point.
+        Admissible commands: ['drop American style passkey', 'drop book', 'examine American style passkey', 'examine book', 'examine shelf', 'examine stand', 'go south', 'inventory', 'look', 'put American style passkey on shelf', 'put American style passkey on stand', 'put book on shelf', 'put book on stand']
+    -
+      role: "assistant"
+      content:
+        sub_goal: Move to the location of the American style chest.
+        action: go south
+    -
+      role: "user"
+      content:
+        State:  ｜
+          -= Scullery =-
+          You find yourself in a scullery. A typical one.
+          
+          You see a closed non-euclidean chest right there by you.
+          
+          There is an unblocked exit to the east. You need an unguarded exit? You should
+          try going north.
+          
+          There is a non-euclidean latchkey on the floor.
+        Admissible commands: ['drop American style passkey', 'drop book', 'examine American style passkey', 'examine book', 'examine non-euclidean chest', 'examine non-euclidean latchkey', 'go east', 'go north', 'inventory', 'look', 'open non-euclidean chest', 'take non-euclidean latchkey']
+    -
+      role: "assistant"
+      content:
+        sub_goal: Find the American style chest in the next room.
+        action: go east
+    -
+      role: "user"
+      content:
+        State:  ｜
+          -= Attic =-
+          You are in an attic. A standard kind of place. The room is well lit.
+          
+          You smell an intriguing smell, and follow it to a American style chest. There's
+          something strange about this being here, but you can't put your finger on it.
+          The American style chest contains a top hat. You can make out a workbench. The
+          workbench is usual. But the thing is empty. It would have been so cool if there
+          was stuff on the workbench! oh well.
+          
+          There is an exit to the west. Don't worry, it is unblocked.
+          
+          There is a lightbulb on the floor.
+        Admissible commands: ['close American style chest', 'drop American style passkey', 'drop book', 'examine American style chest', 'examine American style passkey', 'examine book', 'examine lightbulb', 'examine top hat', 'examine workbench', 'go west', 'insert American style passkey into American style chest', 'insert book into American style chest', 'inventory', 'look', 'put American style passkey on workbench', 'put book on workbench', 'take lightbulb', 'take top hat from American style chest']
+    -
+      role: "assistant"
+      content:
+        sub_goal: Secure the American style chest by closing it.
+        action: close American style chest
+    -
+      role: "user"
+      content:
+        State:  ｜
+          You close the American style chest.
+        Admissible commands: ['drop American style passkey', 'drop book', 'examine American style chest', 'examine American style passkey', 'examine book', 'examine lightbulb', 'examine workbench', 'go west', 'inventory', 'lock American style chest with American style passkey', 'look', 'open American style chest', 'put American style passkey on workbench', 'put book on workbench', 'take lightbulb']
+    -
+      role: "assistant"
+      content:
+        sub_goal: Lock the chest using the American style passkey.
+        action: lock American style chest with American style passkey
+    -
+      role: "user"
+      content:
+        State:  ｜
+          You lock the American style chest.
+          Your score has just gone up by one point.
+          
+          *** The End ***
+    
+          You scored 2 out of a possible 2, in 6 turns.
+          Done after 5 steps. Score 2/2.
+        Admissible commands: []
+
+
+- example2:
+    -
+      role: "system"
+      content: |
+        You're a helpful game expert. Your task is to play a game based on natural language text.
+        You first generate a sub_goal based on the current state of the environment, and then give an action. 
+        Your actions must be in the admissible commands.
+        
+        Your Goal: Please deposit the Canadian style key into the Canadian style chest to lock it.
+
+    -
+      role: "user"
+      content:
+        State: |
+          -= Launderette =-
+          You arrive in a launderette. A normal kind of place.
+          You can see a board. But the thing is empty. Aw, here you were, all excited for
+          there to be things on it!
+          
+          There is an unblocked exit to the south.
+          
+          There is a Canadian style key on the floor.
+        Admissible commands: ['drop butterfly', 'drop stick of butter', 'eat stick of butter', 'examine Canadian style key', 'examine board', 'examine butterfly', 'examine stick of butter', 'go south', 'inventory', 'look', 'put butterfly on board', 'put stick of butter on board', 'take Canadian style key']
+    -
+      role: "assistant"
+      content:
+        sub_goal: Retrieve the Canadian style key to start the task.
+        action: take Canadian style key
+    -
+      role: "user"
+      content:
+        State: |
+          You pick up the Canadian style key from the ground.
+          Your score has just gone up by one point.
+        Admissible commands: ['drop Canadian style key', 'drop butterfly', 'drop stick of butter', 'eat stick of butter', 'examine Canadian style key', 'examine board', 'examine butterfly', 'examine stick of butter', 'go south', 'inventory', 'look', 'put Canadian style key on board', 'put butterfly on board', 'put stick of butter on board']
+    -
+      role: "assistant"
+      content:
+        sub_goal: Move towards the location of the Canadian style chest.
+        action: go south
+    -
+      role: "user"
+      content:
+        State: |
+          -= Parlor =-
+          Well I'll be, you are in a place we're calling a parlor. You try to gain
+          information on your surroundings by using a technique you call "looking."
+          
+          You bend down to tie your shoe. When you stand up, you notice a bar. But the
+          thing is empty. It would have been so cool if there was stuff on the bar. You
+          make out a bed stand. The bed stand is typical. But oh no! there's nothing on
+          this piece of trash. Hm. Oh well
+          
+          There is an exit to the east. Don't worry, it is unblocked. You need an
+          unblocked exit? You should try going north.
+        Admissible commands: ['drop Canadian style key', 'drop butterfly', 'drop stick of butter', 'eat stick of butter', 'examine Canadian style key', 'examine bar', 'examine bed stand', 'examine butterfly', 'examine stick of butter', 'go east', 'go north', 'inventory', 'look', 'put Canadian style key on bar', 'put Canadian style key on bed stand', 'put butterfly on bar', 'put butterfly on bed stand', 'put stick of butter on bar', 'put stick of butter on bed stand']
+    -
+      role: "assistant"
+      content:
+        sub_goal: Reach the Canadian style chest.
+        action: go east
+    -
+      role: "user"
+      content:
+        State: |
+          -= Restroom =-
+          You're now in the restroom.
+          
+          You can see a Canadian style chest. The Canadian style chest is empty, what a
+          horrible day! You can make out a safe. Classic TextWorld.
+          
+          You need an unguarded exit? You should try going west.
+          
+          There is a sandwich and a nest of bugs on the floor.
+        Admissible commands: ['close Canadian style chest', 'drop Canadian style key', 'drop butterfly', 'drop stick of butter', 'eat stick of butter', 'examine Canadian style chest', 'examine Canadian style key', 'examine butterfly', 'examine nest of bugs', 'examine safe', 'examine sandwich', 'examine stick of butter', 'go west', 'insert Canadian style key into Canadian style chest', 'insert butterfly into Canadian style chest', 'insert stick of butter into Canadian style chest', 'inventory', 'look', 'take nest of bugs', 'take sandwich']
+    -
+      role: "assistant"
+      content:
+        sub_goal: Prepare the Canadian style chest for locking.
+        action: close Canadian style chest
+    -
+      role: "user"
+      content:
+        State: |
+          You close the Canadian style chest.
+        Admissible commands: ['drop Canadian style key', 'drop butterfly', 'drop stick of butter', 'eat stick of butter', 'examine Canadian style chest', 'examine Canadian style key', 'examine butterfly', 'examine nest of bugs', 'examine safe', 'examine sandwich', 'examine stick of butter', 'go west', 'inventory', 'lock Canadian style chest with Canadian style key', 'look', 'open Canadian style chest', 'take nest of bugs', 'take sandwich']
+    -
+      role: "assistant"
+      content:
+        sub_goal: Lock the Canadian style chest with the key.
+        action: lock Canadian style chest with Canadian style key
+    -
+      role: "user"
+      content:
+        State: |
+          You lock the Canadian style chest.
+          Your score has just gone up by one point.
+          
+          *** The End ***
+
+          You scored 2 out of a possible 2, in 6 turns.
+          Done after 5 steps. Score 2/2.
+
+- example3:
+    -
+      role: "system"
+      content: |
+        You're a helpful game expert. Your task is to play a game based on natural language text.
+        You first generate a sub_goal based on the current state of the environment, and then give an action. 
+        Your actions must be in the admissible commands.
+        
+        Your Goal: Please ensure that the locker is open.
+
+    -
+      role: "user"
+      content:
+        State: |
+          -= Study =-
+          You're now in a study.
+
+          You scan the room, seeing a stand. But there isn't a thing on it.
+
+          You need an unblocked exit? You should try going east.
+        Admissible commands: ['drop pillow', 'examine pillow', 'examine stand', 'go east', 'inventory', 'look', 'put pillow on stand']
+    -
+      role: "assistant"
+      content:
+        sub_goal: Explore the next room to find the locker.
+        action: go east
+    -
+      role: "user"
+      content:
+        State: |
+          -= Steam Room =-
+          You arrive in a steam room. A typical kind of place. Let's see what's in here.
+          
+          You can make out a locked locker in the corner. You see a gleam over in a
+          corner, where you can see a spherical chest. A spherical chest... Is that really
+          what you were looking for? You can see a counter. But the thing is empty. You
+          see a rack. But the thing hasn't got anything on it. Hm. Oh well
+          
+          You need an unguarded exit? You should try going north. There is an exit to the
+          west. Don't worry, it is unblocked.
+          
+          There is a spherical latchkey on the floor.
+        Admissible commands: ['drop pillow', 'examine counter', 'examine locker', 'examine pillow', 'examine rack', 'examine spherical chest', 'examine spherical latchkey', 'go north', 'go west', 'inventory', 'look', 'open spherical chest', 'put pillow on counter', 'put pillow on rack', 'take spherical latchkey']
+    -
+      role: "assistant"
+      content:
+        sub_goal: Open the spherical chest to find the key.
+        action: open spherical chest
+    -
+      role: "user"
+      content:
+        State: |
+          You open the spherical chest, revealing a key.
+        Admissible commands: ['close spherical chest', 'drop pillow', 'examine counter', 'examine key', 'examine locker', 'examine pillow', 'examine rack', 'examine spherical chest', 'examine spherical latchkey', 'go north', 'go west', 'insert pillow into spherical chest', 'inventory', 'look', 'put pillow on counter', 'put pillow on rack', 'take key from spherical chest', 'take spherical latchkey']
+    -
+      role: "assistant"
+      content:
+        sub_goal: Retrieve the key to unlock the locker.
+        action: take key from spherical chest
+    -
+      role: "user"
+      content:
+        State: |
+          You take the key from the spherical chest.
+        Admissible commands: ['close spherical chest', 'drop key', 'drop pillow', 'examine counter', 'examine key', 'examine locker', 'examine pillow', 'examine rack', 'examine spherical chest', 'examine spherical latchkey', 'go north', 'go west', 'insert key into spherical chest', 'insert pillow into spherical chest', 'inventory', 'look', 'put key on counter', 'put key on rack', 'put pillow on counter', 'put pillow on rack', 'take spherical latchkey', 'unlock locker with key']
+    -
+      role: "assistant"
+      content:
+        sub_goal: Use the key to unlock the locker.
+        action: unlock locker with key
+    -
+      role: "user"
+      content:
+        State: |
+          You unlock the locker.
+        Admissible commands: ['close spherical chest', 'drop key', 'drop pillow', 'examine counter', 'examine key', 'examine locker', 'examine pillow', 'examine rack', 'examine spherical chest', 'examine spherical latchkey', 'go north', 'go west', 'insert key into spherical chest', 'insert pillow into spherical chest', 'inventory', 'lock locker with key', 'look', 'open locker', 'put key on counter', 'put key on rack', 'put pillow on counter', 'put pillow on rack', 'take spherical latchkey']
+    -
+      role: "assistant"
+      content:
+        sub_goal: Open the locker to complete the task.
+        action: open locker
+    -
+      role: "user"
+      content:
+        State: |
+          You open the locker.
+          Your score has just gone up by one point.
+          
+          *** The End ***
+
+          You scored 1 out of a possible 1, in 6 turns.
+          Done after 5 steps. Score 1/1.
+     
+      
+      
+

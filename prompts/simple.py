@@ -8,6 +8,7 @@
 """
 from typing import Union, Any, Dict, List
 
+import yaml
 from jinja2 import Template
 
 
@@ -17,10 +18,14 @@ def get_init_prompt(infos: Dict[str, Any]) -> List[Dict[str, str]]:
     :param infos: 环境额外信息，如目标、可行动作等
     :return: 包含系统提示的 messages 列表
     """
-    return [
-        {
-            "role": "system",
-            "content": f"""
+    prompt_path = './config/prompt.yaml'
+    with open(prompt_path, 'r', encoding='utf-8') as file:
+        data = yaml.safe_load(file)
+
+        return [
+            {
+                "role": "system",
+                "content": f"""
             You're a helpful game expert. Your task is to play a game based on natural language text.
             I will provide you with the environmental information and admissible commands. 
             You only need to make the next planning action based on the environmental information.
@@ -32,8 +37,8 @@ def get_init_prompt(infos: Dict[str, Any]) -> List[Dict[str, str]]:
             }}
             Goal: {infos.get('objective', 'Not specified')}
             """
-        }
-    ]
+            }
+        ]
 
 
 def add_user_message(messages: List[Dict[str, str]], user_msg: str, infos: Dict[str, List[str]],
