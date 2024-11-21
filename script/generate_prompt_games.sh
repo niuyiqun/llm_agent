@@ -25,6 +25,7 @@ for i in {1..3}; do
         --world-size "$WORLD_SIZE" \
         --nb-objects "$NB_OBJECTS" \
         --quest-length "$QUEST_LENGTH" \
+        --only-last-action \
         --seed "$SEED" \
         --output "$GAME_FILE"
 

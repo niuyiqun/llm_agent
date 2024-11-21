@@ -106,7 +106,7 @@ class Agent:
 
 if __name__ == '__main__':
     request_infos = EnvInfos(admissible_commands=True, objective=True, description=True)
-    env_id = textworld.gym.register_game("./tw_games/tw-simple-rBalanced+gBrief+train-house-GP-R3YDsOPxsjrXIn3m.z8",
+    env_id = textworld.gym.register_game("./tw_games/tw-coin_collector-yjiNjCMb-house-mo-QZYOuKxvc2JdTJKJ.z8",
                                          max_episode_steps=30,
                                          request_infos=request_infos,
                                          )

@@ -15,152 +15,135 @@ food is edible.
 A room has a text called internal name.
 
 
-The r_1 and the r_0 and the r_2 are rooms.
+The r_2 and the r_1 and the r_0 are rooms.
 
-Understand "attic" as r_1.
-The internal name of r_1 is "attic".
-The printed name of r_1 is "-= Attic =-".
-The attic part 0 is some text that varies. The attic part 0 is "You are in an attic. A standard kind of place. The room is well lit.
+Understand "office" as r_2.
+The internal name of r_2 is "office".
+The printed name of r_2 is "-= Office =-".
+The office part 0 is some text that varies. The office part 0 is "You are in an office. It seems to be pretty typical here.
 
- You smell an intriguing smell, and follow it to a American style chest. There's something strange about this being here, but you can't put your finger on it.[if c_0 is open and there is something in the c_0] The American style chest contains [a list of things in the c_0].[end if]".
-The attic part 1 is some text that varies. The attic part 1 is "[if c_0 is open and the c_0 contains nothing] The American style chest is empty! This is the worst thing that could possibly happen, ever![end if]".
-The attic part 2 is some text that varies. The attic part 2 is " You can make out a workbench. The workbench is usual.[if there is something on the s_1] On the workbench you can see [a list of things on the s_1].[end if]".
-The attic part 3 is some text that varies. The attic part 3 is "[if there is nothing on the s_1] But the thing is empty. It would have been so cool if there was stuff on the workbench! oh well.[end if]".
-The attic part 4 is some text that varies. The attic part 4 is "
+ Look over there! a American safe. There's something strange about this thing being here, but you don't have time to worry about that now.[if c_0 is open and there is something in the c_0] The American safe contains [a list of things in the c_0], so there's that.[end if]".
+The office part 1 is some text that varies. The office part 1 is "[if c_0 is open and the c_0 contains nothing] What a letdown! The American safe is empty![end if]".
+The office part 2 is some text that varies. The office part 2 is " You hear a noise behind you and spin around, but you can't see anything other than a box. Wow, isn't TextWorld just the best?[if c_1 is open and there is something in the c_1] The box contains [a list of things in the c_1].[end if]".
+The office part 3 is some text that varies. The office part 3 is "[if c_1 is open and the c_1 contains nothing] The box is empty! This is the worst thing that could possibly happen, ever![end if]".
+The office part 4 is some text that varies. The office part 4 is " You see a gleam over in a corner, where you can see a mantle. [if there is something on the s_0]You see [a list of things on the s_0] on the mantle. You idly wonder how they came up with the name TextWorld for this place. It's pretty fitting.[end if]".
+The office part 5 is some text that varies. The office part 5 is "[if there is nothing on the s_0]But oh no! there's nothing on this piece of trash.[end if]".
+The office part 6 is some text that varies. The office part 6 is "
 
-There is an exit to the west. Don't worry, it is unblocked.".
-The description of r_1 is "[attic part 0][attic part 1][attic part 2][attic part 3][attic part 4]".
+You need an unblocked exit? You should try going west.".
+The description of r_2 is "[office part 0][office part 1][office part 2][office part 3][office part 4][office part 5][office part 6]".
 
-The r_0 is mapped west of r_1.
-Understand "scullery" as r_0.
-The internal name of r_0 is "scullery".
-The printed name of r_0 is "-= Scullery =-".
-The scullery part 0 is some text that varies. The scullery part 0 is "You find yourself in a scullery. A typical one.
+The r_1 is mapped west of r_2.
+Understand "restroom" as r_1.
+The internal name of r_1 is "restroom".
+The printed name of r_1 is "-= Restroom =-".
+The restroom part 0 is some text that varies. The restroom part 0 is "You arrive in a restroom. An ordinary kind of place.
 
- You see [if c_1 is locked]a locked[else if c_1 is open]an opened[otherwise]a closed[end if]".
-The scullery part 1 is some text that varies. The scullery part 1 is " non-euclidean chest right there by you.[if c_1 is open and there is something in the c_1] The non-euclidean chest contains [a list of things in the c_1].[end if]".
-The scullery part 2 is some text that varies. The scullery part 2 is "[if c_1 is open and the c_1 contains nothing] The non-euclidean chest is empty, what a horrible day![end if]".
-The scullery part 3 is some text that varies. The scullery part 3 is "
+ You can see a shelf. [if there is something on the s_1]You see [a list of things on the s_1] on the shelf.[end if]".
+The restroom part 1 is some text that varies. The restroom part 1 is "[if there is nothing on the s_1]But oh no! there's nothing on this piece of junk.[end if]".
+The restroom part 2 is some text that varies. The restroom part 2 is "
 
-There is an unblocked exit to the east. You need an unguarded exit? You should try going north.".
-The description of r_0 is "[scullery part 0][scullery part 1][scullery part 2][scullery part 3]".
+You need an unguarded exit? You should try going east. You need an unguarded exit? You should try going south.".
+The description of r_1 is "[restroom part 0][restroom part 1][restroom part 2]".
 
-The r_2 is mapped north of r_0.
-The r_1 is mapped east of r_0.
-Understand "pantry" as r_2.
-The internal name of r_2 is "pantry".
-The printed name of r_2 is "-= Pantry =-".
-The pantry part 0 is some text that varies. The pantry part 0 is "You are in a pantry. A normal kind of place.
+The r_0 is mapped south of r_1.
+The r_2 is mapped east of r_1.
+Understand "spare room" as r_0.
+The internal name of r_0 is "spare room".
+The printed name of r_0 is "-= Spare Room =-".
+The spare room part 0 is some text that varies. The spare room part 0 is "You are in a spare room. A standard kind of place. The room is well lit.
 
- You see a shelf. The shelf is ordinary.[if there is something on the s_0] On the shelf you can make out [a list of things on the s_0].[end if]".
-The pantry part 1 is some text that varies. The pantry part 1 is "[if there is nothing on the s_0] Looks like someone's already been here and taken everything off it, though. You move on, clearly done caring about TextWorld.[end if]".
-The pantry part 2 is some text that varies. The pantry part 2 is " You hear a noise behind you and spin around, but you can't see anything other than a stand. [if there is something on the s_2]You see [a list of things on the s_2] on the stand. Wow! Just like in the movies![end if]".
-The pantry part 3 is some text that varies. The pantry part 3 is "[if there is nothing on the s_2]But the thing is empty. Oh! Why couldn't there just be stuff on it?[end if]".
-The pantry part 4 is some text that varies. The pantry part 4 is "
 
-There is an unblocked exit to the south.".
-The description of r_2 is "[pantry part 0][pantry part 1][pantry part 2][pantry part 3][pantry part 4]".
 
-The r_0 is mapped south of r_2.
+There is an unguarded exit to the north.".
+The description of r_0 is "[spare room part 0]".
+
+The r_1 is mapped north of r_0.
 
 The c_0 and the c_1 are containers.
 The c_0 and the c_1 are privately-named.
-The k_2 and the k_0 are keys.
-The k_2 and the k_0 are privately-named.
-The o_0 and the o_1 and the o_2 are object-likes.
-The o_0 and the o_1 and the o_2 are privately-named.
-The r_1 and the r_0 and the r_2 are rooms.
-The r_1 and the r_0 and the r_2 are privately-named.
-The s_0 and the s_1 and the s_2 are supporters.
-The s_0 and the s_1 and the s_2 are privately-named.
+The f_1 and the f_2 and the f_0 are foods.
+The f_1 and the f_2 and the f_0 are privately-named.
+The k_0 and the k_2 are keys.
+The k_0 and the k_2 are privately-named.
+The o_0 are object-likes.
+The o_0 are privately-named.
+The r_2 and the r_1 and the r_0 are rooms.
+The r_2 and the r_1 and the r_0 are privately-named.
+The s_0 and the s_1 are supporters.
+The s_0 and the s_1 are privately-named.
 
-The description of c_0 is "The American style chest looks strong, and impossible to break. [if open]You can see inside it.[else if closed]You can't see inside it because the lid's in your way.[otherwise]There is a lock on it.[end if]".
-The printed name of c_0 is "American style chest".
-Understand "American style chest" as c_0.
+The description of c_0 is "The American safe looks strong, and impossible to destroy. [if open]It is open.[else if closed]It is closed.[otherwise]It is locked.[end if]".
+The printed name of c_0 is "American safe".
+Understand "American safe" as c_0.
 Understand "American" as c_0.
-Understand "style" as c_0.
-Understand "chest" as c_0.
-The c_0 is in r_1.
-The c_0 is open.
-The description of c_1 is "The non-euclidean chest looks strong, and impossible to crack. [if open]You can see inside it.[else if closed]You can't see inside it because the lid's in your way.[otherwise]There is a lock on it.[end if]".
-The printed name of c_1 is "non-euclidean chest".
-Understand "non-euclidean chest" as c_1.
-Understand "non-euclidean" as c_1.
-Understand "chest" as c_1.
-The c_1 is in r_0.
-The c_1 is closed.
-The description of k_2 is "The non-euclidean latchkey is light.".
-The printed name of k_2 is "non-euclidean latchkey".
-Understand "non-euclidean latchkey" as k_2.
-Understand "non-euclidean" as k_2.
-Understand "latchkey" as k_2.
-The k_2 is in r_0.
-The matching key of the c_1 is the k_2.
-The description of o_0 is "The lightbulb is clean.".
-The printed name of o_0 is "lightbulb".
-Understand "lightbulb" as o_0.
-The o_0 is in r_1.
-The description of s_0 is "The shelf is an unstable piece of trash.".
-The printed name of s_0 is "shelf".
-Understand "shelf" as s_0.
+Understand "safe" as c_0.
+The c_0 is in r_2.
+The c_0 is locked.
+The description of c_1 is "The box looks strong, and impossible to destroy. [if open]It is open.[else if closed]It is closed.[otherwise]It is locked.[end if]".
+The printed name of c_1 is "box".
+Understand "box" as c_1.
+The c_1 is in r_2.
+The c_1 is open.
+The description of f_1 is "The coconut looks tempting.".
+The printed name of f_1 is "coconut".
+Understand "coconut" as f_1.
+The f_1 is in r_1.
+The f_1 is edible.
+The description of f_2 is "You couldn't pay me to eat that usual thing.".
+The printed name of f_2 is "candy bar".
+Understand "candy bar" as f_2.
+Understand "candy" as f_2.
+Understand "bar" as f_2.
+The f_2 is in r_0.
+The f_2 is edible.
+The description of s_0 is "The mantle is durable.".
+The printed name of s_0 is "mantle".
+Understand "mantle" as s_0.
 The s_0 is in r_2.
-The description of s_1 is "The workbench is shaky.".
-The printed name of s_1 is "workbench".
-Understand "workbench" as s_1.
+The description of s_1 is "The shelf is balanced.".
+The printed name of s_1 is "shelf".
+Understand "shelf" as s_1.
 The s_1 is in r_1.
-The description of s_2 is "The stand is an unstable piece of trash.".
-The printed name of s_2 is "stand".
-Understand "stand" as s_2.
-The s_2 is in r_2.
-The description of o_1 is "The top hat is well-used.".
-The printed name of o_1 is "top hat".
-Understand "top hat" as o_1.
-Understand "top" as o_1.
-Understand "hat" as o_1.
-The o_1 is in the c_0.
-The description of o_2 is "The book is unremarkable.".
-The printed name of o_2 is "book".
-Understand "book" as o_2.
-The player carries the o_2.
-The description of k_0 is "The American style passkey is cold to the touch".
-The printed name of k_0 is "American style passkey".
-Understand "American style passkey" as k_0.
+The description of f_0 is "that's a standard sandwich!".
+The printed name of f_0 is "sandwich".
+Understand "sandwich" as f_0.
+The f_0 is edible.
+The player carries the f_0.
+The description of o_0 is "The binder appears to fit in here".
+The printed name of o_0 is "binder".
+Understand "binder" as o_0.
+The o_0 is in the c_0.
+The description of k_0 is "The American keycard is weighty.".
+The printed name of k_0 is "American keycard".
+Understand "American keycard" as k_0.
 Understand "American" as k_0.
-Understand "style" as k_0.
-Understand "passkey" as k_0.
+Understand "keycard" as k_0.
 The matching key of the c_0 is the k_0.
 The k_0 is on the s_0.
+The description of k_2 is "The keycard is cold to the touch".
+The printed name of k_2 is "keycard".
+Understand "keycard" as k_2.
+The matching key of the c_1 is the k_2.
+The k_2 is on the s_0.
 
 
-The player is in r_2.
+The player is in r_1.
 
 The quest0 completed is a truth state that varies.
 The quest0 completed is usually false.
 
-Test quest0_0 with "take American style passkey from shelf"
+Test quest0_0 with "go east / take American keycard from mantle / unlock American safe with American keycard / open American safe / take binder from American safe"
 
 Every turn:
 	if quest0 completed is true:
 		do nothing;
-	else if The player is in r_2 and The s_0 is in r_2 and The player carries the k_0:
+	else if The player is in r_2 and The c_0 is in r_2 and The c_0 is open and The player carries the o_0:
 		increase the score by 1; [Quest completed]
 		if 1 is 1 [always true]:
 			Now the quest0 completed is true;
 
-The quest1 completed is a truth state that varies.
-The quest1 completed is usually false.
-
-Test quest1_0 with "take American style passkey from shelf / go south / go east / close American style chest / lock American style chest with American style passkey"
-
-Every turn:
-	if quest1 completed is true:
-		do nothing;
-	else if The player is in r_1 and The c_0 is in r_1 and The player carries the k_0 and The matching key of the c_0 is the k_0 and The c_0 is locked:
-		increase the score by 1; [Quest completed]
-		if 1 is 1 [always true]:
-			Now the quest1 completed is true;
-
-Use scoring. The maximum score is 2.
+Use scoring. The maximum score is 1.
 This is the simpler notify score changes rule:
 	If the score is not the last notified score:
 		let V be the score - the last notified score;
@@ -173,7 +156,7 @@ This is the simpler notify score changes rule:
 		else:
 			say "points.";
 		Now the last notified score is the score;
-	if quest0 completed is true and quest1 completed is true:
+	if quest0 completed is true:
 		end the story finally; [Win]
 
 The simpler notify score changes rule substitutes for the notify score changes rule.
@@ -338,9 +321,10 @@ The last property-aggregation rule (this is the print aggregated properties rule
 		rule succeeds;
 	rule fails;
 
-The objective part 0 is some text that varies. The objective part 0 is "Hey, thanks for coming over to TextWorld! Please doublecheck that the American style chest is locked.".
+The objective part 0 is some text that varies. The objective part 0 is "Welcome to TextWorld! Here is how to play! First step, make an effort to venture east. With that accomplished, recover the American keycard from the mantle inside the office. With the American keycard".
+The objective part 1 is some text that varies. The objective part 1 is ", unlock the American safe. And then, ensure that the American safe is open. Then, take the binder from the American safe within the office. And once you've done that, you win!".
 
-An objective is some text that varies. The objective is "[objective part 0]".
+An objective is some text that varies. The objective is "[objective part 0][objective part 1]".
 Printing the objective is an action applying to nothing.
 Carry out printing the objective:
 	say "[objective]".
