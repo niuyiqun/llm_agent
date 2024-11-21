@@ -6,9 +6,11 @@
 @Date    ：2024/5/31 20:51 
 @Desc    ：
 """
+import json
 from abc import abstractmethod, ABC
 from typing import List, Dict
 
+import requests
 import torch
 import transformers
 import yaml
@@ -24,7 +26,7 @@ class BaseModel(ABC):
         """
         self.config = self.load_config(config_path)
 
-    def load_config(self, config_path: str) -> Dict[str, Dict]:
+    def load_config(self, config_path: str = './config/llm_config.yaml') -> Dict[str, Dict]:
         """
         从配置文件加载 YAML 配置
         :param config_path: 配置文件路径
@@ -98,41 +100,61 @@ class BaseModel(ABC):
 # print(ans)
 
 class LlamaChat(BaseModel):
-    def __init__(self, config_path: str) -> None:
+    def __init__(self, config_path: str = './config/llm_config.yaml') -> None:
         super().__init__(config_path)
         llama_config = self.config.get("llama2", {})
-        self.model_path = llama_config.get("model_path", "")
-        self.tokenizer = None
-        self.pipeline = None
+        self.api_url = llama_config.get("api_url", "http://localhost:8000/generate")
+        if not self.api_url:
+            raise ValueError("API URL is not provided in the configuration.")
         self.load_model()
 
-    def chat(self, prompt: str) -> Dict[str, str]:
-        if self.pipeline is None:
-            raise RuntimeError("Model pipeline is not loaded.")
-        answer = self.pipeline(
-            prompt,
-            do_sample=True,
-            top_k=10,
-            eos_token_id=self.tokenizer.eos_token_id,
-            max_new_tokens=150,
-            truncation=True
-        )[0]
-        return answer
+    def chat(self, prompt: List[Dict[str, str]]) -> Dict[str, str]:
+        # Define the payload for the API request
+        payload = {
+            "prompt": json.dump(prompt),
+            "temperature": 0.7,
+            "top_k": 10,
+            "max_tokens": 150,
+            "stop": None  # Add stop tokens if necessary
+        }
+        try:
+            # Send POST request to the API
+            response = requests.post(self.api_url, json=payload)
+            response.raise_for_status()  # Raise HTTPError for bad responses (4xx and 5xx)
+            result = response.json()
+
+            # Return the generated text
+            return {
+                "prompt": prompt,
+                "response": result.get("text", "No response generated")
+            }
+
+        except requests.exceptions.RequestException as e:
+            # Handle errors in the request
+            raise RuntimeError(f"Error during API request: {e}")
+
+        # if self.pipeline is None:
+        #     raise RuntimeError("Model pipeline is not loaded.")
+        # answer = self.pipeline(
+        #     prompt,
+        #     do_sample=True,
+        #     top_k=10,
+        #     eos_token_id=self.tokenizer.eos_token_id,
+        #     max_new_tokens=150,
+        #     truncation=True
+        # )[0]
+        # return answer
 
     def load_model(self) -> None:
-        print('================ Loading model ================')
-        self.tokenizer = AutoTokenizer.from_pretrained(self.model_path)
-        self.pipeline = transformers.pipeline(
-            "text-generation",
-            model=self.model_path,
-            torch_dtype=torch.float16,
-            device_map="auto",
-        )
-        print('================ Model loaded ================')
+        """
+                This function is a placeholder since the model is no longer loaded locally.
+                """
+        print('================ Model API ready ================')
+        print("LlamaChat initialized with API URL:", self.api_url)
 
 
 class ZhipuChat(BaseModel):
-    def __init__(self, config_path: str) -> None:
+    def __init__(self, config_path: str = './config/llm_config.yaml') -> None:
         """
         初始化 ZhipuChat
         :param config_path: 配置文件路径
@@ -152,23 +174,35 @@ class ZhipuChat(BaseModel):
         self.client = ZhipuAI(api_key=self.api_key)
         print('================ ZhipuAI client loaded ================')
 
-    def chat(self, prompt: str) -> str:
+    def chat(self, prompt: List[Dict[str, str]]) -> Dict[str, str]:
         """
-        与 ZhipuAI 模型交互
-        :param prompt: 用户输入的文本
-        :return: 模型的生成回复
+                与 ZhipuAI 模型交互
+                :param prompt: 模型的输入
+                :return: 模型的生成回复
         """
         if self.client is None:
             raise RuntimeError("ZhipuAI client is not loaded.")
+
         try:
-            messages = [
-                {"role": "user", "content": prompt}
-            ]
+            # 直接传入 messages 给 ZhipuAI 接口
             response = self.client.chat.completions.create(
                 model=self.model,
-                messages=messages
+                messages=prompt
             )
-            return response.choices[0].message
+            # print('response', response)
+            # 返回生成的回复
+            """
+            response.choices[0].message Example:
+            CompletionMessage(content='```json\n{\n    "step_by_step_thinking": "I need to find a bell pepper.",\n    "action": "examine chest drawer"\n}\n```', role='assistant', tool_calls=None)
+            """
+
+            # 去掉 ```json 包裹
+            cleaned_answer = response.choices[0].message.content.strip("```json").strip("```")
+
+            # 将清理后的字符串解析为 JSON 对象
+            parsed_answer = json.loads(cleaned_answer)
+
+            return parsed_answer
         except Exception as e:
             print(f"Error during chat: {e}")
             return "An error occurred while communicating with the model."
@@ -176,6 +210,5 @@ class ZhipuChat(BaseModel):
 
 if __name__ == '__main__':
     config_path = "./config/llm_config.yaml"
-    agent = ZhipuChat(config_path)
-
-    print(agent.chat('messages').content)
+    agent = LlamaChat(config_path)
+    print('generated content:', agent.chat('messages'))

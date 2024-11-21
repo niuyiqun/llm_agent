@@ -12,12 +12,14 @@ import json
 import torch
 
 
-def get_command(generated_text: str) -> Dict[str, str]:
+def get_command(generated_text: Dict[str, str]) -> Dict[str, str]:
     """
 
     :param generated_text: llama2生成的generated_text字段内容
     :return: 实际执行的动作
     """
+    return generated_text.get('action')
+
     # get the new generated tokens
     command_str: str = generated_text.split('[/INST]', )[-1].strip()
     # print("=====================command_str====================")
