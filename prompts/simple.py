@@ -18,31 +18,14 @@ def get_init_prompt(infos: Dict[str, Any]) -> List[Dict[str, str]]:
     :param infos: 环境额外信息，如目标、可行动作等
     :return: 包含系统提示的 messages 列表
     """
+    # todo:加入新的prompt done
     prompt_path = './config/prompt.yaml'
     with open(prompt_path, 'r', encoding='utf-8') as file:
         data = yaml.safe_load(file)
-
-        return [
-            {
-                "role": "system",
-                "content": f"""
-            You're a helpful game expert. Your task is to play a game based on natural language text.
-            I will provide you with the environmental information and admissible commands. 
-            You only need to make the next planning action based on the environmental information.
-            Finally, think step-by-step and tell what to do next. Your actions must be in the admissible commands.
-            Example:
-            {{
-                "step_by_step_thinking": "in order to get xxx, I need to do ... [in less than fifty words]",
-                "action": "xxx [in less than fifteen words]"
-            }}
-            Goal: {infos.get('objective', 'Not specified')}
-            """
-            }
-        ]
+        return data
 
 
-def add_user_message(messages: List[Dict[str, str]], user_msg: str, infos: Dict[str, List[str]],
-                     first_step: bool = False) -> List[Dict[str, str]]:
+def add_user_message(messages: List[Dict[str, str]], obs: str, infos: Dict[str, List[str]]) -> List[Dict[str, str]]:
     """
     将用户消息添加到对话历史，并拼接任务相关信息
     :param messages: 当前对话历史
@@ -51,32 +34,7 @@ def add_user_message(messages: List[Dict[str, str]], user_msg: str, infos: Dict[
     :param first_step: 是否为第一步
     :return: 更新后的 messages 列表
     """
-    if first_step:
-        content = f"""
-        State: {user_msg}
-        In order to achieve the goal, please choose an appropriate action from the following list:
-        Admissible commands: {infos.get('admissible_commands', [])}
-        Output the answer in JSON in the following format:
-        {{
-            "step_by_step_thinking": your thinking [less than 15 words],
-            "action": [action in Admissible commands]
-        }}
-        Only output JSON.
-        """
-    else:
-        content = f"""
-        </s><s>[INST]
-        State: {user_msg}
-        In order to achieve the goal, please choose an appropriate action from the following list:
-        Admissible commands: {infos.get('admissible_commands', [])}
-        Output the answer in JSON in the following format:
-        {{
-            "step_by_step_thinking": your thinking [less than 15 words],
-            "action": [action in Admissible commands]
-        }}
-        Only output JSON.
-        [/INST]
-        """
+    content = {"State": obs, "Admissible commands": infos.get('admissible_commands', [])}
     messages.append({"role": "user", "content": content})
     return messages
 

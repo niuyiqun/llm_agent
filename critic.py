@@ -1,11 +1,15 @@
 # -*- coding: UTF-8 -*-
 """
 @Project ：llm-agent 
-@File    ：agent.py
+@File    ：critic.py
 @Author  ：niu
-@Date    ：2024/5/31 21:41 
-@Desc    ：通过调用model来构建一个可以多轮对话的游戏agent
+@Date    ：2024/10/26 16:23
+@Desc    ：
 """
+
+import torch
+import torch.nn as nn
+from transformers import BertModel, BertTokenizer
 import json
 from typing import List, Dict, Any
 
@@ -16,6 +20,63 @@ from textworld import EnvInfos
 
 from model import LlamaChat, ZhipuChat
 from utils import get_command, get_reset
+
+
+class CriticModel(nn.Module):
+    def __init__(self, hidden_dim=128):
+        super(CriticModel, self).__init__()
+
+        self.hidden_dim = hidden_dim
+
+        # 加载BERT模型和tokenizer
+        self.bert_encoder = BertModel.from_pretrained('bert-base-uncased')
+        self.bert_tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
+
+        # 添加特殊token
+        self.bert_tokenizer.add_special_tokens({'additional_special_tokens': ['[NXT]']})
+        self.bert_encoder.resize_token_embeddings(len(self.bert_tokenizer))
+
+        # 定义网络结构
+        self.classifier = nn.Sequential(
+            nn.Linear(self.bert_encoder.config.hidden_size, 128),
+            nn.ReLU(),
+            nn.Dropout(),
+            nn.Linear(self.hidden_dim, 1),  # 输出1个值，表示期望回报
+            nn.Sigmoid()  # 通过Sigmoid将输出限制在0到1之间
+        )
+
+    def encode(self, text):
+        """
+        使用BERT编码器对输入文本进行编码，返回BERT的池化输出。
+
+        参数:
+        - text (List[str]): 待编码的文本列表。
+
+        返回:
+        - torch.Tensor: 编码后的池化输出，形状为 `(batch_size, hidden_size)`。
+        """
+        inputs = self.bert_tokenizer(text, return_tensors="pt", padding=True)
+        inputs = {name: tensor.to(self.device) for name, tensor in inputs.items()}
+        pooled = self.bert_encoder(**inputs).pooler_output
+        return pooled
+
+    def forward(self, obs, action):
+        """
+        计算给定上下文和动作的期望回报，并将其限制在0到1之间。
+
+        参数:
+        - context: 上下文信息，字符串格式。
+        - action: 动作信息，字符串格式。
+
+        返回:
+        - torch.Tensor: 限制在0到1之间的期望回报。
+        """
+        # 将上下文和动作合并为一个字符串，并进行BERT编码
+        context_action = obs + ' [NXT] ' + action
+        expected_return = self.classifier(self.encode([context_action]))  # 预测期望回报
+
+        # 返回期望回报，已经通过Sigmoid限制在0到1之间
+        return expected_return
 
 
 def initialize_model(llm_type: str):
@@ -32,7 +93,7 @@ def initialize_model(llm_type: str):
         raise ValueError(f"Unsupported LLM type: {llm_type}")
 
 
-class Agent:
+class AC_Agent:
     def __init__(self, infos: Dict[str, Any], llm_type: str = "ZhipuChat") -> None:
         """
 
@@ -42,6 +103,7 @@ class Agent:
         self.messages = None
         # 加入系统提示
         self.get_init_prompt(infos)
+        self.critic = CriticModel()
 
     def round(self, obs: str, reward: float, done: bool, infos: dict = None) -> str:
         """
@@ -130,36 +192,3 @@ class Agent:
         """
         content = {"State": obs, "Admissible commands": infos.get('admissible_commands', [])}
         self.messages.append({"role": "user", "content": json.dumps(content)})
-
-
-if __name__ == '__main__':
-    request_infos = EnvInfos(admissible_commands=True, objective=True, description=True)
-    env_id = textworld.gym.register_game("./tw_games/advanced_cooking_game.z8",
-                                         max_episode_steps=60,
-                                         request_infos=request_infos,
-                                         )
-
-    env = textworld.gym.make(env_id)  # Start the environment.
-
-    obs, infos = env.reset()  # Start new episode.
-    # print('infos:', infos)
-    obs: str = get_reset(obs)
-    agent: Agent = Agent(infos)
-    score: float = 0
-    done: bool = False
-    i = 1
-    while not done:
-        print()
-        print()
-        print()
-        print('----------------------第{}回合--------------------------'.format(i))
-        i += 1
-        print('-----------obs-----------')
-        print(obs)
-        print('-----------obs-----------')
-        command = agent.round(obs, score, done=False, infos=infos)
-        # print('command:', command)
-        obs, score, done, infos = env.step(command)
-    print(obs)
-    # 获取完整历史记录
-    # print("History:", json.dumps(agent.get_history(), indent=4, ensure_ascii=False))

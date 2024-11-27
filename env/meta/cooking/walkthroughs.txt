@@ -1,1 +1,5 @@
-inventory > examine cookbook > drop chicken breast > prepare meal > eat meal
+inventory >
+examine cookbook >
+drop chicken breast >
+prepare meal >
+eat meal

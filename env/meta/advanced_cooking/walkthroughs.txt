@@ -1,0 +1,38 @@
+inventory >
+go east >
+examine cookbook >
+drop red onion >
+drop yellow bell pepper >
+drop white onion >
+open fridge >
+take carrot from fridge >
+open screen door >
+go south >
+go west >
+take green bell pepper >
+take red hot pepper >
+go east >
+open screen door >
+go north >
+cook carrot with stove >
+cook green bell pepper with oven >
+open screen door >
+go south >
+cook red bell pepper with BBQ >
+open screen door >
+go north >
+cook red hot pepper with oven >
+cook white tuna with stove >
+take knife from counter >
+slice carrot with knife >
+drop knife > take knife >
+dice green bell pepper with knife >
+drop knife > take knife >
+dice red bell pepper with knife >
+drop knife > take knife >
+slice red hot pepper with knife >
+drop knife > take knife >
+slice white tuna with knife >
+drop knife >
+prepare meal >
+eat meal

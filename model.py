@@ -8,7 +8,7 @@
 """
 import json
 from abc import abstractmethod, ABC
-from typing import List, Dict
+from typing import List, Dict, Any
 
 import requests
 import torch
@@ -108,10 +108,10 @@ class LlamaChat(BaseModel):
             raise ValueError("API URL is not provided in the configuration.")
         self.load_model()
 
-    def chat(self, prompt: List[Dict[str, str]]) -> Dict[str, str]:
+    def chat(self, prompt: List[Dict[str, Any]]) -> Dict[str, str]:
         # Define the payload for the API request
         payload = {
-            "prompt": json.dump(prompt),
+            "prompt": json.dumps(prompt),
             "temperature": 0.7,
             "top_k": 10,
             "max_tokens": 150,
@@ -162,7 +162,7 @@ class ZhipuChat(BaseModel):
         super().__init__(config_path)
         zhipu_config = self.config.get("zhipu", {})
         self.api_key = zhipu_config.get("api_key", "")
-        self.model = zhipu_config.get("model", "glm-4-plus")
+        self.model = zhipu_config.get("model", "glm-4")
         self.client = None
         self.load_model()
 
@@ -174,10 +174,10 @@ class ZhipuChat(BaseModel):
         self.client = ZhipuAI(api_key=self.api_key)
         print('================ ZhipuAI client loaded ================')
 
-    def chat(self, prompt: List[Dict[str, str]]) -> Dict[str, str]:
+    def chat(self, messages: List[Dict[str, Any]]) -> Dict[str, str]:
         """
                 与 ZhipuAI 模型交互
-                :param prompt: 模型的输入
+                :param messages: 模型的输入
                 :return: 模型的生成回复
         """
         if self.client is None:
@@ -185,17 +185,28 @@ class ZhipuChat(BaseModel):
 
         try:
             # 直接传入 messages 给 ZhipuAI 接口
+            # print('-----------messages-----------')
+            # # print(messages)
+            # print(json.dumps(messages, indent=4, ensure_ascii=False))
+            # print('-----------messages-----------')
             response = self.client.chat.completions.create(
                 model=self.model,
-                messages=prompt
+                messages=messages
             )
+            # print()
             # print('response', response)
             # 返回生成的回复
+            # print('-----------response-----------')
+            # print(response)
+            # print('-----------response-----------')
+
             """
             response.choices[0].message Example:
             CompletionMessage(content='```json\n{\n    "step_by_step_thinking": "I need to find a bell pepper.",\n    "action": "examine chest drawer"\n}\n```', role='assistant', tool_calls=None)
             """
-
+            # print('-----------response.choices[0].message.content-----------')
+            # print(response.choices[0].message.content)
+            # print('-----------response.choices[0].message.content-----------')
             # 去掉 ```json 包裹
             cleaned_answer = response.choices[0].message.content.strip("```json").strip("```")
 
@@ -203,9 +214,15 @@ class ZhipuChat(BaseModel):
             parsed_answer = json.loads(cleaned_answer)
 
             return parsed_answer
+        except json.JSONDecodeError as json_error:
+            # 捕获 JSON 解析错误
+            print(f"JSON parsing error: {json_error}")
+            return {"error": "JSON parsing error", "details": str(json_error)}
+
         except Exception as e:
+            # 捕获其他错误
             print(f"Error during chat: {e}")
-            return "An error occurred while communicating with the model."
+            return {"error": "Other error", "details": str(e)}
 
 
 if __name__ == '__main__':

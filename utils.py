@@ -84,7 +84,7 @@ if __name__ == '__main__':
     import yaml
     import json
 
-    with open('./config/example.yaml', 'r', encoding='utf-8') as file:
+    with open('./config/prompt.yaml', 'r', encoding='utf-8') as file:
         data = yaml.safe_load(file)
     json_string = json.dumps(data, indent=4)
     print(json_string)
