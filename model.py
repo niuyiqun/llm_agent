@@ -193,20 +193,12 @@ class ZhipuChat(BaseModel):
                 model=self.model,
                 messages=messages
             )
-            # print()
-            # print('response', response)
-            # 返回生成的回复
-            # print('-----------response-----------')
-            # print(response)
-            # print('-----------response-----------')
 
             """
             response.choices[0].message Example:
             CompletionMessage(content='```json\n{\n    "step_by_step_thinking": "I need to find a bell pepper.",\n    "action": "examine chest drawer"\n}\n```', role='assistant', tool_calls=None)
             """
-            # print('-----------response.choices[0].message.content-----------')
-            # print(response.choices[0].message.content)
-            # print('-----------response.choices[0].message.content-----------')
+
             # 去掉 ```json 包裹
             cleaned_answer = response.choices[0].message.content.strip("```json").strip("```")
 

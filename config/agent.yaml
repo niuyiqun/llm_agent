@@ -1,0 +1,6 @@
+agent:
+  llm_type: "ZhipuChat"
+  device: "cuda"
+  bert_lr: 1e-5
+  weight_decay: 0.01
+  gamma: 0.99

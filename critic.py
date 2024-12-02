@@ -9,6 +9,7 @@
 
 import torch
 import torch.nn as nn
+from torch import optim
 from transformers import BertModel, BertTokenizer
 import json
 from typing import List, Dict, Any
@@ -23,10 +24,11 @@ from utils import get_command, get_reset
 
 
 class CriticModel(nn.Module):
-    def __init__(self, hidden_dim=128):
+    def __init__(self, hidden_dim=128, device: str = "cuda"):
         super(CriticModel, self).__init__()
 
         self.hidden_dim = hidden_dim
+        self.device = device
 
         # 加载BERT模型和tokenizer
         self.bert_encoder = BertModel.from_pretrained('bert-base-uncased')
@@ -94,101 +96,122 @@ def initialize_model(llm_type: str):
 
 
 class AC_Agent:
-    def __init__(self, infos: Dict[str, Any], llm_type: str = "ZhipuChat") -> None:
+    def __init__(self, config_path: str = './config/agent.yaml') -> None:
+        """
+            由于需要bert参与，所以这里暂时改成单轮的对话形式，不然上下文太长，处理不了
+        """
+        self.config = self.load_config(config_path)
+        # 奖励衰减因子
+        self.gamma = self.config.get("gamma", 0.99)
+        self.model = initialize_model(self.config.get("llm_type", "ZhipuChat"))  # 初始化指定的 LLM
+        self.critic_1 = CriticModel().to(self.config.get("device", "cuda"))
+        self.critic_2 = CriticModel().to(self.config.get("device", "cuda"))
+        self.target_critic_1 = CriticModel().to(self.config.get("device", "cuda"))
+        self.target_critic_2 = CriticModel().to(self.config.get("device", "cuda"))
+        # 令目标Q网络的初始参数和Q网络一样
+        self.target_critic_1.load_state_dict(self.critic_1.state_dict())
+        self.target_critic_2.load_state_dict(self.critic_2.state_dict())
+        # bert和classifier配置不同的lr
+        self.critic_1_optimizer, self.critic_2_optimizer = self.configure_optimizers()
+
+    def load_config(self, config_path: str = './config/agent.yaml') -> Dict[str, Dict]:
+        """
+        从配置文件加载 YAML 配置
+        :param config_path: 配置文件路径
+        :return: 配置字典
+        """
+        try:
+            with open(config_path, "r") as file:
+                return yaml.safe_load(file)
+        except FileNotFoundError as e:
+            raise FileNotFoundError(f"Configuration file not found: {config_path}")
+        except yaml.YAMLError as e:
+            raise ValueError(f"Error parsing YAML file: {e}")
+
+    def round(self, obs: str, infos: dict = None) -> str:
+        """
+        输入obs，根据obs构建单次查询语句，直接返回结果
+        :param obs: 观测
+        :param infos: 内含可行动作
+        :return: 下一步的action，可以直接用于进行env的step操作
         """
 
-        :param goal: 任务目标
-        """
-        self.model = initialize_model(llm_type)  # 初始化指定的 LLM
-        self.messages = None
-        # 加入系统提示
-        self.get_init_prompt(infos)
-        self.critic = CriticModel()
+        # 从配置文件初始化系统提示
+        system: List[Dict[str, str]] = self.get_init_prompt()
 
-    def round(self, obs: str, reward: float, done: bool, infos: dict = None) -> str:
-        """
-        多轮次交互函数
-        :param obs:
-        :param reward:
-        :param done:
-        :param infos:
-        :return: 下一步的command
-        """
         # 添加用户消息到对话历史
-        self.add_user_message(obs, infos)
+        user_msg: Dict[str, str] = self.add_user_message(obs, infos)
+
+        message: List[Dict[str, str]] = system.append(user_msg)
 
         # 调用模型生成回复
-        '''-----------debug-----------'''
-        # print(self.messages)
-        # print(self.messages[-1])
-        # print('-----------debug-----------')
-        # print(json.dumps(self.messages, indent=4, ensure_ascii=False))
-        # print('-----------debug-----------')
-        '''-----------debug-----------'''
-        answer: Dict[str, str] = self.model.chat(self.messages)
-        # print('-----------answer-----------')
-        print(json.dumps(answer, indent=4))
-        # print('-----------answer-----------')
-        # 打印模型的回答
-        # print("Generated Text:", answer)
+        answer: Dict[str, str] = self.model.chat(message)
 
-        # 添加助手消息到对话历史
-        self.messages.append({"role": "assistant", "content": json.dumps(answer)})
-
-        # 提取生成的命令
-        # command: Dict[str, str] = get_command(answer)
         return answer["action"]
 
-        # self.prompt = add_user_message(self.prompt, obs, infos, self.first_step)
-        # if self.first_step:
-        #     self.first_step = False
-        # answer: Dict[str, str] = self.model.chat(self.prompt)
-        # generated_text: str = answer['generated_text']
-        # # 将llm的回答也加入到prompt中
-        # self.prompt = generated_text
-        # print(self.prompt)
-        # # print(self.prompt)
-        # command: Dict[str, str] = get_command(generated_text)
-        # return command['action']
-
-    def parse_action(self, command: str) -> str:
-        """
-        根据command返回对应的指令，目标是转化为可行动作
-        :param action:
-        :return:
-        """
-        return command
-
-    def reset(self) -> None:
-        """
-        重置对话历史
-        """
-        self.get_init_prompt({})  # 重置为初始化提示
-
-    def get_history(self) -> List[Dict[str, str]]:
-        """
-        获取完整对话历史
-        :return: 历史记录列表
-        """
-        return self.messages
-
-    def get_init_prompt(self, infos: Dict[str, Any]) -> None:
+    def get_init_prompt(self) -> List[Dict[str, Any]]:
         # todo: 这里应该把Goal加进来
         prompt_path = './config/prompt_short.yaml'
         with open(prompt_path, 'r', encoding='utf-8') as file:
-            self.messages = yaml.safe_load(file)
+            messages = yaml.safe_load(file)
+            return messages
 
-    #     self.messages = [{"role": "system", "content": """You're a helpful game expert. Your task is to play a game based on natural language text.
-    # Please first generate a sub_goal based on the current state of the environment, and then give an action.
-    # Your actions must be in the admissible commands."""}]
-
-    def add_user_message(self, obs: str, infos: Dict[str, List[str]]) -> None:
+    def add_user_message(self, obs: str, infos: Dict[str, List[str]]) -> Dict[str, str]:
         """
         将用户消息添加到对话历史，并拼接任务相关信息
-        :param messages: 当前对话历史
         :param user_msg: 用户输入
         :param infos: {'admissible_commands': ['command1', 'command2']}
-        :return: 更新后的 messages 列表
+        :return: 用户对话
         """
         content = {"State": obs, "Admissible commands": infos.get('admissible_commands', [])}
-        self.messages.append({"role": "user", "content": json.dumps(content)})
+        return {"role": "user", "content": json.dumps(content)}
+
+    def configure_optimizers(self):
+        """
+        配置Critic的优化器，分别对BERT部分和分类器部分设置不同学习率。
+        """
+        # 分别提取分类器和BERT的参数
+        critic_1_classifier_params = list(self.critic_1.classifier.parameters())
+        critic_1_base_params = list(self.critic_1.bert_encoder.parameters())
+
+        critic_2_classifier_params = list(self.critic_2.classifier.parameters())
+        critic_2_base_params = list(self.critic_2.bert_encoder.parameters())
+
+        # 定义优化器（可以使用Adam或AdamW）
+        optimizer_critic_1 = torch.optim.Adam([
+            {'params': critic_1_classifier_params, 'lr': self.config.get("classifier_lr", 1e-3)},
+            {'params': critic_1_base_params, 'lr': self.config.get("bert_lr", 1e-5)}
+        ], weight_decay=self.config.get("weight_decay", 0.01))
+
+        optimizer_critic_2 = torch.optim.Adam([
+            {'params': critic_2_classifier_params, 'lr': self.config.get("classifier_lr", 1e-3)},
+            {'params': critic_2_base_params, 'lr': self.config.get("bert_lr", 1e-5)}
+        ], weight_decay=self.config.get("weight_decay", 0.01))
+
+        return [optimizer_critic_1, optimizer_critic_2]
+
+    def calc_target(self, rewards, next_states, dones):  # 计算目标Q值
+        """
+
+
+        :param rewards:  当前步奖励
+        :param next_states:
+        :param dones:
+        :return:
+        """
+        next_actions = self.get_next_action(next_states)
+        q1_value = self.target_critic_1(next_states, next_actions)
+        q2_value = self.target_critic_2(next_states, next_actions)
+        next_value = torch.min(q1_value, q2_value)
+        td_target = rewards + self.gamma * next_value * (1 - dones)
+        return td_target
+
+    def get_next_action(self, next_states: List[Any]) -> List[Any]:
+        # todo：待修改
+        next_actions = []
+        for states in next_states:
+            self.round()
+
+
+if __name__ == '__main__':
+    agent = AC_Agent()

@@ -1,0 +1,65 @@
+[
+    {
+        "state": "\nThe dinner is almost ready! It's only missing a grilled bell pepper.\n\n-= Bedroom =-\nYou are in a bedroom. A typical kind of place.\n\nYou rest your hand against a wall, but you miss the wall and fall onto a chest drawer. You make out a closed antique trunk. You hear a noise behind you and spin around, but you can't see anything other than a king-size bed. What a coincidence, weren't you just thinking about a king-size bed? The king-size bed is normal. Looks like someone's already been here and taken everything off it, though. Oh! Why couldn't there just be stuff on it?\n\nThere is a closed wooden door leading east.\n\n>                                                                                                                                -= Bedroom =-0/1",
+        "action": "open chest drawer",
+        "reward": 0,
+        "next_state": "\nYou open the chest drawer, revealing an old key.\n\n\n>                                                                                                                                -= Bedroom =-0/2",
+        "done": false
+    },
+    {
+        "state": "\nYou open the chest drawer, revealing an old key.\n\n\n>                                                                                                                                -= Bedroom =-0/2",
+        "action": "take old key from chest drawer",
+        "reward": 0,
+        "next_state": "\nYou take the old key from the chest drawer.\n\n\n\n>                                                                                                                                -= Bedroom =-0/3",
+        "done": false
+    },
+    {
+        "state": "\nYou take the old key from the chest drawer.\n\n\n\n>                                                                                                                                -= Bedroom =-0/3",
+        "action": "unlock wooden door with old key",
+        "reward": 0,
+        "next_state": "\nYou unlock wooden door.\n\n\n>                                                                                                                                -= Bedroom =-0/4",
+        "done": false
+    },
+    {
+        "state": "\nYou unlock wooden door.\n\n\n>                                                                                                                                -= Bedroom =-0/4",
+        "action": "open wooden door",
+        "reward": 0,
+        "next_state": "\nYou open wooden door.\n\n\n>                                                                                                                                -= Bedroom =-0/5",
+        "done": false
+    },
+    {
+        "state": "\nYou open wooden door.\n\n\n>                                                                                                                                -= Bedroom =-0/5",
+        "action": "go east",
+        "reward": 1,
+        "next_state": "\n\n-= Kitchen =-\nYou are in a kitchen. A standard one.\n\nYou see a refrigerator. What's that over there? It looks like it's a counter. The counter is usual. Looks like someone's already been here and taken everything off it, though. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. But the thing hasn't got anything on it. Hopefully this doesn't make you too upset. You scan the room, seeing a kitchen island. I guess it's true what they say, if you're looking for a kitchen island, go to TextWorld. The kitchen island is standard. On the kitchen island you can see a note.\n\nThere is a closed screen door leading east. There is an open wooden door leading west. You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going south.\n\n\n\nYour score has just gone up by one point.\n\n>                                                                                                                                -= Kitchen =-1/6",
+        "done": false
+    },
+    {
+        "state": "\n\n-= Kitchen =-\nYou are in a kitchen. A standard one.\n\nYou see a refrigerator. What's that over there? It looks like it's a counter. The counter is usual. Looks like someone's already been here and taken everything off it, though. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. But the thing hasn't got anything on it. Hopefully this doesn't make you too upset. You scan the room, seeing a kitchen island. I guess it's true what they say, if you're looking for a kitchen island, go to TextWorld. The kitchen island is standard. On the kitchen island you can see a note.\n\nThere is a closed screen door leading east. There is an open wooden door leading west. You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going south.\n\n\n\nYour score has just gone up by one point.\n\n>                                                                                                                                -= Kitchen =-1/6",
+        "action": "go south",
+        "reward": 1,
+        "next_state": "\n\n-= Living Room =-\nI am sorry to announce that you are now in the living room.\n\nYou can see a couch. You see a bell pepper on the couch. You make out a low table. You see a remote on the low table. You see a tv. The tv is ordinary. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!\n\nThere is an exit to the north. Don't worry, it is unblocked.\n\n\n\n>                                                                                                                                -= Living Room =-1/7",
+        "done": false
+    },
+    {
+        "state": "\n\n-= Living Room =-\nI am sorry to announce that you are now in the living room.\n\nYou can see a couch. You see a bell pepper on the couch. You make out a low table. You see a remote on the low table. You see a tv. The tv is ordinary. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!\n\nThere is an exit to the north. Don't worry, it is unblocked.\n\n\n\n>                                                                                                                                -= Living Room =-1/7",
+        "action": "take bell pepper from couch",
+        "reward": 2,
+        "next_state": "\nYou take the bell pepper from the couch.\n\n\n\nYour score has just gone up by one point.\n\n>                                                                                                                                -= Living Room =-2/8",
+        "done": false
+    },
+    {
+        "state": "\nYou take the bell pepper from the couch.\n\n\n\nYour score has just gone up by one point.\n\n>                                                                                                                                -= Living Room =-2/8",
+        "action": "go north",
+        "reward": 2,
+        "next_state": "\n\n-= Kitchen =-\nYou are in a kitchen. A standard one.\n\nYou see a refrigerator. What's that over there? It looks like it's a counter. The counter is usual. Looks like someone's already been here and taken everything off it, though. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. But the thing hasn't got anything on it. Hopefully this doesn't make you too upset. You scan the room, seeing a kitchen island. I guess it's true what they say, if you're looking for a kitchen island, go to TextWorld. The kitchen island is standard. On the kitchen island you can see a note.\n\nThere is a closed screen door leading east. There is an open wooden door leading west. You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going south.\n\n\n\n>                                                                                                                                -= Kitchen =-2/9",
+        "done": false
+    },
+    {
+        "state": "\n\n-= Kitchen =-\nYou are in a kitchen. A standard one.\n\nYou see a refrigerator. What's that over there? It looks like it's a counter. The counter is usual. Looks like someone's already been here and taken everything off it, though. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. But the thing hasn't got anything on it. Hopefully this doesn't make you too upset. You scan the room, seeing a kitchen island. I guess it's true what they say, if you're looking for a kitchen island, go to TextWorld. The kitchen island is standard. On the kitchen island you can see a note.\n\nThere is a closed screen door leading east. There is an open wooden door leading west. You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going south.\n\n\n\n>                                                                                                                                -= Kitchen =-2/9",
+        "action": "put bell pepper on stove",
+        "reward": 3,
+        "next_state": "\nYou put the bell pepper on the stove.\n\n\nYour score has just gone up by one point.\n\n\n                                                       *** The End ***\n\nYou scored 3 out of a possible 3, in 10 turns.\n\n\nWould you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?\n>                                                                                                                                 -= Kitchen =-2/9",
+        "done": true
+    }
+]

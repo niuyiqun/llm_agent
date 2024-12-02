@@ -1,0 +1,58 @@
+[
+    {
+        "state": "\nThe dinner is almost ready! It's only missing a grilled lettuce.\n\n-= Bedroom =-\nYou are in a bedroom. A typical kind of place.\n\nYou see a chest drawer. You make out a closed antique trunk. You make out a king-size bed. But oh no! there's nothing on this piece of junk. It would have been so cool if there was stuff on the king-size bed.\n\nThere is a closed wooden door leading east.\n\n>                                                                                                                                -= Bedroom =-0/1",
+        "action": "open chest drawer",
+        "reward": 0,
+        "next_state": "\nYou open the chest drawer, revealing an old key.\n\n\n>                                                                                                                                -= Bedroom =-0/2",
+        "done": false
+    },
+    {
+        "state": "\nYou open the chest drawer, revealing an old key.\n\n\n>                                                                                                                                -= Bedroom =-0/2",
+        "action": "take old key from chest drawer",
+        "reward": 0,
+        "next_state": "\nYou take the old key from the chest drawer.\n\n\n\n>                                                                                                                                -= Bedroom =-0/3",
+        "done": false
+    },
+    {
+        "state": "\nYou take the old key from the chest drawer.\n\n\n\n>                                                                                                                                -= Bedroom =-0/3",
+        "action": "unlock wooden door with old key",
+        "reward": 0,
+        "next_state": "\nYou unlock wooden door.\n\n\n>                                                                                                                                -= Bedroom =-0/4",
+        "done": false
+    },
+    {
+        "state": "\nYou unlock wooden door.\n\n\n>                                                                                                                                -= Bedroom =-0/4",
+        "action": "open wooden door",
+        "reward": 0,
+        "next_state": "\nYou open wooden door.\n\n\n>                                                                                                                                -= Bedroom =-0/5",
+        "done": false
+    },
+    {
+        "state": "\nYou open wooden door.\n\n\n>                                                                                                                                -= Bedroom =-0/5",
+        "action": "go east",
+        "reward": 1,
+        "next_state": "\n\n-= Kitchen =-\nYou arrive in a kitchen. A typical kind of place. Let's see what's in here.\n\nHey, want to see a refrigerator? Look over there, a refrigerator. What's that over there? It looks like it's a counter. Now why would someone leave that there? But oh no! there's nothing on this piece of junk. Oh, great. Here's a stove. Why don't you take a picture of it, it'll last longer! The stove is standard. But the thing hasn't got anything on it. You make out a kitchen island. The kitchen island is ordinary. On the kitchen island you make out a note.\n\nThere is a closed screen door leading east. There is an open wooden door leading west. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded.\n\n\n\nYour score has just gone up by one point.\n\n>                                                                                                                                -= Kitchen =-1/6",
+        "done": false
+    },
+    {
+        "state": "\n\n-= Kitchen =-\nYou arrive in a kitchen. A typical kind of place. Let's see what's in here.\n\nHey, want to see a refrigerator? Look over there, a refrigerator. What's that over there? It looks like it's a counter. Now why would someone leave that there? But oh no! there's nothing on this piece of junk. Oh, great. Here's a stove. Why don't you take a picture of it, it'll last longer! The stove is standard. But the thing hasn't got anything on it. You make out a kitchen island. The kitchen island is ordinary. On the kitchen island you make out a note.\n\nThere is a closed screen door leading east. There is an open wooden door leading west. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded.\n\n\n\nYour score has just gone up by one point.\n\n>                                                                                                                                -= Kitchen =-1/6",
+        "action": "open refrigerator",
+        "reward": 1,
+        "next_state": "\nYou open the refrigerator, revealing an apple and a lettuce.\n\n\n>                                                                                                                                -= Kitchen =-1/7",
+        "done": false
+    },
+    {
+        "state": "\nYou open the refrigerator, revealing an apple and a lettuce.\n\n\n>                                                                                                                                -= Kitchen =-1/7",
+        "action": "take lettuce from refrigerator",
+        "reward": 2,
+        "next_state": "\nYou take the lettuce from the refrigerator.\n\n\n\nYour score has just gone up by one point.\n\n>                                                                                                                                -= Kitchen =-2/8",
+        "done": false
+    },
+    {
+        "state": "\nYou take the lettuce from the refrigerator.\n\n\n\nYour score has just gone up by one point.\n\n>                                                                                                                                -= Kitchen =-2/8",
+        "action": "put lettuce on stove",
+        "reward": 3,
+        "next_state": "\nYou put the lettuce on the stove.\n\n\nYour score has just gone up by one point.\n\n\n                                                       *** The End ***\n\nYou scored 3 out of a possible 3, in 9 turns.\n\n\nWould you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?\n>                                                                                                                                 -= Kitchen =-2/8",
+        "done": true
+    }
+]

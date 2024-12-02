@@ -1,0 +1,3 @@
+game_file_path: "./data/simple/mock_game/"
+walkthroughs_file_path: "./data/simple/walkthroughs"
+oracle_file_path: "./data/simple/oracle"
