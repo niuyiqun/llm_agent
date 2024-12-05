@@ -43,7 +43,7 @@ class Agent:
         # 加入系统提示
         self.get_init_prompt(infos)
 
-    def round(self, obs: str, reward: float, done: bool, infos: dict = None) -> str:
+    def round(self, obs: str, infos: dict = None) -> str:
         """
         多轮次交互函数
         :param obs:
@@ -65,7 +65,7 @@ class Agent:
         '''-----------debug-----------'''
         answer: Dict[str, str] = self.model.chat(self.messages)
         # print('-----------answer-----------')
-        print(json.dumps(answer, indent=4))
+        # print(json.dumps(answer, indent=4))
         # print('-----------answer-----------')
         # 打印模型的回答
         # print("Generated Text:", answer)

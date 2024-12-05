@@ -1,0 +1,34 @@
+[
+    {
+        "state": "The dinner is almost ready! It's only missing a grilled apple. -= Bedroom =- Well, here we are in a bedroom. You see a closed chest drawer. You see a closed antique trunk in the room. You can see a king-size bed. But the thing is empty, unfortunately. Hopefully, this discovery doesn't ruin your TextWorld experience! There is a closed wooden door leading east. > -= Bedroom =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine wooden door",
+                "inventory",
+                "look",
+                "open antique trunk",
+                "open chest drawer"
+            ]
+        },
+        "action": "examine chest drawer",
+        "reward": 0,
+        "next_state": "The chest drawer looks strong, and impossible to crack. You can't see inside it because the lid's in your way. > -= Bedroom =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine wooden door",
+                "inventory",
+                "look",
+                "open antique trunk",
+                "open chest drawer"
+            ]
+        },
+        "done": false,
+        "next_action": null
+    }
+]

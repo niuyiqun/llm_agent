@@ -45,4 +45,4 @@
     
     
     
-    请严格按照示例格式输出规范的JSON格式。确保动作必须从给定列表中选择并且输出完全。只输出给我json格式的内容，不要返回其他任何无关的内容
+    Follow the example format exactly to output the JSON format of the specification. Make sure that the action must be selected from the given list and that the output is complete. Only output to me in json format, and do not return anything else irrelevant
