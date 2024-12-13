@@ -27,6 +27,7 @@ import os
 import torch
 import yaml
 from utils import construct_replay_buffer
+import matplotlib.pyplot as plt
 
 import time  # 引入时间模块
 
@@ -228,12 +229,12 @@ class AC_Agent:
         # print("[DEBUG] Critic 2 base params:", [type(p) for p in critic_2_base_params])
 
         # 定义优化器（可以使用Adam或AdamW）
-        optimizer_critic_1 = torch.optim.Adam([
+        optimizer_critic_1 = torch.optim.AdamW([
             {'params': critic_1_classifier_params, 'lr': self.config.get("classifier_lr", 1e-3)},
             {'params': critic_1_base_params, 'lr': self.config.get("bert_lr", 1e-5)}
         ], weight_decay=self.config.get("weight_decay", 0.01))
 
-        optimizer_critic_2 = torch.optim.Adam([
+        optimizer_critic_2 = torch.optim.AdamW([
             {'params': critic_2_classifier_params, 'lr': self.config.get("classifier_lr", 1e-3)},
             {'params': critic_2_base_params, 'lr': self.config.get("bert_lr", 1e-5)}
         ], weight_decay=self.config.get("weight_decay", 0.01))
@@ -293,8 +294,8 @@ class AC_Agent:
         rewards = torch.tensor(transition_dict['rewards'], dtype=torch.float).unsqueeze(-1).to(self.device)
         next_states = transition_dict['next_states']  # 文本
         dones = torch.tensor(transition_dict['dones'], dtype=torch.float).unsqueeze(-1).to(self.device)
-        infos = transition_dict['infos']  # 文本
-        next_infos = transition_dict['next_infos']  # 文本相关的附加信息
+        # infos = transition_dict['infos']  # 文本
+        # next_infos = transition_dict['next_infos']  # 文本相关的附加信息
         next_actions = transition_dict['next_actions']  # 文本
 
         # 使用 get_next_action 计算目标动作 next_actions
@@ -461,6 +462,10 @@ def main():
     # 确保模型保存路径存在
     os.makedirs(model_save_path, exist_ok=True)
 
+    # 保存模型信息
+    final_model_path = os.path.join(model_save_path, f'final_model_{timestamp}.pth')
+    save_model_info(agent, replay_buffer.size(), final_model_path)
+
     # 开始训练
     print(f"Starting training for {num_epochs} epochs with batch size {batch_size}.")
     critic_losses = []
@@ -481,19 +486,19 @@ def main():
             pbar.update(1)
 
             # 定期保存模型
-            if epoch % checkpoint_interval == 0:
-                checkpoint_path = os.path.join(model_save_path, f'checkpoint_{timestamp}_epoch_{epoch}.pth')
-                torch.save({
-                    'critic_1_state_dict': agent.critic_1.state_dict(),
-                    'critic_2_state_dict': agent.critic_2.state_dict(),
-                    'target_critic_1_state_dict': agent.target_critic_1.state_dict(),
-                    'target_critic_2_state_dict': agent.target_critic_2.state_dict(),
-                    'critic_1_optimizer_state_dict': agent.critic_1_optimizer.state_dict(),
-                    'critic_2_optimizer_state_dict': agent.critic_2_optimizer.state_dict(),
-                    'epoch': epoch,
-                    'critic_losses': critic_losses
-                }, checkpoint_path)
-                print(f"Checkpoint saved at: {checkpoint_path}")
+            # if epoch % checkpoint_interval == 0:
+            #     checkpoint_path = os.path.join(model_save_path, f'checkpoint_{timestamp}_epoch_{epoch}.pth')
+            #     torch.save({
+            #         'critic_1_state_dict': agent.critic_1.state_dict(),
+            #         'critic_2_state_dict': agent.critic_2.state_dict(),
+            #         'target_critic_1_state_dict': agent.target_critic_1.state_dict(),
+            #         'target_critic_2_state_dict': agent.target_critic_2.state_dict(),
+            #         'critic_1_optimizer_state_dict': agent.critic_1_optimizer.state_dict(),
+            #         'critic_2_optimizer_state_dict': agent.critic_2_optimizer.state_dict(),
+            #         'epoch': epoch,
+            #         'critic_losses': critic_losses
+            #     }, checkpoint_path)
+            #     print(f"Checkpoint saved at: {checkpoint_path}")
 
     # 保存最终模型
     final_model_path = os.path.join(model_save_path, f'final_model_{timestamp}.pth')
@@ -514,10 +519,47 @@ def main():
     plot_critic_losses(critic_losses, loss_curve_path)
 
 
-import matplotlib.pyplot as plt
+def save_model_info(agent, replay_buffer_size, save_path):
+    """
+        保存模型相关信息到文件中。
 
+        Args:
+            agent (AC_Agent): 当前的智能体实例。
+            replay_buffer_size (int): Replay Buffer 的大小。
+            save_path (str): 保存路径。
+        """
+    # 加载配置文件
+    try:
+        with open('config/train.yaml', 'r', encoding='utf-8') as train_file:
+            train_config = yaml.safe_load(train_file)
+    except Exception as e:
+        print("[ERROR] Failed to load train.yaml:", e)
+        train_config = {}
 
+    try:
+        with open('config/agent.yaml', 'r', encoding='utf-8') as agent_file:
+            agent_config = yaml.safe_load(agent_file)
+    except Exception as e:
+        print("[ERROR] Failed to load agent.yaml:", e)
+        agent_config = {}
 
+    # 构建信息字典
+    model_info = {
+        "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+        "train_config": train_config,
+        "agent_config": agent_config,
+        "replay_buffer_size": replay_buffer_size,
+        "device": agent.device,
+        "critic_1_params": sum(p.numel() for p in agent.critic_1.parameters()),
+        "critic_2_params": sum(p.numel() for p in agent.critic_2.parameters()),
+        "optimizer_critic_1": str(agent.critic_1_optimizer),
+        "optimizer_critic_2": str(agent.critic_2_optimizer)
+    }
+    # 保存到文件
+    info_path = save_path.replace(".pth", "_info.json")
+    with open(info_path, "w", encoding="utf-8") as f:
+        json.dump(model_info, f, indent=4)
+    print(f"Model info saved at: {info_path}")
 
 
 if __name__ == "__main__":
@@ -526,51 +568,4 @@ if __name__ == "__main__":
     sys.stdout.reconfigure(line_buffering=True)
     main()
 
-    # 加载配置文件
-    # with open('config/train.yaml', 'r', encoding='utf-8') as file:
-    #     config = yaml.safe_load(file)
-    #
-    # # 读取路径和超参数
-    # oracle_file_path = config.get('oracle_file_path')
-    # model_save_path = config.get('model_save_path', './checkpoints')
-    # num_epochs = config.get('num_epochs', 20)
-    # batch_size = config.get('batch_size', 16)
-    # checkpoint_interval = config.get('checkpoint_interval', 10)
-    # device = config.get('device', 'cuda' if torch.cuda.is_available() else 'cpu')
-    #
-    # # 构建 Replay Buffer
-    # print("Constructing Replay Buffer...")
-    # replay_buffer = construct_replay_buffer(oracle_file_path)
-    # print(f"Replay Buffer size: {replay_buffer.size()}")
-    #
-    # # 初始化 Agent
-    # print("Initializing Agent...")
-    # agent = AC_Agent(config_path='./config/agent.yaml')
-    # agent.device = device
-    # agent.critic_1.to(device)
-    # agent.critic_2.to(device)
-    # agent.target_critic_1.to(device)
-    # agent.target_critic_2.to(device)
-    #
-    # # 确保模型保存路径存在
-    # os.makedirs(model_save_path, exist_ok=True)
-    #
-    # # 开始训练
-    # print(f"Starting training for {num_epochs} epochs with batch size {batch_size}.")
-    # critic_losses = []
-    # states, actions, rewards, next_states, dones, infos, next_infos = replay_buffer.sample(batch_size)
-    # transition_dict = {
-    #     'states': states,
-    #     'actions': actions,
-    #     'next_states': next_states,
-    #     'rewards': rewards,
-    #     'dones': dones,
-    #     'infos': infos,
-    #     'infos': infos,
-    #     'next_infos': next_infos
-    # }
-    #
-    # # print(transition_dict)
-    #
-    # # 调用 agent 的更新方法
-    # losses = agent.update(transition_dict)
+

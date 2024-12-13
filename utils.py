@@ -91,10 +91,12 @@ class ReplayBuffer:
         初始化Replay Buffer。
         """
         self.buffer = []  # 使用列表存储样本
+        self.reward_samples = []  # 奖励大于0的样本
+        self.no_reward_samples = []  # 奖励为0的样本
 
     def add(self, state, action, reward, next_state, done, infos, next_infos, next_actions):
         """
-        添加一条经验到Replay Buffer中。
+        添加一条经验到Replay Buffer中，并动态更新分类的样本。
 
         Args:
             state (str): 当前状态。
@@ -104,21 +106,44 @@ class ReplayBuffer:
             done (bool): 是否为终止状态。
             infos (dict): 当前状态的额外信息（如可执行动作）。
             next_infos (dict): 下一状态的额外信息。
+            next_actions (str): 下一步动作。
         """
-        self.buffer.append((state, action, reward, next_state, done, infos, next_infos, next_actions))
+        transition = (state, action, reward, next_state, done, infos, next_infos, next_actions)
+        self.buffer.append(transition)
+        if reward > 0:
+            self.reward_samples.append(transition)
+        else:
+            self.no_reward_samples.append(transition)
 
-    def sample(self, batch_size):
+    def sample(self, batch_size, reward_sample_ratio=0.5):
         """
-        从Replay Buffer中随机采样一个批次的数据。
+            从Replay Buffer中随机采样一个批次的数据，优先采样有奖励的样本。
 
-        Args:
-            batch_size (int): 采样的批次大小。
+            Args:
+                batch_size (int): 采样的批次大小。
+                reward_sample_ratio (float): 有奖励样本在采样中的比例。
 
-        Returns:
-            tuple: 返回采样的批次数据，包括states, actions, rewards, next_states, dones, infos, next_infos。
+            Returns:
+                tuple: 返回采样的批次数据，包括states, actions, rewards, next_states, dones, infos, next_infos, next_actions。
         """
-        transitions = random.sample(self.buffer, batch_size)
-        states, actions, rewards, next_states, dones, infos, next_infos, next_actions = zip(*transitions)
+        # 确保有奖励样本数量足够，否则调整比例
+        reward_sample_count = int(batch_size * reward_sample_ratio)
+        reward_sample_count = min(len(self.reward_samples), reward_sample_count)
+        no_reward_sample_count = batch_size - reward_sample_count
+
+        # 从两组样本中分别采样
+        sampled_reward = random.sample(self.reward_samples, reward_sample_count) if self.reward_samples else []
+        sampled_no_reward = random.sample(self.no_reward_samples,
+                                          no_reward_sample_count) if self.no_reward_samples else []
+
+        # 合并采样的结果
+        sampled_transitions = sampled_reward + sampled_no_reward
+        random.shuffle(sampled_transitions)  # 打乱顺序
+        # print(f"[DEBUG] Reward samples: {len(self.reward_samples)}, No reward samples: {len(self.no_reward_samples)}")
+        # print(f"[DEBUG] Sampled reward count: {reward_sample_count}, Sampled no reward count: {no_reward_sample_count}")
+        # print(f"[DEBUG] Total sampled transitions: {len(sampled_transitions)}")
+
+        states, actions, rewards, next_states, dones, infos, next_infos, next_actions = zip(*sampled_transitions)
         return (
             np.array(states),  # 状态
             list(actions),  # 动作
@@ -185,37 +210,38 @@ def construct_replay_buffer(oracle_file_path):
 
 
 if __name__ == '__main__':
-    import yaml
-    import json
-
-    with open('config/train.yaml', 'r', encoding='utf-8') as file:
-        data = yaml.safe_load(file)
-
-    # get_prompt_admissible_actions()
-
-    oracle_file_path = data.get('oracle_file_path')
-    replay_buffer = construct_replay_buffer(oracle_file_path)
-
-    # 查看 Replay Buffer 大小
-    print(f"Replay Buffer size: {replay_buffer.size()}")
-
-    # 从 Replay Buffer 中随机采样
-    batch_size = 10
-    states, actions, rewards, next_states, dones, infos, next_infos, next_actions = replay_buffer.sample(batch_size)
-
-    # print("Sampled states:", states)
-    # print('------------------------------------------------------------------------------------------------')
-    # print("Sampled actions:", actions)
-    # print('------------------------------------------------------------------------------------------------')
-    print("Sampled dones:", dones)
-    print(type(dones[0]))
-    print('------------------------------------------------------------------------------------------------')
-    # print("Sampled next_states:", next_states)
-    # print('------------------------------------------------------------------------------------------------')
+    pass
+    # import yaml
+    # import json
+    #
+    # with open('config/train.yaml', 'r', encoding='utf-8') as file:
+    #     data = yaml.safe_load(file)
+    #
+    # # get_prompt_admissible_actions()
+    #
+    # oracle_file_path = data.get('oracle_file_path')
+    # replay_buffer = construct_replay_buffer(oracle_file_path)
+    #
+    # # 查看 Replay Buffer 大小
+    # print(f"Replay Buffer size: {replay_buffer.size()}")
+    #
+    # # 从 Replay Buffer 中随机采样
+    # batch_size = 10
+    # states, actions, rewards, next_states, dones, infos, next_infos, next_actions = replay_buffer.sample(batch_size)
+    #
+    # # print("Sampled states:", states)
+    # # print('------------------------------------------------------------------------------------------------')
+    # # print("Sampled actions:", actions)
+    # # print('------------------------------------------------------------------------------------------------')
     # print("Sampled dones:", dones)
+    # print(type(dones[0]))
     # print('------------------------------------------------------------------------------------------------')
-    # print("Sampled infos:", infos)
-    # print('------------------------------------------------------------------------------------------------')
-    # print("Sampled next_infos:", next_infos)
-    # print('------------------------------------------------------------------------------------------------')
+    # # print("Sampled next_states:", next_states)
+    # # print('------------------------------------------------------------------------------------------------')
+    # # print("Sampled dones:", dones)
+    # # print('------------------------------------------------------------------------------------------------')
+    # # print("Sampled infos:", infos)
+    # # print('------------------------------------------------------------------------------------------------')
+    # # print("Sampled next_infos:", next_infos)
+    # # print('------------------------------------------------------------------------------------------------')
     # print("Sampled next_actions:", next_actions)
