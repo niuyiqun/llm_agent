@@ -1,0 +1,422 @@
+[
+    {
+        "state": "The dinner is almost ready! It's only missing a grilled tomato plant. -= Bedroom =- You arrive in a bedroom. An usual one. You begin to take stock of what's in the room. Oh, great. Here's a chest drawer. There's something strange about this thing being here, but you don't have time to worry about that now. What's that over there? It looks like it's an antique trunk. You can't wait to tell the folks at home about this! You see a king-size bed. The king-size bed is usual. However, the king-size bed, like an empty king-size bed, has nothing on it. There is a closed wooden door leading east. > -= Bedroom =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine wooden door",
+                "inventory",
+                "look",
+                "open antique trunk",
+                "open chest drawer"
+            ]
+        },
+        "action": "open antique trunk",
+        "reward": 1,
+        "next_state": "You open the antique trunk, revealing an old key. > -= Bedroom =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "close antique trunk",
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine old key",
+                "examine wooden door",
+                "inventory",
+                "look",
+                "open chest drawer",
+                "take old key from antique trunk"
+            ]
+        },
+        "done": false,
+        "next_action": "take old key from antique trunk"
+    },
+    {
+        "state": "You open the antique trunk, revealing an old key. > -= Bedroom =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "close antique trunk",
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine old key",
+                "examine wooden door",
+                "inventory",
+                "look",
+                "open chest drawer",
+                "take old key from antique trunk"
+            ]
+        },
+        "action": "take old key from antique trunk",
+        "reward": 1,
+        "next_state": "You take the old key from the antique trunk. > -= Bedroom =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "close antique trunk",
+                "drop old key",
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine old key",
+                "examine wooden door",
+                "insert old key into antique trunk",
+                "inventory",
+                "look",
+                "open chest drawer",
+                "put old key on king-size bed",
+                "unlock wooden door with old key"
+            ]
+        },
+        "done": false,
+        "next_action": "unlock wooden door with old key"
+    },
+    {
+        "state": "You take the old key from the antique trunk. > -= Bedroom =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "close antique trunk",
+                "drop old key",
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine old key",
+                "examine wooden door",
+                "insert old key into antique trunk",
+                "inventory",
+                "look",
+                "open chest drawer",
+                "put old key on king-size bed",
+                "unlock wooden door with old key"
+            ]
+        },
+        "action": "unlock wooden door with old key",
+        "reward": 1,
+        "next_state": "You unlock wooden door. > -= Bedroom =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "close antique trunk",
+                "drop old key",
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine old key",
+                "examine wooden door",
+                "insert old key into antique trunk",
+                "inventory",
+                "lock wooden door with old key",
+                "look",
+                "open chest drawer",
+                "open wooden door",
+                "put old key on king-size bed"
+            ]
+        },
+        "done": false,
+        "next_action": "open wooden door"
+    },
+    {
+        "state": "You unlock wooden door. > -= Bedroom =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "close antique trunk",
+                "drop old key",
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine old key",
+                "examine wooden door",
+                "insert old key into antique trunk",
+                "inventory",
+                "lock wooden door with old key",
+                "look",
+                "open chest drawer",
+                "open wooden door",
+                "put old key on king-size bed"
+            ]
+        },
+        "action": "open wooden door",
+        "reward": 1,
+        "next_state": "You open wooden door. > -= Bedroom =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "close antique trunk",
+                "close wooden door",
+                "drop old key",
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine old key",
+                "examine wooden door",
+                "go east",
+                "insert old key into antique trunk",
+                "inventory",
+                "look",
+                "open chest drawer",
+                "put old key on king-size bed"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "You open wooden door. > -= Bedroom =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "close antique trunk",
+                "close wooden door",
+                "drop old key",
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine old key",
+                "examine wooden door",
+                "go east",
+                "insert old key into antique trunk",
+                "inventory",
+                "look",
+                "open chest drawer",
+                "put old key on king-size bed"
+            ]
+        },
+        "action": "go east",
+        "reward": 1,
+        "next_state": "-= Kitchen =- You arrive in a kitchen. An ordinary kind of place. You make out a closed refrigerator. You make out a counter. The counter appears to be empty. You make out a stove. But there isn't a thing on it. Oh! Why couldn't there just be stuff on it? You make out a kitchen island. The kitchen island is standard. On the kitchen island you make out a note. There is a closed screen door leading east. There is an open wooden door leading west. There is an unguarded exit to the north. You don't like doors? Why not try going south, that entranceway is unguarded. Your score has just gone up by one point. > -= Kitchen =-1/6",
+        "next_infos": {
+            "admissible_commands": [
+                "close wooden door",
+                "drop old key",
+                "examine counter",
+                "examine kitchen island",
+                "examine note",
+                "examine old key",
+                "examine refrigerator",
+                "examine screen door",
+                "examine stove",
+                "examine wooden door",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "open refrigerator",
+                "open screen door",
+                "put old key on counter",
+                "put old key on kitchen island",
+                "put old key on stove",
+                "take note from kitchen island"
+            ]
+        },
+        "done": false,
+        "next_action": "open refrigerator"
+    },
+    {
+        "state": "-= Kitchen =- You arrive in a kitchen. An ordinary kind of place. You make out a closed refrigerator. You make out a counter. The counter appears to be empty. You make out a stove. But there isn't a thing on it. Oh! Why couldn't there just be stuff on it? You make out a kitchen island. The kitchen island is standard. On the kitchen island you make out a note. There is a closed screen door leading east. There is an open wooden door leading west. There is an unguarded exit to the north. You don't like doors? Why not try going south, that entranceway is unguarded. Your score has just gone up by one point. > -= Kitchen =-1/6",
+        "infos": {
+            "admissible_commands": [
+                "close wooden door",
+                "drop old key",
+                "examine counter",
+                "examine kitchen island",
+                "examine note",
+                "examine old key",
+                "examine refrigerator",
+                "examine screen door",
+                "examine stove",
+                "examine wooden door",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "open refrigerator",
+                "open screen door",
+                "put old key on counter",
+                "put old key on kitchen island",
+                "put old key on stove",
+                "take note from kitchen island"
+            ]
+        },
+        "action": "open refrigerator",
+        "reward": 1,
+        "next_state": "You open the refrigerator, revealing a tomato plant and a bell pepper. > -= Kitchen =-1/7",
+        "next_infos": {
+            "admissible_commands": [
+                "close refrigerator",
+                "close wooden door",
+                "drop old key",
+                "examine bell pepper",
+                "examine counter",
+                "examine kitchen island",
+                "examine note",
+                "examine old key",
+                "examine refrigerator",
+                "examine screen door",
+                "examine stove",
+                "examine tomato plant",
+                "examine wooden door",
+                "go north",
+                "go south",
+                "go west",
+                "insert old key into refrigerator",
+                "inventory",
+                "look",
+                "open screen door",
+                "put old key on counter",
+                "put old key on kitchen island",
+                "put old key on stove",
+                "take bell pepper from refrigerator",
+                "take note from kitchen island",
+                "take tomato plant from refrigerator"
+            ]
+        },
+        "done": false,
+        "next_action": "take tomato plant from refrigerator"
+    },
+    {
+        "state": "You open the refrigerator, revealing a tomato plant and a bell pepper. > -= Kitchen =-1/7",
+        "infos": {
+            "admissible_commands": [
+                "close refrigerator",
+                "close wooden door",
+                "drop old key",
+                "examine bell pepper",
+                "examine counter",
+                "examine kitchen island",
+                "examine note",
+                "examine old key",
+                "examine refrigerator",
+                "examine screen door",
+                "examine stove",
+                "examine tomato plant",
+                "examine wooden door",
+                "go north",
+                "go south",
+                "go west",
+                "insert old key into refrigerator",
+                "inventory",
+                "look",
+                "open screen door",
+                "put old key on counter",
+                "put old key on kitchen island",
+                "put old key on stove",
+                "take bell pepper from refrigerator",
+                "take note from kitchen island",
+                "take tomato plant from refrigerator"
+            ]
+        },
+        "action": "take tomato plant from refrigerator",
+        "reward": 1,
+        "next_state": "You take the tomato plant from the refrigerator. Your score has just gone up by one point. > -= Kitchen =-2/8",
+        "next_infos": {
+            "admissible_commands": [
+                "close refrigerator",
+                "close wooden door",
+                "drop old key",
+                "drop tomato plant",
+                "eat tomato plant",
+                "examine bell pepper",
+                "examine counter",
+                "examine kitchen island",
+                "examine note",
+                "examine old key",
+                "examine refrigerator",
+                "examine screen door",
+                "examine stove",
+                "examine tomato plant",
+                "examine wooden door",
+                "go north",
+                "go south",
+                "go west",
+                "insert old key into refrigerator",
+                "insert tomato plant into refrigerator",
+                "inventory",
+                "look",
+                "open screen door",
+                "put old key on counter",
+                "put old key on kitchen island",
+                "put old key on stove",
+                "put tomato plant on counter",
+                "put tomato plant on kitchen island",
+                "put tomato plant on stove",
+                "take bell pepper from refrigerator",
+                "take note from kitchen island"
+            ]
+        },
+        "done": false,
+        "next_action": "put tomato plant on stove"
+    },
+    {
+        "state": "You take the tomato plant from the refrigerator. Your score has just gone up by one point. > -= Kitchen =-2/8",
+        "infos": {
+            "admissible_commands": [
+                "close refrigerator",
+                "close wooden door",
+                "drop old key",
+                "drop tomato plant",
+                "eat tomato plant",
+                "examine bell pepper",
+                "examine counter",
+                "examine kitchen island",
+                "examine note",
+                "examine old key",
+                "examine refrigerator",
+                "examine screen door",
+                "examine stove",
+                "examine tomato plant",
+                "examine wooden door",
+                "go north",
+                "go south",
+                "go west",
+                "insert old key into refrigerator",
+                "insert tomato plant into refrigerator",
+                "inventory",
+                "look",
+                "open screen door",
+                "put old key on counter",
+                "put old key on kitchen island",
+                "put old key on stove",
+                "put tomato plant on counter",
+                "put tomato plant on kitchen island",
+                "put tomato plant on stove",
+                "take bell pepper from refrigerator",
+                "take note from kitchen island"
+            ]
+        },
+        "action": "put tomato plant on stove",
+        "reward": 1,
+        "next_state": "You put the tomato plant on the stove. Your score has just gone up by one point. *** The End *** You scored 3 out of a possible 3, in 9 turns. Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command? > -= Kitchen =-2/8",
+        "next_infos": {
+            "admissible_commands": [
+                "close refrigerator",
+                "close wooden door",
+                "drop old key",
+                "examine bell pepper",
+                "examine counter",
+                "examine kitchen island",
+                "examine note",
+                "examine old key",
+                "examine refrigerator",
+                "examine screen door",
+                "examine stove",
+                "examine tomato plant",
+                "examine wooden door",
+                "go north",
+                "go south",
+                "go west",
+                "insert old key into refrigerator",
+                "inventory",
+                "look",
+                "open screen door",
+                "put old key on counter",
+                "put old key on kitchen island",
+                "put old key on stove",
+                "take bell pepper from refrigerator",
+                "take note from kitchen island",
+                "take tomato plant from stove"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

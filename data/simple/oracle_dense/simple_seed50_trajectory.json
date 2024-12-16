@@ -1,0 +1,443 @@
+[
+    {
+        "state": "The dinner is almost ready! It's only missing a grilled half of a bag of chips. -= Bedroom =- Well, here we are in the bedroom. Let's see what's in here. You can see a closed chest drawer. You make out an antique trunk. You see a king-size bed. You shudder, but continue examining the king-size bed. The king-size bed is ordinary. The king-size bed appears to be empty. There is a closed wooden door leading east. > -= Bedroom =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine wooden door",
+                "inventory",
+                "look",
+                "open antique trunk",
+                "open chest drawer"
+            ]
+        },
+        "action": "open chest drawer",
+        "reward": 1,
+        "next_state": "You open the chest drawer, revealing an old key. > -= Bedroom =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "close chest drawer",
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine old key",
+                "examine wooden door",
+                "inventory",
+                "look",
+                "open antique trunk",
+                "take old key from chest drawer"
+            ]
+        },
+        "done": false,
+        "next_action": "take old key from chest drawer"
+    },
+    {
+        "state": "You open the chest drawer, revealing an old key. > -= Bedroom =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "close chest drawer",
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine old key",
+                "examine wooden door",
+                "inventory",
+                "look",
+                "open antique trunk",
+                "take old key from chest drawer"
+            ]
+        },
+        "action": "take old key from chest drawer",
+        "reward": 1,
+        "next_state": "You take the old key from the chest drawer. > -= Bedroom =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "close chest drawer",
+                "drop old key",
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine old key",
+                "examine wooden door",
+                "insert old key into chest drawer",
+                "inventory",
+                "look",
+                "open antique trunk",
+                "put old key on king-size bed",
+                "unlock wooden door with old key"
+            ]
+        },
+        "done": false,
+        "next_action": "unlock wooden door with old key"
+    },
+    {
+        "state": "You take the old key from the chest drawer. > -= Bedroom =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "close chest drawer",
+                "drop old key",
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine old key",
+                "examine wooden door",
+                "insert old key into chest drawer",
+                "inventory",
+                "look",
+                "open antique trunk",
+                "put old key on king-size bed",
+                "unlock wooden door with old key"
+            ]
+        },
+        "action": "unlock wooden door with old key",
+        "reward": 1,
+        "next_state": "You unlock wooden door. > -= Bedroom =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "close chest drawer",
+                "drop old key",
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine old key",
+                "examine wooden door",
+                "insert old key into chest drawer",
+                "inventory",
+                "lock wooden door with old key",
+                "look",
+                "open antique trunk",
+                "open wooden door",
+                "put old key on king-size bed"
+            ]
+        },
+        "done": false,
+        "next_action": "open wooden door"
+    },
+    {
+        "state": "You unlock wooden door. > -= Bedroom =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "close chest drawer",
+                "drop old key",
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine old key",
+                "examine wooden door",
+                "insert old key into chest drawer",
+                "inventory",
+                "lock wooden door with old key",
+                "look",
+                "open antique trunk",
+                "open wooden door",
+                "put old key on king-size bed"
+            ]
+        },
+        "action": "open wooden door",
+        "reward": 1,
+        "next_state": "You open wooden door. > -= Bedroom =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "close chest drawer",
+                "close wooden door",
+                "drop old key",
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine old key",
+                "examine wooden door",
+                "go east",
+                "insert old key into chest drawer",
+                "inventory",
+                "look",
+                "open antique trunk",
+                "put old key on king-size bed"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "You open wooden door. > -= Bedroom =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "close chest drawer",
+                "close wooden door",
+                "drop old key",
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine old key",
+                "examine wooden door",
+                "go east",
+                "insert old key into chest drawer",
+                "inventory",
+                "look",
+                "open antique trunk",
+                "put old key on king-size bed"
+            ]
+        },
+        "action": "go east",
+        "reward": 1,
+        "next_state": "-= Kitchen =- You've just sauntered into a kitchen. You begin looking for stuff. Oh, great. Here's a refrigerator. Wow, isn't TextWorld just the best? You rest your hand against a wall, but you miss the wall and fall onto a counter. What a coincidence, weren't you just thinking about a counter? The counter is usual. Looks like someone's already been here and taken everything off it, though. You can make out a stove. I guess it's true what they say, if you're looking for a stove, go to TextWorld. But the thing hasn't got anything on it. It would have been so cool if there was stuff on the stove. Were you looking for a kitchen island? Because look over there, it's a kitchen island. The kitchen island is typical. On the kitchen island you see a note. There is a closed screen door leading east. There is an open wooden door leading west. There is an unblocked exit to the north. There is an unguarded exit to the south. Your score has just gone up by one point. > -= Kitchen =-1/6",
+        "next_infos": {
+            "admissible_commands": [
+                "close wooden door",
+                "drop old key",
+                "examine counter",
+                "examine kitchen island",
+                "examine note",
+                "examine old key",
+                "examine refrigerator",
+                "examine screen door",
+                "examine stove",
+                "examine wooden door",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "open refrigerator",
+                "open screen door",
+                "put old key on counter",
+                "put old key on kitchen island",
+                "put old key on stove",
+                "take note from kitchen island"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Kitchen =- You've just sauntered into a kitchen. You begin looking for stuff. Oh, great. Here's a refrigerator. Wow, isn't TextWorld just the best? You rest your hand against a wall, but you miss the wall and fall onto a counter. What a coincidence, weren't you just thinking about a counter? The counter is usual. Looks like someone's already been here and taken everything off it, though. You can make out a stove. I guess it's true what they say, if you're looking for a stove, go to TextWorld. But the thing hasn't got anything on it. It would have been so cool if there was stuff on the stove. Were you looking for a kitchen island? Because look over there, it's a kitchen island. The kitchen island is typical. On the kitchen island you see a note. There is a closed screen door leading east. There is an open wooden door leading west. There is an unblocked exit to the north. There is an unguarded exit to the south. Your score has just gone up by one point. > -= Kitchen =-1/6",
+        "infos": {
+            "admissible_commands": [
+                "close wooden door",
+                "drop old key",
+                "examine counter",
+                "examine kitchen island",
+                "examine note",
+                "examine old key",
+                "examine refrigerator",
+                "examine screen door",
+                "examine stove",
+                "examine wooden door",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "open refrigerator",
+                "open screen door",
+                "put old key on counter",
+                "put old key on kitchen island",
+                "put old key on stove",
+                "take note from kitchen island"
+            ]
+        },
+        "action": "go south",
+        "reward": 1,
+        "next_state": "-= Living Room =- You find yourself in a living room. An ordinary one. You begin looking for stuff. You see a couch. You see a half of a bag of chips on the couch, so there's that. You can see a low table. You see a remote on the low table. You scan the room for a tv, and you find a tv. But the thing is empty. Aw, here you were, all excited for there to be things on it! There is an exit to the north. Don't worry, it is unblocked. > -= Living Room =-1/7",
+        "next_infos": {
+            "admissible_commands": [
+                "drop old key",
+                "examine couch",
+                "examine half of a bag of chips",
+                "examine low table",
+                "examine old key",
+                "examine remote",
+                "examine tv",
+                "go north",
+                "inventory",
+                "look",
+                "put old key on couch",
+                "put old key on low table",
+                "put old key on tv",
+                "take half of a bag of chips from couch",
+                "take remote from low table"
+            ]
+        },
+        "done": false,
+        "next_action": "take half of a bag of chips from couch"
+    },
+    {
+        "state": "-= Living Room =- You find yourself in a living room. An ordinary one. You begin looking for stuff. You see a couch. You see a half of a bag of chips on the couch, so there's that. You can see a low table. You see a remote on the low table. You scan the room for a tv, and you find a tv. But the thing is empty. Aw, here you were, all excited for there to be things on it! There is an exit to the north. Don't worry, it is unblocked. > -= Living Room =-1/7",
+        "infos": {
+            "admissible_commands": [
+                "drop old key",
+                "examine couch",
+                "examine half of a bag of chips",
+                "examine low table",
+                "examine old key",
+                "examine remote",
+                "examine tv",
+                "go north",
+                "inventory",
+                "look",
+                "put old key on couch",
+                "put old key on low table",
+                "put old key on tv",
+                "take half of a bag of chips from couch",
+                "take remote from low table"
+            ]
+        },
+        "action": "take half of a bag of chips from couch",
+        "reward": 1,
+        "next_state": "You take the half of a bag of chips from the couch. Your score has just gone up by one point. > -= Living Room =-2/8",
+        "next_infos": {
+            "admissible_commands": [
+                "drop half of a bag of chips",
+                "drop old key",
+                "eat half of a bag of chips",
+                "examine couch",
+                "examine half of a bag of chips",
+                "examine low table",
+                "examine old key",
+                "examine remote",
+                "examine tv",
+                "go north",
+                "inventory",
+                "look",
+                "put half of a bag of chips on couch",
+                "put half of a bag of chips on low table",
+                "put half of a bag of chips on tv",
+                "put old key on couch",
+                "put old key on low table",
+                "put old key on tv",
+                "take remote from low table"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "You take the half of a bag of chips from the couch. Your score has just gone up by one point. > -= Living Room =-2/8",
+        "infos": {
+            "admissible_commands": [
+                "drop half of a bag of chips",
+                "drop old key",
+                "eat half of a bag of chips",
+                "examine couch",
+                "examine half of a bag of chips",
+                "examine low table",
+                "examine old key",
+                "examine remote",
+                "examine tv",
+                "go north",
+                "inventory",
+                "look",
+                "put half of a bag of chips on couch",
+                "put half of a bag of chips on low table",
+                "put half of a bag of chips on tv",
+                "put old key on couch",
+                "put old key on low table",
+                "put old key on tv",
+                "take remote from low table"
+            ]
+        },
+        "action": "go north",
+        "reward": 1,
+        "next_state": "-= Kitchen =- You've just sauntered into a kitchen. You begin looking for stuff. Oh, great. Here's a refrigerator. Wow, isn't TextWorld just the best? You rest your hand against a wall, but you miss the wall and fall onto a counter. What a coincidence, weren't you just thinking about a counter? The counter is usual. Looks like someone's already been here and taken everything off it, though. You can make out a stove. I guess it's true what they say, if you're looking for a stove, go to TextWorld. But the thing hasn't got anything on it. It would have been so cool if there was stuff on the stove. Were you looking for a kitchen island? Because look over there, it's a kitchen island. The kitchen island is typical. On the kitchen island you see a note. There is a closed screen door leading east. There is an open wooden door leading west. There is an unblocked exit to the north. There is an unguarded exit to the south. > -= Kitchen =-2/9",
+        "next_infos": {
+            "admissible_commands": [
+                "close wooden door",
+                "drop half of a bag of chips",
+                "drop old key",
+                "eat half of a bag of chips",
+                "examine counter",
+                "examine half of a bag of chips",
+                "examine kitchen island",
+                "examine note",
+                "examine old key",
+                "examine refrigerator",
+                "examine screen door",
+                "examine stove",
+                "examine wooden door",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "open refrigerator",
+                "open screen door",
+                "put half of a bag of chips on counter",
+                "put half of a bag of chips on kitchen island",
+                "put half of a bag of chips on stove",
+                "put old key on counter",
+                "put old key on kitchen island",
+                "put old key on stove",
+                "take note from kitchen island"
+            ]
+        },
+        "done": false,
+        "next_action": "put half of a bag of chips on stove"
+    },
+    {
+        "state": "-= Kitchen =- You've just sauntered into a kitchen. You begin looking for stuff. Oh, great. Here's a refrigerator. Wow, isn't TextWorld just the best? You rest your hand against a wall, but you miss the wall and fall onto a counter. What a coincidence, weren't you just thinking about a counter? The counter is usual. Looks like someone's already been here and taken everything off it, though. You can make out a stove. I guess it's true what they say, if you're looking for a stove, go to TextWorld. But the thing hasn't got anything on it. It would have been so cool if there was stuff on the stove. Were you looking for a kitchen island? Because look over there, it's a kitchen island. The kitchen island is typical. On the kitchen island you see a note. There is a closed screen door leading east. There is an open wooden door leading west. There is an unblocked exit to the north. There is an unguarded exit to the south. > -= Kitchen =-2/9",
+        "infos": {
+            "admissible_commands": [
+                "close wooden door",
+                "drop half of a bag of chips",
+                "drop old key",
+                "eat half of a bag of chips",
+                "examine counter",
+                "examine half of a bag of chips",
+                "examine kitchen island",
+                "examine note",
+                "examine old key",
+                "examine refrigerator",
+                "examine screen door",
+                "examine stove",
+                "examine wooden door",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "open refrigerator",
+                "open screen door",
+                "put half of a bag of chips on counter",
+                "put half of a bag of chips on kitchen island",
+                "put half of a bag of chips on stove",
+                "put old key on counter",
+                "put old key on kitchen island",
+                "put old key on stove",
+                "take note from kitchen island"
+            ]
+        },
+        "action": "put half of a bag of chips on stove",
+        "reward": 1,
+        "next_state": "You put the half of a bag of chips on the stove. Your score has just gone up by one point. *** The End *** You scored 3 out of a possible 3, in 10 turns. Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command? > -= Kitchen =-2/9",
+        "next_infos": {
+            "admissible_commands": [
+                "close wooden door",
+                "drop old key",
+                "examine counter",
+                "examine half of a bag of chips",
+                "examine kitchen island",
+                "examine note",
+                "examine old key",
+                "examine refrigerator",
+                "examine screen door",
+                "examine stove",
+                "examine wooden door",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "open refrigerator",
+                "open screen door",
+                "put old key on counter",
+                "put old key on kitchen island",
+                "put old key on stove",
+                "take half of a bag of chips from stove",
+                "take note from kitchen island"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

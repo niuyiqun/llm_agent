@@ -4,7 +4,7 @@
 @File    ：test.py
 @Author  ：niu
 @Date    ：2024/6/27 17:43 
-@Desc    ：
+@Desc    ：用于测试训练好的critic模型的输出是否合理。
 """
 import torch
 import json
@@ -72,6 +72,14 @@ def test_single_input(agent, input_data, device):
     print(f"Input: {input_data}")
     print(f"Predicted Q value: {output_q_value.item()}")
 
+    # output_json = json.dumps({
+    #     "input": input_data,
+    #     "predicted_Q_value": output_q_value.item()
+    # }, indent=4)  # 使用缩进4让JSON更易读
+    #
+    # # 打印 JSON 格式输出
+    # print(output_json)
+
 
 def main():
     # 初始化设备
@@ -90,21 +98,19 @@ def main():
     load_model_and_info(agent, model_save_path, device)
 
     # 测试单个输入示例，假设状态是一个数字数组或其他格式的状态
-    test_input_data = [
-        {
-            'state': "You open the antique trunk, revealing an old key. > -= Bedroom =-0/2",  # 假设这是一个状态的示例
-            'action': "close antique trunk"  # 假设这是动作的一个示例，按需调整
-        },
-        {
-            'state': "You take the old key from the antique trunk. > -= Bedroom =-0/3",  # 假设这是一个状态的示例
-            'action': "examine antique trunk"  # 假设这是动作的一个示例，按需调整
-        },
-        {
-            'state': "You unlock wooden door. > -= Bedroom =-0/4",  # 假设这是一个状态的示例
-            'action': "examine chest drawer"  # 假设这是动作的一个示例，按需调整
-        },
+    with open("test_input_data1.json") as f:
+        test_input_data = json.load(f)
+    # print("test_input_data:", test_input_data)
 
-    ]
+    # 调用测试单个输入的函数
+    for test_input in test_input_data:
+        test_single_input(agent, test_input, device)
+
+    print('===========================================================================================================================')
+    # 测试单个输入示例，假设状态是一个数字数组或其他格式的状态
+    with open("test_input_data2.json") as f:
+        test_input_data = json.load(f)
+    # print("test_input_data:", test_input_data)
 
     # 调用测试单个输入的函数
     for test_input in test_input_data:

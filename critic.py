@@ -213,7 +213,7 @@ class AC_Agent:
 
     def configure_optimizers(self):
         """
-        配置Critic的优化器，分别对BERT部分和分类器部分设置不同学习率。
+        配置Critic的优化器，分别对部分和分类器部分设置不同学习率。
         """
         # 分别提取分类器和BERT的参数
         critic_1_classifier_params = list(self.critic_1.classifier.parameters())
@@ -229,12 +229,12 @@ class AC_Agent:
         # print("[DEBUG] Critic 2 base params:", [type(p) for p in critic_2_base_params])
 
         # 定义优化器（可以使用Adam或AdamW）
-        optimizer_critic_1 = torch.optim.AdamW([
+        optimizer_critic_1 = torch.optim.Adam([
             {'params': critic_1_classifier_params, 'lr': self.config.get("classifier_lr", 1e-3)},
             {'params': critic_1_base_params, 'lr': self.config.get("bert_lr", 1e-5)}
         ], weight_decay=self.config.get("weight_decay", 0.01))
 
-        optimizer_critic_2 = torch.optim.AdamW([
+        optimizer_critic_2 = torch.optim.Adam([
             {'params': critic_2_classifier_params, 'lr': self.config.get("classifier_lr", 1e-3)},
             {'params': critic_2_base_params, 'lr': self.config.get("bert_lr", 1e-5)}
         ], weight_decay=self.config.get("weight_decay", 0.01))
@@ -567,5 +567,7 @@ if __name__ == "__main__":
 
     sys.stdout.reconfigure(line_buffering=True)
     main()
+    # 需要debug咯，看看如何比较好
+    # 嘿嘿
 
 
