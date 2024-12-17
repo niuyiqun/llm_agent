@@ -209,39 +209,87 @@ def construct_replay_buffer(oracle_file_path):
     return replay_buffer
 
 
-if __name__ == '__main__':
-    pass
-    # import yaml
-    # import json
-    #
-    # with open('config/train.yaml', 'r', encoding='utf-8') as file:
-    #     data = yaml.safe_load(file)
-    #
-    # # get_prompt_admissible_actions()
-    #
-    # oracle_file_path = data.get('oracle_file_path')
-    # replay_buffer = construct_replay_buffer(oracle_file_path)
-    #
-    # # 查看 Replay Buffer 大小
-    # print(f"Replay Buffer size: {replay_buffer.size()}")
-    #
-    # # 从 Replay Buffer 中随机采样
-    # batch_size = 10
-    # states, actions, rewards, next_states, dones, infos, next_infos, next_actions = replay_buffer.sample(batch_size)
-    #
-    # # print("Sampled states:", states)
-    # # print('------------------------------------------------------------------------------------------------')
-    # # print("Sampled actions:", actions)
-    # # print('------------------------------------------------------------------------------------------------')
-    # print("Sampled dones:", dones)
-    # print(type(dones[0]))
-    # print('------------------------------------------------------------------------------------------------')
-    # # print("Sampled next_states:", next_states)
-    # # print('------------------------------------------------------------------------------------------------')
-    # # print("Sampled dones:", dones)
-    # # print('------------------------------------------------------------------------------------------------')
-    # # print("Sampled infos:", infos)
-    # # print('------------------------------------------------------------------------------------------------')
-    # # print("Sampled next_infos:", next_infos)
-    # # print('------------------------------------------------------------------------------------------------')
-    # print("Sampled next_actions:", next_actions)
+import random
+import numpy as np
+
+
+
+# 设置随机数种子
+def set_random_seed(seed: int = 42):
+    random.seed(seed)
+    np.random.seed(seed)
+
+
+# 测试函数
+def test_replay_buffer_consistency():
+    set_random_seed(42)  # 设置全局随机种子
+
+    # 初始化 ReplayBuffer
+    replay_buffer = ReplayBuffer()
+
+    # 添加固定数据到 ReplayBuffer
+    fixed_transitions = [
+        ("state1", "action1", 1.0, "next_state1", False, {}, {}, "next_action1"),
+        ("state2", "action2", 0.0, "next_state2", True, {}, {}, "next_action2"),
+        ("state3", "action3", 1.0, "next_state3", False, {}, {}, "next_action3"),
+        ("state4", "action4", 0.0, "next_state4", True, {}, {}, "next_action4")
+    ]
+    for transition in fixed_transitions:
+        replay_buffer.add(*transition)
+
+    # 多次采样
+    batch_size = 2
+    results = []
+    for i in range(3):  # 采样3次
+        set_random_seed(42)  # 每次采样前重设随机数种子
+        sampled_batch = replay_buffer.sample(batch_size)
+        results.append(sampled_batch)
+        print(f"Sampling {i + 1}: {sampled_batch}\n")
+
+    # 检查一致性
+    all_equal = all(results[0] == result for result in results)
+    if all_equal:
+        print("ReplayBuffer sampling is consistent across runs.")
+    else:
+        print("ReplayBuffer sampling is NOT consistent. Check random seed settings.")
+
+
+if __name__ == "__main__":
+    test_replay_buffer_consistency()
+
+# if __name__ == '__main__':
+#     pass
+#     # import yaml
+#     # import json
+#     #
+#     # with open('config/train.yaml', 'r', encoding='utf-8') as file:
+#     #     data = yaml.safe_load(file)
+#     #
+#     # # get_prompt_admissible_actions()
+#     #
+#     # oracle_file_path = data.get('oracle_file_path')
+#     # replay_buffer = construct_replay_buffer(oracle_file_path)
+#     #
+#     # # 查看 Replay Buffer 大小
+#     # print(f"Replay Buffer size: {replay_buffer.size()}")
+#     #
+#     # # 从 Replay Buffer 中随机采样
+#     # batch_size = 10
+#     # states, actions, rewards, next_states, dones, infos, next_infos, next_actions = replay_buffer.sample(batch_size)
+#     #
+#     # # print("Sampled states:", states)
+#     # # print('------------------------------------------------------------------------------------------------')
+#     # # print("Sampled actions:", actions)
+#     # # print('------------------------------------------------------------------------------------------------')
+#     # print("Sampled dones:", dones)
+#     # print(type(dones[0]))
+#     # print('------------------------------------------------------------------------------------------------')
+#     # # print("Sampled next_states:", next_states)
+#     # # print('------------------------------------------------------------------------------------------------')
+#     # # print("Sampled dones:", dones)
+#     # # print('------------------------------------------------------------------------------------------------')
+#     # # print("Sampled infos:", infos)
+#     # # print('------------------------------------------------------------------------------------------------')
+#     # # print("Sampled next_infos:", next_infos)
+#     # # print('------------------------------------------------------------------------------------------------')
+#     # print("Sampled next_actions:", next_actions)

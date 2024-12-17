@@ -7,8 +7,9 @@
 @Desc    ：
 """
 from datetime import datetime
+import random
 
-
+import numpy as np
 import torch.nn as nn
 from transformers import BertModel, BertTokenizer
 import json
@@ -550,13 +551,24 @@ def save_model_info(agent, replay_buffer_size, save_path):
         json.dump(model_info, f, indent=4)
     print(f"Model info saved at: {info_path}")
 
+def set_random_seed(seed: int = 42):
+    """ 设置随机数种子以保证训练结果可复现 """
+    random.seed(seed)
+    np.random.seed(seed)
+    torch.manual_seed(seed)
+    torch.cuda.manual_seed(seed)
+    torch.cuda.manual_seed_all(seed)
+    torch.backends.cudnn.deterministic = True
+    torch.backends.cudnn.benchmark = False
 
 if __name__ == "__main__":
+    set_random_seed(42)  # 设置全局随机种子
     import sys
 
     sys.stdout.reconfigure(line_buffering=True)
     main()
     # 需要debug咯，看看如何比较好
     # 嘿嘿
+    # 不嘿嘿
 
 

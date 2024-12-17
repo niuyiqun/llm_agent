@@ -4,7 +4,7 @@ oracle_file_path: "./data/simple/oracle/"
 lm_file_path: "./data/simple/lm/"
 model_save_path: "./model/critic/activate/"
 checkpoint_interval: 10
-num_epochs: 100
+num_epochs: 20
 batch_size: 16
-device: "cuda"
+device: "cuda:1"
 bert_path: "./bert/"
