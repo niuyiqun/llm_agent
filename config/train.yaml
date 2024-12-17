@@ -2,7 +2,7 @@ game_file_path: "./data/simple/mock_game/"
 walkthroughs_file_path: "./data/simple/walkthroughs/"
 oracle_file_path: "./data/simple/oracle/"
 lm_file_path: "./data/simple/lm/"
-model_save_path: "./model/critic/sample/"
+model_save_path: "./model/critic/activate/"
 checkpoint_interval: 10
 num_epochs: 100
 batch_size: 16

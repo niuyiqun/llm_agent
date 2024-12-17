@@ -64,9 +64,8 @@ class CriticModel(nn.Module):
         self.classifier = nn.Sequential(
             nn.Linear(self.bert_encoder.config.hidden_size, 128),
             nn.ReLU(),
-            nn.Dropout(),
             nn.Linear(self.hidden_dim, 1),  # 输出1个值，表示期望回报
-            nn.Sigmoid()  # 通过Sigmoid将输出限制在0到1之间
+            nn.ReLU()  # 通过Sigmoid将输出限制在0到1之间
         )
         log_time("CriticModel initialization", start_time)
 
@@ -110,7 +109,7 @@ class CriticModel(nn.Module):
 
         # 将上下文和动作合并为一个字符串，并进行BERT编码
         context_action = [
-            f"State: {o} [NXT] Action: {a}" for o, a in zip(obs, action)
+            f"State:{o}[NXT]Action:{a}" for o, a in zip(obs, action)
         ]
         # context_action = obs + ' [NXT] ' + action
         # context_action = f"State: {obs} [NXT] Action: {action}"
@@ -229,15 +228,16 @@ class AC_Agent:
         # print("[DEBUG] Critic 2 base params:", [type(p) for p in critic_2_base_params])
 
         # 定义优化器（可以使用Adam或AdamW）
-        optimizer_critic_1 = torch.optim.Adam([
-            {'params': critic_1_classifier_params, 'lr': self.config.get("classifier_lr", 1e-3)},
-            {'params': critic_1_base_params, 'lr': self.config.get("bert_lr", 1e-5)}
+        optimizer_critic_1 = torch.optim.AdamW([
+            {'params': critic_1_classifier_params, 'lr': self.config.get("classifier_lr", 0.01)},
+            {'params': critic_1_base_params, 'lr': self.config.get("bert_lr", 1e-4)}
         ], weight_decay=self.config.get("weight_decay", 0.01))
 
-        optimizer_critic_2 = torch.optim.Adam([
-            {'params': critic_2_classifier_params, 'lr': self.config.get("classifier_lr", 1e-3)},
-            {'params': critic_2_base_params, 'lr': self.config.get("bert_lr", 1e-5)}
+        optimizer_critic_2 = torch.optim.AdamW([
+            {'params': critic_2_classifier_params, 'lr': self.config.get("classifier_lr", 0.01)},
+            {'params': critic_2_base_params, 'lr': self.config.get("bert_lr", 1e-4)}
         ], weight_decay=self.config.get("weight_decay", 0.01))
+
 
         # Debug: 打印优化器状态
         # print("[DEBUG] Optimizer Critic 1 params:", optimizer_critic_1.state_dict()['param_groups'])
