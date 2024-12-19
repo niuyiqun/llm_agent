@@ -55,7 +55,7 @@ class CriticModel(nn.Module):
             nn.Linear(self.bert_encoder.config.hidden_size, 128),
             nn.ReLU(),
             nn.Linear(self.hidden_dim, 1),  # 输出1个值，表示期望回报
-            nn.ReLU()  # 通过Sigmoid将输出限制在0到1之间
+            nn.Sigmoid()  # 通过Sigmoid将输出限制在0到1之间
         )
         log_time("CriticModel initialization", start_time)
 
@@ -134,10 +134,10 @@ class AC_Agent:
         self.gamma = self.config.get("gamma", 0.99)
         self.device = self.config.get("device", "cuda")
         self.model = initialize_model(self.config.get("llm_type", "ZhipuChat"))  # 初始化指定的 LLM
-        self.critic_1 = CriticModel().to(self.device)
-        self.critic_2 = CriticModel().to(self.device)
-        self.target_critic_1 = CriticModel().to(self.device)
-        self.target_critic_2 = CriticModel().to(self.device)
+        self.critic_1 = CriticModel(device=self.device).to(self.device)
+        self.critic_2 = CriticModel(device=self.device).to(self.device)
+        self.target_critic_1 = CriticModel(device=self.device).to(self.device)
+        self.target_critic_2 = CriticModel(device=self.device).to(self.device)
         # 令目标Q网络的初始参数和Q网络一样
         self.target_critic_1.load_state_dict(self.critic_1.state_dict())
         self.target_critic_2.load_state_dict(self.critic_2.state_dict())
@@ -219,13 +219,13 @@ class AC_Agent:
 
         # 定义优化器（可以使用Adam或AdamW）
         optimizer_critic_1 = torch.optim.AdamW([
-            {'params': critic_1_classifier_params, 'lr': self.config.get("classifier_lr", 0.01)},
-            {'params': critic_1_base_params, 'lr': self.config.get("bert_lr", 1e-4)}
+            {'params': critic_1_classifier_params, 'lr': self.config.get("classifier_lr", 0.001)},
+            {'params': critic_1_base_params, 'lr': self.config.get("bert_lr", 1e-5)}
         ], weight_decay=self.config.get("weight_decay", 0.01))
 
         optimizer_critic_2 = torch.optim.AdamW([
-            {'params': critic_2_classifier_params, 'lr': self.config.get("classifier_lr", 0.01)},
-            {'params': critic_2_base_params, 'lr': self.config.get("bert_lr", 1e-4)}
+            {'params': critic_2_classifier_params, 'lr': self.config.get("classifier_lr", 0.001)},
+            {'params': critic_2_base_params, 'lr': self.config.get("bert_lr", 1e-5)}
         ], weight_decay=self.config.get("weight_decay", 0.01))
 
 
@@ -562,7 +562,10 @@ def set_random_seed(seed: int = 42):
     torch.backends.cudnn.benchmark = False
 
 if __name__ == "__main__":
-    set_random_seed(42)  # 设置全局随机种子
+    with open('./config/train.yaml', 'r', encoding='utf-8') as f:
+        config = yaml.safe_load(f)
+
+    set_random_seed(config['seed'])  # 设置全局随机种子
     import sys
 
     sys.stdout.reconfigure(line_buffering=True)
@@ -570,5 +573,9 @@ if __name__ == "__main__":
     # 需要debug咯，看看如何比较好
     # 嘿嘿
     # 不嘿嘿
+    # 不嘿嘿
+
+
+
 
 

@@ -6,5 +6,6 @@ model_save_path: "./model/critic/activate/"
 checkpoint_interval: 10
 num_epochs: 20
 batch_size: 16
-device: "cuda:1"
+device: "cuda"
 bert_path: "./bert/"
+seed: 618

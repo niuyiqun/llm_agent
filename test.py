@@ -94,7 +94,7 @@ def main():
     agent.target_critic_2.to(device)
 
     # 加载训练好的模型
-    model_save_path = './model/critic/sample/final_model_20241209_160612.pth'  # 替换为你保存的模型路径
+    model_save_path = './model/critic/activate/final_model_20241219_013549.pth'  # 替换为你保存的模型路径
     load_model_and_info(agent, model_save_path, device)
 
     # 测试单个输入示例，假设状态是一个数字数组或其他格式的状态
