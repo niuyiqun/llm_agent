@@ -1,131 +1,131 @@
 [
     {
-        "state": "The dinner is almost ready! It's only missing a grilled milk. -= Bedroom =- You make a grand eccentric entrance into a bedroom. You see a closed normal looking chest drawer right there by you. You can see an antique trunk. You see a king-size bed. But the thing is empty. There is a closed wooden door leading east. > -= Bedroom =-0/1",
+        "state": "The dinner is almost ready! It's only missing a grilled lettuce. -= Bedroom =- You arrive in a bedroom. You decide to just list off a complete list of everything you see in the room, because hey, why not? You make out a chest drawer. What's that over there? It looks like it's an antique trunk. Were you looking for a king-size bed? Because look over there, it's a king-size bed. The king-size bed is usual. Looks like someone's already been here and taken everything off it, though. There is a closed wooden door leading east. > -= Bedroom =-0/1",
         "action": "examine antique trunk"
     },
     {
-        "state": "The dinner is almost ready! It's only missing a grilled milk. -= Bedroom =- You make a grand eccentric entrance into a bedroom. You see a closed normal looking chest drawer right there by you. You can see an antique trunk. You see a king-size bed. But the thing is empty. There is a closed wooden door leading east. > -= Bedroom =-0/1",
+        "state": "The dinner is almost ready! It's only missing a grilled lettuce. -= Bedroom =- You arrive in a bedroom. You decide to just list off a complete list of everything you see in the room, because hey, why not? You make out a chest drawer. What's that over there? It looks like it's an antique trunk. Were you looking for a king-size bed? Because look over there, it's a king-size bed. The king-size bed is usual. Looks like someone's already been here and taken everything off it, though. There is a closed wooden door leading east. > -= Bedroom =-0/1",
         "action": "examine chest drawer"
     },
     {
-        "state": "The dinner is almost ready! It's only missing a grilled milk. -= Bedroom =- You make a grand eccentric entrance into a bedroom. You see a closed normal looking chest drawer right there by you. You can see an antique trunk. You see a king-size bed. But the thing is empty. There is a closed wooden door leading east. > -= Bedroom =-0/1",
+        "state": "The dinner is almost ready! It's only missing a grilled lettuce. -= Bedroom =- You arrive in a bedroom. You decide to just list off a complete list of everything you see in the room, because hey, why not? You make out a chest drawer. What's that over there? It looks like it's an antique trunk. Were you looking for a king-size bed? Because look over there, it's a king-size bed. The king-size bed is usual. Looks like someone's already been here and taken everything off it, though. There is a closed wooden door leading east. > -= Bedroom =-0/1",
         "action": "examine king-size bed"
     },
     {
-        "state": "The dinner is almost ready! It's only missing a grilled milk. -= Bedroom =- You make a grand eccentric entrance into a bedroom. You see a closed normal looking chest drawer right there by you. You can see an antique trunk. You see a king-size bed. But the thing is empty. There is a closed wooden door leading east. > -= Bedroom =-0/1",
+        "state": "The dinner is almost ready! It's only missing a grilled lettuce. -= Bedroom =- You arrive in a bedroom. You decide to just list off a complete list of everything you see in the room, because hey, why not? You make out a chest drawer. What's that over there? It looks like it's an antique trunk. Were you looking for a king-size bed? Because look over there, it's a king-size bed. The king-size bed is usual. Looks like someone's already been here and taken everything off it, though. There is a closed wooden door leading east. > -= Bedroom =-0/1",
         "action": "examine wooden door"
     },
     {
-        "state": "The dinner is almost ready! It's only missing a grilled milk. -= Bedroom =- You make a grand eccentric entrance into a bedroom. You see a closed normal looking chest drawer right there by you. You can see an antique trunk. You see a king-size bed. But the thing is empty. There is a closed wooden door leading east. > -= Bedroom =-0/1",
+        "state": "The dinner is almost ready! It's only missing a grilled lettuce. -= Bedroom =- You arrive in a bedroom. You decide to just list off a complete list of everything you see in the room, because hey, why not? You make out a chest drawer. What's that over there? It looks like it's an antique trunk. Were you looking for a king-size bed? Because look over there, it's a king-size bed. The king-size bed is usual. Looks like someone's already been here and taken everything off it, though. There is a closed wooden door leading east. > -= Bedroom =-0/1",
         "action": "inventory"
     },
     {
-        "state": "The dinner is almost ready! It's only missing a grilled milk. -= Bedroom =- You make a grand eccentric entrance into a bedroom. You see a closed normal looking chest drawer right there by you. You can see an antique trunk. You see a king-size bed. But the thing is empty. There is a closed wooden door leading east. > -= Bedroom =-0/1",
+        "state": "The dinner is almost ready! It's only missing a grilled lettuce. -= Bedroom =- You arrive in a bedroom. You decide to just list off a complete list of everything you see in the room, because hey, why not? You make out a chest drawer. What's that over there? It looks like it's an antique trunk. Were you looking for a king-size bed? Because look over there, it's a king-size bed. The king-size bed is usual. Looks like someone's already been here and taken everything off it, though. There is a closed wooden door leading east. > -= Bedroom =-0/1",
         "action": "look"
     },
     {
-        "state": "The dinner is almost ready! It's only missing a grilled milk. -= Bedroom =- You make a grand eccentric entrance into a bedroom. You see a closed normal looking chest drawer right there by you. You can see an antique trunk. You see a king-size bed. But the thing is empty. There is a closed wooden door leading east. > -= Bedroom =-0/1",
+        "state": "The dinner is almost ready! It's only missing a grilled lettuce. -= Bedroom =- You arrive in a bedroom. You decide to just list off a complete list of everything you see in the room, because hey, why not? You make out a chest drawer. What's that over there? It looks like it's an antique trunk. Were you looking for a king-size bed? Because look over there, it's a king-size bed. The king-size bed is usual. Looks like someone's already been here and taken everything off it, though. There is a closed wooden door leading east. > -= Bedroom =-0/1",
         "action": "open antique trunk"
     },
     {
-        "state": "The dinner is almost ready! It's only missing a grilled milk. -= Bedroom =- You make a grand eccentric entrance into a bedroom. You see a closed normal looking chest drawer right there by you. You can see an antique trunk. You see a king-size bed. But the thing is empty. There is a closed wooden door leading east. > -= Bedroom =-0/1",
+        "state": "The dinner is almost ready! It's only missing a grilled lettuce. -= Bedroom =- You arrive in a bedroom. You decide to just list off a complete list of everything you see in the room, because hey, why not? You make out a chest drawer. What's that over there? It looks like it's an antique trunk. Were you looking for a king-size bed? Because look over there, it's a king-size bed. The king-size bed is usual. Looks like someone's already been here and taken everything off it, though. There is a closed wooden door leading east. > -= Bedroom =-0/1",
         "action": "open chest drawer"
     },
     {
-        "state": "You open the antique trunk, revealing an old key. > -= Bedroom =-0/2",
-        "action": "close antique trunk"
+        "state": "You open the chest drawer, revealing an old key. > -= Bedroom =-0/2",
+        "action": "close chest drawer"
     },
     {
-        "state": "You open the antique trunk, revealing an old key. > -= Bedroom =-0/2",
+        "state": "You open the chest drawer, revealing an old key. > -= Bedroom =-0/2",
         "action": "examine antique trunk"
     },
     {
-        "state": "You open the antique trunk, revealing an old key. > -= Bedroom =-0/2",
+        "state": "You open the chest drawer, revealing an old key. > -= Bedroom =-0/2",
         "action": "examine chest drawer"
     },
     {
-        "state": "You open the antique trunk, revealing an old key. > -= Bedroom =-0/2",
+        "state": "You open the chest drawer, revealing an old key. > -= Bedroom =-0/2",
         "action": "examine king-size bed"
     },
     {
-        "state": "You open the antique trunk, revealing an old key. > -= Bedroom =-0/2",
+        "state": "You open the chest drawer, revealing an old key. > -= Bedroom =-0/2",
         "action": "examine old key"
     },
     {
-        "state": "You open the antique trunk, revealing an old key. > -= Bedroom =-0/2",
+        "state": "You open the chest drawer, revealing an old key. > -= Bedroom =-0/2",
         "action": "examine wooden door"
     },
     {
-        "state": "You open the antique trunk, revealing an old key. > -= Bedroom =-0/2",
+        "state": "You open the chest drawer, revealing an old key. > -= Bedroom =-0/2",
         "action": "inventory"
     },
     {
-        "state": "You open the antique trunk, revealing an old key. > -= Bedroom =-0/2",
+        "state": "You open the chest drawer, revealing an old key. > -= Bedroom =-0/2",
         "action": "look"
     },
     {
-        "state": "You open the antique trunk, revealing an old key. > -= Bedroom =-0/2",
-        "action": "open chest drawer"
+        "state": "You open the chest drawer, revealing an old key. > -= Bedroom =-0/2",
+        "action": "open antique trunk"
     },
     {
-        "state": "You open the antique trunk, revealing an old key. > -= Bedroom =-0/2",
-        "action": "take old key from antique trunk"
+        "state": "You open the chest drawer, revealing an old key. > -= Bedroom =-0/2",
+        "action": "take old key from chest drawer"
     },
     {
-        "state": "You take the old key from the antique trunk. > -= Bedroom =-0/3",
-        "action": "close antique trunk"
+        "state": "You take the old key from the chest drawer. > -= Bedroom =-0/3",
+        "action": "close chest drawer"
     },
     {
-        "state": "You take the old key from the antique trunk. > -= Bedroom =-0/3",
+        "state": "You take the old key from the chest drawer. > -= Bedroom =-0/3",
         "action": "drop old key"
     },
     {
-        "state": "You take the old key from the antique trunk. > -= Bedroom =-0/3",
+        "state": "You take the old key from the chest drawer. > -= Bedroom =-0/3",
         "action": "examine antique trunk"
     },
     {
-        "state": "You take the old key from the antique trunk. > -= Bedroom =-0/3",
+        "state": "You take the old key from the chest drawer. > -= Bedroom =-0/3",
         "action": "examine chest drawer"
     },
     {
-        "state": "You take the old key from the antique trunk. > -= Bedroom =-0/3",
+        "state": "You take the old key from the chest drawer. > -= Bedroom =-0/3",
         "action": "examine king-size bed"
     },
     {
-        "state": "You take the old key from the antique trunk. > -= Bedroom =-0/3",
+        "state": "You take the old key from the chest drawer. > -= Bedroom =-0/3",
         "action": "examine old key"
     },
     {
-        "state": "You take the old key from the antique trunk. > -= Bedroom =-0/3",
+        "state": "You take the old key from the chest drawer. > -= Bedroom =-0/3",
         "action": "examine wooden door"
     },
     {
-        "state": "You take the old key from the antique trunk. > -= Bedroom =-0/3",
-        "action": "insert old key into antique trunk"
+        "state": "You take the old key from the chest drawer. > -= Bedroom =-0/3",
+        "action": "insert old key into chest drawer"
     },
     {
-        "state": "You take the old key from the antique trunk. > -= Bedroom =-0/3",
+        "state": "You take the old key from the chest drawer. > -= Bedroom =-0/3",
         "action": "inventory"
     },
     {
-        "state": "You take the old key from the antique trunk. > -= Bedroom =-0/3",
+        "state": "You take the old key from the chest drawer. > -= Bedroom =-0/3",
         "action": "look"
     },
     {
-        "state": "You take the old key from the antique trunk. > -= Bedroom =-0/3",
-        "action": "open chest drawer"
+        "state": "You take the old key from the chest drawer. > -= Bedroom =-0/3",
+        "action": "open antique trunk"
     },
     {
-        "state": "You take the old key from the antique trunk. > -= Bedroom =-0/3",
+        "state": "You take the old key from the chest drawer. > -= Bedroom =-0/3",
         "action": "put old key on king-size bed"
     },
     {
-        "state": "You take the old key from the antique trunk. > -= Bedroom =-0/3",
+        "state": "You take the old key from the chest drawer. > -= Bedroom =-0/3",
         "action": "unlock wooden door with old key"
     },
     {
         "state": "You unlock wooden door. > -= Bedroom =-0/4",
-        "action": "close antique trunk"
+        "action": "close chest drawer"
     },
     {
         "state": "You unlock wooden door. > -= Bedroom =-0/4",
@@ -153,7 +153,7 @@
     },
     {
         "state": "You unlock wooden door. > -= Bedroom =-0/4",
-        "action": "insert old key into antique trunk"
+        "action": "insert old key into chest drawer"
     },
     {
         "state": "You unlock wooden door. > -= Bedroom =-0/4",
@@ -169,7 +169,7 @@
     },
     {
         "state": "You unlock wooden door. > -= Bedroom =-0/4",
-        "action": "open chest drawer"
+        "action": "open antique trunk"
     },
     {
         "state": "You unlock wooden door. > -= Bedroom =-0/4",
@@ -181,7 +181,7 @@
     },
     {
         "state": "You open wooden door. > -= Bedroom =-0/5",
-        "action": "close antique trunk"
+        "action": "close chest drawer"
     },
     {
         "state": "You open wooden door. > -= Bedroom =-0/5",
@@ -217,7 +217,7 @@
     },
     {
         "state": "You open wooden door. > -= Bedroom =-0/5",
-        "action": "insert old key into antique trunk"
+        "action": "insert old key into chest drawer"
     },
     {
         "state": "You open wooden door. > -= Bedroom =-0/5",
@@ -229,338 +229,538 @@
     },
     {
         "state": "You open wooden door. > -= Bedroom =-0/5",
-        "action": "open chest drawer"
+        "action": "open antique trunk"
     },
     {
         "state": "You open wooden door. > -= Bedroom =-0/5",
         "action": "put old key on king-size bed"
     },
     {
-        "state": "-= Kitchen =- Well how about that, you are in a place we're calling a kitchen. The room is well lit. You make out a closed refrigerator nearby. You can see a counter. The counter is normal. But the thing hasn't got anything on it. You rest your hand against a wall, but you miss the wall and fall onto a stove. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the stove. You see a kitchen island. On the kitchen island you can see a note. There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. You need an unguarded exit? You should try going south. Your score has just gone up by one point. > -= Kitchen =-1/6",
+        "state": "-= Kitchen =- You arrive in a kitchen. A normal kind of place. You see a closed refrigerator. What's that over there? It looks like it's a counter. Now why would someone leave that there? The counter is ordinary. Unfortunately, there isn't a thing on it. What's the point of an empty counter? You can see a stove. The stove is usual. The stove appears to be empty. You see a kitchen island. The kitchen island is standard. On the kitchen island you make out a note. Hmmm... what else, what else? There is a closed screen door leading east. There is an open wooden door leading west. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. Your score has just gone up by one point. > -= Kitchen =-1/6",
         "action": "close wooden door"
     },
     {
-        "state": "-= Kitchen =- Well how about that, you are in a place we're calling a kitchen. The room is well lit. You make out a closed refrigerator nearby. You can see a counter. The counter is normal. But the thing hasn't got anything on it. You rest your hand against a wall, but you miss the wall and fall onto a stove. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the stove. You see a kitchen island. On the kitchen island you can see a note. There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. You need an unguarded exit? You should try going south. Your score has just gone up by one point. > -= Kitchen =-1/6",
+        "state": "-= Kitchen =- You arrive in a kitchen. A normal kind of place. You see a closed refrigerator. What's that over there? It looks like it's a counter. Now why would someone leave that there? The counter is ordinary. Unfortunately, there isn't a thing on it. What's the point of an empty counter? You can see a stove. The stove is usual. The stove appears to be empty. You see a kitchen island. The kitchen island is standard. On the kitchen island you make out a note. Hmmm... what else, what else? There is a closed screen door leading east. There is an open wooden door leading west. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. Your score has just gone up by one point. > -= Kitchen =-1/6",
         "action": "drop old key"
     },
     {
-        "state": "-= Kitchen =- Well how about that, you are in a place we're calling a kitchen. The room is well lit. You make out a closed refrigerator nearby. You can see a counter. The counter is normal. But the thing hasn't got anything on it. You rest your hand against a wall, but you miss the wall and fall onto a stove. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the stove. You see a kitchen island. On the kitchen island you can see a note. There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. You need an unguarded exit? You should try going south. Your score has just gone up by one point. > -= Kitchen =-1/6",
+        "state": "-= Kitchen =- You arrive in a kitchen. A normal kind of place. You see a closed refrigerator. What's that over there? It looks like it's a counter. Now why would someone leave that there? The counter is ordinary. Unfortunately, there isn't a thing on it. What's the point of an empty counter? You can see a stove. The stove is usual. The stove appears to be empty. You see a kitchen island. The kitchen island is standard. On the kitchen island you make out a note. Hmmm... what else, what else? There is a closed screen door leading east. There is an open wooden door leading west. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. Your score has just gone up by one point. > -= Kitchen =-1/6",
         "action": "examine counter"
     },
     {
-        "state": "-= Kitchen =- Well how about that, you are in a place we're calling a kitchen. The room is well lit. You make out a closed refrigerator nearby. You can see a counter. The counter is normal. But the thing hasn't got anything on it. You rest your hand against a wall, but you miss the wall and fall onto a stove. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the stove. You see a kitchen island. On the kitchen island you can see a note. There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. You need an unguarded exit? You should try going south. Your score has just gone up by one point. > -= Kitchen =-1/6",
+        "state": "-= Kitchen =- You arrive in a kitchen. A normal kind of place. You see a closed refrigerator. What's that over there? It looks like it's a counter. Now why would someone leave that there? The counter is ordinary. Unfortunately, there isn't a thing on it. What's the point of an empty counter? You can see a stove. The stove is usual. The stove appears to be empty. You see a kitchen island. The kitchen island is standard. On the kitchen island you make out a note. Hmmm... what else, what else? There is a closed screen door leading east. There is an open wooden door leading west. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. Your score has just gone up by one point. > -= Kitchen =-1/6",
         "action": "examine kitchen island"
     },
     {
-        "state": "-= Kitchen =- Well how about that, you are in a place we're calling a kitchen. The room is well lit. You make out a closed refrigerator nearby. You can see a counter. The counter is normal. But the thing hasn't got anything on it. You rest your hand against a wall, but you miss the wall and fall onto a stove. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the stove. You see a kitchen island. On the kitchen island you can see a note. There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. You need an unguarded exit? You should try going south. Your score has just gone up by one point. > -= Kitchen =-1/6",
+        "state": "-= Kitchen =- You arrive in a kitchen. A normal kind of place. You see a closed refrigerator. What's that over there? It looks like it's a counter. Now why would someone leave that there? The counter is ordinary. Unfortunately, there isn't a thing on it. What's the point of an empty counter? You can see a stove. The stove is usual. The stove appears to be empty. You see a kitchen island. The kitchen island is standard. On the kitchen island you make out a note. Hmmm... what else, what else? There is a closed screen door leading east. There is an open wooden door leading west. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. Your score has just gone up by one point. > -= Kitchen =-1/6",
         "action": "examine note"
     },
     {
-        "state": "-= Kitchen =- Well how about that, you are in a place we're calling a kitchen. The room is well lit. You make out a closed refrigerator nearby. You can see a counter. The counter is normal. But the thing hasn't got anything on it. You rest your hand against a wall, but you miss the wall and fall onto a stove. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the stove. You see a kitchen island. On the kitchen island you can see a note. There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. You need an unguarded exit? You should try going south. Your score has just gone up by one point. > -= Kitchen =-1/6",
+        "state": "-= Kitchen =- You arrive in a kitchen. A normal kind of place. You see a closed refrigerator. What's that over there? It looks like it's a counter. Now why would someone leave that there? The counter is ordinary. Unfortunately, there isn't a thing on it. What's the point of an empty counter? You can see a stove. The stove is usual. The stove appears to be empty. You see a kitchen island. The kitchen island is standard. On the kitchen island you make out a note. Hmmm... what else, what else? There is a closed screen door leading east. There is an open wooden door leading west. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. Your score has just gone up by one point. > -= Kitchen =-1/6",
         "action": "examine old key"
     },
     {
-        "state": "-= Kitchen =- Well how about that, you are in a place we're calling a kitchen. The room is well lit. You make out a closed refrigerator nearby. You can see a counter. The counter is normal. But the thing hasn't got anything on it. You rest your hand against a wall, but you miss the wall and fall onto a stove. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the stove. You see a kitchen island. On the kitchen island you can see a note. There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. You need an unguarded exit? You should try going south. Your score has just gone up by one point. > -= Kitchen =-1/6",
+        "state": "-= Kitchen =- You arrive in a kitchen. A normal kind of place. You see a closed refrigerator. What's that over there? It looks like it's a counter. Now why would someone leave that there? The counter is ordinary. Unfortunately, there isn't a thing on it. What's the point of an empty counter? You can see a stove. The stove is usual. The stove appears to be empty. You see a kitchen island. The kitchen island is standard. On the kitchen island you make out a note. Hmmm... what else, what else? There is a closed screen door leading east. There is an open wooden door leading west. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. Your score has just gone up by one point. > -= Kitchen =-1/6",
         "action": "examine refrigerator"
     },
     {
-        "state": "-= Kitchen =- Well how about that, you are in a place we're calling a kitchen. The room is well lit. You make out a closed refrigerator nearby. You can see a counter. The counter is normal. But the thing hasn't got anything on it. You rest your hand against a wall, but you miss the wall and fall onto a stove. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the stove. You see a kitchen island. On the kitchen island you can see a note. There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. You need an unguarded exit? You should try going south. Your score has just gone up by one point. > -= Kitchen =-1/6",
+        "state": "-= Kitchen =- You arrive in a kitchen. A normal kind of place. You see a closed refrigerator. What's that over there? It looks like it's a counter. Now why would someone leave that there? The counter is ordinary. Unfortunately, there isn't a thing on it. What's the point of an empty counter? You can see a stove. The stove is usual. The stove appears to be empty. You see a kitchen island. The kitchen island is standard. On the kitchen island you make out a note. Hmmm... what else, what else? There is a closed screen door leading east. There is an open wooden door leading west. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. Your score has just gone up by one point. > -= Kitchen =-1/6",
         "action": "examine screen door"
     },
     {
-        "state": "-= Kitchen =- Well how about that, you are in a place we're calling a kitchen. The room is well lit. You make out a closed refrigerator nearby. You can see a counter. The counter is normal. But the thing hasn't got anything on it. You rest your hand against a wall, but you miss the wall and fall onto a stove. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the stove. You see a kitchen island. On the kitchen island you can see a note. There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. You need an unguarded exit? You should try going south. Your score has just gone up by one point. > -= Kitchen =-1/6",
+        "state": "-= Kitchen =- You arrive in a kitchen. A normal kind of place. You see a closed refrigerator. What's that over there? It looks like it's a counter. Now why would someone leave that there? The counter is ordinary. Unfortunately, there isn't a thing on it. What's the point of an empty counter? You can see a stove. The stove is usual. The stove appears to be empty. You see a kitchen island. The kitchen island is standard. On the kitchen island you make out a note. Hmmm... what else, what else? There is a closed screen door leading east. There is an open wooden door leading west. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. Your score has just gone up by one point. > -= Kitchen =-1/6",
         "action": "examine stove"
     },
     {
-        "state": "-= Kitchen =- Well how about that, you are in a place we're calling a kitchen. The room is well lit. You make out a closed refrigerator nearby. You can see a counter. The counter is normal. But the thing hasn't got anything on it. You rest your hand against a wall, but you miss the wall and fall onto a stove. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the stove. You see a kitchen island. On the kitchen island you can see a note. There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. You need an unguarded exit? You should try going south. Your score has just gone up by one point. > -= Kitchen =-1/6",
+        "state": "-= Kitchen =- You arrive in a kitchen. A normal kind of place. You see a closed refrigerator. What's that over there? It looks like it's a counter. Now why would someone leave that there? The counter is ordinary. Unfortunately, there isn't a thing on it. What's the point of an empty counter? You can see a stove. The stove is usual. The stove appears to be empty. You see a kitchen island. The kitchen island is standard. On the kitchen island you make out a note. Hmmm... what else, what else? There is a closed screen door leading east. There is an open wooden door leading west. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. Your score has just gone up by one point. > -= Kitchen =-1/6",
         "action": "examine wooden door"
     },
     {
-        "state": "-= Kitchen =- Well how about that, you are in a place we're calling a kitchen. The room is well lit. You make out a closed refrigerator nearby. You can see a counter. The counter is normal. But the thing hasn't got anything on it. You rest your hand against a wall, but you miss the wall and fall onto a stove. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the stove. You see a kitchen island. On the kitchen island you can see a note. There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. You need an unguarded exit? You should try going south. Your score has just gone up by one point. > -= Kitchen =-1/6",
+        "state": "-= Kitchen =- You arrive in a kitchen. A normal kind of place. You see a closed refrigerator. What's that over there? It looks like it's a counter. Now why would someone leave that there? The counter is ordinary. Unfortunately, there isn't a thing on it. What's the point of an empty counter? You can see a stove. The stove is usual. The stove appears to be empty. You see a kitchen island. The kitchen island is standard. On the kitchen island you make out a note. Hmmm... what else, what else? There is a closed screen door leading east. There is an open wooden door leading west. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. Your score has just gone up by one point. > -= Kitchen =-1/6",
         "action": "go north"
     },
     {
-        "state": "-= Kitchen =- Well how about that, you are in a place we're calling a kitchen. The room is well lit. You make out a closed refrigerator nearby. You can see a counter. The counter is normal. But the thing hasn't got anything on it. You rest your hand against a wall, but you miss the wall and fall onto a stove. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the stove. You see a kitchen island. On the kitchen island you can see a note. There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. You need an unguarded exit? You should try going south. Your score has just gone up by one point. > -= Kitchen =-1/6",
+        "state": "-= Kitchen =- You arrive in a kitchen. A normal kind of place. You see a closed refrigerator. What's that over there? It looks like it's a counter. Now why would someone leave that there? The counter is ordinary. Unfortunately, there isn't a thing on it. What's the point of an empty counter? You can see a stove. The stove is usual. The stove appears to be empty. You see a kitchen island. The kitchen island is standard. On the kitchen island you make out a note. Hmmm... what else, what else? There is a closed screen door leading east. There is an open wooden door leading west. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. Your score has just gone up by one point. > -= Kitchen =-1/6",
         "action": "go south"
     },
     {
-        "state": "-= Kitchen =- Well how about that, you are in a place we're calling a kitchen. The room is well lit. You make out a closed refrigerator nearby. You can see a counter. The counter is normal. But the thing hasn't got anything on it. You rest your hand against a wall, but you miss the wall and fall onto a stove. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the stove. You see a kitchen island. On the kitchen island you can see a note. There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. You need an unguarded exit? You should try going south. Your score has just gone up by one point. > -= Kitchen =-1/6",
+        "state": "-= Kitchen =- You arrive in a kitchen. A normal kind of place. You see a closed refrigerator. What's that over there? It looks like it's a counter. Now why would someone leave that there? The counter is ordinary. Unfortunately, there isn't a thing on it. What's the point of an empty counter? You can see a stove. The stove is usual. The stove appears to be empty. You see a kitchen island. The kitchen island is standard. On the kitchen island you make out a note. Hmmm... what else, what else? There is a closed screen door leading east. There is an open wooden door leading west. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. Your score has just gone up by one point. > -= Kitchen =-1/6",
         "action": "go west"
     },
     {
-        "state": "-= Kitchen =- Well how about that, you are in a place we're calling a kitchen. The room is well lit. You make out a closed refrigerator nearby. You can see a counter. The counter is normal. But the thing hasn't got anything on it. You rest your hand against a wall, but you miss the wall and fall onto a stove. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the stove. You see a kitchen island. On the kitchen island you can see a note. There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. You need an unguarded exit? You should try going south. Your score has just gone up by one point. > -= Kitchen =-1/6",
+        "state": "-= Kitchen =- You arrive in a kitchen. A normal kind of place. You see a closed refrigerator. What's that over there? It looks like it's a counter. Now why would someone leave that there? The counter is ordinary. Unfortunately, there isn't a thing on it. What's the point of an empty counter? You can see a stove. The stove is usual. The stove appears to be empty. You see a kitchen island. The kitchen island is standard. On the kitchen island you make out a note. Hmmm... what else, what else? There is a closed screen door leading east. There is an open wooden door leading west. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. Your score has just gone up by one point. > -= Kitchen =-1/6",
         "action": "inventory"
     },
     {
-        "state": "-= Kitchen =- Well how about that, you are in a place we're calling a kitchen. The room is well lit. You make out a closed refrigerator nearby. You can see a counter. The counter is normal. But the thing hasn't got anything on it. You rest your hand against a wall, but you miss the wall and fall onto a stove. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the stove. You see a kitchen island. On the kitchen island you can see a note. There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. You need an unguarded exit? You should try going south. Your score has just gone up by one point. > -= Kitchen =-1/6",
+        "state": "-= Kitchen =- You arrive in a kitchen. A normal kind of place. You see a closed refrigerator. What's that over there? It looks like it's a counter. Now why would someone leave that there? The counter is ordinary. Unfortunately, there isn't a thing on it. What's the point of an empty counter? You can see a stove. The stove is usual. The stove appears to be empty. You see a kitchen island. The kitchen island is standard. On the kitchen island you make out a note. Hmmm... what else, what else? There is a closed screen door leading east. There is an open wooden door leading west. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. Your score has just gone up by one point. > -= Kitchen =-1/6",
         "action": "look"
     },
     {
-        "state": "-= Kitchen =- Well how about that, you are in a place we're calling a kitchen. The room is well lit. You make out a closed refrigerator nearby. You can see a counter. The counter is normal. But the thing hasn't got anything on it. You rest your hand against a wall, but you miss the wall and fall onto a stove. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the stove. You see a kitchen island. On the kitchen island you can see a note. There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. You need an unguarded exit? You should try going south. Your score has just gone up by one point. > -= Kitchen =-1/6",
+        "state": "-= Kitchen =- You arrive in a kitchen. A normal kind of place. You see a closed refrigerator. What's that over there? It looks like it's a counter. Now why would someone leave that there? The counter is ordinary. Unfortunately, there isn't a thing on it. What's the point of an empty counter? You can see a stove. The stove is usual. The stove appears to be empty. You see a kitchen island. The kitchen island is standard. On the kitchen island you make out a note. Hmmm... what else, what else? There is a closed screen door leading east. There is an open wooden door leading west. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. Your score has just gone up by one point. > -= Kitchen =-1/6",
         "action": "open refrigerator"
     },
     {
-        "state": "-= Kitchen =- Well how about that, you are in a place we're calling a kitchen. The room is well lit. You make out a closed refrigerator nearby. You can see a counter. The counter is normal. But the thing hasn't got anything on it. You rest your hand against a wall, but you miss the wall and fall onto a stove. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the stove. You see a kitchen island. On the kitchen island you can see a note. There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. You need an unguarded exit? You should try going south. Your score has just gone up by one point. > -= Kitchen =-1/6",
+        "state": "-= Kitchen =- You arrive in a kitchen. A normal kind of place. You see a closed refrigerator. What's that over there? It looks like it's a counter. Now why would someone leave that there? The counter is ordinary. Unfortunately, there isn't a thing on it. What's the point of an empty counter? You can see a stove. The stove is usual. The stove appears to be empty. You see a kitchen island. The kitchen island is standard. On the kitchen island you make out a note. Hmmm... what else, what else? There is a closed screen door leading east. There is an open wooden door leading west. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. Your score has just gone up by one point. > -= Kitchen =-1/6",
         "action": "open screen door"
     },
     {
-        "state": "-= Kitchen =- Well how about that, you are in a place we're calling a kitchen. The room is well lit. You make out a closed refrigerator nearby. You can see a counter. The counter is normal. But the thing hasn't got anything on it. You rest your hand against a wall, but you miss the wall and fall onto a stove. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the stove. You see a kitchen island. On the kitchen island you can see a note. There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. You need an unguarded exit? You should try going south. Your score has just gone up by one point. > -= Kitchen =-1/6",
+        "state": "-= Kitchen =- You arrive in a kitchen. A normal kind of place. You see a closed refrigerator. What's that over there? It looks like it's a counter. Now why would someone leave that there? The counter is ordinary. Unfortunately, there isn't a thing on it. What's the point of an empty counter? You can see a stove. The stove is usual. The stove appears to be empty. You see a kitchen island. The kitchen island is standard. On the kitchen island you make out a note. Hmmm... what else, what else? There is a closed screen door leading east. There is an open wooden door leading west. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. Your score has just gone up by one point. > -= Kitchen =-1/6",
         "action": "put old key on counter"
     },
     {
-        "state": "-= Kitchen =- Well how about that, you are in a place we're calling a kitchen. The room is well lit. You make out a closed refrigerator nearby. You can see a counter. The counter is normal. But the thing hasn't got anything on it. You rest your hand against a wall, but you miss the wall and fall onto a stove. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the stove. You see a kitchen island. On the kitchen island you can see a note. There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. You need an unguarded exit? You should try going south. Your score has just gone up by one point. > -= Kitchen =-1/6",
+        "state": "-= Kitchen =- You arrive in a kitchen. A normal kind of place. You see a closed refrigerator. What's that over there? It looks like it's a counter. Now why would someone leave that there? The counter is ordinary. Unfortunately, there isn't a thing on it. What's the point of an empty counter? You can see a stove. The stove is usual. The stove appears to be empty. You see a kitchen island. The kitchen island is standard. On the kitchen island you make out a note. Hmmm... what else, what else? There is a closed screen door leading east. There is an open wooden door leading west. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. Your score has just gone up by one point. > -= Kitchen =-1/6",
         "action": "put old key on kitchen island"
     },
     {
-        "state": "-= Kitchen =- Well how about that, you are in a place we're calling a kitchen. The room is well lit. You make out a closed refrigerator nearby. You can see a counter. The counter is normal. But the thing hasn't got anything on it. You rest your hand against a wall, but you miss the wall and fall onto a stove. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the stove. You see a kitchen island. On the kitchen island you can see a note. There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. You need an unguarded exit? You should try going south. Your score has just gone up by one point. > -= Kitchen =-1/6",
+        "state": "-= Kitchen =- You arrive in a kitchen. A normal kind of place. You see a closed refrigerator. What's that over there? It looks like it's a counter. Now why would someone leave that there? The counter is ordinary. Unfortunately, there isn't a thing on it. What's the point of an empty counter? You can see a stove. The stove is usual. The stove appears to be empty. You see a kitchen island. The kitchen island is standard. On the kitchen island you make out a note. Hmmm... what else, what else? There is a closed screen door leading east. There is an open wooden door leading west. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. Your score has just gone up by one point. > -= Kitchen =-1/6",
         "action": "put old key on stove"
     },
     {
-        "state": "-= Kitchen =- Well how about that, you are in a place we're calling a kitchen. The room is well lit. You make out a closed refrigerator nearby. You can see a counter. The counter is normal. But the thing hasn't got anything on it. You rest your hand against a wall, but you miss the wall and fall onto a stove. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the stove. You see a kitchen island. On the kitchen island you can see a note. There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. You need an unguarded exit? You should try going south. Your score has just gone up by one point. > -= Kitchen =-1/6",
+        "state": "-= Kitchen =- You arrive in a kitchen. A normal kind of place. You see a closed refrigerator. What's that over there? It looks like it's a counter. Now why would someone leave that there? The counter is ordinary. Unfortunately, there isn't a thing on it. What's the point of an empty counter? You can see a stove. The stove is usual. The stove appears to be empty. You see a kitchen island. The kitchen island is standard. On the kitchen island you make out a note. Hmmm... what else, what else? There is a closed screen door leading east. There is an open wooden door leading west. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. Your score has just gone up by one point. > -= Kitchen =-1/6",
         "action": "take note from kitchen island"
     },
     {
-        "state": "-= Living Room =- Well I'll be, you are in the place we're calling the living room. You bend down to tie your shoe. When you stand up, you notice a couch. You see a milk on the couch. You see a low table. The low table is standard. On the low table you see a remote. You scan the room for a tv, and you find a tv. The tv is ordinary. Unfortunately, there isn't a thing on it. There is an exit to the north. Don't worry, it is unblocked. > -= Living Room =-1/7",
-        "action": "drop old key"
+        "state": "You open screen door. Your score has just gone up by one point. > -= Kitchen =-2/7",
+        "action": "close screen door"
     },
     {
-        "state": "-= Living Room =- Well I'll be, you are in the place we're calling the living room. You bend down to tie your shoe. When you stand up, you notice a couch. You see a milk on the couch. You see a low table. The low table is standard. On the low table you see a remote. You scan the room for a tv, and you find a tv. The tv is ordinary. Unfortunately, there isn't a thing on it. There is an exit to the north. Don't worry, it is unblocked. > -= Living Room =-1/7",
-        "action": "examine couch"
-    },
-    {
-        "state": "-= Living Room =- Well I'll be, you are in the place we're calling the living room. You bend down to tie your shoe. When you stand up, you notice a couch. You see a milk on the couch. You see a low table. The low table is standard. On the low table you see a remote. You scan the room for a tv, and you find a tv. The tv is ordinary. Unfortunately, there isn't a thing on it. There is an exit to the north. Don't worry, it is unblocked. > -= Living Room =-1/7",
-        "action": "examine low table"
-    },
-    {
-        "state": "-= Living Room =- Well I'll be, you are in the place we're calling the living room. You bend down to tie your shoe. When you stand up, you notice a couch. You see a milk on the couch. You see a low table. The low table is standard. On the low table you see a remote. You scan the room for a tv, and you find a tv. The tv is ordinary. Unfortunately, there isn't a thing on it. There is an exit to the north. Don't worry, it is unblocked. > -= Living Room =-1/7",
-        "action": "examine milk"
-    },
-    {
-        "state": "-= Living Room =- Well I'll be, you are in the place we're calling the living room. You bend down to tie your shoe. When you stand up, you notice a couch. You see a milk on the couch. You see a low table. The low table is standard. On the low table you see a remote. You scan the room for a tv, and you find a tv. The tv is ordinary. Unfortunately, there isn't a thing on it. There is an exit to the north. Don't worry, it is unblocked. > -= Living Room =-1/7",
-        "action": "examine old key"
-    },
-    {
-        "state": "-= Living Room =- Well I'll be, you are in the place we're calling the living room. You bend down to tie your shoe. When you stand up, you notice a couch. You see a milk on the couch. You see a low table. The low table is standard. On the low table you see a remote. You scan the room for a tv, and you find a tv. The tv is ordinary. Unfortunately, there isn't a thing on it. There is an exit to the north. Don't worry, it is unblocked. > -= Living Room =-1/7",
-        "action": "examine remote"
-    },
-    {
-        "state": "-= Living Room =- Well I'll be, you are in the place we're calling the living room. You bend down to tie your shoe. When you stand up, you notice a couch. You see a milk on the couch. You see a low table. The low table is standard. On the low table you see a remote. You scan the room for a tv, and you find a tv. The tv is ordinary. Unfortunately, there isn't a thing on it. There is an exit to the north. Don't worry, it is unblocked. > -= Living Room =-1/7",
-        "action": "examine tv"
-    },
-    {
-        "state": "-= Living Room =- Well I'll be, you are in the place we're calling the living room. You bend down to tie your shoe. When you stand up, you notice a couch. You see a milk on the couch. You see a low table. The low table is standard. On the low table you see a remote. You scan the room for a tv, and you find a tv. The tv is ordinary. Unfortunately, there isn't a thing on it. There is an exit to the north. Don't worry, it is unblocked. > -= Living Room =-1/7",
-        "action": "go north"
-    },
-    {
-        "state": "-= Living Room =- Well I'll be, you are in the place we're calling the living room. You bend down to tie your shoe. When you stand up, you notice a couch. You see a milk on the couch. You see a low table. The low table is standard. On the low table you see a remote. You scan the room for a tv, and you find a tv. The tv is ordinary. Unfortunately, there isn't a thing on it. There is an exit to the north. Don't worry, it is unblocked. > -= Living Room =-1/7",
-        "action": "inventory"
-    },
-    {
-        "state": "-= Living Room =- Well I'll be, you are in the place we're calling the living room. You bend down to tie your shoe. When you stand up, you notice a couch. You see a milk on the couch. You see a low table. The low table is standard. On the low table you see a remote. You scan the room for a tv, and you find a tv. The tv is ordinary. Unfortunately, there isn't a thing on it. There is an exit to the north. Don't worry, it is unblocked. > -= Living Room =-1/7",
-        "action": "look"
-    },
-    {
-        "state": "-= Living Room =- Well I'll be, you are in the place we're calling the living room. You bend down to tie your shoe. When you stand up, you notice a couch. You see a milk on the couch. You see a low table. The low table is standard. On the low table you see a remote. You scan the room for a tv, and you find a tv. The tv is ordinary. Unfortunately, there isn't a thing on it. There is an exit to the north. Don't worry, it is unblocked. > -= Living Room =-1/7",
-        "action": "put old key on couch"
-    },
-    {
-        "state": "-= Living Room =- Well I'll be, you are in the place we're calling the living room. You bend down to tie your shoe. When you stand up, you notice a couch. You see a milk on the couch. You see a low table. The low table is standard. On the low table you see a remote. You scan the room for a tv, and you find a tv. The tv is ordinary. Unfortunately, there isn't a thing on it. There is an exit to the north. Don't worry, it is unblocked. > -= Living Room =-1/7",
-        "action": "put old key on low table"
-    },
-    {
-        "state": "-= Living Room =- Well I'll be, you are in the place we're calling the living room. You bend down to tie your shoe. When you stand up, you notice a couch. You see a milk on the couch. You see a low table. The low table is standard. On the low table you see a remote. You scan the room for a tv, and you find a tv. The tv is ordinary. Unfortunately, there isn't a thing on it. There is an exit to the north. Don't worry, it is unblocked. > -= Living Room =-1/7",
-        "action": "put old key on tv"
-    },
-    {
-        "state": "-= Living Room =- Well I'll be, you are in the place we're calling the living room. You bend down to tie your shoe. When you stand up, you notice a couch. You see a milk on the couch. You see a low table. The low table is standard. On the low table you see a remote. You scan the room for a tv, and you find a tv. The tv is ordinary. Unfortunately, there isn't a thing on it. There is an exit to the north. Don't worry, it is unblocked. > -= Living Room =-1/7",
-        "action": "take milk from couch"
-    },
-    {
-        "state": "-= Living Room =- Well I'll be, you are in the place we're calling the living room. You bend down to tie your shoe. When you stand up, you notice a couch. You see a milk on the couch. You see a low table. The low table is standard. On the low table you see a remote. You scan the room for a tv, and you find a tv. The tv is ordinary. Unfortunately, there isn't a thing on it. There is an exit to the north. Don't worry, it is unblocked. > -= Living Room =-1/7",
-        "action": "take remote from low table"
-    },
-    {
-        "state": "You take the milk from the couch. Your score has just gone up by one point. > -= Living Room =-2/8",
-        "action": "drop milk"
-    },
-    {
-        "state": "You take the milk from the couch. Your score has just gone up by one point. > -= Living Room =-2/8",
-        "action": "drop old key"
-    },
-    {
-        "state": "You take the milk from the couch. Your score has just gone up by one point. > -= Living Room =-2/8",
-        "action": "eat milk"
-    },
-    {
-        "state": "You take the milk from the couch. Your score has just gone up by one point. > -= Living Room =-2/8",
-        "action": "examine couch"
-    },
-    {
-        "state": "You take the milk from the couch. Your score has just gone up by one point. > -= Living Room =-2/8",
-        "action": "examine low table"
-    },
-    {
-        "state": "You take the milk from the couch. Your score has just gone up by one point. > -= Living Room =-2/8",
-        "action": "examine milk"
-    },
-    {
-        "state": "You take the milk from the couch. Your score has just gone up by one point. > -= Living Room =-2/8",
-        "action": "examine old key"
-    },
-    {
-        "state": "You take the milk from the couch. Your score has just gone up by one point. > -= Living Room =-2/8",
-        "action": "examine remote"
-    },
-    {
-        "state": "You take the milk from the couch. Your score has just gone up by one point. > -= Living Room =-2/8",
-        "action": "examine tv"
-    },
-    {
-        "state": "You take the milk from the couch. Your score has just gone up by one point. > -= Living Room =-2/8",
-        "action": "go north"
-    },
-    {
-        "state": "You take the milk from the couch. Your score has just gone up by one point. > -= Living Room =-2/8",
-        "action": "inventory"
-    },
-    {
-        "state": "You take the milk from the couch. Your score has just gone up by one point. > -= Living Room =-2/8",
-        "action": "look"
-    },
-    {
-        "state": "You take the milk from the couch. Your score has just gone up by one point. > -= Living Room =-2/8",
-        "action": "put milk on couch"
-    },
-    {
-        "state": "You take the milk from the couch. Your score has just gone up by one point. > -= Living Room =-2/8",
-        "action": "put milk on low table"
-    },
-    {
-        "state": "You take the milk from the couch. Your score has just gone up by one point. > -= Living Room =-2/8",
-        "action": "put milk on tv"
-    },
-    {
-        "state": "You take the milk from the couch. Your score has just gone up by one point. > -= Living Room =-2/8",
-        "action": "put old key on couch"
-    },
-    {
-        "state": "You take the milk from the couch. Your score has just gone up by one point. > -= Living Room =-2/8",
-        "action": "put old key on low table"
-    },
-    {
-        "state": "You take the milk from the couch. Your score has just gone up by one point. > -= Living Room =-2/8",
-        "action": "put old key on tv"
-    },
-    {
-        "state": "You take the milk from the couch. Your score has just gone up by one point. > -= Living Room =-2/8",
-        "action": "take remote from low table"
-    },
-    {
-        "state": "-= Kitchen =- Well how about that, you are in a place we're calling a kitchen. The room is well lit. You make out a closed refrigerator nearby. You can see a counter. The counter is normal. But the thing hasn't got anything on it. You rest your hand against a wall, but you miss the wall and fall onto a stove. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the stove. You see a kitchen island. On the kitchen island you can see a note. There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. You need an unguarded exit? You should try going south. > -= Kitchen =-2/9",
+        "state": "You open screen door. Your score has just gone up by one point. > -= Kitchen =-2/7",
         "action": "close wooden door"
     },
     {
-        "state": "-= Kitchen =- Well how about that, you are in a place we're calling a kitchen. The room is well lit. You make out a closed refrigerator nearby. You can see a counter. The counter is normal. But the thing hasn't got anything on it. You rest your hand against a wall, but you miss the wall and fall onto a stove. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the stove. You see a kitchen island. On the kitchen island you can see a note. There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. You need an unguarded exit? You should try going south. > -= Kitchen =-2/9",
-        "action": "drop milk"
-    },
-    {
-        "state": "-= Kitchen =- Well how about that, you are in a place we're calling a kitchen. The room is well lit. You make out a closed refrigerator nearby. You can see a counter. The counter is normal. But the thing hasn't got anything on it. You rest your hand against a wall, but you miss the wall and fall onto a stove. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the stove. You see a kitchen island. On the kitchen island you can see a note. There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. You need an unguarded exit? You should try going south. > -= Kitchen =-2/9",
+        "state": "You open screen door. Your score has just gone up by one point. > -= Kitchen =-2/7",
         "action": "drop old key"
     },
     {
-        "state": "-= Kitchen =- Well how about that, you are in a place we're calling a kitchen. The room is well lit. You make out a closed refrigerator nearby. You can see a counter. The counter is normal. But the thing hasn't got anything on it. You rest your hand against a wall, but you miss the wall and fall onto a stove. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the stove. You see a kitchen island. On the kitchen island you can see a note. There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. You need an unguarded exit? You should try going south. > -= Kitchen =-2/9",
-        "action": "eat milk"
-    },
-    {
-        "state": "-= Kitchen =- Well how about that, you are in a place we're calling a kitchen. The room is well lit. You make out a closed refrigerator nearby. You can see a counter. The counter is normal. But the thing hasn't got anything on it. You rest your hand against a wall, but you miss the wall and fall onto a stove. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the stove. You see a kitchen island. On the kitchen island you can see a note. There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. You need an unguarded exit? You should try going south. > -= Kitchen =-2/9",
+        "state": "You open screen door. Your score has just gone up by one point. > -= Kitchen =-2/7",
         "action": "examine counter"
     },
     {
-        "state": "-= Kitchen =- Well how about that, you are in a place we're calling a kitchen. The room is well lit. You make out a closed refrigerator nearby. You can see a counter. The counter is normal. But the thing hasn't got anything on it. You rest your hand against a wall, but you miss the wall and fall onto a stove. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the stove. You see a kitchen island. On the kitchen island you can see a note. There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. You need an unguarded exit? You should try going south. > -= Kitchen =-2/9",
+        "state": "You open screen door. Your score has just gone up by one point. > -= Kitchen =-2/7",
         "action": "examine kitchen island"
     },
     {
-        "state": "-= Kitchen =- Well how about that, you are in a place we're calling a kitchen. The room is well lit. You make out a closed refrigerator nearby. You can see a counter. The counter is normal. But the thing hasn't got anything on it. You rest your hand against a wall, but you miss the wall and fall onto a stove. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the stove. You see a kitchen island. On the kitchen island you can see a note. There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. You need an unguarded exit? You should try going south. > -= Kitchen =-2/9",
-        "action": "examine milk"
-    },
-    {
-        "state": "-= Kitchen =- Well how about that, you are in a place we're calling a kitchen. The room is well lit. You make out a closed refrigerator nearby. You can see a counter. The counter is normal. But the thing hasn't got anything on it. You rest your hand against a wall, but you miss the wall and fall onto a stove. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the stove. You see a kitchen island. On the kitchen island you can see a note. There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. You need an unguarded exit? You should try going south. > -= Kitchen =-2/9",
+        "state": "You open screen door. Your score has just gone up by one point. > -= Kitchen =-2/7",
         "action": "examine note"
     },
     {
-        "state": "-= Kitchen =- Well how about that, you are in a place we're calling a kitchen. The room is well lit. You make out a closed refrigerator nearby. You can see a counter. The counter is normal. But the thing hasn't got anything on it. You rest your hand against a wall, but you miss the wall and fall onto a stove. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the stove. You see a kitchen island. On the kitchen island you can see a note. There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. You need an unguarded exit? You should try going south. > -= Kitchen =-2/9",
+        "state": "You open screen door. Your score has just gone up by one point. > -= Kitchen =-2/7",
         "action": "examine old key"
     },
     {
-        "state": "-= Kitchen =- Well how about that, you are in a place we're calling a kitchen. The room is well lit. You make out a closed refrigerator nearby. You can see a counter. The counter is normal. But the thing hasn't got anything on it. You rest your hand against a wall, but you miss the wall and fall onto a stove. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the stove. You see a kitchen island. On the kitchen island you can see a note. There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. You need an unguarded exit? You should try going south. > -= Kitchen =-2/9",
+        "state": "You open screen door. Your score has just gone up by one point. > -= Kitchen =-2/7",
         "action": "examine refrigerator"
     },
     {
-        "state": "-= Kitchen =- Well how about that, you are in a place we're calling a kitchen. The room is well lit. You make out a closed refrigerator nearby. You can see a counter. The counter is normal. But the thing hasn't got anything on it. You rest your hand against a wall, but you miss the wall and fall onto a stove. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the stove. You see a kitchen island. On the kitchen island you can see a note. There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. You need an unguarded exit? You should try going south. > -= Kitchen =-2/9",
+        "state": "You open screen door. Your score has just gone up by one point. > -= Kitchen =-2/7",
         "action": "examine screen door"
     },
     {
-        "state": "-= Kitchen =- Well how about that, you are in a place we're calling a kitchen. The room is well lit. You make out a closed refrigerator nearby. You can see a counter. The counter is normal. But the thing hasn't got anything on it. You rest your hand against a wall, but you miss the wall and fall onto a stove. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the stove. You see a kitchen island. On the kitchen island you can see a note. There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. You need an unguarded exit? You should try going south. > -= Kitchen =-2/9",
+        "state": "You open screen door. Your score has just gone up by one point. > -= Kitchen =-2/7",
         "action": "examine stove"
     },
     {
-        "state": "-= Kitchen =- Well how about that, you are in a place we're calling a kitchen. The room is well lit. You make out a closed refrigerator nearby. You can see a counter. The counter is normal. But the thing hasn't got anything on it. You rest your hand against a wall, but you miss the wall and fall onto a stove. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the stove. You see a kitchen island. On the kitchen island you can see a note. There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. You need an unguarded exit? You should try going south. > -= Kitchen =-2/9",
+        "state": "You open screen door. Your score has just gone up by one point. > -= Kitchen =-2/7",
         "action": "examine wooden door"
     },
     {
-        "state": "-= Kitchen =- Well how about that, you are in a place we're calling a kitchen. The room is well lit. You make out a closed refrigerator nearby. You can see a counter. The counter is normal. But the thing hasn't got anything on it. You rest your hand against a wall, but you miss the wall and fall onto a stove. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the stove. You see a kitchen island. On the kitchen island you can see a note. There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. You need an unguarded exit? You should try going south. > -= Kitchen =-2/9",
+        "state": "You open screen door. Your score has just gone up by one point. > -= Kitchen =-2/7",
+        "action": "go east"
+    },
+    {
+        "state": "You open screen door. Your score has just gone up by one point. > -= Kitchen =-2/7",
         "action": "go north"
     },
     {
-        "state": "-= Kitchen =- Well how about that, you are in a place we're calling a kitchen. The room is well lit. You make out a closed refrigerator nearby. You can see a counter. The counter is normal. But the thing hasn't got anything on it. You rest your hand against a wall, but you miss the wall and fall onto a stove. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the stove. You see a kitchen island. On the kitchen island you can see a note. There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. You need an unguarded exit? You should try going south. > -= Kitchen =-2/9",
+        "state": "You open screen door. Your score has just gone up by one point. > -= Kitchen =-2/7",
         "action": "go south"
     },
     {
-        "state": "-= Kitchen =- Well how about that, you are in a place we're calling a kitchen. The room is well lit. You make out a closed refrigerator nearby. You can see a counter. The counter is normal. But the thing hasn't got anything on it. You rest your hand against a wall, but you miss the wall and fall onto a stove. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the stove. You see a kitchen island. On the kitchen island you can see a note. There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. You need an unguarded exit? You should try going south. > -= Kitchen =-2/9",
+        "state": "You open screen door. Your score has just gone up by one point. > -= Kitchen =-2/7",
         "action": "go west"
     },
     {
-        "state": "-= Kitchen =- Well how about that, you are in a place we're calling a kitchen. The room is well lit. You make out a closed refrigerator nearby. You can see a counter. The counter is normal. But the thing hasn't got anything on it. You rest your hand against a wall, but you miss the wall and fall onto a stove. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the stove. You see a kitchen island. On the kitchen island you can see a note. There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. You need an unguarded exit? You should try going south. > -= Kitchen =-2/9",
+        "state": "You open screen door. Your score has just gone up by one point. > -= Kitchen =-2/7",
         "action": "inventory"
     },
     {
-        "state": "-= Kitchen =- Well how about that, you are in a place we're calling a kitchen. The room is well lit. You make out a closed refrigerator nearby. You can see a counter. The counter is normal. But the thing hasn't got anything on it. You rest your hand against a wall, but you miss the wall and fall onto a stove. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the stove. You see a kitchen island. On the kitchen island you can see a note. There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. You need an unguarded exit? You should try going south. > -= Kitchen =-2/9",
+        "state": "You open screen door. Your score has just gone up by one point. > -= Kitchen =-2/7",
         "action": "look"
     },
     {
-        "state": "-= Kitchen =- Well how about that, you are in a place we're calling a kitchen. The room is well lit. You make out a closed refrigerator nearby. You can see a counter. The counter is normal. But the thing hasn't got anything on it. You rest your hand against a wall, but you miss the wall and fall onto a stove. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the stove. You see a kitchen island. On the kitchen island you can see a note. There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. You need an unguarded exit? You should try going south. > -= Kitchen =-2/9",
+        "state": "You open screen door. Your score has just gone up by one point. > -= Kitchen =-2/7",
         "action": "open refrigerator"
     },
     {
-        "state": "-= Kitchen =- Well how about that, you are in a place we're calling a kitchen. The room is well lit. You make out a closed refrigerator nearby. You can see a counter. The counter is normal. But the thing hasn't got anything on it. You rest your hand against a wall, but you miss the wall and fall onto a stove. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the stove. You see a kitchen island. On the kitchen island you can see a note. There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. You need an unguarded exit? You should try going south. > -= Kitchen =-2/9",
-        "action": "open screen door"
-    },
-    {
-        "state": "-= Kitchen =- Well how about that, you are in a place we're calling a kitchen. The room is well lit. You make out a closed refrigerator nearby. You can see a counter. The counter is normal. But the thing hasn't got anything on it. You rest your hand against a wall, but you miss the wall and fall onto a stove. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the stove. You see a kitchen island. On the kitchen island you can see a note. There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. You need an unguarded exit? You should try going south. > -= Kitchen =-2/9",
-        "action": "put milk on counter"
-    },
-    {
-        "state": "-= Kitchen =- Well how about that, you are in a place we're calling a kitchen. The room is well lit. You make out a closed refrigerator nearby. You can see a counter. The counter is normal. But the thing hasn't got anything on it. You rest your hand against a wall, but you miss the wall and fall onto a stove. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the stove. You see a kitchen island. On the kitchen island you can see a note. There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. You need an unguarded exit? You should try going south. > -= Kitchen =-2/9",
-        "action": "put milk on kitchen island"
-    },
-    {
-        "state": "-= Kitchen =- Well how about that, you are in a place we're calling a kitchen. The room is well lit. You make out a closed refrigerator nearby. You can see a counter. The counter is normal. But the thing hasn't got anything on it. You rest your hand against a wall, but you miss the wall and fall onto a stove. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the stove. You see a kitchen island. On the kitchen island you can see a note. There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. You need an unguarded exit? You should try going south. > -= Kitchen =-2/9",
-        "action": "put milk on stove"
-    },
-    {
-        "state": "-= Kitchen =- Well how about that, you are in a place we're calling a kitchen. The room is well lit. You make out a closed refrigerator nearby. You can see a counter. The counter is normal. But the thing hasn't got anything on it. You rest your hand against a wall, but you miss the wall and fall onto a stove. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the stove. You see a kitchen island. On the kitchen island you can see a note. There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. You need an unguarded exit? You should try going south. > -= Kitchen =-2/9",
+        "state": "You open screen door. Your score has just gone up by one point. > -= Kitchen =-2/7",
         "action": "put old key on counter"
     },
     {
-        "state": "-= Kitchen =- Well how about that, you are in a place we're calling a kitchen. The room is well lit. You make out a closed refrigerator nearby. You can see a counter. The counter is normal. But the thing hasn't got anything on it. You rest your hand against a wall, but you miss the wall and fall onto a stove. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the stove. You see a kitchen island. On the kitchen island you can see a note. There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. You need an unguarded exit? You should try going south. > -= Kitchen =-2/9",
+        "state": "You open screen door. Your score has just gone up by one point. > -= Kitchen =-2/7",
         "action": "put old key on kitchen island"
     },
     {
-        "state": "-= Kitchen =- Well how about that, you are in a place we're calling a kitchen. The room is well lit. You make out a closed refrigerator nearby. You can see a counter. The counter is normal. But the thing hasn't got anything on it. You rest your hand against a wall, but you miss the wall and fall onto a stove. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the stove. You see a kitchen island. On the kitchen island you can see a note. There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. You need an unguarded exit? You should try going south. > -= Kitchen =-2/9",
+        "state": "You open screen door. Your score has just gone up by one point. > -= Kitchen =-2/7",
         "action": "put old key on stove"
     },
     {
-        "state": "-= Kitchen =- Well how about that, you are in a place we're calling a kitchen. The room is well lit. You make out a closed refrigerator nearby. You can see a counter. The counter is normal. But the thing hasn't got anything on it. You rest your hand against a wall, but you miss the wall and fall onto a stove. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the stove. You see a kitchen island. On the kitchen island you can see a note. There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. You need an unguarded exit? You should try going south. > -= Kitchen =-2/9",
+        "state": "You open screen door. Your score has just gone up by one point. > -= Kitchen =-2/7",
+        "action": "take note from kitchen island"
+    },
+    {
+        "state": "-= Backyard =- You're now in the backyard. You begin looking for stuff. You make out a set of chairs. The set of chairs is ordinary. Looks like someone's already been here and taken everything off it, though. What, you think everything in TextWorld should have stuff on it? Oh, great. Here's a bbq. The bbq appears to be empty. Hm. Oh well Look over there! a patio table. But the thing is empty, unfortunately. It would have been so cool if there was stuff on the patio table. There is an open screen door leading west. You need an unguarded exit? You should try going south. > -= Backyard =-2/8",
+        "action": "close screen door"
+    },
+    {
+        "state": "-= Backyard =- You're now in the backyard. You begin looking for stuff. You make out a set of chairs. The set of chairs is ordinary. Looks like someone's already been here and taken everything off it, though. What, you think everything in TextWorld should have stuff on it? Oh, great. Here's a bbq. The bbq appears to be empty. Hm. Oh well Look over there! a patio table. But the thing is empty, unfortunately. It would have been so cool if there was stuff on the patio table. There is an open screen door leading west. You need an unguarded exit? You should try going south. > -= Backyard =-2/8",
+        "action": "drop old key"
+    },
+    {
+        "state": "-= Backyard =- You're now in the backyard. You begin looking for stuff. You make out a set of chairs. The set of chairs is ordinary. Looks like someone's already been here and taken everything off it, though. What, you think everything in TextWorld should have stuff on it? Oh, great. Here's a bbq. The bbq appears to be empty. Hm. Oh well Look over there! a patio table. But the thing is empty, unfortunately. It would have been so cool if there was stuff on the patio table. There is an open screen door leading west. You need an unguarded exit? You should try going south. > -= Backyard =-2/8",
+        "action": "examine bbq"
+    },
+    {
+        "state": "-= Backyard =- You're now in the backyard. You begin looking for stuff. You make out a set of chairs. The set of chairs is ordinary. Looks like someone's already been here and taken everything off it, though. What, you think everything in TextWorld should have stuff on it? Oh, great. Here's a bbq. The bbq appears to be empty. Hm. Oh well Look over there! a patio table. But the thing is empty, unfortunately. It would have been so cool if there was stuff on the patio table. There is an open screen door leading west. You need an unguarded exit? You should try going south. > -= Backyard =-2/8",
+        "action": "examine old key"
+    },
+    {
+        "state": "-= Backyard =- You're now in the backyard. You begin looking for stuff. You make out a set of chairs. The set of chairs is ordinary. Looks like someone's already been here and taken everything off it, though. What, you think everything in TextWorld should have stuff on it? Oh, great. Here's a bbq. The bbq appears to be empty. Hm. Oh well Look over there! a patio table. But the thing is empty, unfortunately. It would have been so cool if there was stuff on the patio table. There is an open screen door leading west. You need an unguarded exit? You should try going south. > -= Backyard =-2/8",
+        "action": "examine patio table"
+    },
+    {
+        "state": "-= Backyard =- You're now in the backyard. You begin looking for stuff. You make out a set of chairs. The set of chairs is ordinary. Looks like someone's already been here and taken everything off it, though. What, you think everything in TextWorld should have stuff on it? Oh, great. Here's a bbq. The bbq appears to be empty. Hm. Oh well Look over there! a patio table. But the thing is empty, unfortunately. It would have been so cool if there was stuff on the patio table. There is an open screen door leading west. You need an unguarded exit? You should try going south. > -= Backyard =-2/8",
+        "action": "examine screen door"
+    },
+    {
+        "state": "-= Backyard =- You're now in the backyard. You begin looking for stuff. You make out a set of chairs. The set of chairs is ordinary. Looks like someone's already been here and taken everything off it, though. What, you think everything in TextWorld should have stuff on it? Oh, great. Here's a bbq. The bbq appears to be empty. Hm. Oh well Look over there! a patio table. But the thing is empty, unfortunately. It would have been so cool if there was stuff on the patio table. There is an open screen door leading west. You need an unguarded exit? You should try going south. > -= Backyard =-2/8",
+        "action": "examine set of chairs"
+    },
+    {
+        "state": "-= Backyard =- You're now in the backyard. You begin looking for stuff. You make out a set of chairs. The set of chairs is ordinary. Looks like someone's already been here and taken everything off it, though. What, you think everything in TextWorld should have stuff on it? Oh, great. Here's a bbq. The bbq appears to be empty. Hm. Oh well Look over there! a patio table. But the thing is empty, unfortunately. It would have been so cool if there was stuff on the patio table. There is an open screen door leading west. You need an unguarded exit? You should try going south. > -= Backyard =-2/8",
+        "action": "go south"
+    },
+    {
+        "state": "-= Backyard =- You're now in the backyard. You begin looking for stuff. You make out a set of chairs. The set of chairs is ordinary. Looks like someone's already been here and taken everything off it, though. What, you think everything in TextWorld should have stuff on it? Oh, great. Here's a bbq. The bbq appears to be empty. Hm. Oh well Look over there! a patio table. But the thing is empty, unfortunately. It would have been so cool if there was stuff on the patio table. There is an open screen door leading west. You need an unguarded exit? You should try going south. > -= Backyard =-2/8",
+        "action": "go west"
+    },
+    {
+        "state": "-= Backyard =- You're now in the backyard. You begin looking for stuff. You make out a set of chairs. The set of chairs is ordinary. Looks like someone's already been here and taken everything off it, though. What, you think everything in TextWorld should have stuff on it? Oh, great. Here's a bbq. The bbq appears to be empty. Hm. Oh well Look over there! a patio table. But the thing is empty, unfortunately. It would have been so cool if there was stuff on the patio table. There is an open screen door leading west. You need an unguarded exit? You should try going south. > -= Backyard =-2/8",
+        "action": "inventory"
+    },
+    {
+        "state": "-= Backyard =- You're now in the backyard. You begin looking for stuff. You make out a set of chairs. The set of chairs is ordinary. Looks like someone's already been here and taken everything off it, though. What, you think everything in TextWorld should have stuff on it? Oh, great. Here's a bbq. The bbq appears to be empty. Hm. Oh well Look over there! a patio table. But the thing is empty, unfortunately. It would have been so cool if there was stuff on the patio table. There is an open screen door leading west. You need an unguarded exit? You should try going south. > -= Backyard =-2/8",
+        "action": "look"
+    },
+    {
+        "state": "-= Backyard =- You're now in the backyard. You begin looking for stuff. You make out a set of chairs. The set of chairs is ordinary. Looks like someone's already been here and taken everything off it, though. What, you think everything in TextWorld should have stuff on it? Oh, great. Here's a bbq. The bbq appears to be empty. Hm. Oh well Look over there! a patio table. But the thing is empty, unfortunately. It would have been so cool if there was stuff on the patio table. There is an open screen door leading west. You need an unguarded exit? You should try going south. > -= Backyard =-2/8",
+        "action": "put old key on bbq"
+    },
+    {
+        "state": "-= Backyard =- You're now in the backyard. You begin looking for stuff. You make out a set of chairs. The set of chairs is ordinary. Looks like someone's already been here and taken everything off it, though. What, you think everything in TextWorld should have stuff on it? Oh, great. Here's a bbq. The bbq appears to be empty. Hm. Oh well Look over there! a patio table. But the thing is empty, unfortunately. It would have been so cool if there was stuff on the patio table. There is an open screen door leading west. You need an unguarded exit? You should try going south. > -= Backyard =-2/8",
+        "action": "put old key on patio table"
+    },
+    {
+        "state": "-= Backyard =- You're now in the backyard. You begin looking for stuff. You make out a set of chairs. The set of chairs is ordinary. Looks like someone's already been here and taken everything off it, though. What, you think everything in TextWorld should have stuff on it? Oh, great. Here's a bbq. The bbq appears to be empty. Hm. Oh well Look over there! a patio table. But the thing is empty, unfortunately. It would have been so cool if there was stuff on the patio table. There is an open screen door leading west. You need an unguarded exit? You should try going south. > -= Backyard =-2/8",
+        "action": "put old key on set of chairs"
+    },
+    {
+        "state": "-= Garden =- You've just shown up in a garden. You decide to just list off a complete list of everything you see in the room, because hey, why not? There is an unblocked exit to the north. There is a half of a bag of chips, a lettuce, a bell pepper and a shovel on the floor. > -= Garden =-2/9",
+        "action": "drop old key"
+    },
+    {
+        "state": "-= Garden =- You've just shown up in a garden. You decide to just list off a complete list of everything you see in the room, because hey, why not? There is an unblocked exit to the north. There is a half of a bag of chips, a lettuce, a bell pepper and a shovel on the floor. > -= Garden =-2/9",
+        "action": "examine bell pepper"
+    },
+    {
+        "state": "-= Garden =- You've just shown up in a garden. You decide to just list off a complete list of everything you see in the room, because hey, why not? There is an unblocked exit to the north. There is a half of a bag of chips, a lettuce, a bell pepper and a shovel on the floor. > -= Garden =-2/9",
+        "action": "examine half of a bag of chips"
+    },
+    {
+        "state": "-= Garden =- You've just shown up in a garden. You decide to just list off a complete list of everything you see in the room, because hey, why not? There is an unblocked exit to the north. There is a half of a bag of chips, a lettuce, a bell pepper and a shovel on the floor. > -= Garden =-2/9",
+        "action": "examine lettuce"
+    },
+    {
+        "state": "-= Garden =- You've just shown up in a garden. You decide to just list off a complete list of everything you see in the room, because hey, why not? There is an unblocked exit to the north. There is a half of a bag of chips, a lettuce, a bell pepper and a shovel on the floor. > -= Garden =-2/9",
+        "action": "examine old key"
+    },
+    {
+        "state": "-= Garden =- You've just shown up in a garden. You decide to just list off a complete list of everything you see in the room, because hey, why not? There is an unblocked exit to the north. There is a half of a bag of chips, a lettuce, a bell pepper and a shovel on the floor. > -= Garden =-2/9",
+        "action": "examine shovel"
+    },
+    {
+        "state": "-= Garden =- You've just shown up in a garden. You decide to just list off a complete list of everything you see in the room, because hey, why not? There is an unblocked exit to the north. There is a half of a bag of chips, a lettuce, a bell pepper and a shovel on the floor. > -= Garden =-2/9",
+        "action": "go north"
+    },
+    {
+        "state": "-= Garden =- You've just shown up in a garden. You decide to just list off a complete list of everything you see in the room, because hey, why not? There is an unblocked exit to the north. There is a half of a bag of chips, a lettuce, a bell pepper and a shovel on the floor. > -= Garden =-2/9",
+        "action": "inventory"
+    },
+    {
+        "state": "-= Garden =- You've just shown up in a garden. You decide to just list off a complete list of everything you see in the room, because hey, why not? There is an unblocked exit to the north. There is a half of a bag of chips, a lettuce, a bell pepper and a shovel on the floor. > -= Garden =-2/9",
+        "action": "look"
+    },
+    {
+        "state": "-= Garden =- You've just shown up in a garden. You decide to just list off a complete list of everything you see in the room, because hey, why not? There is an unblocked exit to the north. There is a half of a bag of chips, a lettuce, a bell pepper and a shovel on the floor. > -= Garden =-2/9",
+        "action": "take bell pepper"
+    },
+    {
+        "state": "-= Garden =- You've just shown up in a garden. You decide to just list off a complete list of everything you see in the room, because hey, why not? There is an unblocked exit to the north. There is a half of a bag of chips, a lettuce, a bell pepper and a shovel on the floor. > -= Garden =-2/9",
+        "action": "take half of a bag of chips"
+    },
+    {
+        "state": "-= Garden =- You've just shown up in a garden. You decide to just list off a complete list of everything you see in the room, because hey, why not? There is an unblocked exit to the north. There is a half of a bag of chips, a lettuce, a bell pepper and a shovel on the floor. > -= Garden =-2/9",
+        "action": "take lettuce"
+    },
+    {
+        "state": "-= Garden =- You've just shown up in a garden. You decide to just list off a complete list of everything you see in the room, because hey, why not? There is an unblocked exit to the north. There is a half of a bag of chips, a lettuce, a bell pepper and a shovel on the floor. > -= Garden =-2/9",
+        "action": "take shovel"
+    },
+    {
+        "state": "You pick up the lettuce from the ground. Your score has just gone up by one point. > -= Garden =-3/10",
+        "action": "drop lettuce"
+    },
+    {
+        "state": "You pick up the lettuce from the ground. Your score has just gone up by one point. > -= Garden =-3/10",
+        "action": "drop old key"
+    },
+    {
+        "state": "You pick up the lettuce from the ground. Your score has just gone up by one point. > -= Garden =-3/10",
+        "action": "eat lettuce"
+    },
+    {
+        "state": "You pick up the lettuce from the ground. Your score has just gone up by one point. > -= Garden =-3/10",
+        "action": "examine bell pepper"
+    },
+    {
+        "state": "You pick up the lettuce from the ground. Your score has just gone up by one point. > -= Garden =-3/10",
+        "action": "examine half of a bag of chips"
+    },
+    {
+        "state": "You pick up the lettuce from the ground. Your score has just gone up by one point. > -= Garden =-3/10",
+        "action": "examine lettuce"
+    },
+    {
+        "state": "You pick up the lettuce from the ground. Your score has just gone up by one point. > -= Garden =-3/10",
+        "action": "examine old key"
+    },
+    {
+        "state": "You pick up the lettuce from the ground. Your score has just gone up by one point. > -= Garden =-3/10",
+        "action": "examine shovel"
+    },
+    {
+        "state": "You pick up the lettuce from the ground. Your score has just gone up by one point. > -= Garden =-3/10",
+        "action": "go north"
+    },
+    {
+        "state": "You pick up the lettuce from the ground. Your score has just gone up by one point. > -= Garden =-3/10",
+        "action": "inventory"
+    },
+    {
+        "state": "You pick up the lettuce from the ground. Your score has just gone up by one point. > -= Garden =-3/10",
+        "action": "look"
+    },
+    {
+        "state": "You pick up the lettuce from the ground. Your score has just gone up by one point. > -= Garden =-3/10",
+        "action": "take bell pepper"
+    },
+    {
+        "state": "You pick up the lettuce from the ground. Your score has just gone up by one point. > -= Garden =-3/10",
+        "action": "take half of a bag of chips"
+    },
+    {
+        "state": "You pick up the lettuce from the ground. Your score has just gone up by one point. > -= Garden =-3/10",
+        "action": "take shovel"
+    },
+    {
+        "state": "-= Backyard =- You're now in the backyard. You begin looking for stuff. You make out a set of chairs. The set of chairs is ordinary. Looks like someone's already been here and taken everything off it, though. What, you think everything in TextWorld should have stuff on it? Oh, great. Here's a bbq. The bbq appears to be empty. Hm. Oh well Look over there! a patio table. But the thing is empty, unfortunately. It would have been so cool if there was stuff on the patio table. There is an open screen door leading west. You need an unguarded exit? You should try going south. > -= Backyard =-3/11",
+        "action": "close screen door"
+    },
+    {
+        "state": "-= Backyard =- You're now in the backyard. You begin looking for stuff. You make out a set of chairs. The set of chairs is ordinary. Looks like someone's already been here and taken everything off it, though. What, you think everything in TextWorld should have stuff on it? Oh, great. Here's a bbq. The bbq appears to be empty. Hm. Oh well Look over there! a patio table. But the thing is empty, unfortunately. It would have been so cool if there was stuff on the patio table. There is an open screen door leading west. You need an unguarded exit? You should try going south. > -= Backyard =-3/11",
+        "action": "drop lettuce"
+    },
+    {
+        "state": "-= Backyard =- You're now in the backyard. You begin looking for stuff. You make out a set of chairs. The set of chairs is ordinary. Looks like someone's already been here and taken everything off it, though. What, you think everything in TextWorld should have stuff on it? Oh, great. Here's a bbq. The bbq appears to be empty. Hm. Oh well Look over there! a patio table. But the thing is empty, unfortunately. It would have been so cool if there was stuff on the patio table. There is an open screen door leading west. You need an unguarded exit? You should try going south. > -= Backyard =-3/11",
+        "action": "drop old key"
+    },
+    {
+        "state": "-= Backyard =- You're now in the backyard. You begin looking for stuff. You make out a set of chairs. The set of chairs is ordinary. Looks like someone's already been here and taken everything off it, though. What, you think everything in TextWorld should have stuff on it? Oh, great. Here's a bbq. The bbq appears to be empty. Hm. Oh well Look over there! a patio table. But the thing is empty, unfortunately. It would have been so cool if there was stuff on the patio table. There is an open screen door leading west. You need an unguarded exit? You should try going south. > -= Backyard =-3/11",
+        "action": "eat lettuce"
+    },
+    {
+        "state": "-= Backyard =- You're now in the backyard. You begin looking for stuff. You make out a set of chairs. The set of chairs is ordinary. Looks like someone's already been here and taken everything off it, though. What, you think everything in TextWorld should have stuff on it? Oh, great. Here's a bbq. The bbq appears to be empty. Hm. Oh well Look over there! a patio table. But the thing is empty, unfortunately. It would have been so cool if there was stuff on the patio table. There is an open screen door leading west. You need an unguarded exit? You should try going south. > -= Backyard =-3/11",
+        "action": "examine bbq"
+    },
+    {
+        "state": "-= Backyard =- You're now in the backyard. You begin looking for stuff. You make out a set of chairs. The set of chairs is ordinary. Looks like someone's already been here and taken everything off it, though. What, you think everything in TextWorld should have stuff on it? Oh, great. Here's a bbq. The bbq appears to be empty. Hm. Oh well Look over there! a patio table. But the thing is empty, unfortunately. It would have been so cool if there was stuff on the patio table. There is an open screen door leading west. You need an unguarded exit? You should try going south. > -= Backyard =-3/11",
+        "action": "examine lettuce"
+    },
+    {
+        "state": "-= Backyard =- You're now in the backyard. You begin looking for stuff. You make out a set of chairs. The set of chairs is ordinary. Looks like someone's already been here and taken everything off it, though. What, you think everything in TextWorld should have stuff on it? Oh, great. Here's a bbq. The bbq appears to be empty. Hm. Oh well Look over there! a patio table. But the thing is empty, unfortunately. It would have been so cool if there was stuff on the patio table. There is an open screen door leading west. You need an unguarded exit? You should try going south. > -= Backyard =-3/11",
+        "action": "examine old key"
+    },
+    {
+        "state": "-= Backyard =- You're now in the backyard. You begin looking for stuff. You make out a set of chairs. The set of chairs is ordinary. Looks like someone's already been here and taken everything off it, though. What, you think everything in TextWorld should have stuff on it? Oh, great. Here's a bbq. The bbq appears to be empty. Hm. Oh well Look over there! a patio table. But the thing is empty, unfortunately. It would have been so cool if there was stuff on the patio table. There is an open screen door leading west. You need an unguarded exit? You should try going south. > -= Backyard =-3/11",
+        "action": "examine patio table"
+    },
+    {
+        "state": "-= Backyard =- You're now in the backyard. You begin looking for stuff. You make out a set of chairs. The set of chairs is ordinary. Looks like someone's already been here and taken everything off it, though. What, you think everything in TextWorld should have stuff on it? Oh, great. Here's a bbq. The bbq appears to be empty. Hm. Oh well Look over there! a patio table. But the thing is empty, unfortunately. It would have been so cool if there was stuff on the patio table. There is an open screen door leading west. You need an unguarded exit? You should try going south. > -= Backyard =-3/11",
+        "action": "examine screen door"
+    },
+    {
+        "state": "-= Backyard =- You're now in the backyard. You begin looking for stuff. You make out a set of chairs. The set of chairs is ordinary. Looks like someone's already been here and taken everything off it, though. What, you think everything in TextWorld should have stuff on it? Oh, great. Here's a bbq. The bbq appears to be empty. Hm. Oh well Look over there! a patio table. But the thing is empty, unfortunately. It would have been so cool if there was stuff on the patio table. There is an open screen door leading west. You need an unguarded exit? You should try going south. > -= Backyard =-3/11",
+        "action": "examine set of chairs"
+    },
+    {
+        "state": "-= Backyard =- You're now in the backyard. You begin looking for stuff. You make out a set of chairs. The set of chairs is ordinary. Looks like someone's already been here and taken everything off it, though. What, you think everything in TextWorld should have stuff on it? Oh, great. Here's a bbq. The bbq appears to be empty. Hm. Oh well Look over there! a patio table. But the thing is empty, unfortunately. It would have been so cool if there was stuff on the patio table. There is an open screen door leading west. You need an unguarded exit? You should try going south. > -= Backyard =-3/11",
+        "action": "go south"
+    },
+    {
+        "state": "-= Backyard =- You're now in the backyard. You begin looking for stuff. You make out a set of chairs. The set of chairs is ordinary. Looks like someone's already been here and taken everything off it, though. What, you think everything in TextWorld should have stuff on it? Oh, great. Here's a bbq. The bbq appears to be empty. Hm. Oh well Look over there! a patio table. But the thing is empty, unfortunately. It would have been so cool if there was stuff on the patio table. There is an open screen door leading west. You need an unguarded exit? You should try going south. > -= Backyard =-3/11",
+        "action": "go west"
+    },
+    {
+        "state": "-= Backyard =- You're now in the backyard. You begin looking for stuff. You make out a set of chairs. The set of chairs is ordinary. Looks like someone's already been here and taken everything off it, though. What, you think everything in TextWorld should have stuff on it? Oh, great. Here's a bbq. The bbq appears to be empty. Hm. Oh well Look over there! a patio table. But the thing is empty, unfortunately. It would have been so cool if there was stuff on the patio table. There is an open screen door leading west. You need an unguarded exit? You should try going south. > -= Backyard =-3/11",
+        "action": "inventory"
+    },
+    {
+        "state": "-= Backyard =- You're now in the backyard. You begin looking for stuff. You make out a set of chairs. The set of chairs is ordinary. Looks like someone's already been here and taken everything off it, though. What, you think everything in TextWorld should have stuff on it? Oh, great. Here's a bbq. The bbq appears to be empty. Hm. Oh well Look over there! a patio table. But the thing is empty, unfortunately. It would have been so cool if there was stuff on the patio table. There is an open screen door leading west. You need an unguarded exit? You should try going south. > -= Backyard =-3/11",
+        "action": "look"
+    },
+    {
+        "state": "-= Backyard =- You're now in the backyard. You begin looking for stuff. You make out a set of chairs. The set of chairs is ordinary. Looks like someone's already been here and taken everything off it, though. What, you think everything in TextWorld should have stuff on it? Oh, great. Here's a bbq. The bbq appears to be empty. Hm. Oh well Look over there! a patio table. But the thing is empty, unfortunately. It would have been so cool if there was stuff on the patio table. There is an open screen door leading west. You need an unguarded exit? You should try going south. > -= Backyard =-3/11",
+        "action": "put lettuce on bbq"
+    },
+    {
+        "state": "-= Backyard =- You're now in the backyard. You begin looking for stuff. You make out a set of chairs. The set of chairs is ordinary. Looks like someone's already been here and taken everything off it, though. What, you think everything in TextWorld should have stuff on it? Oh, great. Here's a bbq. The bbq appears to be empty. Hm. Oh well Look over there! a patio table. But the thing is empty, unfortunately. It would have been so cool if there was stuff on the patio table. There is an open screen door leading west. You need an unguarded exit? You should try going south. > -= Backyard =-3/11",
+        "action": "put lettuce on patio table"
+    },
+    {
+        "state": "-= Backyard =- You're now in the backyard. You begin looking for stuff. You make out a set of chairs. The set of chairs is ordinary. Looks like someone's already been here and taken everything off it, though. What, you think everything in TextWorld should have stuff on it? Oh, great. Here's a bbq. The bbq appears to be empty. Hm. Oh well Look over there! a patio table. But the thing is empty, unfortunately. It would have been so cool if there was stuff on the patio table. There is an open screen door leading west. You need an unguarded exit? You should try going south. > -= Backyard =-3/11",
+        "action": "put lettuce on set of chairs"
+    },
+    {
+        "state": "-= Backyard =- You're now in the backyard. You begin looking for stuff. You make out a set of chairs. The set of chairs is ordinary. Looks like someone's already been here and taken everything off it, though. What, you think everything in TextWorld should have stuff on it? Oh, great. Here's a bbq. The bbq appears to be empty. Hm. Oh well Look over there! a patio table. But the thing is empty, unfortunately. It would have been so cool if there was stuff on the patio table. There is an open screen door leading west. You need an unguarded exit? You should try going south. > -= Backyard =-3/11",
+        "action": "put old key on bbq"
+    },
+    {
+        "state": "-= Backyard =- You're now in the backyard. You begin looking for stuff. You make out a set of chairs. The set of chairs is ordinary. Looks like someone's already been here and taken everything off it, though. What, you think everything in TextWorld should have stuff on it? Oh, great. Here's a bbq. The bbq appears to be empty. Hm. Oh well Look over there! a patio table. But the thing is empty, unfortunately. It would have been so cool if there was stuff on the patio table. There is an open screen door leading west. You need an unguarded exit? You should try going south. > -= Backyard =-3/11",
+        "action": "put old key on patio table"
+    },
+    {
+        "state": "-= Backyard =- You're now in the backyard. You begin looking for stuff. You make out a set of chairs. The set of chairs is ordinary. Looks like someone's already been here and taken everything off it, though. What, you think everything in TextWorld should have stuff on it? Oh, great. Here's a bbq. The bbq appears to be empty. Hm. Oh well Look over there! a patio table. But the thing is empty, unfortunately. It would have been so cool if there was stuff on the patio table. There is an open screen door leading west. You need an unguarded exit? You should try going south. > -= Backyard =-3/11",
+        "action": "put old key on set of chairs"
+    },
+    {
+        "state": "-= Kitchen =- You arrive in a kitchen. A normal kind of place. You see a closed refrigerator. What's that over there? It looks like it's a counter. Now why would someone leave that there? The counter is ordinary. Unfortunately, there isn't a thing on it. What's the point of an empty counter? You can see a stove. The stove is usual. The stove appears to be empty. You see a kitchen island. The kitchen island is standard. On the kitchen island you make out a note. Hmmm... what else, what else? There is an open screen door leading east. There is an open wooden door leading west. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Kitchen =-3/12",
+        "action": "close screen door"
+    },
+    {
+        "state": "-= Kitchen =- You arrive in a kitchen. A normal kind of place. You see a closed refrigerator. What's that over there? It looks like it's a counter. Now why would someone leave that there? The counter is ordinary. Unfortunately, there isn't a thing on it. What's the point of an empty counter? You can see a stove. The stove is usual. The stove appears to be empty. You see a kitchen island. The kitchen island is standard. On the kitchen island you make out a note. Hmmm... what else, what else? There is an open screen door leading east. There is an open wooden door leading west. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Kitchen =-3/12",
+        "action": "close wooden door"
+    },
+    {
+        "state": "-= Kitchen =- You arrive in a kitchen. A normal kind of place. You see a closed refrigerator. What's that over there? It looks like it's a counter. Now why would someone leave that there? The counter is ordinary. Unfortunately, there isn't a thing on it. What's the point of an empty counter? You can see a stove. The stove is usual. The stove appears to be empty. You see a kitchen island. The kitchen island is standard. On the kitchen island you make out a note. Hmmm... what else, what else? There is an open screen door leading east. There is an open wooden door leading west. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Kitchen =-3/12",
+        "action": "drop lettuce"
+    },
+    {
+        "state": "-= Kitchen =- You arrive in a kitchen. A normal kind of place. You see a closed refrigerator. What's that over there? It looks like it's a counter. Now why would someone leave that there? The counter is ordinary. Unfortunately, there isn't a thing on it. What's the point of an empty counter? You can see a stove. The stove is usual. The stove appears to be empty. You see a kitchen island. The kitchen island is standard. On the kitchen island you make out a note. Hmmm... what else, what else? There is an open screen door leading east. There is an open wooden door leading west. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Kitchen =-3/12",
+        "action": "drop old key"
+    },
+    {
+        "state": "-= Kitchen =- You arrive in a kitchen. A normal kind of place. You see a closed refrigerator. What's that over there? It looks like it's a counter. Now why would someone leave that there? The counter is ordinary. Unfortunately, there isn't a thing on it. What's the point of an empty counter? You can see a stove. The stove is usual. The stove appears to be empty. You see a kitchen island. The kitchen island is standard. On the kitchen island you make out a note. Hmmm... what else, what else? There is an open screen door leading east. There is an open wooden door leading west. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Kitchen =-3/12",
+        "action": "eat lettuce"
+    },
+    {
+        "state": "-= Kitchen =- You arrive in a kitchen. A normal kind of place. You see a closed refrigerator. What's that over there? It looks like it's a counter. Now why would someone leave that there? The counter is ordinary. Unfortunately, there isn't a thing on it. What's the point of an empty counter? You can see a stove. The stove is usual. The stove appears to be empty. You see a kitchen island. The kitchen island is standard. On the kitchen island you make out a note. Hmmm... what else, what else? There is an open screen door leading east. There is an open wooden door leading west. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Kitchen =-3/12",
+        "action": "examine counter"
+    },
+    {
+        "state": "-= Kitchen =- You arrive in a kitchen. A normal kind of place. You see a closed refrigerator. What's that over there? It looks like it's a counter. Now why would someone leave that there? The counter is ordinary. Unfortunately, there isn't a thing on it. What's the point of an empty counter? You can see a stove. The stove is usual. The stove appears to be empty. You see a kitchen island. The kitchen island is standard. On the kitchen island you make out a note. Hmmm... what else, what else? There is an open screen door leading east. There is an open wooden door leading west. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Kitchen =-3/12",
+        "action": "examine kitchen island"
+    },
+    {
+        "state": "-= Kitchen =- You arrive in a kitchen. A normal kind of place. You see a closed refrigerator. What's that over there? It looks like it's a counter. Now why would someone leave that there? The counter is ordinary. Unfortunately, there isn't a thing on it. What's the point of an empty counter? You can see a stove. The stove is usual. The stove appears to be empty. You see a kitchen island. The kitchen island is standard. On the kitchen island you make out a note. Hmmm... what else, what else? There is an open screen door leading east. There is an open wooden door leading west. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Kitchen =-3/12",
+        "action": "examine lettuce"
+    },
+    {
+        "state": "-= Kitchen =- You arrive in a kitchen. A normal kind of place. You see a closed refrigerator. What's that over there? It looks like it's a counter. Now why would someone leave that there? The counter is ordinary. Unfortunately, there isn't a thing on it. What's the point of an empty counter? You can see a stove. The stove is usual. The stove appears to be empty. You see a kitchen island. The kitchen island is standard. On the kitchen island you make out a note. Hmmm... what else, what else? There is an open screen door leading east. There is an open wooden door leading west. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Kitchen =-3/12",
+        "action": "examine note"
+    },
+    {
+        "state": "-= Kitchen =- You arrive in a kitchen. A normal kind of place. You see a closed refrigerator. What's that over there? It looks like it's a counter. Now why would someone leave that there? The counter is ordinary. Unfortunately, there isn't a thing on it. What's the point of an empty counter? You can see a stove. The stove is usual. The stove appears to be empty. You see a kitchen island. The kitchen island is standard. On the kitchen island you make out a note. Hmmm... what else, what else? There is an open screen door leading east. There is an open wooden door leading west. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Kitchen =-3/12",
+        "action": "examine old key"
+    },
+    {
+        "state": "-= Kitchen =- You arrive in a kitchen. A normal kind of place. You see a closed refrigerator. What's that over there? It looks like it's a counter. Now why would someone leave that there? The counter is ordinary. Unfortunately, there isn't a thing on it. What's the point of an empty counter? You can see a stove. The stove is usual. The stove appears to be empty. You see a kitchen island. The kitchen island is standard. On the kitchen island you make out a note. Hmmm... what else, what else? There is an open screen door leading east. There is an open wooden door leading west. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Kitchen =-3/12",
+        "action": "examine refrigerator"
+    },
+    {
+        "state": "-= Kitchen =- You arrive in a kitchen. A normal kind of place. You see a closed refrigerator. What's that over there? It looks like it's a counter. Now why would someone leave that there? The counter is ordinary. Unfortunately, there isn't a thing on it. What's the point of an empty counter? You can see a stove. The stove is usual. The stove appears to be empty. You see a kitchen island. The kitchen island is standard. On the kitchen island you make out a note. Hmmm... what else, what else? There is an open screen door leading east. There is an open wooden door leading west. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Kitchen =-3/12",
+        "action": "examine screen door"
+    },
+    {
+        "state": "-= Kitchen =- You arrive in a kitchen. A normal kind of place. You see a closed refrigerator. What's that over there? It looks like it's a counter. Now why would someone leave that there? The counter is ordinary. Unfortunately, there isn't a thing on it. What's the point of an empty counter? You can see a stove. The stove is usual. The stove appears to be empty. You see a kitchen island. The kitchen island is standard. On the kitchen island you make out a note. Hmmm... what else, what else? There is an open screen door leading east. There is an open wooden door leading west. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Kitchen =-3/12",
+        "action": "examine stove"
+    },
+    {
+        "state": "-= Kitchen =- You arrive in a kitchen. A normal kind of place. You see a closed refrigerator. What's that over there? It looks like it's a counter. Now why would someone leave that there? The counter is ordinary. Unfortunately, there isn't a thing on it. What's the point of an empty counter? You can see a stove. The stove is usual. The stove appears to be empty. You see a kitchen island. The kitchen island is standard. On the kitchen island you make out a note. Hmmm... what else, what else? There is an open screen door leading east. There is an open wooden door leading west. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Kitchen =-3/12",
+        "action": "examine wooden door"
+    },
+    {
+        "state": "-= Kitchen =- You arrive in a kitchen. A normal kind of place. You see a closed refrigerator. What's that over there? It looks like it's a counter. Now why would someone leave that there? The counter is ordinary. Unfortunately, there isn't a thing on it. What's the point of an empty counter? You can see a stove. The stove is usual. The stove appears to be empty. You see a kitchen island. The kitchen island is standard. On the kitchen island you make out a note. Hmmm... what else, what else? There is an open screen door leading east. There is an open wooden door leading west. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Kitchen =-3/12",
+        "action": "go east"
+    },
+    {
+        "state": "-= Kitchen =- You arrive in a kitchen. A normal kind of place. You see a closed refrigerator. What's that over there? It looks like it's a counter. Now why would someone leave that there? The counter is ordinary. Unfortunately, there isn't a thing on it. What's the point of an empty counter? You can see a stove. The stove is usual. The stove appears to be empty. You see a kitchen island. The kitchen island is standard. On the kitchen island you make out a note. Hmmm... what else, what else? There is an open screen door leading east. There is an open wooden door leading west. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Kitchen =-3/12",
+        "action": "go north"
+    },
+    {
+        "state": "-= Kitchen =- You arrive in a kitchen. A normal kind of place. You see a closed refrigerator. What's that over there? It looks like it's a counter. Now why would someone leave that there? The counter is ordinary. Unfortunately, there isn't a thing on it. What's the point of an empty counter? You can see a stove. The stove is usual. The stove appears to be empty. You see a kitchen island. The kitchen island is standard. On the kitchen island you make out a note. Hmmm... what else, what else? There is an open screen door leading east. There is an open wooden door leading west. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Kitchen =-3/12",
+        "action": "go south"
+    },
+    {
+        "state": "-= Kitchen =- You arrive in a kitchen. A normal kind of place. You see a closed refrigerator. What's that over there? It looks like it's a counter. Now why would someone leave that there? The counter is ordinary. Unfortunately, there isn't a thing on it. What's the point of an empty counter? You can see a stove. The stove is usual. The stove appears to be empty. You see a kitchen island. The kitchen island is standard. On the kitchen island you make out a note. Hmmm... what else, what else? There is an open screen door leading east. There is an open wooden door leading west. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Kitchen =-3/12",
+        "action": "go west"
+    },
+    {
+        "state": "-= Kitchen =- You arrive in a kitchen. A normal kind of place. You see a closed refrigerator. What's that over there? It looks like it's a counter. Now why would someone leave that there? The counter is ordinary. Unfortunately, there isn't a thing on it. What's the point of an empty counter? You can see a stove. The stove is usual. The stove appears to be empty. You see a kitchen island. The kitchen island is standard. On the kitchen island you make out a note. Hmmm... what else, what else? There is an open screen door leading east. There is an open wooden door leading west. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Kitchen =-3/12",
+        "action": "inventory"
+    },
+    {
+        "state": "-= Kitchen =- You arrive in a kitchen. A normal kind of place. You see a closed refrigerator. What's that over there? It looks like it's a counter. Now why would someone leave that there? The counter is ordinary. Unfortunately, there isn't a thing on it. What's the point of an empty counter? You can see a stove. The stove is usual. The stove appears to be empty. You see a kitchen island. The kitchen island is standard. On the kitchen island you make out a note. Hmmm... what else, what else? There is an open screen door leading east. There is an open wooden door leading west. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Kitchen =-3/12",
+        "action": "look"
+    },
+    {
+        "state": "-= Kitchen =- You arrive in a kitchen. A normal kind of place. You see a closed refrigerator. What's that over there? It looks like it's a counter. Now why would someone leave that there? The counter is ordinary. Unfortunately, there isn't a thing on it. What's the point of an empty counter? You can see a stove. The stove is usual. The stove appears to be empty. You see a kitchen island. The kitchen island is standard. On the kitchen island you make out a note. Hmmm... what else, what else? There is an open screen door leading east. There is an open wooden door leading west. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Kitchen =-3/12",
+        "action": "open refrigerator"
+    },
+    {
+        "state": "-= Kitchen =- You arrive in a kitchen. A normal kind of place. You see a closed refrigerator. What's that over there? It looks like it's a counter. Now why would someone leave that there? The counter is ordinary. Unfortunately, there isn't a thing on it. What's the point of an empty counter? You can see a stove. The stove is usual. The stove appears to be empty. You see a kitchen island. The kitchen island is standard. On the kitchen island you make out a note. Hmmm... what else, what else? There is an open screen door leading east. There is an open wooden door leading west. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Kitchen =-3/12",
+        "action": "put lettuce on counter"
+    },
+    {
+        "state": "-= Kitchen =- You arrive in a kitchen. A normal kind of place. You see a closed refrigerator. What's that over there? It looks like it's a counter. Now why would someone leave that there? The counter is ordinary. Unfortunately, there isn't a thing on it. What's the point of an empty counter? You can see a stove. The stove is usual. The stove appears to be empty. You see a kitchen island. The kitchen island is standard. On the kitchen island you make out a note. Hmmm... what else, what else? There is an open screen door leading east. There is an open wooden door leading west. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Kitchen =-3/12",
+        "action": "put lettuce on kitchen island"
+    },
+    {
+        "state": "-= Kitchen =- You arrive in a kitchen. A normal kind of place. You see a closed refrigerator. What's that over there? It looks like it's a counter. Now why would someone leave that there? The counter is ordinary. Unfortunately, there isn't a thing on it. What's the point of an empty counter? You can see a stove. The stove is usual. The stove appears to be empty. You see a kitchen island. The kitchen island is standard. On the kitchen island you make out a note. Hmmm... what else, what else? There is an open screen door leading east. There is an open wooden door leading west. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Kitchen =-3/12",
+        "action": "put lettuce on stove"
+    },
+    {
+        "state": "-= Kitchen =- You arrive in a kitchen. A normal kind of place. You see a closed refrigerator. What's that over there? It looks like it's a counter. Now why would someone leave that there? The counter is ordinary. Unfortunately, there isn't a thing on it. What's the point of an empty counter? You can see a stove. The stove is usual. The stove appears to be empty. You see a kitchen island. The kitchen island is standard. On the kitchen island you make out a note. Hmmm... what else, what else? There is an open screen door leading east. There is an open wooden door leading west. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Kitchen =-3/12",
+        "action": "put old key on counter"
+    },
+    {
+        "state": "-= Kitchen =- You arrive in a kitchen. A normal kind of place. You see a closed refrigerator. What's that over there? It looks like it's a counter. Now why would someone leave that there? The counter is ordinary. Unfortunately, there isn't a thing on it. What's the point of an empty counter? You can see a stove. The stove is usual. The stove appears to be empty. You see a kitchen island. The kitchen island is standard. On the kitchen island you make out a note. Hmmm... what else, what else? There is an open screen door leading east. There is an open wooden door leading west. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Kitchen =-3/12",
+        "action": "put old key on kitchen island"
+    },
+    {
+        "state": "-= Kitchen =- You arrive in a kitchen. A normal kind of place. You see a closed refrigerator. What's that over there? It looks like it's a counter. Now why would someone leave that there? The counter is ordinary. Unfortunately, there isn't a thing on it. What's the point of an empty counter? You can see a stove. The stove is usual. The stove appears to be empty. You see a kitchen island. The kitchen island is standard. On the kitchen island you make out a note. Hmmm... what else, what else? There is an open screen door leading east. There is an open wooden door leading west. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Kitchen =-3/12",
+        "action": "put old key on stove"
+    },
+    {
+        "state": "-= Kitchen =- You arrive in a kitchen. A normal kind of place. You see a closed refrigerator. What's that over there? It looks like it's a counter. Now why would someone leave that there? The counter is ordinary. Unfortunately, there isn't a thing on it. What's the point of an empty counter? You can see a stove. The stove is usual. The stove appears to be empty. You see a kitchen island. The kitchen island is standard. On the kitchen island you make out a note. Hmmm... what else, what else? There is an open screen door leading east. There is an open wooden door leading west. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Kitchen =-3/12",
         "action": "take note from kitchen island"
     }
 ]

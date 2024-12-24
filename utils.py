@@ -172,7 +172,7 @@ import os
 import json
 
 
-def construct_replay_buffer(oracle_file_path):
+def construct_replay_buffer(oracle_file_path, lm_file_path):
     """
     从 oracle_file_path 目录中读取 JSON 文件构建 Replay Buffer。
 
@@ -185,10 +185,31 @@ def construct_replay_buffer(oracle_file_path):
     # 初始化 Replay Buffer
     replay_buffer = ReplayBuffer()
 
-    # 遍历目录下的所有 JSON 文件
+    # 遍历oracle目录下的所有 JSON 文件
     for file_name in os.listdir(oracle_file_path):
         if file_name.endswith('.json'):  # 确保只处理 JSON 文件
             file_path = os.path.join(oracle_file_path, file_name)
+            with open(file_path, 'r', encoding='utf-8') as f:
+                data = json.load(f)  # 加载 JSON 数据
+
+                # 将每个样本添加到 Replay Buffer 中
+                for sample in data:
+                    state = sample['state']
+                    action = sample['action']
+                    reward = sample['reward']
+                    next_state = sample['next_state']
+                    done = sample['done']
+                    infos = sample.get('infos', {})
+                    next_infos = sample.get('next_infos', {})
+                    next_actions = sample.get('next_action', {})
+
+                    # 添加样本到 Replay Buffer
+                    replay_buffer.add(state, action, reward, next_state, done, infos, next_infos, next_actions)
+
+    # 遍历lm目录下的所有 JSON 文件
+    for file_name in os.listdir(lm_file_path):
+        if file_name.endswith('.json'):  # 确保只处理 JSON 文件
+            file_path = os.path.join(lm_file_path, file_name)
             with open(file_path, 'r', encoding='utf-8') as f:
                 data = json.load(f)  # 加载 JSON 数据
 
@@ -255,41 +276,12 @@ def test_replay_buffer_consistency():
 
 
 if __name__ == "__main__":
-    test_replay_buffer_consistency()
+    print("Constructing Replay Buffer...")
+    replay_buffer = construct_replay_buffer('./data/simple/oracle_dense/', "./data/simple/lm/")
+    print(f"Replay Buffer size: {replay_buffer.size()}")
+    states, actions, rewards, next_states, dones, infos, next_infos, next_actions = replay_buffer.sample(16)
+    print(f"Sampled states: {states}")
+    print(f"Sampled actions: {actions}")
+    print(f"Sampled rewards: {rewards}")
 
-# if __name__ == '__main__':
-#     pass
-#     # import yaml
-#     # import json
-#     #
-#     # with open('config/train.yaml', 'r', encoding='utf-8') as file:
-#     #     data = yaml.safe_load(file)
-#     #
-#     # # get_prompt_admissible_actions()
-#     #
-#     # oracle_file_path = data.get('oracle_file_path')
-#     # replay_buffer = construct_replay_buffer(oracle_file_path)
-#     #
-#     # # 查看 Replay Buffer 大小
-#     # print(f"Replay Buffer size: {replay_buffer.size()}")
-#     #
-#     # # 从 Replay Buffer 中随机采样
-#     # batch_size = 10
-#     # states, actions, rewards, next_states, dones, infos, next_infos, next_actions = replay_buffer.sample(batch_size)
-#     #
-#     # # print("Sampled states:", states)
-#     # # print('------------------------------------------------------------------------------------------------')
-#     # # print("Sampled actions:", actions)
-#     # # print('------------------------------------------------------------------------------------------------')
-#     # print("Sampled dones:", dones)
-#     # print(type(dones[0]))
-#     # print('------------------------------------------------------------------------------------------------')
-#     # # print("Sampled next_states:", next_states)
-#     # # print('------------------------------------------------------------------------------------------------')
-#     # # print("Sampled dones:", dones)
-#     # # print('------------------------------------------------------------------------------------------------')
-#     # # print("Sampled infos:", infos)
-#     # # print('------------------------------------------------------------------------------------------------')
-#     # # print("Sampled next_infos:", next_infos)
-#     # # print('------------------------------------------------------------------------------------------------')
-#     # print("Sampled next_actions:", next_actions)
+

@@ -8,51 +8,59 @@
 """
 
 import json
+import os
+import random
+import shutil
 
-# 文件路径
-input_file = "./data/simple/oracle/simple_seed1_trajectory.json"
-output_file = "./test_input_data2.json"
+# 输入和输出目录路径
+input_directory = './data/simple/oracle/'
+output_directory = './simple_test/simple/'
 
+# 确保输出目录存在，如果不存在则创建
+os.makedirs(output_directory, exist_ok=True)
 
-# 读取 JSON 文件
-def read_json(filepath):
-    with open(filepath, 'r', encoding='utf-8') as file:
-        return json.load(file)
+# 获取输入目录中的所有文件
+all_files = [f for f in os.listdir(input_directory) if os.path.isfile(os.path.join(input_directory, f))]
 
+# 随机选择 10 个文件
+selected_files = random.sample(all_files, 10)
 
-# 构造测试数据
-def construct_test_data(data):
-    test_input_data = []
+# 处理每个选中的文件
+for file_name in selected_files:
+    # 构建源文件路径和目标文件路径
+    source_path = os.path.join(input_directory, file_name)
+    output_path = os.path.join(output_directory, file_name)
+
+    # 读取文件内容
+    with open(source_path, 'r', encoding='utf-8') as f:
+        data = json.load(f)
+
+    # 提取需要的信息并进行处理
+    extracted_data = []
     for entry in data:
-        state = entry["state"]
-        admissible_commands = entry["infos"]["admissible_commands"]
-        for command in admissible_commands:
-            test_input_data.append({
-                "state": state,
-                "action": command
-            })
-    return test_input_data
+        state = entry.get('state', '')
+        admissible_commands = entry.get('infos', {}).get('admissible_commands', [])
+        reward = entry.get('reward', 0)
+        action = entry.get('action', '')
+
+        # 构建字典并标记action为最优动作
+        extracted_entry = {
+            "state": state,
+            "admissible_commands": admissible_commands,
+            "reward": reward,
+            "optimal_action": action  # 将action标记为最优动作
+        }
+
+        # 将处理后的数据添加到列表中
+        extracted_data.append(extracted_entry)
+
+    # 将提取的数据写入到新的文件中
+    with open(output_path, 'w', encoding='utf-8') as f:
+        json.dump(extracted_data, f, ensure_ascii=False, indent=4)
+
+    print(f"文件 {file_name} 已处理并输出到 {output_path}")
+
+print(f"已成功处理并输出 {len(selected_files)} 个文件。")
 
 
-# 保存 JSON 文件
-def save_json(data, filepath):
-    with open(filepath, 'w', encoding='utf-8') as file:
-        json.dump(data, file, ensure_ascii=False, indent=4)
-
-
-# 主流程
-def main():
-    # 读取原始轨迹数据
-    trajectory_data = read_json(input_file)
-
-    # 构造测试集
-    test_input_data = construct_test_data(trajectory_data)
-
-    # 保存到输出文件
-    save_json(test_input_data, output_file)
-    print(f"Test input data has been saved to {output_file}")
-
-
-if __name__ == "__main__":
-    main()
 

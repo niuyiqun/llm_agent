@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="Always" serverName="nyq@114.212.82.12:79 password" remoteFilesAllowedToDisappearOnAutoupload="false" confirmBeforeUploading="false">
+  <component name="PublishConfigData" autoUpload="Always" serverName="zhipu" remoteFilesAllowedToDisappearOnAutoupload="false" confirmBeforeUploading="false">
     <option name="confirmBeforeUploading" value="false" />
     <serverData>
       <paths name="nyq@114.212.82.12:79 password">
         <serverdata>
           <mappings>
             <mapping deploy="/home/nyq/llm-agent" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="zhipu">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/llm_agent" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>

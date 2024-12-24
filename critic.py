@@ -6,6 +6,12 @@
 @Date    ：2024/10/26 16:23
 @Desc    ：
 """
+
+DEBUG_MODE = False  # 打开调试模式，设置为 False 时不打印调试信息
+def debug_print(*args, **kwargs):
+    if DEBUG_MODE:
+        print(*args, **kwargs)
+
 from datetime import datetime
 import random
 
@@ -55,7 +61,7 @@ class CriticModel(nn.Module):
             nn.Linear(self.bert_encoder.config.hidden_size, 128),
             nn.ReLU(),
             nn.Linear(self.hidden_dim, 1),  # 输出1个值，表示期望回报
-            nn.Sigmoid()  # 通过Sigmoid将输出限制在0到1之间
+            nn.ReLU()  # 通过Sigmoid将输出限制在0到1之间
         )
         log_time("CriticModel initialization", start_time)
 
@@ -70,6 +76,8 @@ class CriticModel(nn.Module):
                 text, return_tensors="pt", padding=True, truncation=True, max_length=512
             )
             inputs = {name: tensor.to(self.device) for name, tensor in inputs.items()}
+            # outputs = self.bert_encoder(**inputs)
+            # pooled = outputs.last_hidden_state.mean(dim=1)  # 对 token 维度取平均
             pooled = self.bert_encoder(**inputs).pooler_output
 
             return pooled
@@ -228,7 +236,6 @@ class AC_Agent:
             {'params': critic_2_base_params, 'lr': self.config.get("bert_lr", 1e-5)}
         ], weight_decay=self.config.get("weight_decay", 0.01))
 
-
         # Debug: 打印优化器状态
         # print("[DEBUG] Optimizer Critic 1 params:", optimizer_critic_1.state_dict()['param_groups'])
         # print("[DEBUG] Optimizer Critic 2 params:", optimizer_critic_2.state_dict()['param_groups'])
@@ -262,10 +269,19 @@ class AC_Agent:
         return next_actions
 
     def soft_update(self, net, target_net):
-        for param_target, param in zip(target_net.parameters(),
-                                       net.parameters()):
-            param_target.data.copy_(param_target.data * (1.0 - self.tau) +
-                                    param.data * self.tau)
+        i = 0
+        for param_target, param in zip(target_net.parameters(),net.parameters()):
+            # if i == 0:  # 只打印第 1 层的参数更新
+            #     print("[DEBUG] Before Update - Target Param:", param_target.data[:3])
+            #     print("[DEBUG] Current Net Param:", param.data[:3])
+            #     updated_param = param_target.data * (1.0 - self.tau) + param.data * self.tau
+            #     print("[DEBUG] Updated Param Diff:", (updated_param - param_target.data)[:3])
+            #     param_target.data.copy_(updated_param)
+            #     print("[DEBUG] After Update - Target Param:", param_target.data[:3])
+            #     i += 1
+            # else:
+            # 直接进行更新，不打印
+            param_target.data.copy_(param_target.data * (1.0 - self.tau) + param.data * self.tau)
 
     def update(self, transition_dict):
         """
@@ -284,18 +300,15 @@ class AC_Agent:
         rewards = torch.tensor(transition_dict['rewards'], dtype=torch.float).unsqueeze(-1).to(self.device)
         next_states = transition_dict['next_states']  # 文本
         dones = torch.tensor(transition_dict['dones'], dtype=torch.float).unsqueeze(-1).to(self.device)
-        # infos = transition_dict['infos']  # 文本
-        # next_infos = transition_dict['next_infos']  # 文本相关的附加信息
         next_actions = transition_dict['next_actions']  # 文本
 
-        # 使用 get_next_action 计算目标动作 next_actions
-        # print("[DEBUG] get_next_action started.")
-        # start_time = time.time()
-        # next_actions = self.get_next_action(next_states, next_infos)
-        # log_time("get_next_action", start_time)
+        # 打印调试信息: states 和 actions 示例
+        # print("[DEBUG] States Example:", states[:3])  # 打印前三个状态示例
+        # print("[DEBUG] Actions Example:", actions[:3])  # 打印前三个动作示例
+        debug_print("[DEBUG] Rewards Example:", rewards[:3].cpu().numpy().tolist())  # 打印前三个奖励示例
+        debug_print("[DEBUG] Dones Example:", dones[:3].cpu().numpy().tolist())  # 打印前三个奖励示例
 
         # 计算目标 Q 值
-        # print("[DEBUG] update started.")
         start_time = time.time()
         with torch.no_grad():
             q1_target = self.target_critic_1(next_states, next_actions)
@@ -303,33 +316,44 @@ class AC_Agent:
             min_q_target = torch.min(q1_target, q2_target)
             q_target = rewards + self.gamma * (1 - dones) * min_q_target
 
+        debug_print("[DEBUG] Q1 Target Example:", q1_target[:3].cpu().numpy().tolist())  # 打印前三个目标 Q 值
+        debug_print("[DEBUG] Q2 Target Example:", q2_target[:3].cpu().numpy().tolist())  # 打印前三个目标 Q 值
+
+        # 打印调试信息: 目标 Q 值示例
+        debug_print("[DEBUG] Q Target Example:", q_target[:3].cpu().numpy().tolist())  # 打印前三个目标 Q 值
+
         # 计算当前 Q 值
         q1_value = self.critic_1(states, actions)
         q2_value = self.critic_2(states, actions)
+
+        # 打印调试信息: 当前 Q 值示例
+        debug_print("[DEBUG] Q1 Value Example:", q1_value[:3].cpu().detach().numpy().tolist())  # 打印前三个 Q1 值
+        debug_print("[DEBUG] Q2 Value Example:", q2_value[:3].cpu().detach().numpy().tolist())  # 打印前三个 Q2 值
 
         # 计算 Critic 的损失
         critic_1_loss = F.mse_loss(q1_value, q_target)
         critic_2_loss = F.mse_loss(q2_value, q_target)
 
+        # 打印调试信息: 损失值
+        debug_print("[DEBUG] Critic 1 Loss:", critic_1_loss.item())
+        debug_print("[DEBUG] Critic 2 Loss:", critic_2_loss.item())
+
         # 优化 Critic 1
         self.critic_1_optimizer.zero_grad()
         critic_1_loss.backward()
-        # self.debug_gradients(self.critic_1, "Critic 1")  # 调试梯度
         self.critic_1_optimizer.step()
-        # self.debug_optimizer(self.critic_1_optimizer, "Critic 1 Optimizer")  # 调试优化器状态
 
         # 优化 Critic 2
         self.critic_2_optimizer.zero_grad()
         critic_2_loss.backward()
-        # self.debug_gradients(self.critic_2, "Critic 2")  # 调试梯度
         self.critic_2_optimizer.step()
-        # self.debug_optimizer(self.critic_2_optimizer, "Critic 2 Optimizer")  # 调试优化器状态
 
         # 软更新目标网络
         self.soft_update(self.critic_1, self.target_critic_1)
         self.soft_update(self.critic_2, self.target_critic_2)
 
-        # log_time("update", start_time)
+        debug_print("[DEBUG] Update step completed.")
+
         return {
             "critic_1_loss": critic_1_loss.item(),
             "critic_2_loss": critic_2_loss.item()
@@ -429,6 +453,7 @@ def main():
 
     # 读取路径和超参数
     oracle_file_path = config.get('oracle_file_path')
+    lm_file_path = config.get('lm_file_path')
     model_save_path = config.get('model_save_path', './checkpoints')
     num_epochs = config.get('num_epochs', 20)
     batch_size = config.get('batch_size', 16)
@@ -437,7 +462,7 @@ def main():
 
     # 构建 Replay Buffer
     print("Constructing Replay Buffer...")
-    replay_buffer = construct_replay_buffer(oracle_file_path)
+    replay_buffer = construct_replay_buffer(oracle_file_path, lm_file_path)
     print(f"Replay Buffer size: {replay_buffer.size()}")
 
     # 初始化 Agent
@@ -551,6 +576,7 @@ def save_model_info(agent, replay_buffer_size, save_path):
         json.dump(model_info, f, indent=4)
     print(f"Model info saved at: {info_path}")
 
+
 def set_random_seed(seed: int = 42):
     """ 设置随机数种子以保证训练结果可复现 """
     random.seed(seed)
@@ -560,6 +586,7 @@ def set_random_seed(seed: int = 42):
     torch.cuda.manual_seed_all(seed)
     torch.backends.cudnn.deterministic = True
     torch.backends.cudnn.benchmark = False
+
 
 if __name__ == "__main__":
     with open('./config/train.yaml', 'r', encoding='utf-8') as f:
@@ -574,8 +601,4 @@ if __name__ == "__main__":
     # 嘿嘿
     # 不嘿嘿
     # 不嘿嘿
-
-
-
-
-
+    # 嘿嘿
