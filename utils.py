@@ -93,6 +93,10 @@ class ReplayBuffer:
         self.buffer = []  # 使用列表存储样本
         self.reward_samples = []  # 奖励大于0的样本
         self.no_reward_samples = []  # 奖励为0的样本
+        import yaml
+        with open("./config/train.yaml", "r") as config_file:
+            config = yaml.safe_load(config_file)
+        self.reward_sample_ratio = config.get("reward_sample_ratio", 0.6)
 
     def add(self, state, action, reward, next_state, done, infos, next_infos, next_actions):
         """
@@ -115,19 +119,18 @@ class ReplayBuffer:
         else:
             self.no_reward_samples.append(transition)
 
-    def sample(self, batch_size, reward_sample_ratio=0.5):
+    def sample(self, batch_size):
         """
             从Replay Buffer中随机采样一个批次的数据，优先采样有奖励的样本。
 
             Args:
                 batch_size (int): 采样的批次大小。
-                reward_sample_ratio (float): 有奖励样本在采样中的比例。
 
             Returns:
                 tuple: 返回采样的批次数据，包括states, actions, rewards, next_states, dones, infos, next_infos, next_actions。
         """
         # 确保有奖励样本数量足够，否则调整比例
-        reward_sample_count = int(batch_size * reward_sample_ratio)
+        reward_sample_count = int(batch_size * self.reward_sample_ratio)
         reward_sample_count = min(len(self.reward_samples), reward_sample_count)
         no_reward_sample_count = batch_size - reward_sample_count
 

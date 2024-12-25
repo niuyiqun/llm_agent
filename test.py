@@ -51,8 +51,9 @@ def test_actions_with_q_values(agent, data, file_name, device):
     """
     agent.critic_1.eval()
 
-    correct_count = 0  # 统计正确的次数
-    total_count = 0  # 统计总的状态数量
+    correct_count = 0  # 统计最优动作为 Q 值最高的次数
+    correct_top3_count = 0  # 统计最优动作排在 Q 值前三的次数
+    total_count = 0  # 总状态数量
 
     # 打印正在测试的文件
     print(f"\nTesting file: {file_name}")
@@ -80,9 +81,14 @@ def test_actions_with_q_values(agent, data, file_name, device):
         # 找到 Q 值最高的动作
         best_action_by_q = q_values[0][0]  # Q 值最高的动作
 
-        # 比较 Q 值最高的动作和实际最优动作
+        # 检查最优动作是否为 Q 值最高的动作
         if best_action_by_q == optimal_action:
             correct_count += 1
+
+        # 检查最优动作是否在前三名中
+        top_3_actions = [action for action, _ in q_values[:3]]  # 提取前三名动作
+        if optimal_action in top_3_actions:
+            correct_top3_count += 1
 
         total_count += 1
 
@@ -98,9 +104,10 @@ def test_actions_with_q_values(agent, data, file_name, device):
 
     # 计算准确率
     accuracy = correct_count / total_count if total_count > 0 else 0
+    top3_accuracy = correct_top3_count / total_count if total_count > 0 else 0
     print(f"Accuracy for {file_name}: {accuracy * 100:.2f}%")
-    return accuracy
-
+    print(f"Top-3 Accuracy for {file_name}: {top3_accuracy * 100:.2f}%")
+    return accuracy, top3_accuracy, total_count
 
 
 def load_test_data_from_directory(directory):
@@ -135,7 +142,7 @@ def main():
     agent.target_critic_2.to(device)
 
     # 加载训练好的模型
-    model_save_path = './model/critic/dense/final_model_20241224_032951.pth'
+    model_save_path = './model/critic/sample_ratio/final_model_20241225_031607.pth'
     load_model_and_info(agent, model_save_path, device)
 
     # 从目录加载测试数据（包含奖励信息）
@@ -143,22 +150,27 @@ def main():
     test_data = load_test_data_from_directory(test_data_directory)
 
     total_correct = 0  # 总正确数量
+    total_correct_top3 = 0  # 总前三正确数量
     total_states = 0  # 总状态数量
 
     # 对每个文件进行测试
     for file_name, data in test_data:
-        file_accuracy = test_actions_with_q_values(agent, data, file_name, device)
-        total_correct += file_accuracy * len(data)  # 累加正确的状态数量
-        total_states += len(data)  # 累加总状态数量
-        print("=" * 140)  # 使用80个等号分隔
+        file_accuracy, file_top3_accuracy, file_total = test_actions_with_q_values(agent, data, file_name, device)
+        total_correct += file_accuracy * file_total  # 累加正确的状态数量
+        total_correct_top3 += file_top3_accuracy * file_total  # 累加前三正确的状态数量
+        total_states += file_total  # 累加总状态数量
+        print("=" * 140)  # 使用140个等号分隔
 
     # 计算整体准确率
     overall_accuracy = total_correct / total_states if total_states > 0 else 0
+    overall_top3_accuracy = total_correct_top3 / total_states if total_states > 0 else 0
     print(f"Overall accuracy: {overall_accuracy * 100:.2f}%")
+    print(f"Overall Top-3 accuracy: {overall_top3_accuracy * 100:.2f}%")
 
 
 if __name__ == "__main__":
     main()
+
 
 
 

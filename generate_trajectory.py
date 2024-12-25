@@ -30,7 +30,7 @@ def generate_simple_game(game_id, seed, game_file_path):
     """
     game_output = os.path.join(game_file_path, f"{game_id}.z8")
     game_gen_cmd = [
-        "tw-make", "tw-simple",
+        "tw-make", "tw-cooking",
         "--rewards", "balanced",
         "--goal", "brief",
         "--output", game_output,
@@ -438,7 +438,7 @@ def add_next_action_to_oracle_trajectory():
 
 
 if __name__ == "__main__":
-    add_next_action_to_oracle_trajectory()
+    generate_lm_trajectory()
 
 
 

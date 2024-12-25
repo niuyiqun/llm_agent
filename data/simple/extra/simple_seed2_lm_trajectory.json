@@ -1,0 +1,666 @@
+[
+    {
+        "state": "The dinner is almost ready! It's only missing a grilled lettuce. -= Bedroom =- You arrive in a bedroom. You decide to just list off a complete list of everything you see in the room, because hey, why not? You make out a chest drawer. What's that over there? It looks like it's an antique trunk. Were you looking for a king-size bed? Because look over there, it's a king-size bed. The king-size bed is usual. Looks like someone's already been here and taken everything off it, though. There is a closed wooden door leading east. > -= Bedroom =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine wooden door",
+                "inventory",
+                "look",
+                "open antique trunk",
+                "open chest drawer"
+            ]
+        },
+        "action": "examine chest drawer",
+        "reward": 0,
+        "next_state": "The chest drawer looks strong, and impossible to destroy. You can't see inside it because the lid's in your way. > -= Bedroom =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine wooden door",
+                "inventory",
+                "look",
+                "open antique trunk",
+                "open chest drawer"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "The chest drawer looks strong, and impossible to destroy. You can't see inside it because the lid's in your way. > -= Bedroom =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine wooden door",
+                "inventory",
+                "look",
+                "open antique trunk",
+                "open chest drawer"
+            ]
+        },
+        "action": "open chest drawer",
+        "reward": 0,
+        "next_state": "You open the chest drawer, revealing an old key. > -= Bedroom =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "close chest drawer",
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine old key",
+                "examine wooden door",
+                "inventory",
+                "look",
+                "open antique trunk",
+                "take old key from chest drawer"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "You open the chest drawer, revealing an old key. > -= Bedroom =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "close chest drawer",
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine old key",
+                "examine wooden door",
+                "inventory",
+                "look",
+                "open antique trunk",
+                "take old key from chest drawer"
+            ]
+        },
+        "action": "examine old key",
+        "reward": 0,
+        "next_state": "The old key is cold to the touch > -= Bedroom =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "close chest drawer",
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine old key",
+                "examine wooden door",
+                "inventory",
+                "look",
+                "open antique trunk",
+                "take old key from chest drawer"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "The old key is cold to the touch > -= Bedroom =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "close chest drawer",
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine old key",
+                "examine wooden door",
+                "inventory",
+                "look",
+                "open antique trunk",
+                "take old key from chest drawer"
+            ]
+        },
+        "action": "take old key from chest drawer",
+        "reward": 0,
+        "next_state": "You take the old key from the chest drawer. > -= Bedroom =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "close chest drawer",
+                "drop old key",
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine old key",
+                "examine wooden door",
+                "insert old key into chest drawer",
+                "inventory",
+                "look",
+                "open antique trunk",
+                "put old key on king-size bed",
+                "unlock wooden door with old key"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "You take the old key from the chest drawer. > -= Bedroom =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "close chest drawer",
+                "drop old key",
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine old key",
+                "examine wooden door",
+                "insert old key into chest drawer",
+                "inventory",
+                "look",
+                "open antique trunk",
+                "put old key on king-size bed",
+                "unlock wooden door with old key"
+            ]
+        },
+        "action": "examine king-size bed",
+        "reward": 0,
+        "next_state": "The king-size bed is durable. > -= Bedroom =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "close chest drawer",
+                "drop old key",
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine old key",
+                "examine wooden door",
+                "insert old key into chest drawer",
+                "inventory",
+                "look",
+                "open antique trunk",
+                "put old key on king-size bed",
+                "unlock wooden door with old key"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "The king-size bed is durable. > -= Bedroom =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "close chest drawer",
+                "drop old key",
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine old key",
+                "examine wooden door",
+                "insert old key into chest drawer",
+                "inventory",
+                "look",
+                "open antique trunk",
+                "put old key on king-size bed",
+                "unlock wooden door with old key"
+            ]
+        },
+        "action": "examine antique trunk",
+        "reward": 0,
+        "next_state": "The antique trunk looks strong, and impossible to destroy. It is closed. > -= Bedroom =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "close chest drawer",
+                "drop old key",
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine old key",
+                "examine wooden door",
+                "insert old key into chest drawer",
+                "inventory",
+                "look",
+                "open antique trunk",
+                "put old key on king-size bed",
+                "unlock wooden door with old key"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "The antique trunk looks strong, and impossible to destroy. It is closed. > -= Bedroom =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "close chest drawer",
+                "drop old key",
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine old key",
+                "examine wooden door",
+                "insert old key into chest drawer",
+                "inventory",
+                "look",
+                "open antique trunk",
+                "put old key on king-size bed",
+                "unlock wooden door with old key"
+            ]
+        },
+        "action": "open antique trunk",
+        "reward": 0,
+        "next_state": "You open the antique trunk. > -= Bedroom =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "close antique trunk",
+                "close chest drawer",
+                "drop old key",
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine old key",
+                "examine wooden door",
+                "insert old key into antique trunk",
+                "insert old key into chest drawer",
+                "inventory",
+                "look",
+                "put old key on king-size bed",
+                "unlock wooden door with old key"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "You open the antique trunk. > -= Bedroom =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "close antique trunk",
+                "close chest drawer",
+                "drop old key",
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine old key",
+                "examine wooden door",
+                "insert old key into antique trunk",
+                "insert old key into chest drawer",
+                "inventory",
+                "look",
+                "put old key on king-size bed",
+                "unlock wooden door with old key"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying: an old key. > -= Bedroom =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "close antique trunk",
+                "close chest drawer",
+                "drop old key",
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine old key",
+                "examine wooden door",
+                "insert old key into antique trunk",
+                "insert old key into chest drawer",
+                "inventory",
+                "look",
+                "put old key on king-size bed",
+                "unlock wooden door with old key"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "You are carrying: an old key. > -= Bedroom =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "close antique trunk",
+                "close chest drawer",
+                "drop old key",
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine old key",
+                "examine wooden door",
+                "insert old key into antique trunk",
+                "insert old key into chest drawer",
+                "inventory",
+                "look",
+                "put old key on king-size bed",
+                "unlock wooden door with old key"
+            ]
+        },
+        "action": "examine antique trunk",
+        "reward": 0,
+        "next_state": "The antique trunk looks strong, and impossible to destroy. It is open. > -= Bedroom =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "close antique trunk",
+                "close chest drawer",
+                "drop old key",
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine old key",
+                "examine wooden door",
+                "insert old key into antique trunk",
+                "insert old key into chest drawer",
+                "inventory",
+                "look",
+                "put old key on king-size bed",
+                "unlock wooden door with old key"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "The antique trunk looks strong, and impossible to destroy. It is open. > -= Bedroom =-0/10",
+        "infos": {
+            "admissible_commands": [
+                "close antique trunk",
+                "close chest drawer",
+                "drop old key",
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine old key",
+                "examine wooden door",
+                "insert old key into antique trunk",
+                "insert old key into chest drawer",
+                "inventory",
+                "look",
+                "put old key on king-size bed",
+                "unlock wooden door with old key"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Bedroom =- You arrive in a bedroom. You decide to just list off a complete list of everything you see in the room, because hey, why not? You make out a chest drawer. What a letdown! The chest drawer is empty! What's that over there? It looks like it's an antique trunk. The antique trunk is empty! What a waste of a day! Were you looking for a king-size bed? Because look over there, it's a king-size bed. The king-size bed is usual. Looks like someone's already been here and taken everything off it, though. There is a closed wooden door leading east. > -= Bedroom =-0/11",
+        "next_infos": {
+            "admissible_commands": [
+                "close antique trunk",
+                "close chest drawer",
+                "drop old key",
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine old key",
+                "examine wooden door",
+                "insert old key into antique trunk",
+                "insert old key into chest drawer",
+                "inventory",
+                "look",
+                "put old key on king-size bed",
+                "unlock wooden door with old key"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "-= Bedroom =- You arrive in a bedroom. You decide to just list off a complete list of everything you see in the room, because hey, why not? You make out a chest drawer. What a letdown! The chest drawer is empty! What's that over there? It looks like it's an antique trunk. The antique trunk is empty! What a waste of a day! Were you looking for a king-size bed? Because look over there, it's a king-size bed. The king-size bed is usual. Looks like someone's already been here and taken everything off it, though. There is a closed wooden door leading east. > -= Bedroom =-0/11",
+        "infos": {
+            "admissible_commands": [
+                "close antique trunk",
+                "close chest drawer",
+                "drop old key",
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine old key",
+                "examine wooden door",
+                "insert old key into antique trunk",
+                "insert old key into chest drawer",
+                "inventory",
+                "look",
+                "put old key on king-size bed",
+                "unlock wooden door with old key"
+            ]
+        },
+        "action": "unlock wooden door with old key",
+        "reward": 0,
+        "next_state": "You unlock wooden door. > -= Bedroom =-0/12",
+        "next_infos": {
+            "admissible_commands": [
+                "close antique trunk",
+                "close chest drawer",
+                "drop old key",
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine old key",
+                "examine wooden door",
+                "insert old key into antique trunk",
+                "insert old key into chest drawer",
+                "inventory",
+                "lock wooden door with old key",
+                "look",
+                "open wooden door",
+                "put old key on king-size bed"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "You unlock wooden door. > -= Bedroom =-0/12",
+        "infos": {
+            "admissible_commands": [
+                "close antique trunk",
+                "close chest drawer",
+                "drop old key",
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine old key",
+                "examine wooden door",
+                "insert old key into antique trunk",
+                "insert old key into chest drawer",
+                "inventory",
+                "lock wooden door with old key",
+                "look",
+                "open wooden door",
+                "put old key on king-size bed"
+            ]
+        },
+        "action": "open wooden door",
+        "reward": 0,
+        "next_state": "You open wooden door. > -= Bedroom =-0/13",
+        "next_infos": {
+            "admissible_commands": [
+                "close antique trunk",
+                "close chest drawer",
+                "close wooden door",
+                "drop old key",
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine old key",
+                "examine wooden door",
+                "go east",
+                "insert old key into antique trunk",
+                "insert old key into chest drawer",
+                "inventory",
+                "look",
+                "put old key on king-size bed"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "You open wooden door. > -= Bedroom =-0/13",
+        "infos": {
+            "admissible_commands": [
+                "close antique trunk",
+                "close chest drawer",
+                "close wooden door",
+                "drop old key",
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine old key",
+                "examine wooden door",
+                "go east",
+                "insert old key into antique trunk",
+                "insert old key into chest drawer",
+                "inventory",
+                "look",
+                "put old key on king-size bed"
+            ]
+        },
+        "action": "go east",
+        "reward": 1,
+        "next_state": "-= Kitchen =- You arrive in a kitchen. A normal kind of place. You see a closed refrigerator. What's that over there? It looks like it's a counter. Now why would someone leave that there? The counter is ordinary. Unfortunately, there isn't a thing on it. What's the point of an empty counter? You can see a stove. The stove is usual. The stove appears to be empty. You see a kitchen island. The kitchen island is standard. On the kitchen island you make out a note. Hmmm... what else, what else? There is a closed screen door leading east. There is an open wooden door leading west. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. Your score has just gone up by one point. > -= Kitchen =-1/14",
+        "next_infos": {
+            "admissible_commands": [
+                "close wooden door",
+                "drop old key",
+                "examine counter",
+                "examine kitchen island",
+                "examine note",
+                "examine old key",
+                "examine refrigerator",
+                "examine screen door",
+                "examine stove",
+                "examine wooden door",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "open refrigerator",
+                "open screen door",
+                "put old key on counter",
+                "put old key on kitchen island",
+                "put old key on stove",
+                "take note from kitchen island"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "-= Kitchen =- You arrive in a kitchen. A normal kind of place. You see a closed refrigerator. What's that over there? It looks like it's a counter. Now why would someone leave that there? The counter is ordinary. Unfortunately, there isn't a thing on it. What's the point of an empty counter? You can see a stove. The stove is usual. The stove appears to be empty. You see a kitchen island. The kitchen island is standard. On the kitchen island you make out a note. Hmmm... what else, what else? There is a closed screen door leading east. There is an open wooden door leading west. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. Your score has just gone up by one point. > -= Kitchen =-1/14",
+        "infos": {
+            "admissible_commands": [
+                "close wooden door",
+                "drop old key",
+                "examine counter",
+                "examine kitchen island",
+                "examine note",
+                "examine old key",
+                "examine refrigerator",
+                "examine screen door",
+                "examine stove",
+                "examine wooden door",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "open refrigerator",
+                "open screen door",
+                "put old key on counter",
+                "put old key on kitchen island",
+                "put old key on stove",
+                "take note from kitchen island"
+            ]
+        },
+        "action": "open refrigerator",
+        "reward": 0,
+        "next_state": "You open the refrigerator, revealing a tomato plant and an apple. > -= Kitchen =-1/15",
+        "next_infos": {
+            "admissible_commands": [
+                "close refrigerator",
+                "close wooden door",
+                "drop old key",
+                "examine apple",
+                "examine counter",
+                "examine kitchen island",
+                "examine note",
+                "examine old key",
+                "examine refrigerator",
+                "examine screen door",
+                "examine stove",
+                "examine tomato plant",
+                "examine wooden door",
+                "go north",
+                "go south",
+                "go west",
+                "insert old key into refrigerator",
+                "inventory",
+                "look",
+                "open screen door",
+                "put old key on counter",
+                "put old key on kitchen island",
+                "put old key on stove",
+                "take apple from refrigerator",
+                "take note from kitchen island",
+                "take tomato plant from refrigerator"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "You open the refrigerator, revealing a tomato plant and an apple. > -= Kitchen =-1/15",
+        "infos": {
+            "admissible_commands": [
+                "close refrigerator",
+                "close wooden door",
+                "drop old key",
+                "examine apple",
+                "examine counter",
+                "examine kitchen island",
+                "examine note",
+                "examine old key",
+                "examine refrigerator",
+                "examine screen door",
+                "examine stove",
+                "examine tomato plant",
+                "examine wooden door",
+                "go north",
+                "go south",
+                "go west",
+                "insert old key into refrigerator",
+                "inventory",
+                "look",
+                "open screen door",
+                "put old key on counter",
+                "put old key on kitchen island",
+                "put old key on stove",
+                "take apple from refrigerator",
+                "take note from kitchen island",
+                "take tomato plant from refrigerator"
+            ]
+        },
+        "action": "take tomato plant from refrigerator",
+        "reward": 0,
+        "next_state": "You take the tomato plant from the refrigerator. > -= Kitchen =-1/16",
+        "next_infos": {
+            "admissible_commands": [
+                "close refrigerator",
+                "close wooden door",
+                "drop old key",
+                "drop tomato plant",
+                "eat tomato plant",
+                "examine apple",
+                "examine counter",
+                "examine kitchen island",
+                "examine note",
+                "examine old key",
+                "examine refrigerator",
+                "examine screen door",
+                "examine stove",
+                "examine tomato plant",
+                "examine wooden door",
+                "go north",
+                "go south",
+                "go west",
+                "insert old key into refrigerator",
+                "insert tomato plant into refrigerator",
+                "inventory",
+                "look",
+                "open screen door",
+                "put old key on counter",
+                "put old key on kitchen island",
+                "put old key on stove",
+                "put tomato plant on counter",
+                "put tomato plant on kitchen island",
+                "put tomato plant on stove",
+                "take apple from refrigerator",
+                "take note from kitchen island"
+            ]
+        },
+        "done": true
+    }
+]

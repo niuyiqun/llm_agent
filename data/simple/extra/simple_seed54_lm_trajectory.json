@@ -1,0 +1,477 @@
+[
+    {
+        "state": "The dinner is almost ready! It's only missing a grilled lettuce. -= Bedroom =- Well, here we are in a bedroom. You begin looking for stuff. You see a closed chest drawer. You make out a closed typical looking antique trunk right there by you. You can see a king-size bed. But the thing is empty, unfortunately. There is a closed wooden door leading east. > -= Bedroom =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine wooden door",
+                "inventory",
+                "look",
+                "open antique trunk",
+                "open chest drawer"
+            ]
+        },
+        "action": "examine chest drawer",
+        "reward": 0,
+        "next_state": "The chest drawer looks strong, and impossible to crack. You can't see inside it because the lid's in your way. > -= Bedroom =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine wooden door",
+                "inventory",
+                "look",
+                "open antique trunk",
+                "open chest drawer"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "The chest drawer looks strong, and impossible to crack. You can't see inside it because the lid's in your way. > -= Bedroom =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine wooden door",
+                "inventory",
+                "look",
+                "open antique trunk",
+                "open chest drawer"
+            ]
+        },
+        "action": "examine antique trunk",
+        "reward": 0,
+        "next_state": "The antique trunk looks strong, and impossible to break. You can't see inside it because the lid's in your way. > -= Bedroom =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine wooden door",
+                "inventory",
+                "look",
+                "open antique trunk",
+                "open chest drawer"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "The antique trunk looks strong, and impossible to break. You can't see inside it because the lid's in your way. > -= Bedroom =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine wooden door",
+                "inventory",
+                "look",
+                "open antique trunk",
+                "open chest drawer"
+            ]
+        },
+        "action": "examine king-size bed",
+        "reward": 0,
+        "next_state": "The king-size bed is balanced. > -= Bedroom =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine wooden door",
+                "inventory",
+                "look",
+                "open antique trunk",
+                "open chest drawer"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "The king-size bed is balanced. > -= Bedroom =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine wooden door",
+                "inventory",
+                "look",
+                "open antique trunk",
+                "open chest drawer"
+            ]
+        },
+        "action": "look under king-size bed",
+        "reward": 0,
+        "next_state": "You find nothing of interest. > -= Bedroom =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine wooden door",
+                "inventory",
+                "look",
+                "open antique trunk",
+                "open chest drawer"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "You find nothing of interest. > -= Bedroom =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine wooden door",
+                "inventory",
+                "look",
+                "open antique trunk",
+                "open chest drawer"
+            ]
+        },
+        "action": "examine wooden door",
+        "reward": 0,
+        "next_state": "it is what it is, a wooden door You can't see inside it because the lid's in your way. > -= Bedroom =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine wooden door",
+                "inventory",
+                "look",
+                "open antique trunk",
+                "open chest drawer"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "it is what it is, a wooden door You can't see inside it because the lid's in your way. > -= Bedroom =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine wooden door",
+                "inventory",
+                "look",
+                "open antique trunk",
+                "open chest drawer"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying nothing. > -= Bedroom =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine wooden door",
+                "inventory",
+                "look",
+                "open antique trunk",
+                "open chest drawer"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "You are carrying nothing. > -= Bedroom =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine wooden door",
+                "inventory",
+                "look",
+                "open antique trunk",
+                "open chest drawer"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "You have to open the wooden door first. > -= Bedroom =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine wooden door",
+                "inventory",
+                "look",
+                "open antique trunk",
+                "open chest drawer"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "You have to open the wooden door first. > -= Bedroom =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine wooden door",
+                "inventory",
+                "look",
+                "open antique trunk",
+                "open chest drawer"
+            ]
+        },
+        "action": "open wooden door",
+        "reward": 0,
+        "next_state": "You have to unlock the wooden door with the old key first. > -= Bedroom =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine wooden door",
+                "inventory",
+                "look",
+                "open antique trunk",
+                "open chest drawer"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "You have to unlock the wooden door with the old key first. > -= Bedroom =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine wooden door",
+                "inventory",
+                "look",
+                "open antique trunk",
+                "open chest drawer"
+            ]
+        },
+        "action": "look for old key in the room",
+        "reward": 0,
+        "next_state": "You can't see any such thing. > -= Bedroom =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine wooden door",
+                "inventory",
+                "look",
+                "open antique trunk",
+                "open chest drawer"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "You can't see any such thing. > -= Bedroom =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine wooden door",
+                "inventory",
+                "look",
+                "open antique trunk",
+                "open chest drawer"
+            ]
+        },
+        "action": "search room for hidden compartments",
+        "reward": 0,
+        "next_state": "You can't see any such thing. > -= Bedroom =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine wooden door",
+                "inventory",
+                "look",
+                "open antique trunk",
+                "open chest drawer"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "You can't see any such thing. > -= Bedroom =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine wooden door",
+                "inventory",
+                "look",
+                "open antique trunk",
+                "open chest drawer"
+            ]
+        },
+        "action": "open antique trunk",
+        "reward": 0,
+        "next_state": "You open the antique trunk. > -= Bedroom =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "close antique trunk",
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine wooden door",
+                "inventory",
+                "look",
+                "open chest drawer"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "You open the antique trunk. > -= Bedroom =-0/10",
+        "infos": {
+            "admissible_commands": [
+                "close antique trunk",
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine wooden door",
+                "inventory",
+                "look",
+                "open chest drawer"
+            ]
+        },
+        "action": "examine antique trunk",
+        "reward": 0,
+        "next_state": "The antique trunk looks strong, and impossible to break. You can see inside it. > -= Bedroom =-0/11",
+        "next_infos": {
+            "admissible_commands": [
+                "close antique trunk",
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine wooden door",
+                "inventory",
+                "look",
+                "open chest drawer"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "The antique trunk looks strong, and impossible to break. You can see inside it. > -= Bedroom =-0/11",
+        "infos": {
+            "admissible_commands": [
+                "close antique trunk",
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine wooden door",
+                "inventory",
+                "look",
+                "open chest drawer"
+            ]
+        },
+        "action": "look inside antique trunk",
+        "reward": 0,
+        "next_state": "The antique trunk is empty. > -= Bedroom =-0/12",
+        "next_infos": {
+            "admissible_commands": [
+                "close antique trunk",
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine wooden door",
+                "inventory",
+                "look",
+                "open chest drawer"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "The antique trunk is empty. > -= Bedroom =-0/12",
+        "infos": {
+            "admissible_commands": [
+                "close antique trunk",
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine wooden door",
+                "inventory",
+                "look",
+                "open chest drawer"
+            ]
+        },
+        "action": "open chest drawer",
+        "reward": 0,
+        "next_state": "You open the chest drawer, revealing an old key. > -= Bedroom =-0/13",
+        "next_infos": {
+            "admissible_commands": [
+                "close antique trunk",
+                "close chest drawer",
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine old key",
+                "examine wooden door",
+                "inventory",
+                "look",
+                "take old key from chest drawer"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "You open the chest drawer, revealing an old key. > -= Bedroom =-0/13",
+        "infos": {
+            "admissible_commands": [
+                "close antique trunk",
+                "close chest drawer",
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine old key",
+                "examine wooden door",
+                "inventory",
+                "look",
+                "take old key from chest drawer"
+            ]
+        },
+        "action": "take old key from chest drawer",
+        "reward": 0,
+        "next_state": "You take the old key from the chest drawer. > -= Bedroom =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "close antique trunk",
+                "close chest drawer",
+                "drop old key",
+                "examine antique trunk",
+                "examine chest drawer",
+                "examine king-size bed",
+                "examine old key",
+                "examine wooden door",
+                "insert old key into antique trunk",
+                "insert old key into chest drawer",
+                "inventory",
+                "look",
+                "put old key on king-size bed",
+                "unlock wooden door with old key"
+            ]
+        },
+        "done": true
+    }
+]

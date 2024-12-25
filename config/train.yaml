@@ -2,10 +2,11 @@ game_file_path: "./data/simple/mock_game/"
 walkthroughs_file_path: "./data/simple/walkthroughs/"
 oracle_file_path: "./data/simple/oracle/"
 lm_file_path: "./data/simple/lm/"
-model_save_path: "./model/critic/mix/"
+model_save_path: "./model/critic/sample_ratio"
 checkpoint_interval: 10
-num_epochs: 100
+num_epochs: 50
 batch_size: 32
-device: "cuda:3"
+device: "cuda"
 bert_path: "./bert/"
-seed: 1224
+seed: 1225
+reward_sample_ratio: 0.5
