@@ -1,0 +1,261 @@
+[
+    {
+        "state": "Get ready to pick stuff up and put it in places, because you've just entered TextWorld! Here is your task for today. First of all, venture north. And then, move east. Then, go to the east. With that over with, try to take a trip south. And then, take a trip east. After that, travel north. Once you do that, travel north. With that accomplished, pick-up the peanut from the floor of the vault. Alright, thanks! -= Spare Room =- You are in a spare room. A typical kind of place. You make out a closed safe. There is an open hatch leading south. There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going west, that entranceway is unguarded. > -= Spare Room =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "close hatch",
+                "drop keycard",
+                "examine hatch",
+                "examine keycard",
+                "examine safe",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "open safe"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Salon =- You've just walked into a salon. There is an exit to the east. Don't worry, it is unguarded. There is an unguarded exit to the north. There is an exit to the south. Don't worry, it is unblocked. > -= Salon =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "drop keycard",
+                "examine keycard",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Salon =- You've just walked into a salon. There is an exit to the east. Don't worry, it is unguarded. There is an unguarded exit to the north. There is an exit to the south. Don't worry, it is unblocked. > -= Salon =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "drop keycard",
+                "examine keycard",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Laundry Place =- You are in a laundry place. An usual kind of place. You don't like doors? Why not try going east, that entranceway is unblocked. You need an unguarded exit? You should try going north. There is an unblocked exit to the south. You need an unblocked exit? You should try going west. > -= Laundry Place =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "drop keycard",
+                "examine keycard",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Laundry Place =- You are in a laundry place. An usual kind of place. You don't like doors? Why not try going east, that entranceway is unblocked. You need an unguarded exit? You should try going north. There is an unblocked exit to the south. You need an unblocked exit? You should try going west. > -= Laundry Place =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "drop keycard",
+                "examine keycard",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Basement =- You're now in a basement. Were you looking for a workbench? Because look over there, it's a workbench. The workbench appears to be empty. If you haven't noticed it already, there seems to be something there by the wall, it's a shelf. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it! There is an unguarded exit to the east. There is an unguarded exit to the south. You don't like doors? Why not try going west, that entranceway is unguarded. > -= Basement =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "drop keycard",
+                "examine keycard",
+                "examine shelf",
+                "examine workbench",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put keycard on shelf",
+                "put keycard on workbench"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Basement =- You're now in a basement. Were you looking for a workbench? Because look over there, it's a workbench. The workbench appears to be empty. If you haven't noticed it already, there seems to be something there by the wall, it's a shelf. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it! There is an unguarded exit to the east. There is an unguarded exit to the south. You don't like doors? Why not try going west, that entranceway is unguarded. > -= Basement =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "drop keycard",
+                "examine keycard",
+                "examine shelf",
+                "examine workbench",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put keycard on shelf",
+                "put keycard on workbench"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Garage =- You've entered a garage. The room is well lit. You need an unguarded exit? You should try going east. There is an exit to the north. Don't worry, it is unblocked. > -= Garage =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "drop keycard",
+                "examine keycard",
+                "go east",
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Garage =- You've entered a garage. The room is well lit. You need an unguarded exit? You should try going east. There is an exit to the north. Don't worry, it is unblocked. > -= Garage =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "drop keycard",
+                "examine keycard",
+                "go east",
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Studio =- Look at that signboard! What does it say? It says Welcome to the studio? Well that's cool. You need an unguarded exit? You should try going north. You don't like doors? Why not try going west, that entranceway is unguarded. > -= Studio =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "drop keycard",
+                "examine keycard",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Studio =- Look at that signboard! What does it say? It says Welcome to the studio? Well that's cool. You need an unguarded exit? You should try going north. You don't like doors? Why not try going west, that entranceway is unguarded. > -= Studio =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "drop keycard",
+                "examine keycard",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Cookery =- You find yourself in a cookery. A standard kind of place. You can make out a table. Wow, isn't TextWorld just the best? The table is ordinary. The table appears to be empty. You don't like doors? Why not try going north, that entranceway is unguarded. You need an unguarded exit? You should try going south. You need an unblocked exit? You should try going west. > -= Cookery =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "drop keycard",
+                "examine keycard",
+                "examine table",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put keycard on table"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Cookery =- You find yourself in a cookery. A standard kind of place. You can make out a table. Wow, isn't TextWorld just the best? The table is ordinary. The table appears to be empty. You don't like doors? Why not try going north, that entranceway is unguarded. You need an unguarded exit? You should try going south. You need an unblocked exit? You should try going west. > -= Cookery =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "drop keycard",
+                "examine keycard",
+                "examine table",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put keycard on table"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Vault =- You've just walked into a vault. You decide to just list off a complete list of everything you see in the room, because hey, why not? You don't like doors? Why not try going south, that entranceway is unguarded. You need an unblocked exit? You should try going west. There is a peanut on the floor. > -= Vault =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "drop keycard",
+                "examine keycard",
+                "examine peanut",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take peanut"
+            ]
+        },
+        "done": false,
+        "next_action": "take peanut"
+    },
+    {
+        "state": "-= Vault =- You've just walked into a vault. You decide to just list off a complete list of everything you see in the room, because hey, why not? You don't like doors? Why not try going south, that entranceway is unguarded. You need an unblocked exit? You should try going west. There is a peanut on the floor. > -= Vault =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "drop keycard",
+                "examine keycard",
+                "examine peanut",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take peanut"
+            ]
+        },
+        "action": "take peanut",
+        "reward": 1,
+        "next_state": "You pick up the peanut from the ground. Your score has just gone up by one point. *** The End *** You scored 1 out of a possible 1, in 9 turns. Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command? > -= Vault =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "drop keycard",
+                "drop peanut",
+                "eat peanut",
+                "examine keycard",
+                "examine peanut",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

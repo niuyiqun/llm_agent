@@ -1,0 +1,114 @@
+[
+    {
+        "state": "Welcome to TextWorld! First of all, make an attempt to head south. That done, go to the east. After that, venture south. With that over with, move west. If you can get around to doing that, head south. Okay, and then, make an effort to move west. And then, travel west. After that, head north. Once you do that, try to take a trip east. That done, go to the north. With that over with, head north. And then, take a trip west. Okay, and then, make an attempt to travel west. Then, pick up the paper towel from the safe in the sauna. Alright, thanks! -= Attic =- Okay, so you're in an attic, cool, but is it usual? You better believe it is. You can see a chest. You make out a rack. Looks like someone's already been here and taken everything off it, though. There is an exit to the east. Don't worry, it is unguarded. There is an unguarded exit to the north. There is an unguarded exit to the south. You need an unguarded exit? You should try going west. > -= Attic =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "examine chest",
+                "examine rack",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Studio =- Look at you, bigshot, walking into a studio like it isn't some huge deal. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked. > -= Studio =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Studio =- Look at you, bigshot, walking into a studio like it isn't some huge deal. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked. > -= Studio =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Launderette =- You arrive in a launderette. A normal one. There is an unguarded exit to the north. There is an exit to the south. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unguarded. > -= Launderette =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Launderette =- You arrive in a launderette. A normal one. There is an unguarded exit to the north. There is an exit to the south. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unguarded. > -= Launderette =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Lounge =- You've entered a lounge. You begin looking for stuff. You can see a desk. You shudder, but continue examining the desk. You see a key on the desk. There is an exit to the east. Don't worry, it is unguarded. There is an unblocked exit to the north. > -= Lounge =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "examine desk",
+                "examine key",
+                "go east",
+                "go north",
+                "inventory",
+                "look",
+                "take key from desk"
+            ]
+        },
+        "done": false,
+        "next_action": "take key from desk"
+    },
+    {
+        "state": "-= Lounge =- You've entered a lounge. You begin looking for stuff. You can see a desk. You shudder, but continue examining the desk. You see a key on the desk. There is an exit to the east. Don't worry, it is unguarded. There is an unblocked exit to the north. > -= Lounge =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "examine desk",
+                "examine key",
+                "go east",
+                "go north",
+                "inventory",
+                "look",
+                "take key from desk"
+            ]
+        },
+        "action": "take key from desk",
+        "reward": 0,
+        "next_state": "You take the key from the desk. *** You lost! *** You scored 0 out of a possible 1, in 4 turns. Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command? > -= Lounge =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "drop key",
+                "examine desk",
+                "examine key",
+                "go east",
+                "go north",
+                "inventory",
+                "look",
+                "put key on desk"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

@@ -1,0 +1,468 @@
+[
+    {
+        "state": "Welcome to TextWorld! Here is your task for today. First off, if it's not too much trouble, I need you to go west. Following that, go south. If you can succeed at that, make an attempt to take a trip south. And then, make an attempt to go to the east. If you can finish that, make an attempt to go to the south. After that, travel south. Once you finish that, pick-up the sponge from the floor of the sauna. And once you've done that, you win! -= Bedroom =- You are in a bedroom. A standard kind of place. You can see a couch. Now why would someone leave that there? But the thing hasn't got anything on it. You need an unblocked exit? You should try going east. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unguarded. > -= Bedroom =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "examine couch",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Bathroom =- Look at you, bigshot, walking into a bathroom like it isn't some huge deal. You begin to take stock of what's in the room. You rest your hand against a wall, but you miss the wall and fall onto a shelf. The shelf is typical. But there isn't a thing on it. There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked. There is an exit to the west. Don't worry, it is unblocked. > -= Bathroom =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "examine shelf",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Bathroom =- Look at you, bigshot, walking into a bathroom like it isn't some huge deal. You begin to take stock of what's in the room. You rest your hand against a wall, but you miss the wall and fall onto a shelf. The shelf is typical. But there isn't a thing on it. There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked. There is an exit to the west. Don't worry, it is unblocked. > -= Bathroom =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "examine shelf",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Workshop =- You're now in the workshop. You begin looking for stuff. Oh wow! Is that what I think it is? It is! It's a mantelpiece. However, the mantelpiece, like an empty mantelpiece, has nothing on it. You can see a table. But there isn't a thing on it. There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. You need an unblocked exit? You should try going west. > -= Workshop =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "examine mantelpiece",
+                "examine table",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Workshop =- You're now in the workshop. You begin looking for stuff. Oh wow! Is that what I think it is? It is! It's a mantelpiece. However, the mantelpiece, like an empty mantelpiece, has nothing on it. You can see a table. But there isn't a thing on it. There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. You need an unblocked exit? You should try going west. > -= Workshop =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "examine mantelpiece",
+                "examine table",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Spare Room =- You've just sauntered into a spare room. You need an unblocked exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded. There is an unguarded exit to the west. > -= Spare Room =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Spare Room =- You've just sauntered into a spare room. You need an unblocked exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded. There is an unguarded exit to the west. > -= Spare Room =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Studio =- You've just sauntered into a studio. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. There is an exit to the east. Don't worry, it is unblocked. You need an unblocked exit? You should try going north. There is an unblocked exit to the south. You need an unguarded exit? You should try going west. There is a loaf of bread on the floor. > -= Studio =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "examine loaf of bread",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take loaf of bread"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Studio =- You've just sauntered into a studio. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. There is an exit to the east. Don't worry, it is unblocked. You need an unblocked exit? You should try going north. There is an unblocked exit to the south. You need an unguarded exit? You should try going west. There is a loaf of bread on the floor. > -= Studio =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "examine loaf of bread",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take loaf of bread"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Scullery =- You've just walked into a scullery. If you haven't noticed it already, there seems to be something there by the wall, it's a pan. The pan is usual. But the thing is empty, unfortunately. This always happens! You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unguarded. There is an unguarded exit to the west. > -= Scullery =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "examine pan",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Scullery =- You've just walked into a scullery. If you haven't noticed it already, there seems to be something there by the wall, it's a pan. The pan is usual. But the thing is empty, unfortunately. This always happens! You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unguarded. There is an unguarded exit to the west. > -= Scullery =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "examine pan",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Lounge =- You find yourself in a lounge. An usual kind of place. You begin to take stock of what's here. Look over there! a mantle. Unfortunately, there isn't a thing on it. Hey, want to see a bed? Look over there, a bed. But there isn't a thing on it. You don't like doors? Why not try going east, that entranceway is unblocked. You need an unguarded exit? You should try going north. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded. > -= Lounge =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine mantle",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "-= Lounge =- You find yourself in a lounge. An usual kind of place. You begin to take stock of what's here. Look over there! a mantle. Unfortunately, there isn't a thing on it. Hey, want to see a bed? Look over there, a bed. But there isn't a thing on it. You don't like doors? Why not try going east, that entranceway is unblocked. You need an unguarded exit? You should try going north. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded. > -= Lounge =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine mantle",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Lounge =- You find yourself in a lounge. An usual kind of place. You begin to take stock of what's here. Look over there! a mantle. Unfortunately, there isn't a thing on it. Hey, want to see a bed? Look over there, a bed. But there isn't a thing on it. You don't like doors? Why not try going east, that entranceway is unblocked. You need an unguarded exit? You should try going north. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded. > -= Lounge =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine mantle",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "inventory"
+    },
+    {
+        "state": "-= Lounge =- You find yourself in a lounge. An usual kind of place. You begin to take stock of what's here. Look over there! a mantle. Unfortunately, there isn't a thing on it. Hey, want to see a bed? Look over there, a bed. But there isn't a thing on it. You don't like doors? Why not try going east, that entranceway is unblocked. You need an unguarded exit? You should try going north. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded. > -= Lounge =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine mantle",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying nothing. > -= Lounge =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine mantle",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "You are carrying nothing. > -= Lounge =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine mantle",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Lounge =- You find yourself in a lounge. An usual kind of place. You begin to take stock of what's here. Look over there! a mantle. Unfortunately, there isn't a thing on it. Hey, want to see a bed? Look over there, a bed. But there isn't a thing on it. You don't like doors? Why not try going east, that entranceway is unblocked. You need an unguarded exit? You should try going north. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded. > -= Lounge =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine mantle",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "examine bed"
+    },
+    {
+        "state": "-= Lounge =- You find yourself in a lounge. An usual kind of place. You begin to take stock of what's here. Look over there! a mantle. Unfortunately, there isn't a thing on it. Hey, want to see a bed? Look over there, a bed. But there isn't a thing on it. You don't like doors? Why not try going east, that entranceway is unblocked. You need an unguarded exit? You should try going north. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded. > -= Lounge =-0/10",
+        "infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine mantle",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "examine bed",
+        "reward": 0,
+        "next_state": "The bed is balanced. > -= Lounge =-0/11",
+        "next_infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine mantle",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "examine mantle"
+    },
+    {
+        "state": "The bed is balanced. > -= Lounge =-0/11",
+        "infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine mantle",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "examine mantle",
+        "reward": 0,
+        "next_state": "The mantle is durable. > -= Lounge =-0/12",
+        "next_infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine mantle",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "The mantle is durable. > -= Lounge =-0/12",
+        "infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine mantle",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Lounge =- You find yourself in a lounge. An usual kind of place. You begin to take stock of what's here. Look over there! a mantle. Unfortunately, there isn't a thing on it. Hey, want to see a bed? Look over there, a bed. But there isn't a thing on it. You don't like doors? Why not try going east, that entranceway is unblocked. You need an unguarded exit? You should try going north. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded. > -= Lounge =-0/13",
+        "next_infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine mantle",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "-= Lounge =- You find yourself in a lounge. An usual kind of place. You begin to take stock of what's here. Look over there! a mantle. Unfortunately, there isn't a thing on it. Hey, want to see a bed? Look over there, a bed. But there isn't a thing on it. You don't like doors? Why not try going east, that entranceway is unblocked. You need an unguarded exit? You should try going north. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded. > -= Lounge =-0/13",
+        "infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine mantle",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Lounge =- You find yourself in a lounge. An usual kind of place. You begin to take stock of what's here. Look over there! a mantle. Unfortunately, there isn't a thing on it. Hey, want to see a bed? Look over there, a bed. But there isn't a thing on it. You don't like doors? Why not try going east, that entranceway is unblocked. You need an unguarded exit? You should try going north. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded. > -= Lounge =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine mantle",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "take sponge from floor"
+    },
+    {
+        "state": "-= Lounge =- You find yourself in a lounge. An usual kind of place. You begin to take stock of what's here. Look over there! a mantle. Unfortunately, there isn't a thing on it. Hey, want to see a bed? Look over there, a bed. But there isn't a thing on it. You don't like doors? Why not try going east, that entranceway is unblocked. You need an unguarded exit? You should try going north. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded. > -= Lounge =-0/14",
+        "infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine mantle",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "take sponge from floor",
+        "reward": 0,
+        "next_state": "You can't see any such thing. > -= Lounge =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine mantle",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "You can't see any such thing. > -= Lounge =-0/14",
+        "infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine mantle",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Lounge =- You find yourself in a lounge. An usual kind of place. You begin to take stock of what's here. Look over there! a mantle. Unfortunately, there isn't a thing on it. Hey, want to see a bed? Look over there, a bed. But there isn't a thing on it. You don't like doors? Why not try going east, that entranceway is unblocked. You need an unguarded exit? You should try going north. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded. > -= Lounge =-0/15",
+        "next_infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine mantle",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

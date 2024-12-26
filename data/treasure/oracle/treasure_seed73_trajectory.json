@@ -1,0 +1,511 @@
+[
+    {
+        "state": "Hey, thanks for coming over to the TextWorld today, there is something I need you to do for me. First of all, head south. With that done, make an attempt to travel east. Following that, head north. Then, try to travel east. After that, recover the fudge scented passkey from the floor of the bedchamber. With the fudge scented passkey, check that the fudge scented door is unlocked with the fudge scented passkey. After that, make it so that the fudge scented door is ajar. And then, try to move south. After that, attempt to move south. Then, make an attempt to venture south. After that, go to the west. If you can accomplish that, attempt to move north. After that, venture west. Then, pick-up the passkey from the floor of the scullery. And if you do that, you're the winner! -= Study =- You've just sauntered into a study. Were you looking for a stand? Because look over there, it's a stand. Why don't you take a picture of it, it'll last longer! But oh no! there's nothing on this piece of trash. It would have been so cool if there was stuff on the stand. There is an unblocked exit to the east. There is an exit to the south. Don't worry, it is unguarded. > -= Study =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "examine stand",
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Studio =- You are in a studio. It seems to be pretty ordinary here. You can barely contain your excitement. You scan the room, seeing a table. You shudder, but continue examining the table. But the thing is empty, unfortunately. You need an unblocked exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unguarded. > -= Studio =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "examine table",
+                "go east",
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Studio =- You are in a studio. It seems to be pretty ordinary here. You can barely contain your excitement. You scan the room, seeing a table. You shudder, but continue examining the table. But the thing is empty, unfortunately. You need an unblocked exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unguarded. > -= Studio =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "examine table",
+                "go east",
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Office =- You are in an office. It seems to be pretty standard here. You need an unguarded exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked. > -= Office =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Office =- You are in an office. It seems to be pretty standard here. You need an unguarded exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked. > -= Office =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Salon =- Well, here we are in a salon. You need an unblocked exit? You should try going east. You need an unguarded exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unguarded. > -= Salon =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Salon =- Well, here we are in a salon. You need an unblocked exit? You should try going east. You need an unguarded exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unguarded. > -= Salon =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Bedchamber =- Guess what, you are in the place we're calling the bedchamber. There is a closed fudge scented door leading south. There is an unguarded exit to the east. There is an unblocked exit to the west. There is a fondue and a fudge scented passkey on the floor. > -= Bedchamber =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "examine fondue",
+                "examine fudge scented door",
+                "examine fudge scented passkey",
+                "go east",
+                "go west",
+                "inventory",
+                "look",
+                "take fondue",
+                "take fudge scented passkey"
+            ]
+        },
+        "done": false,
+        "next_action": "take fudge scented passkey"
+    },
+    {
+        "state": "-= Bedchamber =- Guess what, you are in the place we're calling the bedchamber. There is a closed fudge scented door leading south. There is an unguarded exit to the east. There is an unblocked exit to the west. There is a fondue and a fudge scented passkey on the floor. > -= Bedchamber =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "examine fondue",
+                "examine fudge scented door",
+                "examine fudge scented passkey",
+                "go east",
+                "go west",
+                "inventory",
+                "look",
+                "take fondue",
+                "take fudge scented passkey"
+            ]
+        },
+        "action": "take fudge scented passkey",
+        "reward": 0,
+        "next_state": "You pick up the fudge scented passkey from the ground. > -= Bedchamber =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "drop fudge scented passkey",
+                "examine fondue",
+                "examine fudge scented door",
+                "examine fudge scented passkey",
+                "go east",
+                "go west",
+                "inventory",
+                "look",
+                "take fondue",
+                "unlock fudge scented door with fudge scented passkey"
+            ]
+        },
+        "done": false,
+        "next_action": "unlock fudge scented door with fudge scented passkey"
+    },
+    {
+        "state": "You pick up the fudge scented passkey from the ground. > -= Bedchamber =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "drop fudge scented passkey",
+                "examine fondue",
+                "examine fudge scented door",
+                "examine fudge scented passkey",
+                "go east",
+                "go west",
+                "inventory",
+                "look",
+                "take fondue",
+                "unlock fudge scented door with fudge scented passkey"
+            ]
+        },
+        "action": "unlock fudge scented door with fudge scented passkey",
+        "reward": 0,
+        "next_state": "You unlock fudge scented door. > -= Bedchamber =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "drop fudge scented passkey",
+                "examine fondue",
+                "examine fudge scented door",
+                "examine fudge scented passkey",
+                "go east",
+                "go west",
+                "inventory",
+                "lock fudge scented door with fudge scented passkey",
+                "look",
+                "open fudge scented door",
+                "take fondue"
+            ]
+        },
+        "done": false,
+        "next_action": "open fudge scented door"
+    },
+    {
+        "state": "You unlock fudge scented door. > -= Bedchamber =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "drop fudge scented passkey",
+                "examine fondue",
+                "examine fudge scented door",
+                "examine fudge scented passkey",
+                "go east",
+                "go west",
+                "inventory",
+                "lock fudge scented door with fudge scented passkey",
+                "look",
+                "open fudge scented door",
+                "take fondue"
+            ]
+        },
+        "action": "open fudge scented door",
+        "reward": 0,
+        "next_state": "You open fudge scented door. > -= Bedchamber =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "close fudge scented door",
+                "drop fudge scented passkey",
+                "examine fondue",
+                "examine fudge scented door",
+                "examine fudge scented passkey",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take fondue"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "You open fudge scented door. > -= Bedchamber =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "close fudge scented door",
+                "drop fudge scented passkey",
+                "examine fondue",
+                "examine fudge scented door",
+                "examine fudge scented passkey",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take fondue"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Kitchenette =- You're now in a kitchenette. The room is well lit. You can see a chest. You check the price tag glued to the chest. Seventy big ones?! That's ridiculous! You ever meet my buddy, they work for the mayor? I'm sure my friend could get you one of those for 45 bucks! Empty! What kind of nightmare TextWorld is this? You can see a freezer. Is this it? Is this what you came to TextWorld to see? a freezer? What a letdown! The freezer is empty! You bend down to tie your shoe. When you stand up, you notice a shelf. The shelf is usual. Unfortunately, there isn't a thing on it. There is an open fudge scented door leading north. There is an open hatch leading south. There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going west. > -= Kitchenette =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "close chest",
+                "close freezer",
+                "close fudge scented door",
+                "close hatch",
+                "drop fudge scented passkey",
+                "examine chest",
+                "examine freezer",
+                "examine fudge scented door",
+                "examine fudge scented passkey",
+                "examine hatch",
+                "examine shelf",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "insert fudge scented passkey into chest",
+                "insert fudge scented passkey into freezer",
+                "inventory",
+                "look",
+                "put fudge scented passkey on shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Kitchenette =- You're now in a kitchenette. The room is well lit. You can see a chest. You check the price tag glued to the chest. Seventy big ones?! That's ridiculous! You ever meet my buddy, they work for the mayor? I'm sure my friend could get you one of those for 45 bucks! Empty! What kind of nightmare TextWorld is this? You can see a freezer. Is this it? Is this what you came to TextWorld to see? a freezer? What a letdown! The freezer is empty! You bend down to tie your shoe. When you stand up, you notice a shelf. The shelf is usual. Unfortunately, there isn't a thing on it. There is an open fudge scented door leading north. There is an open hatch leading south. There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going west. > -= Kitchenette =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "close chest",
+                "close freezer",
+                "close fudge scented door",
+                "close hatch",
+                "drop fudge scented passkey",
+                "examine chest",
+                "examine freezer",
+                "examine fudge scented door",
+                "examine fudge scented passkey",
+                "examine hatch",
+                "examine shelf",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "insert fudge scented passkey into chest",
+                "insert fudge scented passkey into freezer",
+                "inventory",
+                "look",
+                "put fudge scented passkey on shelf"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Still Cubicle =- You make a grand eccentric entrance into a still cubicle. There is an open hatch leading north. There is an open portal leading west. There is an exit to the east. Don't worry, it is unblocked. There is an unblocked exit to the south. > -= Still Cubicle =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "close hatch",
+                "close portal",
+                "drop fudge scented passkey",
+                "examine fudge scented passkey",
+                "examine hatch",
+                "examine portal",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Still Cubicle =- You make a grand eccentric entrance into a still cubicle. There is an open hatch leading north. There is an open portal leading west. There is an exit to the east. Don't worry, it is unblocked. There is an unblocked exit to the south. > -= Still Cubicle =-0/10",
+        "infos": {
+            "admissible_commands": [
+                "close hatch",
+                "close portal",
+                "drop fudge scented passkey",
+                "examine fudge scented passkey",
+                "examine hatch",
+                "examine portal",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Washroom =- You've entered a washroom. There is an unblocked exit to the east. There is an exit to the north. Don't worry, it is unguarded. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked. > -= Washroom =-0/11",
+        "next_infos": {
+            "admissible_commands": [
+                "drop fudge scented passkey",
+                "examine fudge scented passkey",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Washroom =- You've entered a washroom. There is an unblocked exit to the east. There is an exit to the north. Don't worry, it is unguarded. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked. > -= Washroom =-0/11",
+        "infos": {
+            "admissible_commands": [
+                "drop fudge scented passkey",
+                "examine fudge scented passkey",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Laundry Place =- Well, here we are in the laundry place. You begin looking for stuff. You can see a closed trunk, which looks standard, nearby. You can see a closed cabinet close by. You can see a board. I guess it's true what they say, if you're looking for a board, go to TextWorld. The board is typical. Looks like someone's already been here and taken everything off it, though. You make out a bench. The bench is ordinary. But the thing hasn't got anything on it. Hm. Oh well You need an unguarded exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unblocked. There is an unguarded exit to the south. There is an exit to the west. Don't worry, it is unguarded. > -= Laundry Place =-0/12",
+        "next_infos": {
+            "admissible_commands": [
+                "drop fudge scented passkey",
+                "examine bench",
+                "examine board",
+                "examine cabinet",
+                "examine fudge scented passkey",
+                "examine trunk",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "open cabinet",
+                "open trunk",
+                "put fudge scented passkey on bench",
+                "put fudge scented passkey on board"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Laundry Place =- Well, here we are in the laundry place. You begin looking for stuff. You can see a closed trunk, which looks standard, nearby. You can see a closed cabinet close by. You can see a board. I guess it's true what they say, if you're looking for a board, go to TextWorld. The board is typical. Looks like someone's already been here and taken everything off it, though. You make out a bench. The bench is ordinary. But the thing hasn't got anything on it. Hm. Oh well You need an unguarded exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unblocked. There is an unguarded exit to the south. There is an exit to the west. Don't worry, it is unguarded. > -= Laundry Place =-0/12",
+        "infos": {
+            "admissible_commands": [
+                "drop fudge scented passkey",
+                "examine bench",
+                "examine board",
+                "examine cabinet",
+                "examine fudge scented passkey",
+                "examine trunk",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "open cabinet",
+                "open trunk",
+                "put fudge scented passkey on bench",
+                "put fudge scented passkey on board"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Cubicle =- You've entered a cubicle. You start to take note of what's in the room. You see an opened coffer here. The coffer is empty! This is the worst thing that could possibly happen, ever! You can make out a safe. There is an open portal leading east. You don't like doors? Why not try going south, that entranceway is unblocked. There is an exit to the west. Don't worry, it is unblocked. > -= Cubicle =-0/13",
+        "next_infos": {
+            "admissible_commands": [
+                "close coffer",
+                "close portal",
+                "drop fudge scented passkey",
+                "examine coffer",
+                "examine fudge scented passkey",
+                "examine portal",
+                "examine safe",
+                "go east",
+                "go south",
+                "go west",
+                "insert fudge scented passkey into coffer",
+                "inventory",
+                "look",
+                "open safe"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Cubicle =- You've entered a cubicle. You start to take note of what's in the room. You see an opened coffer here. The coffer is empty! This is the worst thing that could possibly happen, ever! You can make out a safe. There is an open portal leading east. You don't like doors? Why not try going south, that entranceway is unblocked. There is an exit to the west. Don't worry, it is unblocked. > -= Cubicle =-0/13",
+        "infos": {
+            "admissible_commands": [
+                "close coffer",
+                "close portal",
+                "drop fudge scented passkey",
+                "examine coffer",
+                "examine fudge scented passkey",
+                "examine portal",
+                "examine safe",
+                "go east",
+                "go south",
+                "go west",
+                "insert fudge scented passkey into coffer",
+                "inventory",
+                "look",
+                "open safe"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Scullery =- Well, here we are in the scullery. You begin looking for stuff. You hear a noise behind you and spin around, but you can't see anything other than a saucepan. But oh no! there's nothing on this piece of garbage. Oh! Why couldn't there just be stuff on it? There is an exit to the east. Don't worry, it is unguarded. There is a passkey on the floor. > -= Scullery =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "drop fudge scented passkey",
+                "examine fudge scented passkey",
+                "examine passkey",
+                "examine saucepan",
+                "go east",
+                "inventory",
+                "look",
+                "put fudge scented passkey on saucepan",
+                "take passkey"
+            ]
+        },
+        "done": false,
+        "next_action": "take passkey"
+    },
+    {
+        "state": "-= Scullery =- Well, here we are in the scullery. You begin looking for stuff. You hear a noise behind you and spin around, but you can't see anything other than a saucepan. But oh no! there's nothing on this piece of garbage. Oh! Why couldn't there just be stuff on it? There is an exit to the east. Don't worry, it is unguarded. There is a passkey on the floor. > -= Scullery =-0/14",
+        "infos": {
+            "admissible_commands": [
+                "drop fudge scented passkey",
+                "examine fudge scented passkey",
+                "examine passkey",
+                "examine saucepan",
+                "go east",
+                "inventory",
+                "look",
+                "put fudge scented passkey on saucepan",
+                "take passkey"
+            ]
+        },
+        "action": "take passkey",
+        "reward": 1,
+        "next_state": "(the passkey) You pick up the passkey from the ground. Your score has just gone up by one point. *** The End *** You scored 1 out of a possible 1, in 15 turns. Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command? > -= Scullery =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "drop fudge scented passkey",
+                "drop passkey",
+                "examine fudge scented passkey",
+                "examine passkey",
+                "examine saucepan",
+                "go east",
+                "inventory",
+                "look",
+                "put fudge scented passkey on saucepan",
+                "put passkey on saucepan"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

@@ -1,0 +1,471 @@
+[
+    {
+        "state": "I hope you're ready to go into rooms and interact with objects, because you've just entered TextWorld! Here is how to play! First, it would be good if you could venture south. Then, venture west. If you can succeed at that, try to go west. Then, make an attempt to go to the south. And then, try to venture south. And then, retrieve the cuboid key from the floor of the cellar. Then, make an attempt to move north. Then, go to the west. Then, unlock the cuboid hatch. And then, make it so that the cuboid hatch in the parlor is opened. Then, make an attempt to head north. Once you accomplish that, make an effort to move north. That done, attempt to venture west. After that, pick up the burger from the floor of the bedroom. That's it! -= Sauna =- Of every sauna you could have shown up in, you had to saunter into a typical one. You make out an opened trunk. The trunk contains a fly larva. There is an unguarded exit to the south. You don't like doors? Why not try going west, that entranceway is unguarded. > -= Sauna =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "close trunk",
+                "examine fly larva",
+                "examine trunk",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take fly larva from trunk"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Spare Room =- You've entered a spare room. You need an unblocked exit? You should try going north. There is an unguarded exit to the south. You need an unguarded exit? You should try going west. > -= Spare Room =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Spare Room =- You've entered a spare room. You need an unblocked exit? You should try going north. There is an unguarded exit to the south. You need an unguarded exit? You should try going west. > -= Spare Room =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Kitchenette =- You are in a kitchenette. A standard kind of place. You decide to just list off a complete list of everything you see in the room, because hey, why not? You see a refrigerator. There is an unblocked exit to the east. There is an exit to the south. Don't worry, it is unblocked. There is an exit to the west. Don't worry, it is unguarded. > -= Kitchenette =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "examine refrigerator",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Kitchenette =- You are in a kitchenette. A standard kind of place. You decide to just list off a complete list of everything you see in the room, because hey, why not? You see a refrigerator. There is an unblocked exit to the east. There is an exit to the south. Don't worry, it is unblocked. There is an exit to the west. Don't worry, it is unguarded. > -= Kitchenette =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "examine refrigerator",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Bedchamber =- You find yourself in a bedchamber. A normal kind of place. You make out a closed basket. There is an unblocked exit to the east. You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Bedchamber =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "examine basket",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "open basket"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Bedchamber =- You find yourself in a bedchamber. A normal kind of place. You make out a closed basket. There is an unblocked exit to the east. You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Bedchamber =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "examine basket",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "open basket"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Washroom =- A laminated placard tells you that you are now in the washroom. There is an open portal leading west. You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the south. > -= Washroom =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "close portal",
+                "examine portal",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Washroom =- A laminated placard tells you that you are now in the washroom. There is an open portal leading west. You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the south. > -= Washroom =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "close portal",
+                "examine portal",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Cellar =- This cellar you have just entered is definitely standard. You need an unguarded exit? You should try going north. There is a cuboid key on the floor. > -= Cellar =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "examine cuboid key",
+                "go north",
+                "inventory",
+                "look",
+                "take cuboid key"
+            ]
+        },
+        "done": false,
+        "next_action": "take cuboid key"
+    },
+    {
+        "state": "-= Cellar =- This cellar you have just entered is definitely standard. You need an unguarded exit? You should try going north. There is a cuboid key on the floor. > -= Cellar =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "examine cuboid key",
+                "go north",
+                "inventory",
+                "look",
+                "take cuboid key"
+            ]
+        },
+        "action": "take cuboid key",
+        "reward": 0,
+        "next_state": "You pick up the cuboid key from the ground. > -= Cellar =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "drop cuboid key",
+                "examine cuboid key",
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "You pick up the cuboid key from the ground. > -= Cellar =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "drop cuboid key",
+                "examine cuboid key",
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Washroom =- A laminated placard tells you that you are now in the washroom. There is an open portal leading west. You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the south. > -= Washroom =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "close portal",
+                "drop cuboid key",
+                "examine cuboid key",
+                "examine portal",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Washroom =- A laminated placard tells you that you are now in the washroom. There is an open portal leading west. You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the south. > -= Washroom =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "close portal",
+                "drop cuboid key",
+                "examine cuboid key",
+                "examine portal",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Parlor =- You are in a parlor. A normal one. You can see a closed coffer. There is a closed cuboid hatch leading north. There is an open portal leading east. You need an unblocked exit? You should try going west. > -= Parlor =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "close portal",
+                "drop cuboid key",
+                "examine coffer",
+                "examine cuboid hatch",
+                "examine cuboid key",
+                "examine portal",
+                "go east",
+                "go west",
+                "inventory",
+                "look",
+                "open coffer",
+                "unlock cuboid hatch with cuboid key"
+            ]
+        },
+        "done": false,
+        "next_action": "unlock cuboid hatch with cuboid key"
+    },
+    {
+        "state": "-= Parlor =- You are in a parlor. A normal one. You can see a closed coffer. There is a closed cuboid hatch leading north. There is an open portal leading east. You need an unblocked exit? You should try going west. > -= Parlor =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "close portal",
+                "drop cuboid key",
+                "examine coffer",
+                "examine cuboid hatch",
+                "examine cuboid key",
+                "examine portal",
+                "go east",
+                "go west",
+                "inventory",
+                "look",
+                "open coffer",
+                "unlock cuboid hatch with cuboid key"
+            ]
+        },
+        "action": "unlock cuboid hatch with cuboid key",
+        "reward": 0,
+        "next_state": "You unlock cuboid hatch. > -= Parlor =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "close portal",
+                "drop cuboid key",
+                "examine coffer",
+                "examine cuboid hatch",
+                "examine cuboid key",
+                "examine portal",
+                "go east",
+                "go west",
+                "inventory",
+                "lock cuboid hatch with cuboid key",
+                "look",
+                "open coffer",
+                "open cuboid hatch"
+            ]
+        },
+        "done": false,
+        "next_action": "open cuboid hatch"
+    },
+    {
+        "state": "You unlock cuboid hatch. > -= Parlor =-0/10",
+        "infos": {
+            "admissible_commands": [
+                "close portal",
+                "drop cuboid key",
+                "examine coffer",
+                "examine cuboid hatch",
+                "examine cuboid key",
+                "examine portal",
+                "go east",
+                "go west",
+                "inventory",
+                "lock cuboid hatch with cuboid key",
+                "look",
+                "open coffer",
+                "open cuboid hatch"
+            ]
+        },
+        "action": "open cuboid hatch",
+        "reward": 0,
+        "next_state": "You open cuboid hatch. > -= Parlor =-0/11",
+        "next_infos": {
+            "admissible_commands": [
+                "close cuboid hatch",
+                "close portal",
+                "drop cuboid key",
+                "examine coffer",
+                "examine cuboid hatch",
+                "examine cuboid key",
+                "examine portal",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "open coffer"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "You open cuboid hatch. > -= Parlor =-0/11",
+        "infos": {
+            "admissible_commands": [
+                "close cuboid hatch",
+                "close portal",
+                "drop cuboid key",
+                "examine coffer",
+                "examine cuboid hatch",
+                "examine cuboid key",
+                "examine portal",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "open coffer"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Kitchen =- You are in a kitchen. A normal kind of place. There is an open cuboid hatch leading south. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded. > -= Kitchen =-0/12",
+        "next_infos": {
+            "admissible_commands": [
+                "close cuboid hatch",
+                "drop cuboid key",
+                "examine cuboid hatch",
+                "examine cuboid key",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Kitchen =- You are in a kitchen. A normal kind of place. There is an open cuboid hatch leading south. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded. > -= Kitchen =-0/12",
+        "infos": {
+            "admissible_commands": [
+                "close cuboid hatch",
+                "drop cuboid key",
+                "examine cuboid hatch",
+                "examine cuboid key",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Restroom =- You are in a restroom. A standard one. I guess you better just go and list everything you see here. You can see a cabinet. You need an unblocked exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unblocked. There is an unguarded exit to the west. > -= Restroom =-0/13",
+        "next_infos": {
+            "admissible_commands": [
+                "drop cuboid key",
+                "examine cabinet",
+                "examine cuboid key",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Restroom =- You are in a restroom. A standard one. I guess you better just go and list everything you see here. You can see a cabinet. You need an unblocked exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unblocked. There is an unguarded exit to the west. > -= Restroom =-0/13",
+        "infos": {
+            "admissible_commands": [
+                "drop cuboid key",
+                "examine cabinet",
+                "examine cuboid key",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Bedroom =- Guess what, you are in the place we're calling the bedroom. The room is well lit. If you haven't noticed it already, there seems to be something there by the wall, it's a shelf. But oh no! there's nothing on this piece of garbage. You need an unguarded exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unblocked. There is an unblocked exit to the south. There is a burger on the floor. > -= Bedroom =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "drop cuboid key",
+                "examine burger",
+                "examine cuboid key",
+                "examine shelf",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "put cuboid key on shelf",
+                "take burger"
+            ]
+        },
+        "done": false,
+        "next_action": "take burger"
+    },
+    {
+        "state": "-= Bedroom =- Guess what, you are in the place we're calling the bedroom. The room is well lit. If you haven't noticed it already, there seems to be something there by the wall, it's a shelf. But oh no! there's nothing on this piece of garbage. You need an unguarded exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unblocked. There is an unblocked exit to the south. There is a burger on the floor. > -= Bedroom =-0/14",
+        "infos": {
+            "admissible_commands": [
+                "drop cuboid key",
+                "examine burger",
+                "examine cuboid key",
+                "examine shelf",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "put cuboid key on shelf",
+                "take burger"
+            ]
+        },
+        "action": "take burger",
+        "reward": 1,
+        "next_state": "You pick up the burger from the ground. Your score has just gone up by one point. *** The End *** You scored 1 out of a possible 1, in 15 turns. Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command? > -= Bedroom =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "drop burger",
+                "drop cuboid key",
+                "eat burger",
+                "examine burger",
+                "examine cuboid key",
+                "examine shelf",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "put burger on shelf",
+                "put cuboid key on shelf"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

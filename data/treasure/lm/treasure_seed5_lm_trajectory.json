@@ -1,0 +1,426 @@
+[
+    {
+        "state": "It's time to explore the amazing world of TextWorld! First of all, attempt to venture west. And then, make an effort to take a trip west. After that, travel west. And then, head north. With that done, go north. And then, make an attempt to take a trip west. And then, attempt to go to the north. And then, go to the east. Then, make an effort to head east. Next, try to go east. Okay, and then, make an effort to move south. That done, go to the south. And then, make an attempt to venture west. After that, pick-up the gummy bear from the floor of the chamber. Alright, thanks! -= Bedchamber =- I am obligated to announce that you are now in the bedchamber. You don't like doors? Why not try going north, that entranceway is unguarded. There is an exit to the west. Don't worry, it is unguarded. > -= Bedchamber =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Bedchamber =- I am obligated to announce that you are now in the bedchamber. You don't like doors? Why not try going north, that entranceway is unguarded. There is an exit to the west. Don't worry, it is unguarded. > -= Bedchamber =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Bedchamber =- I am obligated to announce that you are now in the bedchamber. You don't like doors? Why not try going north, that entranceway is unguarded. There is an exit to the west. Don't worry, it is unguarded. > -= Bedchamber =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Bedroom =- You find yourself in a bedroom. A normal one. You begin to take stock of what's in the room. You make out a suitcase. You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going south. There is an unblocked exit to the west. > -= Bedroom =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "examine suitcase",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "examine suitcase"
+    },
+    {
+        "state": "-= Bedroom =- You find yourself in a bedroom. A normal one. You begin to take stock of what's in the room. You make out a suitcase. You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going south. There is an unblocked exit to the west. > -= Bedroom =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "examine suitcase",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "examine suitcase",
+        "reward": 0,
+        "next_state": "The suitcase looks strong, and impossible to destroy. It is closed. > -= Bedroom =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "examine suitcase",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "examine suitcase"
+    },
+    {
+        "state": "The suitcase looks strong, and impossible to destroy. It is closed. > -= Bedroom =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "examine suitcase",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "examine suitcase",
+        "reward": 0,
+        "next_state": "The suitcase looks strong, and impossible to destroy. It is closed. > -= Bedroom =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "examine suitcase",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "The suitcase looks strong, and impossible to destroy. It is closed. > -= Bedroom =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "examine suitcase",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Bedroom =- You find yourself in a bedroom. A normal one. You begin to take stock of what's in the room. You make out a suitcase. You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going south. There is an unblocked exit to the west. > -= Bedroom =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "examine suitcase",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "examine suitcase"
+    },
+    {
+        "state": "-= Bedroom =- You find yourself in a bedroom. A normal one. You begin to take stock of what's in the room. You make out a suitcase. You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going south. There is an unblocked exit to the west. > -= Bedroom =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "examine suitcase",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "examine suitcase",
+        "reward": 0,
+        "next_state": "The suitcase looks strong, and impossible to destroy. It is closed. > -= Bedroom =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "examine suitcase",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "The suitcase looks strong, and impossible to destroy. It is closed. > -= Bedroom =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "examine suitcase",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Cookhouse =- Guess what, you are in the place we're calling the cookhouse. You need an unblocked exit? You should try going east. You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked. > -= Cookhouse =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "-= Cookhouse =- Guess what, you are in the place we're calling the cookhouse. You need an unblocked exit? You should try going east. You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked. > -= Cookhouse =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Cookhouse =- Guess what, you are in the place we're calling the cookhouse. You need an unblocked exit? You should try going east. You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked. > -= Cookhouse =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Cookhouse =- Guess what, you are in the place we're calling the cookhouse. You need an unblocked exit? You should try going east. You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked. > -= Cookhouse =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Study =- Well I'll be, you are in a place we're calling a study. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. You see a gleam over in a corner, where you can see a display. There is an unguarded exit to the north. There is an exit to the south. Don't worry, it is unblocked. There is an exit to the west. Don't worry, it is unguarded. > -= Study =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "examine display",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "open display"
+            ]
+        },
+        "done": false,
+        "next_action": "examine display"
+    },
+    {
+        "state": "-= Study =- Well I'll be, you are in a place we're calling a study. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. You see a gleam over in a corner, where you can see a display. There is an unguarded exit to the north. There is an exit to the south. Don't worry, it is unblocked. There is an exit to the west. Don't worry, it is unguarded. > -= Study =-0/10",
+        "infos": {
+            "admissible_commands": [
+                "examine display",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "open display"
+            ]
+        },
+        "action": "examine display",
+        "reward": 0,
+        "next_state": "The display looks strong, and impossible to break. It is closed. > -= Study =-0/11",
+        "next_infos": {
+            "admissible_commands": [
+                "examine display",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "open display"
+            ]
+        },
+        "done": false,
+        "next_action": "open display"
+    },
+    {
+        "state": "The display looks strong, and impossible to break. It is closed. > -= Study =-0/11",
+        "infos": {
+            "admissible_commands": [
+                "examine display",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "open display"
+            ]
+        },
+        "action": "open display",
+        "reward": 0,
+        "next_state": "You open the display. > -= Study =-0/12",
+        "next_infos": {
+            "admissible_commands": [
+                "close display",
+                "examine display",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "examine display"
+    },
+    {
+        "state": "You open the display. > -= Study =-0/12",
+        "infos": {
+            "admissible_commands": [
+                "close display",
+                "examine display",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "examine display",
+        "reward": 0,
+        "next_state": "The display looks strong, and impossible to break. It is open. > -= Study =-0/13",
+        "next_infos": {
+            "admissible_commands": [
+                "close display",
+                "examine display",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "The display looks strong, and impossible to break. It is open. > -= Study =-0/13",
+        "infos": {
+            "admissible_commands": [
+                "close display",
+                "examine display",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Study =- Well I'll be, you are in a place we're calling a study. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. You see a gleam over in a corner, where you can see a display. The display is empty! This is the worst thing that could possibly happen, ever! There is an unguarded exit to the north. There is an exit to the south. Don't worry, it is unblocked. There is an exit to the west. Don't worry, it is unguarded. > -= Study =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "close display",
+                "examine display",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Study =- Well I'll be, you are in a place we're calling a study. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. You see a gleam over in a corner, where you can see a display. The display is empty! This is the worst thing that could possibly happen, ever! There is an unguarded exit to the north. There is an exit to the south. Don't worry, it is unblocked. There is an exit to the west. Don't worry, it is unguarded. > -= Study =-0/14",
+        "infos": {
+            "admissible_commands": [
+                "close display",
+                "examine display",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Cookhouse =- Guess what, you are in the place we're calling the cookhouse. You need an unblocked exit? You should try going east. You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked. > -= Cookhouse =-0/15",
+        "next_infos": {
+            "admissible_commands": [
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "-= Cookhouse =- Guess what, you are in the place we're calling the cookhouse. You need an unblocked exit? You should try going east. You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked. > -= Cookhouse =-0/15",
+        "infos": {
+            "admissible_commands": [
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Cookhouse =- Guess what, you are in the place we're calling the cookhouse. You need an unblocked exit? You should try going east. You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked. > -= Cookhouse =-0/16",
+        "next_infos": {
+            "admissible_commands": [
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

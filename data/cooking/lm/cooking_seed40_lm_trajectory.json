@@ -1,0 +1,689 @@
+[
+    {
+        "state": "You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal! -= Livingroom =- You are in a livingroom. A typical kind of place. Look over there! a sofa. The sofa is comfy. But the thing is empty. Oh! Why couldn't there just be stuff on it? There is an exit to the north. Don't worry, there is no door. You need an exit without a door? You should try going south. > -= Livingroom =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "drop red onion",
+                "drop red potato",
+                "drop yellow onion",
+                "eat red onion",
+                "eat yellow onion",
+                "examine sofa",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "put red onion on sofa",
+                "put red potato on sofa",
+                "put yellow onion on sofa"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Corridor =- You find yourself in a corridor. An usual kind of place. I guess you better just go and list everything you see here. You need an exit without a door? You should try going north. There is an exit to the south. You need an exit without a door? You should try going west. > -= Corridor =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red onion",
+                "drop red potato",
+                "drop yellow onion",
+                "eat red onion",
+                "eat yellow onion",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Corridor =- You find yourself in a corridor. An usual kind of place. I guess you better just go and list everything you see here. You need an exit without a door? You should try going north. There is an exit to the south. You need an exit without a door? You should try going west. > -= Corridor =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "drop red onion",
+                "drop red potato",
+                "drop yellow onion",
+                "eat red onion",
+                "eat yellow onion",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Bedroom =- I am sorry to announce that you are now in the bedroom. You start to take note of what's in the room. Hey, want to see a bed? Look over there, a bed. The bed is large. But oh no! there's nothing on this piece of garbage. You don't like doors? Why not try going east, that entranceway is not blocked by one. > -= Bedroom =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red onion",
+                "drop red potato",
+                "drop yellow onion",
+                "eat red onion",
+                "eat yellow onion",
+                "examine bed",
+                "go east",
+                "inventory",
+                "look",
+                "put red onion on bed",
+                "put red potato on bed",
+                "put yellow onion on bed"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Bedroom =- I am sorry to announce that you are now in the bedroom. You start to take note of what's in the room. Hey, want to see a bed? Look over there, a bed. The bed is large. But oh no! there's nothing on this piece of garbage. You don't like doors? Why not try going east, that entranceway is not blocked by one. > -= Bedroom =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "drop red onion",
+                "drop red potato",
+                "drop yellow onion",
+                "eat red onion",
+                "eat yellow onion",
+                "examine bed",
+                "go east",
+                "inventory",
+                "look",
+                "put red onion on bed",
+                "put red potato on bed",
+                "put yellow onion on bed"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Corridor =- You find yourself in a corridor. An usual kind of place. I guess you better just go and list everything you see here. You need an exit without a door? You should try going north. There is an exit to the south. You need an exit without a door? You should try going west. > -= Corridor =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red onion",
+                "drop red potato",
+                "drop yellow onion",
+                "eat red onion",
+                "eat yellow onion",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Corridor =- You find yourself in a corridor. An usual kind of place. I guess you better just go and list everything you see here. You need an exit without a door? You should try going north. There is an exit to the south. You need an exit without a door? You should try going west. > -= Corridor =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "drop red onion",
+                "drop red potato",
+                "drop yellow onion",
+                "eat red onion",
+                "eat yellow onion",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Livingroom =- You are in a livingroom. A typical kind of place. Look over there! a sofa. The sofa is comfy. But the thing is empty. Oh! Why couldn't there just be stuff on it? There is an exit to the north. Don't worry, there is no door. You need an exit without a door? You should try going south. > -= Livingroom =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red onion",
+                "drop red potato",
+                "drop yellow onion",
+                "eat red onion",
+                "eat yellow onion",
+                "examine sofa",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "put red onion on sofa",
+                "put red potato on sofa",
+                "put yellow onion on sofa"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Livingroom =- You are in a livingroom. A typical kind of place. Look over there! a sofa. The sofa is comfy. But the thing is empty. Oh! Why couldn't there just be stuff on it? There is an exit to the north. Don't worry, there is no door. You need an exit without a door? You should try going south. > -= Livingroom =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "drop red onion",
+                "drop red potato",
+                "drop yellow onion",
+                "eat red onion",
+                "eat yellow onion",
+                "examine sofa",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "put red onion on sofa",
+                "put red potato on sofa",
+                "put yellow onion on sofa"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Corridor =- You find yourself in a corridor. An usual kind of place. I guess you better just go and list everything you see here. You need an exit without a door? You should try going north. There is an exit to the south. You need an exit without a door? You should try going west. > -= Corridor =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red onion",
+                "drop red potato",
+                "drop yellow onion",
+                "eat red onion",
+                "eat yellow onion",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Corridor =- You find yourself in a corridor. An usual kind of place. I guess you better just go and list everything you see here. You need an exit without a door? You should try going north. There is an exit to the south. You need an exit without a door? You should try going west. > -= Corridor =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "drop red onion",
+                "drop red potato",
+                "drop yellow onion",
+                "eat red onion",
+                "eat yellow onion",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Bedroom =- I am sorry to announce that you are now in the bedroom. You start to take note of what's in the room. Hey, want to see a bed? Look over there, a bed. The bed is large. But oh no! there's nothing on this piece of garbage. You don't like doors? Why not try going east, that entranceway is not blocked by one. > -= Bedroom =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red onion",
+                "drop red potato",
+                "drop yellow onion",
+                "eat red onion",
+                "eat yellow onion",
+                "examine bed",
+                "go east",
+                "inventory",
+                "look",
+                "put red onion on bed",
+                "put red potato on bed",
+                "put yellow onion on bed"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Bedroom =- I am sorry to announce that you are now in the bedroom. You start to take note of what's in the room. Hey, want to see a bed? Look over there, a bed. The bed is large. But oh no! there's nothing on this piece of garbage. You don't like doors? Why not try going east, that entranceway is not blocked by one. > -= Bedroom =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "drop red onion",
+                "drop red potato",
+                "drop yellow onion",
+                "eat red onion",
+                "eat yellow onion",
+                "examine bed",
+                "go east",
+                "inventory",
+                "look",
+                "put red onion on bed",
+                "put red potato on bed",
+                "put yellow onion on bed"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Corridor =- You find yourself in a corridor. An usual kind of place. I guess you better just go and list everything you see here. You need an exit without a door? You should try going north. There is an exit to the south. You need an exit without a door? You should try going west. > -= Corridor =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red onion",
+                "drop red potato",
+                "drop yellow onion",
+                "eat red onion",
+                "eat yellow onion",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Corridor =- You find yourself in a corridor. An usual kind of place. I guess you better just go and list everything you see here. You need an exit without a door? You should try going north. There is an exit to the south. You need an exit without a door? You should try going west. > -= Corridor =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "drop red onion",
+                "drop red potato",
+                "drop yellow onion",
+                "eat red onion",
+                "eat yellow onion",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Bathroom =- You are in a bathroom. A typical kind of place. You see a toilet. The toilet appears to be empty. You swear loudly. There is an exit to the north. Don't worry, there is no door. > -= Bathroom =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red onion",
+                "drop red potato",
+                "drop yellow onion",
+                "eat red onion",
+                "eat yellow onion",
+                "examine toilet",
+                "go north",
+                "inventory",
+                "look",
+                "put red onion on toilet",
+                "put red potato on toilet",
+                "put yellow onion on toilet"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Bathroom =- You are in a bathroom. A typical kind of place. You see a toilet. The toilet appears to be empty. You swear loudly. There is an exit to the north. Don't worry, there is no door. > -= Bathroom =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "drop red onion",
+                "drop red potato",
+                "drop yellow onion",
+                "eat red onion",
+                "eat yellow onion",
+                "examine toilet",
+                "go north",
+                "inventory",
+                "look",
+                "put red onion on toilet",
+                "put red potato on toilet",
+                "put yellow onion on toilet"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Corridor =- You find yourself in a corridor. An usual kind of place. I guess you better just go and list everything you see here. You need an exit without a door? You should try going north. There is an exit to the south. You need an exit without a door? You should try going west. > -= Corridor =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red onion",
+                "drop red potato",
+                "drop yellow onion",
+                "eat red onion",
+                "eat yellow onion",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Corridor =- You find yourself in a corridor. An usual kind of place. I guess you better just go and list everything you see here. You need an exit without a door? You should try going north. There is an exit to the south. You need an exit without a door? You should try going west. > -= Corridor =-0/10",
+        "infos": {
+            "admissible_commands": [
+                "drop red onion",
+                "drop red potato",
+                "drop yellow onion",
+                "eat red onion",
+                "eat yellow onion",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Bedroom =- I am sorry to announce that you are now in the bedroom. You start to take note of what's in the room. Hey, want to see a bed? Look over there, a bed. The bed is large. But oh no! there's nothing on this piece of garbage. You don't like doors? Why not try going east, that entranceway is not blocked by one. > -= Bedroom =-0/11",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red onion",
+                "drop red potato",
+                "drop yellow onion",
+                "eat red onion",
+                "eat yellow onion",
+                "examine bed",
+                "go east",
+                "inventory",
+                "look",
+                "put red onion on bed",
+                "put red potato on bed",
+                "put yellow onion on bed"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Bedroom =- I am sorry to announce that you are now in the bedroom. You start to take note of what's in the room. Hey, want to see a bed? Look over there, a bed. The bed is large. But oh no! there's nothing on this piece of garbage. You don't like doors? Why not try going east, that entranceway is not blocked by one. > -= Bedroom =-0/11",
+        "infos": {
+            "admissible_commands": [
+                "drop red onion",
+                "drop red potato",
+                "drop yellow onion",
+                "eat red onion",
+                "eat yellow onion",
+                "examine bed",
+                "go east",
+                "inventory",
+                "look",
+                "put red onion on bed",
+                "put red potato on bed",
+                "put yellow onion on bed"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Corridor =- You find yourself in a corridor. An usual kind of place. I guess you better just go and list everything you see here. You need an exit without a door? You should try going north. There is an exit to the south. You need an exit without a door? You should try going west. > -= Corridor =-0/12",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red onion",
+                "drop red potato",
+                "drop yellow onion",
+                "eat red onion",
+                "eat yellow onion",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Corridor =- You find yourself in a corridor. An usual kind of place. I guess you better just go and list everything you see here. You need an exit without a door? You should try going north. There is an exit to the south. You need an exit without a door? You should try going west. > -= Corridor =-0/12",
+        "infos": {
+            "admissible_commands": [
+                "drop red onion",
+                "drop red potato",
+                "drop yellow onion",
+                "eat red onion",
+                "eat yellow onion",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Bathroom =- You are in a bathroom. A typical kind of place. You see a toilet. The toilet appears to be empty. You swear loudly. There is an exit to the north. Don't worry, there is no door. > -= Bathroom =-0/13",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red onion",
+                "drop red potato",
+                "drop yellow onion",
+                "eat red onion",
+                "eat yellow onion",
+                "examine toilet",
+                "go north",
+                "inventory",
+                "look",
+                "put red onion on toilet",
+                "put red potato on toilet",
+                "put yellow onion on toilet"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Bathroom =- You are in a bathroom. A typical kind of place. You see a toilet. The toilet appears to be empty. You swear loudly. There is an exit to the north. Don't worry, there is no door. > -= Bathroom =-0/13",
+        "infos": {
+            "admissible_commands": [
+                "drop red onion",
+                "drop red potato",
+                "drop yellow onion",
+                "eat red onion",
+                "eat yellow onion",
+                "examine toilet",
+                "go north",
+                "inventory",
+                "look",
+                "put red onion on toilet",
+                "put red potato on toilet",
+                "put yellow onion on toilet"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Corridor =- You find yourself in a corridor. An usual kind of place. I guess you better just go and list everything you see here. You need an exit without a door? You should try going north. There is an exit to the south. You need an exit without a door? You should try going west. > -= Corridor =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red onion",
+                "drop red potato",
+                "drop yellow onion",
+                "eat red onion",
+                "eat yellow onion",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Corridor =- You find yourself in a corridor. An usual kind of place. I guess you better just go and list everything you see here. You need an exit without a door? You should try going north. There is an exit to the south. You need an exit without a door? You should try going west. > -= Corridor =-0/14",
+        "infos": {
+            "admissible_commands": [
+                "drop red onion",
+                "drop red potato",
+                "drop yellow onion",
+                "eat red onion",
+                "eat yellow onion",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Bedroom =- I am sorry to announce that you are now in the bedroom. You start to take note of what's in the room. Hey, want to see a bed? Look over there, a bed. The bed is large. But oh no! there's nothing on this piece of garbage. You don't like doors? Why not try going east, that entranceway is not blocked by one. > -= Bedroom =-0/15",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red onion",
+                "drop red potato",
+                "drop yellow onion",
+                "eat red onion",
+                "eat yellow onion",
+                "examine bed",
+                "go east",
+                "inventory",
+                "look",
+                "put red onion on bed",
+                "put red potato on bed",
+                "put yellow onion on bed"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Bedroom =- I am sorry to announce that you are now in the bedroom. You start to take note of what's in the room. Hey, want to see a bed? Look over there, a bed. The bed is large. But oh no! there's nothing on this piece of garbage. You don't like doors? Why not try going east, that entranceway is not blocked by one. > -= Bedroom =-0/15",
+        "infos": {
+            "admissible_commands": [
+                "drop red onion",
+                "drop red potato",
+                "drop yellow onion",
+                "eat red onion",
+                "eat yellow onion",
+                "examine bed",
+                "go east",
+                "inventory",
+                "look",
+                "put red onion on bed",
+                "put red potato on bed",
+                "put yellow onion on bed"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Corridor =- You find yourself in a corridor. An usual kind of place. I guess you better just go and list everything you see here. You need an exit without a door? You should try going north. There is an exit to the south. You need an exit without a door? You should try going west. > -= Corridor =-0/16",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red onion",
+                "drop red potato",
+                "drop yellow onion",
+                "eat red onion",
+                "eat yellow onion",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Corridor =- You find yourself in a corridor. An usual kind of place. I guess you better just go and list everything you see here. You need an exit without a door? You should try going north. There is an exit to the south. You need an exit without a door? You should try going west. > -= Corridor =-0/16",
+        "infos": {
+            "admissible_commands": [
+                "drop red onion",
+                "drop red potato",
+                "drop yellow onion",
+                "eat red onion",
+                "eat yellow onion",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Bathroom =- You are in a bathroom. A typical kind of place. You see a toilet. The toilet appears to be empty. You swear loudly. There is an exit to the north. Don't worry, there is no door. > -= Bathroom =-0/17",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red onion",
+                "drop red potato",
+                "drop yellow onion",
+                "eat red onion",
+                "eat yellow onion",
+                "examine toilet",
+                "go north",
+                "inventory",
+                "look",
+                "put red onion on toilet",
+                "put red potato on toilet",
+                "put yellow onion on toilet"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Bathroom =- You are in a bathroom. A typical kind of place. You see a toilet. The toilet appears to be empty. You swear loudly. There is an exit to the north. Don't worry, there is no door. > -= Bathroom =-0/17",
+        "infos": {
+            "admissible_commands": [
+                "drop red onion",
+                "drop red potato",
+                "drop yellow onion",
+                "eat red onion",
+                "eat yellow onion",
+                "examine toilet",
+                "go north",
+                "inventory",
+                "look",
+                "put red onion on toilet",
+                "put red potato on toilet",
+                "put yellow onion on toilet"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Corridor =- You find yourself in a corridor. An usual kind of place. I guess you better just go and list everything you see here. You need an exit without a door? You should try going north. There is an exit to the south. You need an exit without a door? You should try going west. > -= Corridor =-0/18",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red onion",
+                "drop red potato",
+                "drop yellow onion",
+                "eat red onion",
+                "eat yellow onion",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Corridor =- You find yourself in a corridor. An usual kind of place. I guess you better just go and list everything you see here. You need an exit without a door? You should try going north. There is an exit to the south. You need an exit without a door? You should try going west. > -= Corridor =-0/18",
+        "infos": {
+            "admissible_commands": [
+                "drop red onion",
+                "drop red potato",
+                "drop yellow onion",
+                "eat red onion",
+                "eat yellow onion",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Bedroom =- I am sorry to announce that you are now in the bedroom. You start to take note of what's in the room. Hey, want to see a bed? Look over there, a bed. The bed is large. But oh no! there's nothing on this piece of garbage. You don't like doors? Why not try going east, that entranceway is not blocked by one. > -= Bedroom =-0/19",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red onion",
+                "drop red potato",
+                "drop yellow onion",
+                "eat red onion",
+                "eat yellow onion",
+                "examine bed",
+                "go east",
+                "inventory",
+                "look",
+                "put red onion on bed",
+                "put red potato on bed",
+                "put yellow onion on bed"
+            ]
+        },
+        "done": false,
+        "next_action": null
+    }
+]

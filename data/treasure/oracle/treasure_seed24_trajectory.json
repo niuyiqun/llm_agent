@@ -1,0 +1,538 @@
+[
+    {
+        "state": "Welcome to TextWorld! Here is your task for today. Your first objective is to try to take a trip east. And then, ensure that the gate is open. And then, go south. Following that, venture east. After that, make an attempt to take a trip north. And then, move north. Following that, attempt to move west. After that, take a trip west. Then, take the fudge scented latchkey from the shelf inside the cookery. And then, unlock the fudge scented portal within the cookery. Then, ensure that the fudge scented portal within the cookery is open. Then, head west. After that, venture south. Then, lift the stick of butter from the floor of the office. And once you've done that, you win! -= Workshop =- You arrive in a workshop. A normal kind of place. You try to gain information on your surroundings by using a technique you call \"looking.\" You can make out a trunk. You don't like doors? Why not try going east, that entranceway is unblocked. > -= Workshop =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "examine trunk",
+                "go east",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Kitchenette =- You find yourself in a kitchenette. An ordinary kind of place. You can barely contain your excitement. You see a freezer. The light flickers for a second, but nothing else happens. You see a pan. What a coincidence, weren't you just thinking about a pan? The pan is standard. But the thing is empty, unfortunately. What, you think everything in TextWorld should have stuff on it? There is a closed gate leading south. There is an open gateway leading north. There is an unguarded exit to the east. You don't like doors? Why not try going west, that entranceway is unguarded. > -= Kitchenette =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "close gateway",
+                "examine freezer",
+                "examine gate",
+                "examine gateway",
+                "examine pan",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "open gate"
+            ]
+        },
+        "done": false,
+        "next_action": "open gate"
+    },
+    {
+        "state": "-= Kitchenette =- You find yourself in a kitchenette. An ordinary kind of place. You can barely contain your excitement. You see a freezer. The light flickers for a second, but nothing else happens. You see a pan. What a coincidence, weren't you just thinking about a pan? The pan is standard. But the thing is empty, unfortunately. What, you think everything in TextWorld should have stuff on it? There is a closed gate leading south. There is an open gateway leading north. There is an unguarded exit to the east. You don't like doors? Why not try going west, that entranceway is unguarded. > -= Kitchenette =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "close gateway",
+                "examine freezer",
+                "examine gate",
+                "examine gateway",
+                "examine pan",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "open gate"
+            ]
+        },
+        "action": "open gate",
+        "reward": 0,
+        "next_state": "You open gate. > -= Kitchenette =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "close gate",
+                "close gateway",
+                "examine freezer",
+                "examine gate",
+                "examine gateway",
+                "examine pan",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "You open gate. > -= Kitchenette =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "close gate",
+                "close gateway",
+                "examine freezer",
+                "examine gate",
+                "examine gateway",
+                "examine pan",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Laundromat =- Wow! You're in a laundromat. I guess you better just go and list everything you see here. There is an open gate leading north. There is an unguarded exit to the east. There is an exit to the west. Don't worry, it is unblocked. > -= Laundromat =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "close gate",
+                "examine gate",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Laundromat =- Wow! You're in a laundromat. I guess you better just go and list everything you see here. There is an open gate leading north. There is an unguarded exit to the east. There is an exit to the west. Don't worry, it is unblocked. > -= Laundromat =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "close gate",
+                "examine gate",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Study =- You're now in a study. You try to gain information on your surroundings by using a technique you call \"looking.\" You don't like doors? Why not try going east, that entranceway is unblocked. There is an unblocked exit to the north. There is an unguarded exit to the west. > -= Study =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Study =- You're now in a study. You try to gain information on your surroundings by using a technique you call \"looking.\" You don't like doors? Why not try going east, that entranceway is unblocked. There is an unblocked exit to the north. There is an unguarded exit to the west. > -= Study =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Canteen =- Well, here we are in a canteen. You make out a fridge. The fridge is empty! What a waste of a day! You need an unguarded exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going south, that entranceway is unblocked. There is an exit to the west. Don't worry, it is unguarded. > -= Canteen =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "close fridge",
+                "examine fridge",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Canteen =- Well, here we are in a canteen. You make out a fridge. The fridge is empty! What a waste of a day! You need an unguarded exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going south, that entranceway is unblocked. There is an exit to the west. Don't worry, it is unguarded. > -= Canteen =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "close fridge",
+                "examine fridge",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Bedchamber =- You are in a bedchamber. An usual one. If you haven't noticed it already, there seems to be something there by the wall, it's a box. Hey, want to see a bench? Look over there, a bench. The bench is normal. But the thing is empty. Oh! Why couldn't there just be stuff on it? There is an open stone hatch leading west. There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unguarded. You need an unguarded exit? You should try going south. > -= Bedchamber =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "close stone hatch",
+                "examine bench",
+                "examine box",
+                "examine stone hatch",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "open box"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Bedchamber =- You are in a bedchamber. An usual one. If you haven't noticed it already, there seems to be something there by the wall, it's a box. Hey, want to see a bench? Look over there, a bench. The bench is normal. But the thing is empty. Oh! Why couldn't there just be stuff on it? There is an open stone hatch leading west. There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unguarded. You need an unguarded exit? You should try going south. > -= Bedchamber =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "close stone hatch",
+                "examine bench",
+                "examine box",
+                "examine stone hatch",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "open box"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Shower =- You've just sauntered into a shower. The room is well lit. You can see an opened cabinet in the room. The cabinet is empty! This is the worst thing that could possibly happen, ever! You see a rack. However, the rack, like an empty rack, has nothing on it. Oh! Why couldn't there just be stuff on it? There is an open stone hatch leading east. There is an open gateway leading south. There is an open wooden hatch leading west. > -= Shower =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "close cabinet",
+                "close gateway",
+                "close stone hatch",
+                "close wooden hatch",
+                "examine cabinet",
+                "examine gateway",
+                "examine rack",
+                "examine stone hatch",
+                "examine wooden hatch",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Shower =- You've just sauntered into a shower. The room is well lit. You can see an opened cabinet in the room. The cabinet is empty! This is the worst thing that could possibly happen, ever! You see a rack. However, the rack, like an empty rack, has nothing on it. Oh! Why couldn't there just be stuff on it? There is an open stone hatch leading east. There is an open gateway leading south. There is an open wooden hatch leading west. > -= Shower =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "close cabinet",
+                "close gateway",
+                "close stone hatch",
+                "close wooden hatch",
+                "examine cabinet",
+                "examine gateway",
+                "examine rack",
+                "examine stone hatch",
+                "examine wooden hatch",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Cookery =- You arrive in a cookery. An usual one. You see a shelf. The shelf is typical. On the shelf you can make out a fudge scented latchkey. You make out a platter. But there isn't a thing on it. You can make out a board. The board is normal. However, the board, like an empty board, has nothing on it. There is a closed fudge scented portal leading west. There is an open wooden hatch leading east. > -= Cookery =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "close wooden hatch",
+                "examine board",
+                "examine fudge scented latchkey",
+                "examine fudge scented portal",
+                "examine platter",
+                "examine shelf",
+                "examine wooden hatch",
+                "go east",
+                "inventory",
+                "look",
+                "take fudge scented latchkey from shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "take fudge scented latchkey from shelf"
+    },
+    {
+        "state": "-= Cookery =- You arrive in a cookery. An usual one. You see a shelf. The shelf is typical. On the shelf you can make out a fudge scented latchkey. You make out a platter. But there isn't a thing on it. You can make out a board. The board is normal. However, the board, like an empty board, has nothing on it. There is a closed fudge scented portal leading west. There is an open wooden hatch leading east. > -= Cookery =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "close wooden hatch",
+                "examine board",
+                "examine fudge scented latchkey",
+                "examine fudge scented portal",
+                "examine platter",
+                "examine shelf",
+                "examine wooden hatch",
+                "go east",
+                "inventory",
+                "look",
+                "take fudge scented latchkey from shelf"
+            ]
+        },
+        "action": "take fudge scented latchkey from shelf",
+        "reward": 0,
+        "next_state": "You take the fudge scented latchkey from the shelf. > -= Cookery =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "close wooden hatch",
+                "drop fudge scented latchkey",
+                "examine board",
+                "examine fudge scented latchkey",
+                "examine fudge scented portal",
+                "examine platter",
+                "examine shelf",
+                "examine wooden hatch",
+                "go east",
+                "inventory",
+                "look",
+                "put fudge scented latchkey on board",
+                "put fudge scented latchkey on platter",
+                "put fudge scented latchkey on shelf",
+                "unlock fudge scented portal with fudge scented latchkey"
+            ]
+        },
+        "done": false,
+        "next_action": "unlock fudge scented portal with fudge scented latchkey"
+    },
+    {
+        "state": "You take the fudge scented latchkey from the shelf. > -= Cookery =-0/10",
+        "infos": {
+            "admissible_commands": [
+                "close wooden hatch",
+                "drop fudge scented latchkey",
+                "examine board",
+                "examine fudge scented latchkey",
+                "examine fudge scented portal",
+                "examine platter",
+                "examine shelf",
+                "examine wooden hatch",
+                "go east",
+                "inventory",
+                "look",
+                "put fudge scented latchkey on board",
+                "put fudge scented latchkey on platter",
+                "put fudge scented latchkey on shelf",
+                "unlock fudge scented portal with fudge scented latchkey"
+            ]
+        },
+        "action": "unlock fudge scented portal with fudge scented latchkey",
+        "reward": 0,
+        "next_state": "You unlock fudge scented portal. > -= Cookery =-0/11",
+        "next_infos": {
+            "admissible_commands": [
+                "close wooden hatch",
+                "drop fudge scented latchkey",
+                "examine board",
+                "examine fudge scented latchkey",
+                "examine fudge scented portal",
+                "examine platter",
+                "examine shelf",
+                "examine wooden hatch",
+                "go east",
+                "inventory",
+                "lock fudge scented portal with fudge scented latchkey",
+                "look",
+                "open fudge scented portal",
+                "put fudge scented latchkey on board",
+                "put fudge scented latchkey on platter",
+                "put fudge scented latchkey on shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "open fudge scented portal"
+    },
+    {
+        "state": "You unlock fudge scented portal. > -= Cookery =-0/11",
+        "infos": {
+            "admissible_commands": [
+                "close wooden hatch",
+                "drop fudge scented latchkey",
+                "examine board",
+                "examine fudge scented latchkey",
+                "examine fudge scented portal",
+                "examine platter",
+                "examine shelf",
+                "examine wooden hatch",
+                "go east",
+                "inventory",
+                "lock fudge scented portal with fudge scented latchkey",
+                "look",
+                "open fudge scented portal",
+                "put fudge scented latchkey on board",
+                "put fudge scented latchkey on platter",
+                "put fudge scented latchkey on shelf"
+            ]
+        },
+        "action": "open fudge scented portal",
+        "reward": 0,
+        "next_state": "You open fudge scented portal. > -= Cookery =-0/12",
+        "next_infos": {
+            "admissible_commands": [
+                "close fudge scented portal",
+                "close wooden hatch",
+                "drop fudge scented latchkey",
+                "examine board",
+                "examine fudge scented latchkey",
+                "examine fudge scented portal",
+                "examine platter",
+                "examine shelf",
+                "examine wooden hatch",
+                "go east",
+                "go west",
+                "inventory",
+                "look",
+                "put fudge scented latchkey on board",
+                "put fudge scented latchkey on platter",
+                "put fudge scented latchkey on shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "You open fudge scented portal. > -= Cookery =-0/12",
+        "infos": {
+            "admissible_commands": [
+                "close fudge scented portal",
+                "close wooden hatch",
+                "drop fudge scented latchkey",
+                "examine board",
+                "examine fudge scented latchkey",
+                "examine fudge scented portal",
+                "examine platter",
+                "examine shelf",
+                "examine wooden hatch",
+                "go east",
+                "go west",
+                "inventory",
+                "look",
+                "put fudge scented latchkey on board",
+                "put fudge scented latchkey on platter",
+                "put fudge scented latchkey on shelf"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Salon =- Well, here we are in a salon. You see a locker. Empty! What kind of nightmare TextWorld is this? There is an open fudge scented portal leading east. There is an open door leading north. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Salon =-0/13",
+        "next_infos": {
+            "admissible_commands": [
+                "close door",
+                "close fudge scented portal",
+                "close locker",
+                "drop fudge scented latchkey",
+                "examine door",
+                "examine fudge scented latchkey",
+                "examine fudge scented portal",
+                "examine locker",
+                "go east",
+                "go north",
+                "go south",
+                "insert fudge scented latchkey into locker",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Salon =- Well, here we are in a salon. You see a locker. Empty! What kind of nightmare TextWorld is this? There is an open fudge scented portal leading east. There is an open door leading north. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Salon =-0/13",
+        "infos": {
+            "admissible_commands": [
+                "close door",
+                "close fudge scented portal",
+                "close locker",
+                "drop fudge scented latchkey",
+                "examine door",
+                "examine fudge scented latchkey",
+                "examine fudge scented portal",
+                "examine locker",
+                "go east",
+                "go north",
+                "go south",
+                "insert fudge scented latchkey into locker",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Office =- You are in an office. A normal kind of place. I guess you better just go and list everything you see here. You can see a bureau. You don't like doors? Why not try going north, that entranceway is unguarded. There is a stick of butter on the floor. > -= Office =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "drop fudge scented latchkey",
+                "examine bureau",
+                "examine fudge scented latchkey",
+                "examine stick of butter",
+                "go north",
+                "inventory",
+                "look",
+                "open bureau",
+                "take stick of butter"
+            ]
+        },
+        "done": false,
+        "next_action": "take stick of butter"
+    },
+    {
+        "state": "-= Office =- You are in an office. A normal kind of place. I guess you better just go and list everything you see here. You can see a bureau. You don't like doors? Why not try going north, that entranceway is unguarded. There is a stick of butter on the floor. > -= Office =-0/14",
+        "infos": {
+            "admissible_commands": [
+                "drop fudge scented latchkey",
+                "examine bureau",
+                "examine fudge scented latchkey",
+                "examine stick of butter",
+                "go north",
+                "inventory",
+                "look",
+                "open bureau",
+                "take stick of butter"
+            ]
+        },
+        "action": "take stick of butter",
+        "reward": 1,
+        "next_state": "You pick up the stick of butter from the ground. Your score has just gone up by one point. *** The End *** You scored 1 out of a possible 1, in 15 turns. Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command? > -= Office =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "drop fudge scented latchkey",
+                "drop stick of butter",
+                "eat stick of butter",
+                "examine bureau",
+                "examine fudge scented latchkey",
+                "examine stick of butter",
+                "go north",
+                "inventory",
+                "look",
+                "open bureau"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

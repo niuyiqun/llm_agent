@@ -1,0 +1,485 @@
+[
+    {
+        "state": "Hey, thanks for coming over to the TextWorld today, there is something I need you to do for me. Your first objective is to venture north. Then, venture north. And then, head east. Then, attempt to move east. And then, make an effort to go to the east. After that, make an effort to head north. Following that, make an effort to go west. After that, pick up the keycard from the stand within the attic. After that, try to travel east. If you can accomplish that, unlock the gateway. Then, make absolutely sure that the gateway is ajar. And then, make an attempt to go east. And then, head south. That done, retrieve the garlic clove from the fridge in the dish-pit. Once that's all handled, you can stop! -= Shower =- This shower you have just entered is definitely ordinary. You can see a box. You make out a dresser. Look out! It's a- oh, never mind, it's just a board. The board is usual. But the thing is empty, unfortunately. There is an unguarded exit to the east. There is an unguarded exit to the north. > -= Shower =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "examine board",
+                "examine box",
+                "examine dresser",
+                "go east",
+                "go north",
+                "inventory",
+                "look",
+                "open box"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Office =- You've entered an office. You begin looking for stuff. You make out a bookshelf. You wonder idly who left that here. The bookshelf is typical. But the thing is empty. Oh! Why couldn't there just be stuff on it? There is an exit to the east. Don't worry, it is unblocked. There is an unguarded exit to the north. You don't like doors? Why not try going south, that entranceway is unblocked. > -= Office =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "examine bookshelf",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Office =- You've entered an office. You begin looking for stuff. You make out a bookshelf. You wonder idly who left that here. The bookshelf is typical. But the thing is empty. Oh! Why couldn't there just be stuff on it? There is an exit to the east. Don't worry, it is unblocked. There is an unguarded exit to the north. You don't like doors? Why not try going south, that entranceway is unblocked. > -= Office =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "examine bookshelf",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Workshop =- You arrive in a workshop. A normal one. Let's see what's in here. You can make out a locked usual looking toolbox in the corner. You make out a locker. There's something strange about this thing being here, but you don't have time to worry about that now. The locker is empty! What a waste of a day! You can make out a mantle. The mantle is ordinary. But the thing is empty, unfortunately. You don't like doors? Why not try going east, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Workshop =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "close locker",
+                "examine locker",
+                "examine mantle",
+                "examine toolbox",
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Workshop =- You arrive in a workshop. A normal one. Let's see what's in here. You can make out a locked usual looking toolbox in the corner. You make out a locker. There's something strange about this thing being here, but you don't have time to worry about that now. The locker is empty! What a waste of a day! You can make out a mantle. The mantle is ordinary. But the thing is empty, unfortunately. You don't like doors? Why not try going east, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Workshop =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "close locker",
+                "examine locker",
+                "examine mantle",
+                "examine toolbox",
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Pantry =- You're now in the pantry. You can make out a case. There's something strange about this thing being here, but you don't have time to worry about that now. You can make out a closed cabinet. You can make out a table. Looks like someone's already been here and taken everything off it, though. This always happens! You don't like doors? Why not try going east, that entranceway is unblocked. There is an unguarded exit to the west. > -= Pantry =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "examine cabinet",
+                "examine case",
+                "examine table",
+                "go east",
+                "go west",
+                "inventory",
+                "look",
+                "open cabinet",
+                "open case"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Pantry =- You're now in the pantry. You can make out a case. There's something strange about this thing being here, but you don't have time to worry about that now. You can make out a closed cabinet. You can make out a table. Looks like someone's already been here and taken everything off it, though. This always happens! You don't like doors? Why not try going east, that entranceway is unblocked. There is an unguarded exit to the west. > -= Pantry =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "examine cabinet",
+                "examine case",
+                "examine table",
+                "go east",
+                "go west",
+                "inventory",
+                "look",
+                "open cabinet",
+                "open case"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Bar =- You find yourself in a bar. An ordinary kind of place. You see an opened basket, which looks normal, in the corner. The basket is empty! This is the worst thing that could possibly happen, ever! You need an unblocked exit? You should try going east. There is an exit to the south. Don't worry, it is unguarded. There is an unguarded exit to the west. > -= Bar =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "close basket",
+                "examine basket",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Bar =- You find yourself in a bar. An ordinary kind of place. You see an opened basket, which looks normal, in the corner. The basket is empty! This is the worst thing that could possibly happen, ever! You need an unblocked exit? You should try going east. There is an exit to the south. Don't worry, it is unguarded. There is an unguarded exit to the west. > -= Bar =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "close basket",
+                "examine basket",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Salon =- You are in a salon. An usual kind of place. There is an unblocked exit to the north. You don't like doors? Why not try going south, that entranceway is unblocked. There is an exit to the west. Don't worry, it is unblocked. > -= Salon =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Salon =- You are in a salon. An usual kind of place. There is an unblocked exit to the north. You don't like doors? Why not try going south, that entranceway is unblocked. There is an exit to the west. Don't worry, it is unblocked. > -= Salon =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Studio =- You're now in the studio. An open portmanteau is close by. What a letdown! The portmanteau is empty! You can see a locked trunk. There is a closed gateway leading east. There is an exit to the south. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unblocked. > -= Studio =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "close portmanteau",
+                "examine gateway",
+                "examine portmanteau",
+                "examine trunk",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Studio =- You're now in the studio. An open portmanteau is close by. What a letdown! The portmanteau is empty! You can see a locked trunk. There is a closed gateway leading east. There is an exit to the south. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unblocked. > -= Studio =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "close portmanteau",
+                "examine gateway",
+                "examine portmanteau",
+                "examine trunk",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Attic =- Well how about that, you are in a place we're calling an attic. You rest your hand against a wall, but you miss the wall and fall onto a stand. Now why would someone leave that there? The stand is normal. On the stand you see a keycard. There is an unguarded exit to the east. > -= Attic =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "examine keycard",
+                "examine stand",
+                "go east",
+                "inventory",
+                "look",
+                "take keycard from stand"
+            ]
+        },
+        "done": false,
+        "next_action": "take keycard from stand"
+    },
+    {
+        "state": "-= Attic =- Well how about that, you are in a place we're calling an attic. You rest your hand against a wall, but you miss the wall and fall onto a stand. Now why would someone leave that there? The stand is normal. On the stand you see a keycard. There is an unguarded exit to the east. > -= Attic =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "examine keycard",
+                "examine stand",
+                "go east",
+                "inventory",
+                "look",
+                "take keycard from stand"
+            ]
+        },
+        "action": "take keycard from stand",
+        "reward": 0,
+        "next_state": "You take the keycard from the stand. > -= Attic =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "drop keycard",
+                "examine keycard",
+                "examine stand",
+                "go east",
+                "inventory",
+                "look",
+                "put keycard on stand"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "You take the keycard from the stand. > -= Attic =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "drop keycard",
+                "examine keycard",
+                "examine stand",
+                "go east",
+                "inventory",
+                "look",
+                "put keycard on stand"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Studio =- You're now in the studio. An open portmanteau is close by. What a letdown! The portmanteau is empty! You can see a locked trunk. There is a closed gateway leading east. There is an exit to the south. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unblocked. > -= Studio =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "close portmanteau",
+                "drop keycard",
+                "examine gateway",
+                "examine keycard",
+                "examine portmanteau",
+                "examine trunk",
+                "go south",
+                "go west",
+                "insert keycard into portmanteau",
+                "inventory",
+                "look",
+                "unlock gateway with keycard"
+            ]
+        },
+        "done": false,
+        "next_action": "unlock gateway with keycard"
+    },
+    {
+        "state": "-= Studio =- You're now in the studio. An open portmanteau is close by. What a letdown! The portmanteau is empty! You can see a locked trunk. There is a closed gateway leading east. There is an exit to the south. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unblocked. > -= Studio =-0/10",
+        "infos": {
+            "admissible_commands": [
+                "close portmanteau",
+                "drop keycard",
+                "examine gateway",
+                "examine keycard",
+                "examine portmanteau",
+                "examine trunk",
+                "go south",
+                "go west",
+                "insert keycard into portmanteau",
+                "inventory",
+                "look",
+                "unlock gateway with keycard"
+            ]
+        },
+        "action": "unlock gateway with keycard",
+        "reward": 0,
+        "next_state": "You unlock gateway. > -= Studio =-0/11",
+        "next_infos": {
+            "admissible_commands": [
+                "close portmanteau",
+                "drop keycard",
+                "examine gateway",
+                "examine keycard",
+                "examine portmanteau",
+                "examine trunk",
+                "go south",
+                "go west",
+                "insert keycard into portmanteau",
+                "inventory",
+                "lock gateway with keycard",
+                "look",
+                "open gateway"
+            ]
+        },
+        "done": false,
+        "next_action": "open gateway"
+    },
+    {
+        "state": "You unlock gateway. > -= Studio =-0/11",
+        "infos": {
+            "admissible_commands": [
+                "close portmanteau",
+                "drop keycard",
+                "examine gateway",
+                "examine keycard",
+                "examine portmanteau",
+                "examine trunk",
+                "go south",
+                "go west",
+                "insert keycard into portmanteau",
+                "inventory",
+                "lock gateway with keycard",
+                "look",
+                "open gateway"
+            ]
+        },
+        "action": "open gateway",
+        "reward": 0,
+        "next_state": "You open gateway. > -= Studio =-0/12",
+        "next_infos": {
+            "admissible_commands": [
+                "close gateway",
+                "close portmanteau",
+                "drop keycard",
+                "examine gateway",
+                "examine keycard",
+                "examine portmanteau",
+                "examine trunk",
+                "go east",
+                "go south",
+                "go west",
+                "insert keycard into portmanteau",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "You open gateway. > -= Studio =-0/12",
+        "infos": {
+            "admissible_commands": [
+                "close gateway",
+                "close portmanteau",
+                "drop keycard",
+                "examine gateway",
+                "examine keycard",
+                "examine portmanteau",
+                "examine trunk",
+                "go east",
+                "go south",
+                "go west",
+                "insert keycard into portmanteau",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Recreation Zone =- Well, here we are in a recreation zone. You make out an opened safe. What a letdown! The safe is empty! There is an open gateway leading west. There is an open hatch leading north. There is an unguarded exit to the south. > -= Recreation Zone =-0/13",
+        "next_infos": {
+            "admissible_commands": [
+                "close gateway",
+                "close hatch",
+                "close safe",
+                "drop keycard",
+                "examine gateway",
+                "examine hatch",
+                "examine keycard",
+                "examine safe",
+                "go north",
+                "go south",
+                "go west",
+                "insert keycard into safe",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Recreation Zone =- Well, here we are in a recreation zone. You make out an opened safe. What a letdown! The safe is empty! There is an open gateway leading west. There is an open hatch leading north. There is an unguarded exit to the south. > -= Recreation Zone =-0/13",
+        "infos": {
+            "admissible_commands": [
+                "close gateway",
+                "close hatch",
+                "close safe",
+                "drop keycard",
+                "examine gateway",
+                "examine hatch",
+                "examine keycard",
+                "examine safe",
+                "go north",
+                "go south",
+                "go west",
+                "insert keycard into safe",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Dish-Pit =- You have fallen into a dish-pit. Not the dish-pit you'd expect. No, this is a dish-pit. You begin to take stock of what's here. You see an opened fridge. The fridge contains a garlic clove. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Dish-Pit =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "close fridge",
+                "drop keycard",
+                "examine fridge",
+                "examine garlic clove",
+                "examine keycard",
+                "go north",
+                "go south",
+                "insert keycard into fridge",
+                "inventory",
+                "look",
+                "take garlic clove from fridge"
+            ]
+        },
+        "done": false,
+        "next_action": "take garlic clove from fridge"
+    },
+    {
+        "state": "-= Dish-Pit =- You have fallen into a dish-pit. Not the dish-pit you'd expect. No, this is a dish-pit. You begin to take stock of what's here. You see an opened fridge. The fridge contains a garlic clove. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Dish-Pit =-0/14",
+        "infos": {
+            "admissible_commands": [
+                "close fridge",
+                "drop keycard",
+                "examine fridge",
+                "examine garlic clove",
+                "examine keycard",
+                "go north",
+                "go south",
+                "insert keycard into fridge",
+                "inventory",
+                "look",
+                "take garlic clove from fridge"
+            ]
+        },
+        "action": "take garlic clove from fridge",
+        "reward": 1,
+        "next_state": "You take the garlic clove from the fridge. Your score has just gone up by one point. *** The End *** You scored 1 out of a possible 1, in 15 turns. Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command? > -= Dish-Pit =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "close fridge",
+                "drop garlic clove",
+                "drop keycard",
+                "eat garlic clove",
+                "examine fridge",
+                "examine garlic clove",
+                "examine keycard",
+                "go north",
+                "go south",
+                "insert garlic clove into fridge",
+                "insert keycard into fridge",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

@@ -1,0 +1,517 @@
+[
+    {
+        "state": "It's time to explore the amazing world of TextWorld! First, it would be good if you could try to go east. Then, take a trip east. After that, attempt to move north. Then, go west. With that done, ensure that the portal inside the shower is open. And then, make an attempt to move west. Okay, and then, lift the dvd from the floor of the bedroom. Once that's all handled, you can stop! -= Office =- You've just shown up in an office. You can make out a stand. Make a note of this, you might have to put stuff on or in it later on. Unfortunately, there isn't a thing on it. Hopefully this doesn't make you too upset. You don't like doors? Why not try going east, that entranceway is unguarded. > -= Office =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "examine stand",
+                "go east",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Canteen =- You're now in a canteen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. What's that over there? It looks like it's a freezer. The freezer is empty! This is the worst thing that could possibly happen, ever! You make out a chair. Wow, isn't TextWorld just the best? The chair is ordinary. However, the chair, like an empty chair, has nothing on it. There is a closed non-euclidean passageway leading north. There is an open gateway leading south. You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the west. Don't worry, it is unguarded. > -= Canteen =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "close freezer",
+                "close gateway",
+                "examine chair",
+                "examine freezer",
+                "examine gateway",
+                "examine non-euclidean passageway",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Canteen =- You're now in a canteen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. What's that over there? It looks like it's a freezer. The freezer is empty! This is the worst thing that could possibly happen, ever! You make out a chair. Wow, isn't TextWorld just the best? The chair is ordinary. However, the chair, like an empty chair, has nothing on it. There is a closed non-euclidean passageway leading north. There is an open gateway leading south. You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the west. Don't worry, it is unguarded. > -= Canteen =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "close freezer",
+                "close gateway",
+                "examine chair",
+                "examine freezer",
+                "examine gateway",
+                "examine non-euclidean passageway",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "You have to open the non-euclidean passageway first. > -= Canteen =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "close freezer",
+                "close gateway",
+                "examine chair",
+                "examine freezer",
+                "examine gateway",
+                "examine non-euclidean passageway",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "examine non-euclidean passageway"
+    },
+    {
+        "state": "You have to open the non-euclidean passageway first. > -= Canteen =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "close freezer",
+                "close gateway",
+                "examine chair",
+                "examine freezer",
+                "examine gateway",
+                "examine non-euclidean passageway",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "examine non-euclidean passageway",
+        "reward": 0,
+        "next_state": "The non-euclidean passageway looks robust. It is closed. > -= Canteen =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "close freezer",
+                "close gateway",
+                "examine chair",
+                "examine freezer",
+                "examine gateway",
+                "examine non-euclidean passageway",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "The non-euclidean passageway looks robust. It is closed. > -= Canteen =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "close freezer",
+                "close gateway",
+                "examine chair",
+                "examine freezer",
+                "examine gateway",
+                "examine non-euclidean passageway",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Studio =- Well, here we are in the studio. You see a portmanteau. There's something strange about this being here, but you can't put your finger on it. You can make out a closed bureau close by. You need an unguarded exit? You should try going north. There is an exit to the west. Don't worry, it is unblocked. > -= Studio =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "examine bureau",
+                "examine portmanteau",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "open bureau",
+                "open portmanteau"
+            ]
+        },
+        "done": false,
+        "next_action": "examine portmanteau"
+    },
+    {
+        "state": "-= Studio =- Well, here we are in the studio. You see a portmanteau. There's something strange about this being here, but you can't put your finger on it. You can make out a closed bureau close by. You need an unguarded exit? You should try going north. There is an exit to the west. Don't worry, it is unblocked. > -= Studio =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "examine bureau",
+                "examine portmanteau",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "open bureau",
+                "open portmanteau"
+            ]
+        },
+        "action": "examine portmanteau",
+        "reward": 0,
+        "next_state": "The portmanteau looks strong, and impossible to destroy. It is closed. > -= Studio =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "examine bureau",
+                "examine portmanteau",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "open bureau",
+                "open portmanteau"
+            ]
+        },
+        "done": false,
+        "next_action": "open portmanteau"
+    },
+    {
+        "state": "The portmanteau looks strong, and impossible to destroy. It is closed. > -= Studio =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "examine bureau",
+                "examine portmanteau",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "open bureau",
+                "open portmanteau"
+            ]
+        },
+        "action": "open portmanteau",
+        "reward": 0,
+        "next_state": "You open the portmanteau. > -= Studio =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "close portmanteau",
+                "examine bureau",
+                "examine portmanteau",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "open bureau"
+            ]
+        },
+        "done": false,
+        "next_action": "inventory"
+    },
+    {
+        "state": "You open the portmanteau. > -= Studio =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "close portmanteau",
+                "examine bureau",
+                "examine portmanteau",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "open bureau"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying nothing. > -= Studio =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "close portmanteau",
+                "examine bureau",
+                "examine portmanteau",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "open bureau"
+            ]
+        },
+        "done": false,
+        "next_action": "examine bureau"
+    },
+    {
+        "state": "You are carrying nothing. > -= Studio =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "close portmanteau",
+                "examine bureau",
+                "examine portmanteau",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "open bureau"
+            ]
+        },
+        "action": "examine bureau",
+        "reward": 0,
+        "next_state": "The bureau looks strong, and impossible to destroy. It is closed. > -= Studio =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "close portmanteau",
+                "examine bureau",
+                "examine portmanteau",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "open bureau"
+            ]
+        },
+        "done": false,
+        "next_action": "open bureau"
+    },
+    {
+        "state": "The bureau looks strong, and impossible to destroy. It is closed. > -= Studio =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "close portmanteau",
+                "examine bureau",
+                "examine portmanteau",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "open bureau"
+            ]
+        },
+        "action": "open bureau",
+        "reward": 0,
+        "next_state": "You open the bureau. > -= Studio =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "close bureau",
+                "close portmanteau",
+                "examine bureau",
+                "examine portmanteau",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "inventory"
+    },
+    {
+        "state": "You open the bureau. > -= Studio =-0/10",
+        "infos": {
+            "admissible_commands": [
+                "close bureau",
+                "close portmanteau",
+                "examine bureau",
+                "examine portmanteau",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying nothing. > -= Studio =-0/11",
+        "next_infos": {
+            "admissible_commands": [
+                "close bureau",
+                "close portmanteau",
+                "examine bureau",
+                "examine portmanteau",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "You are carrying nothing. > -= Studio =-0/11",
+        "infos": {
+            "admissible_commands": [
+                "close bureau",
+                "close portmanteau",
+                "examine bureau",
+                "examine portmanteau",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Canteen =- You're now in a canteen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. What's that over there? It looks like it's a freezer. The freezer is empty! This is the worst thing that could possibly happen, ever! You make out a chair. Wow, isn't TextWorld just the best? The chair is ordinary. However, the chair, like an empty chair, has nothing on it. There is a closed non-euclidean passageway leading north. There is an open gateway leading south. You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the west. Don't worry, it is unguarded. > -= Canteen =-0/12",
+        "next_infos": {
+            "admissible_commands": [
+                "close freezer",
+                "close gateway",
+                "examine chair",
+                "examine freezer",
+                "examine gateway",
+                "examine non-euclidean passageway",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Canteen =- You're now in a canteen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. What's that over there? It looks like it's a freezer. The freezer is empty! This is the worst thing that could possibly happen, ever! You make out a chair. Wow, isn't TextWorld just the best? The chair is ordinary. However, the chair, like an empty chair, has nothing on it. There is a closed non-euclidean passageway leading north. There is an open gateway leading south. You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the west. Don't worry, it is unguarded. > -= Canteen =-0/12",
+        "infos": {
+            "admissible_commands": [
+                "close freezer",
+                "close gateway",
+                "examine chair",
+                "examine freezer",
+                "examine gateway",
+                "examine non-euclidean passageway",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Cookery =- You are in a cookery. A typical kind of place. Okay, just remember what you're here to do, and everything will go great. There is an open gateway leading north. There is an open passageway leading west. > -= Cookery =-0/13",
+        "next_infos": {
+            "admissible_commands": [
+                "close gateway",
+                "close passageway",
+                "examine gateway",
+                "examine passageway",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Cookery =- You are in a cookery. A typical kind of place. Okay, just remember what you're here to do, and everything will go great. There is an open gateway leading north. There is an open passageway leading west. > -= Cookery =-0/13",
+        "infos": {
+            "admissible_commands": [
+                "close gateway",
+                "close passageway",
+                "examine gateway",
+                "examine passageway",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Cellar =- If you're wondering why everything seems so normal all of a sudden, it's because you've just walked into the cellar. You hear a noise behind you and spin around, but you can't see anything other than a cabinet. Make a note of this, you might have to put stuff on or in it later on. The cabinet is empty! What a waste of a day! There is an open passageway leading east. There is an open stone gate leading west. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Cellar =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "close cabinet",
+                "close passageway",
+                "close stone gate",
+                "examine cabinet",
+                "examine passageway",
+                "examine stone gate",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "examine cabinet"
+    },
+    {
+        "state": "-= Cellar =- If you're wondering why everything seems so normal all of a sudden, it's because you've just walked into the cellar. You hear a noise behind you and spin around, but you can't see anything other than a cabinet. Make a note of this, you might have to put stuff on or in it later on. The cabinet is empty! What a waste of a day! There is an open passageway leading east. There is an open stone gate leading west. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Cellar =-0/14",
+        "infos": {
+            "admissible_commands": [
+                "close cabinet",
+                "close passageway",
+                "close stone gate",
+                "examine cabinet",
+                "examine passageway",
+                "examine stone gate",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "examine cabinet",
+        "reward": 0,
+        "next_state": "The cabinet looks strong, and impossible to crack. It is open. > -= Cellar =-0/15",
+        "next_infos": {
+            "admissible_commands": [
+                "close cabinet",
+                "close passageway",
+                "close stone gate",
+                "examine cabinet",
+                "examine passageway",
+                "examine stone gate",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "inventory"
+    },
+    {
+        "state": "The cabinet looks strong, and impossible to crack. It is open. > -= Cellar =-0/15",
+        "infos": {
+            "admissible_commands": [
+                "close cabinet",
+                "close passageway",
+                "close stone gate",
+                "examine cabinet",
+                "examine passageway",
+                "examine stone gate",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying nothing. > -= Cellar =-0/16",
+        "next_infos": {
+            "admissible_commands": [
+                "close cabinet",
+                "close passageway",
+                "close stone gate",
+                "examine cabinet",
+                "examine passageway",
+                "examine stone gate",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

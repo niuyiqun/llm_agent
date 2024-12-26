@@ -1,0 +1,499 @@
+[
+    {
+        "state": "Welcome to TextWorld! Here is your task for today. First off, if it's not too much trouble, I need you to try to take a trip west. With that accomplished, head south. Okay, and then, take a trip west. Then, take a trip west. And then, make an attempt to head north. And then, head east. With that over with, retrieve the TextWorld style passkey from the floor of the workshop. Then, try to go south. With that accomplished, unlock the TextWorld style gate inside the sauna with the TextWorld style passkey. After unlocking the TextWorld style gate, ensure that the TextWorld style gate is open. After that, make an attempt to take a trip south. After that, attempt to go south. That done, move south. And then, pick-up the key from the floor of the canteen. Got that? Good! -= Chamber =- You arrive in a chamber. An usual one. Okay, just remember what you're here to do, and everything will go great. There is an unblocked exit to the west. > -= Chamber =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Salon =- Of every salon you could have walked into, you had to come round an ordinary one. You can see an opened dresser nearby. Empty! What kind of nightmare TextWorld is this? There is an unguarded exit to the east. There is an exit to the south. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked. > -= Salon =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "close dresser",
+                "examine dresser",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Salon =- Of every salon you could have walked into, you had to come round an ordinary one. You can see an opened dresser nearby. Empty! What kind of nightmare TextWorld is this? There is an unguarded exit to the east. There is an exit to the south. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked. > -= Salon =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "close dresser",
+                "examine dresser",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Cookhouse =- I just think it's awesome that you're in a cookhouse now. You see a chest. Hmmm... what else, what else? There is an unguarded exit to the north. You need an unguarded exit? You should try going west. > -= Cookhouse =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "examine chest",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "open chest"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Cookhouse =- I just think it's awesome that you're in a cookhouse now. You see a chest. Hmmm... what else, what else? There is an unguarded exit to the north. You need an unguarded exit? You should try going west. > -= Cookhouse =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "examine chest",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "open chest"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Sauna =- You are in a sauna. A normal one. You begin looking for stuff. You see a basket. There is a closed TextWorld style gate leading south. There is an exit to the east. Don't worry, it is unblocked. There is an exit to the north. Don't worry, it is unblocked. There is an unguarded exit to the west. There is a passkey on the floor. > -= Sauna =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "examine TextWorld style gate",
+                "examine basket",
+                "examine passkey",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "open basket",
+                "take passkey"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Sauna =- You are in a sauna. A normal one. You begin looking for stuff. You see a basket. There is a closed TextWorld style gate leading south. There is an exit to the east. Don't worry, it is unblocked. There is an exit to the north. Don't worry, it is unblocked. There is an unguarded exit to the west. There is a passkey on the floor. > -= Sauna =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "examine TextWorld style gate",
+                "examine basket",
+                "examine passkey",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "open basket",
+                "take passkey"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Shower =- Fancy seeing you here. Here, by the way, being the shower. You begin to take stock of what's in the room. You make out a box. You make out a shelf. The shelf is standard. But the thing hasn't got anything on it. There is an unblocked exit to the east. There is an unguarded exit to the north. > -= Shower =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "examine box",
+                "examine shelf",
+                "go east",
+                "go north",
+                "inventory",
+                "look",
+                "open box"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Shower =- Fancy seeing you here. Here, by the way, being the shower. You begin to take stock of what's in the room. You make out a box. You make out a shelf. The shelf is standard. But the thing hasn't got anything on it. There is an unblocked exit to the east. There is an unguarded exit to the north. > -= Shower =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "examine box",
+                "examine shelf",
+                "go east",
+                "go north",
+                "inventory",
+                "look",
+                "open box"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Study =- Ah, the study. This is some kind of study, really great usual vibes in this place, a wonderful usual atmosphere. You see a stand. But the thing hasn't got anything on it. What's the point of an empty stand? There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going south. > -= Study =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "examine stand",
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Study =- Ah, the study. This is some kind of study, really great usual vibes in this place, a wonderful usual atmosphere. You see a stand. But the thing hasn't got anything on it. What's the point of an empty stand? There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going south. > -= Study =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "examine stand",
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Workshop =- You find yourself in a workshop. An ordinary one. There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. There is an unblocked exit to the west. There is a TextWorld style passkey on the floor. > -= Workshop =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "examine TextWorld style passkey",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take TextWorld style passkey"
+            ]
+        },
+        "done": false,
+        "next_action": "take TextWorld style passkey"
+    },
+    {
+        "state": "-= Workshop =- You find yourself in a workshop. An ordinary one. There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. There is an unblocked exit to the west. There is a TextWorld style passkey on the floor. > -= Workshop =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "examine TextWorld style passkey",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take TextWorld style passkey"
+            ]
+        },
+        "action": "take TextWorld style passkey",
+        "reward": 0,
+        "next_state": "You pick up the TextWorld style passkey from the ground. > -= Workshop =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "drop TextWorld style passkey",
+                "examine TextWorld style passkey",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "You pick up the TextWorld style passkey from the ground. > -= Workshop =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "drop TextWorld style passkey",
+                "examine TextWorld style passkey",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Sauna =- You are in a sauna. A normal one. You begin looking for stuff. You see a basket. There is a closed TextWorld style gate leading south. There is an exit to the east. Don't worry, it is unblocked. There is an exit to the north. Don't worry, it is unblocked. There is an unguarded exit to the west. There is a passkey on the floor. > -= Sauna =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "drop TextWorld style passkey",
+                "examine TextWorld style gate",
+                "examine TextWorld style passkey",
+                "examine basket",
+                "examine passkey",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "open basket",
+                "take passkey",
+                "unlock TextWorld style gate with TextWorld style passkey"
+            ]
+        },
+        "done": false,
+        "next_action": "unlock TextWorld style gate with TextWorld style passkey"
+    },
+    {
+        "state": "-= Sauna =- You are in a sauna. A normal one. You begin looking for stuff. You see a basket. There is a closed TextWorld style gate leading south. There is an exit to the east. Don't worry, it is unblocked. There is an exit to the north. Don't worry, it is unblocked. There is an unguarded exit to the west. There is a passkey on the floor. > -= Sauna =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "drop TextWorld style passkey",
+                "examine TextWorld style gate",
+                "examine TextWorld style passkey",
+                "examine basket",
+                "examine passkey",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "open basket",
+                "take passkey",
+                "unlock TextWorld style gate with TextWorld style passkey"
+            ]
+        },
+        "action": "unlock TextWorld style gate with TextWorld style passkey",
+        "reward": 0,
+        "next_state": "You unlock TextWorld style gate. > -= Sauna =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "drop TextWorld style passkey",
+                "examine TextWorld style gate",
+                "examine TextWorld style passkey",
+                "examine basket",
+                "examine passkey",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "lock TextWorld style gate with TextWorld style passkey",
+                "look",
+                "open TextWorld style gate",
+                "open basket",
+                "take passkey"
+            ]
+        },
+        "done": false,
+        "next_action": "open TextWorld style gate"
+    },
+    {
+        "state": "You unlock TextWorld style gate. > -= Sauna =-0/10",
+        "infos": {
+            "admissible_commands": [
+                "drop TextWorld style passkey",
+                "examine TextWorld style gate",
+                "examine TextWorld style passkey",
+                "examine basket",
+                "examine passkey",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "lock TextWorld style gate with TextWorld style passkey",
+                "look",
+                "open TextWorld style gate",
+                "open basket",
+                "take passkey"
+            ]
+        },
+        "action": "open TextWorld style gate",
+        "reward": 0,
+        "next_state": "You open TextWorld style gate. > -= Sauna =-0/11",
+        "next_infos": {
+            "admissible_commands": [
+                "close TextWorld style gate",
+                "drop TextWorld style passkey",
+                "examine TextWorld style gate",
+                "examine TextWorld style passkey",
+                "examine basket",
+                "examine passkey",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "open basket",
+                "take passkey"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "You open TextWorld style gate. > -= Sauna =-0/11",
+        "infos": {
+            "admissible_commands": [
+                "close TextWorld style gate",
+                "drop TextWorld style passkey",
+                "examine TextWorld style gate",
+                "examine TextWorld style passkey",
+                "examine basket",
+                "examine passkey",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "open basket",
+                "take passkey"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Steam Room =- You've entered a steam room. There is an open TextWorld style gate leading north. There is an open portal leading south. > -= Steam Room =-0/12",
+        "next_infos": {
+            "admissible_commands": [
+                "close TextWorld style gate",
+                "close portal",
+                "drop TextWorld style passkey",
+                "examine TextWorld style gate",
+                "examine TextWorld style passkey",
+                "examine portal",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Steam Room =- You've entered a steam room. There is an open TextWorld style gate leading north. There is an open portal leading south. > -= Steam Room =-0/12",
+        "infos": {
+            "admissible_commands": [
+                "close TextWorld style gate",
+                "close portal",
+                "drop TextWorld style passkey",
+                "examine TextWorld style gate",
+                "examine TextWorld style passkey",
+                "examine portal",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Scullery =- If you're wondering why everything seems so normal all of a sudden, it's because you've just sauntered into the scullery. You begin to take stock of what's here. You can see a freezer! You make out a platter. But the thing hasn't got anything on it. Hm. Oh well There is an open portal leading north. There is an open gate leading west. You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unguarded. > -= Scullery =-0/13",
+        "next_infos": {
+            "admissible_commands": [
+                "close gate",
+                "close portal",
+                "drop TextWorld style passkey",
+                "examine TextWorld style passkey",
+                "examine freezer",
+                "examine gate",
+                "examine platter",
+                "examine portal",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put TextWorld style passkey on platter"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Scullery =- If you're wondering why everything seems so normal all of a sudden, it's because you've just sauntered into the scullery. You begin to take stock of what's here. You can see a freezer! You make out a platter. But the thing hasn't got anything on it. Hm. Oh well There is an open portal leading north. There is an open gate leading west. You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unguarded. > -= Scullery =-0/13",
+        "infos": {
+            "admissible_commands": [
+                "close gate",
+                "close portal",
+                "drop TextWorld style passkey",
+                "examine TextWorld style passkey",
+                "examine freezer",
+                "examine gate",
+                "examine platter",
+                "examine portal",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put TextWorld style passkey on platter"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Canteen =- You arrive in a canteen. An usual kind of place. You can see a cabinet. Huh, weird. What a letdown! The cabinet is empty! Look over there! a refrigerator. Something scurries by right in the corner of your eye. Probably nothing. You need an unguarded exit? You should try going east. You need an unguarded exit? You should try going north. There is a key on the floor. > -= Canteen =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "close cabinet",
+                "drop TextWorld style passkey",
+                "examine TextWorld style passkey",
+                "examine cabinet",
+                "examine key",
+                "examine refrigerator",
+                "go east",
+                "go north",
+                "insert TextWorld style passkey into cabinet",
+                "inventory",
+                "look",
+                "open refrigerator",
+                "take key"
+            ]
+        },
+        "done": false,
+        "next_action": "take key"
+    },
+    {
+        "state": "-= Canteen =- You arrive in a canteen. An usual kind of place. You can see a cabinet. Huh, weird. What a letdown! The cabinet is empty! Look over there! a refrigerator. Something scurries by right in the corner of your eye. Probably nothing. You need an unguarded exit? You should try going east. You need an unguarded exit? You should try going north. There is a key on the floor. > -= Canteen =-0/14",
+        "infos": {
+            "admissible_commands": [
+                "close cabinet",
+                "drop TextWorld style passkey",
+                "examine TextWorld style passkey",
+                "examine cabinet",
+                "examine key",
+                "examine refrigerator",
+                "go east",
+                "go north",
+                "insert TextWorld style passkey into cabinet",
+                "inventory",
+                "look",
+                "open refrigerator",
+                "take key"
+            ]
+        },
+        "action": "take key",
+        "reward": 1,
+        "next_state": "You pick up the key from the ground. Your score has just gone up by one point. *** The End *** You scored 1 out of a possible 1, in 15 turns. Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command? > -= Canteen =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "close cabinet",
+                "drop TextWorld style passkey",
+                "drop key",
+                "examine TextWorld style passkey",
+                "examine cabinet",
+                "examine key",
+                "examine refrigerator",
+                "go east",
+                "go north",
+                "insert TextWorld style passkey into cabinet",
+                "insert key into cabinet",
+                "inventory",
+                "look",
+                "open refrigerator"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

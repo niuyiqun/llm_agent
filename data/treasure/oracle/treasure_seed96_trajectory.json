@@ -1,0 +1,607 @@
+[
+    {
+        "state": "You are now playing a profound round of TextWorld! Here is how to play! First of all, pick up the key from the stand inside the cellar. If you can get your hands on the key, take a trip north. After that, check that the locker is unlocked with the key. After unlocking the locker, open the locker in the cookery. Then, recover the formless key from the locker. With the formless key, unlock the formless gateway with the formless key. After you have unlocked the formless gateway, open the formless gateway in the cookery. After pulling open the formless gateway, travel north. If you can succeed at that, head north. Then, make an effort to venture east. Then, make an effort to head east. After that, try to head east. With that done, venture east. After that, recover the salad from the floor of the recreation zone. Once that's all handled, you can stop! -= Cellar =- This just in- You, in the cellar. Look over there! a stand. You see a key on the stand. There is an unguarded exit to the north. > -= Cellar =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "examine key",
+                "examine stand",
+                "go north",
+                "inventory",
+                "look",
+                "take key from stand"
+            ]
+        },
+        "action": "take key from stand",
+        "reward": 0,
+        "next_state": "You take the key from the stand. > -= Cellar =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "drop key",
+                "examine key",
+                "examine stand",
+                "go north",
+                "inventory",
+                "look",
+                "put key on stand"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "You take the key from the stand. > -= Cellar =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "drop key",
+                "examine key",
+                "examine stand",
+                "go north",
+                "inventory",
+                "look",
+                "put key on stand"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Cookery =- You've entered a cookery. You hear a noise behind you and spin around, but you can't see anything other than a locker. You can make out a fridge. You wonder idly who left that here. You make out a platter. But there isn't a thing on it. There is a closed formless gateway leading north. There is an exit to the south. Don't worry, it is unguarded. > -= Cookery =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "drop key",
+                "examine formless gateway",
+                "examine fridge",
+                "examine key",
+                "examine locker",
+                "examine platter",
+                "go south",
+                "inventory",
+                "look",
+                "put key on platter",
+                "unlock locker with key"
+            ]
+        },
+        "done": false,
+        "next_action": "unlock locker with key"
+    },
+    {
+        "state": "-= Cookery =- You've entered a cookery. You hear a noise behind you and spin around, but you can't see anything other than a locker. You can make out a fridge. You wonder idly who left that here. You make out a platter. But there isn't a thing on it. There is a closed formless gateway leading north. There is an exit to the south. Don't worry, it is unguarded. > -= Cookery =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "drop key",
+                "examine formless gateway",
+                "examine fridge",
+                "examine key",
+                "examine locker",
+                "examine platter",
+                "go south",
+                "inventory",
+                "look",
+                "put key on platter",
+                "unlock locker with key"
+            ]
+        },
+        "action": "unlock locker with key",
+        "reward": 0,
+        "next_state": "You unlock the locker. > -= Cookery =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "drop key",
+                "examine formless gateway",
+                "examine fridge",
+                "examine key",
+                "examine locker",
+                "examine platter",
+                "go south",
+                "inventory",
+                "lock locker with key",
+                "look",
+                "open locker",
+                "put key on platter"
+            ]
+        },
+        "done": false,
+        "next_action": "open locker"
+    },
+    {
+        "state": "You unlock the locker. > -= Cookery =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "drop key",
+                "examine formless gateway",
+                "examine fridge",
+                "examine key",
+                "examine locker",
+                "examine platter",
+                "go south",
+                "inventory",
+                "lock locker with key",
+                "look",
+                "open locker",
+                "put key on platter"
+            ]
+        },
+        "action": "open locker",
+        "reward": 0,
+        "next_state": "You open the locker, revealing a formless key. > -= Cookery =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "close locker",
+                "drop key",
+                "examine formless gateway",
+                "examine formless key",
+                "examine fridge",
+                "examine key",
+                "examine locker",
+                "examine platter",
+                "go south",
+                "insert key into locker",
+                "inventory",
+                "look",
+                "put key on platter",
+                "take formless key from locker"
+            ]
+        },
+        "done": false,
+        "next_action": "take formless key from locker"
+    },
+    {
+        "state": "You open the locker, revealing a formless key. > -= Cookery =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "close locker",
+                "drop key",
+                "examine formless gateway",
+                "examine formless key",
+                "examine fridge",
+                "examine key",
+                "examine locker",
+                "examine platter",
+                "go south",
+                "insert key into locker",
+                "inventory",
+                "look",
+                "put key on platter",
+                "take formless key from locker"
+            ]
+        },
+        "action": "take formless key from locker",
+        "reward": 0,
+        "next_state": "You take the formless key from the locker. > -= Cookery =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "close locker",
+                "drop formless key",
+                "drop key",
+                "examine formless gateway",
+                "examine formless key",
+                "examine fridge",
+                "examine key",
+                "examine locker",
+                "examine platter",
+                "go south",
+                "insert formless key into locker",
+                "insert key into locker",
+                "inventory",
+                "look",
+                "put formless key on platter",
+                "put key on platter",
+                "unlock formless gateway with formless key"
+            ]
+        },
+        "done": false,
+        "next_action": "unlock formless gateway with formless key"
+    },
+    {
+        "state": "You take the formless key from the locker. > -= Cookery =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "close locker",
+                "drop formless key",
+                "drop key",
+                "examine formless gateway",
+                "examine formless key",
+                "examine fridge",
+                "examine key",
+                "examine locker",
+                "examine platter",
+                "go south",
+                "insert formless key into locker",
+                "insert key into locker",
+                "inventory",
+                "look",
+                "put formless key on platter",
+                "put key on platter",
+                "unlock formless gateway with formless key"
+            ]
+        },
+        "action": "unlock formless gateway with formless key",
+        "reward": 0,
+        "next_state": "You unlock formless gateway. > -= Cookery =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "close locker",
+                "drop formless key",
+                "drop key",
+                "examine formless gateway",
+                "examine formless key",
+                "examine fridge",
+                "examine key",
+                "examine locker",
+                "examine platter",
+                "go south",
+                "insert formless key into locker",
+                "insert key into locker",
+                "inventory",
+                "lock formless gateway with formless key",
+                "look",
+                "open formless gateway",
+                "put formless key on platter",
+                "put key on platter"
+            ]
+        },
+        "done": false,
+        "next_action": "open formless gateway"
+    },
+    {
+        "state": "You unlock formless gateway. > -= Cookery =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "close locker",
+                "drop formless key",
+                "drop key",
+                "examine formless gateway",
+                "examine formless key",
+                "examine fridge",
+                "examine key",
+                "examine locker",
+                "examine platter",
+                "go south",
+                "insert formless key into locker",
+                "insert key into locker",
+                "inventory",
+                "lock formless gateway with formless key",
+                "look",
+                "open formless gateway",
+                "put formless key on platter",
+                "put key on platter"
+            ]
+        },
+        "action": "open formless gateway",
+        "reward": 0,
+        "next_state": "You open formless gateway. > -= Cookery =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "close formless gateway",
+                "close locker",
+                "drop formless key",
+                "drop key",
+                "examine formless gateway",
+                "examine formless key",
+                "examine fridge",
+                "examine key",
+                "examine locker",
+                "examine platter",
+                "go north",
+                "go south",
+                "insert formless key into locker",
+                "insert key into locker",
+                "inventory",
+                "look",
+                "put formless key on platter",
+                "put key on platter"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "You open formless gateway. > -= Cookery =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "close formless gateway",
+                "close locker",
+                "drop formless key",
+                "drop key",
+                "examine formless gateway",
+                "examine formless key",
+                "examine fridge",
+                "examine key",
+                "examine locker",
+                "examine platter",
+                "go north",
+                "go south",
+                "insert formless key into locker",
+                "insert key into locker",
+                "inventory",
+                "look",
+                "put formless key on platter",
+                "put key on platter"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Playroom =- You've entered an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the playroom. You can barely contain your excitement. Look out! It's a- oh, never mind, it's just a suitcase. There is an open formless gateway leading south. There is an unguarded exit to the east. You don't like doors? Why not try going north, that entranceway is unblocked. > -= Playroom =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "close formless gateway",
+                "drop formless key",
+                "drop key",
+                "examine formless gateway",
+                "examine formless key",
+                "examine key",
+                "examine suitcase",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "open suitcase"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Playroom =- You've entered an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the playroom. You can barely contain your excitement. Look out! It's a- oh, never mind, it's just a suitcase. There is an open formless gateway leading south. There is an unguarded exit to the east. You don't like doors? Why not try going north, that entranceway is unblocked. > -= Playroom =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "close formless gateway",
+                "drop formless key",
+                "drop key",
+                "examine formless gateway",
+                "examine formless key",
+                "examine key",
+                "examine suitcase",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "open suitcase"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Cubicle =- You find yourself in a cubicle. An ordinary kind of place. You make out a box. You scan the room for a chair, and you find a chair. But there isn't a thing on it. There is an exit to the east. Don't worry, it is unguarded. You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unblocked. > -= Cubicle =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "drop formless key",
+                "drop key",
+                "examine box",
+                "examine chair",
+                "examine formless key",
+                "examine key",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "put formless key on chair",
+                "put key on chair"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Cubicle =- You find yourself in a cubicle. An ordinary kind of place. You make out a box. You scan the room for a chair, and you find a chair. But there isn't a thing on it. There is an exit to the east. Don't worry, it is unguarded. You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unblocked. > -= Cubicle =-0/10",
+        "infos": {
+            "admissible_commands": [
+                "drop formless key",
+                "drop key",
+                "examine box",
+                "examine chair",
+                "examine formless key",
+                "examine key",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "put formless key on chair",
+                "put key on chair"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Chamber =- You are in a chamber. A typical kind of place. Oh, great. Here's a bar. But the thing hasn't got anything on it. It would have been so cool if there was stuff on the bar. You don't like doors? Why not try going east, that entranceway is unguarded. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked. > -= Chamber =-0/11",
+        "next_infos": {
+            "admissible_commands": [
+                "drop formless key",
+                "drop key",
+                "examine bar",
+                "examine formless key",
+                "examine key",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put formless key on bar",
+                "put key on bar"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Chamber =- You are in a chamber. A typical kind of place. Oh, great. Here's a bar. But the thing hasn't got anything on it. It would have been so cool if there was stuff on the bar. You don't like doors? Why not try going east, that entranceway is unguarded. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked. > -= Chamber =-0/11",
+        "infos": {
+            "admissible_commands": [
+                "drop formless key",
+                "drop key",
+                "examine bar",
+                "examine formless key",
+                "examine key",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put formless key on bar",
+                "put key on bar"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Bathroom =- You arrive in a bathroom. A typical one. You can make out a bench. The bench is typical. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it? You see a rack. Make a note of this, you might have to put stuff on or in it later on. But the thing is empty. There is an exit to the east. Don't worry, it is unguarded. You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going south. You need an unblocked exit? You should try going west. There is a pizza on the floor. > -= Bathroom =-0/12",
+        "next_infos": {
+            "admissible_commands": [
+                "drop formless key",
+                "drop key",
+                "examine bench",
+                "examine formless key",
+                "examine key",
+                "examine pizza",
+                "examine rack",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put formless key on bench",
+                "put formless key on rack",
+                "put key on bench",
+                "put key on rack",
+                "take pizza"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Bathroom =- You arrive in a bathroom. A typical one. You can make out a bench. The bench is typical. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it? You see a rack. Make a note of this, you might have to put stuff on or in it later on. But the thing is empty. There is an exit to the east. Don't worry, it is unguarded. You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going south. You need an unblocked exit? You should try going west. There is a pizza on the floor. > -= Bathroom =-0/12",
+        "infos": {
+            "admissible_commands": [
+                "drop formless key",
+                "drop key",
+                "examine bench",
+                "examine formless key",
+                "examine key",
+                "examine pizza",
+                "examine rack",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put formless key on bench",
+                "put formless key on rack",
+                "put key on bench",
+                "put key on rack",
+                "take pizza"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Bedroom =- You've entered a bedroom. You begin to take stock of what's here. There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unguarded. There is an unblocked exit to the south. You need an unblocked exit? You should try going west. > -= Bedroom =-0/13",
+        "next_infos": {
+            "admissible_commands": [
+                "drop formless key",
+                "drop key",
+                "examine formless key",
+                "examine key",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Bedroom =- You've entered a bedroom. You begin to take stock of what's here. There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unguarded. There is an unblocked exit to the south. You need an unblocked exit? You should try going west. > -= Bedroom =-0/13",
+        "infos": {
+            "admissible_commands": [
+                "drop formless key",
+                "drop key",
+                "examine formless key",
+                "examine key",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Recreation Zone =- Guess what, you are in a place we're calling a recreation zone. You can make out a coffer. I mean, just wow! Isn't TextWorld just the best? What a letdown! The coffer is empty! There is an exit to the north. Don't worry, it is unblocked. You need an unguarded exit? You should try going south. There is an exit to the west. Don't worry, it is unguarded. There is a salad on the floor. > -= Recreation Zone =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "close coffer",
+                "drop formless key",
+                "drop key",
+                "examine coffer",
+                "examine formless key",
+                "examine key",
+                "examine salad",
+                "go north",
+                "go south",
+                "go west",
+                "insert formless key into coffer",
+                "insert key into coffer",
+                "inventory",
+                "look",
+                "take salad"
+            ]
+        },
+        "done": false,
+        "next_action": "take salad"
+    },
+    {
+        "state": "-= Recreation Zone =- Guess what, you are in a place we're calling a recreation zone. You can make out a coffer. I mean, just wow! Isn't TextWorld just the best? What a letdown! The coffer is empty! There is an exit to the north. Don't worry, it is unblocked. You need an unguarded exit? You should try going south. There is an exit to the west. Don't worry, it is unguarded. There is a salad on the floor. > -= Recreation Zone =-0/14",
+        "infos": {
+            "admissible_commands": [
+                "close coffer",
+                "drop formless key",
+                "drop key",
+                "examine coffer",
+                "examine formless key",
+                "examine key",
+                "examine salad",
+                "go north",
+                "go south",
+                "go west",
+                "insert formless key into coffer",
+                "insert key into coffer",
+                "inventory",
+                "look",
+                "take salad"
+            ]
+        },
+        "action": "take salad",
+        "reward": 1,
+        "next_state": "You pick up the salad from the ground. Your score has just gone up by one point. *** The End *** You scored 1 out of a possible 1, in 15 turns. Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command? > -= Recreation Zone =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "close coffer",
+                "drop formless key",
+                "drop key",
+                "drop salad",
+                "eat salad",
+                "examine coffer",
+                "examine formless key",
+                "examine key",
+                "examine salad",
+                "go north",
+                "go south",
+                "go west",
+                "insert formless key into coffer",
+                "insert key into coffer",
+                "insert salad into coffer",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

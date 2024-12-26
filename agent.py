@@ -56,19 +56,7 @@ class Agent:
         self.add_user_message(obs, infos)
 
         # 调用模型生成回复
-        '''-----------debug-----------'''
-        # print(self.messages)
-        # print(self.messages[-1])
-        # print('-----------debug-----------')
-        # print(json.dumps(self.messages, indent=4, ensure_ascii=False))
-        # print('-----------debug-----------')
-        '''-----------debug-----------'''
         answer: Dict[str, str] = self.model.chat(self.messages)
-        # print('-----------answer-----------')
-        # print(json.dumps(answer, indent=4))
-        # print('-----------answer-----------')
-        # 打印模型的回答
-        # print("Generated Text:", answer)
 
         # 添加助手消息到对话历史
         self.messages.append({"role": "assistant", "content": json.dumps(answer)})
@@ -76,18 +64,6 @@ class Agent:
         # 提取生成的命令
         # command: Dict[str, str] = get_command(answer)
         return answer["action"]
-
-        # self.prompt = add_user_message(self.prompt, obs, infos, self.first_step)
-        # if self.first_step:
-        #     self.first_step = False
-        # answer: Dict[str, str] = self.model.chat(self.prompt)
-        # generated_text: str = answer['generated_text']
-        # # 将llm的回答也加入到prompt中
-        # self.prompt = generated_text
-        # print(self.prompt)
-        # # print(self.prompt)
-        # command: Dict[str, str] = get_command(generated_text)
-        # return command['action']
 
     def parse_action(self, command: str) -> str:
         """

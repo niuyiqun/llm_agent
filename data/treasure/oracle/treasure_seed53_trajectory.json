@@ -1,0 +1,535 @@
+[
+    {
+        "state": "Welcome to another exciting session of TextWorld! Here is how to play! First step, recover the Canadian keycard from the floor of the scullery. And then, make it so that the Canadian hatch is unlocked with the Canadian keycard. Then, open the Canadian hatch in the scullery. After that, go to the north. And then, make an effort to travel north. And then, pick up the spherical key from the floor of the chamber. If you have picked up the spherical key, make an attempt to travel south. And then, make an attempt to head south. After that, doublecheck that the spherical gate is unlocked. And then, open the spherical gate inside the scullery. Then, try to take a trip west. After that, ensure that the portal is open. And then, attempt to take a trip west. Then, retrieve the key from the saucepan inside the cookery. And if you do that, you're the winner! -= Scullery =- You have come into a scullery. Not the scullery you'd expect. No, this is a scullery. There is a closed Canadian hatch leading north. There is a closed spherical gate leading west. There is a Canadian keycard on the floor. > -= Scullery =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "examine Canadian hatch",
+                "examine Canadian keycard",
+                "examine spherical gate",
+                "inventory",
+                "look",
+                "take Canadian keycard"
+            ]
+        },
+        "action": "take Canadian keycard",
+        "reward": 0,
+        "next_state": "You pick up the Canadian keycard from the ground. > -= Scullery =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "drop Canadian keycard",
+                "examine Canadian hatch",
+                "examine Canadian keycard",
+                "examine spherical gate",
+                "inventory",
+                "look",
+                "unlock Canadian hatch with Canadian keycard"
+            ]
+        },
+        "done": false,
+        "next_action": "unlock Canadian hatch with Canadian keycard"
+    },
+    {
+        "state": "You pick up the Canadian keycard from the ground. > -= Scullery =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "drop Canadian keycard",
+                "examine Canadian hatch",
+                "examine Canadian keycard",
+                "examine spherical gate",
+                "inventory",
+                "look",
+                "unlock Canadian hatch with Canadian keycard"
+            ]
+        },
+        "action": "unlock Canadian hatch with Canadian keycard",
+        "reward": 0,
+        "next_state": "You unlock Canadian hatch. > -= Scullery =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "drop Canadian keycard",
+                "examine Canadian hatch",
+                "examine Canadian keycard",
+                "examine spherical gate",
+                "inventory",
+                "lock Canadian hatch with Canadian keycard",
+                "look",
+                "open Canadian hatch"
+            ]
+        },
+        "done": false,
+        "next_action": "open Canadian hatch"
+    },
+    {
+        "state": "You unlock Canadian hatch. > -= Scullery =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "drop Canadian keycard",
+                "examine Canadian hatch",
+                "examine Canadian keycard",
+                "examine spherical gate",
+                "inventory",
+                "lock Canadian hatch with Canadian keycard",
+                "look",
+                "open Canadian hatch"
+            ]
+        },
+        "action": "open Canadian hatch",
+        "reward": 0,
+        "next_state": "You open Canadian hatch. > -= Scullery =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "close Canadian hatch",
+                "drop Canadian keycard",
+                "examine Canadian hatch",
+                "examine Canadian keycard",
+                "examine spherical gate",
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "You open Canadian hatch. > -= Scullery =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "close Canadian hatch",
+                "drop Canadian keycard",
+                "examine Canadian hatch",
+                "examine Canadian keycard",
+                "examine spherical gate",
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Garage =- You find yourself in a garage. A typical one. There is an open Canadian hatch leading south. There is an unguarded exit to the north. > -= Garage =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "close Canadian hatch",
+                "drop Canadian keycard",
+                "examine Canadian hatch",
+                "examine Canadian keycard",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Garage =- You find yourself in a garage. A typical one. There is an open Canadian hatch leading south. There is an unguarded exit to the north. > -= Garage =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "close Canadian hatch",
+                "drop Canadian keycard",
+                "examine Canadian hatch",
+                "examine Canadian keycard",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Chamber =- You've just shown up in a chamber. You need an unguarded exit? You should try going south. There is a spherical key on the floor. > -= Chamber =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "drop Canadian keycard",
+                "examine Canadian keycard",
+                "examine spherical key",
+                "go south",
+                "inventory",
+                "look",
+                "take spherical key"
+            ]
+        },
+        "done": false,
+        "next_action": "take spherical key"
+    },
+    {
+        "state": "-= Chamber =- You've just shown up in a chamber. You need an unguarded exit? You should try going south. There is a spherical key on the floor. > -= Chamber =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "drop Canadian keycard",
+                "examine Canadian keycard",
+                "examine spherical key",
+                "go south",
+                "inventory",
+                "look",
+                "take spherical key"
+            ]
+        },
+        "action": "take spherical key",
+        "reward": 0,
+        "next_state": "You pick up the spherical key from the ground. > -= Chamber =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "drop Canadian keycard",
+                "drop spherical key",
+                "examine Canadian keycard",
+                "examine spherical key",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "You pick up the spherical key from the ground. > -= Chamber =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "drop Canadian keycard",
+                "drop spherical key",
+                "examine Canadian keycard",
+                "examine spherical key",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Garage =- You find yourself in a garage. A typical one. There is an open Canadian hatch leading south. There is an unguarded exit to the north. > -= Garage =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "close Canadian hatch",
+                "drop Canadian keycard",
+                "drop spherical key",
+                "examine Canadian hatch",
+                "examine Canadian keycard",
+                "examine spherical key",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Garage =- You find yourself in a garage. A typical one. There is an open Canadian hatch leading south. There is an unguarded exit to the north. > -= Garage =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "close Canadian hatch",
+                "drop Canadian keycard",
+                "drop spherical key",
+                "examine Canadian hatch",
+                "examine Canadian keycard",
+                "examine spherical key",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Scullery =- You have come into a scullery. Not the scullery you'd expect. No, this is a scullery. There is an open Canadian hatch leading north. There is a closed spherical gate leading west. > -= Scullery =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "close Canadian hatch",
+                "drop Canadian keycard",
+                "drop spherical key",
+                "examine Canadian hatch",
+                "examine Canadian keycard",
+                "examine spherical gate",
+                "examine spherical key",
+                "go north",
+                "inventory",
+                "look",
+                "unlock spherical gate with spherical key"
+            ]
+        },
+        "done": false,
+        "next_action": "unlock spherical gate with spherical key"
+    },
+    {
+        "state": "-= Scullery =- You have come into a scullery. Not the scullery you'd expect. No, this is a scullery. There is an open Canadian hatch leading north. There is a closed spherical gate leading west. > -= Scullery =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "close Canadian hatch",
+                "drop Canadian keycard",
+                "drop spherical key",
+                "examine Canadian hatch",
+                "examine Canadian keycard",
+                "examine spherical gate",
+                "examine spherical key",
+                "go north",
+                "inventory",
+                "look",
+                "unlock spherical gate with spherical key"
+            ]
+        },
+        "action": "unlock spherical gate with spherical key",
+        "reward": 0,
+        "next_state": "You unlock spherical gate. > -= Scullery =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "close Canadian hatch",
+                "drop Canadian keycard",
+                "drop spherical key",
+                "examine Canadian hatch",
+                "examine Canadian keycard",
+                "examine spherical gate",
+                "examine spherical key",
+                "go north",
+                "inventory",
+                "lock spherical gate with spherical key",
+                "look",
+                "open spherical gate"
+            ]
+        },
+        "done": false,
+        "next_action": "open spherical gate"
+    },
+    {
+        "state": "You unlock spherical gate. > -= Scullery =-0/10",
+        "infos": {
+            "admissible_commands": [
+                "close Canadian hatch",
+                "drop Canadian keycard",
+                "drop spherical key",
+                "examine Canadian hatch",
+                "examine Canadian keycard",
+                "examine spherical gate",
+                "examine spherical key",
+                "go north",
+                "inventory",
+                "lock spherical gate with spherical key",
+                "look",
+                "open spherical gate"
+            ]
+        },
+        "action": "open spherical gate",
+        "reward": 0,
+        "next_state": "You open spherical gate. > -= Scullery =-0/11",
+        "next_infos": {
+            "admissible_commands": [
+                "close Canadian hatch",
+                "close spherical gate",
+                "drop Canadian keycard",
+                "drop spherical key",
+                "examine Canadian hatch",
+                "examine Canadian keycard",
+                "examine spherical gate",
+                "examine spherical key",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "You open spherical gate. > -= Scullery =-0/11",
+        "infos": {
+            "admissible_commands": [
+                "close Canadian hatch",
+                "close spherical gate",
+                "drop Canadian keycard",
+                "drop spherical key",
+                "examine Canadian hatch",
+                "examine Canadian keycard",
+                "examine spherical gate",
+                "examine spherical key",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Shower =- You find yourself in a shower. An usual one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. You can make out a safe. You see a rack. But the thing is empty, unfortunately. There is an open spherical gate leading east. There is a closed portal leading west. > -= Shower =-0/12",
+        "next_infos": {
+            "admissible_commands": [
+                "close spherical gate",
+                "drop Canadian keycard",
+                "drop spherical key",
+                "examine Canadian keycard",
+                "examine portal",
+                "examine rack",
+                "examine safe",
+                "examine spherical gate",
+                "examine spherical key",
+                "go east",
+                "inventory",
+                "look",
+                "open portal",
+                "put Canadian keycard on rack",
+                "put spherical key on rack"
+            ]
+        },
+        "done": false,
+        "next_action": "open portal"
+    },
+    {
+        "state": "-= Shower =- You find yourself in a shower. An usual one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. You can make out a safe. You see a rack. But the thing is empty, unfortunately. There is an open spherical gate leading east. There is a closed portal leading west. > -= Shower =-0/12",
+        "infos": {
+            "admissible_commands": [
+                "close spherical gate",
+                "drop Canadian keycard",
+                "drop spherical key",
+                "examine Canadian keycard",
+                "examine portal",
+                "examine rack",
+                "examine safe",
+                "examine spherical gate",
+                "examine spherical key",
+                "go east",
+                "inventory",
+                "look",
+                "open portal",
+                "put Canadian keycard on rack",
+                "put spherical key on rack"
+            ]
+        },
+        "action": "open portal",
+        "reward": 0,
+        "next_state": "You open portal. > -= Shower =-0/13",
+        "next_infos": {
+            "admissible_commands": [
+                "close portal",
+                "close spherical gate",
+                "drop Canadian keycard",
+                "drop spherical key",
+                "examine Canadian keycard",
+                "examine portal",
+                "examine rack",
+                "examine safe",
+                "examine spherical gate",
+                "examine spherical key",
+                "go east",
+                "go west",
+                "inventory",
+                "look",
+                "put Canadian keycard on rack",
+                "put spherical key on rack"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "You open portal. > -= Shower =-0/13",
+        "infos": {
+            "admissible_commands": [
+                "close portal",
+                "close spherical gate",
+                "drop Canadian keycard",
+                "drop spherical key",
+                "examine Canadian keycard",
+                "examine portal",
+                "examine rack",
+                "examine safe",
+                "examine spherical gate",
+                "examine spherical key",
+                "go east",
+                "go west",
+                "inventory",
+                "look",
+                "put Canadian keycard on rack",
+                "put spherical key on rack"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Cookery =- Well, here we are in a cookery. You scan the room for a saucepan, and you find a saucepan. On the saucepan you make out a key. There is an open portal leading east. There is an open gate leading north. There is an open passageway leading west. > -= Cookery =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "close gate",
+                "close passageway",
+                "close portal",
+                "drop Canadian keycard",
+                "drop spherical key",
+                "examine Canadian keycard",
+                "examine gate",
+                "examine key",
+                "examine passageway",
+                "examine portal",
+                "examine saucepan",
+                "examine spherical key",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "put Canadian keycard on saucepan",
+                "put spherical key on saucepan",
+                "take key from saucepan"
+            ]
+        },
+        "done": false,
+        "next_action": "take key from saucepan"
+    },
+    {
+        "state": "-= Cookery =- Well, here we are in a cookery. You scan the room for a saucepan, and you find a saucepan. On the saucepan you make out a key. There is an open portal leading east. There is an open gate leading north. There is an open passageway leading west. > -= Cookery =-0/14",
+        "infos": {
+            "admissible_commands": [
+                "close gate",
+                "close passageway",
+                "close portal",
+                "drop Canadian keycard",
+                "drop spherical key",
+                "examine Canadian keycard",
+                "examine gate",
+                "examine key",
+                "examine passageway",
+                "examine portal",
+                "examine saucepan",
+                "examine spherical key",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "put Canadian keycard on saucepan",
+                "put spherical key on saucepan",
+                "take key from saucepan"
+            ]
+        },
+        "action": "take key from saucepan",
+        "reward": 1,
+        "next_state": "You take the key from the saucepan. Your score has just gone up by one point. *** The End *** You scored 1 out of a possible 1, in 15 turns. Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command? > -= Cookery =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "close gate",
+                "close passageway",
+                "close portal",
+                "drop Canadian keycard",
+                "drop key",
+                "drop spherical key",
+                "examine Canadian keycard",
+                "examine gate",
+                "examine key",
+                "examine passageway",
+                "examine portal",
+                "examine saucepan",
+                "examine spherical key",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "put Canadian keycard on saucepan",
+                "put key on saucepan",
+                "put spherical key on saucepan"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

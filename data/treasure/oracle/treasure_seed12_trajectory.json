@@ -1,0 +1,520 @@
+[
+    {
+        "state": "Who's got a virtual machine and is about to play through an exciting round of TextWorld? You do! First of all, you could, like, pick-up the type A passkey from the floor of the still cubicle. And then, unlock the type A door. Then, open the type A door. And then, go to the south. With that over with, try to venture west. If you can do that, try to travel west. Then, attempt to venture south. And then, try to travel east. Following that, go to the east. Next, try to go to the east. With that accomplished, make an attempt to take a trip south. Okay, and then, go to the south. Following that, head west. And then, lift the printer from the floor of the austere workshop. And once you've done that, you win! -= Still Cubicle =- You find yourself in a cubicle. A still kind of place. You make out a desk. Why don't you take a picture of it, it'll last longer! The desk is ordinary. But oh no! there's nothing on this piece of garbage. There is a closed type A door leading south. There is an unblocked exit to the east. There is a type A passkey on the floor. > -= Still Cubicle =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "examine desk",
+                "examine type A door",
+                "examine type A passkey",
+                "go east",
+                "inventory",
+                "look",
+                "take type A passkey"
+            ]
+        },
+        "action": "take type A passkey",
+        "reward": 0,
+        "next_state": "You pick up the type A passkey from the ground. > -= Still Cubicle =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "drop type A passkey",
+                "examine desk",
+                "examine type A door",
+                "examine type A passkey",
+                "go east",
+                "inventory",
+                "look",
+                "put type A passkey on desk",
+                "unlock type A door with type A passkey"
+            ]
+        },
+        "done": false,
+        "next_action": "unlock type A door with type A passkey"
+    },
+    {
+        "state": "You pick up the type A passkey from the ground. > -= Still Cubicle =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "drop type A passkey",
+                "examine desk",
+                "examine type A door",
+                "examine type A passkey",
+                "go east",
+                "inventory",
+                "look",
+                "put type A passkey on desk",
+                "unlock type A door with type A passkey"
+            ]
+        },
+        "action": "unlock type A door with type A passkey",
+        "reward": 0,
+        "next_state": "You unlock type A door. > -= Still Cubicle =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "drop type A passkey",
+                "examine desk",
+                "examine type A door",
+                "examine type A passkey",
+                "go east",
+                "inventory",
+                "lock type A door with type A passkey",
+                "look",
+                "open type A door",
+                "put type A passkey on desk"
+            ]
+        },
+        "done": false,
+        "next_action": "open type A door"
+    },
+    {
+        "state": "You unlock type A door. > -= Still Cubicle =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "drop type A passkey",
+                "examine desk",
+                "examine type A door",
+                "examine type A passkey",
+                "go east",
+                "inventory",
+                "lock type A door with type A passkey",
+                "look",
+                "open type A door",
+                "put type A passkey on desk"
+            ]
+        },
+        "action": "open type A door",
+        "reward": 0,
+        "next_state": "You open type A door. > -= Still Cubicle =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "close type A door",
+                "drop type A passkey",
+                "examine desk",
+                "examine type A door",
+                "examine type A passkey",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "put type A passkey on desk"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "You open type A door. > -= Still Cubicle =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "close type A door",
+                "drop type A passkey",
+                "examine desk",
+                "examine type A door",
+                "examine type A passkey",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "put type A passkey on desk"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Shower =- You're not going to believe this, but you've just entered a shower. You begin to take stock of what's in the room. There is an open type A door leading north. There is an open portal leading south. You need an unblocked exit? You should try going west. > -= Shower =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "close portal",
+                "close type A door",
+                "drop type A passkey",
+                "examine portal",
+                "examine type A door",
+                "examine type A passkey",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Shower =- You're not going to believe this, but you've just entered a shower. You begin to take stock of what's in the room. There is an open type A door leading north. There is an open portal leading south. You need an unblocked exit? You should try going west. > -= Shower =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "close portal",
+                "close type A door",
+                "drop type A passkey",
+                "examine portal",
+                "examine type A door",
+                "examine type A passkey",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Cubicle =- You are in a cubicle. A standard kind of place. You need an unblocked exit? You should try going east. There is an unguarded exit to the north. There is an unblocked exit to the south. You don't like doors? Why not try going west, that entranceway is unblocked. > -= Cubicle =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "drop type A passkey",
+                "examine type A passkey",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Cubicle =- You are in a cubicle. A standard kind of place. You need an unblocked exit? You should try going east. There is an unguarded exit to the north. There is an unblocked exit to the south. You don't like doors? Why not try going west, that entranceway is unblocked. > -= Cubicle =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "drop type A passkey",
+                "examine type A passkey",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Salon =- You've just shown up in a salon. What's that over there? It looks like it's a shelf. The shelf is typical. But the thing hasn't got anything on it. It would have been so cool if there was stuff on the shelf. You don't like doors? Why not try going east, that entranceway is unguarded. You don't like doors? Why not try going north, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded. > -= Salon =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "drop type A passkey",
+                "examine shelf",
+                "examine type A passkey",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "put type A passkey on shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Salon =- You've just shown up in a salon. What's that over there? It looks like it's a shelf. The shelf is typical. But the thing hasn't got anything on it. It would have been so cool if there was stuff on the shelf. You don't like doors? Why not try going east, that entranceway is unguarded. You don't like doors? Why not try going north, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded. > -= Salon =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "drop type A passkey",
+                "examine shelf",
+                "examine type A passkey",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "put type A passkey on shelf"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Playroom =- You're now in a playroom. You try to gain information on your surroundings by using a technique you call \"looking.\" You can see a closed locker. You can see a portmanteau. The portmanteau is empty, what a horrible day! You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Playroom =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "close portmanteau",
+                "drop type A passkey",
+                "examine locker",
+                "examine portmanteau",
+                "examine type A passkey",
+                "go east",
+                "go north",
+                "go south",
+                "insert type A passkey into portmanteau",
+                "inventory",
+                "look",
+                "open locker"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Playroom =- You're now in a playroom. You try to gain information on your surroundings by using a technique you call \"looking.\" You can see a closed locker. You can see a portmanteau. The portmanteau is empty, what a horrible day! You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Playroom =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "close portmanteau",
+                "drop type A passkey",
+                "examine locker",
+                "examine portmanteau",
+                "examine type A passkey",
+                "go east",
+                "go north",
+                "go south",
+                "insert type A passkey into portmanteau",
+                "inventory",
+                "look",
+                "open locker"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Silent Cubicle =- You find yourself in a cubicle. A silent kind of place. You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the north. Don't worry, it is unguarded. There is an exit to the south. Don't worry, it is unblocked. You need an unguarded exit? You should try going west. > -= Silent Cubicle =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "drop type A passkey",
+                "examine type A passkey",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Silent Cubicle =- You find yourself in a cubicle. A silent kind of place. You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the north. Don't worry, it is unguarded. There is an exit to the south. Don't worry, it is unblocked. You need an unguarded exit? You should try going west. > -= Silent Cubicle =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "drop type A passkey",
+                "examine type A passkey",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Cookhouse =- You are in a cookhouse. A standard one. Let's see what's in here. What's that over there? It looks like it's a board. The board is normal. But oh no! there's nothing on this piece of trash. Silly board, silly, empty, good for nothing board. There is an open passageway leading east. There is an open portal leading north. There is an exit to the west. Don't worry, it is unblocked. > -= Cookhouse =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "close passageway",
+                "close portal",
+                "drop type A passkey",
+                "examine board",
+                "examine passageway",
+                "examine portal",
+                "examine type A passkey",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "put type A passkey on board"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Cookhouse =- You are in a cookhouse. A standard one. Let's see what's in here. What's that over there? It looks like it's a board. The board is normal. But oh no! there's nothing on this piece of trash. Silly board, silly, empty, good for nothing board. There is an open passageway leading east. There is an open portal leading north. There is an exit to the west. Don't worry, it is unblocked. > -= Cookhouse =-0/10",
+        "infos": {
+            "admissible_commands": [
+                "close passageway",
+                "close portal",
+                "drop type A passkey",
+                "examine board",
+                "examine passageway",
+                "examine portal",
+                "examine type A passkey",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "put type A passkey on board"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Vault =- You are in a vault. A normal kind of place. There is an open door leading south. There is an open passageway leading west. There is an unguarded exit to the east. > -= Vault =-0/11",
+        "next_infos": {
+            "admissible_commands": [
+                "close door",
+                "close passageway",
+                "drop type A passkey",
+                "examine door",
+                "examine passageway",
+                "examine type A passkey",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Vault =- You are in a vault. A normal kind of place. There is an open door leading south. There is an open passageway leading west. There is an unguarded exit to the east. > -= Vault =-0/11",
+        "infos": {
+            "admissible_commands": [
+                "close door",
+                "close passageway",
+                "drop type A passkey",
+                "examine door",
+                "examine passageway",
+                "examine type A passkey",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Closet =- You're now in the closet. There is an open door leading north. There is an open gateway leading south. You need an unblocked exit? You should try going west. > -= Closet =-0/12",
+        "next_infos": {
+            "admissible_commands": [
+                "close door",
+                "close gateway",
+                "drop type A passkey",
+                "examine door",
+                "examine gateway",
+                "examine type A passkey",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Closet =- You're now in the closet. There is an open door leading north. There is an open gateway leading south. You need an unblocked exit? You should try going west. > -= Closet =-0/12",
+        "infos": {
+            "admissible_commands": [
+                "close door",
+                "close gateway",
+                "drop type A passkey",
+                "examine door",
+                "examine gateway",
+                "examine type A passkey",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Serious Cubicle =- You arrive in a serious kind of place. That is to say, you're in a cubicle. You make out a locked case right there by you. You can see a display. The display is empty! This is the worst thing that could possibly happen, ever! What's that over there? It looks like it's a cabinet. Something scurries by right in the corner of your eye. Probably nothing. Empty! What kind of nightmare TextWorld is this? Oh wow! Is that what I think it is? It is! It's a bookshelf. But there isn't a thing on it. Hm. Oh well There is an open gateway leading north. You need an unblocked exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unguarded. > -= Serious Cubicle =-0/13",
+        "next_infos": {
+            "admissible_commands": [
+                "close cabinet",
+                "close display",
+                "close gateway",
+                "drop type A passkey",
+                "examine bookshelf",
+                "examine cabinet",
+                "examine case",
+                "examine display",
+                "examine gateway",
+                "examine type A passkey",
+                "go east",
+                "go north",
+                "go west",
+                "insert type A passkey into cabinet",
+                "insert type A passkey into display",
+                "inventory",
+                "look",
+                "put type A passkey on bookshelf"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Serious Cubicle =- You arrive in a serious kind of place. That is to say, you're in a cubicle. You make out a locked case right there by you. You can see a display. The display is empty! This is the worst thing that could possibly happen, ever! What's that over there? It looks like it's a cabinet. Something scurries by right in the corner of your eye. Probably nothing. Empty! What kind of nightmare TextWorld is this? Oh wow! Is that what I think it is? It is! It's a bookshelf. But there isn't a thing on it. Hm. Oh well There is an open gateway leading north. You need an unblocked exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unguarded. > -= Serious Cubicle =-0/13",
+        "infos": {
+            "admissible_commands": [
+                "close cabinet",
+                "close display",
+                "close gateway",
+                "drop type A passkey",
+                "examine bookshelf",
+                "examine cabinet",
+                "examine case",
+                "examine display",
+                "examine gateway",
+                "examine type A passkey",
+                "go east",
+                "go north",
+                "go west",
+                "insert type A passkey into cabinet",
+                "insert type A passkey into display",
+                "inventory",
+                "look",
+                "put type A passkey on bookshelf"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Austere Workshop =- You find yourself in a workshop. An austere one. You bend down to tie your shoe. When you stand up, you notice a coffer. There is an unblocked exit to the east. There is an exit to the north. Don't worry, it is unguarded. There is a printer on the floor. > -= Austere Workshop =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "drop type A passkey",
+                "examine coffer",
+                "examine printer",
+                "examine type A passkey",
+                "go east",
+                "go north",
+                "inventory",
+                "look",
+                "take printer"
+            ]
+        },
+        "done": false,
+        "next_action": "take printer"
+    },
+    {
+        "state": "-= Austere Workshop =- You find yourself in a workshop. An austere one. You bend down to tie your shoe. When you stand up, you notice a coffer. There is an unblocked exit to the east. There is an exit to the north. Don't worry, it is unguarded. There is a printer on the floor. > -= Austere Workshop =-0/14",
+        "infos": {
+            "admissible_commands": [
+                "drop type A passkey",
+                "examine coffer",
+                "examine printer",
+                "examine type A passkey",
+                "go east",
+                "go north",
+                "inventory",
+                "look",
+                "take printer"
+            ]
+        },
+        "action": "take printer",
+        "reward": 1,
+        "next_state": "You pick up the printer from the ground. Your score has just gone up by one point. *** The End *** You scored 1 out of a possible 1, in 15 turns. Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command? > -= Austere Workshop =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "drop printer",
+                "drop type A passkey",
+                "examine coffer",
+                "examine printer",
+                "examine type A passkey",
+                "go east",
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

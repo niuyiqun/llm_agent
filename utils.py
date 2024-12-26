@@ -6,6 +6,7 @@
 @Date    ：2024/7/5 10:36 
 @Desc    ：
 """
+import sys
 from typing import Dict
 import json
 
@@ -210,25 +211,25 @@ def construct_replay_buffer(oracle_file_path, lm_file_path):
                     replay_buffer.add(state, action, reward, next_state, done, infos, next_infos, next_actions)
 
     # 遍历lm目录下的所有 JSON 文件
-    for file_name in os.listdir(lm_file_path):
-        if file_name.endswith('.json'):  # 确保只处理 JSON 文件
-            file_path = os.path.join(lm_file_path, file_name)
-            with open(file_path, 'r', encoding='utf-8') as f:
-                data = json.load(f)  # 加载 JSON 数据
-
-                # 将每个样本添加到 Replay Buffer 中
-                for sample in data:
-                    state = sample['state']
-                    action = sample['action']
-                    reward = sample['reward']
-                    next_state = sample['next_state']
-                    done = sample['done']
-                    infos = sample.get('infos', {})
-                    next_infos = sample.get('next_infos', {})
-                    next_actions = sample.get('next_action', {})
-
-                    # 添加样本到 Replay Buffer
-                    replay_buffer.add(state, action, reward, next_state, done, infos, next_infos, next_actions)
+    # for file_name in os.listdir(lm_file_path):
+    #     if file_name.endswith('.json'):  # 确保只处理 JSON 文件
+    #         file_path = os.path.join(lm_file_path, file_name)
+    #         with open(file_path, 'r', encoding='utf-8') as f:
+    #             data = json.load(f)  # 加载 JSON 数据
+    #
+    #             # 将每个样本添加到 Replay Buffer 中
+    #             for sample in data:
+    #                 state = sample['state']
+    #                 action = sample['action']
+    #                 reward = sample['reward']
+    #                 next_state = sample['next_state']
+    #                 done = sample['done']
+    #                 infos = sample.get('infos', {})
+    #                 next_infos = sample.get('next_infos', {})
+    #                 next_actions = sample.get('next_action', {})
+    #
+    #                 # 添加样本到 Replay Buffer
+    #                 replay_buffer.add(state, action, reward, next_state, done, infos, next_infos, next_actions)
 
     return replay_buffer
 
@@ -276,6 +277,23 @@ def test_replay_buffer_consistency():
         print("ReplayBuffer sampling is consistent across runs.")
     else:
         print("ReplayBuffer sampling is NOT consistent. Check random seed settings.")
+
+
+class Logger:
+    """
+    自定义日志记录器，支持将输出同时写入日志文件和终端。
+    """
+    def __init__(self, log_file_path):
+        self.terminal = sys.stdout  # 保留原来的终端输出
+        self.log = open(log_file_path, "a", encoding="utf-8")  # 打开日志文件
+
+    def write(self, message):
+        self.terminal.write(message)  # 输出到终端
+        self.log.write(message)  # 写入日志文件
+
+    def flush(self):
+        self.terminal.flush()
+        self.log.flush()
 
 
 if __name__ == "__main__":

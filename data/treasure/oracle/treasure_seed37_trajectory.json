@@ -1,0 +1,103 @@
+[
+    {
+        "state": "Welcome to another fast paced episode of TextWorld! Here is how to play! First stop, move south. And then, make an effort to venture west. With that done, pick up the shadfly from the plate inside the cookhouse. Got that? Good! -= Canteen =- You are in a canteen. A typical one. You begin to take stock of what's in the room. You need an unblocked exit? You should try going east. There is an unguarded exit to the south. There is an unblocked exit to the west. > -= Canteen =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Dish-Pit =- You've entered a dish-pit. Look out! It's a- oh, never mind, it's just a board. Now why would someone leave that there? But there isn't a thing on it. You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going south. There is an unguarded exit to the west. > -= Dish-Pit =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "examine board",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Dish-Pit =- You've entered a dish-pit. Look out! It's a- oh, never mind, it's just a board. Now why would someone leave that there? But there isn't a thing on it. You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going south. There is an unguarded exit to the west. > -= Dish-Pit =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "examine board",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Cookhouse =- Well, here we are in the cookhouse. Let's see what's in here. You make out a freezer. You can make out a plate. Wow, isn't TextWorld just the best? The plate is normal. On the plate you make out a shadfly. You don't like doors? Why not try going east, that entranceway is unguarded. You don't like doors? Why not try going north, that entranceway is unblocked. There is an unguarded exit to the south. There is an unblocked exit to the west. > -= Cookhouse =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "examine freezer",
+                "examine plate",
+                "examine shadfly",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "open freezer",
+                "take shadfly from plate"
+            ]
+        },
+        "done": false,
+        "next_action": "take shadfly from plate"
+    },
+    {
+        "state": "-= Cookhouse =- Well, here we are in the cookhouse. Let's see what's in here. You make out a freezer. You can make out a plate. Wow, isn't TextWorld just the best? The plate is normal. On the plate you make out a shadfly. You don't like doors? Why not try going east, that entranceway is unguarded. You don't like doors? Why not try going north, that entranceway is unblocked. There is an unguarded exit to the south. There is an unblocked exit to the west. > -= Cookhouse =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "examine freezer",
+                "examine plate",
+                "examine shadfly",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "open freezer",
+                "take shadfly from plate"
+            ]
+        },
+        "action": "take shadfly from plate",
+        "reward": 1,
+        "next_state": "You take the shadfly from the plate. Your score has just gone up by one point. *** The End *** You scored 1 out of a possible 1, in 4 turns. Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command? > -= Cookhouse =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "drop shadfly",
+                "examine freezer",
+                "examine plate",
+                "examine shadfly",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "open freezer",
+                "put shadfly on plate"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

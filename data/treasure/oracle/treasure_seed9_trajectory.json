@@ -1,0 +1,413 @@
+[
+    {
+        "state": "Welcome to TextWorld! First of all, make an attempt to head south. That done, go to the east. After that, venture south. With that over with, move west. If you can get around to doing that, head south. Okay, and then, make an effort to move west. And then, travel west. After that, head north. Once you do that, try to take a trip east. That done, go to the north. With that over with, head north. And then, take a trip west. Okay, and then, make an attempt to travel west. Then, pick up the paper towel from the safe in the sauna. Alright, thanks! -= Attic =- Okay, so you're in an attic, cool, but is it usual? You better believe it is. You can see a chest. You make out a rack. Looks like someone's already been here and taken everything off it, though. There is an exit to the east. Don't worry, it is unguarded. There is an unguarded exit to the north. There is an unguarded exit to the south. You need an unguarded exit? You should try going west. > -= Attic =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "examine chest",
+                "examine rack",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Lounge =- You've entered a lounge. You begin looking for stuff. You can see a desk. You shudder, but continue examining the desk. You see a key on the desk. There is an exit to the east. Don't worry, it is unguarded. There is an unblocked exit to the north. > -= Lounge =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "examine desk",
+                "examine key",
+                "go east",
+                "go north",
+                "inventory",
+                "look",
+                "take key from desk"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Lounge =- You've entered a lounge. You begin looking for stuff. You can see a desk. You shudder, but continue examining the desk. You see a key on the desk. There is an exit to the east. Don't worry, it is unguarded. There is an unblocked exit to the north. > -= Lounge =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "examine desk",
+                "examine key",
+                "go east",
+                "go north",
+                "inventory",
+                "look",
+                "take key from desk"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Launderette =- You arrive in a launderette. A normal one. There is an unguarded exit to the north. There is an exit to the south. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unguarded. > -= Launderette =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Launderette =- You arrive in a launderette. A normal one. There is an unguarded exit to the north. There is an exit to the south. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unguarded. > -= Launderette =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Bathroom =- You've just walked into a bathroom. You make out a trunk. Wow, isn't TextWorld just the best? You see an opened dresser close by. Empty! What kind of nightmare TextWorld is this? You need an unblocked exit? You should try going north. There is an unblocked exit to the west. > -= Bathroom =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "close dresser",
+                "examine dresser",
+                "examine trunk",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Bathroom =- You've just walked into a bathroom. You make out a trunk. Wow, isn't TextWorld just the best? You see an opened dresser close by. Empty! What kind of nightmare TextWorld is this? You need an unblocked exit? You should try going north. There is an unblocked exit to the west. > -= Bathroom =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "close dresser",
+                "examine dresser",
+                "examine trunk",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Playroom =- You're now in a playroom. You need an unblocked exit? You should try going east. There is an unguarded exit to the south. There is an exit to the west. Don't worry, it is unblocked. > -= Playroom =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Playroom =- You're now in a playroom. You need an unblocked exit? You should try going east. There is an unguarded exit to the south. There is an exit to the west. Don't worry, it is unblocked. > -= Playroom =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Vault =- You are in a vault. An ordinary kind of place. The room is well lit. You make out a shelf. Unfortunately, there isn't a thing on it. Hopefully, this discovery doesn't ruin your TextWorld experience! You can make out a table. But the thing hasn't got anything on it. What, you think everything in TextWorld should have stuff on it? There is an exit to the north. Don't worry, it is unguarded. There is an unguarded exit to the west. > -= Vault =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "examine shelf",
+                "examine table",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Vault =- You are in a vault. An ordinary kind of place. The room is well lit. You make out a shelf. Unfortunately, there isn't a thing on it. Hopefully, this discovery doesn't ruin your TextWorld experience! You can make out a table. But the thing hasn't got anything on it. What, you think everything in TextWorld should have stuff on it? There is an exit to the north. Don't worry, it is unguarded. There is an unguarded exit to the west. > -= Vault =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "examine shelf",
+                "examine table",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Cubicle =- You've just shown up in a cubicle. You can make out an opened display. What a letdown! The display is empty! Hey, want to see a bureau? Look over there, a bureau. You need an unblocked exit? You should try going east. You need an unguarded exit? You should try going north. There is an exit to the west. Don't worry, it is unblocked. > -= Cubicle =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "close display",
+                "examine bureau",
+                "examine display",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "open bureau"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Cubicle =- You've just shown up in a cubicle. You can make out an opened display. What a letdown! The display is empty! Hey, want to see a bureau? Look over there, a bureau. You need an unblocked exit? You should try going east. You need an unguarded exit? You should try going north. There is an exit to the west. Don't worry, it is unblocked. > -= Cubicle =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "close display",
+                "examine bureau",
+                "examine display",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "open bureau"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Bedroom =- You are in a bedroom. A normal one. You decide to start listing off everything you see in the room, as if you were in a text adventure. You can see an opened basket in the room. Empty! What kind of nightmare TextWorld is this? You don't like doors? Why not try going east, that entranceway is unguarded. You need an unguarded exit? You should try going north. > -= Bedroom =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "close basket",
+                "examine basket",
+                "go east",
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Bedroom =- You are in a bedroom. A normal one. You decide to start listing off everything you see in the room, as if you were in a text adventure. You can see an opened basket in the room. Empty! What kind of nightmare TextWorld is this? You don't like doors? Why not try going east, that entranceway is unguarded. You need an unguarded exit? You should try going north. > -= Bedroom =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "close basket",
+                "examine basket",
+                "go east",
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Closet =- Well, here we are in the closet. You start to take note of what's in the room. There is an unblocked exit to the east. There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the south. > -= Closet =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Closet =- Well, here we are in the closet. You start to take note of what's in the room. There is an unblocked exit to the east. There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the south. > -= Closet =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Office =- You are in an office. An ordinary one. There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unblocked. There is an exit to the west. Don't worry, it is unblocked. > -= Office =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Office =- You are in an office. An ordinary one. There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unblocked. There is an exit to the west. Don't worry, it is unblocked. > -= Office =-0/10",
+        "infos": {
+            "admissible_commands": [
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Study =- You've just sauntered into a study. As if things weren't amazing enough already, you can even see a case. A closed box, which looks ordinary, is in the corner. You need an unguarded exit? You should try going north. There is an exit to the south. Don't worry, it is unblocked. > -= Study =-0/11",
+        "next_infos": {
+            "admissible_commands": [
+                "examine box",
+                "examine case",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "open box",
+                "open case"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Study =- You've just sauntered into a study. As if things weren't amazing enough already, you can even see a case. A closed box, which looks ordinary, is in the corner. You need an unguarded exit? You should try going north. There is an exit to the south. Don't worry, it is unblocked. > -= Study =-0/11",
+        "infos": {
+            "admissible_commands": [
+                "examine box",
+                "examine case",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "open box",
+                "open case"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Basement =- You find yourself in a basement. A typical one. You can see a cabinet. You make out a workbench. The workbench is typical. However, the workbench, like an empty workbench, has nothing on it. There is an unguarded exit to the east. There is an unguarded exit to the south. There is an unguarded exit to the west. > -= Basement =-0/12",
+        "next_infos": {
+            "admissible_commands": [
+                "examine cabinet",
+                "examine workbench",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "open cabinet"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Basement =- You find yourself in a basement. A typical one. You can see a cabinet. You make out a workbench. The workbench is typical. However, the workbench, like an empty workbench, has nothing on it. There is an unguarded exit to the east. There is an unguarded exit to the south. There is an unguarded exit to the west. > -= Basement =-0/12",
+        "infos": {
+            "admissible_commands": [
+                "examine cabinet",
+                "examine workbench",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "open cabinet"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Bedchamber =- You've just sauntered into a bedchamber. There is an unblocked exit to the east. You don't like doors? Why not try going north, that entranceway is unblocked. You need an unblocked exit? You should try going west. > -= Bedchamber =-0/13",
+        "next_infos": {
+            "admissible_commands": [
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Bedchamber =- You've just sauntered into a bedchamber. There is an unblocked exit to the east. You don't like doors? Why not try going north, that entranceway is unblocked. You need an unblocked exit? You should try going west. > -= Bedchamber =-0/13",
+        "infos": {
+            "admissible_commands": [
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Sauna =- You've just sauntered into a sauna. You make out an opened normal looking safe in the room. The safe contains a paper towel. You idly wonder how they came up with the name TextWorld for this place. It's pretty fitting. You need an unblocked exit? You should try going east. There is an unblocked exit to the north. > -= Sauna =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "close safe",
+                "examine paper towel",
+                "examine safe",
+                "go east",
+                "go north",
+                "inventory",
+                "look",
+                "take paper towel from safe"
+            ]
+        },
+        "done": false,
+        "next_action": "take paper towel from safe"
+    },
+    {
+        "state": "-= Sauna =- You've just sauntered into a sauna. You make out an opened normal looking safe in the room. The safe contains a paper towel. You idly wonder how they came up with the name TextWorld for this place. It's pretty fitting. You need an unblocked exit? You should try going east. There is an unblocked exit to the north. > -= Sauna =-0/14",
+        "infos": {
+            "admissible_commands": [
+                "close safe",
+                "examine paper towel",
+                "examine safe",
+                "go east",
+                "go north",
+                "inventory",
+                "look",
+                "take paper towel from safe"
+            ]
+        },
+        "action": "take paper towel from safe",
+        "reward": 1,
+        "next_state": "You take the paper towel from the safe. Your score has just gone up by one point. *** The End *** You scored 1 out of a possible 1, in 15 turns. Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command? > -= Sauna =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "close safe",
+                "drop paper towel",
+                "examine paper towel",
+                "examine safe",
+                "go east",
+                "go north",
+                "insert paper towel into safe",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

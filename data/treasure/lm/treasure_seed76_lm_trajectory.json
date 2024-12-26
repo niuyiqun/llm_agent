@@ -1,0 +1,464 @@
+[
+    {
+        "state": "Hey, thanks for coming over to the TextWorld today, there is something I need you to do for me. First of all, you could, like, go to the north. After that, try to go west. And then, try to go west. After that, travel west. And then, make an effort to travel south. That done, go to the south. And then, attempt to travel west. That done, attempt to travel north. Once you accomplish that, make an effort to go north. That done, try to venture north. Then, head east. After that, make an attempt to venture east. Then, make an attempt to travel north. With that done, lift the latchkey from the floor of the spare room. And if you do that, you're the winner! -= Scullery =- Of every scullery you could have sauntered into, you had to walk into an ordinary one. There is an exit to the north. Don't worry, it is unblocked. > -= Scullery =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Sauna =- Guess what, you are in a place we're calling a sauna. You bend down to tie your shoe. When you stand up, you notice a drawer. You can make out a safe. There is an open gateway leading west. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Sauna =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "close gateway",
+                "examine drawer",
+                "examine gateway",
+                "examine safe",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "open safe"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Sauna =- Guess what, you are in a place we're calling a sauna. You bend down to tie your shoe. When you stand up, you notice a drawer. You can make out a safe. There is an open gateway leading west. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Sauna =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "close gateway",
+                "examine drawer",
+                "examine gateway",
+                "examine safe",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "open safe"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Workshop =- You find yourself in a workshop. A typical one. You begin looking for stuff. You can make out a desk. But oh no! there's nothing on this piece of garbage. This always happens, here in TextWorld! There is an open gateway leading east. You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going west. > -= Workshop =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "close gateway",
+                "examine desk",
+                "examine gateway",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Workshop =- You find yourself in a workshop. A typical one. You begin looking for stuff. You can make out a desk. But oh no! there's nothing on this piece of garbage. This always happens, here in TextWorld! There is an open gateway leading east. You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going west. > -= Workshop =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "close gateway",
+                "examine desk",
+                "examine gateway",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Shower =- You are in a shower. A standard kind of place. There is an unguarded exit to the east. There is an unguarded exit to the south. You need an unguarded exit? You should try going west. > -= Shower =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Shower =- You are in a shower. A standard kind of place. There is an unguarded exit to the east. There is an unguarded exit to the south. You need an unguarded exit? You should try going west. > -= Shower =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Recreation Zone =- You've just shown up in a recreation zone. You see a bed. The bed is standard. The bed appears to be empty. Hm. Oh well You scan the room, seeing a couch. The couch is ordinary. But oh no! there's nothing on this piece of junk. You don't like doors? Why not try going north, that entranceway is unblocked. There is an exit to the west. Don't worry, it is unblocked. > -= Recreation Zone =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine couch",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Recreation Zone =- You've just shown up in a recreation zone. You see a bed. The bed is standard. The bed appears to be empty. Hm. Oh well You scan the room, seeing a couch. The couch is ordinary. But oh no! there's nothing on this piece of junk. You don't like doors? Why not try going north, that entranceway is unblocked. There is an exit to the west. Don't worry, it is unblocked. > -= Recreation Zone =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine couch",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Shower =- You are in a shower. A standard kind of place. There is an unguarded exit to the east. There is an unguarded exit to the south. You need an unguarded exit? You should try going west. > -= Shower =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Shower =- You are in a shower. A standard kind of place. There is an unguarded exit to the east. There is an unguarded exit to the south. You need an unguarded exit? You should try going west. > -= Shower =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Workshop =- You find yourself in a workshop. A typical one. You begin looking for stuff. You can make out a desk. But oh no! there's nothing on this piece of garbage. This always happens, here in TextWorld! There is an open gateway leading east. You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going west. > -= Workshop =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "close gateway",
+                "examine desk",
+                "examine gateway",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "examine desk"
+    },
+    {
+        "state": "-= Workshop =- You find yourself in a workshop. A typical one. You begin looking for stuff. You can make out a desk. But oh no! there's nothing on this piece of garbage. This always happens, here in TextWorld! There is an open gateway leading east. You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going west. > -= Workshop =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "close gateway",
+                "examine desk",
+                "examine gateway",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "examine desk",
+        "reward": 0,
+        "next_state": "The desk is shaky. > -= Workshop =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "close gateway",
+                "examine desk",
+                "examine gateway",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "The desk is shaky. > -= Workshop =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "close gateway",
+                "examine desk",
+                "examine gateway",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Workshop =- You find yourself in a workshop. A typical one. You begin looking for stuff. You can make out a desk. But oh no! there's nothing on this piece of garbage. This always happens, here in TextWorld! There is an open gateway leading east. You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going west. > -= Workshop =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "close gateway",
+                "examine desk",
+                "examine gateway",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "examine desk"
+    },
+    {
+        "state": "-= Workshop =- You find yourself in a workshop. A typical one. You begin looking for stuff. You can make out a desk. But oh no! there's nothing on this piece of garbage. This always happens, here in TextWorld! There is an open gateway leading east. You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going west. > -= Workshop =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "close gateway",
+                "examine desk",
+                "examine gateway",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "examine desk",
+        "reward": 0,
+        "next_state": "The desk is shaky. > -= Workshop =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "close gateway",
+                "examine desk",
+                "examine gateway",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "The desk is shaky. > -= Workshop =-0/10",
+        "infos": {
+            "admissible_commands": [
+                "close gateway",
+                "examine desk",
+                "examine gateway",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Workshop =- You find yourself in a workshop. A typical one. You begin looking for stuff. You can make out a desk. But oh no! there's nothing on this piece of garbage. This always happens, here in TextWorld! There is an open gateway leading east. You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going west. > -= Workshop =-0/11",
+        "next_infos": {
+            "admissible_commands": [
+                "close gateway",
+                "examine desk",
+                "examine gateway",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "examine desk"
+    },
+    {
+        "state": "-= Workshop =- You find yourself in a workshop. A typical one. You begin looking for stuff. You can make out a desk. But oh no! there's nothing on this piece of garbage. This always happens, here in TextWorld! There is an open gateway leading east. You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going west. > -= Workshop =-0/11",
+        "infos": {
+            "admissible_commands": [
+                "close gateway",
+                "examine desk",
+                "examine gateway",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "examine desk",
+        "reward": 0,
+        "next_state": "The desk is shaky. > -= Workshop =-0/12",
+        "next_infos": {
+            "admissible_commands": [
+                "close gateway",
+                "examine desk",
+                "examine gateway",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "open desk"
+    },
+    {
+        "state": "The desk is shaky. > -= Workshop =-0/12",
+        "infos": {
+            "admissible_commands": [
+                "close gateway",
+                "examine desk",
+                "examine gateway",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "open desk",
+        "reward": 0,
+        "next_state": "It isn't something you can open. > -= Workshop =-0/13",
+        "next_infos": {
+            "admissible_commands": [
+                "close gateway",
+                "examine desk",
+                "examine gateway",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "It isn't something you can open. > -= Workshop =-0/13",
+        "infos": {
+            "admissible_commands": [
+                "close gateway",
+                "examine desk",
+                "examine gateway",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Workshop =- You find yourself in a workshop. A typical one. You begin looking for stuff. You can make out a desk. But oh no! there's nothing on this piece of garbage. This always happens, here in TextWorld! There is an open gateway leading east. You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going west. > -= Workshop =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "close gateway",
+                "examine desk",
+                "examine gateway",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "examine gateway"
+    },
+    {
+        "state": "-= Workshop =- You find yourself in a workshop. A typical one. You begin looking for stuff. You can make out a desk. But oh no! there's nothing on this piece of garbage. This always happens, here in TextWorld! There is an open gateway leading east. You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going west. > -= Workshop =-0/14",
+        "infos": {
+            "admissible_commands": [
+                "close gateway",
+                "examine desk",
+                "examine gateway",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "examine gateway",
+        "reward": 0,
+        "next_state": "it's a towering gateway It is open. > -= Workshop =-0/15",
+        "next_infos": {
+            "admissible_commands": [
+                "close gateway",
+                "examine desk",
+                "examine gateway",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "it's a towering gateway It is open. > -= Workshop =-0/15",
+        "infos": {
+            "admissible_commands": [
+                "close gateway",
+                "examine desk",
+                "examine gateway",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Sauna =- Guess what, you are in a place we're calling a sauna. You bend down to tie your shoe. When you stand up, you notice a drawer. You can make out a safe. There is an open gateway leading west. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Sauna =-0/16",
+        "next_infos": {
+            "admissible_commands": [
+                "close gateway",
+                "examine drawer",
+                "examine gateway",
+                "examine safe",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "open safe"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

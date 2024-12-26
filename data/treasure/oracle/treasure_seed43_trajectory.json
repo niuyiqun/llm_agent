@@ -1,0 +1,482 @@
+[
+    {
+        "state": "It's time to explore the amazing world of TextWorld! Here is your task for today. First off, go to the south. After that, take a trip west. That done, retrieve the type U passkey from the floor of the cookery. After that, go west. Then, make an effort to head north. After that, look and see that the type U portal within the playroom is unlocked with the type U passkey. After that, ensure that the type U portal is open. And then, attempt to go to the west. With that accomplished, make an effort to head west. And then, make an attempt to go to the south. Following that, move south. With that accomplished, travel east. If you can get around to doing that, travel east. Then, pick-up the blanket from the floor of the salon. And if you do that, you're the winner! -= Shower =- You are in a shower. An ordinary kind of place. You try to gain information on your surroundings by using a technique you call \"looking.\" You don't like doors? Why not try going south, that entranceway is unblocked. There is an exit to the west. Don't worry, it is unguarded. > -= Shower =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Restroom =- You are in a restroom. An ordinary one. You decide to just list off a complete list of everything you see in the room, because hey, why not? You see a gleam over in a corner, where you can see a bench. But there isn't a thing on it. It would have been so cool if there was stuff on the bench. You make out a counter. The counter is typical. Looks like someone's already been here and taken everything off it, though. You don't like doors? Why not try going north, that entranceway is unblocked. There is an unblocked exit to the west. > -= Restroom =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "examine bench",
+                "examine counter",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Restroom =- You are in a restroom. An ordinary one. You decide to just list off a complete list of everything you see in the room, because hey, why not? You see a gleam over in a corner, where you can see a bench. But there isn't a thing on it. It would have been so cool if there was stuff on the bench. You make out a counter. The counter is typical. Looks like someone's already been here and taken everything off it, though. You don't like doors? Why not try going north, that entranceway is unblocked. There is an unblocked exit to the west. > -= Restroom =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "examine bench",
+                "examine counter",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Cookery =- Well, here we are in the cookery. You start to take note of what's in the room. You make out a freezer. Now why would someone leave that there? You hear a noise behind you and spin around, but you can't see anything other than a rack. The rack is typical. On the rack you make out a fork. There is an exit to the east. Don't worry, it is unblocked. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked. There is a type U passkey on the floor. > -= Cookery =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "examine fork",
+                "examine freezer",
+                "examine rack",
+                "examine type U passkey",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "open freezer",
+                "take fork from rack",
+                "take type U passkey"
+            ]
+        },
+        "done": false,
+        "next_action": "take type U passkey"
+    },
+    {
+        "state": "-= Cookery =- Well, here we are in the cookery. You start to take note of what's in the room. You make out a freezer. Now why would someone leave that there? You hear a noise behind you and spin around, but you can't see anything other than a rack. The rack is typical. On the rack you make out a fork. There is an exit to the east. Don't worry, it is unblocked. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked. There is a type U passkey on the floor. > -= Cookery =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "examine fork",
+                "examine freezer",
+                "examine rack",
+                "examine type U passkey",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "open freezer",
+                "take fork from rack",
+                "take type U passkey"
+            ]
+        },
+        "action": "take type U passkey",
+        "reward": 0,
+        "next_state": "You pick up the type U passkey from the ground. > -= Cookery =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "drop type U passkey",
+                "examine fork",
+                "examine freezer",
+                "examine rack",
+                "examine type U passkey",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "open freezer",
+                "put type U passkey on rack",
+                "take fork from rack"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "You pick up the type U passkey from the ground. > -= Cookery =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "drop type U passkey",
+                "examine fork",
+                "examine freezer",
+                "examine rack",
+                "examine type U passkey",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "open freezer",
+                "put type U passkey on rack",
+                "take fork from rack"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Kitchenette =- This just in- You, in the kitchenette. I guess you better just go and list everything you see here. You can see a closed cabinet. You need an unblocked exit? You should try going east. You need an unguarded exit? You should try going north. > -= Kitchenette =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "drop type U passkey",
+                "examine cabinet",
+                "examine type U passkey",
+                "go east",
+                "go north",
+                "inventory",
+                "look",
+                "open cabinet"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Kitchenette =- This just in- You, in the kitchenette. I guess you better just go and list everything you see here. You can see a closed cabinet. You need an unblocked exit? You should try going east. You need an unguarded exit? You should try going north. > -= Kitchenette =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "drop type U passkey",
+                "examine cabinet",
+                "examine type U passkey",
+                "go east",
+                "go north",
+                "inventory",
+                "look",
+                "open cabinet"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Playroom =- You are in a playroom. An ordinary kind of place. You decide to just list off a complete list of everything you see in the room, because hey, why not? A closed box is nearby. There is a closed type U portal leading west. There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked. > -= Playroom =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "drop type U passkey",
+                "examine box",
+                "examine type U passkey",
+                "examine type U portal",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "open box",
+                "unlock type U portal with type U passkey"
+            ]
+        },
+        "done": false,
+        "next_action": "unlock type U portal with type U passkey"
+    },
+    {
+        "state": "-= Playroom =- You are in a playroom. An ordinary kind of place. You decide to just list off a complete list of everything you see in the room, because hey, why not? A closed box is nearby. There is a closed type U portal leading west. There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked. > -= Playroom =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "drop type U passkey",
+                "examine box",
+                "examine type U passkey",
+                "examine type U portal",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "open box",
+                "unlock type U portal with type U passkey"
+            ]
+        },
+        "action": "unlock type U portal with type U passkey",
+        "reward": 0,
+        "next_state": "You unlock type U portal. > -= Playroom =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "drop type U passkey",
+                "examine box",
+                "examine type U passkey",
+                "examine type U portal",
+                "go east",
+                "go south",
+                "inventory",
+                "lock type U portal with type U passkey",
+                "look",
+                "open box",
+                "open type U portal"
+            ]
+        },
+        "done": false,
+        "next_action": "open type U portal"
+    },
+    {
+        "state": "You unlock type U portal. > -= Playroom =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "drop type U passkey",
+                "examine box",
+                "examine type U passkey",
+                "examine type U portal",
+                "go east",
+                "go south",
+                "inventory",
+                "lock type U portal with type U passkey",
+                "look",
+                "open box",
+                "open type U portal"
+            ]
+        },
+        "action": "open type U portal",
+        "reward": 0,
+        "next_state": "You open type U portal. > -= Playroom =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "close type U portal",
+                "drop type U passkey",
+                "examine box",
+                "examine type U passkey",
+                "examine type U portal",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "open box"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "You open type U portal. > -= Playroom =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "close type U portal",
+                "drop type U passkey",
+                "examine box",
+                "examine type U passkey",
+                "examine type U portal",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "open box"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Study =- Guess what, you are in a place we're calling a study. You can make out a suitcase. The light flickers for a second, but nothing else happens. As if things weren't amazing enough already, you can even see a stand. The stand is normal. Looks like someone's already been here and taken everything off it, though. There is an open type U portal leading east. You don't like doors? Why not try going south, that entranceway is unblocked. There is an unblocked exit to the west. > -= Study =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "close type U portal",
+                "drop type U passkey",
+                "examine stand",
+                "examine suitcase",
+                "examine type U passkey",
+                "examine type U portal",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "open suitcase",
+                "put type U passkey on stand"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Study =- Guess what, you are in a place we're calling a study. You can make out a suitcase. The light flickers for a second, but nothing else happens. As if things weren't amazing enough already, you can even see a stand. The stand is normal. Looks like someone's already been here and taken everything off it, though. There is an open type U portal leading east. You don't like doors? Why not try going south, that entranceway is unblocked. There is an unblocked exit to the west. > -= Study =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "close type U portal",
+                "drop type U passkey",
+                "examine stand",
+                "examine suitcase",
+                "examine type U passkey",
+                "examine type U portal",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "open suitcase",
+                "put type U passkey on stand"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Workshop =- You arrive in a workshop. A normal kind of place. There is an unblocked exit to the east. There is an exit to the south. Don't worry, it is unguarded. > -= Workshop =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "drop type U passkey",
+                "examine type U passkey",
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Workshop =- You arrive in a workshop. A normal kind of place. There is an unblocked exit to the east. There is an exit to the south. Don't worry, it is unguarded. > -= Workshop =-0/10",
+        "infos": {
+            "admissible_commands": [
+                "drop type U passkey",
+                "examine type U passkey",
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Studio =- You've entered a studio. You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going south. > -= Studio =-0/11",
+        "next_infos": {
+            "admissible_commands": [
+                "drop type U passkey",
+                "examine type U passkey",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Studio =- You've entered a studio. You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going south. > -= Studio =-0/11",
+        "infos": {
+            "admissible_commands": [
+                "drop type U passkey",
+                "examine type U passkey",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Closet =- You arrive in a closet. A normal kind of place. You can see a locker. There is an exit to the east. Don't worry, it is unguarded. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unblocked exit to the south. > -= Closet =-0/12",
+        "next_infos": {
+            "admissible_commands": [
+                "drop type U passkey",
+                "examine locker",
+                "examine type U passkey",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "open locker"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Closet =- You arrive in a closet. A normal kind of place. You can see a locker. There is an exit to the east. Don't worry, it is unguarded. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unblocked exit to the south. > -= Closet =-0/12",
+        "infos": {
+            "admissible_commands": [
+                "drop type U passkey",
+                "examine locker",
+                "examine type U passkey",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "open locker"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Office =- You've entered an office. You decide to start listing off everything you see in the room, as if you were in a text adventure. You see a toolbox. There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going south, that entranceway is unguarded. There is an unblocked exit to the west. > -= Office =-0/13",
+        "next_infos": {
+            "admissible_commands": [
+                "drop type U passkey",
+                "examine toolbox",
+                "examine type U passkey",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Office =- You've entered an office. You decide to start listing off everything you see in the room, as if you were in a text adventure. You see a toolbox. There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going south, that entranceway is unguarded. There is an unblocked exit to the west. > -= Office =-0/13",
+        "infos": {
+            "admissible_commands": [
+                "drop type U passkey",
+                "examine toolbox",
+                "examine type U passkey",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Salon =- You've entered a salon. You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west. There is a blanket on the floor. > -= Salon =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "drop type U passkey",
+                "examine blanket",
+                "examine type U passkey",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take blanket"
+            ]
+        },
+        "done": false,
+        "next_action": "take blanket"
+    },
+    {
+        "state": "-= Salon =- You've entered a salon. You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west. There is a blanket on the floor. > -= Salon =-0/14",
+        "infos": {
+            "admissible_commands": [
+                "drop type U passkey",
+                "examine blanket",
+                "examine type U passkey",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take blanket"
+            ]
+        },
+        "action": "take blanket",
+        "reward": 1,
+        "next_state": "You pick up the blanket from the ground. Your score has just gone up by one point. *** The End *** You scored 1 out of a possible 1, in 15 turns. Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command? > -= Salon =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "drop blanket",
+                "drop type U passkey",
+                "examine blanket",
+                "examine type U passkey",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

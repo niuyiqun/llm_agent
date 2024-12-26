@@ -1,0 +1,518 @@
+[
+    {
+        "state": "Who's got a virtual machine and is about to play through an exciting round of TextWorld? You do! First thing I need you to do is to unlock the spherical hatch inside the laundry place. After that, make it so that the spherical hatch inside the laundry place is ajar. After that, take a trip north. Next, travel north. If you can finish that, venture east. Following that, go north. After that, go to the west. And then, go to the north. Next, attempt to head east. After that, move east. Then, go south. Once you manage that, make an attempt to head south. And then, head east. And then, lift the insect from the floor of the closet. Got that? Good! -= Laundry Place =- You are in a normal kind of place. That is to say, you're in a laundry place. I guess you better just go and list everything you see here. You can see an opened safe, which looks typical, here. What a letdown! The safe is empty! You can see a rack. But the thing is empty. Hm. Oh well There is a closed spherical hatch leading north. You need an unguarded exit? You should try going east. > -= Laundry Place =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "close safe",
+                "drop spherical latchkey",
+                "examine rack",
+                "examine safe",
+                "examine spherical hatch",
+                "examine spherical latchkey",
+                "go east",
+                "insert spherical latchkey into safe",
+                "inventory",
+                "look",
+                "put spherical latchkey on rack",
+                "unlock spherical hatch with spherical latchkey"
+            ]
+        },
+        "action": "unlock spherical hatch with spherical latchkey",
+        "reward": 0,
+        "next_state": "You unlock spherical hatch. > -= Laundry Place =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "close safe",
+                "drop spherical latchkey",
+                "examine rack",
+                "examine safe",
+                "examine spherical hatch",
+                "examine spherical latchkey",
+                "go east",
+                "insert spherical latchkey into safe",
+                "inventory",
+                "lock spherical hatch with spherical latchkey",
+                "look",
+                "open spherical hatch",
+                "put spherical latchkey on rack"
+            ]
+        },
+        "done": false,
+        "next_action": "open spherical hatch"
+    },
+    {
+        "state": "You unlock spherical hatch. > -= Laundry Place =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "close safe",
+                "drop spherical latchkey",
+                "examine rack",
+                "examine safe",
+                "examine spherical hatch",
+                "examine spherical latchkey",
+                "go east",
+                "insert spherical latchkey into safe",
+                "inventory",
+                "lock spherical hatch with spherical latchkey",
+                "look",
+                "open spherical hatch",
+                "put spherical latchkey on rack"
+            ]
+        },
+        "action": "open spherical hatch",
+        "reward": 0,
+        "next_state": "You open spherical hatch. > -= Laundry Place =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "close safe",
+                "close spherical hatch",
+                "drop spherical latchkey",
+                "examine rack",
+                "examine safe",
+                "examine spherical hatch",
+                "examine spherical latchkey",
+                "go east",
+                "go north",
+                "insert spherical latchkey into safe",
+                "inventory",
+                "look",
+                "put spherical latchkey on rack"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "You open spherical hatch. > -= Laundry Place =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "close safe",
+                "close spherical hatch",
+                "drop spherical latchkey",
+                "examine rack",
+                "examine safe",
+                "examine spherical hatch",
+                "examine spherical latchkey",
+                "go east",
+                "go north",
+                "insert spherical latchkey into safe",
+                "inventory",
+                "look",
+                "put spherical latchkey on rack"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Salon =- You are in a salon. A standard one. Oh wow! Is that what I think it is? It is! It's a portmanteau. A closed dresser, which looks typical, is right there by you. You can make out a mantle. The mantle appears to be empty. Hm. Oh well There is an open spherical hatch leading south. There is an open gate leading north. > -= Salon =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "close gate",
+                "close spherical hatch",
+                "drop spherical latchkey",
+                "examine dresser",
+                "examine gate",
+                "examine mantle",
+                "examine portmanteau",
+                "examine spherical hatch",
+                "examine spherical latchkey",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "open dresser",
+                "open portmanteau",
+                "put spherical latchkey on mantle"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Salon =- You are in a salon. A standard one. Oh wow! Is that what I think it is? It is! It's a portmanteau. A closed dresser, which looks typical, is right there by you. You can make out a mantle. The mantle appears to be empty. Hm. Oh well There is an open spherical hatch leading south. There is an open gate leading north. > -= Salon =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "close gate",
+                "close spherical hatch",
+                "drop spherical latchkey",
+                "examine dresser",
+                "examine gate",
+                "examine mantle",
+                "examine portmanteau",
+                "examine spherical hatch",
+                "examine spherical latchkey",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "open dresser",
+                "open portmanteau",
+                "put spherical latchkey on mantle"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Cubicle =- You have stumbled into a cubicle. Not the cubicle you'd expect. No, this is a cubicle. There is an open gate leading south. You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going north. There is a passkey on the floor. > -= Cubicle =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "close gate",
+                "drop spherical latchkey",
+                "examine gate",
+                "examine passkey",
+                "examine spherical latchkey",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "take passkey"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Cubicle =- You have stumbled into a cubicle. Not the cubicle you'd expect. No, this is a cubicle. There is an open gate leading south. You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going north. There is a passkey on the floor. > -= Cubicle =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "close gate",
+                "drop spherical latchkey",
+                "examine gate",
+                "examine passkey",
+                "examine spherical latchkey",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "take passkey"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Shower =- You are in a shower. A standard one. You begin to take stock of what's here. You don't like doors? Why not try going east, that entranceway is unblocked. You need an unguarded exit? You should try going north. There is an unguarded exit to the west. > -= Shower =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "drop spherical latchkey",
+                "examine spherical latchkey",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Shower =- You are in a shower. A standard one. You begin to take stock of what's here. You don't like doors? Why not try going east, that entranceway is unblocked. You need an unguarded exit? You should try going north. There is an unguarded exit to the west. > -= Shower =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "drop spherical latchkey",
+                "examine spherical latchkey",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Parlor =- You arrive in a parlor. A normal kind of place. You decide to start listing off everything you see in the room, as if you were in a text adventure. There is an unblocked exit to the east. You don't like doors? Why not try going north, that entranceway is unblocked. There is an unguarded exit to the south. There is an unblocked exit to the west. > -= Parlor =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "drop spherical latchkey",
+                "examine spherical latchkey",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Parlor =- You arrive in a parlor. A normal kind of place. You decide to start listing off everything you see in the room, as if you were in a text adventure. There is an unblocked exit to the east. You don't like doors? Why not try going north, that entranceway is unblocked. There is an unguarded exit to the south. There is an unblocked exit to the west. > -= Parlor =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "drop spherical latchkey",
+                "examine spherical latchkey",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Kitchen =- Ah, the kitchen. This is some kind of kitchen, really great usual vibes in this place, a wonderful usual atmosphere. You make out a freezer. You need an unblocked exit? You should try going east. There is an unblocked exit to the north. There is an unblocked exit to the south. > -= Kitchen =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "drop spherical latchkey",
+                "examine big freezer",
+                "examine spherical latchkey",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Kitchen =- Ah, the kitchen. This is some kind of kitchen, really great usual vibes in this place, a wonderful usual atmosphere. You make out a freezer. You need an unblocked exit? You should try going east. There is an unblocked exit to the north. There is an unblocked exit to the south. > -= Kitchen =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "drop spherical latchkey",
+                "examine big freezer",
+                "examine spherical latchkey",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Dish-Pit =- You find yourself in a dish-pit. A typical one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. You see a cabinet. What a letdown! The cabinet is empty! You can see a locked case. What's that over there? It looks like it's a bowl. But the thing is empty. You make out a plate. But the thing is empty, unfortunately. You need an unguarded exit? You should try going east. There is an unblocked exit to the south. > -= Dish-Pit =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "close cabinet",
+                "drop spherical latchkey",
+                "examine bowl",
+                "examine cabinet",
+                "examine case",
+                "examine plate",
+                "examine spherical latchkey",
+                "go east",
+                "go south",
+                "insert spherical latchkey into cabinet",
+                "inventory",
+                "look",
+                "put spherical latchkey on bowl",
+                "put spherical latchkey on plate"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Dish-Pit =- You find yourself in a dish-pit. A typical one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. You see a cabinet. What a letdown! The cabinet is empty! You can see a locked case. What's that over there? It looks like it's a bowl. But the thing is empty. You make out a plate. But the thing is empty, unfortunately. You need an unguarded exit? You should try going east. There is an unblocked exit to the south. > -= Dish-Pit =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "close cabinet",
+                "drop spherical latchkey",
+                "examine bowl",
+                "examine cabinet",
+                "examine case",
+                "examine plate",
+                "examine spherical latchkey",
+                "go east",
+                "go south",
+                "insert spherical latchkey into cabinet",
+                "inventory",
+                "look",
+                "put spherical latchkey on bowl",
+                "put spherical latchkey on plate"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Cellar =- Of every cellar you could have walked into, you had to walk into an usual one. You decide to just list off a complete list of everything you see in the room, because hey, why not? There is an unguarded exit to the east. There is an exit to the south. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded. > -= Cellar =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "drop spherical latchkey",
+                "examine spherical latchkey",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Cellar =- Of every cellar you could have walked into, you had to walk into an usual one. You decide to just list off a complete list of everything you see in the room, because hey, why not? There is an unguarded exit to the east. There is an exit to the south. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded. > -= Cellar =-0/10",
+        "infos": {
+            "admissible_commands": [
+                "drop spherical latchkey",
+                "examine spherical latchkey",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Cookhouse =- Well, here we are in the cookhouse. You need an unblocked exit? You should try going south. There is an unblocked exit to the west. > -= Cookhouse =-0/11",
+        "next_infos": {
+            "admissible_commands": [
+                "drop spherical latchkey",
+                "examine spherical latchkey",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Cookhouse =- Well, here we are in the cookhouse. You need an unblocked exit? You should try going south. There is an unblocked exit to the west. > -= Cookhouse =-0/11",
+        "infos": {
+            "admissible_commands": [
+                "drop spherical latchkey",
+                "examine spherical latchkey",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Pantry =- Well, here we are in the pantry. You can see a trunk. What a letdown! The trunk is empty! There is an open gateway leading south. You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the north. Don't worry, it is unblocked. There is an unguarded exit to the west. > -= Pantry =-0/12",
+        "next_infos": {
+            "admissible_commands": [
+                "close gateway",
+                "close trunk",
+                "drop spherical latchkey",
+                "examine gateway",
+                "examine spherical latchkey",
+                "examine trunk",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "insert spherical latchkey into trunk",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Pantry =- Well, here we are in the pantry. You can see a trunk. What a letdown! The trunk is empty! There is an open gateway leading south. You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the north. Don't worry, it is unblocked. There is an unguarded exit to the west. > -= Pantry =-0/12",
+        "infos": {
+            "admissible_commands": [
+                "close gateway",
+                "close trunk",
+                "drop spherical latchkey",
+                "examine gateway",
+                "examine spherical latchkey",
+                "examine trunk",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "insert spherical latchkey into trunk",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Cookery =- You are in a cookery. An usual one. You begin to take stock of what's here. Hey, want to see a platter? Look over there, a platter. The platter is usual. But the thing is empty, unfortunately. Hm. Oh well There is an open gateway leading north. You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked. > -= Cookery =-0/13",
+        "next_infos": {
+            "admissible_commands": [
+                "close gateway",
+                "drop spherical latchkey",
+                "examine gateway",
+                "examine platter",
+                "examine spherical latchkey",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put spherical latchkey on platter"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Cookery =- You are in a cookery. An usual one. You begin to take stock of what's here. Hey, want to see a platter? Look over there, a platter. The platter is usual. But the thing is empty, unfortunately. Hm. Oh well There is an open gateway leading north. You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked. > -= Cookery =-0/13",
+        "infos": {
+            "admissible_commands": [
+                "close gateway",
+                "drop spherical latchkey",
+                "examine gateway",
+                "examine platter",
+                "examine spherical latchkey",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put spherical latchkey on platter"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Closet =- You find yourself in a closet. There is an exit to the south. Don't worry, it is unblocked. There is an unguarded exit to the west. There is an insect on the floor. > -= Closet =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "drop spherical latchkey",
+                "examine insect",
+                "examine spherical latchkey",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take insect"
+            ]
+        },
+        "done": false,
+        "next_action": "take insect"
+    },
+    {
+        "state": "-= Closet =- You find yourself in a closet. There is an exit to the south. Don't worry, it is unblocked. There is an unguarded exit to the west. There is an insect on the floor. > -= Closet =-0/14",
+        "infos": {
+            "admissible_commands": [
+                "drop spherical latchkey",
+                "examine insect",
+                "examine spherical latchkey",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take insect"
+            ]
+        },
+        "action": "take insect",
+        "reward": 1,
+        "next_state": "You pick up the insect from the ground. Your score has just gone up by one point. *** The End *** You scored 1 out of a possible 1, in 15 turns. Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command? > -= Closet =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "drop insect",
+                "drop spherical latchkey",
+                "examine insect",
+                "examine spherical latchkey",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

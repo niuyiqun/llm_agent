@@ -1,0 +1,492 @@
+[
+    {
+        "state": "Who's got a virtual machine and is about to play through an profound round of TextWorld? You do! Here is your task for today. First step, travel west. And then, attempt to move west. After that, make an attempt to travel west. After that, attempt to go north. After that, make an effort to go north. Once you get around to doing that, make an attempt to move east. That done, try to go east. That done, go to the south. After that, lift the passkey from the floor of the restroom. After that, venture north. And then, go east. Then, make sure that the locker is unlocked. Then, look and see that the locker is opened. Then, take the paper towel from the locker. Once that's all handled, you can stop! -= Vault =- You find yourself in a vault. An ordinary one. You can barely contain your excitement. There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going west. > -= Vault =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Steam Room =- You find yourself in a steam room. An usual one. You see an opened cabinet. The cabinet is empty! This is the worst thing that could possibly happen, ever! Were you looking for a drawer? Because look over there, it's a drawer. There's something strange about this thing being here, but you don't have time to worry about that now. You can see a shelf. Unfortunately, there isn't a thing on it. You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going west. > -= Steam Room =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "close cabinet",
+                "examine cabinet",
+                "examine drawer",
+                "examine shelf",
+                "go east",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Steam Room =- You find yourself in a steam room. An usual one. You see an opened cabinet. The cabinet is empty! This is the worst thing that could possibly happen, ever! Were you looking for a drawer? Because look over there, it's a drawer. There's something strange about this thing being here, but you don't have time to worry about that now. You can see a shelf. Unfortunately, there isn't a thing on it. You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going west. > -= Steam Room =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "close cabinet",
+                "examine cabinet",
+                "examine drawer",
+                "examine shelf",
+                "go east",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Basement =- You've just shown up in a basement. Look over there! a workbench. But the thing is empty, unfortunately. It would have been so cool if there was stuff on the workbench. There is an unguarded exit to the east. You need an unblocked exit? You should try going west. > -= Basement =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "examine workbench",
+                "go east",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Basement =- You've just shown up in a basement. Look over there! a workbench. But the thing is empty, unfortunately. It would have been so cool if there was stuff on the workbench. There is an unguarded exit to the east. You need an unblocked exit? You should try going west. > -= Basement =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "examine workbench",
+                "go east",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Cookery =- I just think it's awesome that you're in a cookery now. If you haven't noticed it already, there seems to be something there by the wall, it's a case. There is an open gateway leading west. There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unblocked. > -= Cookery =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "close gateway",
+                "examine case",
+                "examine gateway",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "open case"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Cookery =- I just think it's awesome that you're in a cookery now. If you haven't noticed it already, there seems to be something there by the wall, it's a case. There is an open gateway leading west. There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unblocked. > -= Cookery =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "close gateway",
+                "examine case",
+                "examine gateway",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "open case"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Study =- Well, here we are in the study. There is an unguarded exit to the north. You need an unblocked exit? You should try going south. > -= Study =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Study =- Well, here we are in the study. There is an unguarded exit to the north. You need an unblocked exit? You should try going south. > -= Study =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Workshop =- You arrive in a workshop. A typical one. There is an open passageway leading north. You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked. You need an unblocked exit? You should try going west. > -= Workshop =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "close passageway",
+                "examine passageway",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Workshop =- You arrive in a workshop. A typical one. There is an open passageway leading north. You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked. You need an unblocked exit? You should try going west. > -= Workshop =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "close passageway",
+                "examine passageway",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Dish-Pit =- You arrive in a dish-pit. A typical kind of place. You can see a platter. However, the platter, like an empty platter, has nothing on it. What's the point of an empty platter? There is an unblocked exit to the east. There is an unguarded exit to the west. > -= Dish-Pit =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "examine platter",
+                "go east",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Dish-Pit =- You arrive in a dish-pit. A typical kind of place. You can see a platter. However, the platter, like an empty platter, has nothing on it. What's the point of an empty platter? There is an unblocked exit to the east. There is an unguarded exit to the west. > -= Dish-Pit =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "examine platter",
+                "go east",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Cellar =- I never took you for the sort of person who would show up in a cellar, but I guess I was wrong. You can see a rack. The rack is usual. However, the rack, like an empty rack, has nothing on it. It would have been so cool if there was stuff on the rack. There is an open door leading east. There is an unguarded exit to the south. There is an unguarded exit to the west. > -= Cellar =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "close door",
+                "examine door",
+                "examine rack",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Cellar =- I never took you for the sort of person who would show up in a cellar, but I guess I was wrong. You can see a rack. The rack is usual. However, the rack, like an empty rack, has nothing on it. It would have been so cool if there was stuff on the rack. There is an open door leading east. There is an unguarded exit to the south. There is an unguarded exit to the west. > -= Cellar =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "close door",
+                "examine door",
+                "examine rack",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Restroom =- If you're wondering why everything seems so usual all of a sudden, it's because you've just walked into the restroom. You need an unblocked exit? You should try going north. There is a passkey on the floor. > -= Restroom =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "examine passkey",
+                "go north",
+                "inventory",
+                "look",
+                "take passkey"
+            ]
+        },
+        "done": false,
+        "next_action": "take passkey"
+    },
+    {
+        "state": "-= Restroom =- If you're wondering why everything seems so usual all of a sudden, it's because you've just walked into the restroom. You need an unblocked exit? You should try going north. There is a passkey on the floor. > -= Restroom =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "examine passkey",
+                "go north",
+                "inventory",
+                "look",
+                "take passkey"
+            ]
+        },
+        "action": "take passkey",
+        "reward": 0,
+        "next_state": "You pick up the passkey from the ground. > -= Restroom =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "drop passkey",
+                "examine passkey",
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "You pick up the passkey from the ground. > -= Restroom =-0/10",
+        "infos": {
+            "admissible_commands": [
+                "drop passkey",
+                "examine passkey",
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Cellar =- I never took you for the sort of person who would show up in a cellar, but I guess I was wrong. You can see a rack. The rack is usual. However, the rack, like an empty rack, has nothing on it. It would have been so cool if there was stuff on the rack. There is an open door leading east. There is an unguarded exit to the south. There is an unguarded exit to the west. > -= Cellar =-0/11",
+        "next_infos": {
+            "admissible_commands": [
+                "close door",
+                "drop passkey",
+                "examine door",
+                "examine passkey",
+                "examine rack",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put passkey on rack"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Cellar =- I never took you for the sort of person who would show up in a cellar, but I guess I was wrong. You can see a rack. The rack is usual. However, the rack, like an empty rack, has nothing on it. It would have been so cool if there was stuff on the rack. There is an open door leading east. There is an unguarded exit to the south. There is an unguarded exit to the west. > -= Cellar =-0/11",
+        "infos": {
+            "admissible_commands": [
+                "close door",
+                "drop passkey",
+                "examine door",
+                "examine passkey",
+                "examine rack",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put passkey on rack"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Sauna =- Well, here we are in a sauna. You see an opened dresser. The dresser is empty! What a waste of a day! Look out! It's a- oh, never mind, it's just a locker. You smell an interesting smell, and follow it to a board. The board appears to be empty. There is an open door leading west. There is an unguarded exit to the north. There is an unblocked exit to the south. > -= Sauna =-0/12",
+        "next_infos": {
+            "admissible_commands": [
+                "close door",
+                "close dresser",
+                "drop passkey",
+                "examine board",
+                "examine door",
+                "examine dresser",
+                "examine locker",
+                "examine passkey",
+                "go north",
+                "go south",
+                "go west",
+                "insert passkey into dresser",
+                "inventory",
+                "look",
+                "put passkey on board",
+                "unlock locker with passkey"
+            ]
+        },
+        "done": false,
+        "next_action": "unlock locker with passkey"
+    },
+    {
+        "state": "-= Sauna =- Well, here we are in a sauna. You see an opened dresser. The dresser is empty! What a waste of a day! Look out! It's a- oh, never mind, it's just a locker. You smell an interesting smell, and follow it to a board. The board appears to be empty. There is an open door leading west. There is an unguarded exit to the north. There is an unblocked exit to the south. > -= Sauna =-0/12",
+        "infos": {
+            "admissible_commands": [
+                "close door",
+                "close dresser",
+                "drop passkey",
+                "examine board",
+                "examine door",
+                "examine dresser",
+                "examine locker",
+                "examine passkey",
+                "go north",
+                "go south",
+                "go west",
+                "insert passkey into dresser",
+                "inventory",
+                "look",
+                "put passkey on board",
+                "unlock locker with passkey"
+            ]
+        },
+        "action": "unlock locker with passkey",
+        "reward": 0,
+        "next_state": "You unlock the locker. > -= Sauna =-0/13",
+        "next_infos": {
+            "admissible_commands": [
+                "close door",
+                "close dresser",
+                "drop passkey",
+                "examine board",
+                "examine door",
+                "examine dresser",
+                "examine locker",
+                "examine passkey",
+                "go north",
+                "go south",
+                "go west",
+                "insert passkey into dresser",
+                "inventory",
+                "lock locker with passkey",
+                "look",
+                "open locker",
+                "put passkey on board"
+            ]
+        },
+        "done": false,
+        "next_action": "open locker"
+    },
+    {
+        "state": "You unlock the locker. > -= Sauna =-0/13",
+        "infos": {
+            "admissible_commands": [
+                "close door",
+                "close dresser",
+                "drop passkey",
+                "examine board",
+                "examine door",
+                "examine dresser",
+                "examine locker",
+                "examine passkey",
+                "go north",
+                "go south",
+                "go west",
+                "insert passkey into dresser",
+                "inventory",
+                "lock locker with passkey",
+                "look",
+                "open locker",
+                "put passkey on board"
+            ]
+        },
+        "action": "open locker",
+        "reward": 0,
+        "next_state": "You open the locker, revealing a paper towel. > -= Sauna =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "close door",
+                "close dresser",
+                "close locker",
+                "drop passkey",
+                "examine board",
+                "examine door",
+                "examine dresser",
+                "examine locker",
+                "examine paper towel",
+                "examine passkey",
+                "go north",
+                "go south",
+                "go west",
+                "insert passkey into dresser",
+                "insert passkey into locker",
+                "inventory",
+                "look",
+                "put passkey on board",
+                "take paper towel from locker"
+            ]
+        },
+        "done": false,
+        "next_action": "take paper towel from locker"
+    },
+    {
+        "state": "You open the locker, revealing a paper towel. > -= Sauna =-0/14",
+        "infos": {
+            "admissible_commands": [
+                "close door",
+                "close dresser",
+                "close locker",
+                "drop passkey",
+                "examine board",
+                "examine door",
+                "examine dresser",
+                "examine locker",
+                "examine paper towel",
+                "examine passkey",
+                "go north",
+                "go south",
+                "go west",
+                "insert passkey into dresser",
+                "insert passkey into locker",
+                "inventory",
+                "look",
+                "put passkey on board",
+                "take paper towel from locker"
+            ]
+        },
+        "action": "take paper towel from locker",
+        "reward": 1,
+        "next_state": "You take the paper towel from the locker. Your score has just gone up by one point. *** The End *** You scored 1 out of a possible 1, in 15 turns. Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command? > -= Sauna =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "close door",
+                "close dresser",
+                "close locker",
+                "drop paper towel",
+                "drop passkey",
+                "examine board",
+                "examine door",
+                "examine dresser",
+                "examine locker",
+                "examine paper towel",
+                "examine passkey",
+                "go north",
+                "go south",
+                "go west",
+                "insert paper towel into dresser",
+                "insert paper towel into locker",
+                "insert passkey into dresser",
+                "insert passkey into locker",
+                "inventory",
+                "look",
+                "put paper towel on board",
+                "put passkey on board"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

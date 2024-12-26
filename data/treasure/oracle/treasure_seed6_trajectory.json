@@ -1,0 +1,551 @@
+[
+    {
+        "state": "You are now playing a fast paced episode of TextWorld! First of all, pick-up the American style key from the floor of the study. And then, go to the north. That done, make an effort to move east. And then, insert the American style key into the American style door within the sauna's lock to unlock it. After that, ensure that the American style door within the sauna is open. If you have pulled open the American style door, make an attempt to take a trip north. Then, move east. Then, make an attempt to travel north. Following that, attempt to venture east. Then, make an effort to head north. After that, try to move west. And then, make an attempt to travel west. With that accomplished, try to go to the west. With that done, retrieve the loaf of bread from the platter. And if you do that, you\"re the winner! -= Study =- You've entered a study. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a mantelpiece. However, the mantelpiece, like an empty mantelpiece, has nothing on it. There is an exit to the east. Don't worry, it is unblocked. There is an unguarded exit to the north. There is an American style key on the floor. > -= Study =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "examine American style key",
+                "examine mantelpiece",
+                "go east",
+                "go north",
+                "inventory",
+                "look",
+                "take American style key"
+            ]
+        },
+        "action": "take American style key",
+        "reward": 0,
+        "next_state": "You pick up the American style key from the ground. > -= Study =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "drop American style key",
+                "examine American style key",
+                "examine mantelpiece",
+                "go east",
+                "go north",
+                "inventory",
+                "look",
+                "put American style key on mantelpiece"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "You pick up the American style key from the ground. > -= Study =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "drop American style key",
+                "examine American style key",
+                "examine mantelpiece",
+                "go east",
+                "go north",
+                "inventory",
+                "look",
+                "put American style key on mantelpiece"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Basement =- You arrive in a basement. A typical one. You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unblocked. > -= Basement =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "drop American style key",
+                "examine American style key",
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Basement =- You arrive in a basement. A typical one. You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unblocked. > -= Basement =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "drop American style key",
+                "examine American style key",
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Sauna =- Guess what, you are in a place we're calling a sauna. Okay, just remember what you're here to do, and everything will go great. You see a rack. The rack is typical. However, the rack, like an empty rack, has nothing on it. There is a closed American style door leading north. There is an open passageway leading east. You need an unblocked exit? You should try going south. You need an unguarded exit? You should try going west. > -= Sauna =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "close passageway",
+                "drop American style key",
+                "examine American style door",
+                "examine American style key",
+                "examine passageway",
+                "examine rack",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put American style key on rack",
+                "unlock American style door with American style key"
+            ]
+        },
+        "done": false,
+        "next_action": "unlock American style door with American style key"
+    },
+    {
+        "state": "-= Sauna =- Guess what, you are in a place we're calling a sauna. Okay, just remember what you're here to do, and everything will go great. You see a rack. The rack is typical. However, the rack, like an empty rack, has nothing on it. There is a closed American style door leading north. There is an open passageway leading east. You need an unblocked exit? You should try going south. You need an unguarded exit? You should try going west. > -= Sauna =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "close passageway",
+                "drop American style key",
+                "examine American style door",
+                "examine American style key",
+                "examine passageway",
+                "examine rack",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put American style key on rack",
+                "unlock American style door with American style key"
+            ]
+        },
+        "action": "unlock American style door with American style key",
+        "reward": 0,
+        "next_state": "You unlock American style door. > -= Sauna =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "close passageway",
+                "drop American style key",
+                "examine American style door",
+                "examine American style key",
+                "examine passageway",
+                "examine rack",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "lock American style door with American style key",
+                "look",
+                "open American style door",
+                "put American style key on rack"
+            ]
+        },
+        "done": false,
+        "next_action": "open American style door"
+    },
+    {
+        "state": "You unlock American style door. > -= Sauna =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "close passageway",
+                "drop American style key",
+                "examine American style door",
+                "examine American style key",
+                "examine passageway",
+                "examine rack",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "lock American style door with American style key",
+                "look",
+                "open American style door",
+                "put American style key on rack"
+            ]
+        },
+        "action": "open American style door",
+        "reward": 0,
+        "next_state": "You open American style door. > -= Sauna =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "close American style door",
+                "close passageway",
+                "drop American style key",
+                "examine American style door",
+                "examine American style key",
+                "examine passageway",
+                "examine rack",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put American style key on rack"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "You open American style door. > -= Sauna =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "close American style door",
+                "close passageway",
+                "drop American style key",
+                "examine American style door",
+                "examine American style key",
+                "examine passageway",
+                "examine rack",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put American style key on rack"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Lounge =- A well framed sign tells you that you are now in the lounge. I guess you better just go and list everything you see here. You can make out a closed basket in the room. There is an open American style door leading south. There is an open hatch leading east. There is an unguarded exit to the west. > -= Lounge =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "close American style door",
+                "close hatch",
+                "drop American style key",
+                "examine American style door",
+                "examine American style key",
+                "examine basket",
+                "examine hatch",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "open basket"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Lounge =- A well framed sign tells you that you are now in the lounge. I guess you better just go and list everything you see here. You can make out a closed basket in the room. There is an open American style door leading south. There is an open hatch leading east. There is an unguarded exit to the west. > -= Lounge =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "close American style door",
+                "close hatch",
+                "drop American style key",
+                "examine American style door",
+                "examine American style key",
+                "examine basket",
+                "examine hatch",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "open basket"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Dish-Pit =- You find yourself in a dish-pit. A normal one. Let's see what's in here. You can see a table. Why don't you take a picture of it, it'll last longer! However, the table, like an empty table, has nothing on it. There is an open gate leading north. There is an open portal leading south. There is an open hatch leading west. You don't like doors? Why not try going east, that entranceway is unguarded. > -= Dish-Pit =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "close gate",
+                "close hatch",
+                "close portal",
+                "drop American style key",
+                "examine American style key",
+                "examine gate",
+                "examine hatch",
+                "examine portal",
+                "examine table",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put American style key on table"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Dish-Pit =- You find yourself in a dish-pit. A normal one. Let's see what's in here. You can see a table. Why don't you take a picture of it, it'll last longer! However, the table, like an empty table, has nothing on it. There is an open gate leading north. There is an open portal leading south. There is an open hatch leading west. You don't like doors? Why not try going east, that entranceway is unguarded. > -= Dish-Pit =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "close gate",
+                "close hatch",
+                "close portal",
+                "drop American style key",
+                "examine American style key",
+                "examine gate",
+                "examine hatch",
+                "examine portal",
+                "examine table",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put American style key on table"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Garage =- You arrive in a garage. An ordinary one. There is an open gateway leading north. There is an open gate leading south. There is an unguarded exit to the east. There is an exit to the west. Don't worry, it is unguarded. > -= Garage =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "close gate",
+                "close gateway",
+                "drop American style key",
+                "examine American style key",
+                "examine gate",
+                "examine gateway",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Garage =- You arrive in a garage. An ordinary one. There is an open gateway leading north. There is an open gate leading south. There is an unguarded exit to the east. There is an exit to the west. Don't worry, it is unguarded. > -= Garage =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "close gate",
+                "close gateway",
+                "drop American style key",
+                "examine American style key",
+                "examine gate",
+                "examine gateway",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Workshop =- Of every workshop you could have shown up in, you had to come round a normal one. You see a mantle. The mantle is usual. But there isn't a thing on it. There is an exit to the east. Don't worry, it is unblocked. There is an exit to the north. Don't worry, it is unguarded. You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded. > -= Workshop =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "drop American style key",
+                "examine American style key",
+                "examine mantle",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put American style key on mantle"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Workshop =- Of every workshop you could have shown up in, you had to come round a normal one. You see a mantle. The mantle is usual. But there isn't a thing on it. There is an exit to the east. Don't worry, it is unblocked. There is an exit to the north. Don't worry, it is unguarded. You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded. > -= Workshop =-0/10",
+        "infos": {
+            "admissible_commands": [
+                "drop American style key",
+                "examine American style key",
+                "examine mantle",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put American style key on mantle"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Bathroom =- You find yourself in a bathroom. An usual one. Okay, just remember what you're here to do, and everything will go great. You scan the room for a shelf, and you find a shelf. But the thing hasn't got anything on it. There is an unguarded exit to the south. There is an unguarded exit to the west. > -= Bathroom =-0/11",
+        "next_infos": {
+            "admissible_commands": [
+                "drop American style key",
+                "examine American style key",
+                "examine shelf",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put American style key on shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Bathroom =- You find yourself in a bathroom. An usual one. Okay, just remember what you're here to do, and everything will go great. You scan the room for a shelf, and you find a shelf. But the thing hasn't got anything on it. There is an unguarded exit to the south. There is an unguarded exit to the west. > -= Bathroom =-0/11",
+        "infos": {
+            "admissible_commands": [
+                "drop American style key",
+                "examine American style key",
+                "examine shelf",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put American style key on shelf"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Scullery =- I am obligated to announce that you are now in the scullery. There is an open gateway leading south. There is an open door leading west. You need an unguarded exit? You should try going east. > -= Scullery =-0/12",
+        "next_infos": {
+            "admissible_commands": [
+                "close door",
+                "close gateway",
+                "drop American style key",
+                "examine American style key",
+                "examine door",
+                "examine gateway",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Scullery =- I am obligated to announce that you are now in the scullery. There is an open gateway leading south. There is an open door leading west. You need an unguarded exit? You should try going east. > -= Scullery =-0/12",
+        "infos": {
+            "admissible_commands": [
+                "close door",
+                "close gateway",
+                "drop American style key",
+                "examine American style key",
+                "examine door",
+                "examine gateway",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Shower =- You find yourself in a shower. A normal one. I guess you better just go and list everything you see here. You see a cabinet. You make out a drawer. What a letdown! The drawer is empty! You see a gleam over in a corner, where you can see a box. There is an open door leading east. There is an open wooden door leading west. > -= Shower =-0/13",
+        "next_infos": {
+            "admissible_commands": [
+                "close door",
+                "close drawer",
+                "close wooden door",
+                "drop American style key",
+                "examine American style key",
+                "examine box",
+                "examine cabinet",
+                "examine door",
+                "examine drawer",
+                "examine wooden door",
+                "go east",
+                "go west",
+                "insert American style key into drawer",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Shower =- You find yourself in a shower. A normal one. I guess you better just go and list everything you see here. You see a cabinet. You make out a drawer. What a letdown! The drawer is empty! You see a gleam over in a corner, where you can see a box. There is an open door leading east. There is an open wooden door leading west. > -= Shower =-0/13",
+        "infos": {
+            "admissible_commands": [
+                "close door",
+                "close drawer",
+                "close wooden door",
+                "drop American style key",
+                "examine American style key",
+                "examine box",
+                "examine cabinet",
+                "examine door",
+                "examine drawer",
+                "examine wooden door",
+                "go east",
+                "go west",
+                "insert American style key into drawer",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Kitchen =- You've entered a kitchen. You can see a platter. On the platter you can see a loaf of bread. There is an open wooden door leading east. There is an unguarded exit to the south. > -= Kitchen =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "close wooden door",
+                "drop American style key",
+                "examine American style key",
+                "examine loaf of bread",
+                "examine platter",
+                "examine wooden door",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "put American style key on platter",
+                "take loaf of bread from platter"
+            ]
+        },
+        "done": false,
+        "next_action": "take loaf of bread from platter"
+    },
+    {
+        "state": "-= Kitchen =- You've entered a kitchen. You can see a platter. On the platter you can see a loaf of bread. There is an open wooden door leading east. There is an unguarded exit to the south. > -= Kitchen =-0/14",
+        "infos": {
+            "admissible_commands": [
+                "close wooden door",
+                "drop American style key",
+                "examine American style key",
+                "examine loaf of bread",
+                "examine platter",
+                "examine wooden door",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "put American style key on platter",
+                "take loaf of bread from platter"
+            ]
+        },
+        "action": "take loaf of bread from platter",
+        "reward": 1,
+        "next_state": "You take the loaf of bread from the platter. Your score has just gone up by one point. *** The End *** You scored 1 out of a possible 1, in 15 turns. Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command? > -= Kitchen =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "close wooden door",
+                "drop American style key",
+                "drop loaf of bread",
+                "eat loaf of bread",
+                "examine American style key",
+                "examine loaf of bread",
+                "examine platter",
+                "examine wooden door",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "put American style key on platter",
+                "put loaf of bread on platter"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

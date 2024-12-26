@@ -8,9 +8,12 @@
 """
 
 DEBUG_MODE = False  # 打开调试模式，设置为 False 时不打印调试信息
+
+
 def debug_print(*args, **kwargs):
     if DEBUG_MODE:
         print(*args, **kwargs)
+
 
 from datetime import datetime
 import random
@@ -26,6 +29,97 @@ from model import LlamaChat, ZhipuChat
 import matplotlib.pyplot as plt
 
 import time  # 引入时间模块
+
+
+def load_test_data_from_directory(directory):
+    """
+    从目录中读取所有测试文件
+    """
+    test_data = []
+
+    # 遍历目录下的所有JSON文件
+    for file_name in sorted(os.listdir(directory)):  # 按文件名排序处理
+        if file_name.endswith(".json"):
+            file_path = os.path.join(directory, file_name)
+            data = read_file(file_path)
+            test_data.append((file_name, data))  # 记录文件名和数据一起保存
+
+    return test_data
+
+
+def read_file(file_path):
+    """
+    读取某个json文件并返回内容
+    """
+    with open(file_path, 'r', encoding='utf-8') as f:
+        data = json.load(f)
+    return data
+
+
+def test_actions_with_q_values(agent, data, file_name):
+    """
+    对读取的文件内容进行测试，计算 Q 值并输出
+    """
+    agent.critic_1.eval()
+
+    correct_count = 0  # 统计最优动作为 Q 值最高的次数
+    correct_top3_count = 0  # 统计最优动作排在 Q 值前三的次数
+    total_count = 0  # 总状态数量
+
+    # 打印正在测试的文件
+    print(f"\nTesting file: {file_name}")
+
+    # 遍历每个条目
+    for entry in data:
+        # 提取当前条目中的信息
+        state = entry['state']
+        optimal_action = entry['optimal_action']
+        reward = entry['reward']
+        admissible_commands = entry['admissible_commands']
+
+        # 计算每个动作的 Q 值
+        q_values = []
+        with torch.no_grad():
+            for action in admissible_commands:
+                state_input = [state]  # 输入状态
+                action_input = [action]  # 输入动作
+                q_value = agent.critic_1(state_input, action_input).item()  # 计算 Q 值
+                q_values.append((action, q_value))
+
+        # 按 Q 值排序动作
+        q_values.sort(key=lambda x: x[1], reverse=True)
+
+        # 找到 Q 值最高的动作
+        best_action_by_q = q_values[0][0]  # Q 值最高的动作
+
+        # 检查最优动作是否为 Q 值最高的动作
+        if best_action_by_q == optimal_action:
+            correct_count += 1
+
+        # 检查最优动作是否在前三名中
+        top_3_actions = [action for action, _ in q_values[:3]]  # 提取前三名动作
+        if optimal_action in top_3_actions:
+            correct_top3_count += 1
+
+        total_count += 1
+
+        # # 打印输出
+        # print(f"State: {state}")
+        # print(f"Best action: {optimal_action}")
+        # print(f"Best action by Q value: {best_action_by_q}")
+        # print(f"reward: {reward}")
+        # print("Actions sorted by Q value:")
+        # for action, q_value in q_values:
+        #     print(f"  Action: {action}, Q value: {q_value}")
+        # print("=" * 80)  # 使用80个等号分隔
+
+    agent.critic_1.train()
+    # 计算准确率
+    accuracy = correct_count / total_count if total_count > 0 else 0
+    top3_accuracy = correct_top3_count / total_count if total_count > 0 else 0
+    print(f"Accuracy for {file_name}: {accuracy * 100:.2f}%")
+    print(f"Top-3 Accuracy for {file_name}: {top3_accuracy * 100:.2f}%")
+    return accuracy, top3_accuracy, total_count
 
 
 # 记录时间的辅助函数
@@ -270,7 +364,7 @@ class AC_Agent:
 
     def soft_update(self, net, target_net):
         i = 0
-        for param_target, param in zip(target_net.parameters(),net.parameters()):
+        for param_target, param in zip(target_net.parameters(), net.parameters()):
             # if i == 0:  # 只打印第 1 层的参数更新
             #     print("[DEBUG] Before Update - Target Param:", param_target.data[:3])
             #     print("[DEBUG] Current Net Param:", param.data[:3])
@@ -415,7 +509,7 @@ from tqdm import tqdm
 import os
 import torch
 import yaml
-from utils import construct_replay_buffer
+from utils import construct_replay_buffer, Logger
 
 
 def plot_critic_losses(critic_losses, save_path):
@@ -443,22 +537,17 @@ def plot_critic_losses(critic_losses, save_path):
     print(f"Loss curve saved at: {save_path}")
 
 
-def main():
+def main(task_config, timestamp):
     # 加载配置文件
-    with open('config/train.yaml', 'r', encoding='utf-8') as file:
-        config = yaml.safe_load(file)
-
-    # 获取当前时间戳
-    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
 
     # 读取路径和超参数
-    oracle_file_path = config.get('oracle_file_path')
-    lm_file_path = config.get('lm_file_path')
-    model_save_path = config.get('model_save_path', './checkpoints')
-    num_epochs = config.get('num_epochs', 20)
-    batch_size = config.get('batch_size', 16)
-    checkpoint_interval = config.get('checkpoint_interval', 10)
-    device = config.get('device', 'cuda' if torch.cuda.is_available() else 'cpu')
+    oracle_file_path = task_config.get('oracle_file_path')
+    lm_file_path = task_config.get('lm_file_path')
+    model_save_path = task_config.get('model_save_path', './checkpoints')
+    num_epochs = task_config.get('num_epochs', 20)
+    batch_size = task_config.get('batch_size', 16)
+    checkpoint_interval = task_config.get('checkpoint_interval', 10)
+    device = task_config.get('device', 'cuda' if torch.cuda.is_available() else 'cpu')
 
     # 构建 Replay Buffer
     print("Constructing Replay Buffer...")
@@ -479,7 +568,7 @@ def main():
 
     # 保存模型信息
     final_model_path = os.path.join(model_save_path, f'final_model_{timestamp}.pth')
-    save_model_info(agent, replay_buffer.size(), final_model_path)
+    save_model_info(task_config, agent, replay_buffer.size(), final_model_path, timestamp)
 
     # 开始训练
     print(f"Starting training for {num_epochs} epochs with batch size {batch_size}.")
@@ -500,20 +589,29 @@ def main():
             })
             pbar.update(1)
 
-            # 定期保存模型
-            # if epoch % checkpoint_interval == 0:
-            #     checkpoint_path = os.path.join(model_save_path, f'checkpoint_{timestamp}_epoch_{epoch}.pth')
-            #     torch.save({
-            #         'critic_1_state_dict': agent.critic_1.state_dict(),
-            #         'critic_2_state_dict': agent.critic_2.state_dict(),
-            #         'target_critic_1_state_dict': agent.target_critic_1.state_dict(),
-            #         'target_critic_2_state_dict': agent.target_critic_2.state_dict(),
-            #         'critic_1_optimizer_state_dict': agent.critic_1_optimizer.state_dict(),
-            #         'critic_2_optimizer_state_dict': agent.critic_2_optimizer.state_dict(),
-            #         'epoch': epoch,
-            #         'critic_losses': critic_losses
-            #     }, checkpoint_path)
-            #     print(f"Checkpoint saved at: {checkpoint_path}")
+            # 定期测试模型
+            if epoch % checkpoint_interval == 0:
+                # 从目录加载测试数据（包含奖励信息）
+                test_data_directory = task_config['validate_file_path']
+                test_data = load_test_data_from_directory(test_data_directory)
+
+                total_correct = 0  # 总正确数量
+                total_correct_top3 = 0  # 总前三正确数量
+                total_states = 0  # 总状态数量
+
+                # 对每个文件进行测试
+                for file_name, data in test_data:
+                    file_accuracy, file_top3_accuracy, file_total = test_actions_with_q_values(agent, data, file_name)
+                    total_correct += file_accuracy * file_total  # 累加正确的状态数量
+                    total_correct_top3 += file_top3_accuracy * file_total  # 累加前三正确的状态数量
+                    total_states += file_total  # 累加总状态数量
+                    print("=" * 140)  # 使用140个等号分隔
+
+                # 计算整体准确率
+                overall_accuracy = total_correct / total_states if total_states > 0 else 0
+                overall_top3_accuracy = total_correct_top3 / total_states if total_states > 0 else 0
+                print(f"Overall accuracy: {overall_accuracy * 100:.2f}%")
+                print(f"Overall Top-3 accuracy: {overall_top3_accuracy * 100:.2f}%")
 
     # 保存最终模型
     final_model_path = os.path.join(model_save_path, f'final_model_{timestamp}.pth')
@@ -534,22 +632,18 @@ def main():
     plot_critic_losses(critic_losses, loss_curve_path)
 
 
-def save_model_info(agent, replay_buffer_size, save_path):
+def save_model_info(task_config, agent, replay_buffer_size, save_path, timestamp):
     """
         保存模型相关信息到文件中。
 
         Args:
+            task_config(dict): 任务配置
             agent (AC_Agent): 当前的智能体实例。
             replay_buffer_size (int): Replay Buffer 的大小。
             save_path (str): 保存路径。
         """
-    # 加载配置文件
-    try:
-        with open('config/train.yaml', 'r', encoding='utf-8') as train_file:
-            train_config = yaml.safe_load(train_file)
-    except Exception as e:
-        print("[ERROR] Failed to load train.yaml:", e)
-        train_config = {}
+
+    train_config = task_config
 
     try:
         with open('config/agent.yaml', 'r', encoding='utf-8') as agent_file:
@@ -560,7 +654,7 @@ def save_model_info(agent, replay_buffer_size, save_path):
 
     # 构建信息字典
     model_info = {
-        "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+        "timestamp": timestamp,
         "train_config": train_config,
         "agent_config": agent_config,
         "replay_buffer_size": replay_buffer_size,
@@ -589,16 +683,34 @@ def set_random_seed(seed: int = 42):
 
 
 if __name__ == "__main__":
-    with open('./config/train.yaml', 'r', encoding='utf-8') as f:
-        config = yaml.safe_load(f)
-
-    set_random_seed(config['seed'])  # 设置全局随机种子
     import sys
 
-    sys.stdout.reconfigure(line_buffering=True)
-    main()
+    with open('./config/train.yaml', 'r', encoding='utf-8') as f:
+        config = yaml.safe_load(f)
+    task = config['task']
+    assert task is not None, "Task name is not specified."
+    task_config = config[task]
+
+    set_random_seed(task_config['seed'])  # 设置全局随机种子
+
+    # 生成统一的时间戳
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    # 确定模型保存路径和日志文件路径
+    model_save_path = task_config.get('model_save_path', './checkpoints')
+    os.makedirs(model_save_path, exist_ok=True)
+    # 动态生成日志文件名，时间戳统一
+    log_file_path = os.path.join(model_save_path, f'log_{timestamp}.log')
+
+    # 重定向 stdout 和 stderr 到日志文件
+    sys.stdout = Logger(log_file_path)
+    sys.stderr = sys.stdout  # 同时重定向错误信息
+
+    #
+    # sys.stdout.reconfigure(line_buffering=True)
+    main(task_config, timestamp)
     # 需要debug咯，看看如何比较好
     # 嘿嘿
     # 不嘿嘿
     # 不嘿嘿
+    # 嘿嘿
     # 嘿嘿

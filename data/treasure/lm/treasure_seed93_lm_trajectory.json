@@ -1,0 +1,352 @@
+[
+    {
+        "state": "It's time to explore the amazing world of TextWorld! Here is your task for today. First stop, make an attempt to travel east. With that done, try to go south. And then, venture east. And then, retrieve the American style latchkey from the stand. And then, unlock the American style portal. After that, ensure that the American style portal is open. Then, head south. Once you finish that, venture west. Then, head west. After that, head south. Then, make an effort to venture south. If you can succeed at that, try to move east. Then, try to travel north. Then, lift the passkey from the floor of the recreation zone. That's it! -= Workshop =- Look at you, bigshot, walking into a workshop like it isn't some huge deal. There is an exit to the east. Don't worry, it is unguarded. > -= Workshop =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "go east",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Cookery =- You arrive in a cookery. A standard kind of place. Let's see what's in here. You need an unguarded exit? You should try going east. You don't like doors? Why not try going south, that entranceway is unguarded. There is an exit to the west. Don't worry, it is unguarded. > -= Cookery =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Cookery =- You arrive in a cookery. A standard kind of place. Let's see what's in here. You need an unguarded exit? You should try going east. You don't like doors? Why not try going south, that entranceway is unguarded. There is an exit to the west. Don't worry, it is unguarded. > -= Cookery =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Playroom =- You've come into a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the playroom. You can make out a mantle. But there isn't a thing on it. There is an unblocked exit to the east. There is an unblocked exit to the north. > -= Playroom =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "examine mantle",
+                "go east",
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Playroom =- You've come into a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the playroom. You can make out a mantle. But there isn't a thing on it. There is an unblocked exit to the east. There is an unblocked exit to the north. > -= Playroom =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "examine mantle",
+                "go east",
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Vault =- You arrive in a vault. A standard kind of place. You see a locked safe. You rest your hand against a wall, but you miss the wall and fall onto a stand. You see an American style latchkey on the stand. There is a closed American style portal leading south. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded. > -= Vault =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "examine American style latchkey",
+                "examine American style portal",
+                "examine safe",
+                "examine stand",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "take American style latchkey from stand"
+            ]
+        },
+        "done": false,
+        "next_action": "take American style latchkey from stand"
+    },
+    {
+        "state": "-= Vault =- You arrive in a vault. A standard kind of place. You see a locked safe. You rest your hand against a wall, but you miss the wall and fall onto a stand. You see an American style latchkey on the stand. There is a closed American style portal leading south. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded. > -= Vault =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "examine American style latchkey",
+                "examine American style portal",
+                "examine safe",
+                "examine stand",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "take American style latchkey from stand"
+            ]
+        },
+        "action": "take American style latchkey from stand",
+        "reward": 0,
+        "next_state": "You take the American style latchkey from the stand. > -= Vault =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "drop American style latchkey",
+                "examine American style latchkey",
+                "examine American style portal",
+                "examine safe",
+                "examine stand",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "put American style latchkey on stand",
+                "unlock American style portal with American style latchkey"
+            ]
+        },
+        "done": false,
+        "next_action": "unlock American style portal with American style latchkey"
+    },
+    {
+        "state": "You take the American style latchkey from the stand. > -= Vault =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "drop American style latchkey",
+                "examine American style latchkey",
+                "examine American style portal",
+                "examine safe",
+                "examine stand",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "put American style latchkey on stand",
+                "unlock American style portal with American style latchkey"
+            ]
+        },
+        "action": "unlock American style portal with American style latchkey",
+        "reward": 0,
+        "next_state": "You unlock American style portal. > -= Vault =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "drop American style latchkey",
+                "examine American style latchkey",
+                "examine American style portal",
+                "examine safe",
+                "examine stand",
+                "go north",
+                "go west",
+                "inventory",
+                "lock American style portal with American style latchkey",
+                "look",
+                "open American style portal",
+                "put American style latchkey on stand"
+            ]
+        },
+        "done": false,
+        "next_action": "open American style portal"
+    },
+    {
+        "state": "You unlock American style portal. > -= Vault =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "drop American style latchkey",
+                "examine American style latchkey",
+                "examine American style portal",
+                "examine safe",
+                "examine stand",
+                "go north",
+                "go west",
+                "inventory",
+                "lock American style portal with American style latchkey",
+                "look",
+                "open American style portal",
+                "put American style latchkey on stand"
+            ]
+        },
+        "action": "open American style portal",
+        "reward": 0,
+        "next_state": "You open American style portal. > -= Vault =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "close American style portal",
+                "drop American style latchkey",
+                "examine American style latchkey",
+                "examine American style portal",
+                "examine safe",
+                "examine stand",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put American style latchkey on stand"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "You open American style portal. > -= Vault =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "close American style portal",
+                "drop American style latchkey",
+                "examine American style latchkey",
+                "examine American style portal",
+                "examine safe",
+                "examine stand",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put American style latchkey on stand"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Kitchen =- You are in a kitchen. An ordinary one. You start to take note of what's in the room. Oh, great. Here's a chair. The chair is typical. Unfortunately, there isn't a thing on it. There is an open American style portal leading north. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked. > -= Kitchen =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "close American style portal",
+                "drop American style latchkey",
+                "examine American style latchkey",
+                "examine American style portal",
+                "examine chair",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put American style latchkey on chair"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Kitchen =- You are in a kitchen. An ordinary one. You start to take note of what's in the room. Oh, great. Here's a chair. The chair is typical. Unfortunately, there isn't a thing on it. There is an open American style portal leading north. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked. > -= Kitchen =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "close American style portal",
+                "drop American style latchkey",
+                "examine American style latchkey",
+                "examine American style portal",
+                "examine chair",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put American style latchkey on chair"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Launderette =- Well, here we are in the launderette. You try to gain information on your surroundings by using a technique you call \"looking.\" You can see an opened trunk. The trunk is empty! This is the worst thing that could possibly happen, ever! You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an unblocked exit to the west. > -= Launderette =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "close trunk",
+                "drop American style latchkey",
+                "examine American style latchkey",
+                "examine trunk",
+                "go east",
+                "go south",
+                "go west",
+                "insert American style latchkey into trunk",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Launderette =- Well, here we are in the launderette. You try to gain information on your surroundings by using a technique you call \"looking.\" You can see an opened trunk. The trunk is empty! This is the worst thing that could possibly happen, ever! You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an unblocked exit to the west. > -= Launderette =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "close trunk",
+                "drop American style latchkey",
+                "examine American style latchkey",
+                "examine trunk",
+                "go east",
+                "go south",
+                "go west",
+                "insert American style latchkey into trunk",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Recreation Zone =- You've just walked into a recreation zone. You see a bed. But the thing is empty, unfortunately. There is an unguarded exit to the east. You need an unblocked exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unblocked. There is an exit to the west. Don't worry, it is unblocked. There is a passkey on the floor. > -= Recreation Zone =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "drop American style latchkey",
+                "examine American style latchkey",
+                "examine bed",
+                "examine passkey",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put American style latchkey on bed",
+                "take passkey"
+            ]
+        },
+        "done": false,
+        "next_action": "take passkey"
+    },
+    {
+        "state": "-= Recreation Zone =- You've just walked into a recreation zone. You see a bed. But the thing is empty, unfortunately. There is an unguarded exit to the east. You need an unblocked exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unblocked. There is an exit to the west. Don't worry, it is unblocked. There is a passkey on the floor. > -= Recreation Zone =-0/10",
+        "infos": {
+            "admissible_commands": [
+                "drop American style latchkey",
+                "examine American style latchkey",
+                "examine bed",
+                "examine passkey",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put American style latchkey on bed",
+                "take passkey"
+            ]
+        },
+        "action": "take passkey",
+        "reward": 1,
+        "next_state": "You pick up the passkey from the ground. Your score has just gone up by one point. *** The End *** You scored 1 out of a possible 1, in 11 turns. Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command? > -= Recreation Zone =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "drop American style latchkey",
+                "drop passkey",
+                "examine American style latchkey",
+                "examine bed",
+                "examine passkey",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put American style latchkey on bed",
+                "put passkey on bed"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

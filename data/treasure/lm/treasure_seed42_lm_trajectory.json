@@ -1,0 +1,486 @@
+[
+    {
+        "state": "Hey, thanks for coming over to the TextWorld today, there is something I need you to do for me. First off, ensure that the gateway is open. And then, move east. And then, doublecheck that the passageway is ajar. And then, travel east. And then, venture east. Then, lift the keycard from the floor of the closet. And then, make an effort to head west. If you can do that, unlock the hatch. And then, ensure that the hatch is open. Then, head north. Then, make an attempt to take a trip north. And then, make an effort to go to the north. Then, venture west. With that done, pick up the grape from the floor of the bathroom. And once you've done that, you win! -= Restroom =- Well how about that, you are in the place we're calling the restroom. If you haven't noticed it already, there seems to be something there by the wall, it's a board. But oh no! there's nothing on this piece of junk. What, you think everything in TextWorld should have stuff on it? There is a closed gateway leading east. There is an open portal leading west. You need an unblocked exit? You should try going north. > -= Restroom =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "close portal",
+                "examine board",
+                "examine gateway",
+                "examine portal",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "open gateway"
+            ]
+        },
+        "action": "open gateway",
+        "reward": 0,
+        "next_state": "You open gateway. > -= Restroom =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "close gateway",
+                "close portal",
+                "examine board",
+                "examine gateway",
+                "examine portal",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "You open gateway. > -= Restroom =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "close gateway",
+                "close portal",
+                "examine board",
+                "examine gateway",
+                "examine portal",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Bedroom =- Guess what, you are in a place we're calling a bedroom. You start to take note of what's in the room. Were you looking for a bar? Because look over there, it's a bar. The bar is usual. The bar appears to be empty. Oh! Why couldn't there just be stuff on it? There is a closed passageway leading east. There is an open gateway leading west. > -= Bedroom =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "close gateway",
+                "examine bar",
+                "examine gateway",
+                "examine passageway",
+                "go west",
+                "inventory",
+                "look",
+                "open passageway"
+            ]
+        },
+        "done": false,
+        "next_action": "open passageway"
+    },
+    {
+        "state": "-= Bedroom =- Guess what, you are in a place we're calling a bedroom. You start to take note of what's in the room. Were you looking for a bar? Because look over there, it's a bar. The bar is usual. The bar appears to be empty. Oh! Why couldn't there just be stuff on it? There is a closed passageway leading east. There is an open gateway leading west. > -= Bedroom =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "close gateway",
+                "examine bar",
+                "examine gateway",
+                "examine passageway",
+                "go west",
+                "inventory",
+                "look",
+                "open passageway"
+            ]
+        },
+        "action": "open passageway",
+        "reward": 0,
+        "next_state": "You open passageway. > -= Bedroom =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "close gateway",
+                "close passageway",
+                "examine bar",
+                "examine gateway",
+                "examine passageway",
+                "go east",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "You open passageway. > -= Bedroom =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "close gateway",
+                "close passageway",
+                "examine bar",
+                "examine gateway",
+                "examine passageway",
+                "go east",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Salon =- You've entered a salon. Okay, just remember what you're here to do, and everything will go great. There is a closed hatch leading north. There is an open passageway leading west. You need an unblocked exit? You should try going east. > -= Salon =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "close passageway",
+                "examine hatch",
+                "examine passageway",
+                "go east",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Salon =- You've entered a salon. Okay, just remember what you're here to do, and everything will go great. There is a closed hatch leading north. There is an open passageway leading west. You need an unblocked exit? You should try going east. > -= Salon =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "close passageway",
+                "examine hatch",
+                "examine passageway",
+                "go east",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Closet =- Well, here we are in the closet. You start to take note of what's in the room. You can see a rack. Wow, isn't TextWorld just the best? But the thing is empty. There is an unblocked exit to the west. There is a keycard on the floor. > -= Closet =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "examine keycard",
+                "examine rack",
+                "go west",
+                "inventory",
+                "look",
+                "take keycard"
+            ]
+        },
+        "done": false,
+        "next_action": "take keycard"
+    },
+    {
+        "state": "-= Closet =- Well, here we are in the closet. You start to take note of what's in the room. You can see a rack. Wow, isn't TextWorld just the best? But the thing is empty. There is an unblocked exit to the west. There is a keycard on the floor. > -= Closet =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "examine keycard",
+                "examine rack",
+                "go west",
+                "inventory",
+                "look",
+                "take keycard"
+            ]
+        },
+        "action": "take keycard",
+        "reward": 0,
+        "next_state": "You pick up the keycard from the ground. > -= Closet =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "drop keycard",
+                "examine keycard",
+                "examine rack",
+                "go west",
+                "inventory",
+                "look",
+                "put keycard on rack"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "You pick up the keycard from the ground. > -= Closet =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "drop keycard",
+                "examine keycard",
+                "examine rack",
+                "go west",
+                "inventory",
+                "look",
+                "put keycard on rack"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Salon =- You've entered a salon. Okay, just remember what you're here to do, and everything will go great. There is a closed hatch leading north. There is an open passageway leading west. You need an unblocked exit? You should try going east. > -= Salon =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "close passageway",
+                "drop keycard",
+                "examine hatch",
+                "examine keycard",
+                "examine passageway",
+                "go east",
+                "go west",
+                "inventory",
+                "look",
+                "unlock hatch with keycard"
+            ]
+        },
+        "done": false,
+        "next_action": "unlock hatch with keycard"
+    },
+    {
+        "state": "-= Salon =- You've entered a salon. Okay, just remember what you're here to do, and everything will go great. There is a closed hatch leading north. There is an open passageway leading west. You need an unblocked exit? You should try going east. > -= Salon =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "close passageway",
+                "drop keycard",
+                "examine hatch",
+                "examine keycard",
+                "examine passageway",
+                "go east",
+                "go west",
+                "inventory",
+                "look",
+                "unlock hatch with keycard"
+            ]
+        },
+        "action": "unlock hatch with keycard",
+        "reward": 0,
+        "next_state": "You unlock hatch. > -= Salon =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "close passageway",
+                "drop keycard",
+                "examine hatch",
+                "examine keycard",
+                "examine passageway",
+                "go east",
+                "go west",
+                "inventory",
+                "lock hatch with keycard",
+                "look",
+                "open hatch"
+            ]
+        },
+        "done": false,
+        "next_action": "open hatch"
+    },
+    {
+        "state": "You unlock hatch. > -= Salon =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "close passageway",
+                "drop keycard",
+                "examine hatch",
+                "examine keycard",
+                "examine passageway",
+                "go east",
+                "go west",
+                "inventory",
+                "lock hatch with keycard",
+                "look",
+                "open hatch"
+            ]
+        },
+        "action": "open hatch",
+        "reward": 0,
+        "next_state": "You open hatch. > -= Salon =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "close hatch",
+                "close passageway",
+                "drop keycard",
+                "examine hatch",
+                "examine keycard",
+                "examine passageway",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "You open hatch. > -= Salon =-0/10",
+        "infos": {
+            "admissible_commands": [
+                "close hatch",
+                "close passageway",
+                "drop keycard",
+                "examine hatch",
+                "examine keycard",
+                "examine passageway",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Workshop =- You're now in a workshop. You can see a bookshelf. But there isn't a thing on it. Look out! It's a- oh, never mind, it's just a mantelpiece. The mantelpiece is typical. However, the mantelpiece, like an empty mantelpiece, has nothing on it. There is an open hatch leading south. There is an unguarded exit to the north. You need an unguarded exit? You should try going west. > -= Workshop =-0/11",
+        "next_infos": {
+            "admissible_commands": [
+                "close hatch",
+                "drop keycard",
+                "examine bookshelf",
+                "examine hatch",
+                "examine keycard",
+                "examine mantelpiece",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put keycard on bookshelf",
+                "put keycard on mantelpiece"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Workshop =- You're now in a workshop. You can see a bookshelf. But there isn't a thing on it. Look out! It's a- oh, never mind, it's just a mantelpiece. The mantelpiece is typical. However, the mantelpiece, like an empty mantelpiece, has nothing on it. There is an open hatch leading south. There is an unguarded exit to the north. You need an unguarded exit? You should try going west. > -= Workshop =-0/11",
+        "infos": {
+            "admissible_commands": [
+                "close hatch",
+                "drop keycard",
+                "examine bookshelf",
+                "examine hatch",
+                "examine keycard",
+                "examine mantelpiece",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put keycard on bookshelf",
+                "put keycard on mantelpiece"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Playroom =- You are in a playroom. An usual one. You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unguarded. > -= Playroom =-0/12",
+        "next_infos": {
+            "admissible_commands": [
+                "drop keycard",
+                "examine keycard",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Playroom =- You are in a playroom. An usual one. You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unguarded. > -= Playroom =-0/12",
+        "infos": {
+            "admissible_commands": [
+                "drop keycard",
+                "examine keycard",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Steam Room =- You are in a steam room. It seems to be pretty standard here. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. You scan the room for a table, and you find a table. Why don't you take a picture of it, it'll last longer! But there isn't a thing on it. You need an unguarded exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unguarded. You need an unguarded exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked. > -= Steam Room =-0/13",
+        "next_infos": {
+            "admissible_commands": [
+                "drop keycard",
+                "examine keycard",
+                "examine table",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put keycard on table"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Steam Room =- You are in a steam room. It seems to be pretty standard here. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. You scan the room for a table, and you find a table. Why don't you take a picture of it, it'll last longer! But there isn't a thing on it. You need an unguarded exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unguarded. You need an unguarded exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked. > -= Steam Room =-0/13",
+        "infos": {
+            "admissible_commands": [
+                "drop keycard",
+                "examine keycard",
+                "examine table",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put keycard on table"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Bathroom =- You have entered a bathroom. Not the bathroom you'd expect. No, this is a bathroom. You make out a chipped table. But the thing hasn't got anything on it. There is an exit to the east. Don't worry, it is unblocked. You need an unblocked exit? You should try going north. There is an unguarded exit to the south. There is a grape on the floor. > -= Bathroom =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "drop keycard",
+                "examine chipped table",
+                "examine grape",
+                "examine keycard",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "put keycard on chipped table",
+                "take grape"
+            ]
+        },
+        "done": false,
+        "next_action": "take grape"
+    },
+    {
+        "state": "-= Bathroom =- You have entered a bathroom. Not the bathroom you'd expect. No, this is a bathroom. You make out a chipped table. But the thing hasn't got anything on it. There is an exit to the east. Don't worry, it is unblocked. You need an unblocked exit? You should try going north. There is an unguarded exit to the south. There is a grape on the floor. > -= Bathroom =-0/14",
+        "infos": {
+            "admissible_commands": [
+                "drop keycard",
+                "examine chipped table",
+                "examine grape",
+                "examine keycard",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "put keycard on chipped table",
+                "take grape"
+            ]
+        },
+        "action": "take grape",
+        "reward": 1,
+        "next_state": "You pick up the grape from the ground. Your score has just gone up by one point. *** The End *** You scored 1 out of a possible 1, in 15 turns. Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command? > -= Bathroom =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "drop grape",
+                "drop keycard",
+                "eat grape",
+                "examine chipped table",
+                "examine grape",
+                "examine keycard",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "put grape on chipped table",
+                "put keycard on chipped table"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

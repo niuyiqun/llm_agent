@@ -1,0 +1,532 @@
+[
+    {
+        "state": "Welcome to TextWorld! Here is your task for today. Your first objective is to open the stone gateway within the shower. After pulling open the stone gateway, go south. After that, try to head east. After that, retrieve the passkey from the rack within the sauna. After that, make an effort to go to the north. And then, go to the west. And then, make it so that the gateway inside the shower is unlocked. After that, open the gateway. After you have pulled open the gateway, attempt to take a trip west. Once you succeed at that, travel south. And then, make an effort to take a trip south. Then, make an attempt to move south. And then, take a trip south. With that over with, recover the latchkey from the chair inside the canteen. And once you've done that, you win! -= Shower =- You've just sauntered into a shower. There is a closed stone gateway leading south. There is a closed gateway leading west. There is an exit to the east. Don't worry, it is unblocked. > -= Shower =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "examine gateway",
+                "examine stone gateway",
+                "go east",
+                "inventory",
+                "look",
+                "open stone gateway"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Studio =- You arrive in a studio. An ordinary one. You try to gain information on your surroundings by using a technique you call \"looking.\" You need an unguarded exit? You should try going south. You need an unguarded exit? You should try going west. > -= Studio =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Studio =- You arrive in a studio. An ordinary one. You try to gain information on your surroundings by using a technique you call \"looking.\" You need an unguarded exit? You should try going south. You need an unguarded exit? You should try going west. > -= Studio =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Sauna =- You've just walked into a sauna. You see a trunk. Now why would someone leave that there? You make out a rack. On the rack you make out a passkey. You need an unguarded exit? You should try going north. You need an unblocked exit? You should try going west. > -= Sauna =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "examine passkey",
+                "examine rack",
+                "examine trunk",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "open trunk",
+                "take passkey from rack"
+            ]
+        },
+        "done": false,
+        "next_action": "take passkey from rack"
+    },
+    {
+        "state": "-= Sauna =- You've just walked into a sauna. You see a trunk. Now why would someone leave that there? You make out a rack. On the rack you make out a passkey. You need an unguarded exit? You should try going north. You need an unblocked exit? You should try going west. > -= Sauna =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "examine passkey",
+                "examine rack",
+                "examine trunk",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "open trunk",
+                "take passkey from rack"
+            ]
+        },
+        "action": "take passkey from rack",
+        "reward": 0,
+        "next_state": "You take the passkey from the rack. > -= Sauna =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "drop passkey",
+                "examine passkey",
+                "examine rack",
+                "examine trunk",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "open trunk",
+                "put passkey on rack"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "You take the passkey from the rack. > -= Sauna =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "drop passkey",
+                "examine passkey",
+                "examine rack",
+                "examine trunk",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "open trunk",
+                "put passkey on rack"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Studio =- You arrive in a studio. An ordinary one. You try to gain information on your surroundings by using a technique you call \"looking.\" You need an unguarded exit? You should try going south. You need an unguarded exit? You should try going west. > -= Studio =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "drop passkey",
+                "examine passkey",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Studio =- You arrive in a studio. An ordinary one. You try to gain information on your surroundings by using a technique you call \"looking.\" You need an unguarded exit? You should try going south. You need an unguarded exit? You should try going west. > -= Studio =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "drop passkey",
+                "examine passkey",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Sauna =- You've just walked into a sauna. You see a trunk. Now why would someone leave that there? You make out a rack. But the thing is empty. You need an unguarded exit? You should try going north. You need an unblocked exit? You should try going west. > -= Sauna =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "drop passkey",
+                "examine passkey",
+                "examine rack",
+                "examine trunk",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "open trunk",
+                "put passkey on rack"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Sauna =- You've just walked into a sauna. You see a trunk. Now why would someone leave that there? You make out a rack. But the thing is empty. You need an unguarded exit? You should try going north. You need an unblocked exit? You should try going west. > -= Sauna =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "drop passkey",
+                "examine passkey",
+                "examine rack",
+                "examine trunk",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "open trunk",
+                "put passkey on rack"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Study =- You arrive in a study. A standard kind of place. There is a closed stone gateway leading north. You need an unblocked exit? You should try going east. You don't like doors? Why not try going south, that entranceway is unguarded. There is a cookie on the floor. > -= Study =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "drop passkey",
+                "examine cookie",
+                "examine passkey",
+                "examine stone gateway",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "open stone gateway",
+                "take cookie"
+            ]
+        },
+        "done": false,
+        "next_action": "open stone gateway"
+    },
+    {
+        "state": "-= Study =- You arrive in a study. A standard kind of place. There is a closed stone gateway leading north. You need an unblocked exit? You should try going east. You don't like doors? Why not try going south, that entranceway is unguarded. There is a cookie on the floor. > -= Study =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "drop passkey",
+                "examine cookie",
+                "examine passkey",
+                "examine stone gateway",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "open stone gateway",
+                "take cookie"
+            ]
+        },
+        "action": "open stone gateway",
+        "reward": 0,
+        "next_state": "You open stone gateway. > -= Study =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "close stone gateway",
+                "drop passkey",
+                "examine cookie",
+                "examine passkey",
+                "examine stone gateway",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "take cookie"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "You open stone gateway. > -= Study =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "close stone gateway",
+                "drop passkey",
+                "examine cookie",
+                "examine passkey",
+                "examine stone gateway",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "take cookie"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Shower =- You've just sauntered into a shower. There is an open stone gateway leading south. There is a closed gateway leading west. There is an exit to the east. Don't worry, it is unblocked. > -= Shower =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "close stone gateway",
+                "drop passkey",
+                "examine gateway",
+                "examine passkey",
+                "examine stone gateway",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "unlock gateway with passkey"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Shower =- You've just sauntered into a shower. There is an open stone gateway leading south. There is a closed gateway leading west. There is an exit to the east. Don't worry, it is unblocked. > -= Shower =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "close stone gateway",
+                "drop passkey",
+                "examine gateway",
+                "examine passkey",
+                "examine stone gateway",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "unlock gateway with passkey"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "You have to open the gateway first. > -= Shower =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "close stone gateway",
+                "drop passkey",
+                "examine gateway",
+                "examine passkey",
+                "examine stone gateway",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "unlock gateway with passkey"
+            ]
+        },
+        "done": false,
+        "next_action": "unlock gateway with passkey"
+    },
+    {
+        "state": "You have to open the gateway first. > -= Shower =-0/10",
+        "infos": {
+            "admissible_commands": [
+                "close stone gateway",
+                "drop passkey",
+                "examine gateway",
+                "examine passkey",
+                "examine stone gateway",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "unlock gateway with passkey"
+            ]
+        },
+        "action": "unlock gateway with passkey",
+        "reward": 0,
+        "next_state": "(gateway with the passkey) You unlock gateway. > -= Shower =-0/11",
+        "next_infos": {
+            "admissible_commands": [
+                "close stone gateway",
+                "drop passkey",
+                "examine gateway",
+                "examine passkey",
+                "examine stone gateway",
+                "go east",
+                "go south",
+                "inventory",
+                "lock gateway with passkey",
+                "look",
+                "open gateway"
+            ]
+        },
+        "done": false,
+        "next_action": "open gateway"
+    },
+    {
+        "state": "(gateway with the passkey) You unlock gateway. > -= Shower =-0/11",
+        "infos": {
+            "admissible_commands": [
+                "close stone gateway",
+                "drop passkey",
+                "examine gateway",
+                "examine passkey",
+                "examine stone gateway",
+                "go east",
+                "go south",
+                "inventory",
+                "lock gateway with passkey",
+                "look",
+                "open gateway"
+            ]
+        },
+        "action": "open gateway",
+        "reward": 0,
+        "next_state": "(gateway) You open gateway. > -= Shower =-0/12",
+        "next_infos": {
+            "admissible_commands": [
+                "close gateway",
+                "close stone gateway",
+                "drop passkey",
+                "examine gateway",
+                "examine passkey",
+                "examine stone gateway",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "(gateway) You open gateway. > -= Shower =-0/12",
+        "infos": {
+            "admissible_commands": [
+                "close gateway",
+                "close stone gateway",
+                "drop passkey",
+                "examine gateway",
+                "examine passkey",
+                "examine stone gateway",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Office =- You find yourself in an office. A normal kind of place. I guess you better just go and list everything you see here. There is an open gateway leading east. There is an open passageway leading south. > -= Office =-0/13",
+        "next_infos": {
+            "admissible_commands": [
+                "close gateway",
+                "close passageway",
+                "drop passkey",
+                "examine gateway",
+                "examine passageway",
+                "examine passkey",
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Office =- You find yourself in an office. A normal kind of place. I guess you better just go and list everything you see here. There is an open gateway leading east. There is an open passageway leading south. > -= Office =-0/13",
+        "infos": {
+            "admissible_commands": [
+                "close gateway",
+                "close passageway",
+                "drop passkey",
+                "examine gateway",
+                "examine passageway",
+                "examine passkey",
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Steam Room =- Well how about that, you are in a place we're calling a steam room. You decide to start listing off everything you see in the room, as if you were in a text adventure. You can make out a bench. The bench is typical. But there isn't a thing on it. It would have been so cool if there was stuff on the bench! oh well. You see a table! The table is usual. But there isn't a thing on it. Oh! Why couldn't there just be stuff on it? There is an open passageway leading north. There is an open hatch leading south. > -= Steam Room =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "close hatch",
+                "close passageway",
+                "drop passkey",
+                "examine bench",
+                "examine hatch",
+                "examine passageway",
+                "examine passkey",
+                "examine table",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "put passkey on bench",
+                "put passkey on table"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Steam Room =- Well how about that, you are in a place we're calling a steam room. You decide to start listing off everything you see in the room, as if you were in a text adventure. You can make out a bench. The bench is typical. But there isn't a thing on it. It would have been so cool if there was stuff on the bench! oh well. You see a table! The table is usual. But there isn't a thing on it. Oh! Why couldn't there just be stuff on it? There is an open passageway leading north. There is an open hatch leading south. > -= Steam Room =-0/14",
+        "infos": {
+            "admissible_commands": [
+                "close hatch",
+                "close passageway",
+                "drop passkey",
+                "examine bench",
+                "examine hatch",
+                "examine passageway",
+                "examine passkey",
+                "examine table",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "put passkey on bench",
+                "put passkey on table"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Lounge =- You've just walked into a lounge. You begin looking for stuff. There is an open hatch leading north. There is an open wooden hatch leading south. > -= Lounge =-0/15",
+        "next_infos": {
+            "admissible_commands": [
+                "close hatch",
+                "close wooden hatch",
+                "drop passkey",
+                "examine hatch",
+                "examine passkey",
+                "examine wooden hatch",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Lounge =- You've just walked into a lounge. You begin looking for stuff. There is an open hatch leading north. There is an open wooden hatch leading south. > -= Lounge =-0/15",
+        "infos": {
+            "admissible_commands": [
+                "close hatch",
+                "close wooden hatch",
+                "drop passkey",
+                "examine hatch",
+                "examine passkey",
+                "examine wooden hatch",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Bedroom =- Well how about that, you are in the place we're calling the bedroom. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. You scan the room for a bed stand, and you find a bed stand. You shudder, but continue examining the bed stand. But the thing hasn't got anything on it. There is an open wooden hatch leading north. There is an open beech gate leading south. > -= Bedroom =-0/16",
+        "next_infos": {
+            "admissible_commands": [
+                "close beech gate",
+                "close wooden hatch",
+                "drop passkey",
+                "examine bed stand",
+                "examine beech gate",
+                "examine passkey",
+                "examine wooden hatch",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "put passkey on bed stand"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

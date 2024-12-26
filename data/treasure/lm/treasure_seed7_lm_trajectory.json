@@ -1,0 +1,432 @@
+[
+    {
+        "state": "Hey, thanks for coming over to the TextWorld today, there is something I need you to do for me. First stop, head west. That done, try to head south. Following that, venture south. Then, go east. And then, go north. Then, make an attempt to go to the east. If you can do that, take a trip east. Following that, make an attempt to head north. And then, take a trip east. And then, move south. After that, move south. That done, travel west. After that, go west. With that accomplished, take the keycard from the saucepan within the scullery. And if you do that, you're the winner! -= Washroom =- Look around you. Take it all in. It's not every day someone gets to be in a washroom. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unblocked. You need an unblocked exit? You should try going west. > -= Washroom =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Parlor =- You've entered a parlor. You can see an opened ordinary looking safe right there by you. The safe is empty, what a horrible day! You need an unguarded exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Parlor =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "close safe",
+                "examine safe",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Parlor =- You've entered a parlor. You can see an opened ordinary looking safe right there by you. The safe is empty, what a horrible day! You need an unguarded exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Parlor =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "close safe",
+                "examine safe",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Closet =- You arrive in a closet. A normal kind of place. There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going south. > -= Closet =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Closet =- You arrive in a closet. A normal kind of place. There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going south. > -= Closet =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Canteen =- You find yourself in a canteen. A standard kind of place. What's that over there? It looks like it's a pan. The pan appears to be empty. What, you think everything in TextWorld should have stuff on it? You need an unblocked exit? You should try going east. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Canteen =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "examine pan",
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Canteen =- You find yourself in a canteen. A standard kind of place. What's that over there? It looks like it's a pan. The pan appears to be empty. What, you think everything in TextWorld should have stuff on it? You need an unblocked exit? You should try going east. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Canteen =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "examine pan",
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Laundromat =- You are in a laundromat. A normal kind of place. You can see a counter. Looks like someone's already been here and taken everything off it, though. Were you looking for a bench? Because look over there, it's a bench. You shudder, but continue examining the bench. The bench is normal. However, the bench, like an empty bench, has nothing on it. There is an open gateway leading south. There is an unguarded exit to the east. You need an unblocked exit? You should try going west. > -= Laundromat =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "close gateway",
+                "examine bench",
+                "examine counter",
+                "examine gateway",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Laundromat =- You are in a laundromat. A normal kind of place. You can see a counter. Looks like someone's already been here and taken everything off it, though. Were you looking for a bench? Because look over there, it's a bench. You shudder, but continue examining the bench. The bench is normal. However, the bench, like an empty bench, has nothing on it. There is an open gateway leading south. There is an unguarded exit to the east. You need an unblocked exit? You should try going west. > -= Laundromat =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "close gateway",
+                "examine bench",
+                "examine counter",
+                "examine gateway",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Shower =- You arrive in a shower. An usual one. You make out a rack. But there isn't a thing on it. There is an open gateway leading north. There is an unblocked exit to the east. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Shower =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "close gateway",
+                "examine gateway",
+                "examine rack",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Shower =- You arrive in a shower. An usual one. You make out a rack. But there isn't a thing on it. There is an open gateway leading north. There is an unblocked exit to the east. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Shower =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "close gateway",
+                "examine gateway",
+                "examine rack",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Kitchenette =- You are in a kitchenette. A normal one. You begin to take stock of what's here. You can see a locked cabinet. You need an unguarded exit? You should try going west. > -= Kitchenette =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "examine cabinet",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Kitchenette =- You are in a kitchenette. A normal one. You begin to take stock of what's here. You can see a locked cabinet. You need an unguarded exit? You should try going west. > -= Kitchenette =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "examine cabinet",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Shower =- You arrive in a shower. An usual one. You make out a rack. But there isn't a thing on it. There is an open gateway leading north. There is an unblocked exit to the east. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Shower =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "close gateway",
+                "examine gateway",
+                "examine rack",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Shower =- You arrive in a shower. An usual one. You make out a rack. But there isn't a thing on it. There is an open gateway leading north. There is an unblocked exit to the east. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Shower =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "close gateway",
+                "examine gateway",
+                "examine rack",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "You can't go that way. > -= Shower =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "close gateway",
+                "examine gateway",
+                "examine rack",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "You can't go that way. > -= Shower =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "close gateway",
+                "examine gateway",
+                "examine rack",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Laundromat =- You are in a laundromat. A normal kind of place. You can see a counter. Looks like someone's already been here and taken everything off it, though. Were you looking for a bench? Because look over there, it's a bench. You shudder, but continue examining the bench. The bench is normal. However, the bench, like an empty bench, has nothing on it. There is an open gateway leading south. There is an unguarded exit to the east. You need an unblocked exit? You should try going west. > -= Laundromat =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "close gateway",
+                "examine bench",
+                "examine counter",
+                "examine gateway",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Laundromat =- You are in a laundromat. A normal kind of place. You can see a counter. Looks like someone's already been here and taken everything off it, though. Were you looking for a bench? Because look over there, it's a bench. You shudder, but continue examining the bench. The bench is normal. However, the bench, like an empty bench, has nothing on it. There is an open gateway leading south. There is an unguarded exit to the east. You need an unblocked exit? You should try going west. > -= Laundromat =-0/10",
+        "infos": {
+            "admissible_commands": [
+                "close gateway",
+                "examine bench",
+                "examine counter",
+                "examine gateway",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Canteen =- You find yourself in a canteen. A standard kind of place. What's that over there? It looks like it's a pan. The pan appears to be empty. What, you think everything in TextWorld should have stuff on it? You need an unblocked exit? You should try going east. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Canteen =-0/11",
+        "next_infos": {
+            "admissible_commands": [
+                "examine pan",
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Canteen =- You find yourself in a canteen. A standard kind of place. What's that over there? It looks like it's a pan. The pan appears to be empty. What, you think everything in TextWorld should have stuff on it? You need an unblocked exit? You should try going east. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Canteen =-0/11",
+        "infos": {
+            "admissible_commands": [
+                "examine pan",
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Closet =- You arrive in a closet. A normal kind of place. There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going south. > -= Closet =-0/12",
+        "next_infos": {
+            "admissible_commands": [
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Closet =- You arrive in a closet. A normal kind of place. There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going south. > -= Closet =-0/12",
+        "infos": {
+            "admissible_commands": [
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Parlor =- You've entered a parlor. You can see an opened ordinary looking safe right there by you. The safe is empty, what a horrible day! You need an unguarded exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Parlor =-0/13",
+        "next_infos": {
+            "admissible_commands": [
+                "close safe",
+                "examine safe",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Parlor =- You've entered a parlor. You can see an opened ordinary looking safe right there by you. The safe is empty, what a horrible day! You need an unguarded exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Parlor =-0/13",
+        "infos": {
+            "admissible_commands": [
+                "close safe",
+                "examine safe",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "You can't go that way. > -= Parlor =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "close safe",
+                "examine safe",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "You can't go that way. > -= Parlor =-0/14",
+        "infos": {
+            "admissible_commands": [
+                "close safe",
+                "examine safe",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Closet =- You arrive in a closet. A normal kind of place. There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going south. > -= Closet =-0/15",
+        "next_infos": {
+            "admissible_commands": [
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Closet =- You arrive in a closet. A normal kind of place. There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going south. > -= Closet =-0/15",
+        "infos": {
+            "admissible_commands": [
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Parlor =- You've entered a parlor. You can see an opened ordinary looking safe right there by you. The safe is empty, what a horrible day! You need an unguarded exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Parlor =-0/16",
+        "next_infos": {
+            "admissible_commands": [
+                "close safe",
+                "examine safe",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

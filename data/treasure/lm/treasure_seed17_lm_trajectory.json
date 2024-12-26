@@ -1,0 +1,147 @@
+[
+    {
+        "state": "Hey, thanks for coming over to the TextWorld today, there is something I need you to do for me. Your first objective is to venture north. Then, venture north. And then, head east. Then, attempt to move east. And then, make an effort to go to the east. After that, make an effort to head north. Following that, make an effort to go west. After that, pick up the keycard from the stand within the attic. After that, try to travel east. If you can accomplish that, unlock the gateway. Then, make absolutely sure that the gateway is ajar. And then, make an attempt to go east. And then, head south. That done, retrieve the garlic clove from the fridge in the dish-pit. Once that's all handled, you can stop! -= Shower =- This shower you have just entered is definitely ordinary. You can see a box. You make out a dresser. Look out! It's a- oh, never mind, it's just a board. The board is usual. But the thing is empty, unfortunately. There is an unguarded exit to the east. There is an unguarded exit to the north. > -= Shower =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "examine board",
+                "examine box",
+                "examine dresser",
+                "go east",
+                "go north",
+                "inventory",
+                "look",
+                "open box"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Office =- You've entered an office. You begin looking for stuff. You make out a bookshelf. You wonder idly who left that here. The bookshelf is typical. But the thing is empty. Oh! Why couldn't there just be stuff on it? There is an exit to the east. Don't worry, it is unblocked. There is an unguarded exit to the north. You don't like doors? Why not try going south, that entranceway is unblocked. > -= Office =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "examine bookshelf",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Office =- You've entered an office. You begin looking for stuff. You make out a bookshelf. You wonder idly who left that here. The bookshelf is typical. But the thing is empty. Oh! Why couldn't there just be stuff on it? There is an exit to the east. Don't worry, it is unblocked. There is an unguarded exit to the north. You don't like doors? Why not try going south, that entranceway is unblocked. > -= Office =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "examine bookshelf",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Kitchen =- Well I'll be, you are in the place we're calling the kitchen. You make out a shelf. I guess it's true what they say, if you're looking for a shelf, go to TextWorld. But the thing hasn't got anything on it. It would have been so cool if there was stuff on the shelf. There is an unblocked exit to the west. > -= Kitchen =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "examine shelf",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Kitchen =- Well I'll be, you are in the place we're calling the kitchen. You make out a shelf. I guess it's true what they say, if you're looking for a shelf, go to TextWorld. But the thing hasn't got anything on it. It would have been so cool if there was stuff on the shelf. There is an unblocked exit to the west. > -= Kitchen =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "examine shelf",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Office =- You've entered an office. You begin looking for stuff. You make out a bookshelf. You wonder idly who left that here. The bookshelf is typical. But the thing is empty. Oh! Why couldn't there just be stuff on it? There is an exit to the east. Don't worry, it is unblocked. There is an unguarded exit to the north. You don't like doors? Why not try going south, that entranceway is unblocked. > -= Office =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "examine bookshelf",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Office =- You've entered an office. You begin looking for stuff. You make out a bookshelf. You wonder idly who left that here. The bookshelf is typical. But the thing is empty. Oh! Why couldn't there just be stuff on it? There is an exit to the east. Don't worry, it is unblocked. There is an unguarded exit to the north. You don't like doors? Why not try going south, that entranceway is unblocked. > -= Office =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "examine bookshelf",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Workshop =- You arrive in a workshop. A normal one. Let's see what's in here. You can make out a locked usual looking toolbox in the corner. You make out a locker. There's something strange about this thing being here, but you don't have time to worry about that now. The locker is empty! What a waste of a day! You can make out a mantle. The mantle is ordinary. But the thing is empty, unfortunately. You don't like doors? Why not try going east, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Workshop =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "close locker",
+                "examine locker",
+                "examine mantle",
+                "examine toolbox",
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Workshop =- You arrive in a workshop. A normal one. Let's see what's in here. You can make out a locked usual looking toolbox in the corner. You make out a locker. There's something strange about this thing being here, but you don't have time to worry about that now. The locker is empty! What a waste of a day! You can make out a mantle. The mantle is ordinary. But the thing is empty, unfortunately. You don't like doors? Why not try going east, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Workshop =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "close locker",
+                "examine locker",
+                "examine mantle",
+                "examine toolbox",
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Pantry =- You're now in the pantry. You can make out a case. There's something strange about this thing being here, but you don't have time to worry about that now. You can make out a closed cabinet. You can make out a table. Looks like someone's already been here and taken everything off it, though. This always happens! You don't like doors? Why not try going east, that entranceway is unblocked. There is an unguarded exit to the west. > -= Pantry =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "examine cabinet",
+                "examine case",
+                "examine table",
+                "go east",
+                "go west",
+                "inventory",
+                "look",
+                "open cabinet",
+                "open case"
+            ]
+        },
+        "done": false,
+        "next_action": null
+    }
+]

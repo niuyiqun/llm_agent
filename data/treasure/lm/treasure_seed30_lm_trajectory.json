@@ -1,0 +1,520 @@
+[
+    {
+        "state": "Welcome to another fast paced game of TextWorld! Here is your task for today. First step, pick up the keycard from the floor of the still workshop. After stealing the keycard, unlock the door. After that, open the door inside the still workshop. And then, make an attempt to head south. And then, head east. Then, go to the south. Okay, and then, take a trip east. And then, try to take a trip north. Then, take a trip east. And then, head north. With that over with, venture north. Once you accomplish that, make an attempt to take a trip west. With that accomplished, go to the west. And then, recover the latchkey from the board within the kitchen. Once that's all handled, you can stop! -= Still Workshop =- You arrive in a workshop. A still one. You can make out a safe. Now that's what I call TextWorld! There is a closed door leading south. You need an unguarded exit? You should try going north. There is a keycard on the floor. > -= Still Workshop =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "examine door",
+                "examine keycard",
+                "examine safe",
+                "go north",
+                "inventory",
+                "look",
+                "open safe",
+                "take keycard"
+            ]
+        },
+        "action": "take keycard",
+        "reward": 0,
+        "next_state": "You pick up the keycard from the ground. > -= Still Workshop =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "drop keycard",
+                "examine door",
+                "examine keycard",
+                "examine safe",
+                "go north",
+                "inventory",
+                "look",
+                "open safe",
+                "unlock door with keycard"
+            ]
+        },
+        "done": false,
+        "next_action": "unlock door with keycard"
+    },
+    {
+        "state": "You pick up the keycard from the ground. > -= Still Workshop =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "drop keycard",
+                "examine door",
+                "examine keycard",
+                "examine safe",
+                "go north",
+                "inventory",
+                "look",
+                "open safe",
+                "unlock door with keycard"
+            ]
+        },
+        "action": "unlock door with keycard",
+        "reward": 0,
+        "next_state": "You unlock door. > -= Still Workshop =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "drop keycard",
+                "examine door",
+                "examine keycard",
+                "examine safe",
+                "go north",
+                "inventory",
+                "lock door with keycard",
+                "look",
+                "open door",
+                "open safe"
+            ]
+        },
+        "done": false,
+        "next_action": "open door"
+    },
+    {
+        "state": "You unlock door. > -= Still Workshop =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "drop keycard",
+                "examine door",
+                "examine keycard",
+                "examine safe",
+                "go north",
+                "inventory",
+                "lock door with keycard",
+                "look",
+                "open door",
+                "open safe"
+            ]
+        },
+        "action": "open door",
+        "reward": 0,
+        "next_state": "You open door. > -= Still Workshop =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "close door",
+                "drop keycard",
+                "examine door",
+                "examine keycard",
+                "examine safe",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "open safe"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "You open door. > -= Still Workshop =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "close door",
+                "drop keycard",
+                "examine door",
+                "examine keycard",
+                "examine safe",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "open safe"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Dish-Pit =- Well, here we are in a dish-pit. Okay, just remember what you're here to do, and everything will go great. There is an open door leading north. You need an unblocked exit? You should try going east. You don't like doors? Why not try going south, that entranceway is unguarded. There is an unguarded exit to the west. > -= Dish-Pit =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "close door",
+                "drop keycard",
+                "examine door",
+                "examine keycard",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Dish-Pit =- Well, here we are in a dish-pit. Okay, just remember what you're here to do, and everything will go great. There is an open door leading north. You need an unblocked exit? You should try going east. You don't like doors? Why not try going south, that entranceway is unguarded. There is an unguarded exit to the west. > -= Dish-Pit =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "close door",
+                "drop keycard",
+                "examine door",
+                "examine keycard",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Restroom =- I never took you for the sort of person who would show up in a restroom, but I guess I was wrong. You can see a rack. But the thing is empty, unfortunately. You swear loudly. You need an unblocked exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. There is an unguarded exit to the west. > -= Restroom =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "drop keycard",
+                "examine keycard",
+                "examine rack",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put keycard on rack"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Restroom =- I never took you for the sort of person who would show up in a restroom, but I guess I was wrong. You can see a rack. But the thing is empty, unfortunately. You swear loudly. You need an unblocked exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. There is an unguarded exit to the west. > -= Restroom =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "drop keycard",
+                "examine keycard",
+                "examine rack",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put keycard on rack"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Cubicle =- Fancy seeing you here. Here, by the way, being the cubicle. You can make out a box. The box is empty, what a horrible day! You need an unblocked exit? You should try going east. There is an unblocked exit to the north. You don't like doors? Why not try going west, that entranceway is unblocked. > -= Cubicle =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "close box",
+                "drop keycard",
+                "examine box",
+                "examine keycard",
+                "go east",
+                "go north",
+                "go west",
+                "insert keycard into box",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Cubicle =- Fancy seeing you here. Here, by the way, being the cubicle. You can make out a box. The box is empty, what a horrible day! You need an unblocked exit? You should try going east. There is an unblocked exit to the north. You don't like doors? Why not try going west, that entranceway is unblocked. > -= Cubicle =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "close box",
+                "drop keycard",
+                "examine box",
+                "examine keycard",
+                "go east",
+                "go north",
+                "go west",
+                "insert keycard into box",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Workshop =- You arrive in a workshop. An ordinary kind of place. You make out an opened toolbox, which looks typical, right there by you. The toolbox is empty! What a waste of a day! You don't like doors? Why not try going east, that entranceway is unblocked. You need an unguarded exit? You should try going north. You don't like doors? Why not try going west, that entranceway is unblocked. > -= Workshop =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "close toolbox",
+                "drop keycard",
+                "examine keycard",
+                "examine toolbox",
+                "go east",
+                "go north",
+                "go west",
+                "insert keycard into toolbox",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Workshop =- You arrive in a workshop. An ordinary kind of place. You make out an opened toolbox, which looks typical, right there by you. The toolbox is empty! What a waste of a day! You don't like doors? Why not try going east, that entranceway is unblocked. You need an unguarded exit? You should try going north. You don't like doors? Why not try going west, that entranceway is unblocked. > -= Workshop =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "close toolbox",
+                "drop keycard",
+                "examine keycard",
+                "examine toolbox",
+                "go east",
+                "go north",
+                "go west",
+                "insert keycard into toolbox",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Dish-Pit =- Well, here we are in a dish-pit. Okay, just remember what you're here to do, and everything will go great. There is an open door leading north. You need an unblocked exit? You should try going east. You don't like doors? Why not try going south, that entranceway is unguarded. There is an unguarded exit to the west. > -= Dish-Pit =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "close door",
+                "drop keycard",
+                "examine door",
+                "examine keycard",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Dish-Pit =- Well, here we are in a dish-pit. Okay, just remember what you're here to do, and everything will go great. There is an open door leading north. You need an unblocked exit? You should try going east. You don't like doors? Why not try going south, that entranceway is unguarded. There is an unguarded exit to the west. > -= Dish-Pit =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "close door",
+                "drop keycard",
+                "examine door",
+                "examine keycard",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Restroom =- I never took you for the sort of person who would show up in a restroom, but I guess I was wrong. You can see a rack. But the thing is empty, unfortunately. You swear loudly. You need an unblocked exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. There is an unguarded exit to the west. > -= Restroom =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "drop keycard",
+                "examine keycard",
+                "examine rack",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put keycard on rack"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Restroom =- I never took you for the sort of person who would show up in a restroom, but I guess I was wrong. You can see a rack. But the thing is empty, unfortunately. You swear loudly. You need an unblocked exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. There is an unguarded exit to the west. > -= Restroom =-0/10",
+        "infos": {
+            "admissible_commands": [
+                "drop keycard",
+                "examine keycard",
+                "examine rack",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put keycard on rack"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Office =- You're now in the office. You decide to just list off a complete list of everything you see in the room, because hey, why not? You rest your hand against a wall, but you miss the wall and fall onto a stand. But the thing is empty. You make out a mantelpiece. The mantelpiece is normal. But the thing is empty, unfortunately. You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. > -= Office =-0/11",
+        "next_infos": {
+            "admissible_commands": [
+                "drop keycard",
+                "examine keycard",
+                "examine mantelpiece",
+                "examine stand",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "put keycard on mantelpiece",
+                "put keycard on stand"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Office =- You're now in the office. You decide to just list off a complete list of everything you see in the room, because hey, why not? You rest your hand against a wall, but you miss the wall and fall onto a stand. But the thing is empty. You make out a mantelpiece. The mantelpiece is normal. But the thing is empty, unfortunately. You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. > -= Office =-0/11",
+        "infos": {
+            "admissible_commands": [
+                "drop keycard",
+                "examine keycard",
+                "examine mantelpiece",
+                "examine stand",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "put keycard on mantelpiece",
+                "put keycard on stand"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Kitchenette =- You are in a kitchenette. A standard one. There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unblocked. There is an unblocked exit to the south. There is an unblocked exit to the west. > -= Kitchenette =-0/12",
+        "next_infos": {
+            "admissible_commands": [
+                "drop keycard",
+                "examine keycard",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "examine keycard"
+    },
+    {
+        "state": "-= Kitchenette =- You are in a kitchenette. A standard one. There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unblocked. There is an unblocked exit to the south. There is an unblocked exit to the west. > -= Kitchenette =-0/12",
+        "infos": {
+            "admissible_commands": [
+                "drop keycard",
+                "examine keycard",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "examine keycard",
+        "reward": 0,
+        "next_state": "The keycard looks useful > -= Kitchenette =-0/13",
+        "next_infos": {
+            "admissible_commands": [
+                "drop keycard",
+                "examine keycard",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "The keycard looks useful > -= Kitchenette =-0/13",
+        "infos": {
+            "admissible_commands": [
+                "drop keycard",
+                "examine keycard",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Kitchenette =- You are in a kitchenette. A standard one. There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unblocked. There is an unblocked exit to the south. There is an unblocked exit to the west. > -= Kitchenette =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "drop keycard",
+                "examine keycard",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "examine board"
+    },
+    {
+        "state": "-= Kitchenette =- You are in a kitchenette. A standard one. There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unblocked. There is an unblocked exit to the south. There is an unblocked exit to the west. > -= Kitchenette =-0/14",
+        "infos": {
+            "admissible_commands": [
+                "drop keycard",
+                "examine keycard",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "examine board",
+        "reward": 0,
+        "next_state": "You can't see any such thing. > -= Kitchenette =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "drop keycard",
+                "examine keycard",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "inventory"
+    },
+    {
+        "state": "You can't see any such thing. > -= Kitchenette =-0/14",
+        "infos": {
+            "admissible_commands": [
+                "drop keycard",
+                "examine keycard",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying: a keycard. > -= Kitchenette =-0/15",
+        "next_infos": {
+            "admissible_commands": [
+                "drop keycard",
+                "examine keycard",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

@@ -1,0 +1,59 @@
+[
+    {
+        "state": "Who's got a virtual machine and is about to play through an profound round of TextWorld? You do! Here is your task for today. First step, travel west. And then, attempt to move west. After that, make an attempt to travel west. After that, attempt to go north. After that, make an effort to go north. Once you get around to doing that, make an attempt to move east. That done, try to go east. That done, go to the south. After that, lift the passkey from the floor of the restroom. After that, venture north. And then, go east. Then, make sure that the locker is unlocked. Then, look and see that the locker is opened. Then, take the paper towel from the locker. Once that's all handled, you can stop! -= Vault =- You find yourself in a vault. An ordinary one. You can barely contain your excitement. There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going west. > -= Vault =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Steam Room =- You find yourself in a steam room. An usual one. You see an opened cabinet. The cabinet is empty! This is the worst thing that could possibly happen, ever! Were you looking for a drawer? Because look over there, it's a drawer. There's something strange about this thing being here, but you don't have time to worry about that now. You can see a shelf. Unfortunately, there isn't a thing on it. You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going west. > -= Steam Room =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "close cabinet",
+                "examine cabinet",
+                "examine drawer",
+                "examine shelf",
+                "go east",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Steam Room =- You find yourself in a steam room. An usual one. You see an opened cabinet. The cabinet is empty! This is the worst thing that could possibly happen, ever! Were you looking for a drawer? Because look over there, it's a drawer. There's something strange about this thing being here, but you don't have time to worry about that now. You can see a shelf. Unfortunately, there isn't a thing on it. You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going west. > -= Steam Room =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "close cabinet",
+                "examine cabinet",
+                "examine drawer",
+                "examine shelf",
+                "go east",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Basement =- You've just shown up in a basement. Look over there! a workbench. But the thing is empty, unfortunately. It would have been so cool if there was stuff on the workbench. There is an unguarded exit to the east. You need an unblocked exit? You should try going west. > -= Basement =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "examine workbench",
+                "go east",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": null
+    }
+]

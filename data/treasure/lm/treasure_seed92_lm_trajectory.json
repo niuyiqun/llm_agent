@@ -1,0 +1,363 @@
+[
+    {
+        "state": "It's time to explore the amazing world of TextWorld! First off, if it's not too much trouble, I need you to make an attempt to go east. Then, make an effort to go to the south. After that, attempt to head south. After that, take a trip west. Then, try to take a trip west. Once you manage that, try to take a trip south. With that done, pick up the passkey from the floor of the kitchenette. Once that's all handled, you can stop! -= Pantry =- You arrive in a pantry. A typical kind of place. Look over there! a counter. The counter appears to be empty. Hm. Oh well You need an unguarded exit? You should try going east. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Pantry =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "examine counter",
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Workshop =- You find yourself in a workshop. An ordinary kind of place. Okay, just remember what you're here to do, and everything will go great. You can see a locked portmanteau. There is an open gateway leading east. There is an unguarded exit to the north. You need an unblocked exit? You should try going south. There is an unguarded exit to the west. > -= Workshop =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "close gateway",
+                "examine gateway",
+                "examine portmanteau",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Workshop =- You find yourself in a workshop. An ordinary kind of place. Okay, just remember what you're here to do, and everything will go great. You can see a locked portmanteau. There is an open gateway leading east. There is an unguarded exit to the north. You need an unblocked exit? You should try going south. There is an unguarded exit to the west. > -= Workshop =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "close gateway",
+                "examine gateway",
+                "examine portmanteau",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Bar =- You're now in a bar. I guess you better just go and list everything you see here. You see a locked dresser. You make out a recliner. Unfortunately, there isn't a thing on it. Hm. Oh well There is an exit to the south. Don't worry, it is unblocked. > -= Bar =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "examine dresser",
+                "examine recliner",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Bar =- You're now in a bar. I guess you better just go and list everything you see here. You see a locked dresser. You make out a recliner. Unfortunately, there isn't a thing on it. Hm. Oh well There is an exit to the south. Don't worry, it is unblocked. > -= Bar =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "examine dresser",
+                "examine recliner",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Workshop =- You find yourself in a workshop. An ordinary kind of place. Okay, just remember what you're here to do, and everything will go great. You can see a locked portmanteau. There is an open gateway leading east. There is an unguarded exit to the north. You need an unblocked exit? You should try going south. There is an unguarded exit to the west. > -= Workshop =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "close gateway",
+                "examine gateway",
+                "examine portmanteau",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Workshop =- You find yourself in a workshop. An ordinary kind of place. Okay, just remember what you're here to do, and everything will go great. You can see a locked portmanteau. There is an open gateway leading east. There is an unguarded exit to the north. You need an unblocked exit? You should try going south. There is an unguarded exit to the west. > -= Workshop =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "close gateway",
+                "examine gateway",
+                "examine portmanteau",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Pantry =- You arrive in a pantry. A typical kind of place. Look over there! a counter. The counter appears to be empty. Hm. Oh well You need an unguarded exit? You should try going east. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Pantry =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "examine counter",
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Pantry =- You arrive in a pantry. A typical kind of place. Look over there! a counter. The counter appears to be empty. Hm. Oh well You need an unguarded exit? You should try going east. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Pantry =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "examine counter",
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Austere Office =- This is going to sound unbelievable, but you've just entered an austere office. You can make out a mantle. The mantle is typical. But the thing hasn't got anything on it. You can make out a mantelpiece. The mantelpiece is usual. However, the mantelpiece, like an empty mantelpiece, has nothing on it. Hm. Oh well You don't like doors? Why not try going north, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked. > -= Austere Office =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "examine mantelpiece",
+                "examine mantle",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Austere Office =- This is going to sound unbelievable, but you've just entered an austere office. You can make out a mantle. The mantle is typical. But the thing hasn't got anything on it. You can make out a mantelpiece. The mantelpiece is usual. However, the mantelpiece, like an empty mantelpiece, has nothing on it. Hm. Oh well You don't like doors? Why not try going north, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked. > -= Austere Office =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "examine mantelpiece",
+                "examine mantle",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Pantry =- You arrive in a pantry. A typical kind of place. Look over there! a counter. The counter appears to be empty. Hm. Oh well You need an unguarded exit? You should try going east. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Pantry =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "examine counter",
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "inventory"
+    },
+    {
+        "state": "-= Pantry =- You arrive in a pantry. A typical kind of place. Look over there! a counter. The counter appears to be empty. Hm. Oh well You need an unguarded exit? You should try going east. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Pantry =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "examine counter",
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying nothing. > -= Pantry =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "examine counter",
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "You are carrying nothing. > -= Pantry =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "examine counter",
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Pantry =- You arrive in a pantry. A typical kind of place. Look over there! a counter. The counter appears to be empty. Hm. Oh well You need an unguarded exit? You should try going east. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Pantry =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "examine counter",
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Pantry =- You arrive in a pantry. A typical kind of place. Look over there! a counter. The counter appears to be empty. Hm. Oh well You need an unguarded exit? You should try going east. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Pantry =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "examine counter",
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Austere Office =- This is going to sound unbelievable, but you've just entered an austere office. You can make out a mantle. The mantle is typical. But the thing hasn't got anything on it. You can make out a mantelpiece. The mantelpiece is usual. However, the mantelpiece, like an empty mantelpiece, has nothing on it. Hm. Oh well You don't like doors? Why not try going north, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked. > -= Austere Office =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "examine mantelpiece",
+                "examine mantle",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Austere Office =- This is going to sound unbelievable, but you've just entered an austere office. You can make out a mantle. The mantle is typical. But the thing hasn't got anything on it. You can make out a mantelpiece. The mantelpiece is usual. However, the mantelpiece, like an empty mantelpiece, has nothing on it. Hm. Oh well You don't like doors? Why not try going north, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked. > -= Austere Office =-0/10",
+        "infos": {
+            "admissible_commands": [
+                "examine mantelpiece",
+                "examine mantle",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Pantry =- You arrive in a pantry. A typical kind of place. Look over there! a counter. The counter appears to be empty. Hm. Oh well You need an unguarded exit? You should try going east. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Pantry =-0/11",
+        "next_infos": {
+            "admissible_commands": [
+                "examine counter",
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Pantry =- You arrive in a pantry. A typical kind of place. Look over there! a counter. The counter appears to be empty. Hm. Oh well You need an unguarded exit? You should try going east. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Pantry =-0/11",
+        "infos": {
+            "admissible_commands": [
+                "examine counter",
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Austere Office =- This is going to sound unbelievable, but you've just entered an austere office. You can make out a mantle. The mantle is typical. But the thing hasn't got anything on it. You can make out a mantelpiece. The mantelpiece is usual. However, the mantelpiece, like an empty mantelpiece, has nothing on it. Hm. Oh well You don't like doors? Why not try going north, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked. > -= Austere Office =-0/12",
+        "next_infos": {
+            "admissible_commands": [
+                "examine mantelpiece",
+                "examine mantle",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Austere Office =- This is going to sound unbelievable, but you've just entered an austere office. You can make out a mantle. The mantle is typical. But the thing hasn't got anything on it. You can make out a mantelpiece. The mantelpiece is usual. However, the mantelpiece, like an empty mantelpiece, has nothing on it. Hm. Oh well You don't like doors? Why not try going north, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked. > -= Austere Office =-0/12",
+        "infos": {
+            "admissible_commands": [
+                "examine mantelpiece",
+                "examine mantle",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Pantry =- You arrive in a pantry. A typical kind of place. Look over there! a counter. The counter appears to be empty. Hm. Oh well You need an unguarded exit? You should try going east. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Pantry =-0/13",
+        "next_infos": {
+            "admissible_commands": [
+                "examine counter",
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Pantry =- You arrive in a pantry. A typical kind of place. Look over there! a counter. The counter appears to be empty. Hm. Oh well You need an unguarded exit? You should try going east. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Pantry =-0/13",
+        "infos": {
+            "admissible_commands": [
+                "examine counter",
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Austere Office =- This is going to sound unbelievable, but you've just entered an austere office. You can make out a mantle. The mantle is typical. But the thing hasn't got anything on it. You can make out a mantelpiece. The mantelpiece is usual. However, the mantelpiece, like an empty mantelpiece, has nothing on it. Hm. Oh well You don't like doors? Why not try going north, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked. > -= Austere Office =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "examine mantelpiece",
+                "examine mantle",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": null
+    }
+]

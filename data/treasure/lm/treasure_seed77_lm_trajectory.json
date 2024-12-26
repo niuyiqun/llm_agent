@@ -1,0 +1,223 @@
+[
+    {
+        "state": "Welcome to another exciting episode of TextWorld! Here is your task for today. First off, venture west. Once you do that, make an attempt to go north. Then, go north. Then, attempt to take a trip north. And then, make an effort to go to the east. Following that, take a trip east. And then, try to take a trip south. And then, make an attempt to head east. And then, head east. Then, try to travel north. Following that, go west. Then, head north. And then, go east. And then, recover the cauliflower from the board inside the laundry place. Alright, thanks! -= Laundromat =- You've entered a laundromat. You begin looking for stuff. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unguarded exit to the west. > -= Laundromat =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Bathroom =- You find yourself in a bathroom. A typical kind of place. You start to take note of what's in the room. You see a drawer. You need an unblocked exit? You should try going east. There is an exit to the north. Don't worry, it is unblocked. > -= Bathroom =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "examine drawer",
+                "go east",
+                "go north",
+                "inventory",
+                "look",
+                "open drawer"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Bathroom =- You find yourself in a bathroom. A typical kind of place. You start to take note of what's in the room. You see a drawer. You need an unblocked exit? You should try going east. There is an exit to the north. Don't worry, it is unblocked. > -= Bathroom =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "examine drawer",
+                "go east",
+                "go north",
+                "inventory",
+                "look",
+                "open drawer"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Closet =- Well I'll be, you are in the place we're calling the closet. An open display is here. What a letdown! The display is empty! You can see a toolbox. You idly wonder how they came up with the name TextWorld for this place. It's pretty fitting. The toolbox is empty, what a horrible day! You hear a noise behind you and spin around, but you can't see anything other than a shelf. You shudder, but continue examining the shelf. But there isn't a thing on it. There is an open door leading east. There is an open passageway leading north. You need an unguarded exit? You should try going south. > -= Closet =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "close display",
+                "close door",
+                "close passageway",
+                "close toolbox",
+                "examine display",
+                "examine door",
+                "examine passageway",
+                "examine shelf",
+                "examine toolbox",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Closet =- Well I'll be, you are in the place we're calling the closet. An open display is here. What a letdown! The display is empty! You can see a toolbox. You idly wonder how they came up with the name TextWorld for this place. It's pretty fitting. The toolbox is empty, what a horrible day! You hear a noise behind you and spin around, but you can't see anything other than a shelf. You shudder, but continue examining the shelf. But there isn't a thing on it. There is an open door leading east. There is an open passageway leading north. You need an unguarded exit? You should try going south. > -= Closet =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "close display",
+                "close door",
+                "close passageway",
+                "close toolbox",
+                "examine display",
+                "examine door",
+                "examine passageway",
+                "examine shelf",
+                "examine toolbox",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Study =- You've just walked into a study. You make out a case. You see a portmanteau. Empty! What kind of nightmare TextWorld is this? Look out! It's a- oh, never mind, it's just a mantelpiece. The mantelpiece is usual. But oh no! there's nothing on this piece of trash. There is an open passageway leading south. You need an unblocked exit? You should try going east. You need an unblocked exit? You should try going north. > -= Study =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "close passageway",
+                "close portmanteau",
+                "examine case",
+                "examine mantelpiece",
+                "examine passageway",
+                "examine portmanteau",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "open case"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Study =- You've just walked into a study. You make out a case. You see a portmanteau. Empty! What kind of nightmare TextWorld is this? Look out! It's a- oh, never mind, it's just a mantelpiece. The mantelpiece is usual. But oh no! there's nothing on this piece of trash. There is an open passageway leading south. You need an unblocked exit? You should try going east. You need an unblocked exit? You should try going north. > -= Study =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "close passageway",
+                "close portmanteau",
+                "examine case",
+                "examine mantelpiece",
+                "examine passageway",
+                "examine portmanteau",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "open case"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Launderette =- You are in a launderette. An usual kind of place. You can see an opened usual looking basket close by. The basket contains a sponge. You can see a dresser. What a letdown! The dresser is empty! There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going north. You don't like doors? Why not try going west, that entranceway is unblocked. > -= Launderette =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "close basket",
+                "close dresser",
+                "examine basket",
+                "examine dresser",
+                "examine sponge",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "take sponge from basket"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "-= Launderette =- You are in a launderette. An usual kind of place. You can see an opened usual looking basket close by. The basket contains a sponge. You can see a dresser. What a letdown! The dresser is empty! There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going north. You don't like doors? Why not try going west, that entranceway is unblocked. > -= Launderette =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "close basket",
+                "close dresser",
+                "examine basket",
+                "examine dresser",
+                "examine sponge",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "take sponge from basket"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Launderette =- You are in a launderette. An usual kind of place. You can see an opened usual looking basket close by. The basket contains a sponge. You can see a dresser. What a letdown! The dresser is empty! There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going north. You don't like doors? Why not try going west, that entranceway is unblocked. > -= Launderette =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "close basket",
+                "close dresser",
+                "examine basket",
+                "examine dresser",
+                "examine sponge",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "take sponge from basket"
+            ]
+        },
+        "done": false,
+        "next_action": "take sponge from basket"
+    },
+    {
+        "state": "-= Launderette =- You are in a launderette. An usual kind of place. You can see an opened usual looking basket close by. The basket contains a sponge. You can see a dresser. What a letdown! The dresser is empty! There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going north. You don't like doors? Why not try going west, that entranceway is unblocked. > -= Launderette =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "close basket",
+                "close dresser",
+                "examine basket",
+                "examine dresser",
+                "examine sponge",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "take sponge from basket"
+            ]
+        },
+        "action": "take sponge from basket",
+        "reward": 0,
+        "next_state": "You take the sponge from the basket. *** You lost! *** You scored 0 out of a possible 1, in 6 turns. Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command? > -= Launderette =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "close basket",
+                "close dresser",
+                "drop sponge",
+                "examine basket",
+                "examine dresser",
+                "examine sponge",
+                "go east",
+                "go north",
+                "go west",
+                "insert sponge into basket",
+                "insert sponge into dresser",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

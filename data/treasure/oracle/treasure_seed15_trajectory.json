@@ -1,0 +1,502 @@
+[
+    {
+        "state": "Who's got a virtual machine and is about to play through an fast paced round of TextWorld? You do! Your first objective is to insert the type H latchkey into the type H gateway in the studio's lock to unlock it. And then, open the type H gateway inside the studio. After that, try to head west. Following that, venture west. After that, venture north. And then, make an effort to venture west. With that over with, head south. With that done, travel west. Then, move north. Then, make an effort to go north. Then, attempt to take a trip north. Okay, and then, try to go to the east. With that accomplished, take a trip north. With that done, pick-up the durian from the floor of the dish-pit. And once you've done that, you win! -= Studio =- Ah, the studio. This is some kind of studio, really great ordinary vibes in this place, a wonderful ordinary atmosphere. You decide to start listing off everything you see in the room, as if you were in a text adventure. You can see a mantle. The mantle is normal. However, the mantle, like an empty mantle, has nothing on it. Aw, here you were, all excited for there to be things on it! There is a closed type H gateway leading west. There is an open door leading north. > -= Studio =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "close door",
+                "drop type H latchkey",
+                "examine door",
+                "examine mantle",
+                "examine type H gateway",
+                "examine type H latchkey",
+                "go north",
+                "inventory",
+                "look",
+                "put type H latchkey on mantle",
+                "unlock type H gateway with type H latchkey"
+            ]
+        },
+        "action": "unlock type H gateway with type H latchkey",
+        "reward": 0,
+        "next_state": "You unlock type H gateway. > -= Studio =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "close door",
+                "drop type H latchkey",
+                "examine door",
+                "examine mantle",
+                "examine type H gateway",
+                "examine type H latchkey",
+                "go north",
+                "inventory",
+                "lock type H gateway with type H latchkey",
+                "look",
+                "open type H gateway",
+                "put type H latchkey on mantle"
+            ]
+        },
+        "done": false,
+        "next_action": "open type H gateway"
+    },
+    {
+        "state": "You unlock type H gateway. > -= Studio =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "close door",
+                "drop type H latchkey",
+                "examine door",
+                "examine mantle",
+                "examine type H gateway",
+                "examine type H latchkey",
+                "go north",
+                "inventory",
+                "lock type H gateway with type H latchkey",
+                "look",
+                "open type H gateway",
+                "put type H latchkey on mantle"
+            ]
+        },
+        "action": "open type H gateway",
+        "reward": 0,
+        "next_state": "You open type H gateway. > -= Studio =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "close door",
+                "close type H gateway",
+                "drop type H latchkey",
+                "examine door",
+                "examine mantle",
+                "examine type H gateway",
+                "examine type H latchkey",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "put type H latchkey on mantle"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "You open type H gateway. > -= Studio =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "close door",
+                "close type H gateway",
+                "drop type H latchkey",
+                "examine door",
+                "examine mantle",
+                "examine type H gateway",
+                "examine type H latchkey",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "put type H latchkey on mantle"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Playroom =- You arrive in a playroom. A normal kind of place. You can make out a desk. The desk is standard. Looks like someone's already been here and taken everything off it, though. There is an open type H gateway leading east. There is an open portal leading west. > -= Playroom =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "close portal",
+                "close type H gateway",
+                "drop type H latchkey",
+                "examine desk",
+                "examine portal",
+                "examine type H gateway",
+                "examine type H latchkey",
+                "go east",
+                "go west",
+                "inventory",
+                "look",
+                "put type H latchkey on desk"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Playroom =- You arrive in a playroom. A normal kind of place. You can make out a desk. The desk is standard. Looks like someone's already been here and taken everything off it, though. There is an open type H gateway leading east. There is an open portal leading west. > -= Playroom =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "close portal",
+                "close type H gateway",
+                "drop type H latchkey",
+                "examine desk",
+                "examine portal",
+                "examine type H gateway",
+                "examine type H latchkey",
+                "go east",
+                "go west",
+                "inventory",
+                "look",
+                "put type H latchkey on desk"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Kitchenette =- A decrepit notice tells you that you are now in the kitchenette. You see a gleam over in a corner, where you can see a table. The table is standard. The table appears to be empty. Aw, here you were, all excited for there to be things on it! There is an open portal leading east. There is an unblocked exit to the north. You need an unguarded exit? You should try going west. > -= Kitchenette =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "close portal",
+                "drop type H latchkey",
+                "examine portal",
+                "examine table",
+                "examine type H latchkey",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "put type H latchkey on table"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Kitchenette =- A decrepit notice tells you that you are now in the kitchenette. You see a gleam over in a corner, where you can see a table. The table is standard. The table appears to be empty. Aw, here you were, all excited for there to be things on it! There is an open portal leading east. There is an unblocked exit to the north. You need an unguarded exit? You should try going west. > -= Kitchenette =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "close portal",
+                "drop type H latchkey",
+                "examine portal",
+                "examine table",
+                "examine type H latchkey",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "put type H latchkey on table"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Lounge =- You are in a lounge. A normal one. There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west. > -= Lounge =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "drop type H latchkey",
+                "examine type H latchkey",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Lounge =- You are in a lounge. A normal one. There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west. > -= Lounge =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "drop type H latchkey",
+                "examine type H latchkey",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Pantry =- Well how about that, you are in a place we're calling a pantry. You can make out a rack. However, the rack, like an empty rack, has nothing on it. There is an unblocked exit to the east. There is an unguarded exit to the north. There is an unblocked exit to the south. > -= Pantry =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "drop type H latchkey",
+                "examine rack",
+                "examine type H latchkey",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "put type H latchkey on rack"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Pantry =- Well how about that, you are in a place we're calling a pantry. You can make out a rack. However, the rack, like an empty rack, has nothing on it. There is an unblocked exit to the east. There is an unguarded exit to the north. There is an unblocked exit to the south. > -= Pantry =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "drop type H latchkey",
+                "examine rack",
+                "examine type H latchkey",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "put type H latchkey on rack"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Bedchamber =- You are in a bedchamber. A standard one. Hey, want to see a bench? Look over there, a bench. The bench is normal. But the thing is empty. Oh! Why couldn't there just be stuff on it? You make out a couch. The couch is ordinary. But oh no! there's nothing on this piece of garbage. Hm. Oh well There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unguarded. You need an unguarded exit? You should try going west. > -= Bedchamber =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "drop type H latchkey",
+                "examine bench",
+                "examine couch",
+                "examine type H latchkey",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "put type H latchkey on bench",
+                "put type H latchkey on couch"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Bedchamber =- You are in a bedchamber. A standard one. Hey, want to see a bench? Look over there, a bench. The bench is normal. But the thing is empty. Oh! Why couldn't there just be stuff on it? You make out a couch. The couch is ordinary. But oh no! there's nothing on this piece of garbage. Hm. Oh well There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unguarded. You need an unguarded exit? You should try going west. > -= Bedchamber =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "drop type H latchkey",
+                "examine bench",
+                "examine couch",
+                "examine type H latchkey",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "put type H latchkey on bench",
+                "put type H latchkey on couch"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Washroom =- You're not going to believe this, but you've just entered a washroom. Look out! It's a- oh, never mind, it's just a board. The board is standard. On the board you can see a key. There is an unblocked exit to the east. There is an exit to the north. Don't worry, it is unguarded. > -= Washroom =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "drop type H latchkey",
+                "examine board",
+                "examine key",
+                "examine type H latchkey",
+                "go east",
+                "go north",
+                "inventory",
+                "look",
+                "put type H latchkey on board",
+                "take key from board"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Washroom =- You're not going to believe this, but you've just entered a washroom. Look out! It's a- oh, never mind, it's just a board. The board is standard. On the board you can see a key. There is an unblocked exit to the east. There is an exit to the north. Don't worry, it is unguarded. > -= Washroom =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "drop type H latchkey",
+                "examine board",
+                "examine key",
+                "examine type H latchkey",
+                "go east",
+                "go north",
+                "inventory",
+                "look",
+                "put type H latchkey on board",
+                "take key from board"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Kitchen =- You've just walked into a kitchen. The room is well lit. You can see a counter. The counter appears to be empty. You bend down to tie your shoe. When you stand up, you notice a shelf. Why don't you take a picture of it, it'll last longer! The shelf is normal. But the thing hasn't got anything on it. Oh! Why couldn't there just be stuff on it? There is an unguarded exit to the north. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Kitchen =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "drop type H latchkey",
+                "examine counter",
+                "examine shelf",
+                "examine type H latchkey",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "put type H latchkey on counter",
+                "put type H latchkey on shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Kitchen =- You've just walked into a kitchen. The room is well lit. You can see a counter. The counter appears to be empty. You bend down to tie your shoe. When you stand up, you notice a shelf. Why don't you take a picture of it, it'll last longer! The shelf is normal. But the thing hasn't got anything on it. Oh! Why couldn't there just be stuff on it? There is an unguarded exit to the north. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Kitchen =-0/10",
+        "infos": {
+            "admissible_commands": [
+                "drop type H latchkey",
+                "examine counter",
+                "examine shelf",
+                "examine type H latchkey",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "put type H latchkey on counter",
+                "put type H latchkey on shelf"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Cookery =- You find yourself in a cookery. A typical kind of place. You try to gain information on your surroundings by using a technique you call \"looking.\" You don't like doors? Why not try going east, that entranceway is unblocked. There is an unblocked exit to the north. There is an exit to the south. Don't worry, it is unblocked. > -= Cookery =-0/11",
+        "next_infos": {
+            "admissible_commands": [
+                "drop type H latchkey",
+                "examine type H latchkey",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Cookery =- You find yourself in a cookery. A typical kind of place. You try to gain information on your surroundings by using a technique you call \"looking.\" You don't like doors? Why not try going east, that entranceway is unblocked. There is an unblocked exit to the north. There is an exit to the south. Don't worry, it is unblocked. > -= Cookery =-0/11",
+        "infos": {
+            "admissible_commands": [
+                "drop type H latchkey",
+                "examine type H latchkey",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Salon =- You arrive in a salon. An ordinary one. You begin looking for stuff. There is an exit to the east. Don't worry, it is unblocked. There is an exit to the north. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked. > -= Salon =-0/12",
+        "next_infos": {
+            "admissible_commands": [
+                "drop type H latchkey",
+                "examine type H latchkey",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Salon =- You arrive in a salon. An ordinary one. You begin looking for stuff. There is an exit to the east. Don't worry, it is unblocked. There is an exit to the north. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked. > -= Salon =-0/12",
+        "infos": {
+            "admissible_commands": [
+                "drop type H latchkey",
+                "examine type H latchkey",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Canteen =- Well how about that, you are in a place we're calling a canteen. You can make out a chest. The chest is empty! This is the worst thing that could possibly happen, ever! There is an open gateway leading east. There is an unguarded exit to the north. There is an exit to the south. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unblocked. > -= Canteen =-0/13",
+        "next_infos": {
+            "admissible_commands": [
+                "close chest",
+                "close gateway",
+                "drop type H latchkey",
+                "examine chest",
+                "examine gateway",
+                "examine type H latchkey",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "insert type H latchkey into chest",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Canteen =- Well how about that, you are in a place we're calling a canteen. You can make out a chest. The chest is empty! This is the worst thing that could possibly happen, ever! There is an open gateway leading east. There is an unguarded exit to the north. There is an exit to the south. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unblocked. > -= Canteen =-0/13",
+        "infos": {
+            "admissible_commands": [
+                "close chest",
+                "close gateway",
+                "drop type H latchkey",
+                "examine chest",
+                "examine gateway",
+                "examine type H latchkey",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "insert type H latchkey into chest",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Dish-Pit =- You find yourself in a dish-pit. A normal one. You begin to take stock of what's here. There is an unblocked exit to the south. You don't like doors? Why not try going west, that entranceway is unguarded. There is a durian on the floor. > -= Dish-Pit =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "drop type H latchkey",
+                "examine durian",
+                "examine type H latchkey",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take durian"
+            ]
+        },
+        "done": false,
+        "next_action": "take durian"
+    },
+    {
+        "state": "-= Dish-Pit =- You find yourself in a dish-pit. A normal one. You begin to take stock of what's here. There is an unblocked exit to the south. You don't like doors? Why not try going west, that entranceway is unguarded. There is a durian on the floor. > -= Dish-Pit =-0/14",
+        "infos": {
+            "admissible_commands": [
+                "drop type H latchkey",
+                "examine durian",
+                "examine type H latchkey",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take durian"
+            ]
+        },
+        "action": "take durian",
+        "reward": 1,
+        "next_state": "You pick up the durian from the ground. Your score has just gone up by one point. *** The End *** You scored 1 out of a possible 1, in 15 turns. Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command? > -= Dish-Pit =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "drop durian",
+                "drop type H latchkey",
+                "eat durian",
+                "examine durian",
+                "examine type H latchkey",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

@@ -1,0 +1,244 @@
+[
+    {
+        "state": "You are now playing a profound round of TextWorld! Here is how to play! First of all, pick up the key from the stand inside the cellar. If you can get your hands on the key, take a trip north. After that, check that the locker is unlocked with the key. After unlocking the locker, open the locker in the cookery. Then, recover the formless key from the locker. With the formless key, unlock the formless gateway with the formless key. After you have unlocked the formless gateway, open the formless gateway in the cookery. After pulling open the formless gateway, travel north. If you can succeed at that, head north. Then, make an effort to venture east. Then, make an effort to head east. After that, try to head east. With that done, venture east. After that, recover the salad from the floor of the recreation zone. Once that's all handled, you can stop! -= Cellar =- This just in- You, in the cellar. Look over there! a stand. You see a key on the stand. There is an unguarded exit to the north. > -= Cellar =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "examine key",
+                "examine stand",
+                "go north",
+                "inventory",
+                "look",
+                "take key from stand"
+            ]
+        },
+        "action": "take key from stand",
+        "reward": 0,
+        "next_state": "You take the key from the stand. > -= Cellar =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "drop key",
+                "examine key",
+                "examine stand",
+                "go north",
+                "inventory",
+                "look",
+                "put key on stand"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "You take the key from the stand. > -= Cellar =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "drop key",
+                "examine key",
+                "examine stand",
+                "go north",
+                "inventory",
+                "look",
+                "put key on stand"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Cookery =- You've entered a cookery. You hear a noise behind you and spin around, but you can't see anything other than a locker. You can make out a fridge. You wonder idly who left that here. You make out a platter. But there isn't a thing on it. There is a closed formless gateway leading north. There is an exit to the south. Don't worry, it is unguarded. > -= Cookery =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "drop key",
+                "examine formless gateway",
+                "examine fridge",
+                "examine key",
+                "examine locker",
+                "examine platter",
+                "go south",
+                "inventory",
+                "look",
+                "put key on platter",
+                "unlock locker with key"
+            ]
+        },
+        "done": false,
+        "next_action": "unlock locker with key"
+    },
+    {
+        "state": "-= Cookery =- You've entered a cookery. You hear a noise behind you and spin around, but you can't see anything other than a locker. You can make out a fridge. You wonder idly who left that here. You make out a platter. But there isn't a thing on it. There is a closed formless gateway leading north. There is an exit to the south. Don't worry, it is unguarded. > -= Cookery =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "drop key",
+                "examine formless gateway",
+                "examine fridge",
+                "examine key",
+                "examine locker",
+                "examine platter",
+                "go south",
+                "inventory",
+                "look",
+                "put key on platter",
+                "unlock locker with key"
+            ]
+        },
+        "action": "unlock locker with key",
+        "reward": 0,
+        "next_state": "You unlock the locker. > -= Cookery =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "drop key",
+                "examine formless gateway",
+                "examine fridge",
+                "examine key",
+                "examine locker",
+                "examine platter",
+                "go south",
+                "inventory",
+                "lock locker with key",
+                "look",
+                "open locker",
+                "put key on platter"
+            ]
+        },
+        "done": false,
+        "next_action": "open locker"
+    },
+    {
+        "state": "You unlock the locker. > -= Cookery =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "drop key",
+                "examine formless gateway",
+                "examine fridge",
+                "examine key",
+                "examine locker",
+                "examine platter",
+                "go south",
+                "inventory",
+                "lock locker with key",
+                "look",
+                "open locker",
+                "put key on platter"
+            ]
+        },
+        "action": "open locker",
+        "reward": 0,
+        "next_state": "You open the locker, revealing a formless key. > -= Cookery =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "close locker",
+                "drop key",
+                "examine formless gateway",
+                "examine formless key",
+                "examine fridge",
+                "examine key",
+                "examine locker",
+                "examine platter",
+                "go south",
+                "insert key into locker",
+                "inventory",
+                "look",
+                "put key on platter",
+                "take formless key from locker"
+            ]
+        },
+        "done": false,
+        "next_action": "take formless key from locker"
+    },
+    {
+        "state": "You open the locker, revealing a formless key. > -= Cookery =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "close locker",
+                "drop key",
+                "examine formless gateway",
+                "examine formless key",
+                "examine fridge",
+                "examine key",
+                "examine locker",
+                "examine platter",
+                "go south",
+                "insert key into locker",
+                "inventory",
+                "look",
+                "put key on platter",
+                "take formless key from locker"
+            ]
+        },
+        "action": "take formless key from locker",
+        "reward": 0,
+        "next_state": "You take the formless key from the locker. > -= Cookery =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "close locker",
+                "drop formless key",
+                "drop key",
+                "examine formless gateway",
+                "examine formless key",
+                "examine fridge",
+                "examine key",
+                "examine locker",
+                "examine platter",
+                "go south",
+                "insert formless key into locker",
+                "insert key into locker",
+                "inventory",
+                "look",
+                "put formless key on platter",
+                "put key on platter",
+                "unlock formless gateway with formless key"
+            ]
+        },
+        "done": false,
+        "next_action": "unlock formless gateway with formless key"
+    },
+    {
+        "state": "You take the formless key from the locker. > -= Cookery =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "close locker",
+                "drop formless key",
+                "drop key",
+                "examine formless gateway",
+                "examine formless key",
+                "examine fridge",
+                "examine key",
+                "examine locker",
+                "examine platter",
+                "go south",
+                "insert formless key into locker",
+                "insert key into locker",
+                "inventory",
+                "look",
+                "put formless key on platter",
+                "put key on platter",
+                "unlock formless gateway with formless key"
+            ]
+        },
+        "action": "unlock formless gateway with formless key",
+        "reward": 0,
+        "next_state": "You unlock formless gateway. > -= Cookery =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "close locker",
+                "drop formless key",
+                "drop key",
+                "examine formless gateway",
+                "examine formless key",
+                "examine fridge",
+                "examine key",
+                "examine locker",
+                "examine platter",
+                "go south",
+                "insert formless key into locker",
+                "insert key into locker",
+                "inventory",
+                "lock formless gateway with formless key",
+                "look",
+                "open formless gateway",
+                "put formless key on platter",
+                "put key on platter"
+            ]
+        },
+        "done": false,
+        "next_action": null
+    }
+]

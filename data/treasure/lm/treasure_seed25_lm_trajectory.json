@@ -1,0 +1,464 @@
+[
+    {
+        "state": "Get ready to pick stuff up and put it in places, because you've just entered TextWorld! Here is your task for today. First off, if it's not too much trouble, I need you to go south. And then, make an attempt to venture south. Okay, and then, make an effort to travel west. Once you get through with that, make an attempt to travel north. And then, travel north. Then, try to move west. And then, take a trip north. Once you get through with that, go to the north. With that accomplished, travel west. Okay, and then, head west. Okay, and then, make an attempt to travel south. Next, attempt to travel south. After that, venture east. Then, recover the stick of butter from the floor of the bathroom. And if you do that, you're the winner! -= Chamber =- I am sorry to announce that you are now in the chamber. Let's see what's in here. You see a gleam over in a corner, where you can see a mantelpiece. Wow, isn't TextWorld just the best? Unfortunately, there isn't a thing on it. There is an exit to the south. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unblocked. > -= Chamber =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "examine mantelpiece",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Canteen =- You find yourself in a canteen. A normal one. You begin to take stock of what's here. You see a plate. Does this look like anything mentioned in the instructions? Unfortunately, there isn't a thing on it. You think about smashing the plate to bits, throwing the bits in a fire, etc, until you get bored. You don't like doors? Why not try going north, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an unblocked exit to the west. > -= Canteen =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "examine plate",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Canteen =- You find yourself in a canteen. A normal one. You begin to take stock of what's here. You see a plate. Does this look like anything mentioned in the instructions? Unfortunately, there isn't a thing on it. You think about smashing the plate to bits, throwing the bits in a fire, etc, until you get bored. You don't like doors? Why not try going north, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an unblocked exit to the west. > -= Canteen =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "examine plate",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Study =- You're now in a study. You need an unblocked exit? You should try going east. There is an unblocked exit to the north. There is an exit to the south. Don't worry, it is unblocked. There is an exit to the west. Don't worry, it is unblocked. > -= Study =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Study =- You're now in a study. You need an unblocked exit? You should try going east. There is an unblocked exit to the north. There is an exit to the south. Don't worry, it is unblocked. There is an exit to the west. Don't worry, it is unblocked. > -= Study =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Cookhouse =- You've just walked into a cookhouse. You start to take note of what's in the room. You see a platter. The platter appears to be empty. It would have been so cool if there was stuff on the platter. There is an open gate leading north. You need an unguarded exit? You should try going east. There is an unblocked exit to the south. There is an unguarded exit to the west. > -= Cookhouse =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "close gate",
+                "examine gate",
+                "examine platter",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Cookhouse =- You've just walked into a cookhouse. You start to take note of what's in the room. You see a platter. The platter appears to be empty. It would have been so cool if there was stuff on the platter. There is an open gate leading north. You need an unguarded exit? You should try going east. There is an unblocked exit to the south. There is an unguarded exit to the west. > -= Cookhouse =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "close gate",
+                "examine gate",
+                "examine platter",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Chamber =- I am sorry to announce that you are now in the chamber. Let's see what's in here. You see a gleam over in a corner, where you can see a mantelpiece. Wow, isn't TextWorld just the best? Unfortunately, there isn't a thing on it. There is an exit to the south. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unblocked. > -= Chamber =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "examine mantelpiece",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Chamber =- I am sorry to announce that you are now in the chamber. Let's see what's in here. You see a gleam over in a corner, where you can see a mantelpiece. Wow, isn't TextWorld just the best? Unfortunately, there isn't a thing on it. There is an exit to the south. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unblocked. > -= Chamber =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "examine mantelpiece",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "You can't go that way. > -= Chamber =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "examine mantelpiece",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "You can't go that way. > -= Chamber =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "examine mantelpiece",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Cookhouse =- You've just walked into a cookhouse. You start to take note of what's in the room. You see a platter. The platter appears to be empty. It would have been so cool if there was stuff on the platter. There is an open gate leading north. You need an unguarded exit? You should try going east. There is an unblocked exit to the south. There is an unguarded exit to the west. > -= Cookhouse =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "close gate",
+                "examine gate",
+                "examine platter",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Cookhouse =- You've just walked into a cookhouse. You start to take note of what's in the room. You see a platter. The platter appears to be empty. It would have been so cool if there was stuff on the platter. There is an open gate leading north. You need an unguarded exit? You should try going east. There is an unblocked exit to the south. There is an unguarded exit to the west. > -= Cookhouse =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "close gate",
+                "examine gate",
+                "examine platter",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Study =- You're now in a study. You need an unblocked exit? You should try going east. There is an unblocked exit to the north. There is an exit to the south. Don't worry, it is unblocked. There is an exit to the west. Don't worry, it is unblocked. > -= Study =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Study =- You're now in a study. You need an unblocked exit? You should try going east. There is an unblocked exit to the north. There is an exit to the south. Don't worry, it is unblocked. There is an exit to the west. Don't worry, it is unblocked. > -= Study =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Canteen =- You find yourself in a canteen. A normal one. You begin to take stock of what's here. You see a plate. Does this look like anything mentioned in the instructions? Unfortunately, there isn't a thing on it. You think about smashing the plate to bits, throwing the bits in a fire, etc, until you get bored. You don't like doors? Why not try going north, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an unblocked exit to the west. > -= Canteen =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "examine plate",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Canteen =- You find yourself in a canteen. A normal one. You begin to take stock of what's here. You see a plate. Does this look like anything mentioned in the instructions? Unfortunately, there isn't a thing on it. You think about smashing the plate to bits, throwing the bits in a fire, etc, until you get bored. You don't like doors? Why not try going north, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an unblocked exit to the west. > -= Canteen =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "examine plate",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Chamber =- I am sorry to announce that you are now in the chamber. Let's see what's in here. You see a gleam over in a corner, where you can see a mantelpiece. Wow, isn't TextWorld just the best? Unfortunately, there isn't a thing on it. There is an exit to the south. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unblocked. > -= Chamber =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "examine mantelpiece",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Chamber =- I am sorry to announce that you are now in the chamber. Let's see what's in here. You see a gleam over in a corner, where you can see a mantelpiece. Wow, isn't TextWorld just the best? Unfortunately, there isn't a thing on it. There is an exit to the south. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unblocked. > -= Chamber =-0/10",
+        "infos": {
+            "admissible_commands": [
+                "examine mantelpiece",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Cookhouse =- You've just walked into a cookhouse. You start to take note of what's in the room. You see a platter. The platter appears to be empty. It would have been so cool if there was stuff on the platter. There is an open gate leading north. You need an unguarded exit? You should try going east. There is an unblocked exit to the south. There is an unguarded exit to the west. > -= Cookhouse =-0/11",
+        "next_infos": {
+            "admissible_commands": [
+                "close gate",
+                "examine gate",
+                "examine platter",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Cookhouse =- You've just walked into a cookhouse. You start to take note of what's in the room. You see a platter. The platter appears to be empty. It would have been so cool if there was stuff on the platter. There is an open gate leading north. You need an unguarded exit? You should try going east. There is an unblocked exit to the south. There is an unguarded exit to the west. > -= Cookhouse =-0/11",
+        "infos": {
+            "admissible_commands": [
+                "close gate",
+                "examine gate",
+                "examine platter",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Study =- You're now in a study. You need an unblocked exit? You should try going east. There is an unblocked exit to the north. There is an exit to the south. Don't worry, it is unblocked. There is an exit to the west. Don't worry, it is unblocked. > -= Study =-0/12",
+        "next_infos": {
+            "admissible_commands": [
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Study =- You're now in a study. You need an unblocked exit? You should try going east. There is an unblocked exit to the north. There is an exit to the south. Don't worry, it is unblocked. There is an exit to the west. Don't worry, it is unblocked. > -= Study =-0/12",
+        "infos": {
+            "admissible_commands": [
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Cookhouse =- You've just walked into a cookhouse. You start to take note of what's in the room. You see a platter. The platter appears to be empty. It would have been so cool if there was stuff on the platter. There is an open gate leading north. You need an unguarded exit? You should try going east. There is an unblocked exit to the south. There is an unguarded exit to the west. > -= Cookhouse =-0/13",
+        "next_infos": {
+            "admissible_commands": [
+                "close gate",
+                "examine gate",
+                "examine platter",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Cookhouse =- You've just walked into a cookhouse. You start to take note of what's in the room. You see a platter. The platter appears to be empty. It would have been so cool if there was stuff on the platter. There is an open gate leading north. You need an unguarded exit? You should try going east. There is an unblocked exit to the south. There is an unguarded exit to the west. > -= Cookhouse =-0/13",
+        "infos": {
+            "admissible_commands": [
+                "close gate",
+                "examine gate",
+                "examine platter",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Studio =- You are in a studio. An usual kind of place. Let's see what's in here. You see a bureau. Hmmm... what else, what else? If you haven't noticed it already, there seems to be something there by the wall, it's a mantle. Unfortunately, there isn't a thing on it. There is an open passageway leading north. There is an open gate leading south. There is an unblocked exit to the west. > -= Studio =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "close gate",
+                "close passageway",
+                "examine bureau",
+                "examine gate",
+                "examine mantle",
+                "examine passageway",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "-= Studio =- You are in a studio. An usual kind of place. Let's see what's in here. You see a bureau. Hmmm... what else, what else? If you haven't noticed it already, there seems to be something there by the wall, it's a mantle. Unfortunately, there isn't a thing on it. There is an open passageway leading north. There is an open gate leading south. There is an unblocked exit to the west. > -= Studio =-0/14",
+        "infos": {
+            "admissible_commands": [
+                "close gate",
+                "close passageway",
+                "examine bureau",
+                "examine gate",
+                "examine mantle",
+                "examine passageway",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Studio =- You are in a studio. An usual kind of place. Let's see what's in here. You see a bureau. Hmmm... what else, what else? If you haven't noticed it already, there seems to be something there by the wall, it's a mantle. Unfortunately, there isn't a thing on it. There is an open passageway leading north. There is an open gate leading south. There is an unblocked exit to the west. > -= Studio =-0/15",
+        "next_infos": {
+            "admissible_commands": [
+                "close gate",
+                "close passageway",
+                "examine bureau",
+                "examine gate",
+                "examine mantle",
+                "examine passageway",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "examine bureau"
+    },
+    {
+        "state": "-= Studio =- You are in a studio. An usual kind of place. Let's see what's in here. You see a bureau. Hmmm... what else, what else? If you haven't noticed it already, there seems to be something there by the wall, it's a mantle. Unfortunately, there isn't a thing on it. There is an open passageway leading north. There is an open gate leading south. There is an unblocked exit to the west. > -= Studio =-0/15",
+        "infos": {
+            "admissible_commands": [
+                "close gate",
+                "close passageway",
+                "examine bureau",
+                "examine gate",
+                "examine mantle",
+                "examine passageway",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "examine bureau",
+        "reward": 0,
+        "next_state": "The bureau looks strong, and impossible to crack. It is closed. > -= Studio =-0/16",
+        "next_infos": {
+            "admissible_commands": [
+                "close gate",
+                "close passageway",
+                "examine bureau",
+                "examine gate",
+                "examine mantle",
+                "examine passageway",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

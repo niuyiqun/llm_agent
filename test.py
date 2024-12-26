@@ -142,7 +142,7 @@ def main():
     agent.target_critic_2.to(device)
 
     # 加载训练好的模型
-    model_save_path = './model/critic/sample_ratio/final_model_20241225_031607.pth'
+    model_save_path = 'model/critic/simple/sample_ratio/final_model_20241225_054712.pth'
     load_model_and_info(agent, model_save_path, device)
 
     # 从目录加载测试数据（包含奖励信息）

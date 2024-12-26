@@ -1,0 +1,38 @@
+[
+    {
+        "state": "Get ready to pick stuff up and put it in places, because you've just entered TextWorld! First of all, you could, like, make an effort to venture west. Okay, and then, try to travel west. With that over with, ensure that the door is open. After that, make an attempt to take a trip north. And then, try to go east. With that over with, travel north. With that accomplished, head north. With that over with, travel east. Then, attempt to venture north. With that over with, try to travel east. Okay, and then, try to go to the south. If you can manage that, make an attempt to take a trip south. That done, move south. That done, lift the mop from the floor of the laundry place. Once that's all handled, you can stop! -= Parlor =- You find yourself in a parlor. An ordinary one. Oh, great. Here's a basket. I mean, just wow! Isn't TextWorld just the best? You can see a portmanteau. Empty! What kind of nightmare TextWorld is this? You hear a noise behind you and spin around, but you can't see anything other than a safe. What a great pairing of adjectives and nouns! You can see a locker. The locker is empty, what a horrible day! You don't like doors? Why not try going west, that entranceway is unblocked. > -= Parlor =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "close locker",
+                "close portmanteau",
+                "examine basket",
+                "examine locker",
+                "examine portmanteau",
+                "examine safe",
+                "go west",
+                "inventory",
+                "look",
+                "open safe"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Parlor =- You find yourself in a parlor. An ordinary one. Oh, great. Here's a basket. I mean, just wow! Isn't TextWorld just the best? You can see a portmanteau. Empty! What kind of nightmare TextWorld is this? You hear a noise behind you and spin around, but you can't see anything other than a safe. What a great pairing of adjectives and nouns! You can see a locker. The locker is empty, what a horrible day! You don't like doors? Why not try going west, that entranceway is unblocked. > -= Parlor =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "close locker",
+                "close portmanteau",
+                "examine basket",
+                "examine locker",
+                "examine portmanteau",
+                "examine safe",
+                "go west",
+                "inventory",
+                "look",
+                "open safe"
+            ]
+        },
+        "done": false,
+        "next_action": null
+    }
+]

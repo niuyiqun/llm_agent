@@ -30,9 +30,8 @@ def generate_simple_game(game_id, seed, game_file_path):
     """
     game_output = os.path.join(game_file_path, f"{game_id}.z8")
     game_gen_cmd = [
-        "tw-make", "tw-cooking",
-        "--rewards", "balanced",
-        "--goal", "brief",
+        "tw-make", "tw-treasure_hunter",
+        "--level", "27",
         "--output", game_output,
         "--seed", str(seed)
     ]
@@ -262,9 +261,11 @@ def generate_one_lm_trajectories(game_file, agent, output_file):
         description=True  # 当前状态的描述
     )
 
+
     # 注册游戏环境
     env_id = textworld.gym.register_game(game_file, max_episode_steps=15, request_infos=request_infos)
     env = textworld.gym.make(env_id)  # 启动环境
+
 
     obs, infos = env.reset()  # 初始化环境
     obs: str = get_reset(obs)
@@ -331,14 +332,10 @@ def generate_one_lm_trajectories(game_file, agent, output_file):
     env.close()
 
 
-def generate_lm_trajectory():
+def generate_lm_trajectory(config):
     import os
-    import yaml
     from agent import Agent  # 假设自定义代理的代码在 agent.py 中
 
-    # 读取配置文件
-    with open("./config/train.yaml", "r") as file:
-        config = yaml.safe_load(file)
 
     # 文件路径配置
     game_file_path = config.get("game_file_path", "")
@@ -353,7 +350,7 @@ def generate_lm_trajectory():
         try:
             # 定义文件名
             seed = game_id
-            name = f"simple_seed{seed}"
+            name = f"treasure_seed{seed}"
             game_file = os.path.join(game_file_path, f"{name}.z8")
 
             # 检查游戏文件是否存在
@@ -391,14 +388,16 @@ import os
 import json
 
 
-def add_next_action_to_oracle_trajectory():
+def add_next_action_to_oracle_trajectory(config):
+    """
+    
+    :param config: 环境对应的配置文件
+    :return:
+    """
     """
     为 oracle_file_path 中的每个 JSON 文件添加 next_action 字段，直接修改源文件。
     """
-    # 读取配置文件
-    import yaml
-    with open("./config/train.yaml", "r") as config_file:
-        config = yaml.safe_load(config_file)
+
 
     oracle_file_path = config.get("lm_file_path", "")
     if not os.path.exists(oracle_file_path):
@@ -437,8 +436,72 @@ def add_next_action_to_oracle_trajectory():
         print(f"[INFO] File updated: {file_name}")
 
 
+
+def generate_games_and_trajectories(config):
+    """
+            用于生成游戏文件及oracle轨迹
+        :return:
+        """
+
+    # 从配置文件中读取路径和参数
+    game_file_path = config.get("game_file_path", "./games")
+    walkthroughs_file_path = config.get("walkthroughs_file_path", "./walkthroughs")
+    oracle_file_path = config.get("oracle_file_path", "./oracles")
+    num_games = config.get("num_games", 100)
+
+    # 确保所需路径存在
+    os.makedirs(game_file_path, exist_ok=True)
+    os.makedirs(walkthroughs_file_path, exist_ok=True)
+    os.makedirs(oracle_file_path, exist_ok=True)
+
+    # 遍历生成游戏
+    for game_id in range(1, num_games + 1):
+        try:
+            # 定义种子和文件名
+            seed = game_id
+            game_name = f"treasure_seed{seed}"
+
+            # 1. 生成游戏
+            print(f"[INFO] Generating game {game_name}...")
+            game_file = generate_simple_game(game_name, seed, game_file_path)
+
+            # 2. 生成 Oracle 轨迹
+            print(f"[INFO] Generating Oracle walkthrough for {game_name}...")
+            oracle_file = os.path.join(walkthroughs_file_path, f"{game_name}_oracle.txt")
+            generate_oracle(game_file, oracle_file)
+
+            # 3. 加载 Oracle 动作
+            print(f"[INFO] Loading Oracle actions for {game_name}...")
+            oracle_commands = load_oracle(oracle_file)
+
+            # 4. 执行游戏并保存五元组
+            print(f"[INFO] Playing game {game_name} with Oracle and saving trajectory...")
+            trajectory_file = os.path.join(oracle_file_path, f"{game_name}_trajectory.json")
+            play_with_oracle(game_file, oracle_commands, trajectory_file)
+
+            # 5. 删除 Oracle 文件
+            if os.path.exists(oracle_file):
+                os.remove(oracle_file)
+                print(f"[INFO] Deleted Oracle file: {oracle_file}")
+
+        except Exception as e:
+            print(f"[ERROR] Unexpected error for game {game_id}: {e}")
+
+    print("[INFO] All games and Oracle trajectories have been generated!")
+def main(config):
+    add_next_action_to_oracle_trajectory(config)
+
+
 if __name__ == "__main__":
-    generate_lm_trajectory()
+    import yaml
+    import sys
+
+    # 读取配置文件
+    with open("./config/train.yaml", "r") as config_file:
+        all_config = yaml.safe_load(config_file)
+
+    main(all_config.get("treasure"))
+
 
 
 

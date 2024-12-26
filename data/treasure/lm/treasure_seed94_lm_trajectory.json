@@ -1,0 +1,420 @@
+[
+    {
+        "state": "Hey, thanks for coming over to the TextWorld today, there is something I need you to do for me. First of all, go to the east. And then, take a trip east. Then, head south. With that over with, try to go to the west. After that, travel south. Then, make an attempt to head south. And then, make an effort to move east. If you can accomplish that, go to the south. And then, venture west. After that, venture west. Following that, attempt to travel north. And then, make an attempt to move north. And then, try to move west. That done, lift the butterfly from the floor of the cookery. And once you've done that, you win! -= Study =- You arrive in a study. An usual kind of place. You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked. > -= Study =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Kitchen =- You find yourself in a kitchen. An usual kind of place. You decide to start listing off everything you see in the room, as if you were in a text adventure. You can make out a freezer. Classic TextWorld. Hey, want to see a chair? Look over there, a chair. The chair is normal. But oh no! there's nothing on this piece of junk. You don't like doors? Why not try going east, that entranceway is unblocked. There is an unguarded exit to the south. You need an unguarded exit? You should try going west. > -= Kitchen =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "examine chair",
+                "examine freezer",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Kitchen =- You find yourself in a kitchen. An usual kind of place. You decide to start listing off everything you see in the room, as if you were in a text adventure. You can make out a freezer. Classic TextWorld. Hey, want to see a chair? Look over there, a chair. The chair is normal. But oh no! there's nothing on this piece of junk. You don't like doors? Why not try going east, that entranceway is unblocked. There is an unguarded exit to the south. You need an unguarded exit? You should try going west. > -= Kitchen =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "examine chair",
+                "examine freezer",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Salon =- Ah, the salon. This is some kind of salon, really great usual vibes in this place, a wonderful usual atmosphere. And now, well, you're in it. You make out a safe. You shudder, but continue examining the room. You don't like doors? Why not try going east, that entranceway is unguarded. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unblocked exit to the south. You need an unguarded exit? You should try going west. > -= Salon =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "examine safe",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Salon =- Ah, the salon. This is some kind of salon, really great usual vibes in this place, a wonderful usual atmosphere. And now, well, you're in it. You make out a safe. You shudder, but continue examining the room. You don't like doors? Why not try going east, that entranceway is unguarded. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unblocked exit to the south. You need an unguarded exit? You should try going west. > -= Salon =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "examine safe",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Dish-Pit =- You've entered a dish-pit. You decide to just list off a complete list of everything you see in the room, because hey, why not? You bend down to tie your shoe. When you stand up, you notice a cabinet. You don't like doors? Why not try going east, that entranceway is unblocked. There is an unblocked exit to the north. You don't like doors? Why not try going south, that entranceway is unblocked. > -= Dish-Pit =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "examine cabinet",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "open cabinet"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Dish-Pit =- You've entered a dish-pit. You decide to just list off a complete list of everything you see in the room, because hey, why not? You bend down to tie your shoe. When you stand up, you notice a cabinet. You don't like doors? Why not try going east, that entranceway is unblocked. There is an unblocked exit to the north. You don't like doors? Why not try going south, that entranceway is unblocked. > -= Dish-Pit =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "examine cabinet",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "open cabinet"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Vault =- You arrive in a vault. An usual one. Okay, just remember what you're here to do, and everything will go great. There is an unblocked exit to the south. You need an unblocked exit? You should try going west. > -= Vault =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Vault =- You arrive in a vault. An usual one. Okay, just remember what you're here to do, and everything will go great. There is an unblocked exit to the south. You need an unblocked exit? You should try going west. > -= Vault =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Dish-Pit =- You've entered a dish-pit. You decide to just list off a complete list of everything you see in the room, because hey, why not? You bend down to tie your shoe. When you stand up, you notice a cabinet. You don't like doors? Why not try going east, that entranceway is unblocked. There is an unblocked exit to the north. You don't like doors? Why not try going south, that entranceway is unblocked. > -= Dish-Pit =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "examine cabinet",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "open cabinet"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Dish-Pit =- You've entered a dish-pit. You decide to just list off a complete list of everything you see in the room, because hey, why not? You bend down to tie your shoe. When you stand up, you notice a cabinet. You don't like doors? Why not try going east, that entranceway is unblocked. There is an unblocked exit to the north. You don't like doors? Why not try going south, that entranceway is unblocked. > -= Dish-Pit =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "examine cabinet",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "open cabinet"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Salon =- Ah, the salon. This is some kind of salon, really great usual vibes in this place, a wonderful usual atmosphere. And now, well, you're in it. You make out a safe. You shudder, but continue examining the room. You don't like doors? Why not try going east, that entranceway is unguarded. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unblocked exit to the south. You need an unguarded exit? You should try going west. > -= Salon =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "examine safe",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Salon =- Ah, the salon. This is some kind of salon, really great usual vibes in this place, a wonderful usual atmosphere. And now, well, you're in it. You make out a safe. You shudder, but continue examining the room. You don't like doors? Why not try going east, that entranceway is unguarded. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unblocked exit to the south. You need an unguarded exit? You should try going west. > -= Salon =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "examine safe",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Kitchen =- You find yourself in a kitchen. An usual kind of place. You decide to start listing off everything you see in the room, as if you were in a text adventure. You can make out a freezer. Classic TextWorld. Hey, want to see a chair? Look over there, a chair. The chair is normal. But oh no! there's nothing on this piece of junk. You don't like doors? Why not try going east, that entranceway is unblocked. There is an unguarded exit to the south. You need an unguarded exit? You should try going west. > -= Kitchen =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "examine chair",
+                "examine freezer",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Kitchen =- You find yourself in a kitchen. An usual kind of place. You decide to start listing off everything you see in the room, as if you were in a text adventure. You can make out a freezer. Classic TextWorld. Hey, want to see a chair? Look over there, a chair. The chair is normal. But oh no! there's nothing on this piece of junk. You don't like doors? Why not try going east, that entranceway is unblocked. There is an unguarded exit to the south. You need an unguarded exit? You should try going west. > -= Kitchen =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "examine chair",
+                "examine freezer",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Study =- You arrive in a study. An usual kind of place. You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked. > -= Study =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Study =- You arrive in a study. An usual kind of place. You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked. > -= Study =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Parlor =- You have moved into a parlor. Not the parlor you'd expect. No, this is a parlor. There is an open hatch leading south. You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the north. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unguarded. > -= Parlor =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "close hatch",
+                "examine hatch",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Parlor =- You have moved into a parlor. Not the parlor you'd expect. No, this is a parlor. There is an open hatch leading south. You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the north. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unguarded. > -= Parlor =-0/10",
+        "infos": {
+            "admissible_commands": [
+                "close hatch",
+                "examine hatch",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Salon =- Ah, the salon. This is some kind of salon, really great usual vibes in this place, a wonderful usual atmosphere. And now, well, you're in it. You make out a safe. You shudder, but continue examining the room. You don't like doors? Why not try going east, that entranceway is unguarded. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unblocked exit to the south. You need an unguarded exit? You should try going west. > -= Salon =-0/11",
+        "next_infos": {
+            "admissible_commands": [
+                "examine safe",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Salon =- Ah, the salon. This is some kind of salon, really great usual vibes in this place, a wonderful usual atmosphere. And now, well, you're in it. You make out a safe. You shudder, but continue examining the room. You don't like doors? Why not try going east, that entranceway is unguarded. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unblocked exit to the south. You need an unguarded exit? You should try going west. > -= Salon =-0/11",
+        "infos": {
+            "admissible_commands": [
+                "examine safe",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Parlor =- You have moved into a parlor. Not the parlor you'd expect. No, this is a parlor. There is an open hatch leading south. You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the north. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unguarded. > -= Parlor =-0/12",
+        "next_infos": {
+            "admissible_commands": [
+                "close hatch",
+                "examine hatch",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Parlor =- You have moved into a parlor. Not the parlor you'd expect. No, this is a parlor. There is an open hatch leading south. You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the north. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unguarded. > -= Parlor =-0/12",
+        "infos": {
+            "admissible_commands": [
+                "close hatch",
+                "examine hatch",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Study =- You arrive in a study. An usual kind of place. You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked. > -= Study =-0/13",
+        "next_infos": {
+            "admissible_commands": [
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "inventory"
+    },
+    {
+        "state": "-= Study =- You arrive in a study. An usual kind of place. You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked. > -= Study =-0/13",
+        "infos": {
+            "admissible_commands": [
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying nothing. > -= Study =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "You are carrying nothing. > -= Study =-0/14",
+        "infos": {
+            "admissible_commands": [
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Study =- You arrive in a study. An usual kind of place. You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked. > -= Study =-0/15",
+        "next_infos": {
+            "admissible_commands": [
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "-= Study =- You arrive in a study. An usual kind of place. You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked. > -= Study =-0/15",
+        "infos": {
+            "admissible_commands": [
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Study =- You arrive in a study. An usual kind of place. You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked. > -= Study =-0/16",
+        "next_infos": {
+            "admissible_commands": [
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

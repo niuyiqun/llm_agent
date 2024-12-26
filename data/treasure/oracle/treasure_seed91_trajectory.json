@@ -1,0 +1,629 @@
+[
+    {
+        "state": "I hope you're ready to go into rooms and interact with objects, because you've just entered TextWorld! First of all, you could, like, check that the cake scented passageway is unlocked with the cake scented latchkey. Then, ensure that the cake scented passageway in the kitchen is open. After that, go to the east. And then, open the passageway. After that, try to go east. After that, head south. And then, make it so that the hatch is ajar. After that, attempt to go west. Okay, and then, assure that the American style door is unlocked. After that, look and see that the American style door is ajar. Then, head south. And then, make an attempt to venture east. Following that, go south. And then, pick up the cookie from the floor of the dish-pit. Once that's all handled, you can stop! -= Kitchen =- Look at you, bigshot, walking into a kitchen like it isn't some huge deal. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. Were you looking for a freezer? Because look over there, it's a freezer. The freezer is empty, what a horrible day! Were you looking for a fridge? Because look over there, it's a fridge. You smell a hideous smell, and follow it to a pan. However, the pan, like an empty pan, has nothing on it. There is a closed cake scented passageway leading east. There is an exit to the south. Don't worry, it is unguarded. You need an unblocked exit? You should try going west. > -= Kitchen =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "close freezer",
+                "drop American style keycard",
+                "drop cake scented latchkey",
+                "examine American style keycard",
+                "examine cake scented latchkey",
+                "examine cake scented passageway",
+                "examine freezer",
+                "examine fridge",
+                "examine pan",
+                "go south",
+                "go west",
+                "insert American style keycard into freezer",
+                "insert cake scented latchkey into freezer",
+                "inventory",
+                "look",
+                "put American style keycard on pan",
+                "put cake scented latchkey on pan",
+                "unlock cake scented passageway with cake scented latchkey"
+            ]
+        },
+        "action": "unlock cake scented passageway with cake scented latchkey",
+        "reward": 0,
+        "next_state": "You unlock cake scented passageway. > -= Kitchen =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "close freezer",
+                "drop American style keycard",
+                "drop cake scented latchkey",
+                "examine American style keycard",
+                "examine cake scented latchkey",
+                "examine cake scented passageway",
+                "examine freezer",
+                "examine fridge",
+                "examine pan",
+                "go south",
+                "go west",
+                "insert American style keycard into freezer",
+                "insert cake scented latchkey into freezer",
+                "inventory",
+                "lock cake scented passageway with cake scented latchkey",
+                "look",
+                "open cake scented passageway",
+                "put American style keycard on pan",
+                "put cake scented latchkey on pan"
+            ]
+        },
+        "done": false,
+        "next_action": "open cake scented passageway"
+    },
+    {
+        "state": "You unlock cake scented passageway. > -= Kitchen =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "close freezer",
+                "drop American style keycard",
+                "drop cake scented latchkey",
+                "examine American style keycard",
+                "examine cake scented latchkey",
+                "examine cake scented passageway",
+                "examine freezer",
+                "examine fridge",
+                "examine pan",
+                "go south",
+                "go west",
+                "insert American style keycard into freezer",
+                "insert cake scented latchkey into freezer",
+                "inventory",
+                "lock cake scented passageway with cake scented latchkey",
+                "look",
+                "open cake scented passageway",
+                "put American style keycard on pan",
+                "put cake scented latchkey on pan"
+            ]
+        },
+        "action": "open cake scented passageway",
+        "reward": 0,
+        "next_state": "You open cake scented passageway. > -= Kitchen =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "close cake scented passageway",
+                "close freezer",
+                "drop American style keycard",
+                "drop cake scented latchkey",
+                "examine American style keycard",
+                "examine cake scented latchkey",
+                "examine cake scented passageway",
+                "examine freezer",
+                "examine fridge",
+                "examine pan",
+                "go east",
+                "go south",
+                "go west",
+                "insert American style keycard into freezer",
+                "insert cake scented latchkey into freezer",
+                "inventory",
+                "look",
+                "put American style keycard on pan",
+                "put cake scented latchkey on pan"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "You open cake scented passageway. > -= Kitchen =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "close cake scented passageway",
+                "close freezer",
+                "drop American style keycard",
+                "drop cake scented latchkey",
+                "examine American style keycard",
+                "examine cake scented latchkey",
+                "examine cake scented passageway",
+                "examine freezer",
+                "examine fridge",
+                "examine pan",
+                "go east",
+                "go south",
+                "go west",
+                "insert American style keycard into freezer",
+                "insert cake scented latchkey into freezer",
+                "inventory",
+                "look",
+                "put American style keycard on pan",
+                "put cake scented latchkey on pan"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Attic =- You find yourself in an attic. A normal kind of place. You can barely contain your excitement. You make out a workbench. Why don't you take a picture of it, it'll last longer! The workbench is standard. Looks like someone's already been here and taken everything off it, though. Silly workbench, silly, empty, good for nothing workbench. There is a closed passageway leading east. There is an open cake scented passageway leading west. There is a gummy bear on the floor. > -= Attic =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "close cake scented passageway",
+                "drop American style keycard",
+                "drop cake scented latchkey",
+                "examine American style keycard",
+                "examine cake scented latchkey",
+                "examine cake scented passageway",
+                "examine gummy bear",
+                "examine passageway",
+                "examine workbench",
+                "go west",
+                "inventory",
+                "look",
+                "open passageway",
+                "put American style keycard on workbench",
+                "put cake scented latchkey on workbench",
+                "take gummy bear"
+            ]
+        },
+        "done": false,
+        "next_action": "open passageway"
+    },
+    {
+        "state": "-= Attic =- You find yourself in an attic. A normal kind of place. You can barely contain your excitement. You make out a workbench. Why don't you take a picture of it, it'll last longer! The workbench is standard. Looks like someone's already been here and taken everything off it, though. Silly workbench, silly, empty, good for nothing workbench. There is a closed passageway leading east. There is an open cake scented passageway leading west. There is a gummy bear on the floor. > -= Attic =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "close cake scented passageway",
+                "drop American style keycard",
+                "drop cake scented latchkey",
+                "examine American style keycard",
+                "examine cake scented latchkey",
+                "examine cake scented passageway",
+                "examine gummy bear",
+                "examine passageway",
+                "examine workbench",
+                "go west",
+                "inventory",
+                "look",
+                "open passageway",
+                "put American style keycard on workbench",
+                "put cake scented latchkey on workbench",
+                "take gummy bear"
+            ]
+        },
+        "action": "open passageway",
+        "reward": 0,
+        "next_state": "(passageway) You open passageway. > -= Attic =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "close cake scented passageway",
+                "close passageway",
+                "drop American style keycard",
+                "drop cake scented latchkey",
+                "examine American style keycard",
+                "examine cake scented latchkey",
+                "examine cake scented passageway",
+                "examine gummy bear",
+                "examine passageway",
+                "examine workbench",
+                "go east",
+                "go west",
+                "inventory",
+                "look",
+                "put American style keycard on workbench",
+                "put cake scented latchkey on workbench",
+                "take gummy bear"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "(passageway) You open passageway. > -= Attic =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "close cake scented passageway",
+                "close passageway",
+                "drop American style keycard",
+                "drop cake scented latchkey",
+                "examine American style keycard",
+                "examine cake scented latchkey",
+                "examine cake scented passageway",
+                "examine gummy bear",
+                "examine passageway",
+                "examine workbench",
+                "go east",
+                "go west",
+                "inventory",
+                "look",
+                "put American style keycard on workbench",
+                "put cake scented latchkey on workbench",
+                "take gummy bear"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Study =- Well, here we are in a study. You see a locked locker close by. You make out a display. You can't wait to tell the folks at home about this! There is an open passageway leading west. There is an open door leading south. > -= Study =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "close door",
+                "close passageway",
+                "drop American style keycard",
+                "drop cake scented latchkey",
+                "examine American style keycard",
+                "examine cake scented latchkey",
+                "examine display",
+                "examine door",
+                "examine locker",
+                "examine passageway",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Study =- Well, here we are in a study. You see a locked locker close by. You make out a display. You can't wait to tell the folks at home about this! There is an open passageway leading west. There is an open door leading south. > -= Study =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "close door",
+                "close passageway",
+                "drop American style keycard",
+                "drop cake scented latchkey",
+                "examine American style keycard",
+                "examine cake scented latchkey",
+                "examine display",
+                "examine door",
+                "examine locker",
+                "examine passageway",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Restroom =- You are in a restroom. A normal kind of place. You can see a closed drawer in the corner. You can see a cabinet. There is a closed hatch leading west. There is an open door leading north. > -= Restroom =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "close door",
+                "drop American style keycard",
+                "drop cake scented latchkey",
+                "examine American style keycard",
+                "examine cabinet",
+                "examine cake scented latchkey",
+                "examine door",
+                "examine drawer",
+                "examine hatch",
+                "go north",
+                "inventory",
+                "look",
+                "open drawer",
+                "open hatch"
+            ]
+        },
+        "done": false,
+        "next_action": "open hatch"
+    },
+    {
+        "state": "-= Restroom =- You are in a restroom. A normal kind of place. You can see a closed drawer in the corner. You can see a cabinet. There is a closed hatch leading west. There is an open door leading north. > -= Restroom =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "close door",
+                "drop American style keycard",
+                "drop cake scented latchkey",
+                "examine American style keycard",
+                "examine cabinet",
+                "examine cake scented latchkey",
+                "examine door",
+                "examine drawer",
+                "examine hatch",
+                "go north",
+                "inventory",
+                "look",
+                "open drawer",
+                "open hatch"
+            ]
+        },
+        "action": "open hatch",
+        "reward": 0,
+        "next_state": "You open hatch. > -= Restroom =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "close door",
+                "close hatch",
+                "drop American style keycard",
+                "drop cake scented latchkey",
+                "examine American style keycard",
+                "examine cabinet",
+                "examine cake scented latchkey",
+                "examine door",
+                "examine drawer",
+                "examine hatch",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "open drawer"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "You open hatch. > -= Restroom =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "close door",
+                "close hatch",
+                "drop American style keycard",
+                "drop cake scented latchkey",
+                "examine American style keycard",
+                "examine cabinet",
+                "examine cake scented latchkey",
+                "examine door",
+                "examine drawer",
+                "examine hatch",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "open drawer"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Office =- You arrive in an office. A typical one. There is an open hatch leading east. There is a closed American style door leading south. > -= Office =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "close hatch",
+                "drop American style keycard",
+                "drop cake scented latchkey",
+                "examine American style door",
+                "examine American style keycard",
+                "examine cake scented latchkey",
+                "examine hatch",
+                "go east",
+                "inventory",
+                "look",
+                "unlock American style door with American style keycard"
+            ]
+        },
+        "done": false,
+        "next_action": "unlock American style door with American style keycard"
+    },
+    {
+        "state": "-= Office =- You arrive in an office. A typical one. There is an open hatch leading east. There is a closed American style door leading south. > -= Office =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "close hatch",
+                "drop American style keycard",
+                "drop cake scented latchkey",
+                "examine American style door",
+                "examine American style keycard",
+                "examine cake scented latchkey",
+                "examine hatch",
+                "go east",
+                "inventory",
+                "look",
+                "unlock American style door with American style keycard"
+            ]
+        },
+        "action": "unlock American style door with American style keycard",
+        "reward": 0,
+        "next_state": "You unlock American style door. > -= Office =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "close hatch",
+                "drop American style keycard",
+                "drop cake scented latchkey",
+                "examine American style door",
+                "examine American style keycard",
+                "examine cake scented latchkey",
+                "examine hatch",
+                "go east",
+                "inventory",
+                "lock American style door with American style keycard",
+                "look",
+                "open American style door"
+            ]
+        },
+        "done": false,
+        "next_action": "open American style door"
+    },
+    {
+        "state": "You unlock American style door. > -= Office =-0/10",
+        "infos": {
+            "admissible_commands": [
+                "close hatch",
+                "drop American style keycard",
+                "drop cake scented latchkey",
+                "examine American style door",
+                "examine American style keycard",
+                "examine cake scented latchkey",
+                "examine hatch",
+                "go east",
+                "inventory",
+                "lock American style door with American style keycard",
+                "look",
+                "open American style door"
+            ]
+        },
+        "action": "open American style door",
+        "reward": 0,
+        "next_state": "You open American style door. > -= Office =-0/11",
+        "next_infos": {
+            "admissible_commands": [
+                "close American style door",
+                "close hatch",
+                "drop American style keycard",
+                "drop cake scented latchkey",
+                "examine American style door",
+                "examine American style keycard",
+                "examine cake scented latchkey",
+                "examine hatch",
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "You open American style door. > -= Office =-0/11",
+        "infos": {
+            "admissible_commands": [
+                "close American style door",
+                "close hatch",
+                "drop American style keycard",
+                "drop cake scented latchkey",
+                "examine American style door",
+                "examine American style keycard",
+                "examine cake scented latchkey",
+                "examine hatch",
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Workshop =- I am sorry to announce that you are now in the workshop. You can see a stand. Looks like someone's already been here and taken everything off it, though. Hopefully, this discovery doesn't ruin your TextWorld experience! There is an open American style door leading north. You don't like doors? Why not try going east, that entranceway is unblocked. There is an unblocked exit to the south. You need an unguarded exit? You should try going west. > -= Workshop =-0/12",
+        "next_infos": {
+            "admissible_commands": [
+                "close American style door",
+                "drop American style keycard",
+                "drop cake scented latchkey",
+                "examine American style door",
+                "examine American style keycard",
+                "examine cake scented latchkey",
+                "examine stand",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put American style keycard on stand",
+                "put cake scented latchkey on stand"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Workshop =- I am sorry to announce that you are now in the workshop. You can see a stand. Looks like someone's already been here and taken everything off it, though. Hopefully, this discovery doesn't ruin your TextWorld experience! There is an open American style door leading north. You don't like doors? Why not try going east, that entranceway is unblocked. There is an unblocked exit to the south. You need an unguarded exit? You should try going west. > -= Workshop =-0/12",
+        "infos": {
+            "admissible_commands": [
+                "close American style door",
+                "drop American style keycard",
+                "drop cake scented latchkey",
+                "examine American style door",
+                "examine American style keycard",
+                "examine cake scented latchkey",
+                "examine stand",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put American style keycard on stand",
+                "put cake scented latchkey on stand"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Basement =- You are in a basement. An usual kind of place. There is an exit to the south. Don't worry, it is unguarded. There is an unguarded exit to the west. > -= Basement =-0/13",
+        "next_infos": {
+            "admissible_commands": [
+                "drop American style keycard",
+                "drop cake scented latchkey",
+                "examine American style keycard",
+                "examine cake scented latchkey",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Basement =- You are in a basement. An usual kind of place. There is an exit to the south. Don't worry, it is unguarded. There is an unguarded exit to the west. > -= Basement =-0/13",
+        "infos": {
+            "admissible_commands": [
+                "drop American style keycard",
+                "drop cake scented latchkey",
+                "examine American style keycard",
+                "examine cake scented latchkey",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Dish-Pit =- Well, here we are in a dish-pit. You can make out a board. But the thing hasn't got anything on it. You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded. There is a cookie on the floor. > -= Dish-Pit =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "drop American style keycard",
+                "drop cake scented latchkey",
+                "examine American style keycard",
+                "examine board",
+                "examine cake scented latchkey",
+                "examine cookie",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "put American style keycard on board",
+                "put cake scented latchkey on board",
+                "take cookie"
+            ]
+        },
+        "done": false,
+        "next_action": "take cookie"
+    },
+    {
+        "state": "-= Dish-Pit =- Well, here we are in a dish-pit. You can make out a board. But the thing hasn't got anything on it. You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded. There is a cookie on the floor. > -= Dish-Pit =-0/14",
+        "infos": {
+            "admissible_commands": [
+                "drop American style keycard",
+                "drop cake scented latchkey",
+                "examine American style keycard",
+                "examine board",
+                "examine cake scented latchkey",
+                "examine cookie",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "put American style keycard on board",
+                "put cake scented latchkey on board",
+                "take cookie"
+            ]
+        },
+        "action": "take cookie",
+        "reward": 1,
+        "next_state": "You pick up the cookie from the ground. Your score has just gone up by one point. *** The End *** You scored 1 out of a possible 1, in 15 turns. Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command? > -= Dish-Pit =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "drop American style keycard",
+                "drop cake scented latchkey",
+                "drop cookie",
+                "eat cookie",
+                "examine American style keycard",
+                "examine board",
+                "examine cake scented latchkey",
+                "examine cookie",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "put American style keycard on board",
+                "put cake scented latchkey on board",
+                "put cookie on board"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

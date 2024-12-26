@@ -1,0 +1,530 @@
+[
+    {
+        "state": "Get ready to pick stuff up and put it in places, because you've just entered TextWorld! Here is your task for today. First of all, you could, like, attempt to head north. And then, move north. And then, attempt to go to the west. After that, take the key from the bowl. If you can get your hands on the key, head east. If you can accomplish that, unlock the portal within the pantry. Then, open the portal in the pantry. Then, take a trip north. With that over with, head east. That done, go to the east. Then, try to travel south. And then, go to the south. And then, venture south. That done, recover the latchkey from the floor of the playroom. That's it! -= Kitchenette =- Okay, so you're in a kitchenette, cool, but is it standard? You better believe it is. There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unblocked. > -= Kitchenette =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "go east",
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Launderette =- You are in a launderette. An usual one. You can see a dresser. You rest your hand against a wall, but you miss the wall and fall onto a case. The case is empty, what a horrible day! You can see a rack. The rack is typical. The rack appears to be empty. Hopefully this doesn't make you too upset. There is an exit to the east. Don't worry, it is unguarded. There is an exit to the north. Don't worry, it is unguarded. You need an unguarded exit? You should try going south. > -= Launderette =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "close case",
+                "examine case",
+                "examine dresser",
+                "examine rack",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "open dresser"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Launderette =- You are in a launderette. An usual one. You can see a dresser. You rest your hand against a wall, but you miss the wall and fall onto a case. The case is empty, what a horrible day! You can see a rack. The rack is typical. The rack appears to be empty. Hopefully this doesn't make you too upset. There is an exit to the east. Don't worry, it is unguarded. There is an exit to the north. Don't worry, it is unguarded. You need an unguarded exit? You should try going south. > -= Launderette =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "close case",
+                "examine case",
+                "examine dresser",
+                "examine rack",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "open dresser"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Pantry =- Ah, the pantry. This is some kind of pantry, really great normal vibes in this place, a wonderful normal atmosphere. And now, well, you're in it. You see a counter. The counter is ordinary. Unfortunately, there isn't a thing on it. Sometimes, just sometimes, TextWorld can just be the worst. You see a table. But oh no! there's nothing on this piece of junk. You make out a workbench. The workbench appears to be empty. You smell a fine smell, and follow it to a shelf. The shelf is normal. On the shelf you can make out a passkey. There is a closed portal leading north. You need an unblocked exit? You should try going south. There is an unguarded exit to the west. > -= Pantry =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "examine counter",
+                "examine passkey",
+                "examine portal",
+                "examine shelf",
+                "examine table",
+                "examine workbench",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take passkey from shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Pantry =- Ah, the pantry. This is some kind of pantry, really great normal vibes in this place, a wonderful normal atmosphere. And now, well, you're in it. You see a counter. The counter is ordinary. Unfortunately, there isn't a thing on it. Sometimes, just sometimes, TextWorld can just be the worst. You see a table. But oh no! there's nothing on this piece of junk. You make out a workbench. The workbench appears to be empty. You smell a fine smell, and follow it to a shelf. The shelf is normal. On the shelf you can make out a passkey. There is a closed portal leading north. You need an unblocked exit? You should try going south. There is an unguarded exit to the west. > -= Pantry =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "examine counter",
+                "examine passkey",
+                "examine portal",
+                "examine shelf",
+                "examine table",
+                "examine workbench",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take passkey from shelf"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Cookhouse =- You've entered a cookhouse. You begin looking for stuff. You see a gleam over in a corner, where you can see a bowl. The bowl is normal. On the bowl you can see a key. If you haven't noticed it already, there seems to be something there by the wall, it's a platter. But the thing is empty. Oh! Why couldn't there just be stuff on it? You need an unblocked exit? You should try going east. > -= Cookhouse =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "examine bowl",
+                "examine key",
+                "examine platter",
+                "go east",
+                "inventory",
+                "look",
+                "take key from bowl"
+            ]
+        },
+        "done": false,
+        "next_action": "take key from bowl"
+    },
+    {
+        "state": "-= Cookhouse =- You've entered a cookhouse. You begin looking for stuff. You see a gleam over in a corner, where you can see a bowl. The bowl is normal. On the bowl you can see a key. If you haven't noticed it already, there seems to be something there by the wall, it's a platter. But the thing is empty. Oh! Why couldn't there just be stuff on it? You need an unblocked exit? You should try going east. > -= Cookhouse =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "examine bowl",
+                "examine key",
+                "examine platter",
+                "go east",
+                "inventory",
+                "look",
+                "take key from bowl"
+            ]
+        },
+        "action": "take key from bowl",
+        "reward": 0,
+        "next_state": "You take the key from the bowl. > -= Cookhouse =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "drop key",
+                "examine bowl",
+                "examine key",
+                "examine platter",
+                "go east",
+                "inventory",
+                "look",
+                "put key on bowl",
+                "put key on platter"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "You take the key from the bowl. > -= Cookhouse =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "drop key",
+                "examine bowl",
+                "examine key",
+                "examine platter",
+                "go east",
+                "inventory",
+                "look",
+                "put key on bowl",
+                "put key on platter"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Pantry =- Ah, the pantry. This is some kind of pantry, really great normal vibes in this place, a wonderful normal atmosphere. And now, well, you're in it. You see a counter. The counter is ordinary. Unfortunately, there isn't a thing on it. Sometimes, just sometimes, TextWorld can just be the worst. You see a table. But oh no! there's nothing on this piece of junk. You make out a workbench. The workbench appears to be empty. You smell a fine smell, and follow it to a shelf. The shelf is normal. On the shelf you can make out a passkey. There is a closed portal leading north. You need an unblocked exit? You should try going south. There is an unguarded exit to the west. > -= Pantry =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "drop key",
+                "examine counter",
+                "examine key",
+                "examine passkey",
+                "examine portal",
+                "examine shelf",
+                "examine table",
+                "examine workbench",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put key on counter",
+                "put key on shelf",
+                "put key on table",
+                "put key on workbench",
+                "take passkey from shelf",
+                "unlock portal with key"
+            ]
+        },
+        "done": false,
+        "next_action": "unlock portal with key"
+    },
+    {
+        "state": "-= Pantry =- Ah, the pantry. This is some kind of pantry, really great normal vibes in this place, a wonderful normal atmosphere. And now, well, you're in it. You see a counter. The counter is ordinary. Unfortunately, there isn't a thing on it. Sometimes, just sometimes, TextWorld can just be the worst. You see a table. But oh no! there's nothing on this piece of junk. You make out a workbench. The workbench appears to be empty. You smell a fine smell, and follow it to a shelf. The shelf is normal. On the shelf you can make out a passkey. There is a closed portal leading north. You need an unblocked exit? You should try going south. There is an unguarded exit to the west. > -= Pantry =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "drop key",
+                "examine counter",
+                "examine key",
+                "examine passkey",
+                "examine portal",
+                "examine shelf",
+                "examine table",
+                "examine workbench",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put key on counter",
+                "put key on shelf",
+                "put key on table",
+                "put key on workbench",
+                "take passkey from shelf",
+                "unlock portal with key"
+            ]
+        },
+        "action": "unlock portal with key",
+        "reward": 0,
+        "next_state": "You unlock portal. > -= Pantry =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "drop key",
+                "examine counter",
+                "examine key",
+                "examine passkey",
+                "examine portal",
+                "examine shelf",
+                "examine table",
+                "examine workbench",
+                "go south",
+                "go west",
+                "inventory",
+                "lock portal with key",
+                "look",
+                "open portal",
+                "put key on counter",
+                "put key on shelf",
+                "put key on table",
+                "put key on workbench",
+                "take passkey from shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "open portal"
+    },
+    {
+        "state": "You unlock portal. > -= Pantry =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "drop key",
+                "examine counter",
+                "examine key",
+                "examine passkey",
+                "examine portal",
+                "examine shelf",
+                "examine table",
+                "examine workbench",
+                "go south",
+                "go west",
+                "inventory",
+                "lock portal with key",
+                "look",
+                "open portal",
+                "put key on counter",
+                "put key on shelf",
+                "put key on table",
+                "put key on workbench",
+                "take passkey from shelf"
+            ]
+        },
+        "action": "open portal",
+        "reward": 0,
+        "next_state": "You open portal. > -= Pantry =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "close portal",
+                "drop key",
+                "examine counter",
+                "examine key",
+                "examine passkey",
+                "examine portal",
+                "examine shelf",
+                "examine table",
+                "examine workbench",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put key on counter",
+                "put key on shelf",
+                "put key on table",
+                "put key on workbench",
+                "take passkey from shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "You open portal. > -= Pantry =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "close portal",
+                "drop key",
+                "examine counter",
+                "examine key",
+                "examine passkey",
+                "examine portal",
+                "examine shelf",
+                "examine table",
+                "examine workbench",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put key on counter",
+                "put key on shelf",
+                "put key on table",
+                "put key on workbench",
+                "take passkey from shelf"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Cookery =- You have come into the most standard of all possible cookerys. There is an open portal leading south. There is an unblocked exit to the east. There is an unblocked exit to the north. There is an exit to the west. Don't worry, it is unguarded. > -= Cookery =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "close portal",
+                "drop key",
+                "examine key",
+                "examine portal",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Cookery =- You have come into the most standard of all possible cookerys. There is an open portal leading south. There is an unblocked exit to the east. There is an unblocked exit to the north. There is an exit to the west. Don't worry, it is unguarded. > -= Cookery =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "close portal",
+                "drop key",
+                "examine key",
+                "examine portal",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Studio =- You're now in the studio. You can see a bookshelf. But there isn't a thing on it. It would have been so cool if there was stuff on the bookshelf. You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the north. Don't worry, it is unblocked. There is an exit to the west. Don't worry, it is unguarded. > -= Studio =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "drop key",
+                "examine bookshelf",
+                "examine key",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "put key on bookshelf"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Studio =- You're now in the studio. You can see a bookshelf. But there isn't a thing on it. It would have been so cool if there was stuff on the bookshelf. You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the north. Don't worry, it is unblocked. There is an exit to the west. Don't worry, it is unguarded. > -= Studio =-0/10",
+        "infos": {
+            "admissible_commands": [
+                "drop key",
+                "examine bookshelf",
+                "examine key",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "put key on bookshelf"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Closet =- Well, here we are in a closet. You need an unblocked exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unblocked. There is an exit to the west. Don't worry, it is unblocked. > -= Closet =-0/11",
+        "next_infos": {
+            "admissible_commands": [
+                "drop key",
+                "examine key",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Closet =- Well, here we are in a closet. You need an unblocked exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unblocked. There is an exit to the west. Don't worry, it is unblocked. > -= Closet =-0/11",
+        "infos": {
+            "admissible_commands": [
+                "drop key",
+                "examine key",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Attic =- You find yourself in an attic. A normal one. There is an exit to the north. Don't worry, it is unguarded. There is an unblocked exit to the south. You don't like doors? Why not try going west, that entranceway is unguarded. > -= Attic =-0/12",
+        "next_infos": {
+            "admissible_commands": [
+                "drop key",
+                "examine key",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Attic =- You find yourself in an attic. A normal one. There is an exit to the north. Don't worry, it is unguarded. There is an unblocked exit to the south. You don't like doors? Why not try going west, that entranceway is unguarded. > -= Attic =-0/12",
+        "infos": {
+            "admissible_commands": [
+                "drop key",
+                "examine key",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Basement =- You've just sauntered into a basement. You make out a trunk. The trunk is empty! What a waste of a day! Were you looking for a table? Because look over there, it's a rusty table. But the thing is empty. Oh! Why couldn't there just be stuff on it? You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unblocked. > -= Basement =-0/13",
+        "next_infos": {
+            "admissible_commands": [
+                "close trunk",
+                "drop key",
+                "examine key",
+                "examine rusty table",
+                "examine trunk",
+                "go north",
+                "go south",
+                "go west",
+                "insert key into trunk",
+                "inventory",
+                "look",
+                "put key on rusty table"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Basement =- You've just sauntered into a basement. You make out a trunk. The trunk is empty! What a waste of a day! Were you looking for a table? Because look over there, it's a rusty table. But the thing is empty. Oh! Why couldn't there just be stuff on it? You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unblocked. > -= Basement =-0/13",
+        "infos": {
+            "admissible_commands": [
+                "close trunk",
+                "drop key",
+                "examine key",
+                "examine rusty table",
+                "examine trunk",
+                "go north",
+                "go south",
+                "go west",
+                "insert key into trunk",
+                "inventory",
+                "look",
+                "put key on rusty table"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Playroom =- You find yourself in a playroom. An usual kind of place. The room is well lit. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked. There is a latchkey on the floor. > -= Playroom =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "drop key",
+                "examine key",
+                "examine latchkey",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "take latchkey"
+            ]
+        },
+        "done": false,
+        "next_action": "take latchkey"
+    },
+    {
+        "state": "-= Playroom =- You find yourself in a playroom. An usual kind of place. The room is well lit. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked. There is a latchkey on the floor. > -= Playroom =-0/14",
+        "infos": {
+            "admissible_commands": [
+                "drop key",
+                "examine key",
+                "examine latchkey",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "take latchkey"
+            ]
+        },
+        "action": "take latchkey",
+        "reward": 1,
+        "next_state": "You pick up the latchkey from the ground. Your score has just gone up by one point. *** The End *** You scored 1 out of a possible 1, in 15 turns. Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command? > -= Playroom =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "drop key",
+                "drop latchkey",
+                "examine key",
+                "examine latchkey",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

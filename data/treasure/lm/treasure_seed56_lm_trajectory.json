@@ -1,0 +1,295 @@
+[
+    {
+        "state": "It's time to explore the amazing world of TextWorld! First, it would be good if you could move north. Then, go to the north. After that, take a trip north. After that, make an attempt to head east. That done, travel south. And then, look and see that the hatch inside the office is open. And then, make an effort to head south. With that accomplished, open the wooden gate inside the chamber. Then, go to the east. After that, ensure that the pine portal inside the study is open. And then, head north. Okay, and then, open the stone hatch. Then, make an attempt to go north. After that, take the tablet from the recliner. That's it! -= Cubicle =- You've entered a cubicle. You can make out a toolbox. The toolbox is empty! What a waste of a day! You rest your hand against a wall, but you miss the wall and fall onto a mantelpiece. The mantelpiece is normal. Unfortunately, there isn't a thing on it. There is an exit to the north. Don't worry, it is unblocked. There is an unguarded exit to the west. > -= Cubicle =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "close toolbox",
+                "examine mantelpiece",
+                "examine toolbox",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Kitchenette =- You arrive in a kitchenette. A normal one. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked. > -= Kitchenette =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Kitchenette =- You arrive in a kitchenette. A normal one. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked. > -= Kitchenette =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Basement =- You are in a basement. There is an open portal leading north. There is an open pine gateway leading west. You don't like doors? Why not try going south, that entranceway is unblocked. There is a loaf of bread on the floor. > -= Basement =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "close pine gateway",
+                "close portal",
+                "examine loaf of bread",
+                "examine pine gateway",
+                "examine portal",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take loaf of bread"
+            ]
+        },
+        "done": false,
+        "next_action": "examine pine gateway"
+    },
+    {
+        "state": "-= Basement =- You are in a basement. There is an open portal leading north. There is an open pine gateway leading west. You don't like doors? Why not try going south, that entranceway is unblocked. There is a loaf of bread on the floor. > -= Basement =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "close pine gateway",
+                "close portal",
+                "examine loaf of bread",
+                "examine pine gateway",
+                "examine portal",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take loaf of bread"
+            ]
+        },
+        "action": "examine pine gateway",
+        "reward": 0,
+        "next_state": "The pine gateway looks commanding. You can see inside it. > -= Basement =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "close pine gateway",
+                "close portal",
+                "examine loaf of bread",
+                "examine pine gateway",
+                "examine portal",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take loaf of bread"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "The pine gateway looks commanding. You can see inside it. > -= Basement =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "close pine gateway",
+                "close portal",
+                "examine loaf of bread",
+                "examine pine gateway",
+                "examine portal",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take loaf of bread"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Canteen =- You are in a canteen. A standard one. You decide to just list off a complete list of everything you see in the room, because hey, why not? You bend down to tie your shoe. When you stand up, you notice a pan. The pan is standard. But oh no! there's nothing on this piece of junk. There is an open pine gateway leading east. There is an open gateway leading north. There is an unblocked exit to the south. There is an exit to the west. Don't worry, it is unblocked. > -= Canteen =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "close gateway",
+                "close pine gateway",
+                "examine gateway",
+                "examine pan",
+                "examine pine gateway",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Canteen =- You are in a canteen. A standard one. You decide to just list off a complete list of everything you see in the room, because hey, why not? You bend down to tie your shoe. When you stand up, you notice a pan. The pan is standard. But oh no! there's nothing on this piece of junk. There is an open pine gateway leading east. There is an open gateway leading north. There is an unblocked exit to the south. There is an exit to the west. Don't worry, it is unblocked. > -= Canteen =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "close gateway",
+                "close pine gateway",
+                "examine gateway",
+                "examine pan",
+                "examine pine gateway",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Attic =- You find yourself in an attic. A standard kind of place. You start to take note of what's in the room. You can see an opened case close by. The case is empty, what a horrible day! You can make out a locked trunk in the room. There is an open gateway leading south. There is an open gate leading west. > -= Attic =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "close case",
+                "close gate",
+                "close gateway",
+                "examine case",
+                "examine gate",
+                "examine gateway",
+                "examine trunk",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "examine case"
+    },
+    {
+        "state": "-= Attic =- You find yourself in an attic. A standard kind of place. You start to take note of what's in the room. You can see an opened case close by. The case is empty, what a horrible day! You can make out a locked trunk in the room. There is an open gateway leading south. There is an open gate leading west. > -= Attic =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "close case",
+                "close gate",
+                "close gateway",
+                "examine case",
+                "examine gate",
+                "examine gateway",
+                "examine trunk",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "examine case",
+        "reward": 0,
+        "next_state": "The case looks strong, and impossible to crack. You can see inside it. > -= Attic =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "close case",
+                "close gate",
+                "close gateway",
+                "examine case",
+                "examine gate",
+                "examine gateway",
+                "examine trunk",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "The case looks strong, and impossible to crack. You can see inside it. > -= Attic =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "close case",
+                "close gate",
+                "close gateway",
+                "examine case",
+                "examine gate",
+                "examine gateway",
+                "examine trunk",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Sauna =- Well how about that, you are in the place we're calling the sauna. I guess you better just go and list everything you see here. There is an open gate leading east. You don't like doors? Why not try going north, that entranceway is unblocked. > -= Sauna =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "close gate",
+                "examine gate",
+                "go east",
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Sauna =- Well how about that, you are in the place we're calling the sauna. I guess you better just go and list everything you see here. There is an open gate leading east. You don't like doors? Why not try going north, that entranceway is unblocked. > -= Sauna =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "close gate",
+                "examine gate",
+                "go east",
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Cookhouse =- You are in a cookhouse. An ordinary one. There is an unguarded exit to the south. > -= Cookhouse =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Cookhouse =- You are in a cookhouse. An ordinary one. There is an unguarded exit to the south. > -= Cookhouse =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Sauna =- Well how about that, you are in the place we're calling the sauna. I guess you better just go and list everything you see here. There is an open gate leading east. You don't like doors? Why not try going north, that entranceway is unblocked. > -= Sauna =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "close gate",
+                "examine gate",
+                "go east",
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": null
+    }
+]

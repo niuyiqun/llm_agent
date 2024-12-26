@@ -1,0 +1,57 @@
+[
+    {
+        "state": "Welcome to TextWorld! Here is how to play! First of all, you could, like, make an effort to take a trip west. After that, travel south. With that accomplished, head south. Once you succeed at that, try to go south. After that, venture south. And then, head east. After that, attempt to take a trip east. Next, go to the north. Then, take a trip west. After that, attempt to go to the north. After that, go east. With that accomplished, try to go north. After that, make an effort to go east. Following that, recover the keycard from the floor of the bathroom. And if you do that, you're the winner! -= Studio =- You're now in the studio. There is an unblocked exit to the east. You don't like doors? Why not try going south, that entranceway is unguarded. There is an exit to the west. Don't worry, it is unguarded. > -= Studio =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Bedchamber =- You've just sauntered into a bedchamber. Look over there! a recliner. But the thing is empty. Oh! Why couldn't there just be stuff on it? You need an unguarded exit? You should try going east. There is an exit to the south. Don't worry, it is unguarded. > -= Bedchamber =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "examine recliner",
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Bedchamber =- You've just sauntered into a bedchamber. Look over there! a recliner. But the thing is empty. Oh! Why couldn't there just be stuff on it? You need an unguarded exit? You should try going east. There is an exit to the south. Don't worry, it is unguarded. > -= Bedchamber =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "examine recliner",
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Ugly Attic =- You are in an attic. An ugly one. You can make out a closed toolbox here. Look out! It's a- oh, never mind, it's just a trunk. There is an unblocked exit to the east. There is an exit to the north. Don't worry, it is unguarded. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Ugly Attic =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "examine toolbox",
+                "examine trunk",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "open toolbox"
+            ]
+        },
+        "done": false,
+        "next_action": null
+    }
+]

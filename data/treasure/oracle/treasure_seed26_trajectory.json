@@ -1,0 +1,533 @@
+[
+    {
+        "state": "Who's got a virtual machine and is about to play through an exciting round of TextWorld? You do! First off, if it's not too much trouble, I need you to open the dresser. And then, pick up the cake scented passkey from the dresser within the sauna. And then, go to the west. That done, make it so that the cake scented hatch is unlocked. And then, make it so that the cake scented hatch in the garage is open. And then, go to the north. And then, pick-up the passkey from the floor of the parlor. Then, make it so that the gate is unlocked. And then, ensure that the gate is open. After that, make an effort to go to the north. Then, attempt to head east. Following that, make an effort to take a trip east. That done, make an attempt to travel east. After that, recover the cloak from the floor of the closet. That's it! -= Sauna =- You find yourself in a sauna. An usual kind of place. You make out a closed dresser. You make out a bench. The bench appears to be empty. There is an open door leading west. There is an unguarded exit to the north. > -= Sauna =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "close door",
+                "examine bench",
+                "examine door",
+                "examine dresser",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "open dresser"
+            ]
+        },
+        "action": "open dresser",
+        "reward": 0,
+        "next_state": "You open the dresser, revealing a cake scented passkey. > -= Sauna =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "close door",
+                "close dresser",
+                "examine bench",
+                "examine cake scented passkey",
+                "examine door",
+                "examine dresser",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "take cake scented passkey from dresser"
+            ]
+        },
+        "done": false,
+        "next_action": "take cake scented passkey from dresser"
+    },
+    {
+        "state": "You open the dresser, revealing a cake scented passkey. > -= Sauna =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "close door",
+                "close dresser",
+                "examine bench",
+                "examine cake scented passkey",
+                "examine door",
+                "examine dresser",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "take cake scented passkey from dresser"
+            ]
+        },
+        "action": "take cake scented passkey from dresser",
+        "reward": 0,
+        "next_state": "You take the cake scented passkey from the dresser. > -= Sauna =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "close door",
+                "close dresser",
+                "drop cake scented passkey",
+                "examine bench",
+                "examine cake scented passkey",
+                "examine door",
+                "examine dresser",
+                "go north",
+                "go west",
+                "insert cake scented passkey into dresser",
+                "inventory",
+                "look",
+                "put cake scented passkey on bench"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "You take the cake scented passkey from the dresser. > -= Sauna =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "close door",
+                "close dresser",
+                "drop cake scented passkey",
+                "examine bench",
+                "examine cake scented passkey",
+                "examine door",
+                "examine dresser",
+                "go north",
+                "go west",
+                "insert cake scented passkey into dresser",
+                "inventory",
+                "look",
+                "put cake scented passkey on bench"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Garage =- You're now in the garage. There is a closed cake scented hatch leading north. There is an open door leading east. > -= Garage =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "close door",
+                "drop cake scented passkey",
+                "examine cake scented hatch",
+                "examine cake scented passkey",
+                "examine door",
+                "go east",
+                "inventory",
+                "look",
+                "unlock cake scented hatch with cake scented passkey"
+            ]
+        },
+        "done": false,
+        "next_action": "unlock cake scented hatch with cake scented passkey"
+    },
+    {
+        "state": "-= Garage =- You're now in the garage. There is a closed cake scented hatch leading north. There is an open door leading east. > -= Garage =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "close door",
+                "drop cake scented passkey",
+                "examine cake scented hatch",
+                "examine cake scented passkey",
+                "examine door",
+                "go east",
+                "inventory",
+                "look",
+                "unlock cake scented hatch with cake scented passkey"
+            ]
+        },
+        "action": "unlock cake scented hatch with cake scented passkey",
+        "reward": 0,
+        "next_state": "You unlock cake scented hatch. > -= Garage =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "close door",
+                "drop cake scented passkey",
+                "examine cake scented hatch",
+                "examine cake scented passkey",
+                "examine door",
+                "go east",
+                "inventory",
+                "lock cake scented hatch with cake scented passkey",
+                "look",
+                "open cake scented hatch"
+            ]
+        },
+        "done": false,
+        "next_action": "open cake scented hatch"
+    },
+    {
+        "state": "You unlock cake scented hatch. > -= Garage =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "close door",
+                "drop cake scented passkey",
+                "examine cake scented hatch",
+                "examine cake scented passkey",
+                "examine door",
+                "go east",
+                "inventory",
+                "lock cake scented hatch with cake scented passkey",
+                "look",
+                "open cake scented hatch"
+            ]
+        },
+        "action": "open cake scented hatch",
+        "reward": 0,
+        "next_state": "You open cake scented hatch. > -= Garage =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "close cake scented hatch",
+                "close door",
+                "drop cake scented passkey",
+                "examine cake scented hatch",
+                "examine cake scented passkey",
+                "examine door",
+                "go east",
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "You open cake scented hatch. > -= Garage =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "close cake scented hatch",
+                "close door",
+                "drop cake scented passkey",
+                "examine cake scented hatch",
+                "examine cake scented passkey",
+                "examine door",
+                "go east",
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Parlor =- You find yourself in a parlor. An usual one. You begin to take stock of what's in the room. There is a closed gate leading north. There is an open cake scented hatch leading south. There is a passkey on the floor. > -= Parlor =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "close cake scented hatch",
+                "drop cake scented passkey",
+                "examine cake scented hatch",
+                "examine cake scented passkey",
+                "examine gate",
+                "examine passkey",
+                "go south",
+                "inventory",
+                "look",
+                "take passkey"
+            ]
+        },
+        "done": false,
+        "next_action": "take passkey"
+    },
+    {
+        "state": "-= Parlor =- You find yourself in a parlor. An usual one. You begin to take stock of what's in the room. There is a closed gate leading north. There is an open cake scented hatch leading south. There is a passkey on the floor. > -= Parlor =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "close cake scented hatch",
+                "drop cake scented passkey",
+                "examine cake scented hatch",
+                "examine cake scented passkey",
+                "examine gate",
+                "examine passkey",
+                "go south",
+                "inventory",
+                "look",
+                "take passkey"
+            ]
+        },
+        "action": "take passkey",
+        "reward": 0,
+        "next_state": "(the passkey) You pick up the passkey from the ground. > -= Parlor =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "close cake scented hatch",
+                "drop cake scented passkey",
+                "drop passkey",
+                "examine cake scented hatch",
+                "examine cake scented passkey",
+                "examine gate",
+                "examine passkey",
+                "go south",
+                "inventory",
+                "look",
+                "unlock gate with passkey"
+            ]
+        },
+        "done": false,
+        "next_action": "unlock gate with passkey"
+    },
+    {
+        "state": "(the passkey) You pick up the passkey from the ground. > -= Parlor =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "close cake scented hatch",
+                "drop cake scented passkey",
+                "drop passkey",
+                "examine cake scented hatch",
+                "examine cake scented passkey",
+                "examine gate",
+                "examine passkey",
+                "go south",
+                "inventory",
+                "look",
+                "unlock gate with passkey"
+            ]
+        },
+        "action": "unlock gate with passkey",
+        "reward": 0,
+        "next_state": "(the passkey) You unlock gate. > -= Parlor =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "close cake scented hatch",
+                "drop cake scented passkey",
+                "drop passkey",
+                "examine cake scented hatch",
+                "examine cake scented passkey",
+                "examine gate",
+                "examine passkey",
+                "go south",
+                "inventory",
+                "lock gate with passkey",
+                "look",
+                "open gate"
+            ]
+        },
+        "done": false,
+        "next_action": "open gate"
+    },
+    {
+        "state": "(the passkey) You unlock gate. > -= Parlor =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "close cake scented hatch",
+                "drop cake scented passkey",
+                "drop passkey",
+                "examine cake scented hatch",
+                "examine cake scented passkey",
+                "examine gate",
+                "examine passkey",
+                "go south",
+                "inventory",
+                "lock gate with passkey",
+                "look",
+                "open gate"
+            ]
+        },
+        "action": "open gate",
+        "reward": 0,
+        "next_state": "You open gate. > -= Parlor =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "close cake scented hatch",
+                "close gate",
+                "drop cake scented passkey",
+                "drop passkey",
+                "examine cake scented hatch",
+                "examine cake scented passkey",
+                "examine gate",
+                "examine passkey",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "You open gate. > -= Parlor =-0/10",
+        "infos": {
+            "admissible_commands": [
+                "close cake scented hatch",
+                "close gate",
+                "drop cake scented passkey",
+                "drop passkey",
+                "examine cake scented hatch",
+                "examine cake scented passkey",
+                "examine gate",
+                "examine passkey",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Attic =- You are in an attic. It seems to be pretty typical here. You scan the room, seeing a display. There is an open gate leading south. There is an open hatch leading west. There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. > -= Attic =-0/11",
+        "next_infos": {
+            "admissible_commands": [
+                "close gate",
+                "close hatch",
+                "drop cake scented passkey",
+                "drop passkey",
+                "examine cake scented passkey",
+                "examine display",
+                "examine gate",
+                "examine hatch",
+                "examine passkey",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Attic =- You are in an attic. It seems to be pretty typical here. You scan the room, seeing a display. There is an open gate leading south. There is an open hatch leading west. There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. > -= Attic =-0/11",
+        "infos": {
+            "admissible_commands": [
+                "close gate",
+                "close hatch",
+                "drop cake scented passkey",
+                "drop passkey",
+                "examine cake scented passkey",
+                "examine display",
+                "examine gate",
+                "examine hatch",
+                "examine passkey",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Studio =- You've just walked into a studio. You start to take note of what's in the room. There is an unguarded exit to the east. You need an unguarded exit? You should try going north. There is an unblocked exit to the west. > -= Studio =-0/12",
+        "next_infos": {
+            "admissible_commands": [
+                "drop cake scented passkey",
+                "drop passkey",
+                "examine cake scented passkey",
+                "examine passkey",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Studio =- You've just walked into a studio. You start to take note of what's in the room. There is an unguarded exit to the east. You need an unguarded exit? You should try going north. There is an unblocked exit to the west. > -= Studio =-0/12",
+        "infos": {
+            "admissible_commands": [
+                "drop cake scented passkey",
+                "drop passkey",
+                "examine cake scented passkey",
+                "examine passkey",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Canteen =- You arrive in a canteen. A normal kind of place. You begin to take stock of what's here. You make out a bowl. Looks like someone's already been here and taken everything off it, though. You need an unguarded exit? You should try going east. There is an unguarded exit to the north. You need an unguarded exit? You should try going west. > -= Canteen =-0/13",
+        "next_infos": {
+            "admissible_commands": [
+                "drop cake scented passkey",
+                "drop passkey",
+                "examine bowl",
+                "examine cake scented passkey",
+                "examine passkey",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "put cake scented passkey on bowl",
+                "put passkey on bowl"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Canteen =- You arrive in a canteen. A normal kind of place. You begin to take stock of what's here. You make out a bowl. Looks like someone's already been here and taken everything off it, though. You need an unguarded exit? You should try going east. There is an unguarded exit to the north. You need an unguarded exit? You should try going west. > -= Canteen =-0/13",
+        "infos": {
+            "admissible_commands": [
+                "drop cake scented passkey",
+                "drop passkey",
+                "examine bowl",
+                "examine cake scented passkey",
+                "examine passkey",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "put cake scented passkey on bowl",
+                "put passkey on bowl"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Closet =- Look at you, bigshot, walking into a closet like it isn't some huge deal. You can barely contain your excitement. There is an unguarded exit to the north. You don't like doors? Why not try going west, that entranceway is unguarded. There is a cloak on the floor. > -= Closet =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "drop cake scented passkey",
+                "drop passkey",
+                "examine cake scented passkey",
+                "examine cloak",
+                "examine passkey",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "take cloak"
+            ]
+        },
+        "done": false,
+        "next_action": "take cloak"
+    },
+    {
+        "state": "-= Closet =- Look at you, bigshot, walking into a closet like it isn't some huge deal. You can barely contain your excitement. There is an unguarded exit to the north. You don't like doors? Why not try going west, that entranceway is unguarded. There is a cloak on the floor. > -= Closet =-0/14",
+        "infos": {
+            "admissible_commands": [
+                "drop cake scented passkey",
+                "drop passkey",
+                "examine cake scented passkey",
+                "examine cloak",
+                "examine passkey",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "take cloak"
+            ]
+        },
+        "action": "take cloak",
+        "reward": 1,
+        "next_state": "You pick up the cloak from the ground. Your score has just gone up by one point. *** The End *** You scored 1 out of a possible 1, in 15 turns. Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command? > -= Closet =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "drop cake scented passkey",
+                "drop cloak",
+                "drop passkey",
+                "examine cake scented passkey",
+                "examine cloak",
+                "examine passkey",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

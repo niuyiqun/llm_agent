@@ -1,0 +1,470 @@
+[
+    {
+        "state": "Who's got a virtual machine and is about to play through an exciting round of TextWorld? You do! Here is how to play! First off, go to the north. After that, go east. And then, make an effort to travel north. With that over with, try to move north. Once you succeed at that, travel west. Then, venture south. Then, make an effort to venture west. That done, make an effort to head south. After that, try to travel south. After that, go west. Then, try to move north. After that, venture west. Then, travel north. And then, pick up the laptop from the recliner inside the chamber. Got that? Good! -= Laundromat =- You arrive in a laundromat. A typical kind of place. You need an unguarded exit? You should try going east. You need an unguarded exit? You should try going north. There is an unguarded exit to the west. > -= Laundromat =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Vault =- You've just walked into a vault. You can barely contain your excitement. There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unblocked. There is an exit to the west. Don't worry, it is unguarded. > -= Vault =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Vault =- You've just walked into a vault. You can barely contain your excitement. There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unblocked. There is an exit to the west. Don't worry, it is unguarded. > -= Vault =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Sauna =- You arrive in a sauna. A normal one. You begin looking for stuff. You see a board. The board is normal. The board appears to be empty. You don't like doors? Why not try going north, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unblocked. There is an unblocked exit to the west. > -= Sauna =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "examine board",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Sauna =- You arrive in a sauna. A normal one. You begin looking for stuff. You see a board. The board is normal. The board appears to be empty. You don't like doors? Why not try going north, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unblocked. There is an unblocked exit to the west. > -= Sauna =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "examine board",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Scullery =- This scullery you have just entered is definitely ordinary. You begin to take stock of what's in the room. There is an unguarded exit to the north. There is an unblocked exit to the south. You don't like doors? Why not try going west, that entranceway is unblocked. > -= Scullery =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Scullery =- This scullery you have just entered is definitely ordinary. You begin to take stock of what's in the room. There is an unguarded exit to the north. There is an unblocked exit to the south. You don't like doors? Why not try going west, that entranceway is unblocked. > -= Scullery =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Cellar =- Well, here we are in the cellar. You can make out a locked trunk. You see a closed display right there by you. You make out an opened chest, which looks standard, in the room. The chest is empty, what a horrible day! You can make out a counter. The counter is standard. But there isn't a thing on it. It would have been so cool if there was stuff on the counter. You don't like doors? Why not try going south, that entranceway is unblocked. You need an unblocked exit? You should try going west. > -= Cellar =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "close chest",
+                "examine chest",
+                "examine counter",
+                "examine display",
+                "examine trunk",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "open display"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Cellar =- Well, here we are in the cellar. You can make out a locked trunk. You see a closed display right there by you. You make out an opened chest, which looks standard, in the room. The chest is empty, what a horrible day! You can make out a counter. The counter is standard. But there isn't a thing on it. It would have been so cool if there was stuff on the counter. You don't like doors? Why not try going south, that entranceway is unblocked. You need an unblocked exit? You should try going west. > -= Cellar =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "close chest",
+                "examine chest",
+                "examine counter",
+                "examine display",
+                "examine trunk",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "open display"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Bathroom =- You are in a bathroom. An ordinary kind of place. You see a closed dresser, which looks typical, in the corner. You need an unguarded exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded. You need an unblocked exit? You should try going west. > -= Bathroom =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "examine dresser",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "open dresser"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Bathroom =- You are in a bathroom. An ordinary kind of place. You see a closed dresser, which looks typical, in the corner. You need an unguarded exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded. You need an unblocked exit? You should try going west. > -= Bathroom =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "examine dresser",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "open dresser"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Recreation Zone =- You've entered a recreation zone. You can make out a bed stand. The bed stand is normal. But the thing hasn't got anything on it. Silly bed stand, silly, empty, good for nothing bed stand. There is an unguarded exit to the east. There is an unguarded exit to the north. You don't like doors? Why not try going south, that entranceway is unguarded. You need an unblocked exit? You should try going west. > -= Recreation Zone =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "examine bed stand",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Recreation Zone =- You've entered a recreation zone. You can make out a bed stand. The bed stand is normal. But the thing hasn't got anything on it. Silly bed stand, silly, empty, good for nothing bed stand. There is an unguarded exit to the east. There is an unguarded exit to the north. You don't like doors? Why not try going south, that entranceway is unguarded. You need an unblocked exit? You should try going west. > -= Recreation Zone =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "examine bed stand",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Scullery =- This scullery you have just entered is definitely ordinary. You begin to take stock of what's in the room. There is an unguarded exit to the north. There is an unblocked exit to the south. You don't like doors? Why not try going west, that entranceway is unblocked. > -= Scullery =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Scullery =- This scullery you have just entered is definitely ordinary. You begin to take stock of what's in the room. There is an unguarded exit to the north. There is an unblocked exit to the south. You don't like doors? Why not try going west, that entranceway is unblocked. > -= Scullery =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Cellar =- Well, here we are in the cellar. You can make out a locked trunk. You see a closed display right there by you. You make out an opened chest, which looks standard, in the room. The chest is empty, what a horrible day! You can make out a counter. The counter is standard. But there isn't a thing on it. It would have been so cool if there was stuff on the counter. You don't like doors? Why not try going south, that entranceway is unblocked. You need an unblocked exit? You should try going west. > -= Cellar =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "close chest",
+                "examine chest",
+                "examine counter",
+                "examine display",
+                "examine trunk",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "open display"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Cellar =- Well, here we are in the cellar. You can make out a locked trunk. You see a closed display right there by you. You make out an opened chest, which looks standard, in the room. The chest is empty, what a horrible day! You can make out a counter. The counter is standard. But there isn't a thing on it. It would have been so cool if there was stuff on the counter. You don't like doors? Why not try going south, that entranceway is unblocked. You need an unblocked exit? You should try going west. > -= Cellar =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "close chest",
+                "examine chest",
+                "examine counter",
+                "examine display",
+                "examine trunk",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "open display"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Bathroom =- You are in a bathroom. An ordinary kind of place. You see a closed dresser, which looks typical, in the corner. You need an unguarded exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded. You need an unblocked exit? You should try going west. > -= Bathroom =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "examine dresser",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "open dresser"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Bathroom =- You are in a bathroom. An ordinary kind of place. You see a closed dresser, which looks typical, in the corner. You need an unguarded exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded. You need an unblocked exit? You should try going west. > -= Bathroom =-0/10",
+        "infos": {
+            "admissible_commands": [
+                "examine dresser",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "open dresser"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Basement =- You arrive in a basement. An ordinary one. You see a crate. Huh, weird. You see a shelf. Looks like someone's already been here and taken everything off it, though. Silly shelf, silly, empty, good for nothing shelf. You can see a workbench. Wow, isn't TextWorld just the best? But oh no! there's nothing on this piece of junk. What, you think everything in TextWorld should have stuff on it? There is an exit to the south. Don't worry, it is unblocked. > -= Basement =-0/11",
+        "next_infos": {
+            "admissible_commands": [
+                "examine crate",
+                "examine shelf",
+                "examine workbench",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Basement =- You arrive in a basement. An ordinary one. You see a crate. Huh, weird. You see a shelf. Looks like someone's already been here and taken everything off it, though. Silly shelf, silly, empty, good for nothing shelf. You can see a workbench. Wow, isn't TextWorld just the best? But oh no! there's nothing on this piece of junk. What, you think everything in TextWorld should have stuff on it? There is an exit to the south. Don't worry, it is unblocked. > -= Basement =-0/11",
+        "infos": {
+            "admissible_commands": [
+                "examine crate",
+                "examine shelf",
+                "examine workbench",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Bathroom =- You are in a bathroom. An ordinary kind of place. You see a closed dresser, which looks typical, in the corner. You need an unguarded exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded. You need an unblocked exit? You should try going west. > -= Bathroom =-0/12",
+        "next_infos": {
+            "admissible_commands": [
+                "examine dresser",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "open dresser"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Bathroom =- You are in a bathroom. An ordinary kind of place. You see a closed dresser, which looks typical, in the corner. You need an unguarded exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded. You need an unblocked exit? You should try going west. > -= Bathroom =-0/12",
+        "infos": {
+            "admissible_commands": [
+                "examine dresser",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "open dresser"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Cellar =- Well, here we are in the cellar. You can make out a locked trunk. You see a closed display right there by you. You make out an opened chest, which looks standard, in the room. The chest is empty, what a horrible day! You can make out a counter. The counter is standard. But there isn't a thing on it. It would have been so cool if there was stuff on the counter. You don't like doors? Why not try going south, that entranceway is unblocked. You need an unblocked exit? You should try going west. > -= Cellar =-0/13",
+        "next_infos": {
+            "admissible_commands": [
+                "close chest",
+                "examine chest",
+                "examine counter",
+                "examine display",
+                "examine trunk",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "open display"
+            ]
+        },
+        "done": false,
+        "next_action": "open display"
+    },
+    {
+        "state": "-= Cellar =- Well, here we are in the cellar. You can make out a locked trunk. You see a closed display right there by you. You make out an opened chest, which looks standard, in the room. The chest is empty, what a horrible day! You can make out a counter. The counter is standard. But there isn't a thing on it. It would have been so cool if there was stuff on the counter. You don't like doors? Why not try going south, that entranceway is unblocked. You need an unblocked exit? You should try going west. > -= Cellar =-0/13",
+        "infos": {
+            "admissible_commands": [
+                "close chest",
+                "examine chest",
+                "examine counter",
+                "examine display",
+                "examine trunk",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "open display"
+            ]
+        },
+        "action": "open display",
+        "reward": 0,
+        "next_state": "You open the display. > -= Cellar =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "close chest",
+                "close display",
+                "examine chest",
+                "examine counter",
+                "examine display",
+                "examine trunk",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "examine display"
+    },
+    {
+        "state": "You open the display. > -= Cellar =-0/14",
+        "infos": {
+            "admissible_commands": [
+                "close chest",
+                "close display",
+                "examine chest",
+                "examine counter",
+                "examine display",
+                "examine trunk",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "examine display",
+        "reward": 0,
+        "next_state": "The display looks strong, and impossible to crack. It is open. > -= Cellar =-0/15",
+        "next_infos": {
+            "admissible_commands": [
+                "close chest",
+                "close display",
+                "examine chest",
+                "examine counter",
+                "examine display",
+                "examine trunk",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "The display looks strong, and impossible to crack. It is open. > -= Cellar =-0/15",
+        "infos": {
+            "admissible_commands": [
+                "close chest",
+                "close display",
+                "examine chest",
+                "examine counter",
+                "examine display",
+                "examine trunk",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Scullery =- This scullery you have just entered is definitely ordinary. You begin to take stock of what's in the room. There is an unguarded exit to the north. There is an unblocked exit to the south. You don't like doors? Why not try going west, that entranceway is unblocked. > -= Scullery =-0/16",
+        "next_infos": {
+            "admissible_commands": [
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

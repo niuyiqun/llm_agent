@@ -1,0 +1,212 @@
+[
+    {
+        "state": "I hope you're ready to go into rooms and interact with objects, because you've just entered TextWorld! First of all, move south. And then, pick-up the American keycard from the floor of the kitchen. Then, travel north. And then, insert the American keycard into the American portal's lock to unlock it. After that, open the American portal in the washroom. Then, make an attempt to take a trip north. And then, pick-up the spherical keycard from the floor of the salon. After that, make sure that the spherical gate inside the salon is unlocked with the spherical keycard. And then, assure that the spherical gate in the salon is wide open. Then, make an attempt to take a trip east. And then, try to travel north. Once you get through with that, make absolutely sure that the door is wide open. After that, head north. And then, recover the cashew from the floor of the cellar. Alright, thanks! -= Washroom =- Well I'll be, you are in a place we're calling a washroom. There is a closed American portal leading north. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Washroom =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "examine American portal",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "examine American portal",
+        "reward": 0,
+        "next_state": "it's a towering American portal You can't see inside it because the lid's in your way. > -= Washroom =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "examine American portal",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "it's a towering American portal You can't see inside it because the lid's in your way. > -= Washroom =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "examine American portal",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Kitchen =- Well, here we are in a kitchen. You can make out a refrigerator. There is an unguarded exit to the north. There is an American keycard on the floor. > -= Kitchen =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "examine American keycard",
+                "examine refrigerator",
+                "go north",
+                "inventory",
+                "look",
+                "open refrigerator",
+                "take American keycard"
+            ]
+        },
+        "done": false,
+        "next_action": "take American keycard"
+    },
+    {
+        "state": "-= Kitchen =- Well, here we are in a kitchen. You can make out a refrigerator. There is an unguarded exit to the north. There is an American keycard on the floor. > -= Kitchen =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "examine American keycard",
+                "examine refrigerator",
+                "go north",
+                "inventory",
+                "look",
+                "open refrigerator",
+                "take American keycard"
+            ]
+        },
+        "action": "take American keycard",
+        "reward": 0,
+        "next_state": "You pick up the American keycard from the ground. > -= Kitchen =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "drop American keycard",
+                "examine American keycard",
+                "examine refrigerator",
+                "go north",
+                "inventory",
+                "look",
+                "open refrigerator"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "You pick up the American keycard from the ground. > -= Kitchen =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "drop American keycard",
+                "examine American keycard",
+                "examine refrigerator",
+                "go north",
+                "inventory",
+                "look",
+                "open refrigerator"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Washroom =- Well I'll be, you are in a place we're calling a washroom. There is a closed American portal leading north. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Washroom =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "drop American keycard",
+                "examine American keycard",
+                "examine American portal",
+                "go south",
+                "inventory",
+                "look",
+                "unlock American portal with American keycard"
+            ]
+        },
+        "done": false,
+        "next_action": "unlock American portal with American keycard"
+    },
+    {
+        "state": "-= Washroom =- Well I'll be, you are in a place we're calling a washroom. There is a closed American portal leading north. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Washroom =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "drop American keycard",
+                "examine American keycard",
+                "examine American portal",
+                "go south",
+                "inventory",
+                "look",
+                "unlock American portal with American keycard"
+            ]
+        },
+        "action": "unlock American portal with American keycard",
+        "reward": 0,
+        "next_state": "You unlock American portal. > -= Washroom =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "drop American keycard",
+                "examine American keycard",
+                "examine American portal",
+                "go south",
+                "inventory",
+                "lock American portal with American keycard",
+                "look",
+                "open American portal"
+            ]
+        },
+        "done": false,
+        "next_action": "open American portal"
+    },
+    {
+        "state": "You unlock American portal. > -= Washroom =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "drop American keycard",
+                "examine American keycard",
+                "examine American portal",
+                "go south",
+                "inventory",
+                "lock American portal with American keycard",
+                "look",
+                "open American portal"
+            ]
+        },
+        "action": "open American portal",
+        "reward": 0,
+        "next_state": "You open American portal. > -= Washroom =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "close American portal",
+                "drop American keycard",
+                "examine American keycard",
+                "examine American portal",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "You open American portal. > -= Washroom =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "close American portal",
+                "drop American keycard",
+                "examine American keycard",
+                "examine American portal",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Salon =- You've seen better salons, but at least this one seems pretty normal. You can make out a recliner. But the thing hasn't got anything on it. Oh! Why couldn't there just be stuff on it? There is a closed spherical gate leading east. There is an open American portal leading south. There is a spherical keycard on the floor. > -= Salon =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "close American portal",
+                "drop American keycard",
+                "examine American keycard",
+                "examine American portal",
+                "examine recliner",
+                "examine spherical gate",
+                "examine spherical keycard",
+                "go south",
+                "inventory",
+                "look",
+                "put American keycard on recliner",
+                "take spherical keycard"
+            ]
+        },
+        "done": false,
+        "next_action": null
+    }
+]

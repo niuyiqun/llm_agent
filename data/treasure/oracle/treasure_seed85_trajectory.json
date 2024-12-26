@@ -1,0 +1,572 @@
+[
+    {
+        "state": "Hey, thanks for coming over to the TextWorld today, there is something I need you to do for me. First off, insert the American style passkey into the American style portal in the salon's lock to unlock it. And then, assure that the American style portal is ajar. After that, try to venture south. And then, ensure that the gateway is open. And then, make an attempt to head east. After that, attempt to head south. And then, make an attempt to travel west. Following that, pick up the keycard from the floor of the bathroom. After getting the keycard, make an attempt to take a trip west. That done, take a trip west. And then, check that the passageway is unlocked with the keycard. And then, ensure that the passageway is open. Then, take a trip west. Next, pick-up the huckleberry from the floor of the spare room. Once that's all handled, you can stop! -= Salon =- You're now in the salon. There is a closed American style portal leading south. There is an open gate leading west. > -= Salon =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "close gate",
+                "drop American style passkey",
+                "examine American style passkey",
+                "examine American style portal",
+                "examine gate",
+                "go west",
+                "inventory",
+                "look",
+                "unlock American style portal with American style passkey"
+            ]
+        },
+        "action": "unlock American style portal with American style passkey",
+        "reward": 0,
+        "next_state": "You unlock American style portal. > -= Salon =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "close gate",
+                "drop American style passkey",
+                "examine American style passkey",
+                "examine American style portal",
+                "examine gate",
+                "go west",
+                "inventory",
+                "lock American style portal with American style passkey",
+                "look",
+                "open American style portal"
+            ]
+        },
+        "done": false,
+        "next_action": "open American style portal"
+    },
+    {
+        "state": "You unlock American style portal. > -= Salon =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "close gate",
+                "drop American style passkey",
+                "examine American style passkey",
+                "examine American style portal",
+                "examine gate",
+                "go west",
+                "inventory",
+                "lock American style portal with American style passkey",
+                "look",
+                "open American style portal"
+            ]
+        },
+        "action": "open American style portal",
+        "reward": 0,
+        "next_state": "You open American style portal. > -= Salon =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "close American style portal",
+                "close gate",
+                "drop American style passkey",
+                "examine American style passkey",
+                "examine American style portal",
+                "examine gate",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "You open American style portal. > -= Salon =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "close American style portal",
+                "close gate",
+                "drop American style passkey",
+                "examine American style passkey",
+                "examine American style portal",
+                "examine gate",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Garage =- You arrive in a garage. A typical kind of place. There is a closed gateway leading east. There is an open American style portal leading north. There is an exit to the south. Don't worry, it is unblocked. There is an unguarded exit to the west. > -= Garage =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "close American style portal",
+                "drop American style passkey",
+                "examine American style passkey",
+                "examine American style portal",
+                "examine gateway",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "open gateway"
+            ]
+        },
+        "done": false,
+        "next_action": "open gateway"
+    },
+    {
+        "state": "-= Garage =- You arrive in a garage. A typical kind of place. There is a closed gateway leading east. There is an open American style portal leading north. There is an exit to the south. Don't worry, it is unblocked. There is an unguarded exit to the west. > -= Garage =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "close American style portal",
+                "drop American style passkey",
+                "examine American style passkey",
+                "examine American style portal",
+                "examine gateway",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "open gateway"
+            ]
+        },
+        "action": "open gateway",
+        "reward": 0,
+        "next_state": "You open gateway. > -= Garage =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "close American style portal",
+                "close gateway",
+                "drop American style passkey",
+                "examine American style passkey",
+                "examine American style portal",
+                "examine gateway",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "You open gateway. > -= Garage =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "close American style portal",
+                "close gateway",
+                "drop American style passkey",
+                "examine American style passkey",
+                "examine American style portal",
+                "examine gateway",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Office =- You've just sauntered into an office. You begin to take stock of what's here. If you haven't noticed it already, there seems to be something there by the wall, it's a table. Make a note of this, you might have to put stuff on or in it later on. The table is standard. However, the table, like an empty table, has nothing on it. There is an open gateway leading west. There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going south. > -= Office =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "close gateway",
+                "drop American style passkey",
+                "examine American style passkey",
+                "examine gateway",
+                "examine table",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put American style passkey on table"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Office =- You've just sauntered into an office. You begin to take stock of what's here. If you haven't noticed it already, there seems to be something there by the wall, it's a table. Make a note of this, you might have to put stuff on or in it later on. The table is standard. However, the table, like an empty table, has nothing on it. There is an open gateway leading west. There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going south. > -= Office =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "close gateway",
+                "drop American style passkey",
+                "examine American style passkey",
+                "examine gateway",
+                "examine table",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put American style passkey on table"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Chamber =- You've just shown up in a chamber. You see a safe. You see a desk. The desk is standard. However, the desk, like an empty desk, has nothing on it. There is an unblocked exit to the north. There is an exit to the south. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded. > -= Chamber =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "drop American style passkey",
+                "examine American style passkey",
+                "examine desk",
+                "examine safe",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put American style passkey on desk"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Chamber =- You've just shown up in a chamber. You see a safe. You see a desk. The desk is standard. However, the desk, like an empty desk, has nothing on it. There is an unblocked exit to the north. There is an exit to the south. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded. > -= Chamber =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "drop American style passkey",
+                "examine American style passkey",
+                "examine desk",
+                "examine safe",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put American style passkey on desk"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Bathroom =- You make another one of your grand eccentric entrances into a bathroom. You can make out a locked basket. Look over there! a board. I guess it's true what they say, if you're looking for a board, go to TextWorld. The board is standard. But oh no! there's nothing on this piece of junk. There is an exit to the east. Don't worry, it is unguarded. There is an exit to the north. Don't worry, it is unguarded. You need an unguarded exit? You should try going west. There is a keycard on the floor. > -= Bathroom =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "drop American style passkey",
+                "examine American style passkey",
+                "examine basket",
+                "examine board",
+                "examine keycard",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "put American style passkey on board",
+                "take keycard"
+            ]
+        },
+        "done": false,
+        "next_action": "take keycard"
+    },
+    {
+        "state": "-= Bathroom =- You make another one of your grand eccentric entrances into a bathroom. You can make out a locked basket. Look over there! a board. I guess it's true what they say, if you're looking for a board, go to TextWorld. The board is standard. But oh no! there's nothing on this piece of junk. There is an exit to the east. Don't worry, it is unguarded. There is an exit to the north. Don't worry, it is unguarded. You need an unguarded exit? You should try going west. There is a keycard on the floor. > -= Bathroom =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "drop American style passkey",
+                "examine American style passkey",
+                "examine basket",
+                "examine board",
+                "examine keycard",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "put American style passkey on board",
+                "take keycard"
+            ]
+        },
+        "action": "take keycard",
+        "reward": 0,
+        "next_state": "You pick up the keycard from the ground. > -= Bathroom =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "drop American style passkey",
+                "drop keycard",
+                "examine American style passkey",
+                "examine basket",
+                "examine board",
+                "examine keycard",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "put American style passkey on board",
+                "put keycard on board"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "You pick up the keycard from the ground. > -= Bathroom =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "drop American style passkey",
+                "drop keycard",
+                "examine American style passkey",
+                "examine basket",
+                "examine board",
+                "examine keycard",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "put American style passkey on board",
+                "put keycard on board"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Workshop =- You find yourself in a workshop. There is an open portal leading west. You don't like doors? Why not try going east, that entranceway is unblocked. There is an unguarded exit to the north. You don't like doors? Why not try going south, that entranceway is unblocked. > -= Workshop =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "close portal",
+                "drop American style passkey",
+                "drop keycard",
+                "examine American style passkey",
+                "examine keycard",
+                "examine portal",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Workshop =- You find yourself in a workshop. There is an open portal leading west. You don't like doors? Why not try going east, that entranceway is unblocked. There is an unguarded exit to the north. You don't like doors? Why not try going south, that entranceway is unblocked. > -= Workshop =-0/10",
+        "infos": {
+            "admissible_commands": [
+                "close portal",
+                "drop American style passkey",
+                "drop keycard",
+                "examine American style passkey",
+                "examine keycard",
+                "examine portal",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Launderette =- You are in a launderette. A standard one. What's that over there? It looks like it's a cabinet. There is a closed passageway leading west. There is an open portal leading east. > -= Launderette =-0/11",
+        "next_infos": {
+            "admissible_commands": [
+                "close portal",
+                "drop American style passkey",
+                "drop keycard",
+                "examine American style passkey",
+                "examine cabinet",
+                "examine keycard",
+                "examine passageway",
+                "examine portal",
+                "go east",
+                "inventory",
+                "look",
+                "open cabinet",
+                "unlock passageway with keycard"
+            ]
+        },
+        "done": false,
+        "next_action": "unlock passageway with keycard"
+    },
+    {
+        "state": "-= Launderette =- You are in a launderette. A standard one. What's that over there? It looks like it's a cabinet. There is a closed passageway leading west. There is an open portal leading east. > -= Launderette =-0/11",
+        "infos": {
+            "admissible_commands": [
+                "close portal",
+                "drop American style passkey",
+                "drop keycard",
+                "examine American style passkey",
+                "examine cabinet",
+                "examine keycard",
+                "examine passageway",
+                "examine portal",
+                "go east",
+                "inventory",
+                "look",
+                "open cabinet",
+                "unlock passageway with keycard"
+            ]
+        },
+        "action": "unlock passageway with keycard",
+        "reward": 0,
+        "next_state": "You unlock passageway. > -= Launderette =-0/12",
+        "next_infos": {
+            "admissible_commands": [
+                "close portal",
+                "drop American style passkey",
+                "drop keycard",
+                "examine American style passkey",
+                "examine cabinet",
+                "examine keycard",
+                "examine passageway",
+                "examine portal",
+                "go east",
+                "inventory",
+                "lock passageway with keycard",
+                "look",
+                "open cabinet",
+                "open passageway"
+            ]
+        },
+        "done": false,
+        "next_action": "open passageway"
+    },
+    {
+        "state": "You unlock passageway. > -= Launderette =-0/12",
+        "infos": {
+            "admissible_commands": [
+                "close portal",
+                "drop American style passkey",
+                "drop keycard",
+                "examine American style passkey",
+                "examine cabinet",
+                "examine keycard",
+                "examine passageway",
+                "examine portal",
+                "go east",
+                "inventory",
+                "lock passageway with keycard",
+                "look",
+                "open cabinet",
+                "open passageway"
+            ]
+        },
+        "action": "open passageway",
+        "reward": 0,
+        "next_state": "You open passageway. > -= Launderette =-0/13",
+        "next_infos": {
+            "admissible_commands": [
+                "close passageway",
+                "close portal",
+                "drop American style passkey",
+                "drop keycard",
+                "examine American style passkey",
+                "examine cabinet",
+                "examine keycard",
+                "examine passageway",
+                "examine portal",
+                "go east",
+                "go west",
+                "inventory",
+                "look",
+                "open cabinet"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "You open passageway. > -= Launderette =-0/13",
+        "infos": {
+            "admissible_commands": [
+                "close passageway",
+                "close portal",
+                "drop American style passkey",
+                "drop keycard",
+                "examine American style passkey",
+                "examine cabinet",
+                "examine keycard",
+                "examine passageway",
+                "examine portal",
+                "go east",
+                "go west",
+                "inventory",
+                "look",
+                "open cabinet"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Spare Room =- You've entered a spare room. You see a gleam over in a corner, where you can see a stand. However, the stand, like an empty stand, has nothing on it. There is an open passageway leading east. There is an open hatch leading south. There is a huckleberry on the floor. > -= Spare Room =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "close hatch",
+                "close passageway",
+                "drop American style passkey",
+                "drop keycard",
+                "examine American style passkey",
+                "examine hatch",
+                "examine huckleberry",
+                "examine keycard",
+                "examine passageway",
+                "examine stand",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "put American style passkey on stand",
+                "put keycard on stand",
+                "take huckleberry"
+            ]
+        },
+        "done": false,
+        "next_action": "take huckleberry"
+    },
+    {
+        "state": "-= Spare Room =- You've entered a spare room. You see a gleam over in a corner, where you can see a stand. However, the stand, like an empty stand, has nothing on it. There is an open passageway leading east. There is an open hatch leading south. There is a huckleberry on the floor. > -= Spare Room =-0/14",
+        "infos": {
+            "admissible_commands": [
+                "close hatch",
+                "close passageway",
+                "drop American style passkey",
+                "drop keycard",
+                "examine American style passkey",
+                "examine hatch",
+                "examine huckleberry",
+                "examine keycard",
+                "examine passageway",
+                "examine stand",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "put American style passkey on stand",
+                "put keycard on stand",
+                "take huckleberry"
+            ]
+        },
+        "action": "take huckleberry",
+        "reward": 1,
+        "next_state": "You pick up the huckleberry from the ground. Your score has just gone up by one point. *** The End *** You scored 1 out of a possible 1, in 15 turns. Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command? > -= Spare Room =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "close hatch",
+                "close passageway",
+                "drop American style passkey",
+                "drop huckleberry",
+                "drop keycard",
+                "eat huckleberry",
+                "examine American style passkey",
+                "examine hatch",
+                "examine huckleberry",
+                "examine keycard",
+                "examine passageway",
+                "examine stand",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "put American style passkey on stand",
+                "put huckleberry on stand",
+                "put keycard on stand"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

@@ -1,0 +1,589 @@
+[
+    {
+        "state": "It's time to explore the amazing world of TextWorld! Here is how to play! First off, if it's not too much trouble, I need you to retrieve the cuboid keycard from the bowl. And then, move north. After that, make an effort to travel north. That done, head west. With that over with, check that the cuboid portal is unlocked with the cuboid keycard. Then, open the cuboid portal. And then, make an attempt to head west. If you can get around to doing that, make absolutely sure that the type 4 portal inside the study is unlocked. And then, open the type 4 portal inside the study. After that, attempt to move west. Then, assure that the gate is ajar. After that, go to the north. Then, go to the north. Next, pick up the keycard from the floor of the scullery. And once you've done that, you win! -= Cookhouse =- You've just walked into a cookhouse. You can see a bowl. The bowl is standard. On the bowl you see a cuboid keycard. There is an unguarded exit to the east. There is an unguarded exit to the north. > -= Cookhouse =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "drop type 4 keycard",
+                "examine bowl",
+                "examine cuboid keycard",
+                "examine type 4 keycard",
+                "go east",
+                "go north",
+                "inventory",
+                "look",
+                "put type 4 keycard on bowl",
+                "take cuboid keycard from bowl"
+            ]
+        },
+        "action": "take cuboid keycard from bowl",
+        "reward": 0,
+        "next_state": "You take the cuboid keycard from the bowl. > -= Cookhouse =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "drop cuboid keycard",
+                "drop type 4 keycard",
+                "examine bowl",
+                "examine cuboid keycard",
+                "examine type 4 keycard",
+                "go east",
+                "go north",
+                "inventory",
+                "look",
+                "put cuboid keycard on bowl",
+                "put type 4 keycard on bowl"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "You take the cuboid keycard from the bowl. > -= Cookhouse =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "drop cuboid keycard",
+                "drop type 4 keycard",
+                "examine bowl",
+                "examine cuboid keycard",
+                "examine type 4 keycard",
+                "go east",
+                "go north",
+                "inventory",
+                "look",
+                "put cuboid keycard on bowl",
+                "put type 4 keycard on bowl"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Chamber =- You arrive in a chamber. A normal one. You begin looking for stuff. You can make out a closed box, which looks usual, in the corner. Were you looking for a suitcase? Because look over there, it's a suitcase. Now why would someone leave that there? There is an unguarded exit to the east. There is an unguarded exit to the north. You don't like doors? Why not try going south, that entranceway is unblocked. You need an unblocked exit? You should try going west. > -= Chamber =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "drop cuboid keycard",
+                "drop type 4 keycard",
+                "examine box",
+                "examine cuboid keycard",
+                "examine suitcase",
+                "examine type 4 keycard",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "open box",
+                "open suitcase"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Chamber =- You arrive in a chamber. A normal one. You begin looking for stuff. You can make out a closed box, which looks usual, in the corner. Were you looking for a suitcase? Because look over there, it's a suitcase. Now why would someone leave that there? There is an unguarded exit to the east. There is an unguarded exit to the north. You don't like doors? Why not try going south, that entranceway is unblocked. You need an unblocked exit? You should try going west. > -= Chamber =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "drop cuboid keycard",
+                "drop type 4 keycard",
+                "examine box",
+                "examine cuboid keycard",
+                "examine suitcase",
+                "examine type 4 keycard",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "open box",
+                "open suitcase"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Cellar =- You find yourself in a cellar. An ordinary one. You make out an opened crate close by. Empty! What kind of nightmare TextWorld is this? You can make out a closed toolbox right there by you. You can make out a display. There's something strange about this being here, but you can't put your finger on it. There is an unblocked exit to the east. You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked. > -= Cellar =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "close crate",
+                "drop cuboid keycard",
+                "drop type 4 keycard",
+                "examine crate",
+                "examine cuboid keycard",
+                "examine display",
+                "examine toolbox",
+                "examine type 4 keycard",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "insert cuboid keycard into crate",
+                "insert type 4 keycard into crate",
+                "inventory",
+                "look",
+                "open toolbox"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Cellar =- You find yourself in a cellar. An ordinary one. You make out an opened crate close by. Empty! What kind of nightmare TextWorld is this? You can make out a closed toolbox right there by you. You can make out a display. There's something strange about this being here, but you can't put your finger on it. There is an unblocked exit to the east. You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked. > -= Cellar =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "close crate",
+                "drop cuboid keycard",
+                "drop type 4 keycard",
+                "examine crate",
+                "examine cuboid keycard",
+                "examine display",
+                "examine toolbox",
+                "examine type 4 keycard",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "insert cuboid keycard into crate",
+                "insert type 4 keycard into crate",
+                "inventory",
+                "look",
+                "open toolbox"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Laundry Place =- You arrive in a laundry place. An usual kind of place. You make out a closed cabinet. There is an unguarded exit to the east. You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going south. You need an unblocked exit? You should try going west. > -= Laundry Place =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "drop cuboid keycard",
+                "drop type 4 keycard",
+                "examine cabinet",
+                "examine cuboid keycard",
+                "examine type 4 keycard",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "open cabinet"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Laundry Place =- You arrive in a laundry place. An usual kind of place. You make out a closed cabinet. There is an unguarded exit to the east. You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going south. You need an unblocked exit? You should try going west. > -= Laundry Place =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "drop cuboid keycard",
+                "drop type 4 keycard",
+                "examine cabinet",
+                "examine cuboid keycard",
+                "examine type 4 keycard",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "open cabinet"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Cubicle =- You are in a cubicle. An ordinary kind of place. You make out a locker. The locker is empty! This is the worst thing that could possibly happen, ever! There is an unguarded exit to the east. There is an unblocked exit to the south. > -= Cubicle =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "close locker",
+                "drop cuboid keycard",
+                "drop type 4 keycard",
+                "examine cuboid keycard",
+                "examine locker",
+                "examine type 4 keycard",
+                "go east",
+                "go south",
+                "insert cuboid keycard into locker",
+                "insert type 4 keycard into locker",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Cubicle =- You are in a cubicle. An ordinary kind of place. You make out a locker. The locker is empty! This is the worst thing that could possibly happen, ever! There is an unguarded exit to the east. There is an unblocked exit to the south. > -= Cubicle =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "close locker",
+                "drop cuboid keycard",
+                "drop type 4 keycard",
+                "examine cuboid keycard",
+                "examine locker",
+                "examine type 4 keycard",
+                "go east",
+                "go south",
+                "insert cuboid keycard into locker",
+                "insert type 4 keycard into locker",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "You can't go that way. > -= Cubicle =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "close locker",
+                "drop cuboid keycard",
+                "drop type 4 keycard",
+                "examine cuboid keycard",
+                "examine locker",
+                "examine type 4 keycard",
+                "go east",
+                "go south",
+                "insert cuboid keycard into locker",
+                "insert type 4 keycard into locker",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "You can't go that way. > -= Cubicle =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "close locker",
+                "drop cuboid keycard",
+                "drop type 4 keycard",
+                "examine cuboid keycard",
+                "examine locker",
+                "examine type 4 keycard",
+                "go east",
+                "go south",
+                "insert cuboid keycard into locker",
+                "insert type 4 keycard into locker",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Workshop =- You arrive in a workshop. A normal kind of place. There is an unguarded exit to the south. There is an unguarded exit to the west. > -= Workshop =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "drop cuboid keycard",
+                "drop type 4 keycard",
+                "examine cuboid keycard",
+                "examine type 4 keycard",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Workshop =- You arrive in a workshop. A normal kind of place. There is an unguarded exit to the south. There is an unguarded exit to the west. > -= Workshop =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "drop cuboid keycard",
+                "drop type 4 keycard",
+                "examine cuboid keycard",
+                "examine type 4 keycard",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Cubicle =- You are in a cubicle. An ordinary kind of place. You make out a locker. The locker is empty! This is the worst thing that could possibly happen, ever! There is an unguarded exit to the east. There is an unblocked exit to the south. > -= Cubicle =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "close locker",
+                "drop cuboid keycard",
+                "drop type 4 keycard",
+                "examine cuboid keycard",
+                "examine locker",
+                "examine type 4 keycard",
+                "go east",
+                "go south",
+                "insert cuboid keycard into locker",
+                "insert type 4 keycard into locker",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "insert cuboid keycard into locker"
+    },
+    {
+        "state": "-= Cubicle =- You are in a cubicle. An ordinary kind of place. You make out a locker. The locker is empty! This is the worst thing that could possibly happen, ever! There is an unguarded exit to the east. There is an unblocked exit to the south. > -= Cubicle =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "close locker",
+                "drop cuboid keycard",
+                "drop type 4 keycard",
+                "examine cuboid keycard",
+                "examine locker",
+                "examine type 4 keycard",
+                "go east",
+                "go south",
+                "insert cuboid keycard into locker",
+                "insert type 4 keycard into locker",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "insert cuboid keycard into locker",
+        "reward": 0,
+        "next_state": "You put the cuboid keycard into the locker. > -= Cubicle =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "close locker",
+                "drop type 4 keycard",
+                "examine cuboid keycard",
+                "examine locker",
+                "examine type 4 keycard",
+                "go east",
+                "go south",
+                "insert type 4 keycard into locker",
+                "inventory",
+                "look",
+                "take cuboid keycard from locker"
+            ]
+        },
+        "done": false,
+        "next_action": "examine locker"
+    },
+    {
+        "state": "You put the cuboid keycard into the locker. > -= Cubicle =-0/10",
+        "infos": {
+            "admissible_commands": [
+                "close locker",
+                "drop type 4 keycard",
+                "examine cuboid keycard",
+                "examine locker",
+                "examine type 4 keycard",
+                "go east",
+                "go south",
+                "insert type 4 keycard into locker",
+                "inventory",
+                "look",
+                "take cuboid keycard from locker"
+            ]
+        },
+        "action": "examine locker",
+        "reward": 0,
+        "next_state": "The locker looks strong, and impossible to break. You can see inside it. In the locker is a cuboid keycard. > -= Cubicle =-0/11",
+        "next_infos": {
+            "admissible_commands": [
+                "close locker",
+                "drop type 4 keycard",
+                "examine cuboid keycard",
+                "examine locker",
+                "examine type 4 keycard",
+                "go east",
+                "go south",
+                "insert type 4 keycard into locker",
+                "inventory",
+                "look",
+                "take cuboid keycard from locker"
+            ]
+        },
+        "done": false,
+        "next_action": "take cuboid keycard from locker"
+    },
+    {
+        "state": "The locker looks strong, and impossible to break. You can see inside it. In the locker is a cuboid keycard. > -= Cubicle =-0/11",
+        "infos": {
+            "admissible_commands": [
+                "close locker",
+                "drop type 4 keycard",
+                "examine cuboid keycard",
+                "examine locker",
+                "examine type 4 keycard",
+                "go east",
+                "go south",
+                "insert type 4 keycard into locker",
+                "inventory",
+                "look",
+                "take cuboid keycard from locker"
+            ]
+        },
+        "action": "take cuboid keycard from locker",
+        "reward": 0,
+        "next_state": "You take the cuboid keycard from the locker. > -= Cubicle =-0/12",
+        "next_infos": {
+            "admissible_commands": [
+                "close locker",
+                "drop cuboid keycard",
+                "drop type 4 keycard",
+                "examine cuboid keycard",
+                "examine locker",
+                "examine type 4 keycard",
+                "go east",
+                "go south",
+                "insert cuboid keycard into locker",
+                "insert type 4 keycard into locker",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "You take the cuboid keycard from the locker. > -= Cubicle =-0/12",
+        "infos": {
+            "admissible_commands": [
+                "close locker",
+                "drop cuboid keycard",
+                "drop type 4 keycard",
+                "examine cuboid keycard",
+                "examine locker",
+                "examine type 4 keycard",
+                "go east",
+                "go south",
+                "insert cuboid keycard into locker",
+                "insert type 4 keycard into locker",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Workshop =- You arrive in a workshop. A normal kind of place. There is an unguarded exit to the south. There is an unguarded exit to the west. > -= Workshop =-0/13",
+        "next_infos": {
+            "admissible_commands": [
+                "drop cuboid keycard",
+                "drop type 4 keycard",
+                "examine cuboid keycard",
+                "examine type 4 keycard",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Workshop =- You arrive in a workshop. A normal kind of place. There is an unguarded exit to the south. There is an unguarded exit to the west. > -= Workshop =-0/13",
+        "infos": {
+            "admissible_commands": [
+                "drop cuboid keycard",
+                "drop type 4 keycard",
+                "examine cuboid keycard",
+                "examine type 4 keycard",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Cubicle =- You are in a cubicle. An ordinary kind of place. You make out a locker. The locker is empty! This is the worst thing that could possibly happen, ever! There is an unguarded exit to the east. There is an unblocked exit to the south. > -= Cubicle =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "close locker",
+                "drop cuboid keycard",
+                "drop type 4 keycard",
+                "examine cuboid keycard",
+                "examine locker",
+                "examine type 4 keycard",
+                "go east",
+                "go south",
+                "insert cuboid keycard into locker",
+                "insert type 4 keycard into locker",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "insert cuboid keycard into locker"
+    },
+    {
+        "state": "-= Cubicle =- You are in a cubicle. An ordinary kind of place. You make out a locker. The locker is empty! This is the worst thing that could possibly happen, ever! There is an unguarded exit to the east. There is an unblocked exit to the south. > -= Cubicle =-0/14",
+        "infos": {
+            "admissible_commands": [
+                "close locker",
+                "drop cuboid keycard",
+                "drop type 4 keycard",
+                "examine cuboid keycard",
+                "examine locker",
+                "examine type 4 keycard",
+                "go east",
+                "go south",
+                "insert cuboid keycard into locker",
+                "insert type 4 keycard into locker",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "insert cuboid keycard into locker",
+        "reward": 0,
+        "next_state": "You put the cuboid keycard into the locker. > -= Cubicle =-0/15",
+        "next_infos": {
+            "admissible_commands": [
+                "close locker",
+                "drop type 4 keycard",
+                "examine cuboid keycard",
+                "examine locker",
+                "examine type 4 keycard",
+                "go east",
+                "go south",
+                "insert type 4 keycard into locker",
+                "inventory",
+                "look",
+                "take cuboid keycard from locker"
+            ]
+        },
+        "done": false,
+        "next_action": "examine locker"
+    },
+    {
+        "state": "You put the cuboid keycard into the locker. > -= Cubicle =-0/15",
+        "infos": {
+            "admissible_commands": [
+                "close locker",
+                "drop type 4 keycard",
+                "examine cuboid keycard",
+                "examine locker",
+                "examine type 4 keycard",
+                "go east",
+                "go south",
+                "insert type 4 keycard into locker",
+                "inventory",
+                "look",
+                "take cuboid keycard from locker"
+            ]
+        },
+        "action": "examine locker",
+        "reward": 0,
+        "next_state": "The locker looks strong, and impossible to break. You can see inside it. In the locker is a cuboid keycard. > -= Cubicle =-0/16",
+        "next_infos": {
+            "admissible_commands": [
+                "close locker",
+                "drop type 4 keycard",
+                "examine cuboid keycard",
+                "examine locker",
+                "examine type 4 keycard",
+                "go east",
+                "go south",
+                "insert type 4 keycard into locker",
+                "inventory",
+                "look",
+                "take cuboid keycard from locker"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

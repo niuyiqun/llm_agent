@@ -1,0 +1,343 @@
+[
+    {
+        "state": "Welcome to TextWorld! First step, open the hatch within the bedchamber. After pulling open the hatch, try to take a trip south. With that done, go west. Then, try to travel south. Once you finish that, go to the west. With that done, take a trip north. With that accomplished, make an attempt to go west. Then, take a trip north. And then, take a trip north. And then, try to head east. And then, move south. With that accomplished, venture east. After that, travel north. Then, pick up the shirt from the floor of the pantry. Got that? Good! -= Bedchamber =- You find yourself in a bedchamber. An usual kind of place. Let's see what's in here. A closed dresser is in the corner. There is a closed hatch leading south. There is an open gateway leading north. > -= Bedchamber =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "close gateway",
+                "examine dresser",
+                "examine gateway",
+                "examine hatch",
+                "go north",
+                "inventory",
+                "look",
+                "open dresser",
+                "open hatch"
+            ]
+        },
+        "action": "open hatch",
+        "reward": 0,
+        "next_state": "You open hatch. > -= Bedchamber =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "close gateway",
+                "close hatch",
+                "examine dresser",
+                "examine gateway",
+                "examine hatch",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "open dresser"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "You open hatch. > -= Bedchamber =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "close gateway",
+                "close hatch",
+                "examine dresser",
+                "examine gateway",
+                "examine hatch",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "open dresser"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Sauna =- You find yourself in a sauna. You make out a bench. But the thing is empty, unfortunately. There is an open hatch leading north. There is an open passageway leading west. > -= Sauna =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "close hatch",
+                "close passageway",
+                "examine bench",
+                "examine hatch",
+                "examine passageway",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Sauna =- You find yourself in a sauna. You make out a bench. But the thing is empty, unfortunately. There is an open hatch leading north. There is an open passageway leading west. > -= Sauna =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "close hatch",
+                "close passageway",
+                "examine bench",
+                "examine hatch",
+                "examine passageway",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Steam Room =- You find yourself in a steam room. An ordinary one. You bend down to tie your shoe. When you stand up, you notice a trunk. You make out a table. But oh no! there's nothing on this piece of trash. You see a counter. The counter is typical. The counter appears to be empty. There is an open passageway leading east. There is an open gate leading south. There is an exit to the north. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded. > -= Steam Room =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "close gate",
+                "close passageway",
+                "examine counter",
+                "examine gate",
+                "examine passageway",
+                "examine table",
+                "examine trunk",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "open trunk"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Steam Room =- You find yourself in a steam room. An ordinary one. You bend down to tie your shoe. When you stand up, you notice a trunk. You make out a table. But oh no! there's nothing on this piece of trash. You see a counter. The counter is typical. The counter appears to be empty. There is an open passageway leading east. There is an open gate leading south. There is an exit to the north. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded. > -= Steam Room =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "close gate",
+                "close passageway",
+                "examine counter",
+                "examine gate",
+                "examine passageway",
+                "examine table",
+                "examine trunk",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "open trunk"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Launderette =- If you're wondering why everything seems so standard all of a sudden, it's because you've just shown up in the launderette. You see a drawer. There is an open gate leading north. There is an exit to the east. Don't worry, it is unblocked. There is an unblocked exit to the west. > -= Launderette =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "close gate",
+                "examine drawer",
+                "examine gate",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "open drawer"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Launderette =- If you're wondering why everything seems so standard all of a sudden, it's because you've just shown up in the launderette. You see a drawer. There is an open gate leading north. There is an exit to the east. Don't worry, it is unblocked. There is an unblocked exit to the west. > -= Launderette =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "close gate",
+                "examine drawer",
+                "examine gate",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "open drawer"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Kitchen =- You arrive in a kitchen. An ordinary one. You decide to just list off a complete list of everything you see in the room, because hey, why not? What's that over there? It looks like it's a plate. The plate is usual. But oh no! there's nothing on this piece of junk. You can see a saucepan. But oh no! there's nothing on this piece of trash. Hm. Oh well You need an unblocked exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unblocked. There is an unblocked exit to the west. > -= Kitchen =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "examine plate",
+                "examine saucepan",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Kitchen =- You arrive in a kitchen. An ordinary one. You decide to just list off a complete list of everything you see in the room, because hey, why not? What's that over there? It looks like it's a plate. The plate is usual. But oh no! there's nothing on this piece of junk. You can see a saucepan. But oh no! there's nothing on this piece of trash. Hm. Oh well You need an unblocked exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unblocked. There is an unblocked exit to the west. > -= Kitchen =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "examine plate",
+                "examine saucepan",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Launderette =- If you're wondering why everything seems so standard all of a sudden, it's because you've just shown up in the launderette. You see a drawer. There is an open gate leading north. There is an exit to the east. Don't worry, it is unblocked. There is an unblocked exit to the west. > -= Launderette =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "close gate",
+                "examine drawer",
+                "examine gate",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "open drawer"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Launderette =- If you're wondering why everything seems so standard all of a sudden, it's because you've just shown up in the launderette. You see a drawer. There is an open gate leading north. There is an exit to the east. Don't worry, it is unblocked. There is an unblocked exit to the west. > -= Launderette =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "close gate",
+                "examine drawer",
+                "examine gate",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "open drawer"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Steam Room =- You find yourself in a steam room. An ordinary one. You bend down to tie your shoe. When you stand up, you notice a trunk. You make out a table. But oh no! there's nothing on this piece of trash. You see a counter. The counter is typical. The counter appears to be empty. There is an open passageway leading east. There is an open gate leading south. There is an exit to the north. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded. > -= Steam Room =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "close gate",
+                "close passageway",
+                "examine counter",
+                "examine gate",
+                "examine passageway",
+                "examine table",
+                "examine trunk",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "open trunk"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Steam Room =- You find yourself in a steam room. An ordinary one. You bend down to tie your shoe. When you stand up, you notice a trunk. You make out a table. But oh no! there's nothing on this piece of trash. You see a counter. The counter is typical. The counter appears to be empty. There is an open passageway leading east. There is an open gate leading south. There is an exit to the north. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded. > -= Steam Room =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "close gate",
+                "close passageway",
+                "examine counter",
+                "examine gate",
+                "examine passageway",
+                "examine table",
+                "examine trunk",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "open trunk"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Closet =- Well, here we are in a closet. There is an unguarded exit to the north. You need an unblocked exit? You should try going south. There is an unblocked exit to the west. > -= Closet =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Closet =- Well, here we are in a closet. There is an unguarded exit to the north. You need an unblocked exit? You should try going south. There is an unblocked exit to the west. > -= Closet =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Pantry =- You've entered a pantry. The room is well lit. You don't like doors? Why not try going south, that entranceway is unblocked. There is an unguarded exit to the west. There is a shirt on the floor. > -= Pantry =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "examine shirt",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take shirt"
+            ]
+        },
+        "done": false,
+        "next_action": "take shirt"
+    },
+    {
+        "state": "-= Pantry =- You've entered a pantry. The room is well lit. You don't like doors? Why not try going south, that entranceway is unblocked. There is an unguarded exit to the west. There is a shirt on the floor. > -= Pantry =-0/10",
+        "infos": {
+            "admissible_commands": [
+                "examine shirt",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take shirt"
+            ]
+        },
+        "action": "take shirt",
+        "reward": 1,
+        "next_state": "You pick up the shirt from the ground. Your score has just gone up by one point. *** The End *** You scored 1 out of a possible 1, in 11 turns. Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command? > -= Pantry =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "drop shirt",
+                "examine shirt",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

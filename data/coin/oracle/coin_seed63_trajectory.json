@@ -1,0 +1,364 @@
+[
+    {
+        "state": "Welcome to another fast paced round of TextWorld! Your first objective is to travel south. After that, venture south. Then, head south. After that, take a trip east. After that, make an effort to go to the north. After that, make an effort to venture west. Following that, attempt to go south. And then, move east. With that accomplished, make an effort to go east. Once you accomplish that, travel north. With that accomplished, take a trip north. Once you get around to doing that, make an effort to take a trip west. Then, make an attempt to move north. Once you succeed at that, venture west. And then, recover the coin from the floor of the salon. And if you do that, you're the winner! -= Cubicle =- You find yourself in a cubicle. An usual kind of place. You don't like doors? Why not try going south, that entranceway is unblocked. > -= Cubicle =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Dish-Pit =- You arrive in a dish-pit. An usual one. You don't like doors? Why not try going north, that entranceway is unblocked. You need an unguarded exit? You should try going south. > -= Dish-Pit =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Dish-Pit =- You arrive in a dish-pit. An usual one. You don't like doors? Why not try going north, that entranceway is unblocked. You need an unguarded exit? You should try going south. > -= Dish-Pit =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Pantry =- You're not going to believe this, but you've just entered a pantry. You begin looking for stuff. There is an exit to the north. Don't worry, it is unguarded. There is an unblocked exit to the south. > -= Pantry =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Pantry =- You're not going to believe this, but you've just entered a pantry. You begin looking for stuff. There is an exit to the north. Don't worry, it is unguarded. There is an unblocked exit to the south. > -= Pantry =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Chamber =- You're now in a chamber. There is an exit to the east. Don't worry, it is unguarded. There is an unguarded exit to the north. > -= Chamber =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "go east",
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Chamber =- You're now in a chamber. There is an exit to the east. Don't worry, it is unguarded. There is an unguarded exit to the north. > -= Chamber =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "go east",
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Kitchen =- You've just walked into a kitchen. There is an unguarded exit to the north. There is an unblocked exit to the west. > -= Kitchen =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Kitchen =- You've just walked into a kitchen. There is an unguarded exit to the north. There is an unblocked exit to the west. > -= Kitchen =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Bar =- You've entered a bar. There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west. > -= Bar =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Bar =- You've entered a bar. There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west. > -= Bar =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Shower =- You've entered a shower. There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked. > -= Shower =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Shower =- You've entered a shower. There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked. > -= Shower =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Playroom =- You've just walked into a playroom. You don't like doors? Why not try going east, that entranceway is unguarded. There is an unblocked exit to the north. > -= Playroom =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "go east",
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Playroom =- You've just walked into a playroom. You don't like doors? Why not try going east, that entranceway is unguarded. There is an unblocked exit to the north. > -= Playroom =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "go east",
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Sauna =- A well framed signboard tells you that you are now in the sauna. You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the west. Don't worry, it is unblocked. > -= Sauna =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "go east",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Sauna =- A well framed signboard tells you that you are now in the sauna. You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the west. Don't worry, it is unblocked. > -= Sauna =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "go east",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Laundry Place =- You find yourself in a laundry place. A normal kind of place. There is an unguarded exit to the north. There is an exit to the west. Don't worry, it is unguarded. > -= Laundry Place =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Laundry Place =- You find yourself in a laundry place. A normal kind of place. There is an unguarded exit to the north. There is an exit to the west. Don't worry, it is unguarded. > -= Laundry Place =-0/10",
+        "infos": {
+            "admissible_commands": [
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Restroom =- You've entered a restroom. You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going south. > -= Restroom =-0/11",
+        "next_infos": {
+            "admissible_commands": [
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Restroom =- You've entered a restroom. You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going south. > -= Restroom =-0/11",
+        "infos": {
+            "admissible_commands": [
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Bedroom =- You've just walked into a bedroom. You decide to just list off a complete list of everything you see in the room, because hey, why not? You need an unblocked exit? You should try going south. There is an unblocked exit to the west. > -= Bedroom =-0/12",
+        "next_infos": {
+            "admissible_commands": [
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Bedroom =- You've just walked into a bedroom. You decide to just list off a complete list of everything you see in the room, because hey, why not? You need an unblocked exit? You should try going south. There is an unblocked exit to the west. > -= Bedroom =-0/12",
+        "infos": {
+            "admissible_commands": [
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Bedchamber =- You've just sauntered into a bedchamber. You decide to start listing off everything you see in the room, as if you were in a text adventure. You need an unguarded exit? You should try going east. You need an unblocked exit? You should try going north. > -= Bedchamber =-0/13",
+        "next_infos": {
+            "admissible_commands": [
+                "go east",
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Bedchamber =- You've just sauntered into a bedchamber. You decide to start listing off everything you see in the room, as if you were in a text adventure. You need an unguarded exit? You should try going east. You need an unblocked exit? You should try going north. > -= Bedchamber =-0/13",
+        "infos": {
+            "admissible_commands": [
+                "go east",
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Kitchenette =- You've just sauntered into a kitchenette. You don't like doors? Why not try going south, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded. > -= Kitchenette =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Kitchenette =- You've just sauntered into a kitchenette. You don't like doors? Why not try going south, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded. > -= Kitchenette =-0/14",
+        "infos": {
+            "admissible_commands": [
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Salon =- You find yourself in a standard kind of place. That is to say, you're in a salon. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. There is an exit to the east. Don't worry, it is unblocked. There is a coin on the floor. > -= Salon =-0/15",
+        "next_infos": {
+            "admissible_commands": [
+                "examine coin",
+                "go east",
+                "inventory",
+                "look",
+                "take coin"
+            ]
+        },
+        "done": false,
+        "next_action": "take coin"
+    },
+    {
+        "state": "-= Salon =- You find yourself in a standard kind of place. That is to say, you're in a salon. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. There is an exit to the east. Don't worry, it is unblocked. There is a coin on the floor. > -= Salon =-0/15",
+        "infos": {
+            "admissible_commands": [
+                "examine coin",
+                "go east",
+                "inventory",
+                "look",
+                "take coin"
+            ]
+        },
+        "action": "take coin",
+        "reward": 1,
+        "next_state": "You pick up the coin from the ground. Your score has just gone up by one point. *** The End *** You scored 1 out of a possible 1, in 16 turns. Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command? > -= Salon =-0/15",
+        "next_infos": {
+            "admissible_commands": [
+                "drop coin",
+                "examine coin",
+                "go east",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

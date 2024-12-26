@@ -1,12 +1,63 @@
-game_file_path: "./data/simple/mock_game/"
-walkthroughs_file_path: "./data/simple/walkthroughs/"
-oracle_file_path: "./data/simple/oracle/"
-lm_file_path: "./data/simple/lm/"
-model_save_path: "./model/critic/sample_ratio"
-checkpoint_interval: 10
-num_epochs: 50
-batch_size: 32
-device: "cuda"
-bert_path: "./bert/"
-seed: 1225
-reward_sample_ratio: 0.5
+# simple, cooking, coin, treasure
+task: "simple"
+
+simple:
+  game_file_path: "./data/simple/mock_game/"
+  walkthroughs_file_path: "./data/simple/walkthroughs/"
+  oracle_file_path: "./data/simple/oracle_dense/"
+  lm_file_path: "./data/simple/lm/"
+  model_save_path: "./model/critic/simple/dense"
+  checkpoint_interval: 10
+  num_epochs: 50
+  batch_size: 32
+  device: "cuda"
+  bert_path: "./bert/"
+  seed: 123466
+  reward_sample_ratio: 0.5
+  validate_file_path: "./simple_test/simple"
+
+cooking:
+  game_file_path: "./data/cooking/mock_game/"
+  walkthroughs_file_path: "./data/cooking/walkthroughs/"
+  oracle_file_path: "./data/cooking/oracle/"
+  lm_file_path: "./data/cooking/lm/"
+  model_save_path: "./model/critic/cooking/sample_ratio"
+  checkpoint_interval: 10
+  num_epochs: 50
+  batch_size: 32
+  device: "cuda"
+  bert_path: "./bert/"
+  seed: 1224
+  reward_sample_ratio: 0.5
+  validate_file_path: "./simple_test/cooking"
+
+coin:
+  game_file_path: "./data/coin/mock_game/"
+  walkthroughs_file_path: "./data/coin/walkthroughs/"
+  oracle_file_path: "./data/coin/oracle/"
+  lm_file_path: "./data/coin/lm/"
+  model_save_path: "./model/critic/coin/sample_ratio"
+  checkpoint_interval: 10
+  num_epochs: 50
+  batch_size: 32
+  device: "cuda"
+  bert_path: "./bert/"
+  seed: 1224
+  reward_sample_ratio: 0.5
+  validate_file_path: "./simple_test/coin"
+
+
+treasure:
+  game_file_path: "./data/treasure/mock_game/"
+  walkthroughs_file_path: "./data/treasure/walkthroughs/"
+  oracle_file_path: "./data/treasure/oracle/"
+  lm_file_path: "./data/treasure/lm/"
+  model_save_path: "./model/critic/treasure/sample_ratio"
+  checkpoint_interval: 10
+  num_epochs: 50
+  batch_size: 32
+  device: "cuda"
+  bert_path: "./bert/"
+  seed: 1224
+  reward_sample_ratio: 0.5
+  validate_file_path: "./simple_test/treasure"

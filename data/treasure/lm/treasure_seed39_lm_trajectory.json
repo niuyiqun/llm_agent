@@ -1,0 +1,481 @@
+[
+    {
+        "state": "Hey, thanks for coming over to the TextWorld today, there is something I need you to do for me. Your first objective is to attempt to venture north. Then, unlock the non-euclidean passageway. After that, assure that the non-euclidean passageway inside the pantry is open. And then, take a trip north. After that, make an effort to travel north. Then, go east. With that over with, make an attempt to travel east. And then, head east. Then, head east. And then, venture south. After that, go to the south. Then, head south. With that over with, attempt to travel west. If you can finish that, recover the stick of butter from the floor of the closet. That's it! -= Attic =- If you're wondering why everything seems so ordinary all of a sudden, it's because you've just shown up in the attic. You decide to start listing off everything you see in the room, as if you were in a text adventure. You make out a stand. What a coincidence, weren't you just thinking about a stand? On the stand you can see a fondue. There is an unblocked exit to the north. > -= Attic =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "drop non-euclidean key",
+                "examine fondue",
+                "examine non-euclidean key",
+                "examine stand",
+                "go north",
+                "inventory",
+                "look",
+                "put non-euclidean key on stand",
+                "take fondue from stand"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Pantry =- You are in a pantry. A normal kind of place. Look out! It's a- oh, never mind, it's just a table. The table is ordinary. Unfortunately, there isn't a thing on it. It would have been so cool if there was stuff on the table! oh well. There is a closed non-euclidean passageway leading north. You need an unguarded exit? You should try going south. > -= Pantry =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "drop non-euclidean key",
+                "examine non-euclidean key",
+                "examine non-euclidean passageway",
+                "examine table",
+                "go south",
+                "inventory",
+                "look",
+                "put non-euclidean key on table",
+                "unlock non-euclidean passageway with non-euclidean key"
+            ]
+        },
+        "done": false,
+        "next_action": "unlock non-euclidean passageway with non-euclidean key"
+    },
+    {
+        "state": "-= Pantry =- You are in a pantry. A normal kind of place. Look out! It's a- oh, never mind, it's just a table. The table is ordinary. Unfortunately, there isn't a thing on it. It would have been so cool if there was stuff on the table! oh well. There is a closed non-euclidean passageway leading north. You need an unguarded exit? You should try going south. > -= Pantry =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "drop non-euclidean key",
+                "examine non-euclidean key",
+                "examine non-euclidean passageway",
+                "examine table",
+                "go south",
+                "inventory",
+                "look",
+                "put non-euclidean key on table",
+                "unlock non-euclidean passageway with non-euclidean key"
+            ]
+        },
+        "action": "unlock non-euclidean passageway with non-euclidean key",
+        "reward": 0,
+        "next_state": "You unlock non-euclidean passageway. > -= Pantry =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "drop non-euclidean key",
+                "examine non-euclidean key",
+                "examine non-euclidean passageway",
+                "examine table",
+                "go south",
+                "inventory",
+                "lock non-euclidean passageway with non-euclidean key",
+                "look",
+                "open non-euclidean passageway",
+                "put non-euclidean key on table"
+            ]
+        },
+        "done": false,
+        "next_action": "open non-euclidean passageway"
+    },
+    {
+        "state": "You unlock non-euclidean passageway. > -= Pantry =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "drop non-euclidean key",
+                "examine non-euclidean key",
+                "examine non-euclidean passageway",
+                "examine table",
+                "go south",
+                "inventory",
+                "lock non-euclidean passageway with non-euclidean key",
+                "look",
+                "open non-euclidean passageway",
+                "put non-euclidean key on table"
+            ]
+        },
+        "action": "open non-euclidean passageway",
+        "reward": 0,
+        "next_state": "You open non-euclidean passageway. > -= Pantry =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "close non-euclidean passageway",
+                "drop non-euclidean key",
+                "examine non-euclidean key",
+                "examine non-euclidean passageway",
+                "examine table",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "put non-euclidean key on table"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "You open non-euclidean passageway. > -= Pantry =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "close non-euclidean passageway",
+                "drop non-euclidean key",
+                "examine non-euclidean key",
+                "examine non-euclidean passageway",
+                "examine table",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "put non-euclidean key on table"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Shower =- You are in a shower. An ordinary kind of place. You see a locked typical looking box nearby. There is an open non-euclidean passageway leading south. There is an exit to the east. Don't worry, it is unguarded. You don't like doors? Why not try going north, that entranceway is unblocked. > -= Shower =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "close non-euclidean passageway",
+                "drop non-euclidean key",
+                "examine box",
+                "examine non-euclidean key",
+                "examine non-euclidean passageway",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Shower =- You are in a shower. An ordinary kind of place. You see a locked typical looking box nearby. There is an open non-euclidean passageway leading south. There is an exit to the east. Don't worry, it is unguarded. You don't like doors? Why not try going north, that entranceway is unblocked. > -= Shower =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "close non-euclidean passageway",
+                "drop non-euclidean key",
+                "examine box",
+                "examine non-euclidean key",
+                "examine non-euclidean passageway",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Bedroom =- You arrive in a bedroom. A normal kind of place. Okay, just remember what you're here to do, and everything will go great. You see a recliner. But oh no! there's nothing on this piece of trash. There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Bedroom =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "drop non-euclidean key",
+                "examine non-euclidean key",
+                "examine recliner",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "put non-euclidean key on recliner"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Bedroom =- You arrive in a bedroom. A normal kind of place. Okay, just remember what you're here to do, and everything will go great. You see a recliner. But oh no! there's nothing on this piece of trash. There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Bedroom =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "drop non-euclidean key",
+                "examine non-euclidean key",
+                "examine recliner",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "put non-euclidean key on recliner"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Laundromat =- You're now in a laundromat. You decide to start listing off everything you see in the room, as if you were in a text adventure. You need an unblocked exit? You should try going east. You don't like doors? Why not try going south, that entranceway is unguarded. There is an exit to the west. Don't worry, it is unguarded. > -= Laundromat =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "drop non-euclidean key",
+                "examine non-euclidean key",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Laundromat =- You're now in a laundromat. You decide to start listing off everything you see in the room, as if you were in a text adventure. You need an unblocked exit? You should try going east. You don't like doors? Why not try going south, that entranceway is unguarded. There is an exit to the west. Don't worry, it is unguarded. > -= Laundromat =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "drop non-euclidean key",
+                "examine non-euclidean key",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Vault =- You have come into a vault. Not the vault you'd expect. No, this is a vault. You begin to take stock of what's here. You make out a counter. The counter is ordinary. But the thing hasn't got anything on it. There is an unguarded exit to the east. There is an unblocked exit to the west. > -= Vault =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "drop non-euclidean key",
+                "examine counter",
+                "examine non-euclidean key",
+                "go east",
+                "go west",
+                "inventory",
+                "look",
+                "put non-euclidean key on counter"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Vault =- You have come into a vault. Not the vault you'd expect. No, this is a vault. You begin to take stock of what's here. You make out a counter. The counter is ordinary. But the thing hasn't got anything on it. There is an unguarded exit to the east. There is an unblocked exit to the west. > -= Vault =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "drop non-euclidean key",
+                "examine counter",
+                "examine non-euclidean key",
+                "go east",
+                "go west",
+                "inventory",
+                "look",
+                "put non-euclidean key on counter"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Cellar =- You're now in a cellar. You bend down to tie your shoe. When you stand up, you notice a workbench. Looks like someone's already been here and taken everything off it, though. There is an unguarded exit to the east. There is an unguarded exit to the west. > -= Cellar =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "drop non-euclidean key",
+                "examine non-euclidean key",
+                "examine workbench",
+                "go east",
+                "go west",
+                "inventory",
+                "look",
+                "put non-euclidean key on workbench"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Cellar =- You're now in a cellar. You bend down to tie your shoe. When you stand up, you notice a workbench. Looks like someone's already been here and taken everything off it, though. There is an unguarded exit to the east. There is an unguarded exit to the west. > -= Cellar =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "drop non-euclidean key",
+                "examine non-euclidean key",
+                "examine workbench",
+                "go east",
+                "go west",
+                "inventory",
+                "look",
+                "put non-euclidean key on workbench"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Steam Room =- You've entered a steam room. You see a gleam over in a corner, where you can see a bench. The bench is normal. The bench appears to be empty. Oh! Why couldn't there just be stuff on it? You make out a board. The board is dusty. But the thing hasn't got anything on it. Oh! Why couldn't there just be stuff on it? You smell an intriguing smell, and follow it to a chipped table. But the thing is empty. What, you think everything in TextWorld should have stuff on it? You don't like doors? Why not try going south, that entranceway is unblocked. There is an unblocked exit to the west. > -= Steam Room =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "drop non-euclidean key",
+                "examine bench",
+                "examine chipped table",
+                "examine dusty board",
+                "examine non-euclidean key",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put non-euclidean key on bench",
+                "put non-euclidean key on chipped table",
+                "put non-euclidean key on dusty board"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Steam Room =- You've entered a steam room. You see a gleam over in a corner, where you can see a bench. The bench is normal. The bench appears to be empty. Oh! Why couldn't there just be stuff on it? You make out a board. The board is dusty. But the thing hasn't got anything on it. Oh! Why couldn't there just be stuff on it? You smell an intriguing smell, and follow it to a chipped table. But the thing is empty. What, you think everything in TextWorld should have stuff on it? You don't like doors? Why not try going south, that entranceway is unblocked. There is an unblocked exit to the west. > -= Steam Room =-0/10",
+        "infos": {
+            "admissible_commands": [
+                "drop non-euclidean key",
+                "examine bench",
+                "examine chipped table",
+                "examine dusty board",
+                "examine non-euclidean key",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put non-euclidean key on bench",
+                "put non-euclidean key on chipped table",
+                "put non-euclidean key on dusty board"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Salon =- You are in a salon. A typical kind of place. There is an unblocked exit to the north. There is an exit to the south. Don't worry, it is unguarded. > -= Salon =-0/11",
+        "next_infos": {
+            "admissible_commands": [
+                "drop non-euclidean key",
+                "examine non-euclidean key",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Salon =- You are in a salon. A typical kind of place. There is an unblocked exit to the north. There is an exit to the south. Don't worry, it is unguarded. > -= Salon =-0/11",
+        "infos": {
+            "admissible_commands": [
+                "drop non-euclidean key",
+                "examine non-euclidean key",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Recreation Zone =- If you're wondering why everything seems so typical all of a sudden, it's because you've just sauntered into the recreation zone. You start to take note of what's in the room. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unblocked. > -= Recreation Zone =-0/12",
+        "next_infos": {
+            "admissible_commands": [
+                "drop non-euclidean key",
+                "examine non-euclidean key",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "inventory"
+    },
+    {
+        "state": "-= Recreation Zone =- If you're wondering why everything seems so typical all of a sudden, it's because you've just sauntered into the recreation zone. You start to take note of what's in the room. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unblocked. > -= Recreation Zone =-0/12",
+        "infos": {
+            "admissible_commands": [
+                "drop non-euclidean key",
+                "examine non-euclidean key",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying: a non-euclidean key. > -= Recreation Zone =-0/13",
+        "next_infos": {
+            "admissible_commands": [
+                "drop non-euclidean key",
+                "examine non-euclidean key",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "drop non-euclidean key"
+    },
+    {
+        "state": "You are carrying: a non-euclidean key. > -= Recreation Zone =-0/13",
+        "infos": {
+            "admissible_commands": [
+                "drop non-euclidean key",
+                "examine non-euclidean key",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "drop non-euclidean key",
+        "reward": 0,
+        "next_state": "You drop the non-euclidean key on the ground. > -= Recreation Zone =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "examine non-euclidean key",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "take non-euclidean key"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "You drop the non-euclidean key on the ground. > -= Recreation Zone =-0/14",
+        "infos": {
+            "admissible_commands": [
+                "examine non-euclidean key",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "take non-euclidean key"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Recreation Zone =- If you're wondering why everything seems so typical all of a sudden, it's because you've just sauntered into the recreation zone. You start to take note of what's in the room. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unblocked. There is a non-euclidean key on the floor. > -= Recreation Zone =-0/15",
+        "next_infos": {
+            "admissible_commands": [
+                "examine non-euclidean key",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "take non-euclidean key"
+            ]
+        },
+        "done": false,
+        "next_action": "take non-euclidean key"
+    },
+    {
+        "state": "-= Recreation Zone =- If you're wondering why everything seems so typical all of a sudden, it's because you've just sauntered into the recreation zone. You start to take note of what's in the room. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unblocked. There is a non-euclidean key on the floor. > -= Recreation Zone =-0/15",
+        "infos": {
+            "admissible_commands": [
+                "examine non-euclidean key",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "take non-euclidean key"
+            ]
+        },
+        "action": "take non-euclidean key",
+        "reward": 0,
+        "next_state": "You pick up the non-euclidean key from the ground. > -= Recreation Zone =-0/16",
+        "next_infos": {
+            "admissible_commands": [
+                "drop non-euclidean key",
+                "examine non-euclidean key",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

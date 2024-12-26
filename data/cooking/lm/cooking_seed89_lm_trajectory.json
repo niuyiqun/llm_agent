@@ -1,0 +1,525 @@
+[
+    {
+        "state": "You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal! -= Bathroom =- You've just sauntered into a bathroom. Oh wow! Is that what I think it is? It is! It's a toilet. The toilet is white. But the thing is empty, unfortunately. What's the point of an empty toilet? There is an exit to the west. Don't worry, there is no door. > -= Bathroom =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "drop lettuce",
+                "eat lettuce",
+                "examine toilet",
+                "go west",
+                "inventory",
+                "look",
+                "put lettuce on toilet"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Corridor =- You arrive in a corridor. A typical kind of place. There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You don't like doors? Why not try going west, that entranceway is not blocked by one. > -= Corridor =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "drop lettuce",
+                "eat lettuce",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Corridor =- You arrive in a corridor. A typical kind of place. There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You don't like doors? Why not try going west, that entranceway is not blocked by one. > -= Corridor =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "drop lettuce",
+                "eat lettuce",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Bathroom =- You've just sauntered into a bathroom. Oh wow! Is that what I think it is? It is! It's a toilet. The toilet is white. But the thing is empty, unfortunately. What's the point of an empty toilet? There is an exit to the west. Don't worry, there is no door. > -= Bathroom =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "drop lettuce",
+                "eat lettuce",
+                "examine toilet",
+                "go west",
+                "inventory",
+                "look",
+                "put lettuce on toilet"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Bathroom =- You've just sauntered into a bathroom. Oh wow! Is that what I think it is? It is! It's a toilet. The toilet is white. But the thing is empty, unfortunately. What's the point of an empty toilet? There is an exit to the west. Don't worry, there is no door. > -= Bathroom =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "drop lettuce",
+                "eat lettuce",
+                "examine toilet",
+                "go west",
+                "inventory",
+                "look",
+                "put lettuce on toilet"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "You can't go that way. > -= Bathroom =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "drop lettuce",
+                "eat lettuce",
+                "examine toilet",
+                "go west",
+                "inventory",
+                "look",
+                "put lettuce on toilet"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "You can't go that way. > -= Bathroom =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "drop lettuce",
+                "eat lettuce",
+                "examine toilet",
+                "go west",
+                "inventory",
+                "look",
+                "put lettuce on toilet"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Corridor =- You arrive in a corridor. A typical kind of place. There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You don't like doors? Why not try going west, that entranceway is not blocked by one. > -= Corridor =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "drop lettuce",
+                "eat lettuce",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Corridor =- You arrive in a corridor. A typical kind of place. There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You don't like doors? Why not try going west, that entranceway is not blocked by one. > -= Corridor =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "drop lettuce",
+                "eat lettuce",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Bedroom =- You arrive in a bedroom. A normal kind of place. You make out a bed. The bed is large. The bed appears to be empty. You make a mental note to not get your hopes up the next time you see a bed in a room. There is an exit to the south. Don't worry, there is no door. > -= Bedroom =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "drop lettuce",
+                "eat lettuce",
+                "examine bed",
+                "go south",
+                "inventory",
+                "look",
+                "put lettuce on bed"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Bedroom =- You arrive in a bedroom. A normal kind of place. You make out a bed. The bed is large. The bed appears to be empty. You make a mental note to not get your hopes up the next time you see a bed in a room. There is an exit to the south. Don't worry, there is no door. > -= Bedroom =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "drop lettuce",
+                "eat lettuce",
+                "examine bed",
+                "go south",
+                "inventory",
+                "look",
+                "put lettuce on bed"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Corridor =- You arrive in a corridor. A typical kind of place. There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You don't like doors? Why not try going west, that entranceway is not blocked by one. > -= Corridor =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "drop lettuce",
+                "eat lettuce",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Corridor =- You arrive in a corridor. A typical kind of place. There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You don't like doors? Why not try going west, that entranceway is not blocked by one. > -= Corridor =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "drop lettuce",
+                "eat lettuce",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Bathroom =- You've just sauntered into a bathroom. Oh wow! Is that what I think it is? It is! It's a toilet. The toilet is white. But the thing is empty, unfortunately. What's the point of an empty toilet? There is an exit to the west. Don't worry, there is no door. > -= Bathroom =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "drop lettuce",
+                "eat lettuce",
+                "examine toilet",
+                "go west",
+                "inventory",
+                "look",
+                "put lettuce on toilet"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Bathroom =- You've just sauntered into a bathroom. Oh wow! Is that what I think it is? It is! It's a toilet. The toilet is white. But the thing is empty, unfortunately. What's the point of an empty toilet? There is an exit to the west. Don't worry, there is no door. > -= Bathroom =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "drop lettuce",
+                "eat lettuce",
+                "examine toilet",
+                "go west",
+                "inventory",
+                "look",
+                "put lettuce on toilet"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "You can't go that way. > -= Bathroom =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "drop lettuce",
+                "eat lettuce",
+                "examine toilet",
+                "go west",
+                "inventory",
+                "look",
+                "put lettuce on toilet"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "You can't go that way. > -= Bathroom =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "drop lettuce",
+                "eat lettuce",
+                "examine toilet",
+                "go west",
+                "inventory",
+                "look",
+                "put lettuce on toilet"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Corridor =- You arrive in a corridor. A typical kind of place. There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You don't like doors? Why not try going west, that entranceway is not blocked by one. > -= Corridor =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "drop lettuce",
+                "eat lettuce",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Corridor =- You arrive in a corridor. A typical kind of place. There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You don't like doors? Why not try going west, that entranceway is not blocked by one. > -= Corridor =-0/10",
+        "infos": {
+            "admissible_commands": [
+                "drop lettuce",
+                "eat lettuce",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Bedroom =- You arrive in a bedroom. A normal kind of place. You make out a bed. The bed is large. The bed appears to be empty. You make a mental note to not get your hopes up the next time you see a bed in a room. There is an exit to the south. Don't worry, there is no door. > -= Bedroom =-0/11",
+        "next_infos": {
+            "admissible_commands": [
+                "drop lettuce",
+                "eat lettuce",
+                "examine bed",
+                "go south",
+                "inventory",
+                "look",
+                "put lettuce on bed"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Bedroom =- You arrive in a bedroom. A normal kind of place. You make out a bed. The bed is large. The bed appears to be empty. You make a mental note to not get your hopes up the next time you see a bed in a room. There is an exit to the south. Don't worry, there is no door. > -= Bedroom =-0/11",
+        "infos": {
+            "admissible_commands": [
+                "drop lettuce",
+                "eat lettuce",
+                "examine bed",
+                "go south",
+                "inventory",
+                "look",
+                "put lettuce on bed"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Corridor =- You arrive in a corridor. A typical kind of place. There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You don't like doors? Why not try going west, that entranceway is not blocked by one. > -= Corridor =-0/12",
+        "next_infos": {
+            "admissible_commands": [
+                "drop lettuce",
+                "eat lettuce",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Corridor =- You arrive in a corridor. A typical kind of place. There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You don't like doors? Why not try going west, that entranceway is not blocked by one. > -= Corridor =-0/12",
+        "infos": {
+            "admissible_commands": [
+                "drop lettuce",
+                "eat lettuce",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Bedroom =- You arrive in a bedroom. A normal kind of place. You make out a bed. The bed is large. The bed appears to be empty. You make a mental note to not get your hopes up the next time you see a bed in a room. There is an exit to the south. Don't worry, there is no door. > -= Bedroom =-0/13",
+        "next_infos": {
+            "admissible_commands": [
+                "drop lettuce",
+                "eat lettuce",
+                "examine bed",
+                "go south",
+                "inventory",
+                "look",
+                "put lettuce on bed"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Bedroom =- You arrive in a bedroom. A normal kind of place. You make out a bed. The bed is large. The bed appears to be empty. You make a mental note to not get your hopes up the next time you see a bed in a room. There is an exit to the south. Don't worry, there is no door. > -= Bedroom =-0/13",
+        "infos": {
+            "admissible_commands": [
+                "drop lettuce",
+                "eat lettuce",
+                "examine bed",
+                "go south",
+                "inventory",
+                "look",
+                "put lettuce on bed"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "You can't go that way. > -= Bedroom =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "drop lettuce",
+                "eat lettuce",
+                "examine bed",
+                "go south",
+                "inventory",
+                "look",
+                "put lettuce on bed"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "You can't go that way. > -= Bedroom =-0/14",
+        "infos": {
+            "admissible_commands": [
+                "drop lettuce",
+                "eat lettuce",
+                "examine bed",
+                "go south",
+                "inventory",
+                "look",
+                "put lettuce on bed"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Corridor =- You arrive in a corridor. A typical kind of place. There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You don't like doors? Why not try going west, that entranceway is not blocked by one. > -= Corridor =-0/15",
+        "next_infos": {
+            "admissible_commands": [
+                "drop lettuce",
+                "eat lettuce",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Corridor =- You arrive in a corridor. A typical kind of place. There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You don't like doors? Why not try going west, that entranceway is not blocked by one. > -= Corridor =-0/15",
+        "infos": {
+            "admissible_commands": [
+                "drop lettuce",
+                "eat lettuce",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Bedroom =- You arrive in a bedroom. A normal kind of place. You make out a bed. The bed is large. The bed appears to be empty. You make a mental note to not get your hopes up the next time you see a bed in a room. There is an exit to the south. Don't worry, there is no door. > -= Bedroom =-0/16",
+        "next_infos": {
+            "admissible_commands": [
+                "drop lettuce",
+                "eat lettuce",
+                "examine bed",
+                "go south",
+                "inventory",
+                "look",
+                "put lettuce on bed"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Bedroom =- You arrive in a bedroom. A normal kind of place. You make out a bed. The bed is large. The bed appears to be empty. You make a mental note to not get your hopes up the next time you see a bed in a room. There is an exit to the south. Don't worry, there is no door. > -= Bedroom =-0/16",
+        "infos": {
+            "admissible_commands": [
+                "drop lettuce",
+                "eat lettuce",
+                "examine bed",
+                "go south",
+                "inventory",
+                "look",
+                "put lettuce on bed"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "You can't go that way. > -= Bedroom =-0/17",
+        "next_infos": {
+            "admissible_commands": [
+                "drop lettuce",
+                "eat lettuce",
+                "examine bed",
+                "go south",
+                "inventory",
+                "look",
+                "put lettuce on bed"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "You can't go that way. > -= Bedroom =-0/17",
+        "infos": {
+            "admissible_commands": [
+                "drop lettuce",
+                "eat lettuce",
+                "examine bed",
+                "go south",
+                "inventory",
+                "look",
+                "put lettuce on bed"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Corridor =- You arrive in a corridor. A typical kind of place. There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You don't like doors? Why not try going west, that entranceway is not blocked by one. > -= Corridor =-0/18",
+        "next_infos": {
+            "admissible_commands": [
+                "drop lettuce",
+                "eat lettuce",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": null
+    }
+]

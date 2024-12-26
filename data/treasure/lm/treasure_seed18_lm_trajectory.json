@@ -1,0 +1,513 @@
+[
+    {
+        "state": "Hey, thanks for coming over to the TextWorld today, there is something I need you to do for me. First of all, you could, like, attempt to travel south. And then, make an effort to take a trip east. And then, make an attempt to move east. Following that, open the oak door in the closet. Then, make an effort to go to the north. And then, make an effort to move west. After that, lift the fresh laundry scented key from the floor of the shower. With the fresh laundry scented key, insert the fresh laundry scented key into the fresh laundry scented door in the shower's lock to unlock it. And then, ensure that the fresh laundry scented door inside the shower is open. After that, travel north. Then, attempt to move east. After that, open the portal. Then, attempt to head north. Then, pick-up the latchkey from the floor of the cubicle. Got that? Good! -= Laundromat =- You arrive in a laundromat. An ordinary one. You start to take note of what's in the room. You can see a rack. The rack is normal. But the thing hasn't got anything on it. What, you think everything in TextWorld should have stuff on it? You make out a counter. You shudder, but continue examining the counter. Unfortunately, there isn't a thing on it. There is an unblocked exit to the south. > -= Laundromat =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "examine counter",
+                "examine rack",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Sauna =- You are in a sauna. An ordinary one. Okay, just remember what you're here to do, and everything will go great. You bend down to tie your shoe. When you stand up, you notice a board. The board is usual. But the thing is empty, unfortunately. There is an open door leading east. You don't like doors? Why not try going north, that entranceway is unguarded. > -= Sauna =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "close door",
+                "examine board",
+                "examine door",
+                "go east",
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Sauna =- You are in a sauna. An ordinary one. Okay, just remember what you're here to do, and everything will go great. You bend down to tie your shoe. When you stand up, you notice a board. The board is usual. But the thing is empty, unfortunately. There is an open door leading east. You don't like doors? Why not try going north, that entranceway is unguarded. > -= Sauna =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "close door",
+                "examine board",
+                "examine door",
+                "go east",
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Laundromat =- You arrive in a laundromat. An ordinary one. You start to take note of what's in the room. You can see a rack. The rack is normal. But the thing hasn't got anything on it. What, you think everything in TextWorld should have stuff on it? You make out a counter. You shudder, but continue examining the counter. Unfortunately, there isn't a thing on it. There is an unblocked exit to the south. > -= Laundromat =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "examine counter",
+                "examine rack",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Laundromat =- You arrive in a laundromat. An ordinary one. You start to take note of what's in the room. You can see a rack. The rack is normal. But the thing hasn't got anything on it. What, you think everything in TextWorld should have stuff on it? You make out a counter. You shudder, but continue examining the counter. Unfortunately, there isn't a thing on it. There is an unblocked exit to the south. > -= Laundromat =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "examine counter",
+                "examine rack",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "You can't go that way. > -= Laundromat =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "examine counter",
+                "examine rack",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "You can't go that way. > -= Laundromat =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "examine counter",
+                "examine rack",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Sauna =- You are in a sauna. An ordinary one. Okay, just remember what you're here to do, and everything will go great. You bend down to tie your shoe. When you stand up, you notice a board. The board is usual. But the thing is empty, unfortunately. There is an open door leading east. You don't like doors? Why not try going north, that entranceway is unguarded. > -= Sauna =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "close door",
+                "examine board",
+                "examine door",
+                "go east",
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Sauna =- You are in a sauna. An ordinary one. Okay, just remember what you're here to do, and everything will go great. You bend down to tie your shoe. When you stand up, you notice a board. The board is usual. But the thing is empty, unfortunately. There is an open door leading east. You don't like doors? Why not try going north, that entranceway is unguarded. > -= Sauna =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "close door",
+                "examine board",
+                "examine door",
+                "go east",
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Cookhouse =- Guess what, you are in the place we're calling the cookhouse. You make out a bowl. Unfortunately, there isn't a thing on it. There is an open wooden gateway leading east. There is an open door leading west. > -= Cookhouse =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "close door",
+                "close wooden gateway",
+                "examine bowl",
+                "examine door",
+                "examine wooden gateway",
+                "go east",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Cookhouse =- Guess what, you are in the place we're calling the cookhouse. You make out a bowl. Unfortunately, there isn't a thing on it. There is an open wooden gateway leading east. There is an open door leading west. > -= Cookhouse =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "close door",
+                "close wooden gateway",
+                "examine bowl",
+                "examine door",
+                "examine wooden gateway",
+                "go east",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Closet =- You are in a closet. A normal kind of place. There is a closed oak door leading north. There is an open wooden gateway leading west. > -= Closet =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "close wooden gateway",
+                "examine oak door",
+                "examine wooden gateway",
+                "go west",
+                "inventory",
+                "look",
+                "open oak door"
+            ]
+        },
+        "done": false,
+        "next_action": "open oak door"
+    },
+    {
+        "state": "-= Closet =- You are in a closet. A normal kind of place. There is a closed oak door leading north. There is an open wooden gateway leading west. > -= Closet =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "close wooden gateway",
+                "examine oak door",
+                "examine wooden gateway",
+                "go west",
+                "inventory",
+                "look",
+                "open oak door"
+            ]
+        },
+        "action": "open oak door",
+        "reward": 0,
+        "next_state": "You open oak door. > -= Closet =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "close oak door",
+                "close wooden gateway",
+                "examine oak door",
+                "examine wooden gateway",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "You open oak door. > -= Closet =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "close oak door",
+                "close wooden gateway",
+                "examine oak door",
+                "examine wooden gateway",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Serious Studio =- You're not going to believe this, but you've just entered a serious studio. You see a stand. But there isn't a thing on it. Aw, here you were, all excited for there to be things on it! There is an open oak door leading south. There is an open wooden door leading west. > -= Serious Studio =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "close oak door",
+                "close wooden door",
+                "examine oak door",
+                "examine stand",
+                "examine wooden door",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Serious Studio =- You're not going to believe this, but you've just entered a serious studio. You see a stand. But there isn't a thing on it. Aw, here you were, all excited for there to be things on it! There is an open oak door leading south. There is an open wooden door leading west. > -= Serious Studio =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "close oak door",
+                "close wooden door",
+                "examine oak door",
+                "examine stand",
+                "examine wooden door",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Shower =- You arrive in a shower. A normal kind of place. You begin looking for stuff. As if things weren't amazing enough already, you can even see a table. Unfortunately, there isn't a thing on it. There is a closed fresh laundry scented door leading north. There is an open wooden door leading east. There is a fresh laundry scented key on the floor. > -= Shower =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "close wooden door",
+                "examine fresh laundry scented door",
+                "examine fresh laundry scented key",
+                "examine table",
+                "examine wooden door",
+                "go east",
+                "inventory",
+                "look",
+                "take fresh laundry scented key"
+            ]
+        },
+        "done": false,
+        "next_action": "take fresh laundry scented key"
+    },
+    {
+        "state": "-= Shower =- You arrive in a shower. A normal kind of place. You begin looking for stuff. As if things weren't amazing enough already, you can even see a table. Unfortunately, there isn't a thing on it. There is a closed fresh laundry scented door leading north. There is an open wooden door leading east. There is a fresh laundry scented key on the floor. > -= Shower =-0/10",
+        "infos": {
+            "admissible_commands": [
+                "close wooden door",
+                "examine fresh laundry scented door",
+                "examine fresh laundry scented key",
+                "examine table",
+                "examine wooden door",
+                "go east",
+                "inventory",
+                "look",
+                "take fresh laundry scented key"
+            ]
+        },
+        "action": "take fresh laundry scented key",
+        "reward": 0,
+        "next_state": "You pick up the fresh laundry scented key from the ground. > -= Shower =-0/11",
+        "next_infos": {
+            "admissible_commands": [
+                "close wooden door",
+                "drop fresh laundry scented key",
+                "examine fresh laundry scented door",
+                "examine fresh laundry scented key",
+                "examine table",
+                "examine wooden door",
+                "go east",
+                "inventory",
+                "look",
+                "put fresh laundry scented key on table",
+                "unlock fresh laundry scented door with fresh laundry scented key"
+            ]
+        },
+        "done": false,
+        "next_action": "unlock fresh laundry scented door with fresh laundry scented key"
+    },
+    {
+        "state": "You pick up the fresh laundry scented key from the ground. > -= Shower =-0/11",
+        "infos": {
+            "admissible_commands": [
+                "close wooden door",
+                "drop fresh laundry scented key",
+                "examine fresh laundry scented door",
+                "examine fresh laundry scented key",
+                "examine table",
+                "examine wooden door",
+                "go east",
+                "inventory",
+                "look",
+                "put fresh laundry scented key on table",
+                "unlock fresh laundry scented door with fresh laundry scented key"
+            ]
+        },
+        "action": "unlock fresh laundry scented door with fresh laundry scented key",
+        "reward": 0,
+        "next_state": "You unlock fresh laundry scented door. > -= Shower =-0/12",
+        "next_infos": {
+            "admissible_commands": [
+                "close wooden door",
+                "drop fresh laundry scented key",
+                "examine fresh laundry scented door",
+                "examine fresh laundry scented key",
+                "examine table",
+                "examine wooden door",
+                "go east",
+                "inventory",
+                "lock fresh laundry scented door with fresh laundry scented key",
+                "look",
+                "open fresh laundry scented door",
+                "put fresh laundry scented key on table"
+            ]
+        },
+        "done": false,
+        "next_action": "open fresh laundry scented door"
+    },
+    {
+        "state": "You unlock fresh laundry scented door. > -= Shower =-0/12",
+        "infos": {
+            "admissible_commands": [
+                "close wooden door",
+                "drop fresh laundry scented key",
+                "examine fresh laundry scented door",
+                "examine fresh laundry scented key",
+                "examine table",
+                "examine wooden door",
+                "go east",
+                "inventory",
+                "lock fresh laundry scented door with fresh laundry scented key",
+                "look",
+                "open fresh laundry scented door",
+                "put fresh laundry scented key on table"
+            ]
+        },
+        "action": "open fresh laundry scented door",
+        "reward": 0,
+        "next_state": "You open fresh laundry scented door. > -= Shower =-0/13",
+        "next_infos": {
+            "admissible_commands": [
+                "close fresh laundry scented door",
+                "close wooden door",
+                "drop fresh laundry scented key",
+                "examine fresh laundry scented door",
+                "examine fresh laundry scented key",
+                "examine table",
+                "examine wooden door",
+                "go east",
+                "go north",
+                "inventory",
+                "look",
+                "put fresh laundry scented key on table"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "You open fresh laundry scented door. > -= Shower =-0/13",
+        "infos": {
+            "admissible_commands": [
+                "close fresh laundry scented door",
+                "close wooden door",
+                "drop fresh laundry scented key",
+                "examine fresh laundry scented door",
+                "examine fresh laundry scented key",
+                "examine table",
+                "examine wooden door",
+                "go east",
+                "go north",
+                "inventory",
+                "look",
+                "put fresh laundry scented key on table"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Workshop =- You've walked into a normal room. Your mind races to think of what kind of room would be normal. And then it hits you. Of course. You're in the workshop. Let's see what's in here. There is an open fresh laundry scented door leading south. There is an open gateway leading east. You don't like doors? Why not try going north, that entranceway is unblocked. You need an unblocked exit? You should try going west. > -= Workshop =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "close fresh laundry scented door",
+                "close gateway",
+                "drop fresh laundry scented key",
+                "examine fresh laundry scented door",
+                "examine fresh laundry scented key",
+                "examine gateway",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Workshop =- You've walked into a normal room. Your mind races to think of what kind of room would be normal. And then it hits you. Of course. You're in the workshop. Let's see what's in here. There is an open fresh laundry scented door leading south. There is an open gateway leading east. You don't like doors? Why not try going north, that entranceway is unblocked. You need an unblocked exit? You should try going west. > -= Workshop =-0/14",
+        "infos": {
+            "admissible_commands": [
+                "close fresh laundry scented door",
+                "close gateway",
+                "drop fresh laundry scented key",
+                "examine fresh laundry scented door",
+                "examine fresh laundry scented key",
+                "examine gateway",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Studio =- You find yourself in a studio. Okay, just remember what you're here to do, and everything will go great. You make out a bureau. You can see a chair. The chair is typical. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the chair. There is a closed portal leading north. There is an open gateway leading west. > -= Studio =-0/15",
+        "next_infos": {
+            "admissible_commands": [
+                "close gateway",
+                "drop fresh laundry scented key",
+                "examine bureau",
+                "examine chair",
+                "examine fresh laundry scented key",
+                "examine gateway",
+                "examine portal",
+                "go west",
+                "inventory",
+                "look",
+                "open bureau",
+                "open portal",
+                "put fresh laundry scented key on chair"
+            ]
+        },
+        "done": false,
+        "next_action": "open portal"
+    },
+    {
+        "state": "-= Studio =- You find yourself in a studio. Okay, just remember what you're here to do, and everything will go great. You make out a bureau. You can see a chair. The chair is typical. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the chair. There is a closed portal leading north. There is an open gateway leading west. > -= Studio =-0/15",
+        "infos": {
+            "admissible_commands": [
+                "close gateway",
+                "drop fresh laundry scented key",
+                "examine bureau",
+                "examine chair",
+                "examine fresh laundry scented key",
+                "examine gateway",
+                "examine portal",
+                "go west",
+                "inventory",
+                "look",
+                "open bureau",
+                "open portal",
+                "put fresh laundry scented key on chair"
+            ]
+        },
+        "action": "open portal",
+        "reward": 0,
+        "next_state": "You open portal. > -= Studio =-0/16",
+        "next_infos": {
+            "admissible_commands": [
+                "close gateway",
+                "close portal",
+                "drop fresh laundry scented key",
+                "examine bureau",
+                "examine chair",
+                "examine fresh laundry scented key",
+                "examine gateway",
+                "examine portal",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "open bureau",
+                "put fresh laundry scented key on chair"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

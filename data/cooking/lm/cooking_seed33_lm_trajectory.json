@@ -1,0 +1,317 @@
+[
+    {
+        "state": "You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal! -= Corridor =- You arrive in a corridor. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. You don't like doors? Why not try going north, that entranceway is not blocked by one. You don't like doors? Why not try going south, that entranceway is not blocked by one. There is an exit to the west. > -= Corridor =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop white onion",
+                "drop white tuna",
+                "eat white onion",
+                "eat white tuna",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Bedroom =- I am so happy to announce that you are now in the bedroom. I guess you better just go and list everything you see here. Oh, great. Here's a bed. Unfortunately, there isn't a thing on it. You don't like doors? Why not try going east, that entranceway is not blocked by one. You need an exit without a door? You should try going south. > -= Bedroom =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop white onion",
+                "drop white tuna",
+                "eat white onion",
+                "eat white tuna",
+                "examine bed",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "put red tuna on bed",
+                "put white onion on bed",
+                "put white tuna on bed"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Bedroom =- I am so happy to announce that you are now in the bedroom. I guess you better just go and list everything you see here. Oh, great. Here's a bed. Unfortunately, there isn't a thing on it. You don't like doors? Why not try going east, that entranceway is not blocked by one. You need an exit without a door? You should try going south. > -= Bedroom =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop white onion",
+                "drop white tuna",
+                "eat white onion",
+                "eat white tuna",
+                "examine bed",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "put red tuna on bed",
+                "put white onion on bed",
+                "put white tuna on bed"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Corridor =- You arrive in a corridor. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. You don't like doors? Why not try going north, that entranceway is not blocked by one. You don't like doors? Why not try going south, that entranceway is not blocked by one. There is an exit to the west. > -= Corridor =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop white onion",
+                "drop white tuna",
+                "eat white onion",
+                "eat white tuna",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Corridor =- You arrive in a corridor. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. You don't like doors? Why not try going north, that entranceway is not blocked by one. You don't like doors? Why not try going south, that entranceway is not blocked by one. There is an exit to the west. > -= Corridor =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop white onion",
+                "drop white tuna",
+                "eat white onion",
+                "eat white tuna",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Bedroom =- I am so happy to announce that you are now in the bedroom. I guess you better just go and list everything you see here. Oh, great. Here's a bed. Unfortunately, there isn't a thing on it. You don't like doors? Why not try going east, that entranceway is not blocked by one. You need an exit without a door? You should try going south. > -= Bedroom =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop white onion",
+                "drop white tuna",
+                "eat white onion",
+                "eat white tuna",
+                "examine bed",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "put red tuna on bed",
+                "put white onion on bed",
+                "put white tuna on bed"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Bedroom =- I am so happy to announce that you are now in the bedroom. I guess you better just go and list everything you see here. Oh, great. Here's a bed. Unfortunately, there isn't a thing on it. You don't like doors? Why not try going east, that entranceway is not blocked by one. You need an exit without a door? You should try going south. > -= Bedroom =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop white onion",
+                "drop white tuna",
+                "eat white onion",
+                "eat white tuna",
+                "examine bed",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "put red tuna on bed",
+                "put white onion on bed",
+                "put white tuna on bed"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "You can't go that way. > -= Bedroom =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop white onion",
+                "drop white tuna",
+                "eat white onion",
+                "eat white tuna",
+                "examine bed",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "put red tuna on bed",
+                "put white onion on bed",
+                "put white tuna on bed"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "You can't go that way. > -= Bedroom =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop white onion",
+                "drop white tuna",
+                "eat white onion",
+                "eat white tuna",
+                "examine bed",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "put red tuna on bed",
+                "put white onion on bed",
+                "put white tuna on bed"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Corridor =- You arrive in a corridor. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. You don't like doors? Why not try going north, that entranceway is not blocked by one. You don't like doors? Why not try going south, that entranceway is not blocked by one. There is an exit to the west. > -= Corridor =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop white onion",
+                "drop white tuna",
+                "eat white onion",
+                "eat white tuna",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Corridor =- You arrive in a corridor. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. You don't like doors? Why not try going north, that entranceway is not blocked by one. You don't like doors? Why not try going south, that entranceway is not blocked by one. There is an exit to the west. > -= Corridor =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop white onion",
+                "drop white tuna",
+                "eat white onion",
+                "eat white tuna",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Bedroom =- I am so happy to announce that you are now in the bedroom. I guess you better just go and list everything you see here. Oh, great. Here's a bed. Unfortunately, there isn't a thing on it. You don't like doors? Why not try going east, that entranceway is not blocked by one. You need an exit without a door? You should try going south. > -= Bedroom =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop white onion",
+                "drop white tuna",
+                "eat white onion",
+                "eat white tuna",
+                "examine bed",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "put red tuna on bed",
+                "put white onion on bed",
+                "put white tuna on bed"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Bedroom =- I am so happy to announce that you are now in the bedroom. I guess you better just go and list everything you see here. Oh, great. Here's a bed. Unfortunately, there isn't a thing on it. You don't like doors? Why not try going east, that entranceway is not blocked by one. You need an exit without a door? You should try going south. > -= Bedroom =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop white onion",
+                "drop white tuna",
+                "eat white onion",
+                "eat white tuna",
+                "examine bed",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "put red tuna on bed",
+                "put white onion on bed",
+                "put white tuna on bed"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Corridor =- You arrive in a corridor. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. You don't like doors? Why not try going north, that entranceway is not blocked by one. You don't like doors? Why not try going south, that entranceway is not blocked by one. There is an exit to the west. > -= Corridor =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop white onion",
+                "drop white tuna",
+                "eat white onion",
+                "eat white tuna",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Corridor =- You arrive in a corridor. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. You don't like doors? Why not try going north, that entranceway is not blocked by one. You don't like doors? Why not try going south, that entranceway is not blocked by one. There is an exit to the west. > -= Corridor =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop white onion",
+                "drop white tuna",
+                "eat white onion",
+                "eat white tuna",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Bedroom =- I am so happy to announce that you are now in the bedroom. I guess you better just go and list everything you see here. Oh, great. Here's a bed. Unfortunately, there isn't a thing on it. You don't like doors? Why not try going east, that entranceway is not blocked by one. You need an exit without a door? You should try going south. > -= Bedroom =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop white onion",
+                "drop white tuna",
+                "eat white onion",
+                "eat white tuna",
+                "examine bed",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "put red tuna on bed",
+                "put white onion on bed",
+                "put white tuna on bed"
+            ]
+        },
+        "done": false,
+        "next_action": null
+    }
+]

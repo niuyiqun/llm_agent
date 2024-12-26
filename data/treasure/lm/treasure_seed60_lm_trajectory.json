@@ -1,0 +1,158 @@
+[
+    {
+        "state": "Get ready to pick stuff up and put it in places, because you've just entered TextWorld! Here is how to play! First stop, venture east. After that, make an attempt to go to the east. And then, travel south. And then, head east. Following that, attempt to go to the south. Then, make an attempt to venture west. Then, travel south. And then, attempt to take a trip east. That done, travel east. With that over with, try to take a trip north. With that done, make an effort to move north. And then, make an attempt to go to the north. With that accomplished, make an effort to take a trip west. Okay, and then, retrieve the licorice strip from the floor of the dish-pit. Got that? Good! -= Washroom =- You are in a standard kind of place. That is to say, you're in a washroom. You decide to just list off a complete list of everything you see in the room, because hey, why not? You see a cabinet. Is this it? Is this what you came to TextWorld to see? a cabinet? You can make out a trunk. Look over there! a box. You can make out a counter. But oh no! there's nothing on this piece of trash. Aw, here you were, all excited for there to be things on it! There is an open passageway leading east. There is an unblocked exit to the north. > -= Washroom =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "close passageway",
+                "examine box",
+                "examine cabinet",
+                "examine counter",
+                "examine passageway",
+                "examine trunk",
+                "go east",
+                "go north",
+                "inventory",
+                "look",
+                "open box",
+                "open cabinet"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Cubicle =- Well I'll be, you are in the place we're calling the cubicle. There is an open passageway leading west. There is an exit to the east. Don't worry, it is unguarded. There is an exit to the south. Don't worry, it is unblocked. > -= Cubicle =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "close passageway",
+                "examine passageway",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Cubicle =- Well I'll be, you are in the place we're calling the cubicle. There is an open passageway leading west. There is an exit to the east. Don't worry, it is unguarded. There is an exit to the south. Don't worry, it is unblocked. > -= Cubicle =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "close passageway",
+                "examine passageway",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Workshop =- If you're wondering why everything seems so typical all of a sudden, it's because you've just sauntered into the workshop. Look over there! a display. The display is empty, what a horrible day! You make out a stand. The stand is ordinary. The stand appears to be empty. There is an exit to the east. Don't worry, it is unguarded. There is an exit to the south. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unguarded. > -= Workshop =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "close display",
+                "examine display",
+                "examine stand",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Workshop =- If you're wondering why everything seems so typical all of a sudden, it's because you've just sauntered into the workshop. Look over there! a display. The display is empty, what a horrible day! You make out a stand. The stand is ordinary. The stand appears to be empty. There is an exit to the east. Don't worry, it is unguarded. There is an exit to the south. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unguarded. > -= Workshop =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "close display",
+                "examine display",
+                "examine stand",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Laundry Place =- You arrive in a laundry place. A standard kind of place. You decide to start listing off everything you see in the room, as if you were in a text adventure. There is an exit to the east. Don't worry, it is unblocked. There is an unblocked exit to the north. There is an exit to the south. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded. > -= Laundry Place =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Laundry Place =- You arrive in a laundry place. A standard kind of place. You decide to start listing off everything you see in the room, as if you were in a text adventure. There is an exit to the east. Don't worry, it is unblocked. There is an unblocked exit to the north. There is an exit to the south. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded. > -= Laundry Place =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Office =- You arrive in an office. An usual one. You don't like doors? Why not try going east, that entranceway is unblocked. You don't like doors? Why not try going north, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked. There is an exit to the west. Don't worry, it is unguarded. > -= Office =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Office =- You arrive in an office. An usual one. You don't like doors? Why not try going east, that entranceway is unblocked. You don't like doors? Why not try going north, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked. There is an exit to the west. Don't worry, it is unguarded. > -= Office =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Dish-Pit =- I just think it's awesome that you're in a dish-pit now. You can make out a case. Huh, weird. The case is empty! This is the worst thing that could possibly happen, ever! You need an unguarded exit? You should try going east. You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unblocked. There is an unguarded exit to the west. There is a licorice strip on the floor. > -= Dish-Pit =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "close case",
+                "examine case",
+                "examine licorice strip",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take licorice strip"
+            ]
+        },
+        "done": false,
+        "next_action": null
+    }
+]

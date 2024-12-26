@@ -1,0 +1,930 @@
+[
+    {
+        "state": "You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal! -= Bedroom =- You've just shown up in a bedroom. You scan the room, seeing a bed. The bed is large. But oh no! there's nothing on this piece of junk. You need an exit without a door? You should try going north. You need an exit without a door? You should try going south. > -= Bedroom =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop yellow bell pepper",
+                "drop yellow potato",
+                "eat yellow bell pepper",
+                "eat yellow potato",
+                "examine bed",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "put red potato on bed",
+                "put yellow bell pepper on bed",
+                "put yellow potato on bed"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Corridor =- You are in a corridor. An usual one. Okay, just remember what you're here to do, and everything will go great. You need an exit without a door? You should try going north. There is an exit to the west. > -= Corridor =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop yellow bell pepper",
+                "drop yellow potato",
+                "eat yellow bell pepper",
+                "eat yellow potato",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Corridor =- You are in a corridor. An usual one. Okay, just remember what you're here to do, and everything will go great. You need an exit without a door? You should try going north. There is an exit to the west. > -= Corridor =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop yellow bell pepper",
+                "drop yellow potato",
+                "eat yellow bell pepper",
+                "eat yellow potato",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Bathroom =- You find yourself in a bathroom. You decide to start listing off everything you see in the room, as if you were in a text adventure. You scan the room for a toilet, and you find a toilet. The toilet is white. However, the toilet, like an empty toilet, has nothing on it. There is an exit to the east. Don't worry, there is no door. > -= Bathroom =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop yellow bell pepper",
+                "drop yellow potato",
+                "eat yellow bell pepper",
+                "eat yellow potato",
+                "examine toilet",
+                "go east",
+                "inventory",
+                "look",
+                "put red potato on toilet",
+                "put yellow bell pepper on toilet",
+                "put yellow potato on toilet"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Bathroom =- You find yourself in a bathroom. You decide to start listing off everything you see in the room, as if you were in a text adventure. You scan the room for a toilet, and you find a toilet. The toilet is white. However, the toilet, like an empty toilet, has nothing on it. There is an exit to the east. Don't worry, there is no door. > -= Bathroom =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop yellow bell pepper",
+                "drop yellow potato",
+                "eat yellow bell pepper",
+                "eat yellow potato",
+                "examine toilet",
+                "go east",
+                "inventory",
+                "look",
+                "put red potato on toilet",
+                "put yellow bell pepper on toilet",
+                "put yellow potato on toilet"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Corridor =- You are in a corridor. An usual one. Okay, just remember what you're here to do, and everything will go great. You need an exit without a door? You should try going north. There is an exit to the west. > -= Corridor =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop yellow bell pepper",
+                "drop yellow potato",
+                "eat yellow bell pepper",
+                "eat yellow potato",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Corridor =- You are in a corridor. An usual one. Okay, just remember what you're here to do, and everything will go great. You need an exit without a door? You should try going north. There is an exit to the west. > -= Corridor =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop yellow bell pepper",
+                "drop yellow potato",
+                "eat yellow bell pepper",
+                "eat yellow potato",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Bedroom =- You've just shown up in a bedroom. You scan the room, seeing a bed. The bed is large. But oh no! there's nothing on this piece of junk. You need an exit without a door? You should try going north. You need an exit without a door? You should try going south. > -= Bedroom =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop yellow bell pepper",
+                "drop yellow potato",
+                "eat yellow bell pepper",
+                "eat yellow potato",
+                "examine bed",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "put red potato on bed",
+                "put yellow bell pepper on bed",
+                "put yellow potato on bed"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Bedroom =- You've just shown up in a bedroom. You scan the room, seeing a bed. The bed is large. But oh no! there's nothing on this piece of junk. You need an exit without a door? You should try going north. You need an exit without a door? You should try going south. > -= Bedroom =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop yellow bell pepper",
+                "drop yellow potato",
+                "eat yellow bell pepper",
+                "eat yellow potato",
+                "examine bed",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "put red potato on bed",
+                "put yellow bell pepper on bed",
+                "put yellow potato on bed"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Corridor =- You are in a corridor. An usual one. Okay, just remember what you're here to do, and everything will go great. You need an exit without a door? You should try going north. There is an exit to the west. > -= Corridor =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop yellow bell pepper",
+                "drop yellow potato",
+                "eat yellow bell pepper",
+                "eat yellow potato",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Corridor =- You are in a corridor. An usual one. Okay, just remember what you're here to do, and everything will go great. You need an exit without a door? You should try going north. There is an exit to the west. > -= Corridor =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop yellow bell pepper",
+                "drop yellow potato",
+                "eat yellow bell pepper",
+                "eat yellow potato",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Bathroom =- You find yourself in a bathroom. You decide to start listing off everything you see in the room, as if you were in a text adventure. You scan the room for a toilet, and you find a toilet. The toilet is white. However, the toilet, like an empty toilet, has nothing on it. There is an exit to the east. Don't worry, there is no door. > -= Bathroom =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop yellow bell pepper",
+                "drop yellow potato",
+                "eat yellow bell pepper",
+                "eat yellow potato",
+                "examine toilet",
+                "go east",
+                "inventory",
+                "look",
+                "put red potato on toilet",
+                "put yellow bell pepper on toilet",
+                "put yellow potato on toilet"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Bathroom =- You find yourself in a bathroom. You decide to start listing off everything you see in the room, as if you were in a text adventure. You scan the room for a toilet, and you find a toilet. The toilet is white. However, the toilet, like an empty toilet, has nothing on it. There is an exit to the east. Don't worry, there is no door. > -= Bathroom =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop yellow bell pepper",
+                "drop yellow potato",
+                "eat yellow bell pepper",
+                "eat yellow potato",
+                "examine toilet",
+                "go east",
+                "inventory",
+                "look",
+                "put red potato on toilet",
+                "put yellow bell pepper on toilet",
+                "put yellow potato on toilet"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Corridor =- You are in a corridor. An usual one. Okay, just remember what you're here to do, and everything will go great. You need an exit without a door? You should try going north. There is an exit to the west. > -= Corridor =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop yellow bell pepper",
+                "drop yellow potato",
+                "eat yellow bell pepper",
+                "eat yellow potato",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Corridor =- You are in a corridor. An usual one. Okay, just remember what you're here to do, and everything will go great. You need an exit without a door? You should try going north. There is an exit to the west. > -= Corridor =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop yellow bell pepper",
+                "drop yellow potato",
+                "eat yellow bell pepper",
+                "eat yellow potato",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Bathroom =- You find yourself in a bathroom. You decide to start listing off everything you see in the room, as if you were in a text adventure. You scan the room for a toilet, and you find a toilet. The toilet is white. However, the toilet, like an empty toilet, has nothing on it. There is an exit to the east. Don't worry, there is no door. > -= Bathroom =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop yellow bell pepper",
+                "drop yellow potato",
+                "eat yellow bell pepper",
+                "eat yellow potato",
+                "examine toilet",
+                "go east",
+                "inventory",
+                "look",
+                "put red potato on toilet",
+                "put yellow bell pepper on toilet",
+                "put yellow potato on toilet"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Bathroom =- You find yourself in a bathroom. You decide to start listing off everything you see in the room, as if you were in a text adventure. You scan the room for a toilet, and you find a toilet. The toilet is white. However, the toilet, like an empty toilet, has nothing on it. There is an exit to the east. Don't worry, there is no door. > -= Bathroom =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop yellow bell pepper",
+                "drop yellow potato",
+                "eat yellow bell pepper",
+                "eat yellow potato",
+                "examine toilet",
+                "go east",
+                "inventory",
+                "look",
+                "put red potato on toilet",
+                "put yellow bell pepper on toilet",
+                "put yellow potato on toilet"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Corridor =- You are in a corridor. An usual one. Okay, just remember what you're here to do, and everything will go great. You need an exit without a door? You should try going north. There is an exit to the west. > -= Corridor =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop yellow bell pepper",
+                "drop yellow potato",
+                "eat yellow bell pepper",
+                "eat yellow potato",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Corridor =- You are in a corridor. An usual one. Okay, just remember what you're here to do, and everything will go great. You need an exit without a door? You should try going north. There is an exit to the west. > -= Corridor =-0/10",
+        "infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop yellow bell pepper",
+                "drop yellow potato",
+                "eat yellow bell pepper",
+                "eat yellow potato",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Bathroom =- You find yourself in a bathroom. You decide to start listing off everything you see in the room, as if you were in a text adventure. You scan the room for a toilet, and you find a toilet. The toilet is white. However, the toilet, like an empty toilet, has nothing on it. There is an exit to the east. Don't worry, there is no door. > -= Bathroom =-0/11",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop yellow bell pepper",
+                "drop yellow potato",
+                "eat yellow bell pepper",
+                "eat yellow potato",
+                "examine toilet",
+                "go east",
+                "inventory",
+                "look",
+                "put red potato on toilet",
+                "put yellow bell pepper on toilet",
+                "put yellow potato on toilet"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Bathroom =- You find yourself in a bathroom. You decide to start listing off everything you see in the room, as if you were in a text adventure. You scan the room for a toilet, and you find a toilet. The toilet is white. However, the toilet, like an empty toilet, has nothing on it. There is an exit to the east. Don't worry, there is no door. > -= Bathroom =-0/11",
+        "infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop yellow bell pepper",
+                "drop yellow potato",
+                "eat yellow bell pepper",
+                "eat yellow potato",
+                "examine toilet",
+                "go east",
+                "inventory",
+                "look",
+                "put red potato on toilet",
+                "put yellow bell pepper on toilet",
+                "put yellow potato on toilet"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Corridor =- You are in a corridor. An usual one. Okay, just remember what you're here to do, and everything will go great. You need an exit without a door? You should try going north. There is an exit to the west. > -= Corridor =-0/12",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop yellow bell pepper",
+                "drop yellow potato",
+                "eat yellow bell pepper",
+                "eat yellow potato",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Corridor =- You are in a corridor. An usual one. Okay, just remember what you're here to do, and everything will go great. You need an exit without a door? You should try going north. There is an exit to the west. > -= Corridor =-0/12",
+        "infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop yellow bell pepper",
+                "drop yellow potato",
+                "eat yellow bell pepper",
+                "eat yellow potato",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Bathroom =- You find yourself in a bathroom. You decide to start listing off everything you see in the room, as if you were in a text adventure. You scan the room for a toilet, and you find a toilet. The toilet is white. However, the toilet, like an empty toilet, has nothing on it. There is an exit to the east. Don't worry, there is no door. > -= Bathroom =-0/13",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop yellow bell pepper",
+                "drop yellow potato",
+                "eat yellow bell pepper",
+                "eat yellow potato",
+                "examine toilet",
+                "go east",
+                "inventory",
+                "look",
+                "put red potato on toilet",
+                "put yellow bell pepper on toilet",
+                "put yellow potato on toilet"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Bathroom =- You find yourself in a bathroom. You decide to start listing off everything you see in the room, as if you were in a text adventure. You scan the room for a toilet, and you find a toilet. The toilet is white. However, the toilet, like an empty toilet, has nothing on it. There is an exit to the east. Don't worry, there is no door. > -= Bathroom =-0/13",
+        "infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop yellow bell pepper",
+                "drop yellow potato",
+                "eat yellow bell pepper",
+                "eat yellow potato",
+                "examine toilet",
+                "go east",
+                "inventory",
+                "look",
+                "put red potato on toilet",
+                "put yellow bell pepper on toilet",
+                "put yellow potato on toilet"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Corridor =- You are in a corridor. An usual one. Okay, just remember what you're here to do, and everything will go great. You need an exit without a door? You should try going north. There is an exit to the west. > -= Corridor =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop yellow bell pepper",
+                "drop yellow potato",
+                "eat yellow bell pepper",
+                "eat yellow potato",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Corridor =- You are in a corridor. An usual one. Okay, just remember what you're here to do, and everything will go great. You need an exit without a door? You should try going north. There is an exit to the west. > -= Corridor =-0/14",
+        "infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop yellow bell pepper",
+                "drop yellow potato",
+                "eat yellow bell pepper",
+                "eat yellow potato",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Bathroom =- You find yourself in a bathroom. You decide to start listing off everything you see in the room, as if you were in a text adventure. You scan the room for a toilet, and you find a toilet. The toilet is white. However, the toilet, like an empty toilet, has nothing on it. There is an exit to the east. Don't worry, there is no door. > -= Bathroom =-0/15",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop yellow bell pepper",
+                "drop yellow potato",
+                "eat yellow bell pepper",
+                "eat yellow potato",
+                "examine toilet",
+                "go east",
+                "inventory",
+                "look",
+                "put red potato on toilet",
+                "put yellow bell pepper on toilet",
+                "put yellow potato on toilet"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Bathroom =- You find yourself in a bathroom. You decide to start listing off everything you see in the room, as if you were in a text adventure. You scan the room for a toilet, and you find a toilet. The toilet is white. However, the toilet, like an empty toilet, has nothing on it. There is an exit to the east. Don't worry, there is no door. > -= Bathroom =-0/15",
+        "infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop yellow bell pepper",
+                "drop yellow potato",
+                "eat yellow bell pepper",
+                "eat yellow potato",
+                "examine toilet",
+                "go east",
+                "inventory",
+                "look",
+                "put red potato on toilet",
+                "put yellow bell pepper on toilet",
+                "put yellow potato on toilet"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Corridor =- You are in a corridor. An usual one. Okay, just remember what you're here to do, and everything will go great. You need an exit without a door? You should try going north. There is an exit to the west. > -= Corridor =-0/16",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop yellow bell pepper",
+                "drop yellow potato",
+                "eat yellow bell pepper",
+                "eat yellow potato",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Corridor =- You are in a corridor. An usual one. Okay, just remember what you're here to do, and everything will go great. You need an exit without a door? You should try going north. There is an exit to the west. > -= Corridor =-0/16",
+        "infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop yellow bell pepper",
+                "drop yellow potato",
+                "eat yellow bell pepper",
+                "eat yellow potato",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Bathroom =- You find yourself in a bathroom. You decide to start listing off everything you see in the room, as if you were in a text adventure. You scan the room for a toilet, and you find a toilet. The toilet is white. However, the toilet, like an empty toilet, has nothing on it. There is an exit to the east. Don't worry, there is no door. > -= Bathroom =-0/17",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop yellow bell pepper",
+                "drop yellow potato",
+                "eat yellow bell pepper",
+                "eat yellow potato",
+                "examine toilet",
+                "go east",
+                "inventory",
+                "look",
+                "put red potato on toilet",
+                "put yellow bell pepper on toilet",
+                "put yellow potato on toilet"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Bathroom =- You find yourself in a bathroom. You decide to start listing off everything you see in the room, as if you were in a text adventure. You scan the room for a toilet, and you find a toilet. The toilet is white. However, the toilet, like an empty toilet, has nothing on it. There is an exit to the east. Don't worry, there is no door. > -= Bathroom =-0/17",
+        "infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop yellow bell pepper",
+                "drop yellow potato",
+                "eat yellow bell pepper",
+                "eat yellow potato",
+                "examine toilet",
+                "go east",
+                "inventory",
+                "look",
+                "put red potato on toilet",
+                "put yellow bell pepper on toilet",
+                "put yellow potato on toilet"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Corridor =- You are in a corridor. An usual one. Okay, just remember what you're here to do, and everything will go great. You need an exit without a door? You should try going north. There is an exit to the west. > -= Corridor =-0/18",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop yellow bell pepper",
+                "drop yellow potato",
+                "eat yellow bell pepper",
+                "eat yellow potato",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Corridor =- You are in a corridor. An usual one. Okay, just remember what you're here to do, and everything will go great. You need an exit without a door? You should try going north. There is an exit to the west. > -= Corridor =-0/18",
+        "infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop yellow bell pepper",
+                "drop yellow potato",
+                "eat yellow bell pepper",
+                "eat yellow potato",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Bathroom =- You find yourself in a bathroom. You decide to start listing off everything you see in the room, as if you were in a text adventure. You scan the room for a toilet, and you find a toilet. The toilet is white. However, the toilet, like an empty toilet, has nothing on it. There is an exit to the east. Don't worry, there is no door. > -= Bathroom =-0/19",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop yellow bell pepper",
+                "drop yellow potato",
+                "eat yellow bell pepper",
+                "eat yellow potato",
+                "examine toilet",
+                "go east",
+                "inventory",
+                "look",
+                "put red potato on toilet",
+                "put yellow bell pepper on toilet",
+                "put yellow potato on toilet"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Bathroom =- You find yourself in a bathroom. You decide to start listing off everything you see in the room, as if you were in a text adventure. You scan the room for a toilet, and you find a toilet. The toilet is white. However, the toilet, like an empty toilet, has nothing on it. There is an exit to the east. Don't worry, there is no door. > -= Bathroom =-0/19",
+        "infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop yellow bell pepper",
+                "drop yellow potato",
+                "eat yellow bell pepper",
+                "eat yellow potato",
+                "examine toilet",
+                "go east",
+                "inventory",
+                "look",
+                "put red potato on toilet",
+                "put yellow bell pepper on toilet",
+                "put yellow potato on toilet"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Corridor =- You are in a corridor. An usual one. Okay, just remember what you're here to do, and everything will go great. You need an exit without a door? You should try going north. There is an exit to the west. > -= Corridor =-0/20",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop yellow bell pepper",
+                "drop yellow potato",
+                "eat yellow bell pepper",
+                "eat yellow potato",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Corridor =- You are in a corridor. An usual one. Okay, just remember what you're here to do, and everything will go great. You need an exit without a door? You should try going north. There is an exit to the west. > -= Corridor =-0/20",
+        "infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop yellow bell pepper",
+                "drop yellow potato",
+                "eat yellow bell pepper",
+                "eat yellow potato",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Bathroom =- You find yourself in a bathroom. You decide to start listing off everything you see in the room, as if you were in a text adventure. You scan the room for a toilet, and you find a toilet. The toilet is white. However, the toilet, like an empty toilet, has nothing on it. There is an exit to the east. Don't worry, there is no door. > -= Bathroom =-0/21",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop yellow bell pepper",
+                "drop yellow potato",
+                "eat yellow bell pepper",
+                "eat yellow potato",
+                "examine toilet",
+                "go east",
+                "inventory",
+                "look",
+                "put red potato on toilet",
+                "put yellow bell pepper on toilet",
+                "put yellow potato on toilet"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Bathroom =- You find yourself in a bathroom. You decide to start listing off everything you see in the room, as if you were in a text adventure. You scan the room for a toilet, and you find a toilet. The toilet is white. However, the toilet, like an empty toilet, has nothing on it. There is an exit to the east. Don't worry, there is no door. > -= Bathroom =-0/21",
+        "infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop yellow bell pepper",
+                "drop yellow potato",
+                "eat yellow bell pepper",
+                "eat yellow potato",
+                "examine toilet",
+                "go east",
+                "inventory",
+                "look",
+                "put red potato on toilet",
+                "put yellow bell pepper on toilet",
+                "put yellow potato on toilet"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Corridor =- You are in a corridor. An usual one. Okay, just remember what you're here to do, and everything will go great. You need an exit without a door? You should try going north. There is an exit to the west. > -= Corridor =-0/22",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop yellow bell pepper",
+                "drop yellow potato",
+                "eat yellow bell pepper",
+                "eat yellow potato",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Corridor =- You are in a corridor. An usual one. Okay, just remember what you're here to do, and everything will go great. You need an exit without a door? You should try going north. There is an exit to the west. > -= Corridor =-0/22",
+        "infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop yellow bell pepper",
+                "drop yellow potato",
+                "eat yellow bell pepper",
+                "eat yellow potato",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Bathroom =- You find yourself in a bathroom. You decide to start listing off everything you see in the room, as if you were in a text adventure. You scan the room for a toilet, and you find a toilet. The toilet is white. However, the toilet, like an empty toilet, has nothing on it. There is an exit to the east. Don't worry, there is no door. > -= Bathroom =-0/23",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop yellow bell pepper",
+                "drop yellow potato",
+                "eat yellow bell pepper",
+                "eat yellow potato",
+                "examine toilet",
+                "go east",
+                "inventory",
+                "look",
+                "put red potato on toilet",
+                "put yellow bell pepper on toilet",
+                "put yellow potato on toilet"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Bathroom =- You find yourself in a bathroom. You decide to start listing off everything you see in the room, as if you were in a text adventure. You scan the room for a toilet, and you find a toilet. The toilet is white. However, the toilet, like an empty toilet, has nothing on it. There is an exit to the east. Don't worry, there is no door. > -= Bathroom =-0/23",
+        "infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop yellow bell pepper",
+                "drop yellow potato",
+                "eat yellow bell pepper",
+                "eat yellow potato",
+                "examine toilet",
+                "go east",
+                "inventory",
+                "look",
+                "put red potato on toilet",
+                "put yellow bell pepper on toilet",
+                "put yellow potato on toilet"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Corridor =- You are in a corridor. An usual one. Okay, just remember what you're here to do, and everything will go great. You need an exit without a door? You should try going north. There is an exit to the west. > -= Corridor =-0/24",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop yellow bell pepper",
+                "drop yellow potato",
+                "eat yellow bell pepper",
+                "eat yellow potato",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Corridor =- You are in a corridor. An usual one. Okay, just remember what you're here to do, and everything will go great. You need an exit without a door? You should try going north. There is an exit to the west. > -= Corridor =-0/24",
+        "infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop yellow bell pepper",
+                "drop yellow potato",
+                "eat yellow bell pepper",
+                "eat yellow potato",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Bathroom =- You find yourself in a bathroom. You decide to start listing off everything you see in the room, as if you were in a text adventure. You scan the room for a toilet, and you find a toilet. The toilet is white. However, the toilet, like an empty toilet, has nothing on it. There is an exit to the east. Don't worry, there is no door. > -= Bathroom =-0/25",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop yellow bell pepper",
+                "drop yellow potato",
+                "eat yellow bell pepper",
+                "eat yellow potato",
+                "examine toilet",
+                "go east",
+                "inventory",
+                "look",
+                "put red potato on toilet",
+                "put yellow bell pepper on toilet",
+                "put yellow potato on toilet"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Bathroom =- You find yourself in a bathroom. You decide to start listing off everything you see in the room, as if you were in a text adventure. You scan the room for a toilet, and you find a toilet. The toilet is white. However, the toilet, like an empty toilet, has nothing on it. There is an exit to the east. Don't worry, there is no door. > -= Bathroom =-0/25",
+        "infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop yellow bell pepper",
+                "drop yellow potato",
+                "eat yellow bell pepper",
+                "eat yellow potato",
+                "examine toilet",
+                "go east",
+                "inventory",
+                "look",
+                "put red potato on toilet",
+                "put yellow bell pepper on toilet",
+                "put yellow potato on toilet"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Corridor =- You are in a corridor. An usual one. Okay, just remember what you're here to do, and everything will go great. You need an exit without a door? You should try going north. There is an exit to the west. > -= Corridor =-0/26",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop yellow bell pepper",
+                "drop yellow potato",
+                "eat yellow bell pepper",
+                "eat yellow potato",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

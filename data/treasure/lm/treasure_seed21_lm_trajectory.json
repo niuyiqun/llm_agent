@@ -1,0 +1,125 @@
+[
+    {
+        "state": "Welcome to TextWorld! Here is your task for today. First off, if it's not too much trouble, I need you to try to take a trip west. With that accomplished, head south. Okay, and then, take a trip west. Then, take a trip west. And then, make an attempt to head north. And then, head east. With that over with, retrieve the TextWorld style passkey from the floor of the workshop. Then, try to go south. With that accomplished, unlock the TextWorld style gate inside the sauna with the TextWorld style passkey. After unlocking the TextWorld style gate, ensure that the TextWorld style gate is open. After that, make an attempt to take a trip south. After that, attempt to go south. That done, move south. And then, pick-up the key from the floor of the canteen. Got that? Good! -= Chamber =- You arrive in a chamber. An usual one. Okay, just remember what you're here to do, and everything will go great. There is an unblocked exit to the west. > -= Chamber =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Salon =- Of every salon you could have walked into, you had to come round an ordinary one. You can see an opened dresser nearby. Empty! What kind of nightmare TextWorld is this? There is an unguarded exit to the east. There is an exit to the south. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked. > -= Salon =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "close dresser",
+                "examine dresser",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Salon =- Of every salon you could have walked into, you had to come round an ordinary one. You can see an opened dresser nearby. Empty! What kind of nightmare TextWorld is this? There is an unguarded exit to the east. There is an exit to the south. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked. > -= Salon =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "close dresser",
+                "examine dresser",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Cookhouse =- I just think it's awesome that you're in a cookhouse now. You see a chest. Hmmm... what else, what else? There is an unguarded exit to the north. You need an unguarded exit? You should try going west. > -= Cookhouse =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "examine chest",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "open chest"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Cookhouse =- I just think it's awesome that you're in a cookhouse now. You see a chest. Hmmm... what else, what else? There is an unguarded exit to the north. You need an unguarded exit? You should try going west. > -= Cookhouse =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "examine chest",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "open chest"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Sauna =- You are in a sauna. A normal one. You begin looking for stuff. You see a basket. There is a closed TextWorld style gate leading south. There is an exit to the east. Don't worry, it is unblocked. There is an exit to the north. Don't worry, it is unblocked. There is an unguarded exit to the west. There is a passkey on the floor. > -= Sauna =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "examine TextWorld style gate",
+                "examine basket",
+                "examine passkey",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "open basket",
+                "take passkey"
+            ]
+        },
+        "done": false,
+        "next_action": "take passkey"
+    },
+    {
+        "state": "-= Sauna =- You are in a sauna. A normal one. You begin looking for stuff. You see a basket. There is a closed TextWorld style gate leading south. There is an exit to the east. Don't worry, it is unblocked. There is an exit to the north. Don't worry, it is unblocked. There is an unguarded exit to the west. There is a passkey on the floor. > -= Sauna =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "examine TextWorld style gate",
+                "examine basket",
+                "examine passkey",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "open basket",
+                "take passkey"
+            ]
+        },
+        "action": "take passkey",
+        "reward": 0,
+        "next_state": "You pick up the passkey from the ground. *** You lost! *** You scored 0 out of a possible 1, in 4 turns. Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command? > -= Sauna =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "drop passkey",
+                "examine TextWorld style gate",
+                "examine basket",
+                "examine passkey",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "open basket"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

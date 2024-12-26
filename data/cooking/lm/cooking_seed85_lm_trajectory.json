@@ -1,0 +1,832 @@
+[
+    {
+        "state": "You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal! -= Livingroom =- If you're wondering why everything seems so ordinary all of a sudden, it's because you've just sauntered into the livingroom. Let's see what's in here. You make out a sofa. Unfortunately, there isn't a thing on it. You need an exit without a door? You should try going north. There is an exit to the south. There is an exit to the west. Don't worry, there is no door. > -= Livingroom =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop red tuna",
+                "eat red tuna",
+                "examine sofa",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put red potato on sofa",
+                "put red tuna on sofa"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Corridor =- You arrive in a corridor. A normal kind of place. There is an exit to the east. Don't worry, there is no door. There is an exit to the south. Don't worry, there is no door. > -= Corridor =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop red tuna",
+                "eat red tuna",
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Corridor =- You arrive in a corridor. A normal kind of place. There is an exit to the east. Don't worry, there is no door. There is an exit to the south. Don't worry, there is no door. > -= Corridor =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop red tuna",
+                "eat red tuna",
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Bathroom =- You arrive in a bathroom. A normal one. You can make out a toilet. I guess it's true what they say, if you're looking for a toilet, go to TextWorld. But there isn't a thing on it. You think about smashing the toilet to bits, throwing the bits into the garbage, etc, until you get bored and decide to move on. There is an exit to the north. Don't worry, there is no door. > -= Bathroom =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop red tuna",
+                "eat red tuna",
+                "examine toilet",
+                "go north",
+                "inventory",
+                "look",
+                "put red potato on toilet",
+                "put red tuna on toilet"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Bathroom =- You arrive in a bathroom. A normal one. You can make out a toilet. I guess it's true what they say, if you're looking for a toilet, go to TextWorld. But there isn't a thing on it. You think about smashing the toilet to bits, throwing the bits into the garbage, etc, until you get bored and decide to move on. There is an exit to the north. Don't worry, there is no door. > -= Bathroom =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop red tuna",
+                "eat red tuna",
+                "examine toilet",
+                "go north",
+                "inventory",
+                "look",
+                "put red potato on toilet",
+                "put red tuna on toilet"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Corridor =- You arrive in a corridor. A normal kind of place. There is an exit to the east. Don't worry, there is no door. There is an exit to the south. Don't worry, there is no door. > -= Corridor =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop red tuna",
+                "eat red tuna",
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Corridor =- You arrive in a corridor. A normal kind of place. There is an exit to the east. Don't worry, there is no door. There is an exit to the south. Don't worry, there is no door. > -= Corridor =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop red tuna",
+                "eat red tuna",
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Livingroom =- If you're wondering why everything seems so ordinary all of a sudden, it's because you've just sauntered into the livingroom. Let's see what's in here. You make out a sofa. Unfortunately, there isn't a thing on it. You need an exit without a door? You should try going north. There is an exit to the south. There is an exit to the west. Don't worry, there is no door. > -= Livingroom =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop red tuna",
+                "eat red tuna",
+                "examine sofa",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put red potato on sofa",
+                "put red tuna on sofa"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Livingroom =- If you're wondering why everything seems so ordinary all of a sudden, it's because you've just sauntered into the livingroom. Let's see what's in here. You make out a sofa. Unfortunately, there isn't a thing on it. You need an exit without a door? You should try going north. There is an exit to the south. There is an exit to the west. Don't worry, there is no door. > -= Livingroom =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop red tuna",
+                "eat red tuna",
+                "examine sofa",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put red potato on sofa",
+                "put red tuna on sofa"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Bedroom =- You find yourself in a bedroom. An ordinary one. You can make out a bed. The bed is large. But the thing is empty. Aw, here you were, all excited for there to be things on it! There is an exit to the south. > -= Bedroom =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop red tuna",
+                "eat red tuna",
+                "examine bed",
+                "go south",
+                "inventory",
+                "look",
+                "put red potato on bed",
+                "put red tuna on bed"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Bedroom =- You find yourself in a bedroom. An ordinary one. You can make out a bed. The bed is large. But the thing is empty. Aw, here you were, all excited for there to be things on it! There is an exit to the south. > -= Bedroom =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop red tuna",
+                "eat red tuna",
+                "examine bed",
+                "go south",
+                "inventory",
+                "look",
+                "put red potato on bed",
+                "put red tuna on bed"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Livingroom =- If you're wondering why everything seems so ordinary all of a sudden, it's because you've just sauntered into the livingroom. Let's see what's in here. You make out a sofa. Unfortunately, there isn't a thing on it. You need an exit without a door? You should try going north. There is an exit to the south. There is an exit to the west. Don't worry, there is no door. > -= Livingroom =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop red tuna",
+                "eat red tuna",
+                "examine sofa",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put red potato on sofa",
+                "put red tuna on sofa"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Livingroom =- If you're wondering why everything seems so ordinary all of a sudden, it's because you've just sauntered into the livingroom. Let's see what's in here. You make out a sofa. Unfortunately, there isn't a thing on it. You need an exit without a door? You should try going north. There is an exit to the south. There is an exit to the west. Don't worry, there is no door. > -= Livingroom =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop red tuna",
+                "eat red tuna",
+                "examine sofa",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put red potato on sofa",
+                "put red tuna on sofa"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Corridor =- You arrive in a corridor. A normal kind of place. There is an exit to the east. Don't worry, there is no door. There is an exit to the south. Don't worry, there is no door. > -= Corridor =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop red tuna",
+                "eat red tuna",
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Corridor =- You arrive in a corridor. A normal kind of place. There is an exit to the east. Don't worry, there is no door. There is an exit to the south. Don't worry, there is no door. > -= Corridor =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop red tuna",
+                "eat red tuna",
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Bathroom =- You arrive in a bathroom. A normal one. You can make out a toilet. I guess it's true what they say, if you're looking for a toilet, go to TextWorld. But there isn't a thing on it. You think about smashing the toilet to bits, throwing the bits into the garbage, etc, until you get bored and decide to move on. There is an exit to the north. Don't worry, there is no door. > -= Bathroom =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop red tuna",
+                "eat red tuna",
+                "examine toilet",
+                "go north",
+                "inventory",
+                "look",
+                "put red potato on toilet",
+                "put red tuna on toilet"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Bathroom =- You arrive in a bathroom. A normal one. You can make out a toilet. I guess it's true what they say, if you're looking for a toilet, go to TextWorld. But there isn't a thing on it. You think about smashing the toilet to bits, throwing the bits into the garbage, etc, until you get bored and decide to move on. There is an exit to the north. Don't worry, there is no door. > -= Bathroom =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop red tuna",
+                "eat red tuna",
+                "examine toilet",
+                "go north",
+                "inventory",
+                "look",
+                "put red potato on toilet",
+                "put red tuna on toilet"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Corridor =- You arrive in a corridor. A normal kind of place. There is an exit to the east. Don't worry, there is no door. There is an exit to the south. Don't worry, there is no door. > -= Corridor =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop red tuna",
+                "eat red tuna",
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Corridor =- You arrive in a corridor. A normal kind of place. There is an exit to the east. Don't worry, there is no door. There is an exit to the south. Don't worry, there is no door. > -= Corridor =-0/10",
+        "infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop red tuna",
+                "eat red tuna",
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Livingroom =- If you're wondering why everything seems so ordinary all of a sudden, it's because you've just sauntered into the livingroom. Let's see what's in here. You make out a sofa. Unfortunately, there isn't a thing on it. You need an exit without a door? You should try going north. There is an exit to the south. There is an exit to the west. Don't worry, there is no door. > -= Livingroom =-0/11",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop red tuna",
+                "eat red tuna",
+                "examine sofa",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put red potato on sofa",
+                "put red tuna on sofa"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Livingroom =- If you're wondering why everything seems so ordinary all of a sudden, it's because you've just sauntered into the livingroom. Let's see what's in here. You make out a sofa. Unfortunately, there isn't a thing on it. You need an exit without a door? You should try going north. There is an exit to the south. There is an exit to the west. Don't worry, there is no door. > -= Livingroom =-0/11",
+        "infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop red tuna",
+                "eat red tuna",
+                "examine sofa",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put red potato on sofa",
+                "put red tuna on sofa"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Corridor =- You arrive in a corridor. A normal kind of place. There is an exit to the east. Don't worry, there is no door. There is an exit to the south. Don't worry, there is no door. > -= Corridor =-0/12",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop red tuna",
+                "eat red tuna",
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Corridor =- You arrive in a corridor. A normal kind of place. There is an exit to the east. Don't worry, there is no door. There is an exit to the south. Don't worry, there is no door. > -= Corridor =-0/12",
+        "infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop red tuna",
+                "eat red tuna",
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Bathroom =- You arrive in a bathroom. A normal one. You can make out a toilet. I guess it's true what they say, if you're looking for a toilet, go to TextWorld. But there isn't a thing on it. You think about smashing the toilet to bits, throwing the bits into the garbage, etc, until you get bored and decide to move on. There is an exit to the north. Don't worry, there is no door. > -= Bathroom =-0/13",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop red tuna",
+                "eat red tuna",
+                "examine toilet",
+                "go north",
+                "inventory",
+                "look",
+                "put red potato on toilet",
+                "put red tuna on toilet"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Bathroom =- You arrive in a bathroom. A normal one. You can make out a toilet. I guess it's true what they say, if you're looking for a toilet, go to TextWorld. But there isn't a thing on it. You think about smashing the toilet to bits, throwing the bits into the garbage, etc, until you get bored and decide to move on. There is an exit to the north. Don't worry, there is no door. > -= Bathroom =-0/13",
+        "infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop red tuna",
+                "eat red tuna",
+                "examine toilet",
+                "go north",
+                "inventory",
+                "look",
+                "put red potato on toilet",
+                "put red tuna on toilet"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Corridor =- You arrive in a corridor. A normal kind of place. There is an exit to the east. Don't worry, there is no door. There is an exit to the south. Don't worry, there is no door. > -= Corridor =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop red tuna",
+                "eat red tuna",
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Corridor =- You arrive in a corridor. A normal kind of place. There is an exit to the east. Don't worry, there is no door. There is an exit to the south. Don't worry, there is no door. > -= Corridor =-0/14",
+        "infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop red tuna",
+                "eat red tuna",
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Livingroom =- If you're wondering why everything seems so ordinary all of a sudden, it's because you've just sauntered into the livingroom. Let's see what's in here. You make out a sofa. Unfortunately, there isn't a thing on it. You need an exit without a door? You should try going north. There is an exit to the south. There is an exit to the west. Don't worry, there is no door. > -= Livingroom =-0/15",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop red tuna",
+                "eat red tuna",
+                "examine sofa",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put red potato on sofa",
+                "put red tuna on sofa"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Livingroom =- If you're wondering why everything seems so ordinary all of a sudden, it's because you've just sauntered into the livingroom. Let's see what's in here. You make out a sofa. Unfortunately, there isn't a thing on it. You need an exit without a door? You should try going north. There is an exit to the south. There is an exit to the west. Don't worry, there is no door. > -= Livingroom =-0/15",
+        "infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop red tuna",
+                "eat red tuna",
+                "examine sofa",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put red potato on sofa",
+                "put red tuna on sofa"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Corridor =- You arrive in a corridor. A normal kind of place. There is an exit to the east. Don't worry, there is no door. There is an exit to the south. Don't worry, there is no door. > -= Corridor =-0/16",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop red tuna",
+                "eat red tuna",
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Corridor =- You arrive in a corridor. A normal kind of place. There is an exit to the east. Don't worry, there is no door. There is an exit to the south. Don't worry, there is no door. > -= Corridor =-0/16",
+        "infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop red tuna",
+                "eat red tuna",
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Bathroom =- You arrive in a bathroom. A normal one. You can make out a toilet. I guess it's true what they say, if you're looking for a toilet, go to TextWorld. But there isn't a thing on it. You think about smashing the toilet to bits, throwing the bits into the garbage, etc, until you get bored and decide to move on. There is an exit to the north. Don't worry, there is no door. > -= Bathroom =-0/17",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop red tuna",
+                "eat red tuna",
+                "examine toilet",
+                "go north",
+                "inventory",
+                "look",
+                "put red potato on toilet",
+                "put red tuna on toilet"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Bathroom =- You arrive in a bathroom. A normal one. You can make out a toilet. I guess it's true what they say, if you're looking for a toilet, go to TextWorld. But there isn't a thing on it. You think about smashing the toilet to bits, throwing the bits into the garbage, etc, until you get bored and decide to move on. There is an exit to the north. Don't worry, there is no door. > -= Bathroom =-0/17",
+        "infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop red tuna",
+                "eat red tuna",
+                "examine toilet",
+                "go north",
+                "inventory",
+                "look",
+                "put red potato on toilet",
+                "put red tuna on toilet"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Corridor =- You arrive in a corridor. A normal kind of place. There is an exit to the east. Don't worry, there is no door. There is an exit to the south. Don't worry, there is no door. > -= Corridor =-0/18",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop red tuna",
+                "eat red tuna",
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Corridor =- You arrive in a corridor. A normal kind of place. There is an exit to the east. Don't worry, there is no door. There is an exit to the south. Don't worry, there is no door. > -= Corridor =-0/18",
+        "infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop red tuna",
+                "eat red tuna",
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Livingroom =- If you're wondering why everything seems so ordinary all of a sudden, it's because you've just sauntered into the livingroom. Let's see what's in here. You make out a sofa. Unfortunately, there isn't a thing on it. You need an exit without a door? You should try going north. There is an exit to the south. There is an exit to the west. Don't worry, there is no door. > -= Livingroom =-0/19",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop red tuna",
+                "eat red tuna",
+                "examine sofa",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put red potato on sofa",
+                "put red tuna on sofa"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Livingroom =- If you're wondering why everything seems so ordinary all of a sudden, it's because you've just sauntered into the livingroom. Let's see what's in here. You make out a sofa. Unfortunately, there isn't a thing on it. You need an exit without a door? You should try going north. There is an exit to the south. There is an exit to the west. Don't worry, there is no door. > -= Livingroom =-0/19",
+        "infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop red tuna",
+                "eat red tuna",
+                "examine sofa",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put red potato on sofa",
+                "put red tuna on sofa"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Corridor =- You arrive in a corridor. A normal kind of place. There is an exit to the east. Don't worry, there is no door. There is an exit to the south. Don't worry, there is no door. > -= Corridor =-0/20",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop red tuna",
+                "eat red tuna",
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Corridor =- You arrive in a corridor. A normal kind of place. There is an exit to the east. Don't worry, there is no door. There is an exit to the south. Don't worry, there is no door. > -= Corridor =-0/20",
+        "infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop red tuna",
+                "eat red tuna",
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Bathroom =- You arrive in a bathroom. A normal one. You can make out a toilet. I guess it's true what they say, if you're looking for a toilet, go to TextWorld. But there isn't a thing on it. You think about smashing the toilet to bits, throwing the bits into the garbage, etc, until you get bored and decide to move on. There is an exit to the north. Don't worry, there is no door. > -= Bathroom =-0/21",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop red tuna",
+                "eat red tuna",
+                "examine toilet",
+                "go north",
+                "inventory",
+                "look",
+                "put red potato on toilet",
+                "put red tuna on toilet"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Bathroom =- You arrive in a bathroom. A normal one. You can make out a toilet. I guess it's true what they say, if you're looking for a toilet, go to TextWorld. But there isn't a thing on it. You think about smashing the toilet to bits, throwing the bits into the garbage, etc, until you get bored and decide to move on. There is an exit to the north. Don't worry, there is no door. > -= Bathroom =-0/21",
+        "infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop red tuna",
+                "eat red tuna",
+                "examine toilet",
+                "go north",
+                "inventory",
+                "look",
+                "put red potato on toilet",
+                "put red tuna on toilet"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Corridor =- You arrive in a corridor. A normal kind of place. There is an exit to the east. Don't worry, there is no door. There is an exit to the south. Don't worry, there is no door. > -= Corridor =-0/22",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop red tuna",
+                "eat red tuna",
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Corridor =- You arrive in a corridor. A normal kind of place. There is an exit to the east. Don't worry, there is no door. There is an exit to the south. Don't worry, there is no door. > -= Corridor =-0/22",
+        "infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop red tuna",
+                "eat red tuna",
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Livingroom =- If you're wondering why everything seems so ordinary all of a sudden, it's because you've just sauntered into the livingroom. Let's see what's in here. You make out a sofa. Unfortunately, there isn't a thing on it. You need an exit without a door? You should try going north. There is an exit to the south. There is an exit to the west. Don't worry, there is no door. > -= Livingroom =-0/23",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop red tuna",
+                "eat red tuna",
+                "examine sofa",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put red potato on sofa",
+                "put red tuna on sofa"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Livingroom =- If you're wondering why everything seems so ordinary all of a sudden, it's because you've just sauntered into the livingroom. Let's see what's in here. You make out a sofa. Unfortunately, there isn't a thing on it. You need an exit without a door? You should try going north. There is an exit to the south. There is an exit to the west. Don't worry, there is no door. > -= Livingroom =-0/23",
+        "infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop red tuna",
+                "eat red tuna",
+                "examine sofa",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put red potato on sofa",
+                "put red tuna on sofa"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Corridor =- You arrive in a corridor. A normal kind of place. There is an exit to the east. Don't worry, there is no door. There is an exit to the south. Don't worry, there is no door. > -= Corridor =-0/24",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop red tuna",
+                "eat red tuna",
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Corridor =- You arrive in a corridor. A normal kind of place. There is an exit to the east. Don't worry, there is no door. There is an exit to the south. Don't worry, there is no door. > -= Corridor =-0/24",
+        "infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop red tuna",
+                "eat red tuna",
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Bathroom =- You arrive in a bathroom. A normal one. You can make out a toilet. I guess it's true what they say, if you're looking for a toilet, go to TextWorld. But there isn't a thing on it. You think about smashing the toilet to bits, throwing the bits into the garbage, etc, until you get bored and decide to move on. There is an exit to the north. Don't worry, there is no door. > -= Bathroom =-0/25",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop red tuna",
+                "eat red tuna",
+                "examine toilet",
+                "go north",
+                "inventory",
+                "look",
+                "put red potato on toilet",
+                "put red tuna on toilet"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Bathroom =- You arrive in a bathroom. A normal one. You can make out a toilet. I guess it's true what they say, if you're looking for a toilet, go to TextWorld. But there isn't a thing on it. You think about smashing the toilet to bits, throwing the bits into the garbage, etc, until you get bored and decide to move on. There is an exit to the north. Don't worry, there is no door. > -= Bathroom =-0/25",
+        "infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop red tuna",
+                "eat red tuna",
+                "examine toilet",
+                "go north",
+                "inventory",
+                "look",
+                "put red potato on toilet",
+                "put red tuna on toilet"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Corridor =- You arrive in a corridor. A normal kind of place. There is an exit to the east. Don't worry, there is no door. There is an exit to the south. Don't worry, there is no door. > -= Corridor =-0/26",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop red tuna",
+                "eat red tuna",
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]
