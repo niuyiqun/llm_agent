@@ -1,5 +1,5 @@
 # simple, cooking, coin, treasure
-task: "simple"
+task: "cooking"
 
 simple:
   game_file_path: "./data/simple/mock_game/"
@@ -21,9 +21,9 @@ cooking:
   walkthroughs_file_path: "./data/cooking/walkthroughs/"
   oracle_file_path: "./data/cooking/oracle/"
   lm_file_path: "./data/cooking/lm/"
-  model_save_path: "./model/critic/cooking/sample_ratio"
+  model_save_path: "./model/critic/cooking/"
   checkpoint_interval: 10
-  num_epochs: 50
+  num_epochs: 100
   batch_size: 32
   device: "cuda"
   bert_path: "./bert/"
@@ -36,7 +36,7 @@ coin:
   walkthroughs_file_path: "./data/coin/walkthroughs/"
   oracle_file_path: "./data/coin/oracle/"
   lm_file_path: "./data/coin/lm/"
-  model_save_path: "./model/critic/coin/sample_ratio"
+  model_save_path: "./model/critic/coin/"
   checkpoint_interval: 10
   num_epochs: 50
   batch_size: 32
@@ -52,7 +52,7 @@ treasure:
   walkthroughs_file_path: "./data/treasure/walkthroughs/"
   oracle_file_path: "./data/treasure/oracle/"
   lm_file_path: "./data/treasure/lm/"
-  model_save_path: "./model/critic/treasure/sample_ratio"
+  model_save_path: "./model/critic/treasure/"
   checkpoint_interval: 10
   num_epochs: 50
   batch_size: 32

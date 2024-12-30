@@ -142,11 +142,11 @@ def main():
     agent.target_critic_2.to(device)
 
     # 加载训练好的模型
-    model_save_path = 'model/critic/simple/sample_ratio/final_model_20241225_054712.pth'
+    model_save_path = './model/critic/cooking/final_model_20241230_033712.pth'
     load_model_and_info(agent, model_save_path, device)
 
     # 从目录加载测试数据（包含奖励信息）
-    test_data_directory = './simple_test/simple/'
+    test_data_directory = './simple_test/cooking/'
     test_data = load_test_data_from_directory(test_data_directory)
 
     total_correct = 0  # 总正确数量
@@ -154,7 +154,7 @@ def main():
     total_states = 0  # 总状态数量
 
     # 对每个文件进行测试
-    for file_name, data in test_data:
+    for file_name, data in test_data[:2]:
         file_accuracy, file_top3_accuracy, file_total = test_actions_with_q_values(agent, data, file_name, device)
         total_correct += file_accuracy * file_total  # 累加正确的状态数量
         total_correct_top3 += file_top3_accuracy * file_total  # 累加前三正确的状态数量

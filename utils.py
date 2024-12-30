@@ -211,25 +211,25 @@ def construct_replay_buffer(oracle_file_path, lm_file_path):
                     replay_buffer.add(state, action, reward, next_state, done, infos, next_infos, next_actions)
 
     # 遍历lm目录下的所有 JSON 文件
-    # for file_name in os.listdir(lm_file_path):
-    #     if file_name.endswith('.json'):  # 确保只处理 JSON 文件
-    #         file_path = os.path.join(lm_file_path, file_name)
-    #         with open(file_path, 'r', encoding='utf-8') as f:
-    #             data = json.load(f)  # 加载 JSON 数据
-    #
-    #             # 将每个样本添加到 Replay Buffer 中
-    #             for sample in data:
-    #                 state = sample['state']
-    #                 action = sample['action']
-    #                 reward = sample['reward']
-    #                 next_state = sample['next_state']
-    #                 done = sample['done']
-    #                 infos = sample.get('infos', {})
-    #                 next_infos = sample.get('next_infos', {})
-    #                 next_actions = sample.get('next_action', {})
-    #
-    #                 # 添加样本到 Replay Buffer
-    #                 replay_buffer.add(state, action, reward, next_state, done, infos, next_infos, next_actions)
+    for file_name in os.listdir(lm_file_path):
+        if file_name.endswith('.json'):  # 确保只处理 JSON 文件
+            file_path = os.path.join(lm_file_path, file_name)
+            with open(file_path, 'r', encoding='utf-8') as f:
+                data = json.load(f)  # 加载 JSON 数据
+
+                # 将每个样本添加到 Replay Buffer 中
+                for sample in data:
+                    state = sample['state']
+                    action = sample['action']
+                    reward = sample['reward']
+                    next_state = sample['next_state']
+                    done = sample['done']
+                    infos = sample.get('infos', {})
+                    next_infos = sample.get('next_infos', {})
+                    next_actions = sample.get('next_action', {})
+
+                    # 添加样本到 Replay Buffer
+                    replay_buffer.add(state, action, reward, next_state, done, infos, next_infos, next_actions)
 
     return replay_buffer
 

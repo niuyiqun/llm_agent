@@ -6,6 +6,7 @@
 @Date    ：2024/10/26 16:23
 @Desc    ：
 """
+import argparse
 
 DEBUG_MODE = False  # 打开调试模式，设置为 False 时不打印调试信息
 
@@ -13,6 +14,7 @@ DEBUG_MODE = False  # 打开调试模式，设置为 False 时不打印调试信
 def debug_print(*args, **kwargs):
     if DEBUG_MODE:
         print(*args, **kwargs)
+
 
 
 from datetime import datetime
@@ -685,10 +687,20 @@ def set_random_seed(seed: int = 42):
 if __name__ == "__main__":
     import sys
 
+    valid_tasks = ['simple', 'cooking', 'coin', 'treasure']
+    parser = argparse.ArgumentParser(description="Run a specific task with configuration.")
+    parser.add_argument('--task', type=str, required=False, help="Name of the task to run")
+    args = parser.parse_args()
+
     with open('./config/train.yaml', 'r', encoding='utf-8') as f:
         config = yaml.safe_load(f)
-    task = config['task']
+
+    # 获取 task
+    task = args.task
     assert task is not None, "Task name is not specified."
+
+    # 检查 task 是否在允许范围内
+    assert task in valid_tasks, f"Invalid task name '{task}'. Allowed tasks are: {', '.join(valid_tasks)}"
     task_config = config[task]
 
     set_random_seed(task_config['seed'])  # 设置全局随机种子
@@ -712,5 +724,6 @@ if __name__ == "__main__":
     # 嘿嘿
     # 不嘿嘿
     # 不嘿嘿
+    # 嘿嘿
     # 嘿嘿
     # 嘿嘿

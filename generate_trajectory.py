@@ -350,7 +350,7 @@ def generate_lm_trajectory(config):
         try:
             # 定义文件名
             seed = game_id
-            name = f"treasure_seed{seed}"
+            name = f"cooking_seed{seed}"
             game_file = os.path.join(game_file_path, f"{name}.z8")
 
             # 检查游戏文件是否存在
@@ -359,6 +359,9 @@ def generate_lm_trajectory(config):
                 continue
 
             # 定义 LM 轨迹保存文件名
+            ''' 用于生成额外的轨迹'''
+            name = f"extra_seed{seed}"
+            '''用于生成额外的轨迹'''
             lm_output_file = os.path.join(lm_file_path, f"{name}_lm_trajectory.json")
 
             # 如果 LM 轨迹文件已经存在，跳过
@@ -489,7 +492,7 @@ def generate_games_and_trajectories(config):
 
     print("[INFO] All games and Oracle trajectories have been generated!")
 def main(config):
-    add_next_action_to_oracle_trajectory(config)
+    generate_lm_trajectory(config)
 
 
 if __name__ == "__main__":
@@ -500,7 +503,7 @@ if __name__ == "__main__":
     with open("./config/train.yaml", "r") as config_file:
         all_config = yaml.safe_load(config_file)
 
-    main(all_config.get("treasure"))
+    main(all_config.get("cooking"))
 
 
 
