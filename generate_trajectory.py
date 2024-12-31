@@ -263,7 +263,7 @@ def generate_one_lm_trajectories(game_file, agent, output_file):
 
 
     # 注册游戏环境
-    env_id = textworld.gym.register_game(game_file, max_episode_steps=15, request_infos=request_infos)
+    env_id = textworld.gym.register_game(game_file, max_episode_steps=20, request_infos=request_infos)
     env = textworld.gym.make(env_id)  # 启动环境
 
 
@@ -359,7 +359,7 @@ def generate_lm_trajectory(config):
                 continue
 
             # 定义 LM 轨迹保存文件名
-            ''' 用于生成额外的轨迹'''
+            '''用于生成额外的轨迹'''
             name = f"extra_seed{seed}"
             '''用于生成额外的轨迹'''
             lm_output_file = os.path.join(lm_file_path, f"{name}_lm_trajectory.json")

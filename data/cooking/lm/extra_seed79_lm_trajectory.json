@@ -1,0 +1,420 @@
+[
+    {
+        "state": "You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal! -= Corridor =- Well, here we are in a corridor. You don't like doors? Why not try going north, that entranceway is not blocked by one. There is an exit to the south. > -= Corridor =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "drop red bell pepper",
+                "drop red onion",
+                "drop yellow onion",
+                "eat red bell pepper",
+                "eat red onion",
+                "eat yellow onion",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Bathroom =- You arrive in a bathroom. An ordinary kind of place. You can barely contain your excitement. You can see a toilet. The toilet is white. But oh no! there's nothing on this piece of garbage. There is an exit to the south. Don't worry, there is no door. > -= Bathroom =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red bell pepper",
+                "drop red onion",
+                "drop yellow onion",
+                "eat red bell pepper",
+                "eat red onion",
+                "eat yellow onion",
+                "examine toilet",
+                "go south",
+                "inventory",
+                "look",
+                "put red bell pepper on toilet",
+                "put red onion on toilet",
+                "put yellow onion on toilet"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "-= Bathroom =- You arrive in a bathroom. An ordinary kind of place. You can barely contain your excitement. You can see a toilet. The toilet is white. But oh no! there's nothing on this piece of garbage. There is an exit to the south. Don't worry, there is no door. > -= Bathroom =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "drop red bell pepper",
+                "drop red onion",
+                "drop yellow onion",
+                "eat red bell pepper",
+                "eat red onion",
+                "eat yellow onion",
+                "examine toilet",
+                "go south",
+                "inventory",
+                "look",
+                "put red bell pepper on toilet",
+                "put red onion on toilet",
+                "put yellow onion on toilet"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Corridor =- Well, here we are in a corridor. You don't like doors? Why not try going north, that entranceway is not blocked by one. There is an exit to the south. > -= Corridor =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red bell pepper",
+                "drop red onion",
+                "drop yellow onion",
+                "eat red bell pepper",
+                "eat red onion",
+                "eat yellow onion",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "-= Corridor =- Well, here we are in a corridor. You don't like doors? Why not try going north, that entranceway is not blocked by one. There is an exit to the south. > -= Corridor =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "drop red bell pepper",
+                "drop red onion",
+                "drop yellow onion",
+                "eat red bell pepper",
+                "eat red onion",
+                "eat yellow onion",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Bathroom =- You arrive in a bathroom. An ordinary kind of place. You can barely contain your excitement. You can see a toilet. The toilet is white. But oh no! there's nothing on this piece of garbage. There is an exit to the south. Don't worry, there is no door. > -= Bathroom =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red bell pepper",
+                "drop red onion",
+                "drop yellow onion",
+                "eat red bell pepper",
+                "eat red onion",
+                "eat yellow onion",
+                "examine toilet",
+                "go south",
+                "inventory",
+                "look",
+                "put red bell pepper on toilet",
+                "put red onion on toilet",
+                "put yellow onion on toilet"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "-= Bathroom =- You arrive in a bathroom. An ordinary kind of place. You can barely contain your excitement. You can see a toilet. The toilet is white. But oh no! there's nothing on this piece of garbage. There is an exit to the south. Don't worry, there is no door. > -= Bathroom =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "drop red bell pepper",
+                "drop red onion",
+                "drop yellow onion",
+                "eat red bell pepper",
+                "eat red onion",
+                "eat yellow onion",
+                "examine toilet",
+                "go south",
+                "inventory",
+                "look",
+                "put red bell pepper on toilet",
+                "put red onion on toilet",
+                "put yellow onion on toilet"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Corridor =- Well, here we are in a corridor. You don't like doors? Why not try going north, that entranceway is not blocked by one. There is an exit to the south. > -= Corridor =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red bell pepper",
+                "drop red onion",
+                "drop yellow onion",
+                "eat red bell pepper",
+                "eat red onion",
+                "eat yellow onion",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "-= Corridor =- Well, here we are in a corridor. You don't like doors? Why not try going north, that entranceway is not blocked by one. There is an exit to the south. > -= Corridor =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "drop red bell pepper",
+                "drop red onion",
+                "drop yellow onion",
+                "eat red bell pepper",
+                "eat red onion",
+                "eat yellow onion",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Bathroom =- You arrive in a bathroom. An ordinary kind of place. You can barely contain your excitement. You can see a toilet. The toilet is white. But oh no! there's nothing on this piece of garbage. There is an exit to the south. Don't worry, there is no door. > -= Bathroom =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red bell pepper",
+                "drop red onion",
+                "drop yellow onion",
+                "eat red bell pepper",
+                "eat red onion",
+                "eat yellow onion",
+                "examine toilet",
+                "go south",
+                "inventory",
+                "look",
+                "put red bell pepper on toilet",
+                "put red onion on toilet",
+                "put yellow onion on toilet"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "-= Bathroom =- You arrive in a bathroom. An ordinary kind of place. You can barely contain your excitement. You can see a toilet. The toilet is white. But oh no! there's nothing on this piece of garbage. There is an exit to the south. Don't worry, there is no door. > -= Bathroom =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "drop red bell pepper",
+                "drop red onion",
+                "drop yellow onion",
+                "eat red bell pepper",
+                "eat red onion",
+                "eat yellow onion",
+                "examine toilet",
+                "go south",
+                "inventory",
+                "look",
+                "put red bell pepper on toilet",
+                "put red onion on toilet",
+                "put yellow onion on toilet"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Corridor =- Well, here we are in a corridor. You don't like doors? Why not try going north, that entranceway is not blocked by one. There is an exit to the south. > -= Corridor =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red bell pepper",
+                "drop red onion",
+                "drop yellow onion",
+                "eat red bell pepper",
+                "eat red onion",
+                "eat yellow onion",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "-= Corridor =- Well, here we are in a corridor. You don't like doors? Why not try going north, that entranceway is not blocked by one. There is an exit to the south. > -= Corridor =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "drop red bell pepper",
+                "drop red onion",
+                "drop yellow onion",
+                "eat red bell pepper",
+                "eat red onion",
+                "eat yellow onion",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Bathroom =- You arrive in a bathroom. An ordinary kind of place. You can barely contain your excitement. You can see a toilet. The toilet is white. But oh no! there's nothing on this piece of garbage. There is an exit to the south. Don't worry, there is no door. > -= Bathroom =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red bell pepper",
+                "drop red onion",
+                "drop yellow onion",
+                "eat red bell pepper",
+                "eat red onion",
+                "eat yellow onion",
+                "examine toilet",
+                "go south",
+                "inventory",
+                "look",
+                "put red bell pepper on toilet",
+                "put red onion on toilet",
+                "put yellow onion on toilet"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "-= Bathroom =- You arrive in a bathroom. An ordinary kind of place. You can barely contain your excitement. You can see a toilet. The toilet is white. But oh no! there's nothing on this piece of garbage. There is an exit to the south. Don't worry, there is no door. > -= Bathroom =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "drop red bell pepper",
+                "drop red onion",
+                "drop yellow onion",
+                "eat red bell pepper",
+                "eat red onion",
+                "eat yellow onion",
+                "examine toilet",
+                "go south",
+                "inventory",
+                "look",
+                "put red bell pepper on toilet",
+                "put red onion on toilet",
+                "put yellow onion on toilet"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Corridor =- Well, here we are in a corridor. You don't like doors? Why not try going north, that entranceway is not blocked by one. There is an exit to the south. > -= Corridor =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red bell pepper",
+                "drop red onion",
+                "drop yellow onion",
+                "eat red bell pepper",
+                "eat red onion",
+                "eat yellow onion",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "-= Corridor =- Well, here we are in a corridor. You don't like doors? Why not try going north, that entranceway is not blocked by one. There is an exit to the south. > -= Corridor =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "drop red bell pepper",
+                "drop red onion",
+                "drop yellow onion",
+                "eat red bell pepper",
+                "eat red onion",
+                "eat yellow onion",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Bathroom =- You arrive in a bathroom. An ordinary kind of place. You can barely contain your excitement. You can see a toilet. The toilet is white. But oh no! there's nothing on this piece of garbage. There is an exit to the south. Don't worry, there is no door. > -= Bathroom =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red bell pepper",
+                "drop red onion",
+                "drop yellow onion",
+                "eat red bell pepper",
+                "eat red onion",
+                "eat yellow onion",
+                "examine toilet",
+                "go south",
+                "inventory",
+                "look",
+                "put red bell pepper on toilet",
+                "put red onion on toilet",
+                "put yellow onion on toilet"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "-= Bathroom =- You arrive in a bathroom. An ordinary kind of place. You can barely contain your excitement. You can see a toilet. The toilet is white. But oh no! there's nothing on this piece of garbage. There is an exit to the south. Don't worry, there is no door. > -= Bathroom =-0/10",
+        "infos": {
+            "admissible_commands": [
+                "drop red bell pepper",
+                "drop red onion",
+                "drop yellow onion",
+                "eat red bell pepper",
+                "eat red onion",
+                "eat yellow onion",
+                "examine toilet",
+                "go south",
+                "inventory",
+                "look",
+                "put red bell pepper on toilet",
+                "put red onion on toilet",
+                "put yellow onion on toilet"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Corridor =- Well, here we are in a corridor. You don't like doors? Why not try going north, that entranceway is not blocked by one. There is an exit to the south. > -= Corridor =-0/11",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red bell pepper",
+                "drop red onion",
+                "drop yellow onion",
+                "eat red bell pepper",
+                "eat red onion",
+                "eat yellow onion",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "-= Corridor =- Well, here we are in a corridor. You don't like doors? Why not try going north, that entranceway is not blocked by one. There is an exit to the south. > -= Corridor =-0/11",
+        "infos": {
+            "admissible_commands": [
+                "drop red bell pepper",
+                "drop red onion",
+                "drop yellow onion",
+                "eat red bell pepper",
+                "eat red onion",
+                "eat yellow onion",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Bathroom =- You arrive in a bathroom. An ordinary kind of place. You can barely contain your excitement. You can see a toilet. The toilet is white. But oh no! there's nothing on this piece of garbage. There is an exit to the south. Don't worry, there is no door. > -= Bathroom =-0/12",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red bell pepper",
+                "drop red onion",
+                "drop yellow onion",
+                "eat red bell pepper",
+                "eat red onion",
+                "eat yellow onion",
+                "examine toilet",
+                "go south",
+                "inventory",
+                "look",
+                "put red bell pepper on toilet",
+                "put red onion on toilet",
+                "put yellow onion on toilet"
+            ]
+        },
+        "done": false
+    }
+]

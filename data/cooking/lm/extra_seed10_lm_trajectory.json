@@ -1,0 +1,438 @@
+[
+    {
+        "state": "You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal! -= Livingroom =- If you're wondering why everything seems so normal all of a sudden, it's because you've just sauntered into the livingroom. You see a sofa. The sofa is comfy. But the thing hasn't got anything on it. You need an exit without a door? You should try going south. > -= Livingroom =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "drop green bell pepper",
+                "drop orange bell pepper",
+                "eat green bell pepper",
+                "eat orange bell pepper",
+                "examine sofa",
+                "go south",
+                "inventory",
+                "look",
+                "put green bell pepper on sofa",
+                "put orange bell pepper on sofa"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Livingroom =- If you're wondering why everything seems so normal all of a sudden, it's because you've just sauntered into the livingroom. You see a sofa. The sofa is comfy. But the thing hasn't got anything on it. You need an exit without a door? You should try going south. > -= Livingroom =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "drop green bell pepper",
+                "drop orange bell pepper",
+                "eat green bell pepper",
+                "eat orange bell pepper",
+                "examine sofa",
+                "go south",
+                "inventory",
+                "look",
+                "put green bell pepper on sofa",
+                "put orange bell pepper on sofa"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "-= Livingroom =- If you're wondering why everything seems so normal all of a sudden, it's because you've just sauntered into the livingroom. You see a sofa. The sofa is comfy. But the thing hasn't got anything on it. You need an exit without a door? You should try going south. > -= Livingroom =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "drop green bell pepper",
+                "drop orange bell pepper",
+                "eat green bell pepper",
+                "eat orange bell pepper",
+                "examine sofa",
+                "go south",
+                "inventory",
+                "look",
+                "put green bell pepper on sofa",
+                "put orange bell pepper on sofa"
+            ]
+        },
+        "action": "examine sofa",
+        "reward": 0,
+        "next_state": "The sofa is solidly built. > -= Livingroom =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "drop green bell pepper",
+                "drop orange bell pepper",
+                "eat green bell pepper",
+                "eat orange bell pepper",
+                "examine sofa",
+                "go south",
+                "inventory",
+                "look",
+                "put green bell pepper on sofa",
+                "put orange bell pepper on sofa"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "The sofa is solidly built. > -= Livingroom =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "drop green bell pepper",
+                "drop orange bell pepper",
+                "eat green bell pepper",
+                "eat orange bell pepper",
+                "examine sofa",
+                "go south",
+                "inventory",
+                "look",
+                "put green bell pepper on sofa",
+                "put orange bell pepper on sofa"
+            ]
+        },
+        "action": "put green bell pepper on sofa",
+        "reward": 0,
+        "next_state": "You put the green bell pepper on the sofa. > -= Livingroom =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "drop orange bell pepper",
+                "eat orange bell pepper",
+                "examine green bell pepper",
+                "examine sofa",
+                "go south",
+                "inventory",
+                "look",
+                "put orange bell pepper on sofa",
+                "take green bell pepper from sofa"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "You put the green bell pepper on the sofa. > -= Livingroom =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "drop orange bell pepper",
+                "eat orange bell pepper",
+                "examine green bell pepper",
+                "examine sofa",
+                "go south",
+                "inventory",
+                "look",
+                "put orange bell pepper on sofa",
+                "take green bell pepper from sofa"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Livingroom =- If you're wondering why everything seems so normal all of a sudden, it's because you've just sauntered into the livingroom. You see a sofa. The sofa is comfy. On the sofa you see a green bell pepper, so there's that. You need an exit without a door? You should try going south. > -= Livingroom =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "drop orange bell pepper",
+                "eat orange bell pepper",
+                "examine green bell pepper",
+                "examine sofa",
+                "go south",
+                "inventory",
+                "look",
+                "put orange bell pepper on sofa",
+                "take green bell pepper from sofa"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "-= Livingroom =- If you're wondering why everything seems so normal all of a sudden, it's because you've just sauntered into the livingroom. You see a sofa. The sofa is comfy. On the sofa you see a green bell pepper, so there's that. You need an exit without a door? You should try going south. > -= Livingroom =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "drop orange bell pepper",
+                "eat orange bell pepper",
+                "examine green bell pepper",
+                "examine sofa",
+                "go south",
+                "inventory",
+                "look",
+                "put orange bell pepper on sofa",
+                "take green bell pepper from sofa"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Bedroom =- You've entered a bedroom. You see a gleam over in a corner, where you can see a bed. The bed is large. But oh no! there's nothing on this piece of junk. There is an exit to the north. Don't worry, there is no door. There is an exit to the south. > -= Bedroom =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "drop orange bell pepper",
+                "eat orange bell pepper",
+                "examine bed",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "put orange bell pepper on bed"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "-= Bedroom =- You've entered a bedroom. You see a gleam over in a corner, where you can see a bed. The bed is large. But oh no! there's nothing on this piece of junk. There is an exit to the north. Don't worry, there is no door. There is an exit to the south. > -= Bedroom =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "drop orange bell pepper",
+                "eat orange bell pepper",
+                "examine bed",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "put orange bell pepper on bed"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Bedroom =- You've entered a bedroom. You see a gleam over in a corner, where you can see a bed. The bed is large. But oh no! there's nothing on this piece of junk. There is an exit to the north. Don't worry, there is no door. There is an exit to the south. > -= Bedroom =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "drop orange bell pepper",
+                "eat orange bell pepper",
+                "examine bed",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "put orange bell pepper on bed"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "-= Bedroom =- You've entered a bedroom. You see a gleam over in a corner, where you can see a bed. The bed is large. But oh no! there's nothing on this piece of junk. There is an exit to the north. Don't worry, there is no door. There is an exit to the south. > -= Bedroom =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "drop orange bell pepper",
+                "eat orange bell pepper",
+                "examine bed",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "put orange bell pepper on bed"
+            ]
+        },
+        "action": "examine bed",
+        "reward": 0,
+        "next_state": "The bed is undependable. > -= Bedroom =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "drop orange bell pepper",
+                "eat orange bell pepper",
+                "examine bed",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "put orange bell pepper on bed"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "The bed is undependable. > -= Bedroom =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "drop orange bell pepper",
+                "eat orange bell pepper",
+                "examine bed",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "put orange bell pepper on bed"
+            ]
+        },
+        "action": "put orange bell pepper on bed",
+        "reward": 0,
+        "next_state": "You put the orange bell pepper on the bed. > -= Bedroom =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine orange bell pepper",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "take orange bell pepper from bed"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "You put the orange bell pepper on the bed. > -= Bedroom =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine orange bell pepper",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "take orange bell pepper from bed"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Bedroom =- You've entered a bedroom. You see a gleam over in a corner, where you can see a bed. The bed is large. On the bed you can see a roasted orange bell pepper. Huh, weird. There is an exit to the north. Don't worry, there is no door. There is an exit to the south. > -= Bedroom =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine orange bell pepper",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "take orange bell pepper from bed"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "-= Bedroom =- You've entered a bedroom. You see a gleam over in a corner, where you can see a bed. The bed is large. On the bed you can see a roasted orange bell pepper. Huh, weird. There is an exit to the north. Don't worry, there is no door. There is an exit to the south. > -= Bedroom =-0/10",
+        "infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine orange bell pepper",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "take orange bell pepper from bed"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Corridor =- You've entered a corridor. I guess you better just go and list everything you see here. You don't like doors? Why not try going east, that entranceway is not blocked by one. There is an exit to the north. There is an exit to the south. Don't worry, there is no door. > -= Corridor =-0/11",
+        "next_infos": {
+            "admissible_commands": [
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "-= Corridor =- You've entered a corridor. I guess you better just go and list everything you see here. You don't like doors? Why not try going east, that entranceway is not blocked by one. There is an exit to the north. There is an exit to the south. Don't worry, there is no door. > -= Corridor =-0/11",
+        "infos": {
+            "admissible_commands": [
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Corridor =- You've entered a corridor. I guess you better just go and list everything you see here. You don't like doors? Why not try going east, that entranceway is not blocked by one. There is an exit to the north. There is an exit to the south. Don't worry, there is no door. > -= Corridor =-0/12",
+        "next_infos": {
+            "admissible_commands": [
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "-= Corridor =- You've entered a corridor. I guess you better just go and list everything you see here. You don't like doors? Why not try going east, that entranceway is not blocked by one. There is an exit to the north. There is an exit to the south. Don't worry, there is no door. > -= Corridor =-0/12",
+        "infos": {
+            "admissible_commands": [
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Bathroom =- You find yourself in a bathroom. A standard kind of place. You see a toilet. The toilet is white. Unfortunately, there isn't a thing on it. You need an exit without a door? You should try going west. > -= Bathroom =-0/13",
+        "next_infos": {
+            "admissible_commands": [
+                "examine toilet",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "-= Bathroom =- You find yourself in a bathroom. A standard kind of place. You see a toilet. The toilet is white. Unfortunately, there isn't a thing on it. You need an exit without a door? You should try going west. > -= Bathroom =-0/13",
+        "infos": {
+            "admissible_commands": [
+                "examine toilet",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Bathroom =- You find yourself in a bathroom. A standard kind of place. You see a toilet. The toilet is white. Unfortunately, there isn't a thing on it. You need an exit without a door? You should try going west. > -= Bathroom =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "examine toilet",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "-= Bathroom =- You find yourself in a bathroom. A standard kind of place. You see a toilet. The toilet is white. Unfortunately, there isn't a thing on it. You need an exit without a door? You should try going west. > -= Bathroom =-0/14",
+        "infos": {
+            "admissible_commands": [
+                "examine toilet",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "examine toilet",
+        "reward": 0,
+        "next_state": "The toilet is reliable. > -= Bathroom =-0/15",
+        "next_infos": {
+            "admissible_commands": [
+                "examine toilet",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "The toilet is reliable. > -= Bathroom =-0/15",
+        "infos": {
+            "admissible_commands": [
+                "examine toilet",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Corridor =- You've entered a corridor. I guess you better just go and list everything you see here. You don't like doors? Why not try going east, that entranceway is not blocked by one. There is an exit to the north. There is an exit to the south. Don't worry, there is no door. > -= Corridor =-0/16",
+        "next_infos": {
+            "admissible_commands": [
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": true
+    }
+]

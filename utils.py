@@ -87,7 +87,7 @@ def get_prompt_admissible_actions():
 
 
 class ReplayBuffer:
-    def __init__(self):
+    def __init__(self, config):
         """
         初始化Replay Buffer。
         """
@@ -95,9 +95,13 @@ class ReplayBuffer:
         self.reward_samples = []  # 奖励大于0的样本
         self.no_reward_samples = []  # 奖励为0的样本
         import yaml
-        with open("./config/train.yaml", "r") as config_file:
-            config = yaml.safe_load(config_file)
-        self.reward_sample_ratio = config.get("reward_sample_ratio", 0.6)
+        self.reward_sample_ratio = config.get("reward_sample_ratio", 0.6)  # 固定比例采样比例
+        self.sampling_strategy = config.get("sampling_strategy", "fixed")  # 采样策略（fixed, dynamic, prioritized）
+        self.dynamic_ratio_min = config.get("dynamic_ratio_min", 0.4)  # 动态比例的最小值
+        self.dynamic_ratio_max = config.get("dynamic_ratio_max", 0.8)  # 动态比例的最大值
+        self.dynamic_step = config.get("dynamic_step", 0.05)  # 动态比例变化步长
+        # 动态采样比例的当前值
+        self.current_dynamic_ratio = self.dynamic_ratio_min
 
     def add(self, state, action, reward, next_state, done, infos, next_infos, next_actions):
         """
@@ -122,6 +126,25 @@ class ReplayBuffer:
 
     def sample(self, batch_size):
         """
+        根据配置的采样策略，从Replay Buffer中采样一个批次的数据。
+
+        Args:
+            batch_size (int): 采样的批次大小。
+
+        Returns:
+            tuple: 返回采样的批次数据，包括states, actions, rewards, next_states, dones, infos, next_infos, next_actions。
+        """
+        if self.sampling_strategy == "fixed":
+            return self._sample_fixed(batch_size)
+        elif self.sampling_strategy == "dynamic":
+            return self._sample_dynamic(batch_size)
+        elif self.sampling_strategy == "prioritized":
+            return self._sample_prioritized(batch_size)
+        else:
+            raise ValueError(f"Unknown sampling strategy: {self.sampling_strategy}")
+
+    def _sample_fixed(self, batch_size):
+        """
             从Replay Buffer中随机采样一个批次的数据，优先采样有奖励的样本。
 
             Args:
@@ -143,11 +166,61 @@ class ReplayBuffer:
         # 合并采样的结果
         sampled_transitions = sampled_reward + sampled_no_reward
         random.shuffle(sampled_transitions)  # 打乱顺序
-        # print(f"[DEBUG] Reward samples: {len(self.reward_samples)}, No reward samples: {len(self.no_reward_samples)}")
-        # print(f"[DEBUG] Sampled reward count: {reward_sample_count}, Sampled no reward count: {no_reward_sample_count}")
-        # print(f"[DEBUG] Total sampled transitions: {len(sampled_transitions)}")
+        return self._unpack_transitions(sampled_transitions)
 
-        states, actions, rewards, next_states, dones, infos, next_infos, next_actions = zip(*sampled_transitions)
+    def _sample_dynamic(self, batch_size):
+        """
+        动态比例采样，比例根据训练进程逐步调整。
+        """
+        reward_sample_count = int(batch_size * self.current_dynamic_ratio)
+        reward_sample_count = min(len(self.reward_samples), reward_sample_count)
+        no_reward_sample_count = batch_size - reward_sample_count
+
+        sampled_reward = random.sample(self.reward_samples, reward_sample_count) if self.reward_samples else []
+        sampled_no_reward = random.sample(self.no_reward_samples,
+                                          no_reward_sample_count) if self.no_reward_samples else []
+
+        sampled_transitions = sampled_reward + sampled_no_reward
+        random.shuffle(sampled_transitions)
+
+        # 更新动态比例
+        self.current_dynamic_ratio = min(
+            self.dynamic_ratio_max,
+            self.current_dynamic_ratio + self.dynamic_step
+        )
+
+        return self._unpack_transitions(sampled_transitions)
+
+    def _sample_prioritized(self, batch_size, alpha=0.6):
+        """
+            优先级采样，根据样本的优先级动态采样。
+
+            Args:
+                batch_size (int): 采样的批次大小。
+                alpha (float): 优先级强度，值越大，越偏向高优先级样本。
+
+            Returns:
+                tuple: 返回采样的批次数据。
+            """
+        if not self.buffer:
+            raise ValueError("Replay Buffer is empty, cannot sample!")
+
+        # 提取所有样本的优先级
+        priorities = np.array([transition[-1] for transition in self.buffer])
+        probabilities = priorities ** alpha
+        probabilities /= probabilities.sum()  # 归一化
+
+        # 按优先级概率分布进行采样
+        sampled_indices = np.random.choice(len(self.buffer), size=batch_size, p=probabilities)
+        sampled_transitions = [self.buffer[i] for i in sampled_indices]
+
+        return self._unpack_transitions(sampled_transitions), sampled_indices
+
+    def _unpack_transitions(self, transitions):
+        """
+        解包采样的transition数据。
+        """
+        states, actions, rewards, next_states, dones, infos, next_infos, next_actions = zip(*transitions)
         return (
             np.array(states),  # 状态
             list(actions),  # 动作
@@ -176,7 +249,7 @@ import os
 import json
 
 
-def construct_replay_buffer(oracle_file_path, lm_file_path):
+def construct_replay_buffer(oracle_file_path, lm_file_path, config):
     """
     从 oracle_file_path 目录中读取 JSON 文件构建 Replay Buffer。
 
@@ -187,7 +260,7 @@ def construct_replay_buffer(oracle_file_path, lm_file_path):
         ReplayBuffer: 构建完成的 Replay Buffer。
     """
     # 初始化 Replay Buffer
-    replay_buffer = ReplayBuffer()
+    replay_buffer = ReplayBuffer(config)
 
     # 遍历oracle目录下的所有 JSON 文件
     for file_name in os.listdir(oracle_file_path):
@@ -238,7 +311,6 @@ import random
 import numpy as np
 
 
-
 # 设置随机数种子
 def set_random_seed(seed: int = 42):
     random.seed(seed)
@@ -283,6 +355,7 @@ class Logger:
     """
     自定义日志记录器，支持将输出同时写入日志文件和终端。
     """
+
     def __init__(self, log_file_path):
         self.terminal = sys.stdout  # 保留原来的终端输出
         self.log = open(log_file_path, "a", encoding="utf-8")  # 打开日志文件
@@ -304,5 +377,3 @@ if __name__ == "__main__":
     print(f"Sampled states: {states}")
     print(f"Sampled actions: {actions}")
     print(f"Sampled rewards: {rewards}")
-
-

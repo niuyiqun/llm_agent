@@ -13,8 +13,12 @@ simple:
   device: "cuda"
   bert_path: "./bert/"
   seed: 123466
-  reward_sample_ratio: 0.5
   validate_file_path: "./simple_test/simple"
+  sampling_strategy: "fixed"
+  reward_sample_ratio: 0.6
+  dynamic_ratio_min: 0.4
+  dynamic_ratio_max: 0.8
+  dynamic_step: 0.05
 
 cooking:
   game_file_path: "./data/cooking/mock_game/"
@@ -23,13 +27,17 @@ cooking:
   lm_file_path: "./data/cooking/lm/"
   model_save_path: "./model/critic/cooking/"
   checkpoint_interval: 10
-  num_epochs: 100
+  num_epochs: 20
   batch_size: 32
-  device: "cuda"
+  device: "cuda:1"
   bert_path: "./bert/"
-  seed: 1224
-  reward_sample_ratio: 0.5
+  seed: 1222
   validate_file_path: "./simple_test/cooking"
+  sampling_strategy: "fixed"
+  reward_sample_ratio: 0.5
+  dynamic_ratio_min: 0.4
+  dynamic_ratio_max: 0.8
+  dynamic_step: 0.05
 
 coin:
   game_file_path: "./data/coin/mock_game/"
@@ -43,8 +51,12 @@ coin:
   device: "cuda"
   bert_path: "./bert/"
   seed: 1224
-  reward_sample_ratio: 0.5
   validate_file_path: "./simple_test/coin"
+  sampling_strategy: "fixed"
+  reward_sample_ratio: 0.6
+  dynamic_ratio_min: 0.4
+  dynamic_ratio_max: 0.8
+  dynamic_step: 0.05
 
 
 treasure:
@@ -58,6 +70,10 @@ treasure:
   batch_size: 32
   device: "cuda"
   bert_path: "./bert/"
-  seed: 1224
-  reward_sample_ratio: 0.5
+  seed: 1230
   validate_file_path: "./simple_test/treasure"
+  sampling_strategy: "fixed"
+  reward_sample_ratio: 0.6
+  dynamic_ratio_min: 0.4
+  dynamic_ratio_max: 0.8
+  dynamic_step: 0.05

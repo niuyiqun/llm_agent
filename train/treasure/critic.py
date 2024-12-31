@@ -106,14 +106,14 @@ def test_actions_with_q_values(agent, data, file_name):
         total_count += 1
 
         # 打印输出
-        # print(f"State: {state}")
-        # print(f"Best action: {optimal_action}")
-        # print(f"Best action by Q value: {best_action_by_q}")
-        # print(f"reward: {reward}")
-        # print("Actions sorted by Q value:")
-        # for action, q_value in q_values:
-        #     print(f"  Action: {action}, Q value: {q_value}")
-        # print("=" * 80)  # 使用80个等号分隔
+        print(f"State: {state}")
+        print(f"Best action: {optimal_action}")
+        print(f"Best action by Q value: {best_action_by_q}")
+        print(f"reward: {reward}")
+        print("Actions sorted by Q value:")
+        for action, q_value in q_values:
+            print(f"  Action: {action}, Q value: {q_value}")
+        print("=" * 80)  # 使用80个等号分隔
 
     agent.critic_1.train()
     # 计算准确率
@@ -157,7 +157,7 @@ class CriticModel(nn.Module):
             nn.Linear(self.bert_encoder.config.hidden_size, 128),
             nn.ReLU(),
             nn.Linear(self.hidden_dim, 1),  # 输出1个值，表示期望回报
-            nn.ReLU()  # 通过Sigmoid将输出限制在0到1之间
+            # nn.ReLU()  # 通过Sigmoid将输出限制在0到1之间
         )
         log_time("CriticModel initialization", start_time)
 
@@ -228,7 +228,7 @@ def initialize_model(llm_type: str):
 
 
 class AC_Agent:
-    def __init__(self, device, config_path: str = './config/agent.yaml') -> None:
+    def __init__(self, config_path: str = './config/agent.yaml') -> None:
         """
             由于需要bert参与评分，所以这里改成单轮的对话形式，避免上下文过长难以处理
         """
@@ -236,7 +236,7 @@ class AC_Agent:
         self.config = self.load_config(config_path)
         # 奖励衰减因子
         self.gamma = self.config.get("gamma", 0.99)
-        self.device = device
+        self.device = self.config.get("device", "cuda")
         self.model = initialize_model(self.config.get("llm_type", "ZhipuChat"))  # 初始化指定的 LLM
         self.critic_1 = CriticModel(device=self.device).to(self.device)
         self.critic_2 = CriticModel(device=self.device).to(self.device)
@@ -539,7 +539,7 @@ def plot_critic_losses(critic_losses, save_path):
     print(f"Loss curve saved at: {save_path}")
 
 
-def main(task_config, timestamp, device):
+def main(task_config, timestamp):
     # 加载配置文件
 
     # 读取路径和超参数
@@ -549,15 +549,16 @@ def main(task_config, timestamp, device):
     num_epochs = task_config.get('num_epochs', 20)
     batch_size = task_config.get('batch_size', 16)
     checkpoint_interval = task_config.get('checkpoint_interval', 10)
+    device = task_config.get('device', 'cuda' if torch.cuda.is_available() else 'cpu')
 
     # 构建 Replay Buffer
     print("Constructing Replay Buffer...")
-    replay_buffer = construct_replay_buffer(oracle_file_path, lm_file_path, task_config)
+    replay_buffer = construct_replay_buffer(oracle_file_path, lm_file_path)
     print(f"Replay Buffer size: {replay_buffer.size()}")
 
     # 初始化 Agent
     print("Initializing Agent...")
-    agent = AC_Agent(device, config_path='./config/agent.yaml')
+    agent = AC_Agent(config_path='./config/agent.yaml')
     agent.device = device
     agent.critic_1.to(device)
     agent.critic_2.to(device)
@@ -688,8 +689,7 @@ if __name__ == "__main__":
 
     valid_tasks = ['simple', 'cooking', 'coin', 'treasure']
     parser = argparse.ArgumentParser(description="Run a specific task with configuration.")
-    parser.add_argument('--task', type=str, required=True, help="Name of the task to run")
-    parser.add_argument('--device', type=str, required=True, help="Name of the gpu to run")
+    parser.add_argument('--task', type=str, required=False, help="Name of the task to run")
     args = parser.parse_args()
 
     with open('./config/train.yaml', 'r', encoding='utf-8') as f:
@@ -697,11 +697,7 @@ if __name__ == "__main__":
 
     # 获取 task
     task = args.task
-
-    # 获取device
-    device = args.device
-
-
+    assert task is not None, "Task name is not specified."
 
     # 检查 task 是否在允许范围内
     assert task in valid_tasks, f"Invalid task name '{task}'. Allowed tasks are: {', '.join(valid_tasks)}"
@@ -723,7 +719,7 @@ if __name__ == "__main__":
 
     #
     # sys.stdout.reconfigure(line_buffering=True)
-    main(task_config, timestamp, device)
+    main(task_config, timestamp)
     # 需要debug咯，看看如何比较好
     # 嘿嘿
     # 不嘿嘿

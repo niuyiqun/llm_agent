@@ -1,0 +1,601 @@
+[
+    {
+        "state": "You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal! -= Corridor =- You've entered a corridor. You don't like doors? Why not try going east, that entranceway is not blocked by one. You don't like doors? Why not try going north, that entranceway is not blocked by one. You don't like doors? Why not try going south, that entranceway is not blocked by one. You don't like doors? Why not try going west, that entranceway is not blocked by one. > -= Corridor =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "drop tomato",
+                "eat tomato",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Bedroom =- If you're wondering why everything seems so usual all of a sudden, it's because you've just walked into the bedroom. You start to take note of what's in the room. You see a bed. The bed is large. The bed appears to be empty. What, you think everything in TextWorld should have stuff on it? There is an exit to the south. > -= Bedroom =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "drop tomato",
+                "eat tomato",
+                "examine bed",
+                "go south",
+                "inventory",
+                "look",
+                "put tomato on bed"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "-= Bedroom =- If you're wondering why everything seems so usual all of a sudden, it's because you've just walked into the bedroom. You start to take note of what's in the room. You see a bed. The bed is large. The bed appears to be empty. What, you think everything in TextWorld should have stuff on it? There is an exit to the south. > -= Bedroom =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "drop tomato",
+                "eat tomato",
+                "examine bed",
+                "go south",
+                "inventory",
+                "look",
+                "put tomato on bed"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Corridor =- You've entered a corridor. You don't like doors? Why not try going east, that entranceway is not blocked by one. You don't like doors? Why not try going north, that entranceway is not blocked by one. You don't like doors? Why not try going south, that entranceway is not blocked by one. You don't like doors? Why not try going west, that entranceway is not blocked by one. > -= Corridor =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "drop tomato",
+                "eat tomato",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "-= Corridor =- You've entered a corridor. You don't like doors? Why not try going east, that entranceway is not blocked by one. You don't like doors? Why not try going north, that entranceway is not blocked by one. You don't like doors? Why not try going south, that entranceway is not blocked by one. You don't like doors? Why not try going west, that entranceway is not blocked by one. > -= Corridor =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "drop tomato",
+                "eat tomato",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Livingroom =- Well how about that, you are in a place we're calling a livingroom. Okay, just remember what you're here to do, and everything will go great. You scan the room for a sofa, and you find a sofa. But oh no! there's nothing on this piece of junk. You need an exit without a door? You should try going west. > -= Livingroom =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "drop tomato",
+                "eat tomato",
+                "examine sofa",
+                "go west",
+                "inventory",
+                "look",
+                "put tomato on sofa"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "-= Livingroom =- Well how about that, you are in a place we're calling a livingroom. Okay, just remember what you're here to do, and everything will go great. You scan the room for a sofa, and you find a sofa. But oh no! there's nothing on this piece of junk. You need an exit without a door? You should try going west. > -= Livingroom =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "drop tomato",
+                "eat tomato",
+                "examine sofa",
+                "go west",
+                "inventory",
+                "look",
+                "put tomato on sofa"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Corridor =- You've entered a corridor. You don't like doors? Why not try going east, that entranceway is not blocked by one. You don't like doors? Why not try going north, that entranceway is not blocked by one. You don't like doors? Why not try going south, that entranceway is not blocked by one. You don't like doors? Why not try going west, that entranceway is not blocked by one. > -= Corridor =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "drop tomato",
+                "eat tomato",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "-= Corridor =- You've entered a corridor. You don't like doors? Why not try going east, that entranceway is not blocked by one. You don't like doors? Why not try going north, that entranceway is not blocked by one. You don't like doors? Why not try going south, that entranceway is not blocked by one. You don't like doors? Why not try going west, that entranceway is not blocked by one. > -= Corridor =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "drop tomato",
+                "eat tomato",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Bedroom =- If you're wondering why everything seems so usual all of a sudden, it's because you've just walked into the bedroom. You start to take note of what's in the room. You see a bed. The bed is large. The bed appears to be empty. What, you think everything in TextWorld should have stuff on it? There is an exit to the south. > -= Bedroom =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "drop tomato",
+                "eat tomato",
+                "examine bed",
+                "go south",
+                "inventory",
+                "look",
+                "put tomato on bed"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "-= Bedroom =- If you're wondering why everything seems so usual all of a sudden, it's because you've just walked into the bedroom. You start to take note of what's in the room. You see a bed. The bed is large. The bed appears to be empty. What, you think everything in TextWorld should have stuff on it? There is an exit to the south. > -= Bedroom =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "drop tomato",
+                "eat tomato",
+                "examine bed",
+                "go south",
+                "inventory",
+                "look",
+                "put tomato on bed"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Corridor =- You've entered a corridor. You don't like doors? Why not try going east, that entranceway is not blocked by one. You don't like doors? Why not try going north, that entranceway is not blocked by one. You don't like doors? Why not try going south, that entranceway is not blocked by one. You don't like doors? Why not try going west, that entranceway is not blocked by one. > -= Corridor =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "drop tomato",
+                "eat tomato",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "-= Corridor =- You've entered a corridor. You don't like doors? Why not try going east, that entranceway is not blocked by one. You don't like doors? Why not try going north, that entranceway is not blocked by one. You don't like doors? Why not try going south, that entranceway is not blocked by one. You don't like doors? Why not try going west, that entranceway is not blocked by one. > -= Corridor =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "drop tomato",
+                "eat tomato",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Bathroom =- You've just shown up in a bathroom. You can see a toilet. You shudder, but continue examining the toilet. The toilet is white. But there isn't a thing on it. There is an exit to the east. > -= Bathroom =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "drop tomato",
+                "eat tomato",
+                "examine toilet",
+                "go east",
+                "inventory",
+                "look",
+                "put tomato on toilet"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "-= Bathroom =- You've just shown up in a bathroom. You can see a toilet. You shudder, but continue examining the toilet. The toilet is white. But there isn't a thing on it. There is an exit to the east. > -= Bathroom =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "drop tomato",
+                "eat tomato",
+                "examine toilet",
+                "go east",
+                "inventory",
+                "look",
+                "put tomato on toilet"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Corridor =- You've entered a corridor. You don't like doors? Why not try going east, that entranceway is not blocked by one. You don't like doors? Why not try going north, that entranceway is not blocked by one. You don't like doors? Why not try going south, that entranceway is not blocked by one. You don't like doors? Why not try going west, that entranceway is not blocked by one. > -= Corridor =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "drop tomato",
+                "eat tomato",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "-= Corridor =- You've entered a corridor. You don't like doors? Why not try going east, that entranceway is not blocked by one. You don't like doors? Why not try going north, that entranceway is not blocked by one. You don't like doors? Why not try going south, that entranceway is not blocked by one. You don't like doors? Why not try going west, that entranceway is not blocked by one. > -= Corridor =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "drop tomato",
+                "eat tomato",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Livingroom =- Well how about that, you are in a place we're calling a livingroom. Okay, just remember what you're here to do, and everything will go great. You scan the room for a sofa, and you find a sofa. But oh no! there's nothing on this piece of junk. You need an exit without a door? You should try going west. > -= Livingroom =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "drop tomato",
+                "eat tomato",
+                "examine sofa",
+                "go west",
+                "inventory",
+                "look",
+                "put tomato on sofa"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "-= Livingroom =- Well how about that, you are in a place we're calling a livingroom. Okay, just remember what you're here to do, and everything will go great. You scan the room for a sofa, and you find a sofa. But oh no! there's nothing on this piece of junk. You need an exit without a door? You should try going west. > -= Livingroom =-0/10",
+        "infos": {
+            "admissible_commands": [
+                "drop tomato",
+                "eat tomato",
+                "examine sofa",
+                "go west",
+                "inventory",
+                "look",
+                "put tomato on sofa"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Corridor =- You've entered a corridor. You don't like doors? Why not try going east, that entranceway is not blocked by one. You don't like doors? Why not try going north, that entranceway is not blocked by one. You don't like doors? Why not try going south, that entranceway is not blocked by one. You don't like doors? Why not try going west, that entranceway is not blocked by one. > -= Corridor =-0/11",
+        "next_infos": {
+            "admissible_commands": [
+                "drop tomato",
+                "eat tomato",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "-= Corridor =- You've entered a corridor. You don't like doors? Why not try going east, that entranceway is not blocked by one. You don't like doors? Why not try going north, that entranceway is not blocked by one. You don't like doors? Why not try going south, that entranceway is not blocked by one. You don't like doors? Why not try going west, that entranceway is not blocked by one. > -= Corridor =-0/11",
+        "infos": {
+            "admissible_commands": [
+                "drop tomato",
+                "eat tomato",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Bathroom =- You've just shown up in a bathroom. You can see a toilet. You shudder, but continue examining the toilet. The toilet is white. But there isn't a thing on it. There is an exit to the east. > -= Bathroom =-0/12",
+        "next_infos": {
+            "admissible_commands": [
+                "drop tomato",
+                "eat tomato",
+                "examine toilet",
+                "go east",
+                "inventory",
+                "look",
+                "put tomato on toilet"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "-= Bathroom =- You've just shown up in a bathroom. You can see a toilet. You shudder, but continue examining the toilet. The toilet is white. But there isn't a thing on it. There is an exit to the east. > -= Bathroom =-0/12",
+        "infos": {
+            "admissible_commands": [
+                "drop tomato",
+                "eat tomato",
+                "examine toilet",
+                "go east",
+                "inventory",
+                "look",
+                "put tomato on toilet"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Corridor =- You've entered a corridor. You don't like doors? Why not try going east, that entranceway is not blocked by one. You don't like doors? Why not try going north, that entranceway is not blocked by one. You don't like doors? Why not try going south, that entranceway is not blocked by one. You don't like doors? Why not try going west, that entranceway is not blocked by one. > -= Corridor =-0/13",
+        "next_infos": {
+            "admissible_commands": [
+                "drop tomato",
+                "eat tomato",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "-= Corridor =- You've entered a corridor. You don't like doors? Why not try going east, that entranceway is not blocked by one. You don't like doors? Why not try going north, that entranceway is not blocked by one. You don't like doors? Why not try going south, that entranceway is not blocked by one. You don't like doors? Why not try going west, that entranceway is not blocked by one. > -= Corridor =-0/13",
+        "infos": {
+            "admissible_commands": [
+                "drop tomato",
+                "eat tomato",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Livingroom =- Well how about that, you are in a place we're calling a livingroom. Okay, just remember what you're here to do, and everything will go great. You scan the room for a sofa, and you find a sofa. But oh no! there's nothing on this piece of junk. You need an exit without a door? You should try going west. > -= Livingroom =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "drop tomato",
+                "eat tomato",
+                "examine sofa",
+                "go west",
+                "inventory",
+                "look",
+                "put tomato on sofa"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "-= Livingroom =- Well how about that, you are in a place we're calling a livingroom. Okay, just remember what you're here to do, and everything will go great. You scan the room for a sofa, and you find a sofa. But oh no! there's nothing on this piece of junk. You need an exit without a door? You should try going west. > -= Livingroom =-0/14",
+        "infos": {
+            "admissible_commands": [
+                "drop tomato",
+                "eat tomato",
+                "examine sofa",
+                "go west",
+                "inventory",
+                "look",
+                "put tomato on sofa"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "You can't go that way. > -= Livingroom =-0/15",
+        "next_infos": {
+            "admissible_commands": [
+                "drop tomato",
+                "eat tomato",
+                "examine sofa",
+                "go west",
+                "inventory",
+                "look",
+                "put tomato on sofa"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "You can't go that way. > -= Livingroom =-0/15",
+        "infos": {
+            "admissible_commands": [
+                "drop tomato",
+                "eat tomato",
+                "examine sofa",
+                "go west",
+                "inventory",
+                "look",
+                "put tomato on sofa"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Corridor =- You've entered a corridor. You don't like doors? Why not try going east, that entranceway is not blocked by one. You don't like doors? Why not try going north, that entranceway is not blocked by one. You don't like doors? Why not try going south, that entranceway is not blocked by one. You don't like doors? Why not try going west, that entranceway is not blocked by one. > -= Corridor =-0/16",
+        "next_infos": {
+            "admissible_commands": [
+                "drop tomato",
+                "eat tomato",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "-= Corridor =- You've entered a corridor. You don't like doors? Why not try going east, that entranceway is not blocked by one. You don't like doors? Why not try going north, that entranceway is not blocked by one. You don't like doors? Why not try going south, that entranceway is not blocked by one. You don't like doors? Why not try going west, that entranceway is not blocked by one. > -= Corridor =-0/16",
+        "infos": {
+            "admissible_commands": [
+                "drop tomato",
+                "eat tomato",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Bedroom =- If you're wondering why everything seems so usual all of a sudden, it's because you've just walked into the bedroom. You start to take note of what's in the room. You see a bed. The bed is large. The bed appears to be empty. What, you think everything in TextWorld should have stuff on it? There is an exit to the south. > -= Bedroom =-0/17",
+        "next_infos": {
+            "admissible_commands": [
+                "drop tomato",
+                "eat tomato",
+                "examine bed",
+                "go south",
+                "inventory",
+                "look",
+                "put tomato on bed"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "-= Bedroom =- If you're wondering why everything seems so usual all of a sudden, it's because you've just walked into the bedroom. You start to take note of what's in the room. You see a bed. The bed is large. The bed appears to be empty. What, you think everything in TextWorld should have stuff on it? There is an exit to the south. > -= Bedroom =-0/17",
+        "infos": {
+            "admissible_commands": [
+                "drop tomato",
+                "eat tomato",
+                "examine bed",
+                "go south",
+                "inventory",
+                "look",
+                "put tomato on bed"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Corridor =- You've entered a corridor. You don't like doors? Why not try going east, that entranceway is not blocked by one. You don't like doors? Why not try going north, that entranceway is not blocked by one. You don't like doors? Why not try going south, that entranceway is not blocked by one. You don't like doors? Why not try going west, that entranceway is not blocked by one. > -= Corridor =-0/18",
+        "next_infos": {
+            "admissible_commands": [
+                "drop tomato",
+                "eat tomato",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "-= Corridor =- You've entered a corridor. You don't like doors? Why not try going east, that entranceway is not blocked by one. You don't like doors? Why not try going north, that entranceway is not blocked by one. You don't like doors? Why not try going south, that entranceway is not blocked by one. You don't like doors? Why not try going west, that entranceway is not blocked by one. > -= Corridor =-0/18",
+        "infos": {
+            "admissible_commands": [
+                "drop tomato",
+                "eat tomato",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Livingroom =- Well how about that, you are in a place we're calling a livingroom. Okay, just remember what you're here to do, and everything will go great. You scan the room for a sofa, and you find a sofa. But oh no! there's nothing on this piece of junk. You need an exit without a door? You should try going west. > -= Livingroom =-0/19",
+        "next_infos": {
+            "admissible_commands": [
+                "drop tomato",
+                "eat tomato",
+                "examine sofa",
+                "go west",
+                "inventory",
+                "look",
+                "put tomato on sofa"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "-= Livingroom =- Well how about that, you are in a place we're calling a livingroom. Okay, just remember what you're here to do, and everything will go great. You scan the room for a sofa, and you find a sofa. But oh no! there's nothing on this piece of junk. You need an exit without a door? You should try going west. > -= Livingroom =-0/19",
+        "infos": {
+            "admissible_commands": [
+                "drop tomato",
+                "eat tomato",
+                "examine sofa",
+                "go west",
+                "inventory",
+                "look",
+                "put tomato on sofa"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Corridor =- You've entered a corridor. You don't like doors? Why not try going east, that entranceway is not blocked by one. You don't like doors? Why not try going north, that entranceway is not blocked by one. You don't like doors? Why not try going south, that entranceway is not blocked by one. You don't like doors? Why not try going west, that entranceway is not blocked by one. > -= Corridor =-0/20",
+        "next_infos": {
+            "admissible_commands": [
+                "drop tomato",
+                "eat tomato",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false
+    },
+    {
+        "state": "-= Corridor =- You've entered a corridor. You don't like doors? Why not try going east, that entranceway is not blocked by one. You don't like doors? Why not try going north, that entranceway is not blocked by one. You don't like doors? Why not try going south, that entranceway is not blocked by one. You don't like doors? Why not try going west, that entranceway is not blocked by one. > -= Corridor =-0/20",
+        "infos": {
+            "admissible_commands": [
+                "drop tomato",
+                "eat tomato",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Bathroom =- You've just shown up in a bathroom. You can see a toilet. You shudder, but continue examining the toilet. The toilet is white. But there isn't a thing on it. There is an exit to the east. > -= Bathroom =-0/21",
+        "next_infos": {
+            "admissible_commands": [
+                "drop tomato",
+                "eat tomato",
+                "examine toilet",
+                "go east",
+                "inventory",
+                "look",
+                "put tomato on toilet"
+            ]
+        },
+        "done": true
+    }
+]
