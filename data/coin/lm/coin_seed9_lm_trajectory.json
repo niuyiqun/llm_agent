@@ -1,0 +1,357 @@
+[
+    {
+        "state": "Welcome to another fast paced game of TextWorld! Here is how to play! First step, head south. With that accomplished, make an attempt to travel south. And then, attempt to go west. And then, move south. And then, attempt to head west. That done, make an effort to head south. And then, go to the south. Then, take a trip south. Then, make an effort to go to the west. After that, go to the west. Then, make an attempt to travel south. After that, try to venture east. And then, travel east. Okay, and then, venture north. Then, pick up the coin from the floor of the bedroom. Alright, thanks! -= Closet =- This just in- You, in the closet. There is an unblocked exit to the south. > -= Closet =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Closet =- This just in- You, in the closet. There is an unblocked exit to the south. > -= Closet =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Closet =- This just in- You, in the closet. There is an unblocked exit to the south. > -= Closet =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Cubicle =- You arrive in a cubicle. A typical one. You begin looking for stuff. There is an unblocked exit to the north. There is an exit to the south. Don't worry, it is unblocked. > -= Cubicle =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "-= Cubicle =- You arrive in a cubicle. A typical one. You begin looking for stuff. There is an unblocked exit to the north. There is an exit to the south. Don't worry, it is unblocked. > -= Cubicle =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Cubicle =- You arrive in a cubicle. A typical one. You begin looking for stuff. There is an unblocked exit to the north. There is an exit to the south. Don't worry, it is unblocked. > -= Cubicle =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Cubicle =- You arrive in a cubicle. A typical one. You begin looking for stuff. There is an unblocked exit to the north. There is an exit to the south. Don't worry, it is unblocked. > -= Cubicle =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Spare Room =- You've entered a spare room. There is an unguarded exit to the north. You don't like doors? Why not try going west, that entranceway is unguarded. > -= Spare Room =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "-= Spare Room =- You've entered a spare room. There is an unguarded exit to the north. You don't like doors? Why not try going west, that entranceway is unguarded. > -= Spare Room =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Spare Room =- You've entered a spare room. There is an unguarded exit to the north. You don't like doors? Why not try going west, that entranceway is unguarded. > -= Spare Room =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Spare Room =- You've entered a spare room. There is an unguarded exit to the north. You don't like doors? Why not try going west, that entranceway is unguarded. > -= Spare Room =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Canteen =- You've entered a canteen. There is an exit to the east. Don't worry, it is unguarded. There is an exit to the south. Don't worry, it is unblocked. > -= Canteen =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "-= Canteen =- You've entered a canteen. There is an exit to the east. Don't worry, it is unguarded. There is an exit to the south. Don't worry, it is unblocked. > -= Canteen =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Canteen =- You've entered a canteen. There is an exit to the east. Don't worry, it is unguarded. There is an exit to the south. Don't worry, it is unblocked. > -= Canteen =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Canteen =- You've entered a canteen. There is an exit to the east. Don't worry, it is unguarded. There is an exit to the south. Don't worry, it is unblocked. > -= Canteen =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Spare Room =- You've entered a spare room. There is an unguarded exit to the north. You don't like doors? Why not try going west, that entranceway is unguarded. > -= Spare Room =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "-= Spare Room =- You've entered a spare room. There is an unguarded exit to the north. You don't like doors? Why not try going west, that entranceway is unguarded. > -= Spare Room =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Spare Room =- You've entered a spare room. There is an unguarded exit to the north. You don't like doors? Why not try going west, that entranceway is unguarded. > -= Spare Room =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Spare Room =- You've entered a spare room. There is an unguarded exit to the north. You don't like doors? Why not try going west, that entranceway is unguarded. > -= Spare Room =-0/10",
+        "infos": {
+            "admissible_commands": [
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Cubicle =- You arrive in a cubicle. A typical one. You begin looking for stuff. There is an unblocked exit to the north. There is an exit to the south. Don't worry, it is unblocked. > -= Cubicle =-0/11",
+        "next_infos": {
+            "admissible_commands": [
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "-= Cubicle =- You arrive in a cubicle. A typical one. You begin looking for stuff. There is an unblocked exit to the north. There is an exit to the south. Don't worry, it is unblocked. > -= Cubicle =-0/11",
+        "infos": {
+            "admissible_commands": [
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Cubicle =- You arrive in a cubicle. A typical one. You begin looking for stuff. There is an unblocked exit to the north. There is an exit to the south. Don't worry, it is unblocked. > -= Cubicle =-0/12",
+        "next_infos": {
+            "admissible_commands": [
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Cubicle =- You arrive in a cubicle. A typical one. You begin looking for stuff. There is an unblocked exit to the north. There is an exit to the south. Don't worry, it is unblocked. > -= Cubicle =-0/12",
+        "infos": {
+            "admissible_commands": [
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Closet =- This just in- You, in the closet. There is an unblocked exit to the south. > -= Closet =-0/13",
+        "next_infos": {
+            "admissible_commands": [
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Closet =- This just in- You, in the closet. There is an unblocked exit to the south. > -= Closet =-0/13",
+        "infos": {
+            "admissible_commands": [
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Cubicle =- You arrive in a cubicle. A typical one. You begin looking for stuff. There is an unblocked exit to the north. There is an exit to the south. Don't worry, it is unblocked. > -= Cubicle =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "-= Cubicle =- You arrive in a cubicle. A typical one. You begin looking for stuff. There is an unblocked exit to the north. There is an exit to the south. Don't worry, it is unblocked. > -= Cubicle =-0/14",
+        "infos": {
+            "admissible_commands": [
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Cubicle =- You arrive in a cubicle. A typical one. You begin looking for stuff. There is an unblocked exit to the north. There is an exit to the south. Don't worry, it is unblocked. > -= Cubicle =-0/15",
+        "next_infos": {
+            "admissible_commands": [
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Cubicle =- You arrive in a cubicle. A typical one. You begin looking for stuff. There is an unblocked exit to the north. There is an exit to the south. Don't worry, it is unblocked. > -= Cubicle =-0/15",
+        "infos": {
+            "admissible_commands": [
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Spare Room =- You've entered a spare room. There is an unguarded exit to the north. You don't like doors? Why not try going west, that entranceway is unguarded. > -= Spare Room =-0/16",
+        "next_infos": {
+            "admissible_commands": [
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

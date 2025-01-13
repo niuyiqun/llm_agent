@@ -1,0 +1,379 @@
+[
+    {
+        "state": "You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal! -= Corridor =- You arrive in a corridor. An ordinary kind of place. There is an exit to the east. Don't worry, there is no door. You don't like doors? Why not try going south, that entranceway is not blocked by one. There is an exit to the west. > -= Corridor =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "drop red bell pepper",
+                "drop red hot pepper",
+                "eat red bell pepper",
+                "eat red hot pepper",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Bedroom =- You find yourself in a bedroom. A standard one. You can barely contain your excitement. You make out a bed. The bed is large. But oh no! there's nothing on this piece of junk. You don't like doors? Why not try going west, that entranceway is not blocked by one. > -= Bedroom =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red bell pepper",
+                "drop red hot pepper",
+                "eat red bell pepper",
+                "eat red hot pepper",
+                "examine bed",
+                "go west",
+                "inventory",
+                "look",
+                "put red bell pepper on bed",
+                "put red hot pepper on bed"
+            ]
+        },
+        "done": false,
+        "next_action": "put red bell pepper on bed"
+    },
+    {
+        "state": "-= Bedroom =- You find yourself in a bedroom. A standard one. You can barely contain your excitement. You make out a bed. The bed is large. But oh no! there's nothing on this piece of junk. You don't like doors? Why not try going west, that entranceway is not blocked by one. > -= Bedroom =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "drop red bell pepper",
+                "drop red hot pepper",
+                "eat red bell pepper",
+                "eat red hot pepper",
+                "examine bed",
+                "go west",
+                "inventory",
+                "look",
+                "put red bell pepper on bed",
+                "put red hot pepper on bed"
+            ]
+        },
+        "action": "put red bell pepper on bed",
+        "reward": 0,
+        "next_state": "You put the red bell pepper on the bed. > -= Bedroom =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red hot pepper",
+                "eat red hot pepper",
+                "examine bed",
+                "examine red bell pepper",
+                "go west",
+                "inventory",
+                "look",
+                "put red hot pepper on bed",
+                "take red bell pepper from bed"
+            ]
+        },
+        "done": false,
+        "next_action": "take red bell pepper from bed"
+    },
+    {
+        "state": "You put the red bell pepper on the bed. > -= Bedroom =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "drop red hot pepper",
+                "eat red hot pepper",
+                "examine bed",
+                "examine red bell pepper",
+                "go west",
+                "inventory",
+                "look",
+                "put red hot pepper on bed",
+                "take red bell pepper from bed"
+            ]
+        },
+        "action": "take red bell pepper from bed",
+        "reward": 0,
+        "next_state": "You take the red bell pepper from the bed. > -= Bedroom =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red bell pepper",
+                "drop red hot pepper",
+                "eat red bell pepper",
+                "eat red hot pepper",
+                "examine bed",
+                "go west",
+                "inventory",
+                "look",
+                "put red bell pepper on bed",
+                "put red hot pepper on bed"
+            ]
+        },
+        "done": false,
+        "next_action": "drop red hot pepper"
+    },
+    {
+        "state": "You take the red bell pepper from the bed. > -= Bedroom =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "drop red bell pepper",
+                "drop red hot pepper",
+                "eat red bell pepper",
+                "eat red hot pepper",
+                "examine bed",
+                "go west",
+                "inventory",
+                "look",
+                "put red bell pepper on bed",
+                "put red hot pepper on bed"
+            ]
+        },
+        "action": "drop red hot pepper",
+        "reward": 0,
+        "next_state": "You drop the red hot pepper on the ground. > -= Bedroom =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red bell pepper",
+                "eat red bell pepper",
+                "examine bed",
+                "examine red hot pepper",
+                "go west",
+                "inventory",
+                "look",
+                "put red bell pepper on bed",
+                "take red hot pepper"
+            ]
+        },
+        "done": false,
+        "next_action": "examine red hot pepper"
+    },
+    {
+        "state": "You drop the red hot pepper on the ground. > -= Bedroom =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "drop red bell pepper",
+                "eat red bell pepper",
+                "examine bed",
+                "examine red hot pepper",
+                "go west",
+                "inventory",
+                "look",
+                "put red bell pepper on bed",
+                "take red hot pepper"
+            ]
+        },
+        "action": "examine red hot pepper",
+        "reward": 0,
+        "next_state": "You couldn't pay me to eat that red hot pepper. > -= Bedroom =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red bell pepper",
+                "eat red bell pepper",
+                "examine bed",
+                "examine red hot pepper",
+                "go west",
+                "inventory",
+                "look",
+                "put red bell pepper on bed",
+                "take red hot pepper"
+            ]
+        },
+        "done": false,
+        "next_action": "drop red bell pepper"
+    },
+    {
+        "state": "You couldn't pay me to eat that red hot pepper. > -= Bedroom =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "drop red bell pepper",
+                "eat red bell pepper",
+                "examine bed",
+                "examine red hot pepper",
+                "go west",
+                "inventory",
+                "look",
+                "put red bell pepper on bed",
+                "take red hot pepper"
+            ]
+        },
+        "action": "drop red bell pepper",
+        "reward": 0,
+        "next_state": "You drop the red bell pepper on the ground. > -= Bedroom =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine red bell pepper",
+                "examine red hot pepper",
+                "go west",
+                "inventory",
+                "look",
+                "take red bell pepper",
+                "take red hot pepper"
+            ]
+        },
+        "done": false,
+        "next_action": "take red hot pepper"
+    },
+    {
+        "state": "You drop the red bell pepper on the ground. > -= Bedroom =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine red bell pepper",
+                "examine red hot pepper",
+                "go west",
+                "inventory",
+                "look",
+                "take red bell pepper",
+                "take red hot pepper"
+            ]
+        },
+        "action": "take red hot pepper",
+        "reward": 0,
+        "next_state": "You pick up the red hot pepper from the ground. > -= Bedroom =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red hot pepper",
+                "eat red hot pepper",
+                "examine bed",
+                "examine red bell pepper",
+                "go west",
+                "inventory",
+                "look",
+                "put red hot pepper on bed",
+                "take red bell pepper"
+            ]
+        },
+        "done": false,
+        "next_action": "take red bell pepper"
+    },
+    {
+        "state": "You pick up the red hot pepper from the ground. > -= Bedroom =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "drop red hot pepper",
+                "eat red hot pepper",
+                "examine bed",
+                "examine red bell pepper",
+                "go west",
+                "inventory",
+                "look",
+                "put red hot pepper on bed",
+                "take red bell pepper"
+            ]
+        },
+        "action": "take red bell pepper",
+        "reward": 0,
+        "next_state": "You pick up the red bell pepper from the ground. > -= Bedroom =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red bell pepper",
+                "drop red hot pepper",
+                "eat red bell pepper",
+                "eat red hot pepper",
+                "examine bed",
+                "go west",
+                "inventory",
+                "look",
+                "put red bell pepper on bed",
+                "put red hot pepper on bed"
+            ]
+        },
+        "done": false,
+        "next_action": "examine bed"
+    },
+    {
+        "state": "You pick up the red bell pepper from the ground. > -= Bedroom =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "drop red bell pepper",
+                "drop red hot pepper",
+                "eat red bell pepper",
+                "eat red hot pepper",
+                "examine bed",
+                "go west",
+                "inventory",
+                "look",
+                "put red bell pepper on bed",
+                "put red hot pepper on bed"
+            ]
+        },
+        "action": "examine bed",
+        "reward": 0,
+        "next_state": "The bed is shaky. > -= Bedroom =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red bell pepper",
+                "drop red hot pepper",
+                "eat red bell pepper",
+                "eat red hot pepper",
+                "examine bed",
+                "go west",
+                "inventory",
+                "look",
+                "put red bell pepper on bed",
+                "put red hot pepper on bed"
+            ]
+        },
+        "done": false,
+        "next_action": "put red hot pepper on bed"
+    },
+    {
+        "state": "The bed is shaky. > -= Bedroom =-0/10",
+        "infos": {
+            "admissible_commands": [
+                "drop red bell pepper",
+                "drop red hot pepper",
+                "eat red bell pepper",
+                "eat red hot pepper",
+                "examine bed",
+                "go west",
+                "inventory",
+                "look",
+                "put red bell pepper on bed",
+                "put red hot pepper on bed"
+            ]
+        },
+        "action": "put red hot pepper on bed",
+        "reward": 0,
+        "next_state": "You put the red hot pepper on the bed. > -= Bedroom =-0/11",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red bell pepper",
+                "eat red bell pepper",
+                "examine bed",
+                "examine red hot pepper",
+                "go west",
+                "inventory",
+                "look",
+                "put red bell pepper on bed",
+                "take red hot pepper from bed"
+            ]
+        },
+        "done": false,
+        "next_action": "eat red bell pepper"
+    },
+    {
+        "state": "You put the red hot pepper on the bed. > -= Bedroom =-0/11",
+        "infos": {
+            "admissible_commands": [
+                "drop red bell pepper",
+                "eat red bell pepper",
+                "examine bed",
+                "examine red hot pepper",
+                "go west",
+                "inventory",
+                "look",
+                "put red bell pepper on bed",
+                "take red hot pepper from bed"
+            ]
+        },
+        "action": "eat red bell pepper",
+        "reward": 0,
+        "next_state": "You eat the red bell pepper. Not bad. *** You lost! *** You scored 0 out of a possible 7, in 11 turns. Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command? > -= Bedroom =-0/11",
+        "next_infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine red hot pepper",
+                "go west",
+                "inventory",
+                "look",
+                "take red hot pepper from bed"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

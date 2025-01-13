@@ -1,0 +1,74 @@
+[
+    {
+        "state": "You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal! -= Livingroom =- If you're wondering why everything seems so normal all of a sudden, it's because you've just sauntered into the livingroom. You see a sofa. The sofa is comfy. But the thing hasn't got anything on it. You need an exit without a door? You should try going south. > -= Livingroom =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "drop green bell pepper",
+                "drop orange bell pepper",
+                "eat green bell pepper",
+                "eat orange bell pepper",
+                "examine sofa",
+                "go south",
+                "inventory",
+                "look",
+                "put green bell pepper on sofa",
+                "put orange bell pepper on sofa"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Bedroom =- You've entered a bedroom. You see a gleam over in a corner, where you can see a bed. The bed is large. But oh no! there's nothing on this piece of junk. There is an exit to the north. Don't worry, there is no door. There is an exit to the south. > -= Bedroom =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "drop green bell pepper",
+                "drop orange bell pepper",
+                "eat green bell pepper",
+                "eat orange bell pepper",
+                "examine bed",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "put green bell pepper on bed",
+                "put orange bell pepper on bed"
+            ]
+        },
+        "done": false,
+        "next_action": "eat orange bell pepper"
+    },
+    {
+        "state": "-= Bedroom =- You've entered a bedroom. You see a gleam over in a corner, where you can see a bed. The bed is large. But oh no! there's nothing on this piece of junk. There is an exit to the north. Don't worry, there is no door. There is an exit to the south. > -= Bedroom =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "drop green bell pepper",
+                "drop orange bell pepper",
+                "eat green bell pepper",
+                "eat orange bell pepper",
+                "examine bed",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "put green bell pepper on bed",
+                "put orange bell pepper on bed"
+            ]
+        },
+        "action": "eat orange bell pepper",
+        "reward": 0,
+        "next_state": "You eat the orange bell pepper. Not bad. *** You lost! *** You scored 0 out of a possible 7, in 2 turns. Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command? > -= Bedroom =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "drop green bell pepper",
+                "eat green bell pepper",
+                "examine bed",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "put green bell pepper on bed"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

@@ -1,0 +1,63 @@
+[
+    {
+        "state": "You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal! -= Pantry =- You are in a pantry. A standard one. You make out a shelf. I guess it's true what they say, if you're looking for a shelf, go to TextWorld. But oh no! there's nothing on this piece of trash. What, you think everything in TextWorld should have stuff on it? There is an open frosted-glass door leading south. > -= Pantry =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop pork chop",
+                "eat pork chop",
+                "examine shelf",
+                "go south",
+                "inventory",
+                "look",
+                "put pork chop on shelf"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Pantry =- You are in a pantry. A standard one. You make out a shelf. I guess it's true what they say, if you're looking for a shelf, go to TextWorld. But oh no! there's nothing on this piece of trash. What, you think everything in TextWorld should have stuff on it? There is an open frosted-glass door leading south. > -= Pantry =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop pork chop",
+                "eat pork chop",
+                "examine shelf",
+                "go south",
+                "inventory",
+                "look",
+                "put pork chop on shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "eat pork chop"
+    },
+    {
+        "state": "-= Pantry =- You are in a pantry. A standard one. You make out a shelf. I guess it's true what they say, if you're looking for a shelf, go to TextWorld. But oh no! there's nothing on this piece of trash. What, you think everything in TextWorld should have stuff on it? There is an open frosted-glass door leading south. > -= Pantry =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop pork chop",
+                "eat pork chop",
+                "examine shelf",
+                "go south",
+                "inventory",
+                "look",
+                "put pork chop on shelf"
+            ]
+        },
+        "action": "eat pork chop",
+        "reward": 0,
+        "next_state": "You eat the pork chop. Not bad. *** You lost! *** You scored 0 out of a possible 7, in 2 turns. Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command? > -= Pantry =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "examine shelf",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

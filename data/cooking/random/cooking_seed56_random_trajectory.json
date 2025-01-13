@@ -1,0 +1,185 @@
+[
+    {
+        "state": "You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal! -= Pantry =- You are in a pantry. I guess you better just go and list everything you see here. You can make out a shelf. Unfortunately, there isn't a thing on it. It would have been so cool if there was stuff on the shelf! oh well. There is an open frosted-glass door leading west. > -= Pantry =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop tomato",
+                "eat tomato",
+                "examine shelf",
+                "go west",
+                "inventory",
+                "look",
+                "put tomato on shelf"
+            ]
+        },
+        "action": "put tomato on shelf",
+        "reward": 0,
+        "next_state": "You put the tomato on the shelf. > -= Pantry =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "examine shelf",
+                "examine tomato",
+                "go west",
+                "inventory",
+                "look",
+                "take tomato from shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "You put the tomato on the shelf. > -= Pantry =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "examine shelf",
+                "examine tomato",
+                "go west",
+                "inventory",
+                "look",
+                "take tomato from shelf"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Pantry =- You are in a pantry. I guess you better just go and list everything you see here. You can make out a shelf. You see a fried tomato on the shelf. Classic TextWorld. There is an open frosted-glass door leading west. > -= Pantry =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "examine shelf",
+                "examine tomato",
+                "go west",
+                "inventory",
+                "look",
+                "take tomato from shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "examine tomato"
+    },
+    {
+        "state": "-= Pantry =- You are in a pantry. I guess you better just go and list everything you see here. You can make out a shelf. You see a fried tomato on the shelf. Classic TextWorld. There is an open frosted-glass door leading west. > -= Pantry =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "examine shelf",
+                "examine tomato",
+                "go west",
+                "inventory",
+                "look",
+                "take tomato from shelf"
+            ]
+        },
+        "action": "examine tomato",
+        "reward": 0,
+        "next_state": "That's a fried tomato! > -= Pantry =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "examine shelf",
+                "examine tomato",
+                "go west",
+                "inventory",
+                "look",
+                "take tomato from shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "take tomato from shelf"
+    },
+    {
+        "state": "That's a fried tomato! > -= Pantry =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "examine shelf",
+                "examine tomato",
+                "go west",
+                "inventory",
+                "look",
+                "take tomato from shelf"
+            ]
+        },
+        "action": "take tomato from shelf",
+        "reward": 0,
+        "next_state": "You take the tomato from the shelf. > -= Pantry =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop tomato",
+                "eat tomato",
+                "examine shelf",
+                "go west",
+                "inventory",
+                "look",
+                "put tomato on shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "examine shelf"
+    },
+    {
+        "state": "You take the tomato from the shelf. > -= Pantry =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop tomato",
+                "eat tomato",
+                "examine shelf",
+                "go west",
+                "inventory",
+                "look",
+                "put tomato on shelf"
+            ]
+        },
+        "action": "examine shelf",
+        "reward": 0,
+        "next_state": "The shelf is an unstable piece of garbage. > -= Pantry =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop tomato",
+                "eat tomato",
+                "examine shelf",
+                "go west",
+                "inventory",
+                "look",
+                "put tomato on shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "eat tomato"
+    },
+    {
+        "state": "The shelf is an unstable piece of garbage. > -= Pantry =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop tomato",
+                "eat tomato",
+                "examine shelf",
+                "go west",
+                "inventory",
+                "look",
+                "put tomato on shelf"
+            ]
+        },
+        "action": "eat tomato",
+        "reward": 0,
+        "next_state": "You eat the tomato. Not bad. *** You lost! *** You scored 0 out of a possible 7, in 6 turns. Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command? > -= Pantry =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "examine shelf",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

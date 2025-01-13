@@ -1,0 +1,684 @@
+[
+    {
+        "state": "You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal! -= Bedroom =- You arrive in a bedroom. A typical one. You make out a bed. The bed is large. But the thing is empty, unfortunately. Aw, here you were, all excited for there to be things on it! There is an exit to the east. Don't worry, there is no door. > -= Bedroom =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "drop banana",
+                "eat banana",
+                "examine bed",
+                "go east",
+                "inventory",
+                "look",
+                "put banana on bed"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying: a fried banana. > -= Bedroom =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "drop banana",
+                "eat banana",
+                "examine bed",
+                "go east",
+                "inventory",
+                "look",
+                "put banana on bed"
+            ]
+        },
+        "done": false,
+        "next_action": "inventory"
+    },
+    {
+        "state": "You are carrying: a fried banana. > -= Bedroom =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "drop banana",
+                "eat banana",
+                "examine bed",
+                "go east",
+                "inventory",
+                "look",
+                "put banana on bed"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying: a fried banana. > -= Bedroom =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "drop banana",
+                "eat banana",
+                "examine bed",
+                "go east",
+                "inventory",
+                "look",
+                "put banana on bed"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "You are carrying: a fried banana. > -= Bedroom =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "drop banana",
+                "eat banana",
+                "examine bed",
+                "go east",
+                "inventory",
+                "look",
+                "put banana on bed"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Livingroom =- This might come as a shock to you, but you've just walked into a livingroom. Were you looking for a sofa? Because look over there, it's a sofa. The sofa is comfy. Looks like someone's already been here and taken everything off it, though. Aw, here you were, all excited for there to be things on it! There is an exit to the north. Don't worry, there is no door. There is an exit to the west. > -= Livingroom =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "drop banana",
+                "eat banana",
+                "examine sofa",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "put banana on sofa"
+            ]
+        },
+        "done": false,
+        "next_action": "inventory"
+    },
+    {
+        "state": "-= Livingroom =- This might come as a shock to you, but you've just walked into a livingroom. Were you looking for a sofa? Because look over there, it's a sofa. The sofa is comfy. Looks like someone's already been here and taken everything off it, though. Aw, here you were, all excited for there to be things on it! There is an exit to the north. Don't worry, there is no door. There is an exit to the west. > -= Livingroom =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "drop banana",
+                "eat banana",
+                "examine sofa",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "put banana on sofa"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying: a fried banana. > -= Livingroom =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "drop banana",
+                "eat banana",
+                "examine sofa",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "put banana on sofa"
+            ]
+        },
+        "done": false,
+        "next_action": "put banana on sofa"
+    },
+    {
+        "state": "You are carrying: a fried banana. > -= Livingroom =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "drop banana",
+                "eat banana",
+                "examine sofa",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "put banana on sofa"
+            ]
+        },
+        "action": "put banana on sofa",
+        "reward": 0,
+        "next_state": "You put the banana on the sofa. > -= Livingroom =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "examine banana",
+                "examine sofa",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "take banana from sofa"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "You put the banana on the sofa. > -= Livingroom =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "examine banana",
+                "examine sofa",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "take banana from sofa"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Bedroom =- You arrive in a bedroom. A typical one. You make out a bed. The bed is large. But the thing is empty, unfortunately. Aw, here you were, all excited for there to be things on it! There is an exit to the east. Don't worry, there is no door. > -= Bedroom =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "examine bed",
+                "go east",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Bedroom =- You arrive in a bedroom. A typical one. You make out a bed. The bed is large. But the thing is empty, unfortunately. Aw, here you were, all excited for there to be things on it! There is an exit to the east. Don't worry, there is no door. > -= Bedroom =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "examine bed",
+                "go east",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Livingroom =- This might come as a shock to you, but you've just walked into a livingroom. Were you looking for a sofa? Because look over there, it's a sofa. The sofa is comfy. On the sofa you make out a fried banana. Huh, weird. There is an exit to the north. Don't worry, there is no door. There is an exit to the west. > -= Livingroom =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "examine banana",
+                "examine sofa",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "take banana from sofa"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "-= Livingroom =- This might come as a shock to you, but you've just walked into a livingroom. Were you looking for a sofa? Because look over there, it's a sofa. The sofa is comfy. On the sofa you make out a fried banana. Huh, weird. There is an exit to the north. Don't worry, there is no door. There is an exit to the west. > -= Livingroom =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "examine banana",
+                "examine sofa",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "take banana from sofa"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Livingroom =- This might come as a shock to you, but you've just walked into a livingroom. Were you looking for a sofa? Because look over there, it's a sofa. The sofa is comfy. On the sofa you make out a fried banana. Huh, weird. There is an exit to the north. Don't worry, there is no door. There is an exit to the west. > -= Livingroom =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "examine banana",
+                "examine sofa",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "take banana from sofa"
+            ]
+        },
+        "done": false,
+        "next_action": "examine banana"
+    },
+    {
+        "state": "-= Livingroom =- This might come as a shock to you, but you've just walked into a livingroom. Were you looking for a sofa? Because look over there, it's a sofa. The sofa is comfy. On the sofa you make out a fried banana. Huh, weird. There is an exit to the north. Don't worry, there is no door. There is an exit to the west. > -= Livingroom =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "examine banana",
+                "examine sofa",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "take banana from sofa"
+            ]
+        },
+        "action": "examine banana",
+        "reward": 0,
+        "next_state": "You couldn't pay me to eat that fried banana. > -= Livingroom =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "examine banana",
+                "examine sofa",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "take banana from sofa"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "You couldn't pay me to eat that fried banana. > -= Livingroom =-0/10",
+        "infos": {
+            "admissible_commands": [
+                "examine banana",
+                "examine sofa",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "take banana from sofa"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Bedroom =- You arrive in a bedroom. A typical one. You make out a bed. The bed is large. But the thing is empty, unfortunately. Aw, here you were, all excited for there to be things on it! There is an exit to the east. Don't worry, there is no door. > -= Bedroom =-0/11",
+        "next_infos": {
+            "admissible_commands": [
+                "examine bed",
+                "go east",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "-= Bedroom =- You arrive in a bedroom. A typical one. You make out a bed. The bed is large. But the thing is empty, unfortunately. Aw, here you were, all excited for there to be things on it! There is an exit to the east. Don't worry, there is no door. > -= Bedroom =-0/11",
+        "infos": {
+            "admissible_commands": [
+                "examine bed",
+                "go east",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Bedroom =- You arrive in a bedroom. A typical one. You make out a bed. The bed is large. But the thing is empty, unfortunately. Aw, here you were, all excited for there to be things on it! There is an exit to the east. Don't worry, there is no door. > -= Bedroom =-0/12",
+        "next_infos": {
+            "admissible_commands": [
+                "examine bed",
+                "go east",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "inventory"
+    },
+    {
+        "state": "-= Bedroom =- You arrive in a bedroom. A typical one. You make out a bed. The bed is large. But the thing is empty, unfortunately. Aw, here you were, all excited for there to be things on it! There is an exit to the east. Don't worry, there is no door. > -= Bedroom =-0/12",
+        "infos": {
+            "admissible_commands": [
+                "examine bed",
+                "go east",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying nothing. > -= Bedroom =-0/13",
+        "next_infos": {
+            "admissible_commands": [
+                "examine bed",
+                "go east",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "You are carrying nothing. > -= Bedroom =-0/13",
+        "infos": {
+            "admissible_commands": [
+                "examine bed",
+                "go east",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Livingroom =- This might come as a shock to you, but you've just walked into a livingroom. Were you looking for a sofa? Because look over there, it's a sofa. The sofa is comfy. On the sofa you make out a fried banana. Huh, weird. There is an exit to the north. Don't worry, there is no door. There is an exit to the west. > -= Livingroom =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "examine banana",
+                "examine sofa",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "take banana from sofa"
+            ]
+        },
+        "done": false,
+        "next_action": "examine sofa"
+    },
+    {
+        "state": "-= Livingroom =- This might come as a shock to you, but you've just walked into a livingroom. Were you looking for a sofa? Because look over there, it's a sofa. The sofa is comfy. On the sofa you make out a fried banana. Huh, weird. There is an exit to the north. Don't worry, there is no door. There is an exit to the west. > -= Livingroom =-0/14",
+        "infos": {
+            "admissible_commands": [
+                "examine banana",
+                "examine sofa",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "take banana from sofa"
+            ]
+        },
+        "action": "examine sofa",
+        "reward": 0,
+        "next_state": "The sofa is an unstable piece of garbage. On the sofa is a fried banana. > -= Livingroom =-0/15",
+        "next_infos": {
+            "admissible_commands": [
+                "examine banana",
+                "examine sofa",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "take banana from sofa"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "The sofa is an unstable piece of garbage. On the sofa is a fried banana. > -= Livingroom =-0/15",
+        "infos": {
+            "admissible_commands": [
+                "examine banana",
+                "examine sofa",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "take banana from sofa"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Bedroom =- You arrive in a bedroom. A typical one. You make out a bed. The bed is large. But the thing is empty, unfortunately. Aw, here you were, all excited for there to be things on it! There is an exit to the east. Don't worry, there is no door. > -= Bedroom =-0/16",
+        "next_infos": {
+            "admissible_commands": [
+                "examine bed",
+                "go east",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "-= Bedroom =- You arrive in a bedroom. A typical one. You make out a bed. The bed is large. But the thing is empty, unfortunately. Aw, here you were, all excited for there to be things on it! There is an exit to the east. Don't worry, there is no door. > -= Bedroom =-0/16",
+        "infos": {
+            "admissible_commands": [
+                "examine bed",
+                "go east",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Bedroom =- You arrive in a bedroom. A typical one. You make out a bed. The bed is large. But the thing is empty, unfortunately. Aw, here you were, all excited for there to be things on it! There is an exit to the east. Don't worry, there is no door. > -= Bedroom =-0/17",
+        "next_infos": {
+            "admissible_commands": [
+                "examine bed",
+                "go east",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "-= Bedroom =- You arrive in a bedroom. A typical one. You make out a bed. The bed is large. But the thing is empty, unfortunately. Aw, here you were, all excited for there to be things on it! There is an exit to the east. Don't worry, there is no door. > -= Bedroom =-0/17",
+        "infos": {
+            "admissible_commands": [
+                "examine bed",
+                "go east",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Bedroom =- You arrive in a bedroom. A typical one. You make out a bed. The bed is large. But the thing is empty, unfortunately. Aw, here you were, all excited for there to be things on it! There is an exit to the east. Don't worry, there is no door. > -= Bedroom =-0/18",
+        "next_infos": {
+            "admissible_commands": [
+                "examine bed",
+                "go east",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "inventory"
+    },
+    {
+        "state": "-= Bedroom =- You arrive in a bedroom. A typical one. You make out a bed. The bed is large. But the thing is empty, unfortunately. Aw, here you were, all excited for there to be things on it! There is an exit to the east. Don't worry, there is no door. > -= Bedroom =-0/18",
+        "infos": {
+            "admissible_commands": [
+                "examine bed",
+                "go east",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying nothing. > -= Bedroom =-0/19",
+        "next_infos": {
+            "admissible_commands": [
+                "examine bed",
+                "go east",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "examine bed"
+    },
+    {
+        "state": "You are carrying nothing. > -= Bedroom =-0/19",
+        "infos": {
+            "admissible_commands": [
+                "examine bed",
+                "go east",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "examine bed",
+        "reward": 0,
+        "next_state": "The bed is an unstable piece of garbage. > -= Bedroom =-0/20",
+        "next_infos": {
+            "admissible_commands": [
+                "examine bed",
+                "go east",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "inventory"
+    },
+    {
+        "state": "The bed is an unstable piece of garbage. > -= Bedroom =-0/20",
+        "infos": {
+            "admissible_commands": [
+                "examine bed",
+                "go east",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying nothing. > -= Bedroom =-0/21",
+        "next_infos": {
+            "admissible_commands": [
+                "examine bed",
+                "go east",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "You are carrying nothing. > -= Bedroom =-0/21",
+        "infos": {
+            "admissible_commands": [
+                "examine bed",
+                "go east",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Bedroom =- You arrive in a bedroom. A typical one. You make out a bed. The bed is large. But the thing is empty, unfortunately. Aw, here you were, all excited for there to be things on it! There is an exit to the east. Don't worry, there is no door. > -= Bedroom =-0/22",
+        "next_infos": {
+            "admissible_commands": [
+                "examine bed",
+                "go east",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Bedroom =- You arrive in a bedroom. A typical one. You make out a bed. The bed is large. But the thing is empty, unfortunately. Aw, here you were, all excited for there to be things on it! There is an exit to the east. Don't worry, there is no door. > -= Bedroom =-0/22",
+        "infos": {
+            "admissible_commands": [
+                "examine bed",
+                "go east",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Livingroom =- This might come as a shock to you, but you've just walked into a livingroom. Were you looking for a sofa? Because look over there, it's a sofa. The sofa is comfy. On the sofa you make out a fried banana. Huh, weird. There is an exit to the north. Don't worry, there is no door. There is an exit to the west. > -= Livingroom =-0/23",
+        "next_infos": {
+            "admissible_commands": [
+                "examine banana",
+                "examine sofa",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "take banana from sofa"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "-= Livingroom =- This might come as a shock to you, but you've just walked into a livingroom. Were you looking for a sofa? Because look over there, it's a sofa. The sofa is comfy. On the sofa you make out a fried banana. Huh, weird. There is an exit to the north. Don't worry, there is no door. There is an exit to the west. > -= Livingroom =-0/23",
+        "infos": {
+            "admissible_commands": [
+                "examine banana",
+                "examine sofa",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "take banana from sofa"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Livingroom =- This might come as a shock to you, but you've just walked into a livingroom. Were you looking for a sofa? Because look over there, it's a sofa. The sofa is comfy. On the sofa you make out a fried banana. Huh, weird. There is an exit to the north. Don't worry, there is no door. There is an exit to the west. > -= Livingroom =-0/24",
+        "next_infos": {
+            "admissible_commands": [
+                "examine banana",
+                "examine sofa",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "take banana from sofa"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Livingroom =- This might come as a shock to you, but you've just walked into a livingroom. Were you looking for a sofa? Because look over there, it's a sofa. The sofa is comfy. On the sofa you make out a fried banana. Huh, weird. There is an exit to the north. Don't worry, there is no door. There is an exit to the west. > -= Livingroom =-0/24",
+        "infos": {
+            "admissible_commands": [
+                "examine banana",
+                "examine sofa",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "take banana from sofa"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Corridor =- You arrive in a corridor. An ordinary one. You don't like doors? Why not try going north, that entranceway is not blocked by one. There is an exit to the south. You don't like doors? Why not try going west, that entranceway is not blocked by one. > -= Corridor =-0/25",
+        "next_infos": {
+            "admissible_commands": [
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "-= Corridor =- You arrive in a corridor. An ordinary one. You don't like doors? Why not try going north, that entranceway is not blocked by one. There is an exit to the south. You don't like doors? Why not try going west, that entranceway is not blocked by one. > -= Corridor =-0/25",
+        "infos": {
+            "admissible_commands": [
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Corridor =- You arrive in a corridor. An ordinary one. You don't like doors? Why not try going north, that entranceway is not blocked by one. There is an exit to the south. You don't like doors? Why not try going west, that entranceway is not blocked by one. > -= Corridor =-0/26",
+        "next_infos": {
+            "admissible_commands": [
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

@@ -1,0 +1,764 @@
+[
+    {
+        "state": "You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal! -= Bathroom =- You've just shown up in a bathroom. You make out a toilet. Unfortunately, there isn't a thing on it. You need an exit without a door? You should try going east. > -= Bathroom =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "drop red hot pepper",
+                "drop red tuna",
+                "drop yellow bell pepper",
+                "eat red hot pepper",
+                "eat yellow bell pepper",
+                "examine toilet",
+                "go east",
+                "inventory",
+                "look",
+                "put red hot pepper on toilet",
+                "put red tuna on toilet",
+                "put yellow bell pepper on toilet"
+            ]
+        },
+        "action": "drop red hot pepper",
+        "reward": 0,
+        "next_state": "You drop the red hot pepper on the ground. > -= Bathroom =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop yellow bell pepper",
+                "eat yellow bell pepper",
+                "examine red hot pepper",
+                "examine toilet",
+                "go east",
+                "inventory",
+                "look",
+                "put red tuna on toilet",
+                "put yellow bell pepper on toilet",
+                "take red hot pepper"
+            ]
+        },
+        "done": false,
+        "next_action": "examine red hot pepper"
+    },
+    {
+        "state": "You drop the red hot pepper on the ground. > -= Bathroom =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop yellow bell pepper",
+                "eat yellow bell pepper",
+                "examine red hot pepper",
+                "examine toilet",
+                "go east",
+                "inventory",
+                "look",
+                "put red tuna on toilet",
+                "put yellow bell pepper on toilet",
+                "take red hot pepper"
+            ]
+        },
+        "action": "examine red hot pepper",
+        "reward": 0,
+        "next_state": "That's a fried red hot pepper! > -= Bathroom =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop yellow bell pepper",
+                "eat yellow bell pepper",
+                "examine red hot pepper",
+                "examine toilet",
+                "go east",
+                "inventory",
+                "look",
+                "put red tuna on toilet",
+                "put yellow bell pepper on toilet",
+                "take red hot pepper"
+            ]
+        },
+        "done": false,
+        "next_action": "put yellow bell pepper on toilet"
+    },
+    {
+        "state": "That's a fried red hot pepper! > -= Bathroom =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop yellow bell pepper",
+                "eat yellow bell pepper",
+                "examine red hot pepper",
+                "examine toilet",
+                "go east",
+                "inventory",
+                "look",
+                "put red tuna on toilet",
+                "put yellow bell pepper on toilet",
+                "take red hot pepper"
+            ]
+        },
+        "action": "put yellow bell pepper on toilet",
+        "reward": 0,
+        "next_state": "You put the yellow bell pepper on the toilet. > -= Bathroom =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "examine red hot pepper",
+                "examine toilet",
+                "examine yellow bell pepper",
+                "go east",
+                "inventory",
+                "look",
+                "put red tuna on toilet",
+                "take red hot pepper",
+                "take yellow bell pepper from toilet"
+            ]
+        },
+        "done": false,
+        "next_action": "drop red tuna"
+    },
+    {
+        "state": "You put the yellow bell pepper on the toilet. > -= Bathroom =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "examine red hot pepper",
+                "examine toilet",
+                "examine yellow bell pepper",
+                "go east",
+                "inventory",
+                "look",
+                "put red tuna on toilet",
+                "take red hot pepper",
+                "take yellow bell pepper from toilet"
+            ]
+        },
+        "action": "drop red tuna",
+        "reward": 0,
+        "next_state": "You drop the red tuna on the ground. > -= Bathroom =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "examine red hot pepper",
+                "examine red tuna",
+                "examine toilet",
+                "examine yellow bell pepper",
+                "go east",
+                "inventory",
+                "look",
+                "take red hot pepper",
+                "take red tuna",
+                "take yellow bell pepper from toilet"
+            ]
+        },
+        "done": false,
+        "next_action": "take yellow bell pepper from toilet"
+    },
+    {
+        "state": "You drop the red tuna on the ground. > -= Bathroom =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "examine red hot pepper",
+                "examine red tuna",
+                "examine toilet",
+                "examine yellow bell pepper",
+                "go east",
+                "inventory",
+                "look",
+                "take red hot pepper",
+                "take red tuna",
+                "take yellow bell pepper from toilet"
+            ]
+        },
+        "action": "take yellow bell pepper from toilet",
+        "reward": 0,
+        "next_state": "You take the yellow bell pepper from the toilet. > -= Bathroom =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "drop yellow bell pepper",
+                "eat yellow bell pepper",
+                "examine red hot pepper",
+                "examine red tuna",
+                "examine toilet",
+                "go east",
+                "inventory",
+                "look",
+                "put yellow bell pepper on toilet",
+                "take red hot pepper",
+                "take red tuna"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "You take the yellow bell pepper from the toilet. > -= Bathroom =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "drop yellow bell pepper",
+                "eat yellow bell pepper",
+                "examine red hot pepper",
+                "examine red tuna",
+                "examine toilet",
+                "go east",
+                "inventory",
+                "look",
+                "put yellow bell pepper on toilet",
+                "take red hot pepper",
+                "take red tuna"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Corridor =- You are in a corridor. An usual kind of place. You start to take note of what's in the room. You need an exit without a door? You should try going south. There is an exit to the west. Don't worry, there is no door. > -= Corridor =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "drop yellow bell pepper",
+                "eat yellow bell pepper",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Corridor =- You are in a corridor. An usual kind of place. You start to take note of what's in the room. You need an exit without a door? You should try going south. There is an exit to the west. Don't worry, there is no door. > -= Corridor =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "drop yellow bell pepper",
+                "eat yellow bell pepper",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Bathroom =- You've just shown up in a bathroom. You make out a toilet. Unfortunately, there isn't a thing on it. You need an exit without a door? You should try going east. There is a raw red tuna and a fried red hot pepper on the floor. > -= Bathroom =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "drop yellow bell pepper",
+                "eat yellow bell pepper",
+                "examine red hot pepper",
+                "examine red tuna",
+                "examine toilet",
+                "go east",
+                "inventory",
+                "look",
+                "put yellow bell pepper on toilet",
+                "take red hot pepper",
+                "take red tuna"
+            ]
+        },
+        "done": false,
+        "next_action": "put yellow bell pepper on toilet"
+    },
+    {
+        "state": "-= Bathroom =- You've just shown up in a bathroom. You make out a toilet. Unfortunately, there isn't a thing on it. You need an exit without a door? You should try going east. There is a raw red tuna and a fried red hot pepper on the floor. > -= Bathroom =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "drop yellow bell pepper",
+                "eat yellow bell pepper",
+                "examine red hot pepper",
+                "examine red tuna",
+                "examine toilet",
+                "go east",
+                "inventory",
+                "look",
+                "put yellow bell pepper on toilet",
+                "take red hot pepper",
+                "take red tuna"
+            ]
+        },
+        "action": "put yellow bell pepper on toilet",
+        "reward": 0,
+        "next_state": "You put the yellow bell pepper on the toilet. > -= Bathroom =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "examine red hot pepper",
+                "examine red tuna",
+                "examine toilet",
+                "examine yellow bell pepper",
+                "go east",
+                "inventory",
+                "look",
+                "take red hot pepper",
+                "take red tuna",
+                "take yellow bell pepper from toilet"
+            ]
+        },
+        "done": false,
+        "next_action": "inventory"
+    },
+    {
+        "state": "You put the yellow bell pepper on the toilet. > -= Bathroom =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "examine red hot pepper",
+                "examine red tuna",
+                "examine toilet",
+                "examine yellow bell pepper",
+                "go east",
+                "inventory",
+                "look",
+                "take red hot pepper",
+                "take red tuna",
+                "take yellow bell pepper from toilet"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying nothing. > -= Bathroom =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "examine red hot pepper",
+                "examine red tuna",
+                "examine toilet",
+                "examine yellow bell pepper",
+                "go east",
+                "inventory",
+                "look",
+                "take red hot pepper",
+                "take red tuna",
+                "take yellow bell pepper from toilet"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "You are carrying nothing. > -= Bathroom =-0/10",
+        "infos": {
+            "admissible_commands": [
+                "examine red hot pepper",
+                "examine red tuna",
+                "examine toilet",
+                "examine yellow bell pepper",
+                "go east",
+                "inventory",
+                "look",
+                "take red hot pepper",
+                "take red tuna",
+                "take yellow bell pepper from toilet"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Corridor =- You are in a corridor. An usual kind of place. You start to take note of what's in the room. You need an exit without a door? You should try going south. There is an exit to the west. Don't worry, there is no door. > -= Corridor =-0/11",
+        "next_infos": {
+            "admissible_commands": [
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "inventory"
+    },
+    {
+        "state": "-= Corridor =- You are in a corridor. An usual kind of place. You start to take note of what's in the room. You need an exit without a door? You should try going south. There is an exit to the west. Don't worry, there is no door. > -= Corridor =-0/11",
+        "infos": {
+            "admissible_commands": [
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying nothing. > -= Corridor =-0/12",
+        "next_infos": {
+            "admissible_commands": [
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "inventory"
+    },
+    {
+        "state": "You are carrying nothing. > -= Corridor =-0/12",
+        "infos": {
+            "admissible_commands": [
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying nothing. > -= Corridor =-0/13",
+        "next_infos": {
+            "admissible_commands": [
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "You are carrying nothing. > -= Corridor =-0/13",
+        "infos": {
+            "admissible_commands": [
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Bathroom =- You've just shown up in a bathroom. You make out a toilet. On the toilet you can make out a yellow bell pepper. You need an exit without a door? You should try going east. There is a raw red tuna and a fried red hot pepper on the floor. > -= Bathroom =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "examine red hot pepper",
+                "examine red tuna",
+                "examine toilet",
+                "examine yellow bell pepper",
+                "go east",
+                "inventory",
+                "look",
+                "take red hot pepper",
+                "take red tuna",
+                "take yellow bell pepper from toilet"
+            ]
+        },
+        "done": false,
+        "next_action": "take red tuna"
+    },
+    {
+        "state": "-= Bathroom =- You've just shown up in a bathroom. You make out a toilet. On the toilet you can make out a yellow bell pepper. You need an exit without a door? You should try going east. There is a raw red tuna and a fried red hot pepper on the floor. > -= Bathroom =-0/14",
+        "infos": {
+            "admissible_commands": [
+                "examine red hot pepper",
+                "examine red tuna",
+                "examine toilet",
+                "examine yellow bell pepper",
+                "go east",
+                "inventory",
+                "look",
+                "take red hot pepper",
+                "take red tuna",
+                "take yellow bell pepper from toilet"
+            ]
+        },
+        "action": "take red tuna",
+        "reward": 0,
+        "next_state": "You pick up the red tuna from the ground. > -= Bathroom =-0/15",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "examine red hot pepper",
+                "examine toilet",
+                "examine yellow bell pepper",
+                "go east",
+                "inventory",
+                "look",
+                "put red tuna on toilet",
+                "take red hot pepper",
+                "take yellow bell pepper from toilet"
+            ]
+        },
+        "done": false,
+        "next_action": "examine toilet"
+    },
+    {
+        "state": "You pick up the red tuna from the ground. > -= Bathroom =-0/15",
+        "infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "examine red hot pepper",
+                "examine toilet",
+                "examine yellow bell pepper",
+                "go east",
+                "inventory",
+                "look",
+                "put red tuna on toilet",
+                "take red hot pepper",
+                "take yellow bell pepper from toilet"
+            ]
+        },
+        "action": "examine toilet",
+        "reward": 0,
+        "next_state": "The toilet is an unstable piece of garbage. On the toilet is a yellow bell pepper. > -= Bathroom =-0/16",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "examine red hot pepper",
+                "examine toilet",
+                "examine yellow bell pepper",
+                "go east",
+                "inventory",
+                "look",
+                "put red tuna on toilet",
+                "take red hot pepper",
+                "take yellow bell pepper from toilet"
+            ]
+        },
+        "done": false,
+        "next_action": "put red tuna on toilet"
+    },
+    {
+        "state": "The toilet is an unstable piece of garbage. On the toilet is a yellow bell pepper. > -= Bathroom =-0/16",
+        "infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "examine red hot pepper",
+                "examine toilet",
+                "examine yellow bell pepper",
+                "go east",
+                "inventory",
+                "look",
+                "put red tuna on toilet",
+                "take red hot pepper",
+                "take yellow bell pepper from toilet"
+            ]
+        },
+        "action": "put red tuna on toilet",
+        "reward": 0,
+        "next_state": "You put the red tuna on the toilet. > -= Bathroom =-0/17",
+        "next_infos": {
+            "admissible_commands": [
+                "examine red hot pepper",
+                "examine red tuna",
+                "examine toilet",
+                "examine yellow bell pepper",
+                "go east",
+                "inventory",
+                "look",
+                "take red hot pepper",
+                "take red tuna from toilet",
+                "take yellow bell pepper from toilet"
+            ]
+        },
+        "done": false,
+        "next_action": "take red hot pepper"
+    },
+    {
+        "state": "You put the red tuna on the toilet. > -= Bathroom =-0/17",
+        "infos": {
+            "admissible_commands": [
+                "examine red hot pepper",
+                "examine red tuna",
+                "examine toilet",
+                "examine yellow bell pepper",
+                "go east",
+                "inventory",
+                "look",
+                "take red hot pepper",
+                "take red tuna from toilet",
+                "take yellow bell pepper from toilet"
+            ]
+        },
+        "action": "take red hot pepper",
+        "reward": 0,
+        "next_state": "You pick up the red hot pepper from the ground. > -= Bathroom =-0/18",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red hot pepper",
+                "eat red hot pepper",
+                "examine red tuna",
+                "examine toilet",
+                "examine yellow bell pepper",
+                "go east",
+                "inventory",
+                "look",
+                "put red hot pepper on toilet",
+                "take red tuna from toilet",
+                "take yellow bell pepper from toilet"
+            ]
+        },
+        "done": false,
+        "next_action": "examine toilet"
+    },
+    {
+        "state": "You pick up the red hot pepper from the ground. > -= Bathroom =-0/18",
+        "infos": {
+            "admissible_commands": [
+                "drop red hot pepper",
+                "eat red hot pepper",
+                "examine red tuna",
+                "examine toilet",
+                "examine yellow bell pepper",
+                "go east",
+                "inventory",
+                "look",
+                "put red hot pepper on toilet",
+                "take red tuna from toilet",
+                "take yellow bell pepper from toilet"
+            ]
+        },
+        "action": "examine toilet",
+        "reward": 0,
+        "next_state": "The toilet is an unstable piece of garbage. On the toilet are a raw red tuna and a yellow bell pepper. > -= Bathroom =-0/19",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red hot pepper",
+                "eat red hot pepper",
+                "examine red tuna",
+                "examine toilet",
+                "examine yellow bell pepper",
+                "go east",
+                "inventory",
+                "look",
+                "put red hot pepper on toilet",
+                "take red tuna from toilet",
+                "take yellow bell pepper from toilet"
+            ]
+        },
+        "done": false,
+        "next_action": "take yellow bell pepper from toilet"
+    },
+    {
+        "state": "The toilet is an unstable piece of garbage. On the toilet are a raw red tuna and a yellow bell pepper. > -= Bathroom =-0/19",
+        "infos": {
+            "admissible_commands": [
+                "drop red hot pepper",
+                "eat red hot pepper",
+                "examine red tuna",
+                "examine toilet",
+                "examine yellow bell pepper",
+                "go east",
+                "inventory",
+                "look",
+                "put red hot pepper on toilet",
+                "take red tuna from toilet",
+                "take yellow bell pepper from toilet"
+            ]
+        },
+        "action": "take yellow bell pepper from toilet",
+        "reward": 0,
+        "next_state": "You take the yellow bell pepper from the toilet. > -= Bathroom =-0/20",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red hot pepper",
+                "drop yellow bell pepper",
+                "eat red hot pepper",
+                "eat yellow bell pepper",
+                "examine red tuna",
+                "examine toilet",
+                "go east",
+                "inventory",
+                "look",
+                "put red hot pepper on toilet",
+                "put yellow bell pepper on toilet",
+                "take red tuna from toilet"
+            ]
+        },
+        "done": false,
+        "next_action": "examine red tuna"
+    },
+    {
+        "state": "You take the yellow bell pepper from the toilet. > -= Bathroom =-0/20",
+        "infos": {
+            "admissible_commands": [
+                "drop red hot pepper",
+                "drop yellow bell pepper",
+                "eat red hot pepper",
+                "eat yellow bell pepper",
+                "examine red tuna",
+                "examine toilet",
+                "go east",
+                "inventory",
+                "look",
+                "put red hot pepper on toilet",
+                "put yellow bell pepper on toilet",
+                "take red tuna from toilet"
+            ]
+        },
+        "action": "examine red tuna",
+        "reward": 0,
+        "next_state": "That's a raw red tuna! > -= Bathroom =-0/21",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red hot pepper",
+                "drop yellow bell pepper",
+                "eat red hot pepper",
+                "eat yellow bell pepper",
+                "examine red tuna",
+                "examine toilet",
+                "go east",
+                "inventory",
+                "look",
+                "put red hot pepper on toilet",
+                "put yellow bell pepper on toilet",
+                "take red tuna from toilet"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "That's a raw red tuna! > -= Bathroom =-0/21",
+        "infos": {
+            "admissible_commands": [
+                "drop red hot pepper",
+                "drop yellow bell pepper",
+                "eat red hot pepper",
+                "eat yellow bell pepper",
+                "examine red tuna",
+                "examine toilet",
+                "go east",
+                "inventory",
+                "look",
+                "put red hot pepper on toilet",
+                "put yellow bell pepper on toilet",
+                "take red tuna from toilet"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Corridor =- You are in a corridor. An usual kind of place. You start to take note of what's in the room. You need an exit without a door? You should try going south. There is an exit to the west. Don't worry, there is no door. > -= Corridor =-0/22",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red hot pepper",
+                "drop yellow bell pepper",
+                "eat red hot pepper",
+                "eat yellow bell pepper",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "eat red hot pepper"
+    },
+    {
+        "state": "-= Corridor =- You are in a corridor. An usual kind of place. You start to take note of what's in the room. You need an exit without a door? You should try going south. There is an exit to the west. Don't worry, there is no door. > -= Corridor =-0/22",
+        "infos": {
+            "admissible_commands": [
+                "drop red hot pepper",
+                "drop yellow bell pepper",
+                "eat red hot pepper",
+                "eat yellow bell pepper",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "eat red hot pepper",
+        "reward": 0,
+        "next_state": "You eat the red hot pepper. Not bad. *** You lost! *** You scored 0 out of a possible 7, in 22 turns. Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command? > -= Corridor =-0/22",
+        "next_infos": {
+            "admissible_commands": [
+                "drop yellow bell pepper",
+                "eat yellow bell pepper",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

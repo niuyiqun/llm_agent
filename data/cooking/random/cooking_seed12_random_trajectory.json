@@ -1,0 +1,115 @@
+[
+    {
+        "state": "You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal! -= Bedroom =- You are in a bedroom. It seems to be pretty ordinary here. Let's see what's in here. You can see a bed. The bed is large. But the thing is empty, unfortunately. It would have been so cool if there was stuff on the bed. You need an exit without a door? You should try going north. > -= Bedroom =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "drop carrot",
+                "eat carrot",
+                "examine bed",
+                "go north",
+                "inventory",
+                "look",
+                "put carrot on bed"
+            ]
+        },
+        "action": "drop carrot",
+        "reward": 0,
+        "next_state": "You drop the carrot on the ground. > -= Bedroom =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine carrot",
+                "go north",
+                "inventory",
+                "look",
+                "take carrot"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "You drop the carrot on the ground. > -= Bedroom =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine carrot",
+                "go north",
+                "inventory",
+                "look",
+                "take carrot"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Bedroom =- You are in a bedroom. It seems to be pretty ordinary here. Let's see what's in here. You can see a bed. The bed is large. But the thing is empty, unfortunately. It would have been so cool if there was stuff on the bed. You need an exit without a door? You should try going north. There is a carrot on the floor. > -= Bedroom =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine carrot",
+                "go north",
+                "inventory",
+                "look",
+                "take carrot"
+            ]
+        },
+        "done": false,
+        "next_action": "take carrot"
+    },
+    {
+        "state": "-= Bedroom =- You are in a bedroom. It seems to be pretty ordinary here. Let's see what's in here. You can see a bed. The bed is large. But the thing is empty, unfortunately. It would have been so cool if there was stuff on the bed. You need an exit without a door? You should try going north. There is a carrot on the floor. > -= Bedroom =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine carrot",
+                "go north",
+                "inventory",
+                "look",
+                "take carrot"
+            ]
+        },
+        "action": "take carrot",
+        "reward": 0,
+        "next_state": "You pick up the carrot from the ground. > -= Bedroom =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "drop carrot",
+                "eat carrot",
+                "examine bed",
+                "go north",
+                "inventory",
+                "look",
+                "put carrot on bed"
+            ]
+        },
+        "done": false,
+        "next_action": "eat carrot"
+    },
+    {
+        "state": "You pick up the carrot from the ground. > -= Bedroom =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "drop carrot",
+                "eat carrot",
+                "examine bed",
+                "go north",
+                "inventory",
+                "look",
+                "put carrot on bed"
+            ]
+        },
+        "action": "eat carrot",
+        "reward": 0,
+        "next_state": "You eat the carrot. Not bad. *** You lost! *** You scored 0 out of a possible 7, in 4 turns. Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command? > -= Bedroom =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "examine bed",
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

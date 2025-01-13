@@ -1,0 +1,31 @@
+[
+    {
+        "state": "You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal! -= Bedroom =- You find yourself in a bedroom. An ordinary one. You try to gain information on your surroundings by using a technique you call \"looking.\" You can see a bed! However, the bed, like an empty bed, has nothing on it. There is an exit to the east. Don't worry, there is no door. You don't like doors? Why not try going north, that entranceway is not blocked by one. > -= Bedroom =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "drop cilantro",
+                "eat cilantro",
+                "examine bed",
+                "go east",
+                "go north",
+                "inventory",
+                "look",
+                "put cilantro on bed"
+            ]
+        },
+        "action": "eat cilantro",
+        "reward": 0,
+        "next_state": "You eat the cilantro. Not bad. *** You lost! *** You scored 0 out of a possible 7, in 1 turn. Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command? > -= Bedroom =-0/1",
+        "next_infos": {
+            "admissible_commands": [
+                "examine bed",
+                "go east",
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

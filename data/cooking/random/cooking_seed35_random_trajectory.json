@@ -1,0 +1,1036 @@
+[
+    {
+        "state": "You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal! -= Bathroom =- You arrive in a bathroom. An usual kind of place. You scan the room, seeing a toilet. The toilet is white. But there isn't a thing on it. You need an exit without a door? You should try going north. > -= Bathroom =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "drop banana",
+                "eat banana",
+                "examine toilet",
+                "go north",
+                "inventory",
+                "look",
+                "put banana on toilet"
+            ]
+        },
+        "action": "put banana on toilet",
+        "reward": 0,
+        "next_state": "You put the banana on the toilet. > -= Bathroom =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "examine banana",
+                "examine toilet",
+                "go north",
+                "inventory",
+                "look",
+                "take banana from toilet"
+            ]
+        },
+        "done": false,
+        "next_action": "examine toilet"
+    },
+    {
+        "state": "You put the banana on the toilet. > -= Bathroom =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "examine banana",
+                "examine toilet",
+                "go north",
+                "inventory",
+                "look",
+                "take banana from toilet"
+            ]
+        },
+        "action": "examine toilet",
+        "reward": 0,
+        "next_state": "The toilet is stable. On the toilet is a banana. > -= Bathroom =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "examine banana",
+                "examine toilet",
+                "go north",
+                "inventory",
+                "look",
+                "take banana from toilet"
+            ]
+        },
+        "done": false,
+        "next_action": "examine toilet"
+    },
+    {
+        "state": "The toilet is stable. On the toilet is a banana. > -= Bathroom =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "examine banana",
+                "examine toilet",
+                "go north",
+                "inventory",
+                "look",
+                "take banana from toilet"
+            ]
+        },
+        "action": "examine toilet",
+        "reward": 0,
+        "next_state": "The toilet is stable. On the toilet is a banana. > -= Bathroom =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "examine banana",
+                "examine toilet",
+                "go north",
+                "inventory",
+                "look",
+                "take banana from toilet"
+            ]
+        },
+        "done": false,
+        "next_action": "examine banana"
+    },
+    {
+        "state": "The toilet is stable. On the toilet is a banana. > -= Bathroom =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "examine banana",
+                "examine toilet",
+                "go north",
+                "inventory",
+                "look",
+                "take banana from toilet"
+            ]
+        },
+        "action": "examine banana",
+        "reward": 0,
+        "next_state": "The banana looks appealing. > -= Bathroom =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "examine banana",
+                "examine toilet",
+                "go north",
+                "inventory",
+                "look",
+                "take banana from toilet"
+            ]
+        },
+        "done": false,
+        "next_action": "examine toilet"
+    },
+    {
+        "state": "The banana looks appealing. > -= Bathroom =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "examine banana",
+                "examine toilet",
+                "go north",
+                "inventory",
+                "look",
+                "take banana from toilet"
+            ]
+        },
+        "action": "examine toilet",
+        "reward": 0,
+        "next_state": "The toilet is stable. On the toilet is a banana. > -= Bathroom =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "examine banana",
+                "examine toilet",
+                "go north",
+                "inventory",
+                "look",
+                "take banana from toilet"
+            ]
+        },
+        "done": false,
+        "next_action": "examine banana"
+    },
+    {
+        "state": "The toilet is stable. On the toilet is a banana. > -= Bathroom =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "examine banana",
+                "examine toilet",
+                "go north",
+                "inventory",
+                "look",
+                "take banana from toilet"
+            ]
+        },
+        "action": "examine banana",
+        "reward": 0,
+        "next_state": "The banana looks appealing. > -= Bathroom =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "examine banana",
+                "examine toilet",
+                "go north",
+                "inventory",
+                "look",
+                "take banana from toilet"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "The banana looks appealing. > -= Bathroom =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "examine banana",
+                "examine toilet",
+                "go north",
+                "inventory",
+                "look",
+                "take banana from toilet"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Bathroom =- You arrive in a bathroom. An usual kind of place. You scan the room, seeing a toilet. The toilet is white. On the toilet you can make out a banana. You need an exit without a door? You should try going north. > -= Bathroom =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "examine banana",
+                "examine toilet",
+                "go north",
+                "inventory",
+                "look",
+                "take banana from toilet"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Bathroom =- You arrive in a bathroom. An usual kind of place. You scan the room, seeing a toilet. The toilet is white. On the toilet you can make out a banana. You need an exit without a door? You should try going north. > -= Bathroom =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "examine banana",
+                "examine toilet",
+                "go north",
+                "inventory",
+                "look",
+                "take banana from toilet"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Corridor =- You are in a corridor. An usual one. You begin to take stock of what's in the room. You need an exit without a door? You should try going east. You don't like doors? Why not try going south, that entranceway is not blocked by one. There is an exit to the west. Don't worry, there is no door. > -= Corridor =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Corridor =- You are in a corridor. An usual one. You begin to take stock of what's in the room. You need an exit without a door? You should try going east. You don't like doors? Why not try going south, that entranceway is not blocked by one. There is an exit to the west. Don't worry, there is no door. > -= Corridor =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Kitchen =- You've entered a kitchen. You make out a fridge. The fridge contains a fried white tuna, a carrot, a red bell pepper, a white onion, a raw red tuna, a green bell pepper and a raw pork chop. Something scurries by right in the corner of your eye. Probably nothing. You can make out an oven. You make out a table. The table is massive. On the table you can make out a cookbook. Something scurries by right in the corner of your eye. Probably nothing. You see a counter. You see a roasted yellow potato, a tomato, a yellow onion, a raw purple potato, a green hot pepper and a knife on the counter. You can see a stove. But the thing hasn't got anything on it. There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one. > -= Kitchen =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "close fridge",
+                "close frosted-glass door",
+                "examine carrot",
+                "examine cookbook",
+                "examine counter",
+                "examine fridge",
+                "examine green bell pepper",
+                "examine green hot pepper",
+                "examine knife",
+                "examine oven",
+                "examine pork chop",
+                "examine purple potato",
+                "examine red bell pepper",
+                "examine red tuna",
+                "examine stove",
+                "examine table",
+                "examine tomato",
+                "examine white onion",
+                "examine white tuna",
+                "examine yellow onion",
+                "examine yellow potato",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take carrot from fridge",
+                "take cookbook from table",
+                "take green bell pepper from fridge",
+                "take green hot pepper from counter",
+                "take knife from counter",
+                "take pork chop from fridge",
+                "take purple potato from counter",
+                "take red bell pepper from fridge",
+                "take red tuna from fridge",
+                "take tomato from counter",
+                "take white onion from fridge",
+                "take white tuna from fridge",
+                "take yellow onion from counter",
+                "take yellow potato from counter"
+            ]
+        },
+        "done": false,
+        "next_action": "take yellow onion from counter"
+    },
+    {
+        "state": "-= Kitchen =- You've entered a kitchen. You make out a fridge. The fridge contains a fried white tuna, a carrot, a red bell pepper, a white onion, a raw red tuna, a green bell pepper and a raw pork chop. Something scurries by right in the corner of your eye. Probably nothing. You can make out an oven. You make out a table. The table is massive. On the table you can make out a cookbook. Something scurries by right in the corner of your eye. Probably nothing. You see a counter. You see a roasted yellow potato, a tomato, a yellow onion, a raw purple potato, a green hot pepper and a knife on the counter. You can see a stove. But the thing hasn't got anything on it. There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one. > -= Kitchen =-0/10",
+        "infos": {
+            "admissible_commands": [
+                "close fridge",
+                "close frosted-glass door",
+                "examine carrot",
+                "examine cookbook",
+                "examine counter",
+                "examine fridge",
+                "examine green bell pepper",
+                "examine green hot pepper",
+                "examine knife",
+                "examine oven",
+                "examine pork chop",
+                "examine purple potato",
+                "examine red bell pepper",
+                "examine red tuna",
+                "examine stove",
+                "examine table",
+                "examine tomato",
+                "examine white onion",
+                "examine white tuna",
+                "examine yellow onion",
+                "examine yellow potato",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take carrot from fridge",
+                "take cookbook from table",
+                "take green bell pepper from fridge",
+                "take green hot pepper from counter",
+                "take knife from counter",
+                "take pork chop from fridge",
+                "take purple potato from counter",
+                "take red bell pepper from fridge",
+                "take red tuna from fridge",
+                "take tomato from counter",
+                "take white onion from fridge",
+                "take white tuna from fridge",
+                "take yellow onion from counter",
+                "take yellow potato from counter"
+            ]
+        },
+        "action": "take yellow onion from counter",
+        "reward": 0,
+        "next_state": "You take the yellow onion from the counter. > -= Kitchen =-0/11",
+        "next_infos": {
+            "admissible_commands": [
+                "close fridge",
+                "close frosted-glass door",
+                "cook yellow onion with oven",
+                "cook yellow onion with stove",
+                "drop yellow onion",
+                "eat yellow onion",
+                "examine carrot",
+                "examine cookbook",
+                "examine counter",
+                "examine fridge",
+                "examine green bell pepper",
+                "examine green hot pepper",
+                "examine knife",
+                "examine oven",
+                "examine pork chop",
+                "examine purple potato",
+                "examine red bell pepper",
+                "examine red tuna",
+                "examine stove",
+                "examine table",
+                "examine tomato",
+                "examine white onion",
+                "examine white tuna",
+                "examine yellow potato",
+                "go south",
+                "go west",
+                "insert yellow onion into fridge",
+                "inventory",
+                "look",
+                "put yellow onion on counter",
+                "put yellow onion on stove",
+                "put yellow onion on table",
+                "take carrot from fridge",
+                "take cookbook from table",
+                "take green bell pepper from fridge",
+                "take green hot pepper from counter",
+                "take knife from counter",
+                "take pork chop from fridge",
+                "take purple potato from counter",
+                "take red bell pepper from fridge",
+                "take red tuna from fridge",
+                "take tomato from counter",
+                "take white onion from fridge",
+                "take white tuna from fridge",
+                "take yellow potato from counter"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "You take the yellow onion from the counter. > -= Kitchen =-0/11",
+        "infos": {
+            "admissible_commands": [
+                "close fridge",
+                "close frosted-glass door",
+                "cook yellow onion with oven",
+                "cook yellow onion with stove",
+                "drop yellow onion",
+                "eat yellow onion",
+                "examine carrot",
+                "examine cookbook",
+                "examine counter",
+                "examine fridge",
+                "examine green bell pepper",
+                "examine green hot pepper",
+                "examine knife",
+                "examine oven",
+                "examine pork chop",
+                "examine purple potato",
+                "examine red bell pepper",
+                "examine red tuna",
+                "examine stove",
+                "examine table",
+                "examine tomato",
+                "examine white onion",
+                "examine white tuna",
+                "examine yellow potato",
+                "go south",
+                "go west",
+                "insert yellow onion into fridge",
+                "inventory",
+                "look",
+                "put yellow onion on counter",
+                "put yellow onion on stove",
+                "put yellow onion on table",
+                "take carrot from fridge",
+                "take cookbook from table",
+                "take green bell pepper from fridge",
+                "take green hot pepper from counter",
+                "take knife from counter",
+                "take pork chop from fridge",
+                "take purple potato from counter",
+                "take red bell pepper from fridge",
+                "take red tuna from fridge",
+                "take tomato from counter",
+                "take white onion from fridge",
+                "take white tuna from fridge",
+                "take yellow potato from counter"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Corridor =- You are in a corridor. An usual one. You begin to take stock of what's in the room. You need an exit without a door? You should try going east. You don't like doors? Why not try going south, that entranceway is not blocked by one. There is an exit to the west. Don't worry, there is no door. > -= Corridor =-0/12",
+        "next_infos": {
+            "admissible_commands": [
+                "drop yellow onion",
+                "eat yellow onion",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "drop yellow onion"
+    },
+    {
+        "state": "-= Corridor =- You are in a corridor. An usual one. You begin to take stock of what's in the room. You need an exit without a door? You should try going east. You don't like doors? Why not try going south, that entranceway is not blocked by one. There is an exit to the west. Don't worry, there is no door. > -= Corridor =-0/12",
+        "infos": {
+            "admissible_commands": [
+                "drop yellow onion",
+                "eat yellow onion",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "drop yellow onion",
+        "reward": 0,
+        "next_state": "You drop the yellow onion on the ground. > -= Corridor =-0/13",
+        "next_infos": {
+            "admissible_commands": [
+                "examine yellow onion",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take yellow onion"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "You drop the yellow onion on the ground. > -= Corridor =-0/13",
+        "infos": {
+            "admissible_commands": [
+                "examine yellow onion",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take yellow onion"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Corridor =- You are in a corridor. An usual one. You begin to take stock of what's in the room. You need an exit without a door? You should try going east. You don't like doors? Why not try going south, that entranceway is not blocked by one. There is an exit to the west. Don't worry, there is no door. There is a yellow onion on the floor. > -= Corridor =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "examine yellow onion",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take yellow onion"
+            ]
+        },
+        "done": false,
+        "next_action": "inventory"
+    },
+    {
+        "state": "-= Corridor =- You are in a corridor. An usual one. You begin to take stock of what's in the room. You need an exit without a door? You should try going east. You don't like doors? Why not try going south, that entranceway is not blocked by one. There is an exit to the west. Don't worry, there is no door. There is a yellow onion on the floor. > -= Corridor =-0/14",
+        "infos": {
+            "admissible_commands": [
+                "examine yellow onion",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take yellow onion"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying nothing. > -= Corridor =-0/15",
+        "next_infos": {
+            "admissible_commands": [
+                "examine yellow onion",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take yellow onion"
+            ]
+        },
+        "done": false,
+        "next_action": "inventory"
+    },
+    {
+        "state": "You are carrying nothing. > -= Corridor =-0/15",
+        "infos": {
+            "admissible_commands": [
+                "examine yellow onion",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take yellow onion"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying nothing. > -= Corridor =-0/16",
+        "next_infos": {
+            "admissible_commands": [
+                "examine yellow onion",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take yellow onion"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "You are carrying nothing. > -= Corridor =-0/16",
+        "infos": {
+            "admissible_commands": [
+                "examine yellow onion",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take yellow onion"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Bathroom =- You arrive in a bathroom. An usual kind of place. You scan the room, seeing a toilet. The toilet is white. On the toilet you can make out a banana. You need an exit without a door? You should try going north. > -= Bathroom =-0/17",
+        "next_infos": {
+            "admissible_commands": [
+                "examine banana",
+                "examine toilet",
+                "go north",
+                "inventory",
+                "look",
+                "take banana from toilet"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "-= Bathroom =- You arrive in a bathroom. An usual kind of place. You scan the room, seeing a toilet. The toilet is white. On the toilet you can make out a banana. You need an exit without a door? You should try going north. > -= Bathroom =-0/17",
+        "infos": {
+            "admissible_commands": [
+                "examine banana",
+                "examine toilet",
+                "go north",
+                "inventory",
+                "look",
+                "take banana from toilet"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Bathroom =- You arrive in a bathroom. An usual kind of place. You scan the room, seeing a toilet. The toilet is white. On the toilet you can make out a banana. You need an exit without a door? You should try going north. > -= Bathroom =-0/18",
+        "next_infos": {
+            "admissible_commands": [
+                "examine banana",
+                "examine toilet",
+                "go north",
+                "inventory",
+                "look",
+                "take banana from toilet"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Bathroom =- You arrive in a bathroom. An usual kind of place. You scan the room, seeing a toilet. The toilet is white. On the toilet you can make out a banana. You need an exit without a door? You should try going north. > -= Bathroom =-0/18",
+        "infos": {
+            "admissible_commands": [
+                "examine banana",
+                "examine toilet",
+                "go north",
+                "inventory",
+                "look",
+                "take banana from toilet"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Corridor =- You are in a corridor. An usual one. You begin to take stock of what's in the room. You need an exit without a door? You should try going east. You don't like doors? Why not try going south, that entranceway is not blocked by one. There is an exit to the west. Don't worry, there is no door. There is a yellow onion on the floor. > -= Corridor =-0/19",
+        "next_infos": {
+            "admissible_commands": [
+                "examine yellow onion",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take yellow onion"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "-= Corridor =- You are in a corridor. An usual one. You begin to take stock of what's in the room. You need an exit without a door? You should try going east. You don't like doors? Why not try going south, that entranceway is not blocked by one. There is an exit to the west. Don't worry, there is no door. There is a yellow onion on the floor. > -= Corridor =-0/19",
+        "infos": {
+            "admissible_commands": [
+                "examine yellow onion",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take yellow onion"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Corridor =- You are in a corridor. An usual one. You begin to take stock of what's in the room. You need an exit without a door? You should try going east. You don't like doors? Why not try going south, that entranceway is not blocked by one. There is an exit to the west. Don't worry, there is no door. There is a yellow onion on the floor. > -= Corridor =-0/20",
+        "next_infos": {
+            "admissible_commands": [
+                "examine yellow onion",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take yellow onion"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Corridor =- You are in a corridor. An usual one. You begin to take stock of what's in the room. You need an exit without a door? You should try going east. You don't like doors? Why not try going south, that entranceway is not blocked by one. There is an exit to the west. Don't worry, there is no door. There is a yellow onion on the floor. > -= Corridor =-0/20",
+        "infos": {
+            "admissible_commands": [
+                "examine yellow onion",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take yellow onion"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Bathroom =- You arrive in a bathroom. An usual kind of place. You scan the room, seeing a toilet. The toilet is white. On the toilet you can make out a banana. You need an exit without a door? You should try going north. > -= Bathroom =-0/21",
+        "next_infos": {
+            "admissible_commands": [
+                "examine banana",
+                "examine toilet",
+                "go north",
+                "inventory",
+                "look",
+                "take banana from toilet"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Bathroom =- You arrive in a bathroom. An usual kind of place. You scan the room, seeing a toilet. The toilet is white. On the toilet you can make out a banana. You need an exit without a door? You should try going north. > -= Bathroom =-0/21",
+        "infos": {
+            "admissible_commands": [
+                "examine banana",
+                "examine toilet",
+                "go north",
+                "inventory",
+                "look",
+                "take banana from toilet"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Corridor =- You are in a corridor. An usual one. You begin to take stock of what's in the room. You need an exit without a door? You should try going east. You don't like doors? Why not try going south, that entranceway is not blocked by one. There is an exit to the west. Don't worry, there is no door. There is a yellow onion on the floor. > -= Corridor =-0/22",
+        "next_infos": {
+            "admissible_commands": [
+                "examine yellow onion",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take yellow onion"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "-= Corridor =- You are in a corridor. An usual one. You begin to take stock of what's in the room. You need an exit without a door? You should try going east. You don't like doors? Why not try going south, that entranceway is not blocked by one. There is an exit to the west. Don't worry, there is no door. There is a yellow onion on the floor. > -= Corridor =-0/22",
+        "infos": {
+            "admissible_commands": [
+                "examine yellow onion",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take yellow onion"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Corridor =- You are in a corridor. An usual one. You begin to take stock of what's in the room. You need an exit without a door? You should try going east. You don't like doors? Why not try going south, that entranceway is not blocked by one. There is an exit to the west. Don't worry, there is no door. There is a yellow onion on the floor. > -= Corridor =-0/23",
+        "next_infos": {
+            "admissible_commands": [
+                "examine yellow onion",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take yellow onion"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Corridor =- You are in a corridor. An usual one. You begin to take stock of what's in the room. You need an exit without a door? You should try going east. You don't like doors? Why not try going south, that entranceway is not blocked by one. There is an exit to the west. Don't worry, there is no door. There is a yellow onion on the floor. > -= Corridor =-0/23",
+        "infos": {
+            "admissible_commands": [
+                "examine yellow onion",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take yellow onion"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Kitchen =- You've entered a kitchen. You make out a fridge. The fridge contains a fried white tuna, a carrot, a red bell pepper, a white onion, a raw red tuna, a green bell pepper and a raw pork chop. Something scurries by right in the corner of your eye. Probably nothing. You can make out an oven. You make out a table. The table is massive. On the table you can make out a cookbook. Something scurries by right in the corner of your eye. Probably nothing. You see a counter. You see a roasted yellow potato, a tomato, a raw purple potato, a green hot pepper and a knife on the counter. You can see a stove. But the thing hasn't got anything on it. There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one. > -= Kitchen =-0/24",
+        "next_infos": {
+            "admissible_commands": [
+                "close fridge",
+                "close frosted-glass door",
+                "examine carrot",
+                "examine cookbook",
+                "examine counter",
+                "examine fridge",
+                "examine green bell pepper",
+                "examine green hot pepper",
+                "examine knife",
+                "examine oven",
+                "examine pork chop",
+                "examine purple potato",
+                "examine red bell pepper",
+                "examine red tuna",
+                "examine stove",
+                "examine table",
+                "examine tomato",
+                "examine white onion",
+                "examine white tuna",
+                "examine yellow potato",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take carrot from fridge",
+                "take cookbook from table",
+                "take green bell pepper from fridge",
+                "take green hot pepper from counter",
+                "take knife from counter",
+                "take pork chop from fridge",
+                "take purple potato from counter",
+                "take red bell pepper from fridge",
+                "take red tuna from fridge",
+                "take tomato from counter",
+                "take white onion from fridge",
+                "take white tuna from fridge",
+                "take yellow potato from counter"
+            ]
+        },
+        "done": false,
+        "next_action": "take red bell pepper from fridge"
+    },
+    {
+        "state": "-= Kitchen =- You've entered a kitchen. You make out a fridge. The fridge contains a fried white tuna, a carrot, a red bell pepper, a white onion, a raw red tuna, a green bell pepper and a raw pork chop. Something scurries by right in the corner of your eye. Probably nothing. You can make out an oven. You make out a table. The table is massive. On the table you can make out a cookbook. Something scurries by right in the corner of your eye. Probably nothing. You see a counter. You see a roasted yellow potato, a tomato, a raw purple potato, a green hot pepper and a knife on the counter. You can see a stove. But the thing hasn't got anything on it. There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one. > -= Kitchen =-0/24",
+        "infos": {
+            "admissible_commands": [
+                "close fridge",
+                "close frosted-glass door",
+                "examine carrot",
+                "examine cookbook",
+                "examine counter",
+                "examine fridge",
+                "examine green bell pepper",
+                "examine green hot pepper",
+                "examine knife",
+                "examine oven",
+                "examine pork chop",
+                "examine purple potato",
+                "examine red bell pepper",
+                "examine red tuna",
+                "examine stove",
+                "examine table",
+                "examine tomato",
+                "examine white onion",
+                "examine white tuna",
+                "examine yellow potato",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take carrot from fridge",
+                "take cookbook from table",
+                "take green bell pepper from fridge",
+                "take green hot pepper from counter",
+                "take knife from counter",
+                "take pork chop from fridge",
+                "take purple potato from counter",
+                "take red bell pepper from fridge",
+                "take red tuna from fridge",
+                "take tomato from counter",
+                "take white onion from fridge",
+                "take white tuna from fridge",
+                "take yellow potato from counter"
+            ]
+        },
+        "action": "take red bell pepper from fridge",
+        "reward": 0,
+        "next_state": "You take the red bell pepper from the fridge. > -= Kitchen =-0/25",
+        "next_infos": {
+            "admissible_commands": [
+                "close fridge",
+                "close frosted-glass door",
+                "cook red bell pepper with oven",
+                "cook red bell pepper with stove",
+                "drop red bell pepper",
+                "eat red bell pepper",
+                "examine carrot",
+                "examine cookbook",
+                "examine counter",
+                "examine fridge",
+                "examine green bell pepper",
+                "examine green hot pepper",
+                "examine knife",
+                "examine oven",
+                "examine pork chop",
+                "examine purple potato",
+                "examine red tuna",
+                "examine stove",
+                "examine table",
+                "examine tomato",
+                "examine white onion",
+                "examine white tuna",
+                "examine yellow potato",
+                "go south",
+                "go west",
+                "insert red bell pepper into fridge",
+                "inventory",
+                "look",
+                "put red bell pepper on counter",
+                "put red bell pepper on stove",
+                "put red bell pepper on table",
+                "take carrot from fridge",
+                "take cookbook from table",
+                "take green bell pepper from fridge",
+                "take green hot pepper from counter",
+                "take knife from counter",
+                "take pork chop from fridge",
+                "take purple potato from counter",
+                "take red tuna from fridge",
+                "take tomato from counter",
+                "take white onion from fridge",
+                "take white tuna from fridge",
+                "take yellow potato from counter"
+            ]
+        },
+        "done": false,
+        "next_action": "examine carrot"
+    },
+    {
+        "state": "You take the red bell pepper from the fridge. > -= Kitchen =-0/25",
+        "infos": {
+            "admissible_commands": [
+                "close fridge",
+                "close frosted-glass door",
+                "cook red bell pepper with oven",
+                "cook red bell pepper with stove",
+                "drop red bell pepper",
+                "eat red bell pepper",
+                "examine carrot",
+                "examine cookbook",
+                "examine counter",
+                "examine fridge",
+                "examine green bell pepper",
+                "examine green hot pepper",
+                "examine knife",
+                "examine oven",
+                "examine pork chop",
+                "examine purple potato",
+                "examine red tuna",
+                "examine stove",
+                "examine table",
+                "examine tomato",
+                "examine white onion",
+                "examine white tuna",
+                "examine yellow potato",
+                "go south",
+                "go west",
+                "insert red bell pepper into fridge",
+                "inventory",
+                "look",
+                "put red bell pepper on counter",
+                "put red bell pepper on stove",
+                "put red bell pepper on table",
+                "take carrot from fridge",
+                "take cookbook from table",
+                "take green bell pepper from fridge",
+                "take green hot pepper from counter",
+                "take knife from counter",
+                "take pork chop from fridge",
+                "take purple potato from counter",
+                "take red tuna from fridge",
+                "take tomato from counter",
+                "take white onion from fridge",
+                "take white tuna from fridge",
+                "take yellow potato from counter"
+            ]
+        },
+        "action": "examine carrot",
+        "reward": 0,
+        "next_state": "That's a carrot! > -= Kitchen =-0/26",
+        "next_infos": {
+            "admissible_commands": [
+                "close fridge",
+                "close frosted-glass door",
+                "cook red bell pepper with oven",
+                "cook red bell pepper with stove",
+                "drop red bell pepper",
+                "eat red bell pepper",
+                "examine carrot",
+                "examine cookbook",
+                "examine counter",
+                "examine fridge",
+                "examine green bell pepper",
+                "examine green hot pepper",
+                "examine knife",
+                "examine oven",
+                "examine pork chop",
+                "examine purple potato",
+                "examine red tuna",
+                "examine stove",
+                "examine table",
+                "examine tomato",
+                "examine white onion",
+                "examine white tuna",
+                "examine yellow potato",
+                "go south",
+                "go west",
+                "insert red bell pepper into fridge",
+                "inventory",
+                "look",
+                "put red bell pepper on counter",
+                "put red bell pepper on stove",
+                "put red bell pepper on table",
+                "take carrot from fridge",
+                "take cookbook from table",
+                "take green bell pepper from fridge",
+                "take green hot pepper from counter",
+                "take knife from counter",
+                "take pork chop from fridge",
+                "take purple potato from counter",
+                "take red tuna from fridge",
+                "take tomato from counter",
+                "take white onion from fridge",
+                "take white tuna from fridge",
+                "take yellow potato from counter"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

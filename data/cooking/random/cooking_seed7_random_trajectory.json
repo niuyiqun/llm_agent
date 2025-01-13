@@ -1,0 +1,1067 @@
+[
+    {
+        "state": "You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal! -= Kitchen =- Wow! You're in a kitchen. You make out an opened fridge. The fridge contains a raw white tuna, a red bell pepper, a yellow bell pepper, a lettuce and a parsley. You can make out a closed oven right there by you. What's that over there? It looks like it's a table. The table is massive. On the table you can make out a knife. You shudder, but continue examining the room. Look out! It's a- oh, never mind, it's just a counter. Now why would someone leave that there? The counter is vast. On the counter you can see a red apple, a roasted red hot pepper, a tomato, a banana, a red onion, a yellow apple, a green bell pepper and a cookbook. You can see a stove. The stove is conventional. Unfortunately, there isn't a thing on it. What, you think everything in TextWorld should have stuff on it? There is an open plain door leading south. You need an exit without a door? You should try going north. > -= Kitchen =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "close fridge",
+                "close plain door",
+                "cook red potato with oven",
+                "cook red potato with stove",
+                "cook red tuna with oven",
+                "cook red tuna with stove",
+                "cook yellow potato with oven",
+                "cook yellow potato with stove",
+                "drop red potato",
+                "drop red tuna",
+                "drop yellow potato",
+                "eat red potato",
+                "examine banana",
+                "examine cookbook",
+                "examine counter",
+                "examine fridge",
+                "examine green bell pepper",
+                "examine knife",
+                "examine lettuce",
+                "examine oven",
+                "examine parsley",
+                "examine red apple",
+                "examine red bell pepper",
+                "examine red hot pepper",
+                "examine red onion",
+                "examine stove",
+                "examine table",
+                "examine tomato",
+                "examine white tuna",
+                "examine yellow apple",
+                "examine yellow bell pepper",
+                "go north",
+                "go south",
+                "insert red potato into fridge",
+                "insert red tuna into fridge",
+                "insert yellow potato into fridge",
+                "inventory",
+                "look",
+                "put red potato on counter",
+                "put red potato on stove",
+                "put red potato on table",
+                "put red tuna on counter",
+                "put red tuna on stove",
+                "put red tuna on table",
+                "put yellow potato on counter",
+                "put yellow potato on stove",
+                "put yellow potato on table",
+                "take banana from counter",
+                "take cookbook from counter",
+                "take green bell pepper from counter",
+                "take knife from table",
+                "take lettuce from fridge",
+                "take parsley from fridge",
+                "take red apple from counter",
+                "take red bell pepper from fridge",
+                "take red hot pepper from counter",
+                "take red onion from counter",
+                "take tomato from counter",
+                "take white tuna from fridge",
+                "take yellow apple from counter",
+                "take yellow bell pepper from fridge"
+            ]
+        },
+        "action": "examine white tuna",
+        "reward": 0,
+        "next_state": "The raw white tuna looks tasty. > -= Kitchen =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "close fridge",
+                "close plain door",
+                "cook red potato with oven",
+                "cook red potato with stove",
+                "cook red tuna with oven",
+                "cook red tuna with stove",
+                "cook yellow potato with oven",
+                "cook yellow potato with stove",
+                "drop red potato",
+                "drop red tuna",
+                "drop yellow potato",
+                "eat red potato",
+                "examine banana",
+                "examine cookbook",
+                "examine counter",
+                "examine fridge",
+                "examine green bell pepper",
+                "examine knife",
+                "examine lettuce",
+                "examine oven",
+                "examine parsley",
+                "examine red apple",
+                "examine red bell pepper",
+                "examine red hot pepper",
+                "examine red onion",
+                "examine stove",
+                "examine table",
+                "examine tomato",
+                "examine white tuna",
+                "examine yellow apple",
+                "examine yellow bell pepper",
+                "go north",
+                "go south",
+                "insert red potato into fridge",
+                "insert red tuna into fridge",
+                "insert yellow potato into fridge",
+                "inventory",
+                "look",
+                "put red potato on counter",
+                "put red potato on stove",
+                "put red potato on table",
+                "put red tuna on counter",
+                "put red tuna on stove",
+                "put red tuna on table",
+                "put yellow potato on counter",
+                "put yellow potato on stove",
+                "put yellow potato on table",
+                "take banana from counter",
+                "take cookbook from counter",
+                "take green bell pepper from counter",
+                "take knife from table",
+                "take lettuce from fridge",
+                "take parsley from fridge",
+                "take red apple from counter",
+                "take red bell pepper from fridge",
+                "take red hot pepper from counter",
+                "take red onion from counter",
+                "take tomato from counter",
+                "take white tuna from fridge",
+                "take yellow apple from counter",
+                "take yellow bell pepper from fridge"
+            ]
+        },
+        "done": false,
+        "next_action": "examine cookbook"
+    },
+    {
+        "state": "The raw white tuna looks tasty. > -= Kitchen =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "close fridge",
+                "close plain door",
+                "cook red potato with oven",
+                "cook red potato with stove",
+                "cook red tuna with oven",
+                "cook red tuna with stove",
+                "cook yellow potato with oven",
+                "cook yellow potato with stove",
+                "drop red potato",
+                "drop red tuna",
+                "drop yellow potato",
+                "eat red potato",
+                "examine banana",
+                "examine cookbook",
+                "examine counter",
+                "examine fridge",
+                "examine green bell pepper",
+                "examine knife",
+                "examine lettuce",
+                "examine oven",
+                "examine parsley",
+                "examine red apple",
+                "examine red bell pepper",
+                "examine red hot pepper",
+                "examine red onion",
+                "examine stove",
+                "examine table",
+                "examine tomato",
+                "examine white tuna",
+                "examine yellow apple",
+                "examine yellow bell pepper",
+                "go north",
+                "go south",
+                "insert red potato into fridge",
+                "insert red tuna into fridge",
+                "insert yellow potato into fridge",
+                "inventory",
+                "look",
+                "put red potato on counter",
+                "put red potato on stove",
+                "put red potato on table",
+                "put red tuna on counter",
+                "put red tuna on stove",
+                "put red tuna on table",
+                "put yellow potato on counter",
+                "put yellow potato on stove",
+                "put yellow potato on table",
+                "take banana from counter",
+                "take cookbook from counter",
+                "take green bell pepper from counter",
+                "take knife from table",
+                "take lettuce from fridge",
+                "take parsley from fridge",
+                "take red apple from counter",
+                "take red bell pepper from fridge",
+                "take red hot pepper from counter",
+                "take red onion from counter",
+                "take tomato from counter",
+                "take white tuna from fridge",
+                "take yellow apple from counter",
+                "take yellow bell pepper from fridge"
+            ]
+        },
+        "action": "examine cookbook",
+        "reward": 0,
+        "next_state": "You open the copy of \"Cooking: A Modern Approach (3rd Ed.)\" and start reading: Recipe #1 --------- Gather all following ingredients and follow the directions to prepare this tasty meal. Ingredients: red apple red hot pepper red potato Directions: chop the red apple chop the red hot pepper roast the red hot pepper chop the red potato roast the red potato prepare meal > -= Kitchen =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "close fridge",
+                "close plain door",
+                "cook red potato with oven",
+                "cook red potato with stove",
+                "cook red tuna with oven",
+                "cook red tuna with stove",
+                "cook yellow potato with oven",
+                "cook yellow potato with stove",
+                "drop red potato",
+                "drop red tuna",
+                "drop yellow potato",
+                "eat red potato",
+                "examine banana",
+                "examine cookbook",
+                "examine counter",
+                "examine fridge",
+                "examine green bell pepper",
+                "examine knife",
+                "examine lettuce",
+                "examine oven",
+                "examine parsley",
+                "examine red apple",
+                "examine red bell pepper",
+                "examine red hot pepper",
+                "examine red onion",
+                "examine stove",
+                "examine table",
+                "examine tomato",
+                "examine white tuna",
+                "examine yellow apple",
+                "examine yellow bell pepper",
+                "go north",
+                "go south",
+                "insert red potato into fridge",
+                "insert red tuna into fridge",
+                "insert yellow potato into fridge",
+                "inventory",
+                "look",
+                "put red potato on counter",
+                "put red potato on stove",
+                "put red potato on table",
+                "put red tuna on counter",
+                "put red tuna on stove",
+                "put red tuna on table",
+                "put yellow potato on counter",
+                "put yellow potato on stove",
+                "put yellow potato on table",
+                "take banana from counter",
+                "take cookbook from counter",
+                "take green bell pepper from counter",
+                "take knife from table",
+                "take lettuce from fridge",
+                "take parsley from fridge",
+                "take red apple from counter",
+                "take red bell pepper from fridge",
+                "take red hot pepper from counter",
+                "take red onion from counter",
+                "take tomato from counter",
+                "take white tuna from fridge",
+                "take yellow apple from counter",
+                "take yellow bell pepper from fridge"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "You open the copy of \"Cooking: A Modern Approach (3rd Ed.)\" and start reading: Recipe #1 --------- Gather all following ingredients and follow the directions to prepare this tasty meal. Ingredients: red apple red hot pepper red potato Directions: chop the red apple chop the red hot pepper roast the red hot pepper chop the red potato roast the red potato prepare meal > -= Kitchen =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "close fridge",
+                "close plain door",
+                "cook red potato with oven",
+                "cook red potato with stove",
+                "cook red tuna with oven",
+                "cook red tuna with stove",
+                "cook yellow potato with oven",
+                "cook yellow potato with stove",
+                "drop red potato",
+                "drop red tuna",
+                "drop yellow potato",
+                "eat red potato",
+                "examine banana",
+                "examine cookbook",
+                "examine counter",
+                "examine fridge",
+                "examine green bell pepper",
+                "examine knife",
+                "examine lettuce",
+                "examine oven",
+                "examine parsley",
+                "examine red apple",
+                "examine red bell pepper",
+                "examine red hot pepper",
+                "examine red onion",
+                "examine stove",
+                "examine table",
+                "examine tomato",
+                "examine white tuna",
+                "examine yellow apple",
+                "examine yellow bell pepper",
+                "go north",
+                "go south",
+                "insert red potato into fridge",
+                "insert red tuna into fridge",
+                "insert yellow potato into fridge",
+                "inventory",
+                "look",
+                "put red potato on counter",
+                "put red potato on stove",
+                "put red potato on table",
+                "put red tuna on counter",
+                "put red tuna on stove",
+                "put red tuna on table",
+                "put yellow potato on counter",
+                "put yellow potato on stove",
+                "put yellow potato on table",
+                "take banana from counter",
+                "take cookbook from counter",
+                "take green bell pepper from counter",
+                "take knife from table",
+                "take lettuce from fridge",
+                "take parsley from fridge",
+                "take red apple from counter",
+                "take red bell pepper from fridge",
+                "take red hot pepper from counter",
+                "take red onion from counter",
+                "take tomato from counter",
+                "take white tuna from fridge",
+                "take yellow apple from counter",
+                "take yellow bell pepper from fridge"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Corridor =- Okay, so you're in a corridor, cool, but is it ordinary? You better believe it is. You don't like doors? Why not try going north, that entranceway is not blocked by one. There is an exit to the south. Don't worry, there is no door. You don't like doors? Why not try going west, that entranceway is not blocked by one. > -= Corridor =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop red tuna",
+                "drop yellow potato",
+                "eat red potato",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "drop yellow potato"
+    },
+    {
+        "state": "-= Corridor =- Okay, so you're in a corridor, cool, but is it ordinary? You better believe it is. You don't like doors? Why not try going north, that entranceway is not blocked by one. There is an exit to the south. Don't worry, there is no door. You don't like doors? Why not try going west, that entranceway is not blocked by one. > -= Corridor =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop red tuna",
+                "drop yellow potato",
+                "eat red potato",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "drop yellow potato",
+        "reward": 0,
+        "next_state": "You drop the yellow potato on the ground. > -= Corridor =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop red tuna",
+                "eat red potato",
+                "examine yellow potato",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take yellow potato"
+            ]
+        },
+        "done": false,
+        "next_action": "examine yellow potato"
+    },
+    {
+        "state": "You drop the yellow potato on the ground. > -= Corridor =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop red tuna",
+                "eat red potato",
+                "examine yellow potato",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take yellow potato"
+            ]
+        },
+        "action": "examine yellow potato",
+        "reward": 0,
+        "next_state": "That's a raw yellow potato! > -= Corridor =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop red tuna",
+                "eat red potato",
+                "examine yellow potato",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take yellow potato"
+            ]
+        },
+        "done": false,
+        "next_action": "drop red potato"
+    },
+    {
+        "state": "That's a raw yellow potato! > -= Corridor =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop red tuna",
+                "eat red potato",
+                "examine yellow potato",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take yellow potato"
+            ]
+        },
+        "action": "drop red potato",
+        "reward": 0,
+        "next_state": "You drop the red potato on the ground. > -= Corridor =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "examine red potato",
+                "examine yellow potato",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take red potato",
+                "take yellow potato"
+            ]
+        },
+        "done": false,
+        "next_action": "inventory"
+    },
+    {
+        "state": "You drop the red potato on the ground. > -= Corridor =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "examine red potato",
+                "examine yellow potato",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take red potato",
+                "take yellow potato"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying: a raw red tuna. > -= Corridor =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "examine red potato",
+                "examine yellow potato",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take red potato",
+                "take yellow potato"
+            ]
+        },
+        "done": false,
+        "next_action": "take red potato"
+    },
+    {
+        "state": "You are carrying: a raw red tuna. > -= Corridor =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "examine red potato",
+                "examine yellow potato",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take red potato",
+                "take yellow potato"
+            ]
+        },
+        "action": "take red potato",
+        "reward": 0,
+        "next_state": "You pick up the red potato from the ground. > -= Corridor =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop red tuna",
+                "eat red potato",
+                "examine yellow potato",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take yellow potato"
+            ]
+        },
+        "done": false,
+        "next_action": "drop red tuna"
+    },
+    {
+        "state": "You pick up the red potato from the ground. > -= Corridor =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop red tuna",
+                "eat red potato",
+                "examine yellow potato",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take yellow potato"
+            ]
+        },
+        "action": "drop red tuna",
+        "reward": 0,
+        "next_state": "You drop the red tuna on the ground. > -= Corridor =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "eat red potato",
+                "examine red tuna",
+                "examine yellow potato",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take red tuna",
+                "take yellow potato"
+            ]
+        },
+        "done": false,
+        "next_action": "drop red potato"
+    },
+    {
+        "state": "You drop the red tuna on the ground. > -= Corridor =-0/10",
+        "infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "eat red potato",
+                "examine red tuna",
+                "examine yellow potato",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take red tuna",
+                "take yellow potato"
+            ]
+        },
+        "action": "drop red potato",
+        "reward": 0,
+        "next_state": "You drop the red potato on the ground. > -= Corridor =-0/11",
+        "next_infos": {
+            "admissible_commands": [
+                "examine red potato",
+                "examine red tuna",
+                "examine yellow potato",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take red potato",
+                "take red tuna",
+                "take yellow potato"
+            ]
+        },
+        "done": false,
+        "next_action": "take yellow potato"
+    },
+    {
+        "state": "You drop the red potato on the ground. > -= Corridor =-0/11",
+        "infos": {
+            "admissible_commands": [
+                "examine red potato",
+                "examine red tuna",
+                "examine yellow potato",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take red potato",
+                "take red tuna",
+                "take yellow potato"
+            ]
+        },
+        "action": "take yellow potato",
+        "reward": 0,
+        "next_state": "You pick up the yellow potato from the ground. > -= Corridor =-0/12",
+        "next_infos": {
+            "admissible_commands": [
+                "drop yellow potato",
+                "examine red potato",
+                "examine red tuna",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take red potato",
+                "take red tuna"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "You pick up the yellow potato from the ground. > -= Corridor =-0/12",
+        "infos": {
+            "admissible_commands": [
+                "drop yellow potato",
+                "examine red potato",
+                "examine red tuna",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take red potato",
+                "take red tuna"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Corridor =- Okay, so you're in a corridor, cool, but is it ordinary? You better believe it is. You don't like doors? Why not try going north, that entranceway is not blocked by one. There is an exit to the south. Don't worry, there is no door. You don't like doors? Why not try going west, that entranceway is not blocked by one. There is a roasted red potato and a raw red tuna on the floor. > -= Corridor =-0/13",
+        "next_infos": {
+            "admissible_commands": [
+                "drop yellow potato",
+                "examine red potato",
+                "examine red tuna",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take red potato",
+                "take red tuna"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Corridor =- Okay, so you're in a corridor, cool, but is it ordinary? You better believe it is. You don't like doors? Why not try going north, that entranceway is not blocked by one. There is an exit to the south. Don't worry, there is no door. You don't like doors? Why not try going west, that entranceway is not blocked by one. There is a roasted red potato and a raw red tuna on the floor. > -= Corridor =-0/13",
+        "infos": {
+            "admissible_commands": [
+                "drop yellow potato",
+                "examine red potato",
+                "examine red tuna",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take red potato",
+                "take red tuna"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Bedroom =- You find yourself in a bedroom. An ordinary kind of place. You make out a bed. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the bed. There is an exit to the south. Don't worry, there is no door. There is an exit to the west. > -= Bedroom =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "drop yellow potato",
+                "examine bed",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put yellow potato on bed"
+            ]
+        },
+        "done": false,
+        "next_action": "examine bed"
+    },
+    {
+        "state": "-= Bedroom =- You find yourself in a bedroom. An ordinary kind of place. You make out a bed. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the bed. There is an exit to the south. Don't worry, there is no door. There is an exit to the west. > -= Bedroom =-0/14",
+        "infos": {
+            "admissible_commands": [
+                "drop yellow potato",
+                "examine bed",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put yellow potato on bed"
+            ]
+        },
+        "action": "examine bed",
+        "reward": 0,
+        "next_state": "The bed is unstable. > -= Bedroom =-0/15",
+        "next_infos": {
+            "admissible_commands": [
+                "drop yellow potato",
+                "examine bed",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put yellow potato on bed"
+            ]
+        },
+        "done": false,
+        "next_action": "inventory"
+    },
+    {
+        "state": "The bed is unstable. > -= Bedroom =-0/15",
+        "infos": {
+            "admissible_commands": [
+                "drop yellow potato",
+                "examine bed",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put yellow potato on bed"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying: a raw yellow potato. > -= Bedroom =-0/16",
+        "next_infos": {
+            "admissible_commands": [
+                "drop yellow potato",
+                "examine bed",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put yellow potato on bed"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "You are carrying: a raw yellow potato. > -= Bedroom =-0/16",
+        "infos": {
+            "admissible_commands": [
+                "drop yellow potato",
+                "examine bed",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put yellow potato on bed"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Livingroom =- You're not going to believe this, but you've just entered a livingroom. You hear a noise behind you and spin around, but you can't see anything other than a sofa. The sofa is comfy. But oh no! there's nothing on this piece of trash. Hopefully, this discovery doesn't ruin your TextWorld experience! There is an exit to the east. Don't worry, there is no door. > -= Livingroom =-0/17",
+        "next_infos": {
+            "admissible_commands": [
+                "drop yellow potato",
+                "examine sofa",
+                "go east",
+                "inventory",
+                "look",
+                "put yellow potato on sofa"
+            ]
+        },
+        "done": false,
+        "next_action": "drop yellow potato"
+    },
+    {
+        "state": "-= Livingroom =- You're not going to believe this, but you've just entered a livingroom. You hear a noise behind you and spin around, but you can't see anything other than a sofa. The sofa is comfy. But oh no! there's nothing on this piece of trash. Hopefully, this discovery doesn't ruin your TextWorld experience! There is an exit to the east. Don't worry, there is no door. > -= Livingroom =-0/17",
+        "infos": {
+            "admissible_commands": [
+                "drop yellow potato",
+                "examine sofa",
+                "go east",
+                "inventory",
+                "look",
+                "put yellow potato on sofa"
+            ]
+        },
+        "action": "drop yellow potato",
+        "reward": 0,
+        "next_state": "You drop the yellow potato on the ground. > -= Livingroom =-0/18",
+        "next_infos": {
+            "admissible_commands": [
+                "examine sofa",
+                "examine yellow potato",
+                "go east",
+                "inventory",
+                "look",
+                "take yellow potato"
+            ]
+        },
+        "done": false,
+        "next_action": "examine sofa"
+    },
+    {
+        "state": "You drop the yellow potato on the ground. > -= Livingroom =-0/18",
+        "infos": {
+            "admissible_commands": [
+                "examine sofa",
+                "examine yellow potato",
+                "go east",
+                "inventory",
+                "look",
+                "take yellow potato"
+            ]
+        },
+        "action": "examine sofa",
+        "reward": 0,
+        "next_state": "The sofa is shaky. > -= Livingroom =-0/19",
+        "next_infos": {
+            "admissible_commands": [
+                "examine sofa",
+                "examine yellow potato",
+                "go east",
+                "inventory",
+                "look",
+                "take yellow potato"
+            ]
+        },
+        "done": false,
+        "next_action": "take yellow potato"
+    },
+    {
+        "state": "The sofa is shaky. > -= Livingroom =-0/19",
+        "infos": {
+            "admissible_commands": [
+                "examine sofa",
+                "examine yellow potato",
+                "go east",
+                "inventory",
+                "look",
+                "take yellow potato"
+            ]
+        },
+        "action": "take yellow potato",
+        "reward": 0,
+        "next_state": "You pick up the yellow potato from the ground. > -= Livingroom =-0/20",
+        "next_infos": {
+            "admissible_commands": [
+                "drop yellow potato",
+                "examine sofa",
+                "go east",
+                "inventory",
+                "look",
+                "put yellow potato on sofa"
+            ]
+        },
+        "done": false,
+        "next_action": "examine sofa"
+    },
+    {
+        "state": "You pick up the yellow potato from the ground. > -= Livingroom =-0/20",
+        "infos": {
+            "admissible_commands": [
+                "drop yellow potato",
+                "examine sofa",
+                "go east",
+                "inventory",
+                "look",
+                "put yellow potato on sofa"
+            ]
+        },
+        "action": "examine sofa",
+        "reward": 0,
+        "next_state": "The sofa is shaky. > -= Livingroom =-0/21",
+        "next_infos": {
+            "admissible_commands": [
+                "drop yellow potato",
+                "examine sofa",
+                "go east",
+                "inventory",
+                "look",
+                "put yellow potato on sofa"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "The sofa is shaky. > -= Livingroom =-0/21",
+        "infos": {
+            "admissible_commands": [
+                "drop yellow potato",
+                "examine sofa",
+                "go east",
+                "inventory",
+                "look",
+                "put yellow potato on sofa"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Bedroom =- You find yourself in a bedroom. An ordinary kind of place. You make out a bed. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the bed. There is an exit to the south. Don't worry, there is no door. There is an exit to the west. > -= Bedroom =-0/22",
+        "next_infos": {
+            "admissible_commands": [
+                "drop yellow potato",
+                "examine bed",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put yellow potato on bed"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Bedroom =- You find yourself in a bedroom. An ordinary kind of place. You make out a bed. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the bed. There is an exit to the south. Don't worry, there is no door. There is an exit to the west. > -= Bedroom =-0/22",
+        "infos": {
+            "admissible_commands": [
+                "drop yellow potato",
+                "examine bed",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put yellow potato on bed"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Livingroom =- You're not going to believe this, but you've just entered a livingroom. You hear a noise behind you and spin around, but you can't see anything other than a sofa. The sofa is comfy. But oh no! there's nothing on this piece of trash. Hopefully, this discovery doesn't ruin your TextWorld experience! There is an exit to the east. Don't worry, there is no door. > -= Livingroom =-0/23",
+        "next_infos": {
+            "admissible_commands": [
+                "drop yellow potato",
+                "examine sofa",
+                "go east",
+                "inventory",
+                "look",
+                "put yellow potato on sofa"
+            ]
+        },
+        "done": false,
+        "next_action": "examine sofa"
+    },
+    {
+        "state": "-= Livingroom =- You're not going to believe this, but you've just entered a livingroom. You hear a noise behind you and spin around, but you can't see anything other than a sofa. The sofa is comfy. But oh no! there's nothing on this piece of trash. Hopefully, this discovery doesn't ruin your TextWorld experience! There is an exit to the east. Don't worry, there is no door. > -= Livingroom =-0/23",
+        "infos": {
+            "admissible_commands": [
+                "drop yellow potato",
+                "examine sofa",
+                "go east",
+                "inventory",
+                "look",
+                "put yellow potato on sofa"
+            ]
+        },
+        "action": "examine sofa",
+        "reward": 0,
+        "next_state": "The sofa is shaky. > -= Livingroom =-0/24",
+        "next_infos": {
+            "admissible_commands": [
+                "drop yellow potato",
+                "examine sofa",
+                "go east",
+                "inventory",
+                "look",
+                "put yellow potato on sofa"
+            ]
+        },
+        "done": false,
+        "next_action": "put yellow potato on sofa"
+    },
+    {
+        "state": "The sofa is shaky. > -= Livingroom =-0/24",
+        "infos": {
+            "admissible_commands": [
+                "drop yellow potato",
+                "examine sofa",
+                "go east",
+                "inventory",
+                "look",
+                "put yellow potato on sofa"
+            ]
+        },
+        "action": "put yellow potato on sofa",
+        "reward": 0,
+        "next_state": "You put the yellow potato on the sofa. > -= Livingroom =-0/25",
+        "next_infos": {
+            "admissible_commands": [
+                "examine sofa",
+                "examine yellow potato",
+                "go east",
+                "inventory",
+                "look",
+                "take yellow potato from sofa"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "You put the yellow potato on the sofa. > -= Livingroom =-0/25",
+        "infos": {
+            "admissible_commands": [
+                "examine sofa",
+                "examine yellow potato",
+                "go east",
+                "inventory",
+                "look",
+                "take yellow potato from sofa"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Livingroom =- You're not going to believe this, but you've just entered a livingroom. You hear a noise behind you and spin around, but you can't see anything other than a sofa. The sofa is comfy. On the sofa you can make out a raw yellow potato. There is an exit to the east. Don't worry, there is no door. > -= Livingroom =-0/26",
+        "next_infos": {
+            "admissible_commands": [
+                "examine sofa",
+                "examine yellow potato",
+                "go east",
+                "inventory",
+                "look",
+                "take yellow potato from sofa"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

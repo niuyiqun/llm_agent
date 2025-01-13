@@ -1,0 +1,83 @@
+[
+    {
+        "state": "You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal! -= Bathroom =- You are in a bathroom. A typical kind of place. Oh wow! Is that what I think it is? It is! It's a toilet. The toilet is white. But there isn't a thing on it. There is an exit to the west. > -= Bathroom =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "drop green bell pepper",
+                "drop green hot pepper",
+                "drop red bell pepper",
+                "eat green bell pepper",
+                "eat green hot pepper",
+                "eat red bell pepper",
+                "examine toilet",
+                "go west",
+                "inventory",
+                "look",
+                "put green bell pepper on toilet",
+                "put green hot pepper on toilet",
+                "put red bell pepper on toilet"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying: a green bell pepper, a green hot pepper and a red bell pepper. > -= Bathroom =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "drop green bell pepper",
+                "drop green hot pepper",
+                "drop red bell pepper",
+                "eat green bell pepper",
+                "eat green hot pepper",
+                "eat red bell pepper",
+                "examine toilet",
+                "go west",
+                "inventory",
+                "look",
+                "put green bell pepper on toilet",
+                "put green hot pepper on toilet",
+                "put red bell pepper on toilet"
+            ]
+        },
+        "done": false,
+        "next_action": "eat green bell pepper"
+    },
+    {
+        "state": "You are carrying: a green bell pepper, a green hot pepper and a red bell pepper. > -= Bathroom =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "drop green bell pepper",
+                "drop green hot pepper",
+                "drop red bell pepper",
+                "eat green bell pepper",
+                "eat green hot pepper",
+                "eat red bell pepper",
+                "examine toilet",
+                "go west",
+                "inventory",
+                "look",
+                "put green bell pepper on toilet",
+                "put green hot pepper on toilet",
+                "put red bell pepper on toilet"
+            ]
+        },
+        "action": "eat green bell pepper",
+        "reward": 0,
+        "next_state": "You eat the green bell pepper. Not bad. *** You lost! *** You scored 0 out of a possible 7, in 2 turns. Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command? > -= Bathroom =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "drop green hot pepper",
+                "drop red bell pepper",
+                "eat green hot pepper",
+                "eat red bell pepper",
+                "examine toilet",
+                "go west",
+                "inventory",
+                "look",
+                "put green hot pepper on toilet",
+                "put red bell pepper on toilet"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

@@ -1,0 +1,202 @@
+[
+    {
+        "state": "You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal! -= Corridor =- You find yourself in a corridor. An usual kind of place. You don't like doors? Why not try going east, that entranceway is not blocked by one. You don't like doors? Why not try going south, that entranceway is not blocked by one. You need an exit without a door? You should try going west. > -= Corridor =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "drop red apple",
+                "drop red bell pepper",
+                "drop red hot pepper",
+                "eat red apple",
+                "eat red bell pepper",
+                "eat red hot pepper",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying: a fried red hot pepper, a red apple and a red bell pepper. > -= Corridor =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red apple",
+                "drop red bell pepper",
+                "drop red hot pepper",
+                "eat red apple",
+                "eat red bell pepper",
+                "eat red hot pepper",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "You are carrying: a fried red hot pepper, a red apple and a red bell pepper. > -= Corridor =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "drop red apple",
+                "drop red bell pepper",
+                "drop red hot pepper",
+                "eat red apple",
+                "eat red bell pepper",
+                "eat red hot pepper",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Bedroom =- You've just shown up in a bedroom. You can barely contain your excitement. Oh wow! Is that what I think it is? It is! It's a bed. The bed is large. But there isn't a thing on it. What, you think everything in TextWorld should have stuff on it? There is an exit to the north. There is an exit to the west. > -= Bedroom =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red apple",
+                "drop red bell pepper",
+                "drop red hot pepper",
+                "eat red apple",
+                "eat red bell pepper",
+                "eat red hot pepper",
+                "examine bed",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "put red apple on bed",
+                "put red bell pepper on bed",
+                "put red hot pepper on bed"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "-= Bedroom =- You've just shown up in a bedroom. You can barely contain your excitement. Oh wow! Is that what I think it is? It is! It's a bed. The bed is large. But there isn't a thing on it. What, you think everything in TextWorld should have stuff on it? There is an exit to the north. There is an exit to the west. > -= Bedroom =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "drop red apple",
+                "drop red bell pepper",
+                "drop red hot pepper",
+                "eat red apple",
+                "eat red bell pepper",
+                "eat red hot pepper",
+                "examine bed",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "put red apple on bed",
+                "put red bell pepper on bed",
+                "put red hot pepper on bed"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Bedroom =- You've just shown up in a bedroom. You can barely contain your excitement. Oh wow! Is that what I think it is? It is! It's a bed. The bed is large. But there isn't a thing on it. What, you think everything in TextWorld should have stuff on it? There is an exit to the north. There is an exit to the west. > -= Bedroom =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red apple",
+                "drop red bell pepper",
+                "drop red hot pepper",
+                "eat red apple",
+                "eat red bell pepper",
+                "eat red hot pepper",
+                "examine bed",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "put red apple on bed",
+                "put red bell pepper on bed",
+                "put red hot pepper on bed"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Bedroom =- You've just shown up in a bedroom. You can barely contain your excitement. Oh wow! Is that what I think it is? It is! It's a bed. The bed is large. But there isn't a thing on it. What, you think everything in TextWorld should have stuff on it? There is an exit to the north. There is an exit to the west. > -= Bedroom =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "drop red apple",
+                "drop red bell pepper",
+                "drop red hot pepper",
+                "eat red apple",
+                "eat red bell pepper",
+                "eat red hot pepper",
+                "examine bed",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "put red apple on bed",
+                "put red bell pepper on bed",
+                "put red hot pepper on bed"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Corridor =- You find yourself in a corridor. An usual kind of place. You don't like doors? Why not try going east, that entranceway is not blocked by one. You don't like doors? Why not try going south, that entranceway is not blocked by one. You need an exit without a door? You should try going west. > -= Corridor =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red apple",
+                "drop red bell pepper",
+                "drop red hot pepper",
+                "eat red apple",
+                "eat red bell pepper",
+                "eat red hot pepper",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "eat red hot pepper"
+    },
+    {
+        "state": "-= Corridor =- You find yourself in a corridor. An usual kind of place. You don't like doors? Why not try going east, that entranceway is not blocked by one. You don't like doors? Why not try going south, that entranceway is not blocked by one. You need an exit without a door? You should try going west. > -= Corridor =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "drop red apple",
+                "drop red bell pepper",
+                "drop red hot pepper",
+                "eat red apple",
+                "eat red bell pepper",
+                "eat red hot pepper",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "eat red hot pepper",
+        "reward": 0,
+        "next_state": "You eat the red hot pepper. Not bad. *** You lost! *** You scored 0 out of a possible 7, in 5 turns. Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command? > -= Corridor =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red apple",
+                "drop red bell pepper",
+                "eat red apple",
+                "eat red bell pepper",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

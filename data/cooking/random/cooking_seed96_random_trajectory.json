@@ -1,0 +1,795 @@
+[
+    {
+        "state": "You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal! -= Bathroom =- Look around you. Take it all in. It's not every day someone gets to be in a bathroom. You try to gain information on your surroundings by using a technique you call \"looking.\" You can see a toilet. The toilet is white. But the thing is empty. Sometimes, just sometimes, TextWorld can just be the worst. You need an exit without a door? You should try going east. > -= Bathroom =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "drop red bell pepper",
+                "drop red onion",
+                "drop yellow onion",
+                "eat red bell pepper",
+                "eat red onion",
+                "eat yellow onion",
+                "examine toilet",
+                "go east",
+                "inventory",
+                "look",
+                "put red bell pepper on toilet",
+                "put red onion on toilet",
+                "put yellow onion on toilet"
+            ]
+        },
+        "action": "put red onion on toilet",
+        "reward": 0,
+        "next_state": "You put the red onion on the toilet. > -= Bathroom =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red bell pepper",
+                "drop yellow onion",
+                "eat red bell pepper",
+                "eat yellow onion",
+                "examine red onion",
+                "examine toilet",
+                "go east",
+                "inventory",
+                "look",
+                "put red bell pepper on toilet",
+                "put yellow onion on toilet",
+                "take red onion from toilet"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "You put the red onion on the toilet. > -= Bathroom =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "drop red bell pepper",
+                "drop yellow onion",
+                "eat red bell pepper",
+                "eat yellow onion",
+                "examine red onion",
+                "examine toilet",
+                "go east",
+                "inventory",
+                "look",
+                "put red bell pepper on toilet",
+                "put yellow onion on toilet",
+                "take red onion from toilet"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Corridor =- Okay, so you're in a corridor, cool, but is it standard? You better believe it is. You don't like doors? Why not try going north, that entranceway is not blocked by one. You don't like doors? Why not try going west, that entranceway is not blocked by one. > -= Corridor =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red bell pepper",
+                "drop yellow onion",
+                "eat red bell pepper",
+                "eat yellow onion",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Corridor =- Okay, so you're in a corridor, cool, but is it standard? You better believe it is. You don't like doors? Why not try going north, that entranceway is not blocked by one. You don't like doors? Why not try going west, that entranceway is not blocked by one. > -= Corridor =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "drop red bell pepper",
+                "drop yellow onion",
+                "eat red bell pepper",
+                "eat yellow onion",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Bedroom =- You find yourself in a bedroom. A normal kind of place. Look out! It's a- oh, never mind, it's just a bed. Looks like someone's already been here and taken everything off it, though. You don't like doors? Why not try going east, that entranceway is not blocked by one. There is an exit to the south. Don't worry, there is no door. > -= Bedroom =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red bell pepper",
+                "drop yellow onion",
+                "eat red bell pepper",
+                "eat yellow onion",
+                "examine bed",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "put red bell pepper on bed",
+                "put yellow onion on bed"
+            ]
+        },
+        "done": false,
+        "next_action": "drop red bell pepper"
+    },
+    {
+        "state": "-= Bedroom =- You find yourself in a bedroom. A normal kind of place. Look out! It's a- oh, never mind, it's just a bed. Looks like someone's already been here and taken everything off it, though. You don't like doors? Why not try going east, that entranceway is not blocked by one. There is an exit to the south. Don't worry, there is no door. > -= Bedroom =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "drop red bell pepper",
+                "drop yellow onion",
+                "eat red bell pepper",
+                "eat yellow onion",
+                "examine bed",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "put red bell pepper on bed",
+                "put yellow onion on bed"
+            ]
+        },
+        "action": "drop red bell pepper",
+        "reward": 0,
+        "next_state": "You drop the red bell pepper on the ground. > -= Bedroom =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "drop yellow onion",
+                "eat yellow onion",
+                "examine bed",
+                "examine red bell pepper",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "put yellow onion on bed",
+                "take red bell pepper"
+            ]
+        },
+        "done": false,
+        "next_action": "examine red bell pepper"
+    },
+    {
+        "state": "You drop the red bell pepper on the ground. > -= Bedroom =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "drop yellow onion",
+                "eat yellow onion",
+                "examine bed",
+                "examine red bell pepper",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "put yellow onion on bed",
+                "take red bell pepper"
+            ]
+        },
+        "action": "examine red bell pepper",
+        "reward": 0,
+        "next_state": "The red bell pepper looks delectable. > -= Bedroom =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "drop yellow onion",
+                "eat yellow onion",
+                "examine bed",
+                "examine red bell pepper",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "put yellow onion on bed",
+                "take red bell pepper"
+            ]
+        },
+        "done": false,
+        "next_action": "drop yellow onion"
+    },
+    {
+        "state": "The red bell pepper looks delectable. > -= Bedroom =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "drop yellow onion",
+                "eat yellow onion",
+                "examine bed",
+                "examine red bell pepper",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "put yellow onion on bed",
+                "take red bell pepper"
+            ]
+        },
+        "action": "drop yellow onion",
+        "reward": 0,
+        "next_state": "You drop the yellow onion on the ground. > -= Bedroom =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine red bell pepper",
+                "examine yellow onion",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "take red bell pepper",
+                "take yellow onion"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "You drop the yellow onion on the ground. > -= Bedroom =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine red bell pepper",
+                "examine yellow onion",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "take red bell pepper",
+                "take yellow onion"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Corridor =- Okay, so you're in a corridor, cool, but is it standard? You better believe it is. You don't like doors? Why not try going north, that entranceway is not blocked by one. You don't like doors? Why not try going west, that entranceway is not blocked by one. > -= Corridor =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Corridor =- Okay, so you're in a corridor, cool, but is it standard? You better believe it is. You don't like doors? Why not try going north, that entranceway is not blocked by one. You don't like doors? Why not try going west, that entranceway is not blocked by one. > -= Corridor =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Bedroom =- You find yourself in a bedroom. A normal kind of place. Look out! It's a- oh, never mind, it's just a bed. Looks like someone's already been here and taken everything off it, though. You don't like doors? Why not try going east, that entranceway is not blocked by one. There is an exit to the south. Don't worry, there is no door. There is a yellow onion and a red bell pepper on the floor. > -= Bedroom =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine red bell pepper",
+                "examine yellow onion",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "take red bell pepper",
+                "take yellow onion"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Bedroom =- You find yourself in a bedroom. A normal kind of place. Look out! It's a- oh, never mind, it's just a bed. Looks like someone's already been here and taken everything off it, though. You don't like doors? Why not try going east, that entranceway is not blocked by one. There is an exit to the south. Don't worry, there is no door. There is a yellow onion and a red bell pepper on the floor. > -= Bedroom =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine red bell pepper",
+                "examine yellow onion",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "take red bell pepper",
+                "take yellow onion"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Corridor =- Okay, so you're in a corridor, cool, but is it standard? You better believe it is. You don't like doors? Why not try going north, that entranceway is not blocked by one. You don't like doors? Why not try going west, that entranceway is not blocked by one. > -= Corridor =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Corridor =- Okay, so you're in a corridor, cool, but is it standard? You better believe it is. You don't like doors? Why not try going north, that entranceway is not blocked by one. You don't like doors? Why not try going west, that entranceway is not blocked by one. > -= Corridor =-0/10",
+        "infos": {
+            "admissible_commands": [
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Bedroom =- You find yourself in a bedroom. A normal kind of place. Look out! It's a- oh, never mind, it's just a bed. Looks like someone's already been here and taken everything off it, though. You don't like doors? Why not try going east, that entranceway is not blocked by one. There is an exit to the south. Don't worry, there is no door. There is a yellow onion and a red bell pepper on the floor. > -= Bedroom =-0/11",
+        "next_infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine red bell pepper",
+                "examine yellow onion",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "take red bell pepper",
+                "take yellow onion"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Bedroom =- You find yourself in a bedroom. A normal kind of place. Look out! It's a- oh, never mind, it's just a bed. Looks like someone's already been here and taken everything off it, though. You don't like doors? Why not try going east, that entranceway is not blocked by one. There is an exit to the south. Don't worry, there is no door. There is a yellow onion and a red bell pepper on the floor. > -= Bedroom =-0/11",
+        "infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine red bell pepper",
+                "examine yellow onion",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "take red bell pepper",
+                "take yellow onion"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Corridor =- Okay, so you're in a corridor, cool, but is it standard? You better believe it is. You don't like doors? Why not try going north, that entranceway is not blocked by one. You don't like doors? Why not try going west, that entranceway is not blocked by one. > -= Corridor =-0/12",
+        "next_infos": {
+            "admissible_commands": [
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "inventory"
+    },
+    {
+        "state": "-= Corridor =- Okay, so you're in a corridor, cool, but is it standard? You better believe it is. You don't like doors? Why not try going north, that entranceway is not blocked by one. You don't like doors? Why not try going west, that entranceway is not blocked by one. > -= Corridor =-0/12",
+        "infos": {
+            "admissible_commands": [
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying nothing. > -= Corridor =-0/13",
+        "next_infos": {
+            "admissible_commands": [
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "You are carrying nothing. > -= Corridor =-0/13",
+        "infos": {
+            "admissible_commands": [
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Bedroom =- You find yourself in a bedroom. A normal kind of place. Look out! It's a- oh, never mind, it's just a bed. Looks like someone's already been here and taken everything off it, though. You don't like doors? Why not try going east, that entranceway is not blocked by one. There is an exit to the south. Don't worry, there is no door. There is a yellow onion and a red bell pepper on the floor. > -= Bedroom =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine red bell pepper",
+                "examine yellow onion",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "take red bell pepper",
+                "take yellow onion"
+            ]
+        },
+        "done": false,
+        "next_action": "examine red bell pepper"
+    },
+    {
+        "state": "-= Bedroom =- You find yourself in a bedroom. A normal kind of place. Look out! It's a- oh, never mind, it's just a bed. Looks like someone's already been here and taken everything off it, though. You don't like doors? Why not try going east, that entranceway is not blocked by one. There is an exit to the south. Don't worry, there is no door. There is a yellow onion and a red bell pepper on the floor. > -= Bedroom =-0/14",
+        "infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine red bell pepper",
+                "examine yellow onion",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "take red bell pepper",
+                "take yellow onion"
+            ]
+        },
+        "action": "examine red bell pepper",
+        "reward": 0,
+        "next_state": "The red bell pepper looks delectable. > -= Bedroom =-0/15",
+        "next_infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine red bell pepper",
+                "examine yellow onion",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "take red bell pepper",
+                "take yellow onion"
+            ]
+        },
+        "done": false,
+        "next_action": "examine bed"
+    },
+    {
+        "state": "The red bell pepper looks delectable. > -= Bedroom =-0/15",
+        "infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine red bell pepper",
+                "examine yellow onion",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "take red bell pepper",
+                "take yellow onion"
+            ]
+        },
+        "action": "examine bed",
+        "reward": 0,
+        "next_state": "The bed is solid. > -= Bedroom =-0/16",
+        "next_infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine red bell pepper",
+                "examine yellow onion",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "take red bell pepper",
+                "take yellow onion"
+            ]
+        },
+        "done": false,
+        "next_action": "examine yellow onion"
+    },
+    {
+        "state": "The bed is solid. > -= Bedroom =-0/16",
+        "infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine red bell pepper",
+                "examine yellow onion",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "take red bell pepper",
+                "take yellow onion"
+            ]
+        },
+        "action": "examine yellow onion",
+        "reward": 0,
+        "next_state": "You couldn't pay me to eat that yellow onion. > -= Bedroom =-0/17",
+        "next_infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine red bell pepper",
+                "examine yellow onion",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "take red bell pepper",
+                "take yellow onion"
+            ]
+        },
+        "done": false,
+        "next_action": "take yellow onion"
+    },
+    {
+        "state": "You couldn't pay me to eat that yellow onion. > -= Bedroom =-0/17",
+        "infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine red bell pepper",
+                "examine yellow onion",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "take red bell pepper",
+                "take yellow onion"
+            ]
+        },
+        "action": "take yellow onion",
+        "reward": 0,
+        "next_state": "You pick up the yellow onion from the ground. > -= Bedroom =-0/18",
+        "next_infos": {
+            "admissible_commands": [
+                "drop yellow onion",
+                "eat yellow onion",
+                "examine bed",
+                "examine red bell pepper",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "put yellow onion on bed",
+                "take red bell pepper"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "You pick up the yellow onion from the ground. > -= Bedroom =-0/18",
+        "infos": {
+            "admissible_commands": [
+                "drop yellow onion",
+                "eat yellow onion",
+                "examine bed",
+                "examine red bell pepper",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "put yellow onion on bed",
+                "take red bell pepper"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Livingroom =- You've entered a livingroom. You decide to just list off a complete list of everything you see in the room, because hey, why not? You can see a sofa. But the thing is empty, unfortunately. There is an exit to the east. Don't worry, there is no door. You don't like doors? Why not try going west, that entranceway is not blocked by one. > -= Livingroom =-0/19",
+        "next_infos": {
+            "admissible_commands": [
+                "drop yellow onion",
+                "eat yellow onion",
+                "examine sofa",
+                "go east",
+                "go west",
+                "inventory",
+                "look",
+                "put yellow onion on sofa"
+            ]
+        },
+        "done": false,
+        "next_action": "examine sofa"
+    },
+    {
+        "state": "-= Livingroom =- You've entered a livingroom. You decide to just list off a complete list of everything you see in the room, because hey, why not? You can see a sofa. But the thing is empty, unfortunately. There is an exit to the east. Don't worry, there is no door. You don't like doors? Why not try going west, that entranceway is not blocked by one. > -= Livingroom =-0/19",
+        "infos": {
+            "admissible_commands": [
+                "drop yellow onion",
+                "eat yellow onion",
+                "examine sofa",
+                "go east",
+                "go west",
+                "inventory",
+                "look",
+                "put yellow onion on sofa"
+            ]
+        },
+        "action": "examine sofa",
+        "reward": 0,
+        "next_state": "The sofa is unstable. > -= Livingroom =-0/20",
+        "next_infos": {
+            "admissible_commands": [
+                "drop yellow onion",
+                "eat yellow onion",
+                "examine sofa",
+                "go east",
+                "go west",
+                "inventory",
+                "look",
+                "put yellow onion on sofa"
+            ]
+        },
+        "done": false,
+        "next_action": "eat yellow onion"
+    },
+    {
+        "state": "The sofa is unstable. > -= Livingroom =-0/20",
+        "infos": {
+            "admissible_commands": [
+                "drop yellow onion",
+                "eat yellow onion",
+                "examine sofa",
+                "go east",
+                "go west",
+                "inventory",
+                "look",
+                "put yellow onion on sofa"
+            ]
+        },
+        "action": "eat yellow onion",
+        "reward": 0,
+        "next_state": "You eat the yellow onion. Not bad. > -= Livingroom =-0/21",
+        "next_infos": {
+            "admissible_commands": [
+                "examine sofa",
+                "go east",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "You eat the yellow onion. Not bad. > -= Livingroom =-0/21",
+        "infos": {
+            "admissible_commands": [
+                "examine sofa",
+                "go east",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Livingroom =- You've entered a livingroom. You decide to just list off a complete list of everything you see in the room, because hey, why not? You can see a sofa. But the thing is empty, unfortunately. There is an exit to the east. Don't worry, there is no door. You don't like doors? Why not try going west, that entranceway is not blocked by one. > -= Livingroom =-0/22",
+        "next_infos": {
+            "admissible_commands": [
+                "examine sofa",
+                "go east",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "examine sofa"
+    },
+    {
+        "state": "-= Livingroom =- You've entered a livingroom. You decide to just list off a complete list of everything you see in the room, because hey, why not? You can see a sofa. But the thing is empty, unfortunately. There is an exit to the east. Don't worry, there is no door. You don't like doors? Why not try going west, that entranceway is not blocked by one. > -= Livingroom =-0/22",
+        "infos": {
+            "admissible_commands": [
+                "examine sofa",
+                "go east",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "examine sofa",
+        "reward": 0,
+        "next_state": "The sofa is unstable. > -= Livingroom =-0/23",
+        "next_infos": {
+            "admissible_commands": [
+                "examine sofa",
+                "go east",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "The sofa is unstable. > -= Livingroom =-0/23",
+        "infos": {
+            "admissible_commands": [
+                "examine sofa",
+                "go east",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Bedroom =- You find yourself in a bedroom. A normal kind of place. Look out! It's a- oh, never mind, it's just a bed. Looks like someone's already been here and taken everything off it, though. You don't like doors? Why not try going east, that entranceway is not blocked by one. There is an exit to the south. Don't worry, there is no door. There is a red bell pepper on the floor. > -= Bedroom =-0/24",
+        "next_infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine red bell pepper",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "take red bell pepper"
+            ]
+        },
+        "done": false,
+        "next_action": "take red bell pepper"
+    },
+    {
+        "state": "-= Bedroom =- You find yourself in a bedroom. A normal kind of place. Look out! It's a- oh, never mind, it's just a bed. Looks like someone's already been here and taken everything off it, though. You don't like doors? Why not try going east, that entranceway is not blocked by one. There is an exit to the south. Don't worry, there is no door. There is a red bell pepper on the floor. > -= Bedroom =-0/24",
+        "infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine red bell pepper",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "take red bell pepper"
+            ]
+        },
+        "action": "take red bell pepper",
+        "reward": 0,
+        "next_state": "You pick up the red bell pepper from the ground. > -= Bedroom =-0/25",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red bell pepper",
+                "eat red bell pepper",
+                "examine bed",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "put red bell pepper on bed"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "You pick up the red bell pepper from the ground. > -= Bedroom =-0/25",
+        "infos": {
+            "admissible_commands": [
+                "drop red bell pepper",
+                "eat red bell pepper",
+                "examine bed",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "put red bell pepper on bed"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Bedroom =- You find yourself in a bedroom. A normal kind of place. Look out! It's a- oh, never mind, it's just a bed. Looks like someone's already been here and taken everything off it, though. You don't like doors? Why not try going east, that entranceway is not blocked by one. There is an exit to the south. Don't worry, there is no door. > -= Bedroom =-0/26",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red bell pepper",
+                "eat red bell pepper",
+                "examine bed",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "put red bell pepper on bed"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

@@ -1,0 +1,210 @@
+[
+    {
+        "state": "You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal! -= Bathroom =- Okay, so you're in a bathroom, cool, but is it normal? You better believe it is. There is an exit to the south. Don't worry, there is no door. > -= Bathroom =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "drop tomato",
+                "eat tomato",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying: a roasted tomato. > -= Bathroom =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "drop tomato",
+                "eat tomato",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "You are carrying: a roasted tomato. > -= Bathroom =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "drop tomato",
+                "eat tomato",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Bathroom =- Okay, so you're in a bathroom, cool, but is it normal? You better believe it is. There is an exit to the south. Don't worry, there is no door. > -= Bathroom =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "drop tomato",
+                "eat tomato",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "drop tomato"
+    },
+    {
+        "state": "-= Bathroom =- Okay, so you're in a bathroom, cool, but is it normal? You better believe it is. There is an exit to the south. Don't worry, there is no door. > -= Bathroom =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "drop tomato",
+                "eat tomato",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "drop tomato",
+        "reward": 0,
+        "next_state": "You drop the tomato on the ground. > -= Bathroom =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "examine tomato",
+                "go south",
+                "inventory",
+                "look",
+                "take tomato"
+            ]
+        },
+        "done": false,
+        "next_action": "inventory"
+    },
+    {
+        "state": "You drop the tomato on the ground. > -= Bathroom =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "examine tomato",
+                "go south",
+                "inventory",
+                "look",
+                "take tomato"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying nothing. > -= Bathroom =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "examine tomato",
+                "go south",
+                "inventory",
+                "look",
+                "take tomato"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "You are carrying nothing. > -= Bathroom =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "examine tomato",
+                "go south",
+                "inventory",
+                "look",
+                "take tomato"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Corridor =- You've entered a corridor. You need an exit without a door? You should try going east. You need an exit without a door? You should try going north. There is an exit to the south. You need an exit without a door? You should try going west. > -= Corridor =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Corridor =- You've entered a corridor. You need an exit without a door? You should try going east. You need an exit without a door? You should try going north. There is an exit to the south. You need an exit without a door? You should try going west. > -= Corridor =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Bathroom =- Okay, so you're in a bathroom, cool, but is it normal? You better believe it is. There is an exit to the south. Don't worry, there is no door. There is a roasted tomato on the floor. > -= Bathroom =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "examine tomato",
+                "go south",
+                "inventory",
+                "look",
+                "take tomato"
+            ]
+        },
+        "done": false,
+        "next_action": "take tomato"
+    },
+    {
+        "state": "-= Bathroom =- Okay, so you're in a bathroom, cool, but is it normal? You better believe it is. There is an exit to the south. Don't worry, there is no door. There is a roasted tomato on the floor. > -= Bathroom =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "examine tomato",
+                "go south",
+                "inventory",
+                "look",
+                "take tomato"
+            ]
+        },
+        "action": "take tomato",
+        "reward": 0,
+        "next_state": "You pick up the tomato from the ground. > -= Bathroom =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "drop tomato",
+                "eat tomato",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "eat tomato"
+    },
+    {
+        "state": "You pick up the tomato from the ground. > -= Bathroom =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "drop tomato",
+                "eat tomato",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "eat tomato",
+        "reward": 0,
+        "next_state": "You eat the tomato. Not bad. *** You lost! *** You scored 0 out of a possible 7, in 8 turns. Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command? > -= Bathroom =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

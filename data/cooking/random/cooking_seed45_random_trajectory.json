@@ -1,0 +1,870 @@
+[
+    {
+        "state": "You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal! -= Corridor =- You've just walked into a corridor. Okay, just remember what you're here to do, and everything will go great. You don't like doors? Why not try going east, that entranceway is not blocked by one. You need an exit without a door? You should try going south. There is an exit to the west. Don't worry, there is no door. > -= Corridor =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "drop green apple",
+                "drop green hot pepper",
+                "drop yellow bell pepper",
+                "eat green apple",
+                "eat green hot pepper",
+                "eat yellow bell pepper",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "drop green hot pepper",
+        "reward": 0,
+        "next_state": "You drop the green hot pepper on the ground. > -= Corridor =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "drop green apple",
+                "drop yellow bell pepper",
+                "eat green apple",
+                "eat yellow bell pepper",
+                "examine green hot pepper",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take green hot pepper"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "You drop the green hot pepper on the ground. > -= Corridor =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "drop green apple",
+                "drop yellow bell pepper",
+                "eat green apple",
+                "eat yellow bell pepper",
+                "examine green hot pepper",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take green hot pepper"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Bedroom =- You arrive in a bedroom. A normal one. You try to gain information on your surroundings by using a technique you call \"looking.\" You make out a bed. But the thing hasn't got anything on it. What, you think everything in TextWorld should have stuff on it? There is an exit to the east. Don't worry, there is no door. > -= Bedroom =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "drop green apple",
+                "drop yellow bell pepper",
+                "eat green apple",
+                "eat yellow bell pepper",
+                "examine bed",
+                "go east",
+                "inventory",
+                "look",
+                "put green apple on bed",
+                "put yellow bell pepper on bed"
+            ]
+        },
+        "done": false,
+        "next_action": "put green apple on bed"
+    },
+    {
+        "state": "-= Bedroom =- You arrive in a bedroom. A normal one. You try to gain information on your surroundings by using a technique you call \"looking.\" You make out a bed. But the thing hasn't got anything on it. What, you think everything in TextWorld should have stuff on it? There is an exit to the east. Don't worry, there is no door. > -= Bedroom =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "drop green apple",
+                "drop yellow bell pepper",
+                "eat green apple",
+                "eat yellow bell pepper",
+                "examine bed",
+                "go east",
+                "inventory",
+                "look",
+                "put green apple on bed",
+                "put yellow bell pepper on bed"
+            ]
+        },
+        "action": "put green apple on bed",
+        "reward": 0,
+        "next_state": "You put the green apple on the bed. > -= Bedroom =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "drop yellow bell pepper",
+                "eat yellow bell pepper",
+                "examine bed",
+                "examine green apple",
+                "go east",
+                "inventory",
+                "look",
+                "put yellow bell pepper on bed",
+                "take green apple from bed"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "You put the green apple on the bed. > -= Bedroom =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "drop yellow bell pepper",
+                "eat yellow bell pepper",
+                "examine bed",
+                "examine green apple",
+                "go east",
+                "inventory",
+                "look",
+                "put yellow bell pepper on bed",
+                "take green apple from bed"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Bedroom =- You arrive in a bedroom. A normal one. You try to gain information on your surroundings by using a technique you call \"looking.\" You make out a bed. On the bed you can see a green apple. There is an exit to the east. Don't worry, there is no door. > -= Bedroom =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "drop yellow bell pepper",
+                "eat yellow bell pepper",
+                "examine bed",
+                "examine green apple",
+                "go east",
+                "inventory",
+                "look",
+                "put yellow bell pepper on bed",
+                "take green apple from bed"
+            ]
+        },
+        "done": false,
+        "next_action": "take green apple from bed"
+    },
+    {
+        "state": "-= Bedroom =- You arrive in a bedroom. A normal one. You try to gain information on your surroundings by using a technique you call \"looking.\" You make out a bed. On the bed you can see a green apple. There is an exit to the east. Don't worry, there is no door. > -= Bedroom =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "drop yellow bell pepper",
+                "eat yellow bell pepper",
+                "examine bed",
+                "examine green apple",
+                "go east",
+                "inventory",
+                "look",
+                "put yellow bell pepper on bed",
+                "take green apple from bed"
+            ]
+        },
+        "action": "take green apple from bed",
+        "reward": 0,
+        "next_state": "You take the green apple from the bed. > -= Bedroom =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "drop green apple",
+                "drop yellow bell pepper",
+                "eat green apple",
+                "eat yellow bell pepper",
+                "examine bed",
+                "go east",
+                "inventory",
+                "look",
+                "put green apple on bed",
+                "put yellow bell pepper on bed"
+            ]
+        },
+        "done": false,
+        "next_action": "drop yellow bell pepper"
+    },
+    {
+        "state": "You take the green apple from the bed. > -= Bedroom =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "drop green apple",
+                "drop yellow bell pepper",
+                "eat green apple",
+                "eat yellow bell pepper",
+                "examine bed",
+                "go east",
+                "inventory",
+                "look",
+                "put green apple on bed",
+                "put yellow bell pepper on bed"
+            ]
+        },
+        "action": "drop yellow bell pepper",
+        "reward": 0,
+        "next_state": "You drop the yellow bell pepper on the ground. > -= Bedroom =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "drop green apple",
+                "eat green apple",
+                "examine bed",
+                "examine yellow bell pepper",
+                "go east",
+                "inventory",
+                "look",
+                "put green apple on bed",
+                "take yellow bell pepper"
+            ]
+        },
+        "done": false,
+        "next_action": "examine yellow bell pepper"
+    },
+    {
+        "state": "You drop the yellow bell pepper on the ground. > -= Bedroom =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "drop green apple",
+                "eat green apple",
+                "examine bed",
+                "examine yellow bell pepper",
+                "go east",
+                "inventory",
+                "look",
+                "put green apple on bed",
+                "take yellow bell pepper"
+            ]
+        },
+        "action": "examine yellow bell pepper",
+        "reward": 0,
+        "next_state": "That's a yellow bell pepper! > -= Bedroom =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "drop green apple",
+                "eat green apple",
+                "examine bed",
+                "examine yellow bell pepper",
+                "go east",
+                "inventory",
+                "look",
+                "put green apple on bed",
+                "take yellow bell pepper"
+            ]
+        },
+        "done": false,
+        "next_action": "take yellow bell pepper"
+    },
+    {
+        "state": "That's a yellow bell pepper! > -= Bedroom =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "drop green apple",
+                "eat green apple",
+                "examine bed",
+                "examine yellow bell pepper",
+                "go east",
+                "inventory",
+                "look",
+                "put green apple on bed",
+                "take yellow bell pepper"
+            ]
+        },
+        "action": "take yellow bell pepper",
+        "reward": 0,
+        "next_state": "You pick up the yellow bell pepper from the ground. > -= Bedroom =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "drop green apple",
+                "drop yellow bell pepper",
+                "eat green apple",
+                "eat yellow bell pepper",
+                "examine bed",
+                "go east",
+                "inventory",
+                "look",
+                "put green apple on bed",
+                "put yellow bell pepper on bed"
+            ]
+        },
+        "done": false,
+        "next_action": "inventory"
+    },
+    {
+        "state": "You pick up the yellow bell pepper from the ground. > -= Bedroom =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "drop green apple",
+                "drop yellow bell pepper",
+                "eat green apple",
+                "eat yellow bell pepper",
+                "examine bed",
+                "go east",
+                "inventory",
+                "look",
+                "put green apple on bed",
+                "put yellow bell pepper on bed"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying: a yellow bell pepper and a green apple. > -= Bedroom =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "drop green apple",
+                "drop yellow bell pepper",
+                "eat green apple",
+                "eat yellow bell pepper",
+                "examine bed",
+                "go east",
+                "inventory",
+                "look",
+                "put green apple on bed",
+                "put yellow bell pepper on bed"
+            ]
+        },
+        "done": false,
+        "next_action": "put yellow bell pepper on bed"
+    },
+    {
+        "state": "You are carrying: a yellow bell pepper and a green apple. > -= Bedroom =-0/10",
+        "infos": {
+            "admissible_commands": [
+                "drop green apple",
+                "drop yellow bell pepper",
+                "eat green apple",
+                "eat yellow bell pepper",
+                "examine bed",
+                "go east",
+                "inventory",
+                "look",
+                "put green apple on bed",
+                "put yellow bell pepper on bed"
+            ]
+        },
+        "action": "put yellow bell pepper on bed",
+        "reward": 0,
+        "next_state": "You put the yellow bell pepper on the bed. > -= Bedroom =-0/11",
+        "next_infos": {
+            "admissible_commands": [
+                "drop green apple",
+                "eat green apple",
+                "examine bed",
+                "examine yellow bell pepper",
+                "go east",
+                "inventory",
+                "look",
+                "put green apple on bed",
+                "take yellow bell pepper from bed"
+            ]
+        },
+        "done": false,
+        "next_action": "examine yellow bell pepper"
+    },
+    {
+        "state": "You put the yellow bell pepper on the bed. > -= Bedroom =-0/11",
+        "infos": {
+            "admissible_commands": [
+                "drop green apple",
+                "eat green apple",
+                "examine bed",
+                "examine yellow bell pepper",
+                "go east",
+                "inventory",
+                "look",
+                "put green apple on bed",
+                "take yellow bell pepper from bed"
+            ]
+        },
+        "action": "examine yellow bell pepper",
+        "reward": 0,
+        "next_state": "That's a yellow bell pepper! > -= Bedroom =-0/12",
+        "next_infos": {
+            "admissible_commands": [
+                "drop green apple",
+                "eat green apple",
+                "examine bed",
+                "examine yellow bell pepper",
+                "go east",
+                "inventory",
+                "look",
+                "put green apple on bed",
+                "take yellow bell pepper from bed"
+            ]
+        },
+        "done": false,
+        "next_action": "inventory"
+    },
+    {
+        "state": "That's a yellow bell pepper! > -= Bedroom =-0/12",
+        "infos": {
+            "admissible_commands": [
+                "drop green apple",
+                "eat green apple",
+                "examine bed",
+                "examine yellow bell pepper",
+                "go east",
+                "inventory",
+                "look",
+                "put green apple on bed",
+                "take yellow bell pepper from bed"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying: a green apple. > -= Bedroom =-0/13",
+        "next_infos": {
+            "admissible_commands": [
+                "drop green apple",
+                "eat green apple",
+                "examine bed",
+                "examine yellow bell pepper",
+                "go east",
+                "inventory",
+                "look",
+                "put green apple on bed",
+                "take yellow bell pepper from bed"
+            ]
+        },
+        "done": false,
+        "next_action": "examine bed"
+    },
+    {
+        "state": "You are carrying: a green apple. > -= Bedroom =-0/13",
+        "infos": {
+            "admissible_commands": [
+                "drop green apple",
+                "eat green apple",
+                "examine bed",
+                "examine yellow bell pepper",
+                "go east",
+                "inventory",
+                "look",
+                "put green apple on bed",
+                "take yellow bell pepper from bed"
+            ]
+        },
+        "action": "examine bed",
+        "reward": 0,
+        "next_state": "The bed is solidly built. On the bed is a yellow bell pepper. > -= Bedroom =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "drop green apple",
+                "eat green apple",
+                "examine bed",
+                "examine yellow bell pepper",
+                "go east",
+                "inventory",
+                "look",
+                "put green apple on bed",
+                "take yellow bell pepper from bed"
+            ]
+        },
+        "done": false,
+        "next_action": "inventory"
+    },
+    {
+        "state": "The bed is solidly built. On the bed is a yellow bell pepper. > -= Bedroom =-0/14",
+        "infos": {
+            "admissible_commands": [
+                "drop green apple",
+                "eat green apple",
+                "examine bed",
+                "examine yellow bell pepper",
+                "go east",
+                "inventory",
+                "look",
+                "put green apple on bed",
+                "take yellow bell pepper from bed"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying: a green apple. > -= Bedroom =-0/15",
+        "next_infos": {
+            "admissible_commands": [
+                "drop green apple",
+                "eat green apple",
+                "examine bed",
+                "examine yellow bell pepper",
+                "go east",
+                "inventory",
+                "look",
+                "put green apple on bed",
+                "take yellow bell pepper from bed"
+            ]
+        },
+        "done": false,
+        "next_action": "take yellow bell pepper from bed"
+    },
+    {
+        "state": "You are carrying: a green apple. > -= Bedroom =-0/15",
+        "infos": {
+            "admissible_commands": [
+                "drop green apple",
+                "eat green apple",
+                "examine bed",
+                "examine yellow bell pepper",
+                "go east",
+                "inventory",
+                "look",
+                "put green apple on bed",
+                "take yellow bell pepper from bed"
+            ]
+        },
+        "action": "take yellow bell pepper from bed",
+        "reward": 0,
+        "next_state": "You take the yellow bell pepper from the bed. > -= Bedroom =-0/16",
+        "next_infos": {
+            "admissible_commands": [
+                "drop green apple",
+                "drop yellow bell pepper",
+                "eat green apple",
+                "eat yellow bell pepper",
+                "examine bed",
+                "go east",
+                "inventory",
+                "look",
+                "put green apple on bed",
+                "put yellow bell pepper on bed"
+            ]
+        },
+        "done": false,
+        "next_action": "drop green apple"
+    },
+    {
+        "state": "You take the yellow bell pepper from the bed. > -= Bedroom =-0/16",
+        "infos": {
+            "admissible_commands": [
+                "drop green apple",
+                "drop yellow bell pepper",
+                "eat green apple",
+                "eat yellow bell pepper",
+                "examine bed",
+                "go east",
+                "inventory",
+                "look",
+                "put green apple on bed",
+                "put yellow bell pepper on bed"
+            ]
+        },
+        "action": "drop green apple",
+        "reward": 0,
+        "next_state": "You drop the green apple on the ground. > -= Bedroom =-0/17",
+        "next_infos": {
+            "admissible_commands": [
+                "drop yellow bell pepper",
+                "eat yellow bell pepper",
+                "examine bed",
+                "examine green apple",
+                "go east",
+                "inventory",
+                "look",
+                "put yellow bell pepper on bed",
+                "take green apple"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "You drop the green apple on the ground. > -= Bedroom =-0/17",
+        "infos": {
+            "admissible_commands": [
+                "drop yellow bell pepper",
+                "eat yellow bell pepper",
+                "examine bed",
+                "examine green apple",
+                "go east",
+                "inventory",
+                "look",
+                "put yellow bell pepper on bed",
+                "take green apple"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Bedroom =- You arrive in a bedroom. A normal one. You try to gain information on your surroundings by using a technique you call \"looking.\" You make out a bed. But the thing hasn't got anything on it. What, you think everything in TextWorld should have stuff on it? There is an exit to the east. Don't worry, there is no door. There is a green apple on the floor. > -= Bedroom =-0/18",
+        "next_infos": {
+            "admissible_commands": [
+                "drop yellow bell pepper",
+                "eat yellow bell pepper",
+                "examine bed",
+                "examine green apple",
+                "go east",
+                "inventory",
+                "look",
+                "put yellow bell pepper on bed",
+                "take green apple"
+            ]
+        },
+        "done": false,
+        "next_action": "examine green apple"
+    },
+    {
+        "state": "-= Bedroom =- You arrive in a bedroom. A normal one. You try to gain information on your surroundings by using a technique you call \"looking.\" You make out a bed. But the thing hasn't got anything on it. What, you think everything in TextWorld should have stuff on it? There is an exit to the east. Don't worry, there is no door. There is a green apple on the floor. > -= Bedroom =-0/18",
+        "infos": {
+            "admissible_commands": [
+                "drop yellow bell pepper",
+                "eat yellow bell pepper",
+                "examine bed",
+                "examine green apple",
+                "go east",
+                "inventory",
+                "look",
+                "put yellow bell pepper on bed",
+                "take green apple"
+            ]
+        },
+        "action": "examine green apple",
+        "reward": 0,
+        "next_state": "The green apple looks appetizing. > -= Bedroom =-0/19",
+        "next_infos": {
+            "admissible_commands": [
+                "drop yellow bell pepper",
+                "eat yellow bell pepper",
+                "examine bed",
+                "examine green apple",
+                "go east",
+                "inventory",
+                "look",
+                "put yellow bell pepper on bed",
+                "take green apple"
+            ]
+        },
+        "done": false,
+        "next_action": "inventory"
+    },
+    {
+        "state": "The green apple looks appetizing. > -= Bedroom =-0/19",
+        "infos": {
+            "admissible_commands": [
+                "drop yellow bell pepper",
+                "eat yellow bell pepper",
+                "examine bed",
+                "examine green apple",
+                "go east",
+                "inventory",
+                "look",
+                "put yellow bell pepper on bed",
+                "take green apple"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying: a yellow bell pepper. > -= Bedroom =-0/20",
+        "next_infos": {
+            "admissible_commands": [
+                "drop yellow bell pepper",
+                "eat yellow bell pepper",
+                "examine bed",
+                "examine green apple",
+                "go east",
+                "inventory",
+                "look",
+                "put yellow bell pepper on bed",
+                "take green apple"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "You are carrying: a yellow bell pepper. > -= Bedroom =-0/20",
+        "infos": {
+            "admissible_commands": [
+                "drop yellow bell pepper",
+                "eat yellow bell pepper",
+                "examine bed",
+                "examine green apple",
+                "go east",
+                "inventory",
+                "look",
+                "put yellow bell pepper on bed",
+                "take green apple"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Bedroom =- You arrive in a bedroom. A normal one. You try to gain information on your surroundings by using a technique you call \"looking.\" You make out a bed. But the thing hasn't got anything on it. What, you think everything in TextWorld should have stuff on it? There is an exit to the east. Don't worry, there is no door. There is a green apple on the floor. > -= Bedroom =-0/21",
+        "next_infos": {
+            "admissible_commands": [
+                "drop yellow bell pepper",
+                "eat yellow bell pepper",
+                "examine bed",
+                "examine green apple",
+                "go east",
+                "inventory",
+                "look",
+                "put yellow bell pepper on bed",
+                "take green apple"
+            ]
+        },
+        "done": false,
+        "next_action": "inventory"
+    },
+    {
+        "state": "-= Bedroom =- You arrive in a bedroom. A normal one. You try to gain information on your surroundings by using a technique you call \"looking.\" You make out a bed. But the thing hasn't got anything on it. What, you think everything in TextWorld should have stuff on it? There is an exit to the east. Don't worry, there is no door. There is a green apple on the floor. > -= Bedroom =-0/21",
+        "infos": {
+            "admissible_commands": [
+                "drop yellow bell pepper",
+                "eat yellow bell pepper",
+                "examine bed",
+                "examine green apple",
+                "go east",
+                "inventory",
+                "look",
+                "put yellow bell pepper on bed",
+                "take green apple"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying: a yellow bell pepper. > -= Bedroom =-0/22",
+        "next_infos": {
+            "admissible_commands": [
+                "drop yellow bell pepper",
+                "eat yellow bell pepper",
+                "examine bed",
+                "examine green apple",
+                "go east",
+                "inventory",
+                "look",
+                "put yellow bell pepper on bed",
+                "take green apple"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "You are carrying: a yellow bell pepper. > -= Bedroom =-0/22",
+        "infos": {
+            "admissible_commands": [
+                "drop yellow bell pepper",
+                "eat yellow bell pepper",
+                "examine bed",
+                "examine green apple",
+                "go east",
+                "inventory",
+                "look",
+                "put yellow bell pepper on bed",
+                "take green apple"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Bedroom =- You arrive in a bedroom. A normal one. You try to gain information on your surroundings by using a technique you call \"looking.\" You make out a bed. But the thing hasn't got anything on it. What, you think everything in TextWorld should have stuff on it? There is an exit to the east. Don't worry, there is no door. There is a green apple on the floor. > -= Bedroom =-0/23",
+        "next_infos": {
+            "admissible_commands": [
+                "drop yellow bell pepper",
+                "eat yellow bell pepper",
+                "examine bed",
+                "examine green apple",
+                "go east",
+                "inventory",
+                "look",
+                "put yellow bell pepper on bed",
+                "take green apple"
+            ]
+        },
+        "done": false,
+        "next_action": "take green apple"
+    },
+    {
+        "state": "-= Bedroom =- You arrive in a bedroom. A normal one. You try to gain information on your surroundings by using a technique you call \"looking.\" You make out a bed. But the thing hasn't got anything on it. What, you think everything in TextWorld should have stuff on it? There is an exit to the east. Don't worry, there is no door. There is a green apple on the floor. > -= Bedroom =-0/23",
+        "infos": {
+            "admissible_commands": [
+                "drop yellow bell pepper",
+                "eat yellow bell pepper",
+                "examine bed",
+                "examine green apple",
+                "go east",
+                "inventory",
+                "look",
+                "put yellow bell pepper on bed",
+                "take green apple"
+            ]
+        },
+        "action": "take green apple",
+        "reward": 0,
+        "next_state": "You pick up the green apple from the ground. > -= Bedroom =-0/24",
+        "next_infos": {
+            "admissible_commands": [
+                "drop green apple",
+                "drop yellow bell pepper",
+                "eat green apple",
+                "eat yellow bell pepper",
+                "examine bed",
+                "go east",
+                "inventory",
+                "look",
+                "put green apple on bed",
+                "put yellow bell pepper on bed"
+            ]
+        },
+        "done": false,
+        "next_action": "put yellow bell pepper on bed"
+    },
+    {
+        "state": "You pick up the green apple from the ground. > -= Bedroom =-0/24",
+        "infos": {
+            "admissible_commands": [
+                "drop green apple",
+                "drop yellow bell pepper",
+                "eat green apple",
+                "eat yellow bell pepper",
+                "examine bed",
+                "go east",
+                "inventory",
+                "look",
+                "put green apple on bed",
+                "put yellow bell pepper on bed"
+            ]
+        },
+        "action": "put yellow bell pepper on bed",
+        "reward": 0,
+        "next_state": "You put the yellow bell pepper on the bed. > -= Bedroom =-0/25",
+        "next_infos": {
+            "admissible_commands": [
+                "drop green apple",
+                "eat green apple",
+                "examine bed",
+                "examine yellow bell pepper",
+                "go east",
+                "inventory",
+                "look",
+                "put green apple on bed",
+                "take yellow bell pepper from bed"
+            ]
+        },
+        "done": false,
+        "next_action": "examine yellow bell pepper"
+    },
+    {
+        "state": "You put the yellow bell pepper on the bed. > -= Bedroom =-0/25",
+        "infos": {
+            "admissible_commands": [
+                "drop green apple",
+                "eat green apple",
+                "examine bed",
+                "examine yellow bell pepper",
+                "go east",
+                "inventory",
+                "look",
+                "put green apple on bed",
+                "take yellow bell pepper from bed"
+            ]
+        },
+        "action": "examine yellow bell pepper",
+        "reward": 0,
+        "next_state": "That's a yellow bell pepper! > -= Bedroom =-0/26",
+        "next_infos": {
+            "admissible_commands": [
+                "drop green apple",
+                "eat green apple",
+                "examine bed",
+                "examine yellow bell pepper",
+                "go east",
+                "inventory",
+                "look",
+                "put green apple on bed",
+                "take yellow bell pepper from bed"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

@@ -1,0 +1,789 @@
+[
+    {
+        "state": "You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal! -= Bedroom =- Ah, the bedroom. This is some kind of bedroom, really great usual vibes in this place, a wonderful usual atmosphere. You can barely contain your excitement. You see a bed. The bed is large. But oh no! there's nothing on this piece of garbage. You need an exit without a door? You should try going north. > -= Bedroom =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "drop green apple",
+                "drop green hot pepper",
+                "drop red hot pepper",
+                "eat green apple",
+                "eat green hot pepper",
+                "eat red hot pepper",
+                "examine bed",
+                "go north",
+                "inventory",
+                "look",
+                "put green apple on bed",
+                "put green hot pepper on bed",
+                "put red hot pepper on bed"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying: a green hot pepper, a green apple and a red hot pepper. > -= Bedroom =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "drop green apple",
+                "drop green hot pepper",
+                "drop red hot pepper",
+                "eat green apple",
+                "eat green hot pepper",
+                "eat red hot pepper",
+                "examine bed",
+                "go north",
+                "inventory",
+                "look",
+                "put green apple on bed",
+                "put green hot pepper on bed",
+                "put red hot pepper on bed"
+            ]
+        },
+        "done": false,
+        "next_action": "eat red hot pepper"
+    },
+    {
+        "state": "You are carrying: a green hot pepper, a green apple and a red hot pepper. > -= Bedroom =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "drop green apple",
+                "drop green hot pepper",
+                "drop red hot pepper",
+                "eat green apple",
+                "eat green hot pepper",
+                "eat red hot pepper",
+                "examine bed",
+                "go north",
+                "inventory",
+                "look",
+                "put green apple on bed",
+                "put green hot pepper on bed",
+                "put red hot pepper on bed"
+            ]
+        },
+        "action": "eat red hot pepper",
+        "reward": 0,
+        "next_state": "You eat the red hot pepper. Not bad. > -= Bedroom =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "drop green apple",
+                "drop green hot pepper",
+                "eat green apple",
+                "eat green hot pepper",
+                "examine bed",
+                "go north",
+                "inventory",
+                "look",
+                "put green apple on bed",
+                "put green hot pepper on bed"
+            ]
+        },
+        "done": false,
+        "next_action": "put green apple on bed"
+    },
+    {
+        "state": "You eat the red hot pepper. Not bad. > -= Bedroom =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "drop green apple",
+                "drop green hot pepper",
+                "eat green apple",
+                "eat green hot pepper",
+                "examine bed",
+                "go north",
+                "inventory",
+                "look",
+                "put green apple on bed",
+                "put green hot pepper on bed"
+            ]
+        },
+        "action": "put green apple on bed",
+        "reward": 0,
+        "next_state": "You put the green apple on the bed. > -= Bedroom =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "drop green hot pepper",
+                "eat green hot pepper",
+                "examine bed",
+                "examine green apple",
+                "go north",
+                "inventory",
+                "look",
+                "put green hot pepper on bed",
+                "take green apple from bed"
+            ]
+        },
+        "done": false,
+        "next_action": "put green hot pepper on bed"
+    },
+    {
+        "state": "You put the green apple on the bed. > -= Bedroom =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "drop green hot pepper",
+                "eat green hot pepper",
+                "examine bed",
+                "examine green apple",
+                "go north",
+                "inventory",
+                "look",
+                "put green hot pepper on bed",
+                "take green apple from bed"
+            ]
+        },
+        "action": "put green hot pepper on bed",
+        "reward": 0,
+        "next_state": "You put the green hot pepper on the bed. > -= Bedroom =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine green apple",
+                "examine green hot pepper",
+                "go north",
+                "inventory",
+                "look",
+                "take green apple from bed",
+                "take green hot pepper from bed"
+            ]
+        },
+        "done": false,
+        "next_action": "examine green apple"
+    },
+    {
+        "state": "You put the green hot pepper on the bed. > -= Bedroom =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine green apple",
+                "examine green hot pepper",
+                "go north",
+                "inventory",
+                "look",
+                "take green apple from bed",
+                "take green hot pepper from bed"
+            ]
+        },
+        "action": "examine green apple",
+        "reward": 0,
+        "next_state": "The green apple looks delicious. > -= Bedroom =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine green apple",
+                "examine green hot pepper",
+                "go north",
+                "inventory",
+                "look",
+                "take green apple from bed",
+                "take green hot pepper from bed"
+            ]
+        },
+        "done": false,
+        "next_action": "examine green apple"
+    },
+    {
+        "state": "The green apple looks delicious. > -= Bedroom =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine green apple",
+                "examine green hot pepper",
+                "go north",
+                "inventory",
+                "look",
+                "take green apple from bed",
+                "take green hot pepper from bed"
+            ]
+        },
+        "action": "examine green apple",
+        "reward": 0,
+        "next_state": "The green apple looks delicious. > -= Bedroom =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine green apple",
+                "examine green hot pepper",
+                "go north",
+                "inventory",
+                "look",
+                "take green apple from bed",
+                "take green hot pepper from bed"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "The green apple looks delicious. > -= Bedroom =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine green apple",
+                "examine green hot pepper",
+                "go north",
+                "inventory",
+                "look",
+                "take green apple from bed",
+                "take green hot pepper from bed"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Bedroom =- Ah, the bedroom. This is some kind of bedroom, really great usual vibes in this place, a wonderful usual atmosphere. You can barely contain your excitement. You see a bed. The bed is large. On the bed you see a green hot pepper and a green apple. You need an exit without a door? You should try going north. > -= Bedroom =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine green apple",
+                "examine green hot pepper",
+                "go north",
+                "inventory",
+                "look",
+                "take green apple from bed",
+                "take green hot pepper from bed"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "-= Bedroom =- Ah, the bedroom. This is some kind of bedroom, really great usual vibes in this place, a wonderful usual atmosphere. You can barely contain your excitement. You see a bed. The bed is large. On the bed you see a green hot pepper and a green apple. You need an exit without a door? You should try going north. > -= Bedroom =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine green apple",
+                "examine green hot pepper",
+                "go north",
+                "inventory",
+                "look",
+                "take green apple from bed",
+                "take green hot pepper from bed"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Bedroom =- Ah, the bedroom. This is some kind of bedroom, really great usual vibes in this place, a wonderful usual atmosphere. You can barely contain your excitement. You see a bed. The bed is large. On the bed you see a green hot pepper and a green apple. You need an exit without a door? You should try going north. > -= Bedroom =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine green apple",
+                "examine green hot pepper",
+                "go north",
+                "inventory",
+                "look",
+                "take green apple from bed",
+                "take green hot pepper from bed"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "-= Bedroom =- Ah, the bedroom. This is some kind of bedroom, really great usual vibes in this place, a wonderful usual atmosphere. You can barely contain your excitement. You see a bed. The bed is large. On the bed you see a green hot pepper and a green apple. You need an exit without a door? You should try going north. > -= Bedroom =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine green apple",
+                "examine green hot pepper",
+                "go north",
+                "inventory",
+                "look",
+                "take green apple from bed",
+                "take green hot pepper from bed"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Bedroom =- Ah, the bedroom. This is some kind of bedroom, really great usual vibes in this place, a wonderful usual atmosphere. You can barely contain your excitement. You see a bed. The bed is large. On the bed you see a green hot pepper and a green apple. You need an exit without a door? You should try going north. > -= Bedroom =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine green apple",
+                "examine green hot pepper",
+                "go north",
+                "inventory",
+                "look",
+                "take green apple from bed",
+                "take green hot pepper from bed"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "-= Bedroom =- Ah, the bedroom. This is some kind of bedroom, really great usual vibes in this place, a wonderful usual atmosphere. You can barely contain your excitement. You see a bed. The bed is large. On the bed you see a green hot pepper and a green apple. You need an exit without a door? You should try going north. > -= Bedroom =-0/10",
+        "infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine green apple",
+                "examine green hot pepper",
+                "go north",
+                "inventory",
+                "look",
+                "take green apple from bed",
+                "take green hot pepper from bed"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Bedroom =- Ah, the bedroom. This is some kind of bedroom, really great usual vibes in this place, a wonderful usual atmosphere. You can barely contain your excitement. You see a bed. The bed is large. On the bed you see a green hot pepper and a green apple. You need an exit without a door? You should try going north. > -= Bedroom =-0/11",
+        "next_infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine green apple",
+                "examine green hot pepper",
+                "go north",
+                "inventory",
+                "look",
+                "take green apple from bed",
+                "take green hot pepper from bed"
+            ]
+        },
+        "done": false,
+        "next_action": "take green hot pepper from bed"
+    },
+    {
+        "state": "-= Bedroom =- Ah, the bedroom. This is some kind of bedroom, really great usual vibes in this place, a wonderful usual atmosphere. You can barely contain your excitement. You see a bed. The bed is large. On the bed you see a green hot pepper and a green apple. You need an exit without a door? You should try going north. > -= Bedroom =-0/11",
+        "infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine green apple",
+                "examine green hot pepper",
+                "go north",
+                "inventory",
+                "look",
+                "take green apple from bed",
+                "take green hot pepper from bed"
+            ]
+        },
+        "action": "take green hot pepper from bed",
+        "reward": 0,
+        "next_state": "You take the green hot pepper from the bed. > -= Bedroom =-0/12",
+        "next_infos": {
+            "admissible_commands": [
+                "drop green hot pepper",
+                "eat green hot pepper",
+                "examine bed",
+                "examine green apple",
+                "go north",
+                "inventory",
+                "look",
+                "put green hot pepper on bed",
+                "take green apple from bed"
+            ]
+        },
+        "done": false,
+        "next_action": "inventory"
+    },
+    {
+        "state": "You take the green hot pepper from the bed. > -= Bedroom =-0/12",
+        "infos": {
+            "admissible_commands": [
+                "drop green hot pepper",
+                "eat green hot pepper",
+                "examine bed",
+                "examine green apple",
+                "go north",
+                "inventory",
+                "look",
+                "put green hot pepper on bed",
+                "take green apple from bed"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying: a green hot pepper. > -= Bedroom =-0/13",
+        "next_infos": {
+            "admissible_commands": [
+                "drop green hot pepper",
+                "eat green hot pepper",
+                "examine bed",
+                "examine green apple",
+                "go north",
+                "inventory",
+                "look",
+                "put green hot pepper on bed",
+                "take green apple from bed"
+            ]
+        },
+        "done": false,
+        "next_action": "take green apple from bed"
+    },
+    {
+        "state": "You are carrying: a green hot pepper. > -= Bedroom =-0/13",
+        "infos": {
+            "admissible_commands": [
+                "drop green hot pepper",
+                "eat green hot pepper",
+                "examine bed",
+                "examine green apple",
+                "go north",
+                "inventory",
+                "look",
+                "put green hot pepper on bed",
+                "take green apple from bed"
+            ]
+        },
+        "action": "take green apple from bed",
+        "reward": 0,
+        "next_state": "You take the green apple from the bed. > -= Bedroom =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "drop green apple",
+                "drop green hot pepper",
+                "eat green apple",
+                "eat green hot pepper",
+                "examine bed",
+                "go north",
+                "inventory",
+                "look",
+                "put green apple on bed",
+                "put green hot pepper on bed"
+            ]
+        },
+        "done": false,
+        "next_action": "put green apple on bed"
+    },
+    {
+        "state": "You take the green apple from the bed. > -= Bedroom =-0/14",
+        "infos": {
+            "admissible_commands": [
+                "drop green apple",
+                "drop green hot pepper",
+                "eat green apple",
+                "eat green hot pepper",
+                "examine bed",
+                "go north",
+                "inventory",
+                "look",
+                "put green apple on bed",
+                "put green hot pepper on bed"
+            ]
+        },
+        "action": "put green apple on bed",
+        "reward": 0,
+        "next_state": "You put the green apple on the bed. > -= Bedroom =-0/15",
+        "next_infos": {
+            "admissible_commands": [
+                "drop green hot pepper",
+                "eat green hot pepper",
+                "examine bed",
+                "examine green apple",
+                "go north",
+                "inventory",
+                "look",
+                "put green hot pepper on bed",
+                "take green apple from bed"
+            ]
+        },
+        "done": false,
+        "next_action": "drop green hot pepper"
+    },
+    {
+        "state": "You put the green apple on the bed. > -= Bedroom =-0/15",
+        "infos": {
+            "admissible_commands": [
+                "drop green hot pepper",
+                "eat green hot pepper",
+                "examine bed",
+                "examine green apple",
+                "go north",
+                "inventory",
+                "look",
+                "put green hot pepper on bed",
+                "take green apple from bed"
+            ]
+        },
+        "action": "drop green hot pepper",
+        "reward": 0,
+        "next_state": "You drop the green hot pepper on the ground. > -= Bedroom =-0/16",
+        "next_infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine green apple",
+                "examine green hot pepper",
+                "go north",
+                "inventory",
+                "look",
+                "take green apple from bed",
+                "take green hot pepper"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "You drop the green hot pepper on the ground. > -= Bedroom =-0/16",
+        "infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine green apple",
+                "examine green hot pepper",
+                "go north",
+                "inventory",
+                "look",
+                "take green apple from bed",
+                "take green hot pepper"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Livingroom =- You're now in a livingroom. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. You see a sofa. The sofa is comfy. But the thing is empty. You don't like doors? Why not try going east, that entranceway is not blocked by one. You don't like doors? Why not try going south, that entranceway is not blocked by one. There is an exit to the west. > -= Livingroom =-0/17",
+        "next_infos": {
+            "admissible_commands": [
+                "examine sofa",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Livingroom =- You're now in a livingroom. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. You see a sofa. The sofa is comfy. But the thing is empty. You don't like doors? Why not try going east, that entranceway is not blocked by one. You don't like doors? Why not try going south, that entranceway is not blocked by one. There is an exit to the west. > -= Livingroom =-0/17",
+        "infos": {
+            "admissible_commands": [
+                "examine sofa",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Bedroom =- Ah, the bedroom. This is some kind of bedroom, really great usual vibes in this place, a wonderful usual atmosphere. You can barely contain your excitement. You see a bed. The bed is large. On the bed you see a green apple. You need an exit without a door? You should try going north. There is a green hot pepper on the floor. > -= Bedroom =-0/18",
+        "next_infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine green apple",
+                "examine green hot pepper",
+                "go north",
+                "inventory",
+                "look",
+                "take green apple from bed",
+                "take green hot pepper"
+            ]
+        },
+        "done": false,
+        "next_action": "inventory"
+    },
+    {
+        "state": "-= Bedroom =- Ah, the bedroom. This is some kind of bedroom, really great usual vibes in this place, a wonderful usual atmosphere. You can barely contain your excitement. You see a bed. The bed is large. On the bed you see a green apple. You need an exit without a door? You should try going north. There is a green hot pepper on the floor. > -= Bedroom =-0/18",
+        "infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine green apple",
+                "examine green hot pepper",
+                "go north",
+                "inventory",
+                "look",
+                "take green apple from bed",
+                "take green hot pepper"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying nothing. > -= Bedroom =-0/19",
+        "next_infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine green apple",
+                "examine green hot pepper",
+                "go north",
+                "inventory",
+                "look",
+                "take green apple from bed",
+                "take green hot pepper"
+            ]
+        },
+        "done": false,
+        "next_action": "examine bed"
+    },
+    {
+        "state": "You are carrying nothing. > -= Bedroom =-0/19",
+        "infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine green apple",
+                "examine green hot pepper",
+                "go north",
+                "inventory",
+                "look",
+                "take green apple from bed",
+                "take green hot pepper"
+            ]
+        },
+        "action": "examine bed",
+        "reward": 0,
+        "next_state": "The bed is undependable. On the bed is a green apple. > -= Bedroom =-0/20",
+        "next_infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine green apple",
+                "examine green hot pepper",
+                "go north",
+                "inventory",
+                "look",
+                "take green apple from bed",
+                "take green hot pepper"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "The bed is undependable. On the bed is a green apple. > -= Bedroom =-0/20",
+        "infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine green apple",
+                "examine green hot pepper",
+                "go north",
+                "inventory",
+                "look",
+                "take green apple from bed",
+                "take green hot pepper"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Livingroom =- You're now in a livingroom. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. You see a sofa. The sofa is comfy. But the thing is empty. You don't like doors? Why not try going east, that entranceway is not blocked by one. You don't like doors? Why not try going south, that entranceway is not blocked by one. There is an exit to the west. > -= Livingroom =-0/21",
+        "next_infos": {
+            "admissible_commands": [
+                "examine sofa",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Livingroom =- You're now in a livingroom. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. You see a sofa. The sofa is comfy. But the thing is empty. You don't like doors? Why not try going east, that entranceway is not blocked by one. You don't like doors? Why not try going south, that entranceway is not blocked by one. There is an exit to the west. > -= Livingroom =-0/21",
+        "infos": {
+            "admissible_commands": [
+                "examine sofa",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Corridor =- You find yourself in a corridor. An usual kind of place. There is an exit to the south. You need an exit without a door? You should try going west. > -= Corridor =-0/22",
+        "next_infos": {
+            "admissible_commands": [
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Corridor =- You find yourself in a corridor. An usual kind of place. There is an exit to the south. You need an exit without a door? You should try going west. > -= Corridor =-0/22",
+        "infos": {
+            "admissible_commands": [
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Bathroom =- You arrive in a bathroom. An usual one. You start to take note of what's in the room. You can see a toilet. The toilet appears to be empty. You need an exit without a door? You should try going north. > -= Bathroom =-0/23",
+        "next_infos": {
+            "admissible_commands": [
+                "examine toilet",
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Bathroom =- You arrive in a bathroom. An usual one. You start to take note of what's in the room. You can see a toilet. The toilet appears to be empty. You need an exit without a door? You should try going north. > -= Bathroom =-0/23",
+        "infos": {
+            "admissible_commands": [
+                "examine toilet",
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Corridor =- You find yourself in a corridor. An usual kind of place. There is an exit to the south. You need an exit without a door? You should try going west. > -= Corridor =-0/24",
+        "next_infos": {
+            "admissible_commands": [
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "-= Corridor =- You find yourself in a corridor. An usual kind of place. There is an exit to the south. You need an exit without a door? You should try going west. > -= Corridor =-0/24",
+        "infos": {
+            "admissible_commands": [
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Corridor =- You find yourself in a corridor. An usual kind of place. There is an exit to the south. You need an exit without a door? You should try going west. > -= Corridor =-0/25",
+        "next_infos": {
+            "admissible_commands": [
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "-= Corridor =- You find yourself in a corridor. An usual kind of place. There is an exit to the south. You need an exit without a door? You should try going west. > -= Corridor =-0/25",
+        "infos": {
+            "admissible_commands": [
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Corridor =- You find yourself in a corridor. An usual kind of place. There is an exit to the south. You need an exit without a door? You should try going west. > -= Corridor =-0/26",
+        "next_infos": {
+            "admissible_commands": [
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

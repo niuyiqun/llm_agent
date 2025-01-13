@@ -1,0 +1,105 @@
+[
+    {
+        "state": "You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal! -= Pantry =- You make another one of your grand eccentric entrances into a pantry. You can make out a shelf. The shelf is wooden. But the thing hasn't got anything on it. Hopefully this doesn't make you too upset. There is an open plain door leading south. > -= Pantry =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "close plain door",
+                "drop orange bell pepper",
+                "drop red hot pepper",
+                "eat orange bell pepper",
+                "eat red hot pepper",
+                "examine shelf",
+                "go south",
+                "inventory",
+                "look",
+                "put orange bell pepper on shelf",
+                "put red hot pepper on shelf"
+            ]
+        },
+        "action": "close plain door",
+        "reward": 0,
+        "next_state": "You close plain door. > -= Pantry =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "drop orange bell pepper",
+                "drop red hot pepper",
+                "eat orange bell pepper",
+                "eat red hot pepper",
+                "examine shelf",
+                "inventory",
+                "look",
+                "open plain door",
+                "put orange bell pepper on shelf",
+                "put red hot pepper on shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "put red hot pepper on shelf"
+    },
+    {
+        "state": "You close plain door. > -= Pantry =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "drop orange bell pepper",
+                "drop red hot pepper",
+                "eat orange bell pepper",
+                "eat red hot pepper",
+                "examine shelf",
+                "inventory",
+                "look",
+                "open plain door",
+                "put orange bell pepper on shelf",
+                "put red hot pepper on shelf"
+            ]
+        },
+        "action": "put red hot pepper on shelf",
+        "reward": 0,
+        "next_state": "You put the red hot pepper on the shelf. > -= Pantry =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "drop orange bell pepper",
+                "eat orange bell pepper",
+                "examine red hot pepper",
+                "examine shelf",
+                "inventory",
+                "look",
+                "open plain door",
+                "put orange bell pepper on shelf",
+                "take red hot pepper from shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "eat orange bell pepper"
+    },
+    {
+        "state": "You put the red hot pepper on the shelf. > -= Pantry =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "drop orange bell pepper",
+                "eat orange bell pepper",
+                "examine red hot pepper",
+                "examine shelf",
+                "inventory",
+                "look",
+                "open plain door",
+                "put orange bell pepper on shelf",
+                "take red hot pepper from shelf"
+            ]
+        },
+        "action": "eat orange bell pepper",
+        "reward": 0,
+        "next_state": "You eat the orange bell pepper. Not bad. *** You lost! *** You scored 0 out of a possible 7, in 3 turns. Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command? > -= Pantry =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "examine red hot pepper",
+                "examine shelf",
+                "inventory",
+                "look",
+                "open plain door",
+                "take red hot pepper from shelf"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

@@ -1,0 +1,940 @@
+[
+    {
+        "state": "You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal! -= Corridor =- You arrive in a corridor. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. You don't like doors? Why not try going north, that entranceway is not blocked by one. You don't like doors? Why not try going south, that entranceway is not blocked by one. There is an exit to the west. > -= Corridor =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop white onion",
+                "drop white tuna",
+                "eat white onion",
+                "eat white tuna",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying: a fried white tuna, a white onion and a raw red tuna. > -= Corridor =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop white onion",
+                "drop white tuna",
+                "eat white onion",
+                "eat white tuna",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "You are carrying: a fried white tuna, a white onion and a raw red tuna. > -= Corridor =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop white onion",
+                "drop white tuna",
+                "eat white onion",
+                "eat white tuna",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Bedroom =- I am so happy to announce that you are now in the bedroom. I guess you better just go and list everything you see here. Oh, great. Here's a bed. Unfortunately, there isn't a thing on it. You don't like doors? Why not try going east, that entranceway is not blocked by one. You need an exit without a door? You should try going south. > -= Bedroom =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop white onion",
+                "drop white tuna",
+                "eat white onion",
+                "eat white tuna",
+                "examine bed",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "put red tuna on bed",
+                "put white onion on bed",
+                "put white tuna on bed"
+            ]
+        },
+        "done": false,
+        "next_action": "examine bed"
+    },
+    {
+        "state": "-= Bedroom =- I am so happy to announce that you are now in the bedroom. I guess you better just go and list everything you see here. Oh, great. Here's a bed. Unfortunately, there isn't a thing on it. You don't like doors? Why not try going east, that entranceway is not blocked by one. You need an exit without a door? You should try going south. > -= Bedroom =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop white onion",
+                "drop white tuna",
+                "eat white onion",
+                "eat white tuna",
+                "examine bed",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "put red tuna on bed",
+                "put white onion on bed",
+                "put white tuna on bed"
+            ]
+        },
+        "action": "examine bed",
+        "reward": 0,
+        "next_state": "The bed is shaky. > -= Bedroom =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop white onion",
+                "drop white tuna",
+                "eat white onion",
+                "eat white tuna",
+                "examine bed",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "put red tuna on bed",
+                "put white onion on bed",
+                "put white tuna on bed"
+            ]
+        },
+        "done": false,
+        "next_action": "drop white onion"
+    },
+    {
+        "state": "The bed is shaky. > -= Bedroom =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop white onion",
+                "drop white tuna",
+                "eat white onion",
+                "eat white tuna",
+                "examine bed",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "put red tuna on bed",
+                "put white onion on bed",
+                "put white tuna on bed"
+            ]
+        },
+        "action": "drop white onion",
+        "reward": 0,
+        "next_state": "You drop the white onion on the ground. > -= Bedroom =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop white tuna",
+                "eat white tuna",
+                "examine bed",
+                "examine white onion",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "put red tuna on bed",
+                "put white tuna on bed",
+                "take white onion"
+            ]
+        },
+        "done": false,
+        "next_action": "examine bed"
+    },
+    {
+        "state": "You drop the white onion on the ground. > -= Bedroom =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop white tuna",
+                "eat white tuna",
+                "examine bed",
+                "examine white onion",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "put red tuna on bed",
+                "put white tuna on bed",
+                "take white onion"
+            ]
+        },
+        "action": "examine bed",
+        "reward": 0,
+        "next_state": "The bed is shaky. > -= Bedroom =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop white tuna",
+                "eat white tuna",
+                "examine bed",
+                "examine white onion",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "put red tuna on bed",
+                "put white tuna on bed",
+                "take white onion"
+            ]
+        },
+        "done": false,
+        "next_action": "take white onion"
+    },
+    {
+        "state": "The bed is shaky. > -= Bedroom =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop white tuna",
+                "eat white tuna",
+                "examine bed",
+                "examine white onion",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "put red tuna on bed",
+                "put white tuna on bed",
+                "take white onion"
+            ]
+        },
+        "action": "take white onion",
+        "reward": 0,
+        "next_state": "You pick up the white onion from the ground. > -= Bedroom =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop white onion",
+                "drop white tuna",
+                "eat white onion",
+                "eat white tuna",
+                "examine bed",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "put red tuna on bed",
+                "put white onion on bed",
+                "put white tuna on bed"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "You pick up the white onion from the ground. > -= Bedroom =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop white onion",
+                "drop white tuna",
+                "eat white onion",
+                "eat white tuna",
+                "examine bed",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "put red tuna on bed",
+                "put white onion on bed",
+                "put white tuna on bed"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Bedroom =- I am so happy to announce that you are now in the bedroom. I guess you better just go and list everything you see here. Oh, great. Here's a bed. Unfortunately, there isn't a thing on it. You don't like doors? Why not try going east, that entranceway is not blocked by one. You need an exit without a door? You should try going south. > -= Bedroom =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop white onion",
+                "drop white tuna",
+                "eat white onion",
+                "eat white tuna",
+                "examine bed",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "put red tuna on bed",
+                "put white onion on bed",
+                "put white tuna on bed"
+            ]
+        },
+        "done": false,
+        "next_action": "put white tuna on bed"
+    },
+    {
+        "state": "-= Bedroom =- I am so happy to announce that you are now in the bedroom. I guess you better just go and list everything you see here. Oh, great. Here's a bed. Unfortunately, there isn't a thing on it. You don't like doors? Why not try going east, that entranceway is not blocked by one. You need an exit without a door? You should try going south. > -= Bedroom =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop white onion",
+                "drop white tuna",
+                "eat white onion",
+                "eat white tuna",
+                "examine bed",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "put red tuna on bed",
+                "put white onion on bed",
+                "put white tuna on bed"
+            ]
+        },
+        "action": "put white tuna on bed",
+        "reward": 0,
+        "next_state": "You put the white tuna on the bed. > -= Bedroom =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop white onion",
+                "eat white onion",
+                "examine bed",
+                "examine white tuna",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "put red tuna on bed",
+                "put white onion on bed",
+                "take white tuna from bed"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "You put the white tuna on the bed. > -= Bedroom =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop white onion",
+                "eat white onion",
+                "examine bed",
+                "examine white tuna",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "put red tuna on bed",
+                "put white onion on bed",
+                "take white tuna from bed"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Livingroom =- Well, here we are in a livingroom. Look over there! a sofa. You wonder idly who left that here. But the thing hasn't got anything on it. You don't like doors? Why not try going east, that entranceway is not blocked by one. There is an exit to the north. > -= Livingroom =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop white onion",
+                "eat white onion",
+                "examine sofa",
+                "go east",
+                "go north",
+                "inventory",
+                "look",
+                "put red tuna on sofa",
+                "put white onion on sofa"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Livingroom =- Well, here we are in a livingroom. Look over there! a sofa. You wonder idly who left that here. But the thing hasn't got anything on it. You don't like doors? Why not try going east, that entranceway is not blocked by one. There is an exit to the north. > -= Livingroom =-0/10",
+        "infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop white onion",
+                "eat white onion",
+                "examine sofa",
+                "go east",
+                "go north",
+                "inventory",
+                "look",
+                "put red tuna on sofa",
+                "put white onion on sofa"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Bedroom =- I am so happy to announce that you are now in the bedroom. I guess you better just go and list everything you see here. Oh, great. Here's a bed. You see a fried white tuna on the bed. I mean, just wow! Isn't TextWorld just the best? You don't like doors? Why not try going east, that entranceway is not blocked by one. You need an exit without a door? You should try going south. > -= Bedroom =-0/11",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop white onion",
+                "eat white onion",
+                "examine bed",
+                "examine white tuna",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "put red tuna on bed",
+                "put white onion on bed",
+                "take white tuna from bed"
+            ]
+        },
+        "done": false,
+        "next_action": "take white tuna from bed"
+    },
+    {
+        "state": "-= Bedroom =- I am so happy to announce that you are now in the bedroom. I guess you better just go and list everything you see here. Oh, great. Here's a bed. You see a fried white tuna on the bed. I mean, just wow! Isn't TextWorld just the best? You don't like doors? Why not try going east, that entranceway is not blocked by one. You need an exit without a door? You should try going south. > -= Bedroom =-0/11",
+        "infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop white onion",
+                "eat white onion",
+                "examine bed",
+                "examine white tuna",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "put red tuna on bed",
+                "put white onion on bed",
+                "take white tuna from bed"
+            ]
+        },
+        "action": "take white tuna from bed",
+        "reward": 0,
+        "next_state": "You take the white tuna from the bed. > -= Bedroom =-0/12",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop white onion",
+                "drop white tuna",
+                "eat white onion",
+                "eat white tuna",
+                "examine bed",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "put red tuna on bed",
+                "put white onion on bed",
+                "put white tuna on bed"
+            ]
+        },
+        "done": false,
+        "next_action": "put white tuna on bed"
+    },
+    {
+        "state": "You take the white tuna from the bed. > -= Bedroom =-0/12",
+        "infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop white onion",
+                "drop white tuna",
+                "eat white onion",
+                "eat white tuna",
+                "examine bed",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "put red tuna on bed",
+                "put white onion on bed",
+                "put white tuna on bed"
+            ]
+        },
+        "action": "put white tuna on bed",
+        "reward": 0,
+        "next_state": "You put the white tuna on the bed. > -= Bedroom =-0/13",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop white onion",
+                "eat white onion",
+                "examine bed",
+                "examine white tuna",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "put red tuna on bed",
+                "put white onion on bed",
+                "take white tuna from bed"
+            ]
+        },
+        "done": false,
+        "next_action": "examine white tuna"
+    },
+    {
+        "state": "You put the white tuna on the bed. > -= Bedroom =-0/13",
+        "infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop white onion",
+                "eat white onion",
+                "examine bed",
+                "examine white tuna",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "put red tuna on bed",
+                "put white onion on bed",
+                "take white tuna from bed"
+            ]
+        },
+        "action": "examine white tuna",
+        "reward": 0,
+        "next_state": "You couldn't pay me to eat that fried white tuna. > -= Bedroom =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop white onion",
+                "eat white onion",
+                "examine bed",
+                "examine white tuna",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "put red tuna on bed",
+                "put white onion on bed",
+                "take white tuna from bed"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "You couldn't pay me to eat that fried white tuna. > -= Bedroom =-0/14",
+        "infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop white onion",
+                "eat white onion",
+                "examine bed",
+                "examine white tuna",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "put red tuna on bed",
+                "put white onion on bed",
+                "take white tuna from bed"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Livingroom =- Well, here we are in a livingroom. Look over there! a sofa. You wonder idly who left that here. But the thing hasn't got anything on it. You don't like doors? Why not try going east, that entranceway is not blocked by one. There is an exit to the north. > -= Livingroom =-0/15",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop white onion",
+                "eat white onion",
+                "examine sofa",
+                "go east",
+                "go north",
+                "inventory",
+                "look",
+                "put red tuna on sofa",
+                "put white onion on sofa"
+            ]
+        },
+        "done": false,
+        "next_action": "drop red tuna"
+    },
+    {
+        "state": "-= Livingroom =- Well, here we are in a livingroom. Look over there! a sofa. You wonder idly who left that here. But the thing hasn't got anything on it. You don't like doors? Why not try going east, that entranceway is not blocked by one. There is an exit to the north. > -= Livingroom =-0/15",
+        "infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop white onion",
+                "eat white onion",
+                "examine sofa",
+                "go east",
+                "go north",
+                "inventory",
+                "look",
+                "put red tuna on sofa",
+                "put white onion on sofa"
+            ]
+        },
+        "action": "drop red tuna",
+        "reward": 0,
+        "next_state": "You drop the red tuna on the ground. > -= Livingroom =-0/16",
+        "next_infos": {
+            "admissible_commands": [
+                "drop white onion",
+                "eat white onion",
+                "examine red tuna",
+                "examine sofa",
+                "go east",
+                "go north",
+                "inventory",
+                "look",
+                "put white onion on sofa",
+                "take red tuna"
+            ]
+        },
+        "done": false,
+        "next_action": "put white onion on sofa"
+    },
+    {
+        "state": "You drop the red tuna on the ground. > -= Livingroom =-0/16",
+        "infos": {
+            "admissible_commands": [
+                "drop white onion",
+                "eat white onion",
+                "examine red tuna",
+                "examine sofa",
+                "go east",
+                "go north",
+                "inventory",
+                "look",
+                "put white onion on sofa",
+                "take red tuna"
+            ]
+        },
+        "action": "put white onion on sofa",
+        "reward": 0,
+        "next_state": "You put the white onion on the sofa. > -= Livingroom =-0/17",
+        "next_infos": {
+            "admissible_commands": [
+                "examine red tuna",
+                "examine sofa",
+                "examine white onion",
+                "go east",
+                "go north",
+                "inventory",
+                "look",
+                "take red tuna",
+                "take white onion from sofa"
+            ]
+        },
+        "done": false,
+        "next_action": "examine white onion"
+    },
+    {
+        "state": "You put the white onion on the sofa. > -= Livingroom =-0/17",
+        "infos": {
+            "admissible_commands": [
+                "examine red tuna",
+                "examine sofa",
+                "examine white onion",
+                "go east",
+                "go north",
+                "inventory",
+                "look",
+                "take red tuna",
+                "take white onion from sofa"
+            ]
+        },
+        "action": "examine white onion",
+        "reward": 0,
+        "next_state": "The white onion looks heavenly. > -= Livingroom =-0/18",
+        "next_infos": {
+            "admissible_commands": [
+                "examine red tuna",
+                "examine sofa",
+                "examine white onion",
+                "go east",
+                "go north",
+                "inventory",
+                "look",
+                "take red tuna",
+                "take white onion from sofa"
+            ]
+        },
+        "done": false,
+        "next_action": "examine white onion"
+    },
+    {
+        "state": "The white onion looks heavenly. > -= Livingroom =-0/18",
+        "infos": {
+            "admissible_commands": [
+                "examine red tuna",
+                "examine sofa",
+                "examine white onion",
+                "go east",
+                "go north",
+                "inventory",
+                "look",
+                "take red tuna",
+                "take white onion from sofa"
+            ]
+        },
+        "action": "examine white onion",
+        "reward": 0,
+        "next_state": "The white onion looks heavenly. > -= Livingroom =-0/19",
+        "next_infos": {
+            "admissible_commands": [
+                "examine red tuna",
+                "examine sofa",
+                "examine white onion",
+                "go east",
+                "go north",
+                "inventory",
+                "look",
+                "take red tuna",
+                "take white onion from sofa"
+            ]
+        },
+        "done": false,
+        "next_action": "take red tuna"
+    },
+    {
+        "state": "The white onion looks heavenly. > -= Livingroom =-0/19",
+        "infos": {
+            "admissible_commands": [
+                "examine red tuna",
+                "examine sofa",
+                "examine white onion",
+                "go east",
+                "go north",
+                "inventory",
+                "look",
+                "take red tuna",
+                "take white onion from sofa"
+            ]
+        },
+        "action": "take red tuna",
+        "reward": 0,
+        "next_state": "You pick up the red tuna from the ground. > -= Livingroom =-0/20",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "examine sofa",
+                "examine white onion",
+                "go east",
+                "go north",
+                "inventory",
+                "look",
+                "put red tuna on sofa",
+                "take white onion from sofa"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "You pick up the red tuna from the ground. > -= Livingroom =-0/20",
+        "infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "examine sofa",
+                "examine white onion",
+                "go east",
+                "go north",
+                "inventory",
+                "look",
+                "put red tuna on sofa",
+                "take white onion from sofa"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Livingroom =- Well, here we are in a livingroom. Look over there! a sofa. You wonder idly who left that here. On the sofa you see a white onion. You don't like doors? Why not try going east, that entranceway is not blocked by one. There is an exit to the north. > -= Livingroom =-0/21",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "examine sofa",
+                "examine white onion",
+                "go east",
+                "go north",
+                "inventory",
+                "look",
+                "put red tuna on sofa",
+                "take white onion from sofa"
+            ]
+        },
+        "done": false,
+        "next_action": "drop red tuna"
+    },
+    {
+        "state": "-= Livingroom =- Well, here we are in a livingroom. Look over there! a sofa. You wonder idly who left that here. On the sofa you see a white onion. You don't like doors? Why not try going east, that entranceway is not blocked by one. There is an exit to the north. > -= Livingroom =-0/21",
+        "infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "examine sofa",
+                "examine white onion",
+                "go east",
+                "go north",
+                "inventory",
+                "look",
+                "put red tuna on sofa",
+                "take white onion from sofa"
+            ]
+        },
+        "action": "drop red tuna",
+        "reward": 0,
+        "next_state": "You drop the red tuna on the ground. > -= Livingroom =-0/22",
+        "next_infos": {
+            "admissible_commands": [
+                "examine red tuna",
+                "examine sofa",
+                "examine white onion",
+                "go east",
+                "go north",
+                "inventory",
+                "look",
+                "take red tuna",
+                "take white onion from sofa"
+            ]
+        },
+        "done": false,
+        "next_action": "examine red tuna"
+    },
+    {
+        "state": "You drop the red tuna on the ground. > -= Livingroom =-0/22",
+        "infos": {
+            "admissible_commands": [
+                "examine red tuna",
+                "examine sofa",
+                "examine white onion",
+                "go east",
+                "go north",
+                "inventory",
+                "look",
+                "take red tuna",
+                "take white onion from sofa"
+            ]
+        },
+        "action": "examine red tuna",
+        "reward": 0,
+        "next_state": "The raw red tuna looks delectable. > -= Livingroom =-0/23",
+        "next_infos": {
+            "admissible_commands": [
+                "examine red tuna",
+                "examine sofa",
+                "examine white onion",
+                "go east",
+                "go north",
+                "inventory",
+                "look",
+                "take red tuna",
+                "take white onion from sofa"
+            ]
+        },
+        "done": false,
+        "next_action": "examine red tuna"
+    },
+    {
+        "state": "The raw red tuna looks delectable. > -= Livingroom =-0/23",
+        "infos": {
+            "admissible_commands": [
+                "examine red tuna",
+                "examine sofa",
+                "examine white onion",
+                "go east",
+                "go north",
+                "inventory",
+                "look",
+                "take red tuna",
+                "take white onion from sofa"
+            ]
+        },
+        "action": "examine red tuna",
+        "reward": 0,
+        "next_state": "The raw red tuna looks delectable. > -= Livingroom =-0/24",
+        "next_infos": {
+            "admissible_commands": [
+                "examine red tuna",
+                "examine sofa",
+                "examine white onion",
+                "go east",
+                "go north",
+                "inventory",
+                "look",
+                "take red tuna",
+                "take white onion from sofa"
+            ]
+        },
+        "done": false,
+        "next_action": "take white onion from sofa"
+    },
+    {
+        "state": "The raw red tuna looks delectable. > -= Livingroom =-0/24",
+        "infos": {
+            "admissible_commands": [
+                "examine red tuna",
+                "examine sofa",
+                "examine white onion",
+                "go east",
+                "go north",
+                "inventory",
+                "look",
+                "take red tuna",
+                "take white onion from sofa"
+            ]
+        },
+        "action": "take white onion from sofa",
+        "reward": 0,
+        "next_state": "You take the white onion from the sofa. > -= Livingroom =-0/25",
+        "next_infos": {
+            "admissible_commands": [
+                "drop white onion",
+                "eat white onion",
+                "examine red tuna",
+                "examine sofa",
+                "go east",
+                "go north",
+                "inventory",
+                "look",
+                "put white onion on sofa",
+                "take red tuna"
+            ]
+        },
+        "done": false,
+        "next_action": "inventory"
+    },
+    {
+        "state": "You take the white onion from the sofa. > -= Livingroom =-0/25",
+        "infos": {
+            "admissible_commands": [
+                "drop white onion",
+                "eat white onion",
+                "examine red tuna",
+                "examine sofa",
+                "go east",
+                "go north",
+                "inventory",
+                "look",
+                "put white onion on sofa",
+                "take red tuna"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying: a white onion. > -= Livingroom =-0/26",
+        "next_infos": {
+            "admissible_commands": [
+                "drop white onion",
+                "eat white onion",
+                "examine red tuna",
+                "examine sofa",
+                "go east",
+                "go north",
+                "inventory",
+                "look",
+                "put white onion on sofa",
+                "take red tuna"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

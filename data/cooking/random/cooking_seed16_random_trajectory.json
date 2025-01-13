@@ -1,0 +1,854 @@
+[
+    {
+        "state": "You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal! -= Pantry =- You arrive in a pantry. An ordinary kind of place. You can barely contain your excitement. You make out a shelf. The shelf is wooden. Looks like someone's already been here and taken everything off it, though. There is an open frosted-glass door leading west. > -= Pantry =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop red onion",
+                "drop red potato",
+                "drop yellow potato",
+                "eat red onion",
+                "eat red potato",
+                "examine shelf",
+                "go west",
+                "inventory",
+                "look",
+                "put red onion on shelf",
+                "put red potato on shelf",
+                "put yellow potato on shelf"
+            ]
+        },
+        "action": "close frosted-glass door",
+        "reward": 0,
+        "next_state": "You close frosted-glass door. > -= Pantry =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red onion",
+                "drop red potato",
+                "drop yellow potato",
+                "eat red onion",
+                "eat red potato",
+                "examine shelf",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "put red onion on shelf",
+                "put red potato on shelf",
+                "put yellow potato on shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "examine shelf"
+    },
+    {
+        "state": "You close frosted-glass door. > -= Pantry =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "drop red onion",
+                "drop red potato",
+                "drop yellow potato",
+                "eat red onion",
+                "eat red potato",
+                "examine shelf",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "put red onion on shelf",
+                "put red potato on shelf",
+                "put yellow potato on shelf"
+            ]
+        },
+        "action": "examine shelf",
+        "reward": 0,
+        "next_state": "The shelf is reliable. > -= Pantry =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red onion",
+                "drop red potato",
+                "drop yellow potato",
+                "eat red onion",
+                "eat red potato",
+                "examine shelf",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "put red onion on shelf",
+                "put red potato on shelf",
+                "put yellow potato on shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "open frosted-glass door"
+    },
+    {
+        "state": "The shelf is reliable. > -= Pantry =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "drop red onion",
+                "drop red potato",
+                "drop yellow potato",
+                "eat red onion",
+                "eat red potato",
+                "examine shelf",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "put red onion on shelf",
+                "put red potato on shelf",
+                "put yellow potato on shelf"
+            ]
+        },
+        "action": "open frosted-glass door",
+        "reward": 0,
+        "next_state": "You open frosted-glass door. > -= Pantry =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop red onion",
+                "drop red potato",
+                "drop yellow potato",
+                "eat red onion",
+                "eat red potato",
+                "examine shelf",
+                "go west",
+                "inventory",
+                "look",
+                "put red onion on shelf",
+                "put red potato on shelf",
+                "put yellow potato on shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "drop red potato"
+    },
+    {
+        "state": "You open frosted-glass door. > -= Pantry =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop red onion",
+                "drop red potato",
+                "drop yellow potato",
+                "eat red onion",
+                "eat red potato",
+                "examine shelf",
+                "go west",
+                "inventory",
+                "look",
+                "put red onion on shelf",
+                "put red potato on shelf",
+                "put yellow potato on shelf"
+            ]
+        },
+        "action": "drop red potato",
+        "reward": 0,
+        "next_state": "You drop the red potato on the ground. > -= Pantry =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop red onion",
+                "drop yellow potato",
+                "eat red onion",
+                "examine red potato",
+                "examine shelf",
+                "go west",
+                "inventory",
+                "look",
+                "put red onion on shelf",
+                "put yellow potato on shelf",
+                "take red potato"
+            ]
+        },
+        "done": false,
+        "next_action": "close frosted-glass door"
+    },
+    {
+        "state": "You drop the red potato on the ground. > -= Pantry =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop red onion",
+                "drop yellow potato",
+                "eat red onion",
+                "examine red potato",
+                "examine shelf",
+                "go west",
+                "inventory",
+                "look",
+                "put red onion on shelf",
+                "put yellow potato on shelf",
+                "take red potato"
+            ]
+        },
+        "action": "close frosted-glass door",
+        "reward": 0,
+        "next_state": "You close frosted-glass door. > -= Pantry =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red onion",
+                "drop yellow potato",
+                "eat red onion",
+                "examine red potato",
+                "examine shelf",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "put red onion on shelf",
+                "put yellow potato on shelf",
+                "take red potato"
+            ]
+        },
+        "done": false,
+        "next_action": "put red onion on shelf"
+    },
+    {
+        "state": "You close frosted-glass door. > -= Pantry =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "drop red onion",
+                "drop yellow potato",
+                "eat red onion",
+                "examine red potato",
+                "examine shelf",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "put red onion on shelf",
+                "put yellow potato on shelf",
+                "take red potato"
+            ]
+        },
+        "action": "put red onion on shelf",
+        "reward": 0,
+        "next_state": "You put the red onion on the shelf. > -= Pantry =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "drop yellow potato",
+                "examine red onion",
+                "examine red potato",
+                "examine shelf",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "put yellow potato on shelf",
+                "take red onion from shelf",
+                "take red potato"
+            ]
+        },
+        "done": false,
+        "next_action": "take red potato"
+    },
+    {
+        "state": "You put the red onion on the shelf. > -= Pantry =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "drop yellow potato",
+                "examine red onion",
+                "examine red potato",
+                "examine shelf",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "put yellow potato on shelf",
+                "take red onion from shelf",
+                "take red potato"
+            ]
+        },
+        "action": "take red potato",
+        "reward": 0,
+        "next_state": "You pick up the red potato from the ground. > -= Pantry =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop yellow potato",
+                "eat red potato",
+                "examine red onion",
+                "examine shelf",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "put red potato on shelf",
+                "put yellow potato on shelf",
+                "take red onion from shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "drop red potato"
+    },
+    {
+        "state": "You pick up the red potato from the ground. > -= Pantry =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop yellow potato",
+                "eat red potato",
+                "examine red onion",
+                "examine shelf",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "put red potato on shelf",
+                "put yellow potato on shelf",
+                "take red onion from shelf"
+            ]
+        },
+        "action": "drop red potato",
+        "reward": 0,
+        "next_state": "You drop the red potato on the ground. > -= Pantry =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "drop yellow potato",
+                "examine red onion",
+                "examine red potato",
+                "examine shelf",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "put yellow potato on shelf",
+                "take red onion from shelf",
+                "take red potato"
+            ]
+        },
+        "done": false,
+        "next_action": "examine red onion"
+    },
+    {
+        "state": "You drop the red potato on the ground. > -= Pantry =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "drop yellow potato",
+                "examine red onion",
+                "examine red potato",
+                "examine shelf",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "put yellow potato on shelf",
+                "take red onion from shelf",
+                "take red potato"
+            ]
+        },
+        "action": "examine red onion",
+        "reward": 0,
+        "next_state": "You couldn't pay me to eat that red onion. > -= Pantry =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "drop yellow potato",
+                "examine red onion",
+                "examine red potato",
+                "examine shelf",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "put yellow potato on shelf",
+                "take red onion from shelf",
+                "take red potato"
+            ]
+        },
+        "done": false,
+        "next_action": "put yellow potato on shelf"
+    },
+    {
+        "state": "You couldn't pay me to eat that red onion. > -= Pantry =-0/10",
+        "infos": {
+            "admissible_commands": [
+                "drop yellow potato",
+                "examine red onion",
+                "examine red potato",
+                "examine shelf",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "put yellow potato on shelf",
+                "take red onion from shelf",
+                "take red potato"
+            ]
+        },
+        "action": "put yellow potato on shelf",
+        "reward": 0,
+        "next_state": "You put the yellow potato on the shelf. > -= Pantry =-0/11",
+        "next_infos": {
+            "admissible_commands": [
+                "examine red onion",
+                "examine red potato",
+                "examine shelf",
+                "examine yellow potato",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "take red onion from shelf",
+                "take red potato",
+                "take yellow potato from shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "You put the yellow potato on the shelf. > -= Pantry =-0/11",
+        "infos": {
+            "admissible_commands": [
+                "examine red onion",
+                "examine red potato",
+                "examine shelf",
+                "examine yellow potato",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "take red onion from shelf",
+                "take red potato",
+                "take yellow potato from shelf"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Pantry =- You arrive in a pantry. An ordinary kind of place. You can barely contain your excitement. You make out a shelf. The shelf is wooden. On the shelf you can see a raw yellow potato and a red onion. There is a closed frosted-glass door leading west. There is a fried red potato on the floor. > -= Pantry =-0/12",
+        "next_infos": {
+            "admissible_commands": [
+                "examine red onion",
+                "examine red potato",
+                "examine shelf",
+                "examine yellow potato",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "take red onion from shelf",
+                "take red potato",
+                "take yellow potato from shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "-= Pantry =- You arrive in a pantry. An ordinary kind of place. You can barely contain your excitement. You make out a shelf. The shelf is wooden. On the shelf you can see a raw yellow potato and a red onion. There is a closed frosted-glass door leading west. There is a fried red potato on the floor. > -= Pantry =-0/12",
+        "infos": {
+            "admissible_commands": [
+                "examine red onion",
+                "examine red potato",
+                "examine shelf",
+                "examine yellow potato",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "take red onion from shelf",
+                "take red potato",
+                "take yellow potato from shelf"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Pantry =- You arrive in a pantry. An ordinary kind of place. You can barely contain your excitement. You make out a shelf. The shelf is wooden. On the shelf you can see a raw yellow potato and a red onion. There is a closed frosted-glass door leading west. There is a fried red potato on the floor. > -= Pantry =-0/13",
+        "next_infos": {
+            "admissible_commands": [
+                "examine red onion",
+                "examine red potato",
+                "examine shelf",
+                "examine yellow potato",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "take red onion from shelf",
+                "take red potato",
+                "take yellow potato from shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "examine shelf"
+    },
+    {
+        "state": "-= Pantry =- You arrive in a pantry. An ordinary kind of place. You can barely contain your excitement. You make out a shelf. The shelf is wooden. On the shelf you can see a raw yellow potato and a red onion. There is a closed frosted-glass door leading west. There is a fried red potato on the floor. > -= Pantry =-0/13",
+        "infos": {
+            "admissible_commands": [
+                "examine red onion",
+                "examine red potato",
+                "examine shelf",
+                "examine yellow potato",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "take red onion from shelf",
+                "take red potato",
+                "take yellow potato from shelf"
+            ]
+        },
+        "action": "examine shelf",
+        "reward": 0,
+        "next_state": "The shelf is reliable. On the shelf are a raw yellow potato and a red onion. > -= Pantry =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "examine red onion",
+                "examine red potato",
+                "examine shelf",
+                "examine yellow potato",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "take red onion from shelf",
+                "take red potato",
+                "take yellow potato from shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "examine red potato"
+    },
+    {
+        "state": "The shelf is reliable. On the shelf are a raw yellow potato and a red onion. > -= Pantry =-0/14",
+        "infos": {
+            "admissible_commands": [
+                "examine red onion",
+                "examine red potato",
+                "examine shelf",
+                "examine yellow potato",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "take red onion from shelf",
+                "take red potato",
+                "take yellow potato from shelf"
+            ]
+        },
+        "action": "examine red potato",
+        "reward": 0,
+        "next_state": "That's a fried red potato! > -= Pantry =-0/15",
+        "next_infos": {
+            "admissible_commands": [
+                "examine red onion",
+                "examine red potato",
+                "examine shelf",
+                "examine yellow potato",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "take red onion from shelf",
+                "take red potato",
+                "take yellow potato from shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "examine shelf"
+    },
+    {
+        "state": "That's a fried red potato! > -= Pantry =-0/15",
+        "infos": {
+            "admissible_commands": [
+                "examine red onion",
+                "examine red potato",
+                "examine shelf",
+                "examine yellow potato",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "take red onion from shelf",
+                "take red potato",
+                "take yellow potato from shelf"
+            ]
+        },
+        "action": "examine shelf",
+        "reward": 0,
+        "next_state": "The shelf is reliable. On the shelf are a raw yellow potato and a red onion. > -= Pantry =-0/16",
+        "next_infos": {
+            "admissible_commands": [
+                "examine red onion",
+                "examine red potato",
+                "examine shelf",
+                "examine yellow potato",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "take red onion from shelf",
+                "take red potato",
+                "take yellow potato from shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "take yellow potato from shelf"
+    },
+    {
+        "state": "The shelf is reliable. On the shelf are a raw yellow potato and a red onion. > -= Pantry =-0/16",
+        "infos": {
+            "admissible_commands": [
+                "examine red onion",
+                "examine red potato",
+                "examine shelf",
+                "examine yellow potato",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "take red onion from shelf",
+                "take red potato",
+                "take yellow potato from shelf"
+            ]
+        },
+        "action": "take yellow potato from shelf",
+        "reward": 0,
+        "next_state": "You take the yellow potato from the shelf. > -= Pantry =-0/17",
+        "next_infos": {
+            "admissible_commands": [
+                "drop yellow potato",
+                "examine red onion",
+                "examine red potato",
+                "examine shelf",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "put yellow potato on shelf",
+                "take red onion from shelf",
+                "take red potato"
+            ]
+        },
+        "done": false,
+        "next_action": "take red onion from shelf"
+    },
+    {
+        "state": "You take the yellow potato from the shelf. > -= Pantry =-0/17",
+        "infos": {
+            "admissible_commands": [
+                "drop yellow potato",
+                "examine red onion",
+                "examine red potato",
+                "examine shelf",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "put yellow potato on shelf",
+                "take red onion from shelf",
+                "take red potato"
+            ]
+        },
+        "action": "take red onion from shelf",
+        "reward": 0,
+        "next_state": "You take the red onion from the shelf. > -= Pantry =-0/18",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red onion",
+                "drop yellow potato",
+                "eat red onion",
+                "examine red potato",
+                "examine shelf",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "put red onion on shelf",
+                "put yellow potato on shelf",
+                "take red potato"
+            ]
+        },
+        "done": false,
+        "next_action": "take red potato"
+    },
+    {
+        "state": "You take the red onion from the shelf. > -= Pantry =-0/18",
+        "infos": {
+            "admissible_commands": [
+                "drop red onion",
+                "drop yellow potato",
+                "eat red onion",
+                "examine red potato",
+                "examine shelf",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "put red onion on shelf",
+                "put yellow potato on shelf",
+                "take red potato"
+            ]
+        },
+        "action": "take red potato",
+        "reward": 0,
+        "next_state": "You pick up the red potato from the ground. > -= Pantry =-0/19",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red onion",
+                "drop red potato",
+                "drop yellow potato",
+                "eat red onion",
+                "eat red potato",
+                "examine shelf",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "put red onion on shelf",
+                "put red potato on shelf",
+                "put yellow potato on shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "eat red onion"
+    },
+    {
+        "state": "You pick up the red potato from the ground. > -= Pantry =-0/19",
+        "infos": {
+            "admissible_commands": [
+                "drop red onion",
+                "drop red potato",
+                "drop yellow potato",
+                "eat red onion",
+                "eat red potato",
+                "examine shelf",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "put red onion on shelf",
+                "put red potato on shelf",
+                "put yellow potato on shelf"
+            ]
+        },
+        "action": "eat red onion",
+        "reward": 0,
+        "next_state": "You eat the red onion. Not bad. > -= Pantry =-0/20",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop yellow potato",
+                "eat red potato",
+                "examine shelf",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "put red potato on shelf",
+                "put yellow potato on shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "drop yellow potato"
+    },
+    {
+        "state": "You eat the red onion. Not bad. > -= Pantry =-0/20",
+        "infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop yellow potato",
+                "eat red potato",
+                "examine shelf",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "put red potato on shelf",
+                "put yellow potato on shelf"
+            ]
+        },
+        "action": "drop yellow potato",
+        "reward": 0,
+        "next_state": "You drop the yellow potato on the ground. > -= Pantry =-0/21",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "eat red potato",
+                "examine shelf",
+                "examine yellow potato",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "put red potato on shelf",
+                "take yellow potato"
+            ]
+        },
+        "done": false,
+        "next_action": "open frosted-glass door"
+    },
+    {
+        "state": "You drop the yellow potato on the ground. > -= Pantry =-0/21",
+        "infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "eat red potato",
+                "examine shelf",
+                "examine yellow potato",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "put red potato on shelf",
+                "take yellow potato"
+            ]
+        },
+        "action": "open frosted-glass door",
+        "reward": 0,
+        "next_state": "You open frosted-glass door. > -= Pantry =-0/22",
+        "next_infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop red potato",
+                "eat red potato",
+                "examine shelf",
+                "examine yellow potato",
+                "go west",
+                "inventory",
+                "look",
+                "put red potato on shelf",
+                "take yellow potato"
+            ]
+        },
+        "done": false,
+        "next_action": "inventory"
+    },
+    {
+        "state": "You open frosted-glass door. > -= Pantry =-0/22",
+        "infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop red potato",
+                "eat red potato",
+                "examine shelf",
+                "examine yellow potato",
+                "go west",
+                "inventory",
+                "look",
+                "put red potato on shelf",
+                "take yellow potato"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying: a fried red potato. > -= Pantry =-0/23",
+        "next_infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop red potato",
+                "eat red potato",
+                "examine shelf",
+                "examine yellow potato",
+                "go west",
+                "inventory",
+                "look",
+                "put red potato on shelf",
+                "take yellow potato"
+            ]
+        },
+        "done": false,
+        "next_action": "eat red potato"
+    },
+    {
+        "state": "You are carrying: a fried red potato. > -= Pantry =-0/23",
+        "infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop red potato",
+                "eat red potato",
+                "examine shelf",
+                "examine yellow potato",
+                "go west",
+                "inventory",
+                "look",
+                "put red potato on shelf",
+                "take yellow potato"
+            ]
+        },
+        "action": "eat red potato",
+        "reward": 0,
+        "next_state": "You eat the red potato. Not bad. *** You lost! *** You scored 0 out of a possible 7, in 23 turns. Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command? > -= Pantry =-0/23",
+        "next_infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "examine shelf",
+                "examine yellow potato",
+                "go west",
+                "inventory",
+                "look",
+                "take yellow potato"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

@@ -25,18 +25,19 @@ cooking:
   walkthroughs_file_path: "./data/cooking/walkthroughs/"
   oracle_file_path: "./data/cooking/oracle/"
   lm_file_path: "./data/cooking/lm/"
-  model_save_path: "./model/critic/cooking/"
+  random_file_path: "./data/cooking/random/"
+  model_save_path: "./model/critic/cooking/dynamic"
   checkpoint_interval: 10
-  num_epochs: 20
+  num_epochs: 50
   batch_size: 32
-  device: "cuda:1"
+  device: "cuda"
   bert_path: "./bert/"
-  seed: 1222
+  seed: 1224
   validate_file_path: "./simple_test/cooking"
-  sampling_strategy: "fixed"
+  sampling_strategy: "dynamic"
   reward_sample_ratio: 0.5
-  dynamic_ratio_min: 0.4
-  dynamic_ratio_max: 0.8
+  dynamic_ratio_min: 0.2
+  dynamic_ratio_max: 0.9
   dynamic_step: 0.05
 
 coin:
@@ -46,16 +47,16 @@ coin:
   lm_file_path: "./data/coin/lm/"
   model_save_path: "./model/critic/coin/"
   checkpoint_interval: 10
-  num_epochs: 50
+  num_epochs: 100
   batch_size: 32
   device: "cuda"
   bert_path: "./bert/"
   seed: 1224
   validate_file_path: "./simple_test/coin"
   sampling_strategy: "fixed"
-  reward_sample_ratio: 0.6
-  dynamic_ratio_min: 0.4
-  dynamic_ratio_max: 0.8
+  reward_sample_ratio: 0.5
+  dynamic_ratio_min: 0.3
+  dynamic_ratio_max: 0.9
   dynamic_step: 0.05
 
 
@@ -64,16 +65,16 @@ treasure:
   walkthroughs_file_path: "./data/treasure/walkthroughs/"
   oracle_file_path: "./data/treasure/oracle/"
   lm_file_path: "./data/treasure/lm/"
-  model_save_path: "./model/critic/treasure/"
+  model_save_path: "./model/critic/treasure/dynamic"
   checkpoint_interval: 10
-  num_epochs: 50
+  num_epochs: 100
   batch_size: 32
   device: "cuda"
   bert_path: "./bert/"
-  seed: 1230
+  seed: 1234
   validate_file_path: "./simple_test/treasure"
-  sampling_strategy: "fixed"
+  sampling_strategy: "dynamic"
   reward_sample_ratio: 0.6
-  dynamic_ratio_min: 0.4
-  dynamic_ratio_max: 0.8
-  dynamic_step: 0.05
+  dynamic_ratio_min: 0.3
+  dynamic_ratio_max: 0.9
+  dynamic_step: 0.04

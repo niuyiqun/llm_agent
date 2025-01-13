@@ -1,0 +1,26 @@
+[
+    {
+        "state": "You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal! -= Bedroom =- You've just shown up in a bedroom. There is an exit to the north. Don't worry, there is no door. > -= Bedroom =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "drop tomato",
+                "eat tomato",
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "eat tomato",
+        "reward": 0,
+        "next_state": "You eat the tomato. Not bad. *** You lost! *** You scored 0 out of a possible 7, in 1 turn. Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command? > -= Bedroom =-0/1",
+        "next_infos": {
+            "admissible_commands": [
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

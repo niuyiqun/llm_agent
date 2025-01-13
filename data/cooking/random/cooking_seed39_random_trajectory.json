@@ -1,0 +1,102 @@
+[
+    {
+        "state": "You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal! -= Bathroom =- You arrive in a bathroom. A standard one. You make out a toilet. But oh no! there's nothing on this piece of trash. You don't like doors? Why not try going west, that entranceway is not blocked by one. > -= Bathroom =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "drop orange bell pepper",
+                "drop red hot pepper",
+                "eat orange bell pepper",
+                "eat red hot pepper",
+                "examine toilet",
+                "go west",
+                "inventory",
+                "look",
+                "put orange bell pepper on toilet",
+                "put red hot pepper on toilet"
+            ]
+        },
+        "action": "drop red hot pepper",
+        "reward": 0,
+        "next_state": "You drop the red hot pepper on the ground. > -= Bathroom =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "drop orange bell pepper",
+                "eat orange bell pepper",
+                "examine red hot pepper",
+                "examine toilet",
+                "go west",
+                "inventory",
+                "look",
+                "put orange bell pepper on toilet",
+                "take red hot pepper"
+            ]
+        },
+        "done": false,
+        "next_action": "examine toilet"
+    },
+    {
+        "state": "You drop the red hot pepper on the ground. > -= Bathroom =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "drop orange bell pepper",
+                "eat orange bell pepper",
+                "examine red hot pepper",
+                "examine toilet",
+                "go west",
+                "inventory",
+                "look",
+                "put orange bell pepper on toilet",
+                "take red hot pepper"
+            ]
+        },
+        "action": "examine toilet",
+        "reward": 0,
+        "next_state": "The toilet is durable. > -= Bathroom =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "drop orange bell pepper",
+                "eat orange bell pepper",
+                "examine red hot pepper",
+                "examine toilet",
+                "go west",
+                "inventory",
+                "look",
+                "put orange bell pepper on toilet",
+                "take red hot pepper"
+            ]
+        },
+        "done": false,
+        "next_action": "eat orange bell pepper"
+    },
+    {
+        "state": "The toilet is durable. > -= Bathroom =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "drop orange bell pepper",
+                "eat orange bell pepper",
+                "examine red hot pepper",
+                "examine toilet",
+                "go west",
+                "inventory",
+                "look",
+                "put orange bell pepper on toilet",
+                "take red hot pepper"
+            ]
+        },
+        "action": "eat orange bell pepper",
+        "reward": 0,
+        "next_state": "You eat the orange bell pepper. Not bad. *** You lost! *** You scored 0 out of a possible 7, in 3 turns. Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command? > -= Bathroom =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "examine red hot pepper",
+                "examine toilet",
+                "go west",
+                "inventory",
+                "look",
+                "take red hot pepper"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

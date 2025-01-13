@@ -1,0 +1,35 @@
+[
+    {
+        "state": "You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal! -= Bathroom =- You're now in a bathroom. You rest your hand against a wall, but you miss the wall and fall onto a toilet. The toilet is white. Unfortunately, there isn't a thing on it. What, you think everything in TextWorld should have stuff on it? There is an exit to the south. Don't worry, there is no door. > -= Bathroom =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "drop green hot pepper",
+                "drop red bell pepper",
+                "eat green hot pepper",
+                "eat red bell pepper",
+                "examine toilet",
+                "go south",
+                "inventory",
+                "look",
+                "put green hot pepper on toilet",
+                "put red bell pepper on toilet"
+            ]
+        },
+        "action": "eat green hot pepper",
+        "reward": 0,
+        "next_state": "You eat the green hot pepper. Not bad. *** You lost! *** You scored 0 out of a possible 7, in 1 turn. Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command? > -= Bathroom =-0/1",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red bell pepper",
+                "eat red bell pepper",
+                "examine toilet",
+                "go south",
+                "inventory",
+                "look",
+                "put red bell pepper on toilet"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

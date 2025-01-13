@@ -1,0 +1,496 @@
+[
+    {
+        "state": "You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal! -= Livingroom =- You find yourself in a livingroom. You see a sofa. The sofa is comfy. Looks like someone's already been here and taken everything off it, though. There is an exit to the south. There is an exit to the west. Don't worry, there is no door. > -= Livingroom =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "drop green bell pepper",
+                "drop green hot pepper",
+                "drop red bell pepper",
+                "eat green bell pepper",
+                "eat green hot pepper",
+                "eat red bell pepper",
+                "examine sofa",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put green bell pepper on sofa",
+                "put green hot pepper on sofa",
+                "put red bell pepper on sofa"
+            ]
+        },
+        "action": "put red bell pepper on sofa",
+        "reward": 0,
+        "next_state": "You put the red bell pepper on the sofa. > -= Livingroom =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "drop green bell pepper",
+                "drop green hot pepper",
+                "eat green bell pepper",
+                "eat green hot pepper",
+                "examine red bell pepper",
+                "examine sofa",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put green bell pepper on sofa",
+                "put green hot pepper on sofa",
+                "take red bell pepper from sofa"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "You put the red bell pepper on the sofa. > -= Livingroom =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "drop green bell pepper",
+                "drop green hot pepper",
+                "eat green bell pepper",
+                "eat green hot pepper",
+                "examine red bell pepper",
+                "examine sofa",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put green bell pepper on sofa",
+                "put green hot pepper on sofa",
+                "take red bell pepper from sofa"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Kitchen =- You find yourself in a kitchen. An usual one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. You can see a fridge, so there's that. The fridge contains a roasted pork chop, a red onion, a block of cheese and a yellow onion, so there's that. You see a gleam over in a corner, where you can see an oven. You scan the room, seeing a table. Why don't you take a picture of it, it'll last longer! The table is massive. On the table you can see a cookbook and a knife. Something scurries by right in the corner of your eye. Probably nothing. You can make out a counter. You shudder, but continue examining the counter. On the counter you make out a tomato and a banana. You can make out a stove. The stove is conventional. But there isn't a thing on it. There is an open plain door leading south. You need an exit without a door? You should try going east. > -= Kitchen =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "close fridge",
+                "close plain door",
+                "cook green bell pepper with oven",
+                "cook green bell pepper with stove",
+                "cook green hot pepper with oven",
+                "cook green hot pepper with stove",
+                "drop green bell pepper",
+                "drop green hot pepper",
+                "eat green bell pepper",
+                "eat green hot pepper",
+                "examine banana",
+                "examine block of cheese",
+                "examine cookbook",
+                "examine counter",
+                "examine fridge",
+                "examine knife",
+                "examine oven",
+                "examine pork chop",
+                "examine red onion",
+                "examine stove",
+                "examine table",
+                "examine tomato",
+                "examine yellow onion",
+                "go east",
+                "go south",
+                "insert green bell pepper into fridge",
+                "insert green hot pepper into fridge",
+                "inventory",
+                "look",
+                "prepare meal",
+                "put green bell pepper on counter",
+                "put green bell pepper on stove",
+                "put green bell pepper on table",
+                "put green hot pepper on counter",
+                "put green hot pepper on stove",
+                "put green hot pepper on table",
+                "take banana from counter",
+                "take block of cheese from fridge",
+                "take cookbook from table",
+                "take knife from table",
+                "take pork chop from fridge",
+                "take red onion from fridge",
+                "take tomato from counter",
+                "take yellow onion from fridge"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Kitchen =- You find yourself in a kitchen. An usual one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. You can see a fridge, so there's that. The fridge contains a roasted pork chop, a red onion, a block of cheese and a yellow onion, so there's that. You see a gleam over in a corner, where you can see an oven. You scan the room, seeing a table. Why don't you take a picture of it, it'll last longer! The table is massive. On the table you can see a cookbook and a knife. Something scurries by right in the corner of your eye. Probably nothing. You can make out a counter. You shudder, but continue examining the counter. On the counter you make out a tomato and a banana. You can make out a stove. The stove is conventional. But there isn't a thing on it. There is an open plain door leading south. You need an exit without a door? You should try going east. > -= Kitchen =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "close fridge",
+                "close plain door",
+                "cook green bell pepper with oven",
+                "cook green bell pepper with stove",
+                "cook green hot pepper with oven",
+                "cook green hot pepper with stove",
+                "drop green bell pepper",
+                "drop green hot pepper",
+                "eat green bell pepper",
+                "eat green hot pepper",
+                "examine banana",
+                "examine block of cheese",
+                "examine cookbook",
+                "examine counter",
+                "examine fridge",
+                "examine knife",
+                "examine oven",
+                "examine pork chop",
+                "examine red onion",
+                "examine stove",
+                "examine table",
+                "examine tomato",
+                "examine yellow onion",
+                "go east",
+                "go south",
+                "insert green bell pepper into fridge",
+                "insert green hot pepper into fridge",
+                "inventory",
+                "look",
+                "prepare meal",
+                "put green bell pepper on counter",
+                "put green bell pepper on stove",
+                "put green bell pepper on table",
+                "put green hot pepper on counter",
+                "put green hot pepper on stove",
+                "put green hot pepper on table",
+                "take banana from counter",
+                "take block of cheese from fridge",
+                "take cookbook from table",
+                "take knife from table",
+                "take pork chop from fridge",
+                "take red onion from fridge",
+                "take tomato from counter",
+                "take yellow onion from fridge"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Pantry =- You've entered a pantry. You see a shelf. Unfortunately, there isn't a thing on it. Aw, here you were, all excited for there to be things on it! There is an open plain door leading north. > -= Pantry =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "close plain door",
+                "drop green bell pepper",
+                "drop green hot pepper",
+                "eat green bell pepper",
+                "eat green hot pepper",
+                "examine shelf",
+                "go north",
+                "inventory",
+                "look",
+                "put green bell pepper on shelf",
+                "put green hot pepper on shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "examine shelf"
+    },
+    {
+        "state": "-= Pantry =- You've entered a pantry. You see a shelf. Unfortunately, there isn't a thing on it. Aw, here you were, all excited for there to be things on it! There is an open plain door leading north. > -= Pantry =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "close plain door",
+                "drop green bell pepper",
+                "drop green hot pepper",
+                "eat green bell pepper",
+                "eat green hot pepper",
+                "examine shelf",
+                "go north",
+                "inventory",
+                "look",
+                "put green bell pepper on shelf",
+                "put green hot pepper on shelf"
+            ]
+        },
+        "action": "examine shelf",
+        "reward": 0,
+        "next_state": "The shelf is an unstable piece of trash. > -= Pantry =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "close plain door",
+                "drop green bell pepper",
+                "drop green hot pepper",
+                "eat green bell pepper",
+                "eat green hot pepper",
+                "examine shelf",
+                "go north",
+                "inventory",
+                "look",
+                "put green bell pepper on shelf",
+                "put green hot pepper on shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "The shelf is an unstable piece of trash. > -= Pantry =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "close plain door",
+                "drop green bell pepper",
+                "drop green hot pepper",
+                "eat green bell pepper",
+                "eat green hot pepper",
+                "examine shelf",
+                "go north",
+                "inventory",
+                "look",
+                "put green bell pepper on shelf",
+                "put green hot pepper on shelf"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Pantry =- You've entered a pantry. You see a shelf. Unfortunately, there isn't a thing on it. Aw, here you were, all excited for there to be things on it! There is an open plain door leading north. > -= Pantry =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "close plain door",
+                "drop green bell pepper",
+                "drop green hot pepper",
+                "eat green bell pepper",
+                "eat green hot pepper",
+                "examine shelf",
+                "go north",
+                "inventory",
+                "look",
+                "put green bell pepper on shelf",
+                "put green hot pepper on shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "-= Pantry =- You've entered a pantry. You see a shelf. Unfortunately, there isn't a thing on it. Aw, here you were, all excited for there to be things on it! There is an open plain door leading north. > -= Pantry =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "close plain door",
+                "drop green bell pepper",
+                "drop green hot pepper",
+                "eat green bell pepper",
+                "eat green hot pepper",
+                "examine shelf",
+                "go north",
+                "inventory",
+                "look",
+                "put green bell pepper on shelf",
+                "put green hot pepper on shelf"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Pantry =- You've entered a pantry. You see a shelf. Unfortunately, there isn't a thing on it. Aw, here you were, all excited for there to be things on it! There is an open plain door leading north. > -= Pantry =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "close plain door",
+                "drop green bell pepper",
+                "drop green hot pepper",
+                "eat green bell pepper",
+                "eat green hot pepper",
+                "examine shelf",
+                "go north",
+                "inventory",
+                "look",
+                "put green bell pepper on shelf",
+                "put green hot pepper on shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "examine shelf"
+    },
+    {
+        "state": "-= Pantry =- You've entered a pantry. You see a shelf. Unfortunately, there isn't a thing on it. Aw, here you were, all excited for there to be things on it! There is an open plain door leading north. > -= Pantry =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "close plain door",
+                "drop green bell pepper",
+                "drop green hot pepper",
+                "eat green bell pepper",
+                "eat green hot pepper",
+                "examine shelf",
+                "go north",
+                "inventory",
+                "look",
+                "put green bell pepper on shelf",
+                "put green hot pepper on shelf"
+            ]
+        },
+        "action": "examine shelf",
+        "reward": 0,
+        "next_state": "The shelf is an unstable piece of trash. > -= Pantry =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "close plain door",
+                "drop green bell pepper",
+                "drop green hot pepper",
+                "eat green bell pepper",
+                "eat green hot pepper",
+                "examine shelf",
+                "go north",
+                "inventory",
+                "look",
+                "put green bell pepper on shelf",
+                "put green hot pepper on shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "eat green bell pepper"
+    },
+    {
+        "state": "The shelf is an unstable piece of trash. > -= Pantry =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "close plain door",
+                "drop green bell pepper",
+                "drop green hot pepper",
+                "eat green bell pepper",
+                "eat green hot pepper",
+                "examine shelf",
+                "go north",
+                "inventory",
+                "look",
+                "put green bell pepper on shelf",
+                "put green hot pepper on shelf"
+            ]
+        },
+        "action": "eat green bell pepper",
+        "reward": 0,
+        "next_state": "You eat the green bell pepper. Not bad. > -= Pantry =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "close plain door",
+                "drop green hot pepper",
+                "eat green hot pepper",
+                "examine shelf",
+                "go north",
+                "inventory",
+                "look",
+                "put green hot pepper on shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "You eat the green bell pepper. Not bad. > -= Pantry =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "close plain door",
+                "drop green hot pepper",
+                "eat green hot pepper",
+                "examine shelf",
+                "go north",
+                "inventory",
+                "look",
+                "put green hot pepper on shelf"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Pantry =- You've entered a pantry. You see a shelf. Unfortunately, there isn't a thing on it. Aw, here you were, all excited for there to be things on it! There is an open plain door leading north. > -= Pantry =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "close plain door",
+                "drop green hot pepper",
+                "eat green hot pepper",
+                "examine shelf",
+                "go north",
+                "inventory",
+                "look",
+                "put green hot pepper on shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "close plain door"
+    },
+    {
+        "state": "-= Pantry =- You've entered a pantry. You see a shelf. Unfortunately, there isn't a thing on it. Aw, here you were, all excited for there to be things on it! There is an open plain door leading north. > -= Pantry =-0/10",
+        "infos": {
+            "admissible_commands": [
+                "close plain door",
+                "drop green hot pepper",
+                "eat green hot pepper",
+                "examine shelf",
+                "go north",
+                "inventory",
+                "look",
+                "put green hot pepper on shelf"
+            ]
+        },
+        "action": "close plain door",
+        "reward": 0,
+        "next_state": "You close plain door. > -= Pantry =-0/11",
+        "next_infos": {
+            "admissible_commands": [
+                "drop green hot pepper",
+                "eat green hot pepper",
+                "examine shelf",
+                "inventory",
+                "look",
+                "open plain door",
+                "put green hot pepper on shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "inventory"
+    },
+    {
+        "state": "You close plain door. > -= Pantry =-0/11",
+        "infos": {
+            "admissible_commands": [
+                "drop green hot pepper",
+                "eat green hot pepper",
+                "examine shelf",
+                "inventory",
+                "look",
+                "open plain door",
+                "put green hot pepper on shelf"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying: a fried green hot pepper. > -= Pantry =-0/12",
+        "next_infos": {
+            "admissible_commands": [
+                "drop green hot pepper",
+                "eat green hot pepper",
+                "examine shelf",
+                "inventory",
+                "look",
+                "open plain door",
+                "put green hot pepper on shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "eat green hot pepper"
+    },
+    {
+        "state": "You are carrying: a fried green hot pepper. > -= Pantry =-0/12",
+        "infos": {
+            "admissible_commands": [
+                "drop green hot pepper",
+                "eat green hot pepper",
+                "examine shelf",
+                "inventory",
+                "look",
+                "open plain door",
+                "put green hot pepper on shelf"
+            ]
+        },
+        "action": "eat green hot pepper",
+        "reward": 0,
+        "next_state": "You eat the green hot pepper. Not bad. *** You lost! *** You scored 0 out of a possible 7, in 12 turns. Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command? > -= Pantry =-0/12",
+        "next_infos": {
+            "admissible_commands": [
+                "examine shelf",
+                "inventory",
+                "look",
+                "open plain door"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

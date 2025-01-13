@@ -1,0 +1,25 @@
+[
+    {
+        "state": "Hey, thanks for coming over to the TextWorld today, there is something I need you to do for me. First, it would be great if you could make an effort to venture south. With that done, go to the south. Once you do that, make an attempt to move west. And then, travel south. And then, try to head south. Once you succeed at that, try to travel east. Then, make an attempt to venture east. Then, go to the south. Then, travel east. Then, go to the south. Then, venture west. That done, make an attempt to head north. And then, go to the north. And then, take a trip north. After that, lift the coin from the floor of the scullery. And once you've done that, you win! -= Parlor =- You're not going to believe this, but you've just entered a parlor. You don't like doors? Why not try going south, that entranceway is unguarded. > -= Parlor =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Studio =- You find yourself in a studio. An ordinary one. You begin to take stock of what's in the room. You don't like doors? Why not try going north, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked. > -= Studio =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": null
+    }
+]

@@ -1,0 +1,937 @@
+[
+    {
+        "state": "You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal! -= Pantry =- You arrive in a pantry. An ordinary one. You see a shelf. The shelf is wooden. But the thing is empty. There is an open frosted-glass door leading north. > -= Pantry =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop cilantro",
+                "eat cilantro",
+                "examine shelf",
+                "go north",
+                "inventory",
+                "look",
+                "put cilantro on shelf"
+            ]
+        },
+        "action": "close frosted-glass door",
+        "reward": 0,
+        "next_state": "You close frosted-glass door. > -= Pantry =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "drop cilantro",
+                "eat cilantro",
+                "examine shelf",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "put cilantro on shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "open frosted-glass door"
+    },
+    {
+        "state": "You close frosted-glass door. > -= Pantry =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "drop cilantro",
+                "eat cilantro",
+                "examine shelf",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "put cilantro on shelf"
+            ]
+        },
+        "action": "open frosted-glass door",
+        "reward": 0,
+        "next_state": "You open frosted-glass door. > -= Pantry =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop cilantro",
+                "eat cilantro",
+                "examine shelf",
+                "go north",
+                "inventory",
+                "look",
+                "put cilantro on shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "inventory"
+    },
+    {
+        "state": "You open frosted-glass door. > -= Pantry =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop cilantro",
+                "eat cilantro",
+                "examine shelf",
+                "go north",
+                "inventory",
+                "look",
+                "put cilantro on shelf"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying: a cilantro. > -= Pantry =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop cilantro",
+                "eat cilantro",
+                "examine shelf",
+                "go north",
+                "inventory",
+                "look",
+                "put cilantro on shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "You are carrying: a cilantro. > -= Pantry =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop cilantro",
+                "eat cilantro",
+                "examine shelf",
+                "go north",
+                "inventory",
+                "look",
+                "put cilantro on shelf"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Pantry =- You arrive in a pantry. An ordinary one. You see a shelf. The shelf is wooden. But the thing is empty. There is an open frosted-glass door leading north. > -= Pantry =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop cilantro",
+                "eat cilantro",
+                "examine shelf",
+                "go north",
+                "inventory",
+                "look",
+                "put cilantro on shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "put cilantro on shelf"
+    },
+    {
+        "state": "-= Pantry =- You arrive in a pantry. An ordinary one. You see a shelf. The shelf is wooden. But the thing is empty. There is an open frosted-glass door leading north. > -= Pantry =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop cilantro",
+                "eat cilantro",
+                "examine shelf",
+                "go north",
+                "inventory",
+                "look",
+                "put cilantro on shelf"
+            ]
+        },
+        "action": "put cilantro on shelf",
+        "reward": 0,
+        "next_state": "You put the cilantro on the shelf. > -= Pantry =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "examine cilantro",
+                "examine shelf",
+                "go north",
+                "inventory",
+                "look",
+                "take cilantro from shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "examine shelf"
+    },
+    {
+        "state": "You put the cilantro on the shelf. > -= Pantry =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "examine cilantro",
+                "examine shelf",
+                "go north",
+                "inventory",
+                "look",
+                "take cilantro from shelf"
+            ]
+        },
+        "action": "examine shelf",
+        "reward": 0,
+        "next_state": "The shelf is undependable. On the shelf is a cilantro. > -= Pantry =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "examine cilantro",
+                "examine shelf",
+                "go north",
+                "inventory",
+                "look",
+                "take cilantro from shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "examine shelf"
+    },
+    {
+        "state": "The shelf is undependable. On the shelf is a cilantro. > -= Pantry =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "examine cilantro",
+                "examine shelf",
+                "go north",
+                "inventory",
+                "look",
+                "take cilantro from shelf"
+            ]
+        },
+        "action": "examine shelf",
+        "reward": 0,
+        "next_state": "The shelf is undependable. On the shelf is a cilantro. > -= Pantry =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "examine cilantro",
+                "examine shelf",
+                "go north",
+                "inventory",
+                "look",
+                "take cilantro from shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "The shelf is undependable. On the shelf is a cilantro. > -= Pantry =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "examine cilantro",
+                "examine shelf",
+                "go north",
+                "inventory",
+                "look",
+                "take cilantro from shelf"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Pantry =- You arrive in a pantry. An ordinary one. You see a shelf. The shelf is wooden. On the shelf you can make out a cilantro. There is an open frosted-glass door leading north. > -= Pantry =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "examine cilantro",
+                "examine shelf",
+                "go north",
+                "inventory",
+                "look",
+                "take cilantro from shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "inventory"
+    },
+    {
+        "state": "-= Pantry =- You arrive in a pantry. An ordinary one. You see a shelf. The shelf is wooden. On the shelf you can make out a cilantro. There is an open frosted-glass door leading north. > -= Pantry =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "examine cilantro",
+                "examine shelf",
+                "go north",
+                "inventory",
+                "look",
+                "take cilantro from shelf"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying nothing. > -= Pantry =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "examine cilantro",
+                "examine shelf",
+                "go north",
+                "inventory",
+                "look",
+                "take cilantro from shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "take cilantro from shelf"
+    },
+    {
+        "state": "You are carrying nothing. > -= Pantry =-0/10",
+        "infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "examine cilantro",
+                "examine shelf",
+                "go north",
+                "inventory",
+                "look",
+                "take cilantro from shelf"
+            ]
+        },
+        "action": "take cilantro from shelf",
+        "reward": 0,
+        "next_state": "You take the cilantro from the shelf. > -= Pantry =-0/11",
+        "next_infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop cilantro",
+                "eat cilantro",
+                "examine shelf",
+                "go north",
+                "inventory",
+                "look",
+                "put cilantro on shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "inventory"
+    },
+    {
+        "state": "You take the cilantro from the shelf. > -= Pantry =-0/11",
+        "infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop cilantro",
+                "eat cilantro",
+                "examine shelf",
+                "go north",
+                "inventory",
+                "look",
+                "put cilantro on shelf"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying: a cilantro. > -= Pantry =-0/12",
+        "next_infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop cilantro",
+                "eat cilantro",
+                "examine shelf",
+                "go north",
+                "inventory",
+                "look",
+                "put cilantro on shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "examine shelf"
+    },
+    {
+        "state": "You are carrying: a cilantro. > -= Pantry =-0/12",
+        "infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop cilantro",
+                "eat cilantro",
+                "examine shelf",
+                "go north",
+                "inventory",
+                "look",
+                "put cilantro on shelf"
+            ]
+        },
+        "action": "examine shelf",
+        "reward": 0,
+        "next_state": "The shelf is undependable. > -= Pantry =-0/13",
+        "next_infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop cilantro",
+                "eat cilantro",
+                "examine shelf",
+                "go north",
+                "inventory",
+                "look",
+                "put cilantro on shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "The shelf is undependable. > -= Pantry =-0/13",
+        "infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop cilantro",
+                "eat cilantro",
+                "examine shelf",
+                "go north",
+                "inventory",
+                "look",
+                "put cilantro on shelf"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Kitchen =- You've just walked into a kitchen. You make out an opened fridge in the corner. The fridge contains a roasted red bell pepper, a red hot pepper and a yellow bell pepper. I mean, just wow! Isn't TextWorld just the best? Look out! It's a- oh, never mind, it's just an oven. The light flickers for a second, but nothing else happens. You see a table. On the table you can make out a cookbook and a knife. You scan the room for a counter, and you find a counter. The counter is vast. On the counter you can see a roasted red potato, a raw red tuna and a raw yellow potato. What's that over there? It looks like it's a stove. The stove is conventional. But the thing is empty. There is an open frosted-glass door leading south. You need an exit without a door? You should try going east. > -= Kitchen =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "close fridge",
+                "close frosted-glass door",
+                "cook cilantro with oven",
+                "cook cilantro with stove",
+                "drop cilantro",
+                "eat cilantro",
+                "examine cookbook",
+                "examine counter",
+                "examine fridge",
+                "examine knife",
+                "examine oven",
+                "examine red bell pepper",
+                "examine red hot pepper",
+                "examine red potato",
+                "examine red tuna",
+                "examine stove",
+                "examine table",
+                "examine yellow bell pepper",
+                "examine yellow potato",
+                "go east",
+                "go south",
+                "insert cilantro into fridge",
+                "inventory",
+                "look",
+                "prepare meal",
+                "put cilantro on counter",
+                "put cilantro on stove",
+                "put cilantro on table",
+                "take cookbook from table",
+                "take knife from table",
+                "take red bell pepper from fridge",
+                "take red hot pepper from fridge",
+                "take red potato from counter",
+                "take red tuna from counter",
+                "take yellow bell pepper from fridge",
+                "take yellow potato from counter"
+            ]
+        },
+        "done": false,
+        "next_action": "take red tuna from counter"
+    },
+    {
+        "state": "-= Kitchen =- You've just walked into a kitchen. You make out an opened fridge in the corner. The fridge contains a roasted red bell pepper, a red hot pepper and a yellow bell pepper. I mean, just wow! Isn't TextWorld just the best? Look out! It's a- oh, never mind, it's just an oven. The light flickers for a second, but nothing else happens. You see a table. On the table you can make out a cookbook and a knife. You scan the room for a counter, and you find a counter. The counter is vast. On the counter you can see a roasted red potato, a raw red tuna and a raw yellow potato. What's that over there? It looks like it's a stove. The stove is conventional. But the thing is empty. There is an open frosted-glass door leading south. You need an exit without a door? You should try going east. > -= Kitchen =-0/14",
+        "infos": {
+            "admissible_commands": [
+                "close fridge",
+                "close frosted-glass door",
+                "cook cilantro with oven",
+                "cook cilantro with stove",
+                "drop cilantro",
+                "eat cilantro",
+                "examine cookbook",
+                "examine counter",
+                "examine fridge",
+                "examine knife",
+                "examine oven",
+                "examine red bell pepper",
+                "examine red hot pepper",
+                "examine red potato",
+                "examine red tuna",
+                "examine stove",
+                "examine table",
+                "examine yellow bell pepper",
+                "examine yellow potato",
+                "go east",
+                "go south",
+                "insert cilantro into fridge",
+                "inventory",
+                "look",
+                "prepare meal",
+                "put cilantro on counter",
+                "put cilantro on stove",
+                "put cilantro on table",
+                "take cookbook from table",
+                "take knife from table",
+                "take red bell pepper from fridge",
+                "take red hot pepper from fridge",
+                "take red potato from counter",
+                "take red tuna from counter",
+                "take yellow bell pepper from fridge",
+                "take yellow potato from counter"
+            ]
+        },
+        "action": "take red tuna from counter",
+        "reward": 0,
+        "next_state": "You take the red tuna from the counter. > -= Kitchen =-0/15",
+        "next_infos": {
+            "admissible_commands": [
+                "close fridge",
+                "close frosted-glass door",
+                "cook cilantro with oven",
+                "cook cilantro with stove",
+                "cook red tuna with oven",
+                "cook red tuna with stove",
+                "drop cilantro",
+                "drop red tuna",
+                "eat cilantro",
+                "examine cookbook",
+                "examine counter",
+                "examine fridge",
+                "examine knife",
+                "examine oven",
+                "examine red bell pepper",
+                "examine red hot pepper",
+                "examine red potato",
+                "examine stove",
+                "examine table",
+                "examine yellow bell pepper",
+                "examine yellow potato",
+                "go east",
+                "go south",
+                "insert cilantro into fridge",
+                "insert red tuna into fridge",
+                "inventory",
+                "look",
+                "prepare meal",
+                "put cilantro on counter",
+                "put cilantro on stove",
+                "put cilantro on table",
+                "put red tuna on counter",
+                "put red tuna on stove",
+                "put red tuna on table",
+                "take cookbook from table",
+                "take knife from table",
+                "take red bell pepper from fridge",
+                "take red hot pepper from fridge",
+                "take red potato from counter",
+                "take yellow bell pepper from fridge",
+                "take yellow potato from counter"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "You take the red tuna from the counter. > -= Kitchen =-0/15",
+        "infos": {
+            "admissible_commands": [
+                "close fridge",
+                "close frosted-glass door",
+                "cook cilantro with oven",
+                "cook cilantro with stove",
+                "cook red tuna with oven",
+                "cook red tuna with stove",
+                "drop cilantro",
+                "drop red tuna",
+                "eat cilantro",
+                "examine cookbook",
+                "examine counter",
+                "examine fridge",
+                "examine knife",
+                "examine oven",
+                "examine red bell pepper",
+                "examine red hot pepper",
+                "examine red potato",
+                "examine stove",
+                "examine table",
+                "examine yellow bell pepper",
+                "examine yellow potato",
+                "go east",
+                "go south",
+                "insert cilantro into fridge",
+                "insert red tuna into fridge",
+                "inventory",
+                "look",
+                "prepare meal",
+                "put cilantro on counter",
+                "put cilantro on stove",
+                "put cilantro on table",
+                "put red tuna on counter",
+                "put red tuna on stove",
+                "put red tuna on table",
+                "take cookbook from table",
+                "take knife from table",
+                "take red bell pepper from fridge",
+                "take red hot pepper from fridge",
+                "take red potato from counter",
+                "take yellow bell pepper from fridge",
+                "take yellow potato from counter"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Pantry =- You arrive in a pantry. An ordinary one. You see a shelf. The shelf is wooden. But the thing is empty. There is an open frosted-glass door leading north. > -= Pantry =-0/16",
+        "next_infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop cilantro",
+                "drop red tuna",
+                "eat cilantro",
+                "examine shelf",
+                "go north",
+                "inventory",
+                "look",
+                "put cilantro on shelf",
+                "put red tuna on shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "inventory"
+    },
+    {
+        "state": "-= Pantry =- You arrive in a pantry. An ordinary one. You see a shelf. The shelf is wooden. But the thing is empty. There is an open frosted-glass door leading north. > -= Pantry =-0/16",
+        "infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop cilantro",
+                "drop red tuna",
+                "eat cilantro",
+                "examine shelf",
+                "go north",
+                "inventory",
+                "look",
+                "put cilantro on shelf",
+                "put red tuna on shelf"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying: a raw red tuna and a cilantro. > -= Pantry =-0/17",
+        "next_infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop cilantro",
+                "drop red tuna",
+                "eat cilantro",
+                "examine shelf",
+                "go north",
+                "inventory",
+                "look",
+                "put cilantro on shelf",
+                "put red tuna on shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "close frosted-glass door"
+    },
+    {
+        "state": "You are carrying: a raw red tuna and a cilantro. > -= Pantry =-0/17",
+        "infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop cilantro",
+                "drop red tuna",
+                "eat cilantro",
+                "examine shelf",
+                "go north",
+                "inventory",
+                "look",
+                "put cilantro on shelf",
+                "put red tuna on shelf"
+            ]
+        },
+        "action": "close frosted-glass door",
+        "reward": 0,
+        "next_state": "You close frosted-glass door. > -= Pantry =-0/18",
+        "next_infos": {
+            "admissible_commands": [
+                "drop cilantro",
+                "drop red tuna",
+                "eat cilantro",
+                "examine shelf",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "put cilantro on shelf",
+                "put red tuna on shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "inventory"
+    },
+    {
+        "state": "You close frosted-glass door. > -= Pantry =-0/18",
+        "infos": {
+            "admissible_commands": [
+                "drop cilantro",
+                "drop red tuna",
+                "eat cilantro",
+                "examine shelf",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "put cilantro on shelf",
+                "put red tuna on shelf"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying: a raw red tuna and a cilantro. > -= Pantry =-0/19",
+        "next_infos": {
+            "admissible_commands": [
+                "drop cilantro",
+                "drop red tuna",
+                "eat cilantro",
+                "examine shelf",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "put cilantro on shelf",
+                "put red tuna on shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "inventory"
+    },
+    {
+        "state": "You are carrying: a raw red tuna and a cilantro. > -= Pantry =-0/19",
+        "infos": {
+            "admissible_commands": [
+                "drop cilantro",
+                "drop red tuna",
+                "eat cilantro",
+                "examine shelf",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "put cilantro on shelf",
+                "put red tuna on shelf"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying: a raw red tuna and a cilantro. > -= Pantry =-0/20",
+        "next_infos": {
+            "admissible_commands": [
+                "drop cilantro",
+                "drop red tuna",
+                "eat cilantro",
+                "examine shelf",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "put cilantro on shelf",
+                "put red tuna on shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "drop red tuna"
+    },
+    {
+        "state": "You are carrying: a raw red tuna and a cilantro. > -= Pantry =-0/20",
+        "infos": {
+            "admissible_commands": [
+                "drop cilantro",
+                "drop red tuna",
+                "eat cilantro",
+                "examine shelf",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "put cilantro on shelf",
+                "put red tuna on shelf"
+            ]
+        },
+        "action": "drop red tuna",
+        "reward": 0,
+        "next_state": "You drop the red tuna on the ground. > -= Pantry =-0/21",
+        "next_infos": {
+            "admissible_commands": [
+                "drop cilantro",
+                "eat cilantro",
+                "examine red tuna",
+                "examine shelf",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "put cilantro on shelf",
+                "take red tuna"
+            ]
+        },
+        "done": false,
+        "next_action": "inventory"
+    },
+    {
+        "state": "You drop the red tuna on the ground. > -= Pantry =-0/21",
+        "infos": {
+            "admissible_commands": [
+                "drop cilantro",
+                "eat cilantro",
+                "examine red tuna",
+                "examine shelf",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "put cilantro on shelf",
+                "take red tuna"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying: a cilantro. > -= Pantry =-0/22",
+        "next_infos": {
+            "admissible_commands": [
+                "drop cilantro",
+                "eat cilantro",
+                "examine red tuna",
+                "examine shelf",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "put cilantro on shelf",
+                "take red tuna"
+            ]
+        },
+        "done": false,
+        "next_action": "examine red tuna"
+    },
+    {
+        "state": "You are carrying: a cilantro. > -= Pantry =-0/22",
+        "infos": {
+            "admissible_commands": [
+                "drop cilantro",
+                "eat cilantro",
+                "examine red tuna",
+                "examine shelf",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "put cilantro on shelf",
+                "take red tuna"
+            ]
+        },
+        "action": "examine red tuna",
+        "reward": 0,
+        "next_state": "That's a raw red tuna! > -= Pantry =-0/23",
+        "next_infos": {
+            "admissible_commands": [
+                "drop cilantro",
+                "eat cilantro",
+                "examine red tuna",
+                "examine shelf",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "put cilantro on shelf",
+                "take red tuna"
+            ]
+        },
+        "done": false,
+        "next_action": "take red tuna"
+    },
+    {
+        "state": "That's a raw red tuna! > -= Pantry =-0/23",
+        "infos": {
+            "admissible_commands": [
+                "drop cilantro",
+                "eat cilantro",
+                "examine red tuna",
+                "examine shelf",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "put cilantro on shelf",
+                "take red tuna"
+            ]
+        },
+        "action": "take red tuna",
+        "reward": 0,
+        "next_state": "You pick up the red tuna from the ground. > -= Pantry =-0/24",
+        "next_infos": {
+            "admissible_commands": [
+                "drop cilantro",
+                "drop red tuna",
+                "eat cilantro",
+                "examine shelf",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "put cilantro on shelf",
+                "put red tuna on shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "put red tuna on shelf"
+    },
+    {
+        "state": "You pick up the red tuna from the ground. > -= Pantry =-0/24",
+        "infos": {
+            "admissible_commands": [
+                "drop cilantro",
+                "drop red tuna",
+                "eat cilantro",
+                "examine shelf",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "put cilantro on shelf",
+                "put red tuna on shelf"
+            ]
+        },
+        "action": "put red tuna on shelf",
+        "reward": 0,
+        "next_state": "You put the red tuna on the shelf. > -= Pantry =-0/25",
+        "next_infos": {
+            "admissible_commands": [
+                "drop cilantro",
+                "eat cilantro",
+                "examine red tuna",
+                "examine shelf",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "put cilantro on shelf",
+                "take red tuna from shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "take red tuna from shelf"
+    },
+    {
+        "state": "You put the red tuna on the shelf. > -= Pantry =-0/25",
+        "infos": {
+            "admissible_commands": [
+                "drop cilantro",
+                "eat cilantro",
+                "examine red tuna",
+                "examine shelf",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "put cilantro on shelf",
+                "take red tuna from shelf"
+            ]
+        },
+        "action": "take red tuna from shelf",
+        "reward": 0,
+        "next_state": "You take the red tuna from the shelf. > -= Pantry =-0/26",
+        "next_infos": {
+            "admissible_commands": [
+                "drop cilantro",
+                "drop red tuna",
+                "eat cilantro",
+                "examine shelf",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "put cilantro on shelf",
+                "put red tuna on shelf"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

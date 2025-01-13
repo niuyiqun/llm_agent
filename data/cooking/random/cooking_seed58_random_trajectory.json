@@ -1,0 +1,452 @@
+[
+    {
+        "state": "You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal! -= Corridor =- You're now in the corridor. You decide to start listing off everything you see in the room, as if you were in a text adventure. There is an exit to the east. Don't worry, there is no door. There is an exit to the south. Don't worry, there is no door. > -= Corridor =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "drop purple potato",
+                "drop red onion",
+                "drop red potato",
+                "eat red onion",
+                "eat red potato",
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Bedroom =- You're now in the bedroom. You need an exit without a door? You should try going east. You need an exit without a door? You should try going west. > -= Bedroom =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "drop purple potato",
+                "drop red onion",
+                "drop red potato",
+                "eat red onion",
+                "eat red potato",
+                "go east",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "inventory"
+    },
+    {
+        "state": "-= Bedroom =- You're now in the bedroom. You need an exit without a door? You should try going east. You need an exit without a door? You should try going west. > -= Bedroom =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "drop purple potato",
+                "drop red onion",
+                "drop red potato",
+                "eat red onion",
+                "eat red potato",
+                "go east",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying: a fried red potato, a red onion and a raw purple potato. > -= Bedroom =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "drop purple potato",
+                "drop red onion",
+                "drop red potato",
+                "eat red onion",
+                "eat red potato",
+                "go east",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "drop red onion"
+    },
+    {
+        "state": "You are carrying: a fried red potato, a red onion and a raw purple potato. > -= Bedroom =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "drop purple potato",
+                "drop red onion",
+                "drop red potato",
+                "eat red onion",
+                "eat red potato",
+                "go east",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "drop red onion",
+        "reward": 0,
+        "next_state": "You drop the red onion on the ground. > -= Bedroom =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "drop purple potato",
+                "drop red potato",
+                "eat red potato",
+                "examine red onion",
+                "go east",
+                "go west",
+                "inventory",
+                "look",
+                "take red onion"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "You drop the red onion on the ground. > -= Bedroom =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "drop purple potato",
+                "drop red potato",
+                "eat red potato",
+                "examine red onion",
+                "go east",
+                "go west",
+                "inventory",
+                "look",
+                "take red onion"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Bedroom =- You're now in the bedroom. You need an exit without a door? You should try going east. You need an exit without a door? You should try going west. There is a red onion on the floor. > -= Bedroom =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "drop purple potato",
+                "drop red potato",
+                "eat red potato",
+                "examine red onion",
+                "go east",
+                "go west",
+                "inventory",
+                "look",
+                "take red onion"
+            ]
+        },
+        "done": false,
+        "next_action": "drop purple potato"
+    },
+    {
+        "state": "-= Bedroom =- You're now in the bedroom. You need an exit without a door? You should try going east. You need an exit without a door? You should try going west. There is a red onion on the floor. > -= Bedroom =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "drop purple potato",
+                "drop red potato",
+                "eat red potato",
+                "examine red onion",
+                "go east",
+                "go west",
+                "inventory",
+                "look",
+                "take red onion"
+            ]
+        },
+        "action": "drop purple potato",
+        "reward": 0,
+        "next_state": "You drop the purple potato on the ground. > -= Bedroom =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "eat red potato",
+                "examine purple potato",
+                "examine red onion",
+                "go east",
+                "go west",
+                "inventory",
+                "look",
+                "take purple potato",
+                "take red onion"
+            ]
+        },
+        "done": false,
+        "next_action": "inventory"
+    },
+    {
+        "state": "You drop the purple potato on the ground. > -= Bedroom =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "eat red potato",
+                "examine purple potato",
+                "examine red onion",
+                "go east",
+                "go west",
+                "inventory",
+                "look",
+                "take purple potato",
+                "take red onion"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying: a fried red potato. > -= Bedroom =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "eat red potato",
+                "examine purple potato",
+                "examine red onion",
+                "go east",
+                "go west",
+                "inventory",
+                "look",
+                "take purple potato",
+                "take red onion"
+            ]
+        },
+        "done": false,
+        "next_action": "examine red onion"
+    },
+    {
+        "state": "You are carrying: a fried red potato. > -= Bedroom =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "eat red potato",
+                "examine purple potato",
+                "examine red onion",
+                "go east",
+                "go west",
+                "inventory",
+                "look",
+                "take purple potato",
+                "take red onion"
+            ]
+        },
+        "action": "examine red onion",
+        "reward": 0,
+        "next_state": "That's a red onion! > -= Bedroom =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "eat red potato",
+                "examine purple potato",
+                "examine red onion",
+                "go east",
+                "go west",
+                "inventory",
+                "look",
+                "take purple potato",
+                "take red onion"
+            ]
+        },
+        "done": false,
+        "next_action": "drop red potato"
+    },
+    {
+        "state": "That's a red onion! > -= Bedroom =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "eat red potato",
+                "examine purple potato",
+                "examine red onion",
+                "go east",
+                "go west",
+                "inventory",
+                "look",
+                "take purple potato",
+                "take red onion"
+            ]
+        },
+        "action": "drop red potato",
+        "reward": 0,
+        "next_state": "You drop the red potato on the ground. > -= Bedroom =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "examine purple potato",
+                "examine red onion",
+                "examine red potato",
+                "go east",
+                "go west",
+                "inventory",
+                "look",
+                "take purple potato",
+                "take red onion",
+                "take red potato"
+            ]
+        },
+        "done": false,
+        "next_action": "examine red potato"
+    },
+    {
+        "state": "You drop the red potato on the ground. > -= Bedroom =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "examine purple potato",
+                "examine red onion",
+                "examine red potato",
+                "go east",
+                "go west",
+                "inventory",
+                "look",
+                "take purple potato",
+                "take red onion",
+                "take red potato"
+            ]
+        },
+        "action": "examine red potato",
+        "reward": 0,
+        "next_state": "The fried red potato looks heavenly. > -= Bedroom =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "examine purple potato",
+                "examine red onion",
+                "examine red potato",
+                "go east",
+                "go west",
+                "inventory",
+                "look",
+                "take purple potato",
+                "take red onion",
+                "take red potato"
+            ]
+        },
+        "done": false,
+        "next_action": "take red potato"
+    },
+    {
+        "state": "The fried red potato looks heavenly. > -= Bedroom =-0/10",
+        "infos": {
+            "admissible_commands": [
+                "examine purple potato",
+                "examine red onion",
+                "examine red potato",
+                "go east",
+                "go west",
+                "inventory",
+                "look",
+                "take purple potato",
+                "take red onion",
+                "take red potato"
+            ]
+        },
+        "action": "take red potato",
+        "reward": 0,
+        "next_state": "You pick up the red potato from the ground. > -= Bedroom =-0/11",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "eat red potato",
+                "examine purple potato",
+                "examine red onion",
+                "go east",
+                "go west",
+                "inventory",
+                "look",
+                "take purple potato",
+                "take red onion"
+            ]
+        },
+        "done": false,
+        "next_action": "examine purple potato"
+    },
+    {
+        "state": "You pick up the red potato from the ground. > -= Bedroom =-0/11",
+        "infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "eat red potato",
+                "examine purple potato",
+                "examine red onion",
+                "go east",
+                "go west",
+                "inventory",
+                "look",
+                "take purple potato",
+                "take red onion"
+            ]
+        },
+        "action": "examine purple potato",
+        "reward": 0,
+        "next_state": "You couldn't pay me to eat that raw purple potato. > -= Bedroom =-0/12",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "eat red potato",
+                "examine purple potato",
+                "examine red onion",
+                "go east",
+                "go west",
+                "inventory",
+                "look",
+                "take purple potato",
+                "take red onion"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "You couldn't pay me to eat that raw purple potato. > -= Bedroom =-0/12",
+        "infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "eat red potato",
+                "examine purple potato",
+                "examine red onion",
+                "go east",
+                "go west",
+                "inventory",
+                "look",
+                "take purple potato",
+                "take red onion"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Livingroom =- Well, here we are in a livingroom. The room is well lit. You see a sofa. The sofa is comfy. Looks like someone's already been here and taken everything off it, though. What, you think everything in TextWorld should have stuff on it? There is an exit to the north. Don't worry, there is no door. You need an exit without a door? You should try going west. > -= Livingroom =-0/13",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "eat red potato",
+                "examine sofa",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "put red potato on sofa"
+            ]
+        },
+        "done": false,
+        "next_action": "eat red potato"
+    },
+    {
+        "state": "-= Livingroom =- Well, here we are in a livingroom. The room is well lit. You see a sofa. The sofa is comfy. Looks like someone's already been here and taken everything off it, though. What, you think everything in TextWorld should have stuff on it? There is an exit to the north. Don't worry, there is no door. You need an exit without a door? You should try going west. > -= Livingroom =-0/13",
+        "infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "eat red potato",
+                "examine sofa",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "put red potato on sofa"
+            ]
+        },
+        "action": "eat red potato",
+        "reward": 0,
+        "next_state": "You eat the red potato. Not bad. *** You lost! *** You scored 0 out of a possible 7, in 13 turns. Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command? > -= Livingroom =-0/13",
+        "next_infos": {
+            "admissible_commands": [
+                "examine sofa",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

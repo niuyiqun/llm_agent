@@ -1,0 +1,674 @@
+[
+    {
+        "state": "You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal! -= Bathroom =- You arrive in a bathroom. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. You rest your hand against a wall, but you miss the wall and fall onto a toilet. The toilet is white. But there isn't a thing on it. Hm. Oh well There is an exit to the north. Don't worry, there is no door. > -= Bathroom =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "drop red apple",
+                "drop red tuna",
+                "drop yellow apple",
+                "eat red apple",
+                "eat yellow apple",
+                "examine toilet",
+                "go north",
+                "inventory",
+                "look",
+                "put red apple on toilet",
+                "put red tuna on toilet",
+                "put yellow apple on toilet"
+            ]
+        },
+        "action": "drop red apple",
+        "reward": 0,
+        "next_state": "You drop the red apple on the ground. > -= Bathroom =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop yellow apple",
+                "eat yellow apple",
+                "examine red apple",
+                "examine toilet",
+                "go north",
+                "inventory",
+                "look",
+                "put red tuna on toilet",
+                "put yellow apple on toilet",
+                "take red apple"
+            ]
+        },
+        "done": false,
+        "next_action": "drop red tuna"
+    },
+    {
+        "state": "You drop the red apple on the ground. > -= Bathroom =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop yellow apple",
+                "eat yellow apple",
+                "examine red apple",
+                "examine toilet",
+                "go north",
+                "inventory",
+                "look",
+                "put red tuna on toilet",
+                "put yellow apple on toilet",
+                "take red apple"
+            ]
+        },
+        "action": "drop red tuna",
+        "reward": 0,
+        "next_state": "You drop the red tuna on the ground. > -= Bathroom =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "drop yellow apple",
+                "eat yellow apple",
+                "examine red apple",
+                "examine red tuna",
+                "examine toilet",
+                "go north",
+                "inventory",
+                "look",
+                "put yellow apple on toilet",
+                "take red apple",
+                "take red tuna"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "You drop the red tuna on the ground. > -= Bathroom =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "drop yellow apple",
+                "eat yellow apple",
+                "examine red apple",
+                "examine red tuna",
+                "examine toilet",
+                "go north",
+                "inventory",
+                "look",
+                "put yellow apple on toilet",
+                "take red apple",
+                "take red tuna"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Bathroom =- You arrive in a bathroom. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. You rest your hand against a wall, but you miss the wall and fall onto a toilet. The toilet is white. But there isn't a thing on it. Hm. Oh well There is an exit to the north. Don't worry, there is no door. There is a raw red tuna and a fried red apple on the floor. > -= Bathroom =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "drop yellow apple",
+                "eat yellow apple",
+                "examine red apple",
+                "examine red tuna",
+                "examine toilet",
+                "go north",
+                "inventory",
+                "look",
+                "put yellow apple on toilet",
+                "take red apple",
+                "take red tuna"
+            ]
+        },
+        "done": false,
+        "next_action": "examine red apple"
+    },
+    {
+        "state": "-= Bathroom =- You arrive in a bathroom. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. You rest your hand against a wall, but you miss the wall and fall onto a toilet. The toilet is white. But there isn't a thing on it. Hm. Oh well There is an exit to the north. Don't worry, there is no door. There is a raw red tuna and a fried red apple on the floor. > -= Bathroom =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "drop yellow apple",
+                "eat yellow apple",
+                "examine red apple",
+                "examine red tuna",
+                "examine toilet",
+                "go north",
+                "inventory",
+                "look",
+                "put yellow apple on toilet",
+                "take red apple",
+                "take red tuna"
+            ]
+        },
+        "action": "examine red apple",
+        "reward": 0,
+        "next_state": "That's a fried red apple! > -= Bathroom =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "drop yellow apple",
+                "eat yellow apple",
+                "examine red apple",
+                "examine red tuna",
+                "examine toilet",
+                "go north",
+                "inventory",
+                "look",
+                "put yellow apple on toilet",
+                "take red apple",
+                "take red tuna"
+            ]
+        },
+        "done": false,
+        "next_action": "examine red tuna"
+    },
+    {
+        "state": "That's a fried red apple! > -= Bathroom =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "drop yellow apple",
+                "eat yellow apple",
+                "examine red apple",
+                "examine red tuna",
+                "examine toilet",
+                "go north",
+                "inventory",
+                "look",
+                "put yellow apple on toilet",
+                "take red apple",
+                "take red tuna"
+            ]
+        },
+        "action": "examine red tuna",
+        "reward": 0,
+        "next_state": "The raw red tuna looks tempting. > -= Bathroom =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "drop yellow apple",
+                "eat yellow apple",
+                "examine red apple",
+                "examine red tuna",
+                "examine toilet",
+                "go north",
+                "inventory",
+                "look",
+                "put yellow apple on toilet",
+                "take red apple",
+                "take red tuna"
+            ]
+        },
+        "done": false,
+        "next_action": "examine red apple"
+    },
+    {
+        "state": "The raw red tuna looks tempting. > -= Bathroom =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "drop yellow apple",
+                "eat yellow apple",
+                "examine red apple",
+                "examine red tuna",
+                "examine toilet",
+                "go north",
+                "inventory",
+                "look",
+                "put yellow apple on toilet",
+                "take red apple",
+                "take red tuna"
+            ]
+        },
+        "action": "examine red apple",
+        "reward": 0,
+        "next_state": "That's a fried red apple! > -= Bathroom =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "drop yellow apple",
+                "eat yellow apple",
+                "examine red apple",
+                "examine red tuna",
+                "examine toilet",
+                "go north",
+                "inventory",
+                "look",
+                "put yellow apple on toilet",
+                "take red apple",
+                "take red tuna"
+            ]
+        },
+        "done": false,
+        "next_action": "take red tuna"
+    },
+    {
+        "state": "That's a fried red apple! > -= Bathroom =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "drop yellow apple",
+                "eat yellow apple",
+                "examine red apple",
+                "examine red tuna",
+                "examine toilet",
+                "go north",
+                "inventory",
+                "look",
+                "put yellow apple on toilet",
+                "take red apple",
+                "take red tuna"
+            ]
+        },
+        "action": "take red tuna",
+        "reward": 0,
+        "next_state": "You pick up the red tuna from the ground. > -= Bathroom =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop yellow apple",
+                "eat yellow apple",
+                "examine red apple",
+                "examine toilet",
+                "go north",
+                "inventory",
+                "look",
+                "put red tuna on toilet",
+                "put yellow apple on toilet",
+                "take red apple"
+            ]
+        },
+        "done": false,
+        "next_action": "put yellow apple on toilet"
+    },
+    {
+        "state": "You pick up the red tuna from the ground. > -= Bathroom =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop yellow apple",
+                "eat yellow apple",
+                "examine red apple",
+                "examine toilet",
+                "go north",
+                "inventory",
+                "look",
+                "put red tuna on toilet",
+                "put yellow apple on toilet",
+                "take red apple"
+            ]
+        },
+        "action": "put yellow apple on toilet",
+        "reward": 0,
+        "next_state": "You put the yellow apple on the toilet. > -= Bathroom =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "examine red apple",
+                "examine toilet",
+                "examine yellow apple",
+                "go north",
+                "inventory",
+                "look",
+                "put red tuna on toilet",
+                "take red apple",
+                "take yellow apple from toilet"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "You put the yellow apple on the toilet. > -= Bathroom =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "examine red apple",
+                "examine toilet",
+                "examine yellow apple",
+                "go north",
+                "inventory",
+                "look",
+                "put red tuna on toilet",
+                "take red apple",
+                "take yellow apple from toilet"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Bathroom =- You arrive in a bathroom. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. You rest your hand against a wall, but you miss the wall and fall onto a toilet. The toilet is white. On the toilet you make out a yellow apple. Hmmm... what else, what else? There is an exit to the north. Don't worry, there is no door. There is a fried red apple on the floor. > -= Bathroom =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "examine red apple",
+                "examine toilet",
+                "examine yellow apple",
+                "go north",
+                "inventory",
+                "look",
+                "put red tuna on toilet",
+                "take red apple",
+                "take yellow apple from toilet"
+            ]
+        },
+        "done": false,
+        "next_action": "take red apple"
+    },
+    {
+        "state": "-= Bathroom =- You arrive in a bathroom. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. You rest your hand against a wall, but you miss the wall and fall onto a toilet. The toilet is white. On the toilet you make out a yellow apple. Hmmm... what else, what else? There is an exit to the north. Don't worry, there is no door. There is a fried red apple on the floor. > -= Bathroom =-0/10",
+        "infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "examine red apple",
+                "examine toilet",
+                "examine yellow apple",
+                "go north",
+                "inventory",
+                "look",
+                "put red tuna on toilet",
+                "take red apple",
+                "take yellow apple from toilet"
+            ]
+        },
+        "action": "take red apple",
+        "reward": 0,
+        "next_state": "You pick up the red apple from the ground. > -= Bathroom =-0/11",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red apple",
+                "drop red tuna",
+                "eat red apple",
+                "examine toilet",
+                "examine yellow apple",
+                "go north",
+                "inventory",
+                "look",
+                "put red apple on toilet",
+                "put red tuna on toilet",
+                "take yellow apple from toilet"
+            ]
+        },
+        "done": false,
+        "next_action": "inventory"
+    },
+    {
+        "state": "You pick up the red apple from the ground. > -= Bathroom =-0/11",
+        "infos": {
+            "admissible_commands": [
+                "drop red apple",
+                "drop red tuna",
+                "eat red apple",
+                "examine toilet",
+                "examine yellow apple",
+                "go north",
+                "inventory",
+                "look",
+                "put red apple on toilet",
+                "put red tuna on toilet",
+                "take yellow apple from toilet"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying: a fried red apple and a raw red tuna. > -= Bathroom =-0/12",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red apple",
+                "drop red tuna",
+                "eat red apple",
+                "examine toilet",
+                "examine yellow apple",
+                "go north",
+                "inventory",
+                "look",
+                "put red apple on toilet",
+                "put red tuna on toilet",
+                "take yellow apple from toilet"
+            ]
+        },
+        "done": false,
+        "next_action": "drop red apple"
+    },
+    {
+        "state": "You are carrying: a fried red apple and a raw red tuna. > -= Bathroom =-0/12",
+        "infos": {
+            "admissible_commands": [
+                "drop red apple",
+                "drop red tuna",
+                "eat red apple",
+                "examine toilet",
+                "examine yellow apple",
+                "go north",
+                "inventory",
+                "look",
+                "put red apple on toilet",
+                "put red tuna on toilet",
+                "take yellow apple from toilet"
+            ]
+        },
+        "action": "drop red apple",
+        "reward": 0,
+        "next_state": "You drop the red apple on the ground. > -= Bathroom =-0/13",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "examine red apple",
+                "examine toilet",
+                "examine yellow apple",
+                "go north",
+                "inventory",
+                "look",
+                "put red tuna on toilet",
+                "take red apple",
+                "take yellow apple from toilet"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "You drop the red apple on the ground. > -= Bathroom =-0/13",
+        "infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "examine red apple",
+                "examine toilet",
+                "examine yellow apple",
+                "go north",
+                "inventory",
+                "look",
+                "put red tuna on toilet",
+                "take red apple",
+                "take yellow apple from toilet"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Bathroom =- You arrive in a bathroom. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. You rest your hand against a wall, but you miss the wall and fall onto a toilet. The toilet is white. On the toilet you make out a yellow apple. Hmmm... what else, what else? There is an exit to the north. Don't worry, there is no door. There is a fried red apple on the floor. > -= Bathroom =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "examine red apple",
+                "examine toilet",
+                "examine yellow apple",
+                "go north",
+                "inventory",
+                "look",
+                "put red tuna on toilet",
+                "take red apple",
+                "take yellow apple from toilet"
+            ]
+        },
+        "done": false,
+        "next_action": "examine yellow apple"
+    },
+    {
+        "state": "-= Bathroom =- You arrive in a bathroom. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. You rest your hand against a wall, but you miss the wall and fall onto a toilet. The toilet is white. On the toilet you make out a yellow apple. Hmmm... what else, what else? There is an exit to the north. Don't worry, there is no door. There is a fried red apple on the floor. > -= Bathroom =-0/14",
+        "infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "examine red apple",
+                "examine toilet",
+                "examine yellow apple",
+                "go north",
+                "inventory",
+                "look",
+                "put red tuna on toilet",
+                "take red apple",
+                "take yellow apple from toilet"
+            ]
+        },
+        "action": "examine yellow apple",
+        "reward": 0,
+        "next_state": "You couldn't pay me to eat that yellow apple. > -= Bathroom =-0/15",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "examine red apple",
+                "examine toilet",
+                "examine yellow apple",
+                "go north",
+                "inventory",
+                "look",
+                "put red tuna on toilet",
+                "take red apple",
+                "take yellow apple from toilet"
+            ]
+        },
+        "done": false,
+        "next_action": "take red apple"
+    },
+    {
+        "state": "You couldn't pay me to eat that yellow apple. > -= Bathroom =-0/15",
+        "infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "examine red apple",
+                "examine toilet",
+                "examine yellow apple",
+                "go north",
+                "inventory",
+                "look",
+                "put red tuna on toilet",
+                "take red apple",
+                "take yellow apple from toilet"
+            ]
+        },
+        "action": "take red apple",
+        "reward": 0,
+        "next_state": "You pick up the red apple from the ground. > -= Bathroom =-0/16",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red apple",
+                "drop red tuna",
+                "eat red apple",
+                "examine toilet",
+                "examine yellow apple",
+                "go north",
+                "inventory",
+                "look",
+                "put red apple on toilet",
+                "put red tuna on toilet",
+                "take yellow apple from toilet"
+            ]
+        },
+        "done": false,
+        "next_action": "inventory"
+    },
+    {
+        "state": "You pick up the red apple from the ground. > -= Bathroom =-0/16",
+        "infos": {
+            "admissible_commands": [
+                "drop red apple",
+                "drop red tuna",
+                "eat red apple",
+                "examine toilet",
+                "examine yellow apple",
+                "go north",
+                "inventory",
+                "look",
+                "put red apple on toilet",
+                "put red tuna on toilet",
+                "take yellow apple from toilet"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying: a fried red apple and a raw red tuna. > -= Bathroom =-0/17",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red apple",
+                "drop red tuna",
+                "eat red apple",
+                "examine toilet",
+                "examine yellow apple",
+                "go north",
+                "inventory",
+                "look",
+                "put red apple on toilet",
+                "put red tuna on toilet",
+                "take yellow apple from toilet"
+            ]
+        },
+        "done": false,
+        "next_action": "inventory"
+    },
+    {
+        "state": "You are carrying: a fried red apple and a raw red tuna. > -= Bathroom =-0/17",
+        "infos": {
+            "admissible_commands": [
+                "drop red apple",
+                "drop red tuna",
+                "eat red apple",
+                "examine toilet",
+                "examine yellow apple",
+                "go north",
+                "inventory",
+                "look",
+                "put red apple on toilet",
+                "put red tuna on toilet",
+                "take yellow apple from toilet"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying: a fried red apple and a raw red tuna. > -= Bathroom =-0/18",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red apple",
+                "drop red tuna",
+                "eat red apple",
+                "examine toilet",
+                "examine yellow apple",
+                "go north",
+                "inventory",
+                "look",
+                "put red apple on toilet",
+                "put red tuna on toilet",
+                "take yellow apple from toilet"
+            ]
+        },
+        "done": false,
+        "next_action": "eat red apple"
+    },
+    {
+        "state": "You are carrying: a fried red apple and a raw red tuna. > -= Bathroom =-0/18",
+        "infos": {
+            "admissible_commands": [
+                "drop red apple",
+                "drop red tuna",
+                "eat red apple",
+                "examine toilet",
+                "examine yellow apple",
+                "go north",
+                "inventory",
+                "look",
+                "put red apple on toilet",
+                "put red tuna on toilet",
+                "take yellow apple from toilet"
+            ]
+        },
+        "action": "eat red apple",
+        "reward": 0,
+        "next_state": "You eat the red apple. Not bad. *** You lost! *** You scored 0 out of a possible 7, in 18 turns. Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command? > -= Bathroom =-0/18",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "examine toilet",
+                "examine yellow apple",
+                "go north",
+                "inventory",
+                "look",
+                "put red tuna on toilet",
+                "take yellow apple from toilet"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

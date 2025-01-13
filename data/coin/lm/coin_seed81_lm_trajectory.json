@@ -1,0 +1,358 @@
+[
+    {
+        "state": "You are now playing a exciting game of TextWorld! Here is how to play! First off, attempt to move south. After that, try to take a trip east. With that done, head north. Then, try to go to the west. Once you accomplish that, head north. That done, make an effort to take a trip west. With that over with, head north. If you can get around to doing that, move north. After that, travel east. Once you finish that, make an effort to go to the south. Then, head south. Then, take a trip east. Then, take a trip east. With that done, make an attempt to move north. And then, lift the coin from the floor of the laundromat. That's it! -= Kitchen =- You are in an usual kind of place. That is to say, you're in a kitchen. There is an unguarded exit to the south. > -= Kitchen =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Kitchen =- You are in an usual kind of place. That is to say, you're in a kitchen. There is an unguarded exit to the south. > -= Kitchen =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Kitchen =- You are in an usual kind of place. That is to say, you're in a kitchen. There is an unguarded exit to the south. > -= Kitchen =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Chamber =- You're now in the chamber. The room is well lit. You need an unguarded exit? You should try going east. There is an unguarded exit to the north. > -= Chamber =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "go east",
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "-= Chamber =- You're now in the chamber. The room is well lit. You need an unguarded exit? You should try going east. There is an unguarded exit to the north. > -= Chamber =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "go east",
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Chamber =- You're now in the chamber. The room is well lit. You need an unguarded exit? You should try going east. There is an unguarded exit to the north. > -= Chamber =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "go east",
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Chamber =- You're now in the chamber. The room is well lit. You need an unguarded exit? You should try going east. There is an unguarded exit to the north. > -= Chamber =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "go east",
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Recreation Zone =- You are in a recreation zone. There is an unblocked exit to the north. You need an unguarded exit? You should try going west. > -= Recreation Zone =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "-= Recreation Zone =- You are in a recreation zone. There is an unblocked exit to the north. You need an unguarded exit? You should try going west. > -= Recreation Zone =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Recreation Zone =- You are in a recreation zone. There is an unblocked exit to the north. You need an unguarded exit? You should try going west. > -= Recreation Zone =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Recreation Zone =- You are in a recreation zone. There is an unblocked exit to the north. You need an unguarded exit? You should try going west. > -= Recreation Zone =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Cubicle =- You are in a cubicle. An usual one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. There is an exit to the south. Don't worry, it is unguarded. You need an unblocked exit? You should try going west. > -= Cubicle =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "-= Cubicle =- You are in a cubicle. An usual one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. There is an exit to the south. Don't worry, it is unguarded. You need an unblocked exit? You should try going west. > -= Cubicle =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Cubicle =- You are in a cubicle. An usual one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. There is an exit to the south. Don't worry, it is unguarded. You need an unblocked exit? You should try going west. > -= Cubicle =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Cubicle =- You are in a cubicle. An usual one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. There is an exit to the south. Don't worry, it is unguarded. You need an unblocked exit? You should try going west. > -= Cubicle =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Bedroom =- You arrive in a bedroom. A normal kind of place. You don't like doors? Why not try going east, that entranceway is unguarded. You need an unguarded exit? You should try going north. > -= Bedroom =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "go east",
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "-= Bedroom =- You arrive in a bedroom. A normal kind of place. You don't like doors? Why not try going east, that entranceway is unguarded. You need an unguarded exit? You should try going north. > -= Bedroom =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "go east",
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Bedroom =- You arrive in a bedroom. A normal kind of place. You don't like doors? Why not try going east, that entranceway is unguarded. You need an unguarded exit? You should try going north. > -= Bedroom =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "go east",
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Bedroom =- You arrive in a bedroom. A normal kind of place. You don't like doors? Why not try going east, that entranceway is unguarded. You need an unguarded exit? You should try going north. > -= Bedroom =-0/10",
+        "infos": {
+            "admissible_commands": [
+                "go east",
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Cubicle =- You are in a cubicle. An usual one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. There is an exit to the south. Don't worry, it is unguarded. You need an unblocked exit? You should try going west. > -= Cubicle =-0/11",
+        "next_infos": {
+            "admissible_commands": [
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Cubicle =- You are in a cubicle. An usual one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. There is an exit to the south. Don't worry, it is unguarded. You need an unblocked exit? You should try going west. > -= Cubicle =-0/11",
+        "infos": {
+            "admissible_commands": [
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Recreation Zone =- You are in a recreation zone. There is an unblocked exit to the north. You need an unguarded exit? You should try going west. > -= Recreation Zone =-0/12",
+        "next_infos": {
+            "admissible_commands": [
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "-= Recreation Zone =- You are in a recreation zone. There is an unblocked exit to the north. You need an unguarded exit? You should try going west. > -= Recreation Zone =-0/12",
+        "infos": {
+            "admissible_commands": [
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Recreation Zone =- You are in a recreation zone. There is an unblocked exit to the north. You need an unguarded exit? You should try going west. > -= Recreation Zone =-0/13",
+        "next_infos": {
+            "admissible_commands": [
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Recreation Zone =- You are in a recreation zone. There is an unblocked exit to the north. You need an unguarded exit? You should try going west. > -= Recreation Zone =-0/13",
+        "infos": {
+            "admissible_commands": [
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Chamber =- You're now in the chamber. The room is well lit. You need an unguarded exit? You should try going east. There is an unguarded exit to the north. > -= Chamber =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "go east",
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "-= Chamber =- You're now in the chamber. The room is well lit. You need an unguarded exit? You should try going east. There is an unguarded exit to the north. > -= Chamber =-0/14",
+        "infos": {
+            "admissible_commands": [
+                "go east",
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Chamber =- You're now in the chamber. The room is well lit. You need an unguarded exit? You should try going east. There is an unguarded exit to the north. > -= Chamber =-0/15",
+        "next_infos": {
+            "admissible_commands": [
+                "go east",
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Chamber =- You're now in the chamber. The room is well lit. You need an unguarded exit? You should try going east. There is an unguarded exit to the north. > -= Chamber =-0/15",
+        "infos": {
+            "admissible_commands": [
+                "go east",
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Kitchen =- You are in an usual kind of place. That is to say, you're in a kitchen. There is an unguarded exit to the south. > -= Kitchen =-0/16",
+        "next_infos": {
+            "admissible_commands": [
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

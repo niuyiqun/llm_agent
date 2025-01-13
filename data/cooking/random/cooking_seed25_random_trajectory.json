@@ -1,0 +1,1259 @@
+[
+    {
+        "state": "You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal! -= Bedroom =- You arrive in a bedroom. A standard kind of place. You can see a bed. Why don't you take a picture of it, it'll last longer! The bed is large. But there isn't a thing on it. There is an exit to the east. You need an exit without a door? You should try going west. > -= Bedroom =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "drop red hot pepper",
+                "drop red onion",
+                "eat red hot pepper",
+                "eat red onion",
+                "examine bed",
+                "go east",
+                "go west",
+                "inventory",
+                "look",
+                "put red hot pepper on bed",
+                "put red onion on bed"
+            ]
+        },
+        "action": "put red onion on bed",
+        "reward": 0,
+        "next_state": "You put the red onion on the bed. > -= Bedroom =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red hot pepper",
+                "eat red hot pepper",
+                "examine bed",
+                "examine red onion",
+                "go east",
+                "go west",
+                "inventory",
+                "look",
+                "put red hot pepper on bed",
+                "take red onion from bed"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "You put the red onion on the bed. > -= Bedroom =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "drop red hot pepper",
+                "eat red hot pepper",
+                "examine bed",
+                "examine red onion",
+                "go east",
+                "go west",
+                "inventory",
+                "look",
+                "put red hot pepper on bed",
+                "take red onion from bed"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Bedroom =- You arrive in a bedroom. A standard kind of place. You can see a bed. Why don't you take a picture of it, it'll last longer! The bed is large. On the bed you see a red onion. There is an exit to the east. You need an exit without a door? You should try going west. > -= Bedroom =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red hot pepper",
+                "eat red hot pepper",
+                "examine bed",
+                "examine red onion",
+                "go east",
+                "go west",
+                "inventory",
+                "look",
+                "put red hot pepper on bed",
+                "take red onion from bed"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Bedroom =- You arrive in a bedroom. A standard kind of place. You can see a bed. Why don't you take a picture of it, it'll last longer! The bed is large. On the bed you see a red onion. There is an exit to the east. You need an exit without a door? You should try going west. > -= Bedroom =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "drop red hot pepper",
+                "eat red hot pepper",
+                "examine bed",
+                "examine red onion",
+                "go east",
+                "go west",
+                "inventory",
+                "look",
+                "put red hot pepper on bed",
+                "take red onion from bed"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Livingroom =- You've entered a livingroom. You can see a sofa. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it? You don't like doors? Why not try going east, that entranceway is not blocked by one. You need an exit without a door? You should try going west. > -= Livingroom =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red hot pepper",
+                "eat red hot pepper",
+                "examine sofa",
+                "go east",
+                "go west",
+                "inventory",
+                "look",
+                "put red hot pepper on sofa"
+            ]
+        },
+        "done": false,
+        "next_action": "eat red hot pepper"
+    },
+    {
+        "state": "-= Livingroom =- You've entered a livingroom. You can see a sofa. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it? You don't like doors? Why not try going east, that entranceway is not blocked by one. You need an exit without a door? You should try going west. > -= Livingroom =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "drop red hot pepper",
+                "eat red hot pepper",
+                "examine sofa",
+                "go east",
+                "go west",
+                "inventory",
+                "look",
+                "put red hot pepper on sofa"
+            ]
+        },
+        "action": "eat red hot pepper",
+        "reward": 0,
+        "next_state": "You eat the red hot pepper. Not bad. > -= Livingroom =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "examine sofa",
+                "go east",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "You eat the red hot pepper. Not bad. > -= Livingroom =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "examine sofa",
+                "go east",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Livingroom =- You've entered a livingroom. You can see a sofa. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it? You don't like doors? Why not try going east, that entranceway is not blocked by one. You need an exit without a door? You should try going west. > -= Livingroom =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "examine sofa",
+                "go east",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Livingroom =- You've entered a livingroom. You can see a sofa. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it? You don't like doors? Why not try going east, that entranceway is not blocked by one. You need an exit without a door? You should try going west. > -= Livingroom =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "examine sofa",
+                "go east",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Kitchen =- You find yourself in a kitchen. A typical kind of place. As if things weren't amazing enough already, you can even see a fridge. The fridge contains a fried white onion, a fried yellow onion, a raw white tuna, a raw yellow potato, a green bell pepper and a cilantro. Hey, want to see an oven? Look over there, an oven. Make a note of this, you might have to put stuff on or in it later on. You scan the room for a table, and you find a table. The table is massive. But the thing is empty, unfortunately. Oh, great. Here's a counter. The counter is vast. On the counter you make out a green hot pepper, a cookbook and a knife. What's that over there? It looks like it's a stove. The stove is conventional. But oh no! there's nothing on this piece of trash. There is an open frosted-glass door leading south. You need an exit without a door? You should try going west. > -= Kitchen =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "close fridge",
+                "close frosted-glass door",
+                "examine cilantro",
+                "examine cookbook",
+                "examine counter",
+                "examine fridge",
+                "examine green bell pepper",
+                "examine green hot pepper",
+                "examine knife",
+                "examine oven",
+                "examine stove",
+                "examine table",
+                "examine white onion",
+                "examine white tuna",
+                "examine yellow onion",
+                "examine yellow potato",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take cilantro from fridge",
+                "take cookbook from counter",
+                "take green bell pepper from fridge",
+                "take green hot pepper from counter",
+                "take knife from counter",
+                "take white onion from fridge",
+                "take white tuna from fridge",
+                "take yellow onion from fridge",
+                "take yellow potato from fridge"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Kitchen =- You find yourself in a kitchen. A typical kind of place. As if things weren't amazing enough already, you can even see a fridge. The fridge contains a fried white onion, a fried yellow onion, a raw white tuna, a raw yellow potato, a green bell pepper and a cilantro. Hey, want to see an oven? Look over there, an oven. Make a note of this, you might have to put stuff on or in it later on. You scan the room for a table, and you find a table. The table is massive. But the thing is empty, unfortunately. Oh, great. Here's a counter. The counter is vast. On the counter you make out a green hot pepper, a cookbook and a knife. What's that over there? It looks like it's a stove. The stove is conventional. But oh no! there's nothing on this piece of trash. There is an open frosted-glass door leading south. You need an exit without a door? You should try going west. > -= Kitchen =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "close fridge",
+                "close frosted-glass door",
+                "examine cilantro",
+                "examine cookbook",
+                "examine counter",
+                "examine fridge",
+                "examine green bell pepper",
+                "examine green hot pepper",
+                "examine knife",
+                "examine oven",
+                "examine stove",
+                "examine table",
+                "examine white onion",
+                "examine white tuna",
+                "examine yellow onion",
+                "examine yellow potato",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take cilantro from fridge",
+                "take cookbook from counter",
+                "take green bell pepper from fridge",
+                "take green hot pepper from counter",
+                "take knife from counter",
+                "take white onion from fridge",
+                "take white tuna from fridge",
+                "take yellow onion from fridge",
+                "take yellow potato from fridge"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Livingroom =- You've entered a livingroom. You can see a sofa. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it? You don't like doors? Why not try going east, that entranceway is not blocked by one. You need an exit without a door? You should try going west. > -= Livingroom =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "examine sofa",
+                "go east",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "-= Livingroom =- You've entered a livingroom. You can see a sofa. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it? You don't like doors? Why not try going east, that entranceway is not blocked by one. You need an exit without a door? You should try going west. > -= Livingroom =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "examine sofa",
+                "go east",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Livingroom =- You've entered a livingroom. You can see a sofa. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it? You don't like doors? Why not try going east, that entranceway is not blocked by one. You need an exit without a door? You should try going west. > -= Livingroom =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "examine sofa",
+                "go east",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "examine sofa"
+    },
+    {
+        "state": "-= Livingroom =- You've entered a livingroom. You can see a sofa. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it? You don't like doors? Why not try going east, that entranceway is not blocked by one. You need an exit without a door? You should try going west. > -= Livingroom =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "examine sofa",
+                "go east",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "examine sofa",
+        "reward": 0,
+        "next_state": "The sofa is wobbly. > -= Livingroom =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "examine sofa",
+                "go east",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "examine sofa"
+    },
+    {
+        "state": "The sofa is wobbly. > -= Livingroom =-0/10",
+        "infos": {
+            "admissible_commands": [
+                "examine sofa",
+                "go east",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "examine sofa",
+        "reward": 0,
+        "next_state": "The sofa is wobbly. > -= Livingroom =-0/11",
+        "next_infos": {
+            "admissible_commands": [
+                "examine sofa",
+                "go east",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "The sofa is wobbly. > -= Livingroom =-0/11",
+        "infos": {
+            "admissible_commands": [
+                "examine sofa",
+                "go east",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Livingroom =- You've entered a livingroom. You can see a sofa. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it? You don't like doors? Why not try going east, that entranceway is not blocked by one. You need an exit without a door? You should try going west. > -= Livingroom =-0/12",
+        "next_infos": {
+            "admissible_commands": [
+                "examine sofa",
+                "go east",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "inventory"
+    },
+    {
+        "state": "-= Livingroom =- You've entered a livingroom. You can see a sofa. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it? You don't like doors? Why not try going east, that entranceway is not blocked by one. You need an exit without a door? You should try going west. > -= Livingroom =-0/12",
+        "infos": {
+            "admissible_commands": [
+                "examine sofa",
+                "go east",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying nothing. > -= Livingroom =-0/13",
+        "next_infos": {
+            "admissible_commands": [
+                "examine sofa",
+                "go east",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "You are carrying nothing. > -= Livingroom =-0/13",
+        "infos": {
+            "admissible_commands": [
+                "examine sofa",
+                "go east",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Kitchen =- You find yourself in a kitchen. A typical kind of place. As if things weren't amazing enough already, you can even see a fridge. The fridge contains a fried white onion, a fried yellow onion, a raw white tuna, a raw yellow potato, a green bell pepper and a cilantro. Hey, want to see an oven? Look over there, an oven. Make a note of this, you might have to put stuff on or in it later on. You scan the room for a table, and you find a table. The table is massive. But the thing is empty, unfortunately. Oh, great. Here's a counter. The counter is vast. On the counter you make out a green hot pepper, a cookbook and a knife. What's that over there? It looks like it's a stove. The stove is conventional. But oh no! there's nothing on this piece of trash. There is an open frosted-glass door leading south. You need an exit without a door? You should try going west. > -= Kitchen =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "close fridge",
+                "close frosted-glass door",
+                "examine cilantro",
+                "examine cookbook",
+                "examine counter",
+                "examine fridge",
+                "examine green bell pepper",
+                "examine green hot pepper",
+                "examine knife",
+                "examine oven",
+                "examine stove",
+                "examine table",
+                "examine white onion",
+                "examine white tuna",
+                "examine yellow onion",
+                "examine yellow potato",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take cilantro from fridge",
+                "take cookbook from counter",
+                "take green bell pepper from fridge",
+                "take green hot pepper from counter",
+                "take knife from counter",
+                "take white onion from fridge",
+                "take white tuna from fridge",
+                "take yellow onion from fridge",
+                "take yellow potato from fridge"
+            ]
+        },
+        "done": false,
+        "next_action": "examine cilantro"
+    },
+    {
+        "state": "-= Kitchen =- You find yourself in a kitchen. A typical kind of place. As if things weren't amazing enough already, you can even see a fridge. The fridge contains a fried white onion, a fried yellow onion, a raw white tuna, a raw yellow potato, a green bell pepper and a cilantro. Hey, want to see an oven? Look over there, an oven. Make a note of this, you might have to put stuff on or in it later on. You scan the room for a table, and you find a table. The table is massive. But the thing is empty, unfortunately. Oh, great. Here's a counter. The counter is vast. On the counter you make out a green hot pepper, a cookbook and a knife. What's that over there? It looks like it's a stove. The stove is conventional. But oh no! there's nothing on this piece of trash. There is an open frosted-glass door leading south. You need an exit without a door? You should try going west. > -= Kitchen =-0/14",
+        "infos": {
+            "admissible_commands": [
+                "close fridge",
+                "close frosted-glass door",
+                "examine cilantro",
+                "examine cookbook",
+                "examine counter",
+                "examine fridge",
+                "examine green bell pepper",
+                "examine green hot pepper",
+                "examine knife",
+                "examine oven",
+                "examine stove",
+                "examine table",
+                "examine white onion",
+                "examine white tuna",
+                "examine yellow onion",
+                "examine yellow potato",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take cilantro from fridge",
+                "take cookbook from counter",
+                "take green bell pepper from fridge",
+                "take green hot pepper from counter",
+                "take knife from counter",
+                "take white onion from fridge",
+                "take white tuna from fridge",
+                "take yellow onion from fridge",
+                "take yellow potato from fridge"
+            ]
+        },
+        "action": "examine cilantro",
+        "reward": 0,
+        "next_state": "That's a cilantro! > -= Kitchen =-0/15",
+        "next_infos": {
+            "admissible_commands": [
+                "close fridge",
+                "close frosted-glass door",
+                "examine cilantro",
+                "examine cookbook",
+                "examine counter",
+                "examine fridge",
+                "examine green bell pepper",
+                "examine green hot pepper",
+                "examine knife",
+                "examine oven",
+                "examine stove",
+                "examine table",
+                "examine white onion",
+                "examine white tuna",
+                "examine yellow onion",
+                "examine yellow potato",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take cilantro from fridge",
+                "take cookbook from counter",
+                "take green bell pepper from fridge",
+                "take green hot pepper from counter",
+                "take knife from counter",
+                "take white onion from fridge",
+                "take white tuna from fridge",
+                "take yellow onion from fridge",
+                "take yellow potato from fridge"
+            ]
+        },
+        "done": false,
+        "next_action": "take cookbook from counter"
+    },
+    {
+        "state": "That's a cilantro! > -= Kitchen =-0/15",
+        "infos": {
+            "admissible_commands": [
+                "close fridge",
+                "close frosted-glass door",
+                "examine cilantro",
+                "examine cookbook",
+                "examine counter",
+                "examine fridge",
+                "examine green bell pepper",
+                "examine green hot pepper",
+                "examine knife",
+                "examine oven",
+                "examine stove",
+                "examine table",
+                "examine white onion",
+                "examine white tuna",
+                "examine yellow onion",
+                "examine yellow potato",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take cilantro from fridge",
+                "take cookbook from counter",
+                "take green bell pepper from fridge",
+                "take green hot pepper from counter",
+                "take knife from counter",
+                "take white onion from fridge",
+                "take white tuna from fridge",
+                "take yellow onion from fridge",
+                "take yellow potato from fridge"
+            ]
+        },
+        "action": "take cookbook from counter",
+        "reward": 0,
+        "next_state": "You take the cookbook from the counter. > -= Kitchen =-0/16",
+        "next_infos": {
+            "admissible_commands": [
+                "close fridge",
+                "close frosted-glass door",
+                "drop cookbook",
+                "examine cilantro",
+                "examine counter",
+                "examine fridge",
+                "examine green bell pepper",
+                "examine green hot pepper",
+                "examine knife",
+                "examine oven",
+                "examine stove",
+                "examine table",
+                "examine white onion",
+                "examine white tuna",
+                "examine yellow onion",
+                "examine yellow potato",
+                "go south",
+                "go west",
+                "insert cookbook into fridge",
+                "inventory",
+                "look",
+                "put cookbook on counter",
+                "put cookbook on stove",
+                "put cookbook on table",
+                "take cilantro from fridge",
+                "take green bell pepper from fridge",
+                "take green hot pepper from counter",
+                "take knife from counter",
+                "take white onion from fridge",
+                "take white tuna from fridge",
+                "take yellow onion from fridge",
+                "take yellow potato from fridge"
+            ]
+        },
+        "done": false,
+        "next_action": "take green bell pepper from fridge"
+    },
+    {
+        "state": "You take the cookbook from the counter. > -= Kitchen =-0/16",
+        "infos": {
+            "admissible_commands": [
+                "close fridge",
+                "close frosted-glass door",
+                "drop cookbook",
+                "examine cilantro",
+                "examine counter",
+                "examine fridge",
+                "examine green bell pepper",
+                "examine green hot pepper",
+                "examine knife",
+                "examine oven",
+                "examine stove",
+                "examine table",
+                "examine white onion",
+                "examine white tuna",
+                "examine yellow onion",
+                "examine yellow potato",
+                "go south",
+                "go west",
+                "insert cookbook into fridge",
+                "inventory",
+                "look",
+                "put cookbook on counter",
+                "put cookbook on stove",
+                "put cookbook on table",
+                "take cilantro from fridge",
+                "take green bell pepper from fridge",
+                "take green hot pepper from counter",
+                "take knife from counter",
+                "take white onion from fridge",
+                "take white tuna from fridge",
+                "take yellow onion from fridge",
+                "take yellow potato from fridge"
+            ]
+        },
+        "action": "take green bell pepper from fridge",
+        "reward": 0,
+        "next_state": "You take the green bell pepper from the fridge. > -= Kitchen =-0/17",
+        "next_infos": {
+            "admissible_commands": [
+                "close fridge",
+                "close frosted-glass door",
+                "cook green bell pepper with oven",
+                "cook green bell pepper with stove",
+                "drop cookbook",
+                "drop green bell pepper",
+                "eat green bell pepper",
+                "examine cilantro",
+                "examine counter",
+                "examine fridge",
+                "examine green hot pepper",
+                "examine knife",
+                "examine oven",
+                "examine stove",
+                "examine table",
+                "examine white onion",
+                "examine white tuna",
+                "examine yellow onion",
+                "examine yellow potato",
+                "go south",
+                "go west",
+                "insert cookbook into fridge",
+                "insert green bell pepper into fridge",
+                "inventory",
+                "look",
+                "put cookbook on counter",
+                "put cookbook on stove",
+                "put cookbook on table",
+                "put green bell pepper on counter",
+                "put green bell pepper on stove",
+                "put green bell pepper on table",
+                "take cilantro from fridge",
+                "take green hot pepper from counter",
+                "take knife from counter",
+                "take white onion from fridge",
+                "take white tuna from fridge",
+                "take yellow onion from fridge",
+                "take yellow potato from fridge"
+            ]
+        },
+        "done": false,
+        "next_action": "put cookbook on table"
+    },
+    {
+        "state": "You take the green bell pepper from the fridge. > -= Kitchen =-0/17",
+        "infos": {
+            "admissible_commands": [
+                "close fridge",
+                "close frosted-glass door",
+                "cook green bell pepper with oven",
+                "cook green bell pepper with stove",
+                "drop cookbook",
+                "drop green bell pepper",
+                "eat green bell pepper",
+                "examine cilantro",
+                "examine counter",
+                "examine fridge",
+                "examine green hot pepper",
+                "examine knife",
+                "examine oven",
+                "examine stove",
+                "examine table",
+                "examine white onion",
+                "examine white tuna",
+                "examine yellow onion",
+                "examine yellow potato",
+                "go south",
+                "go west",
+                "insert cookbook into fridge",
+                "insert green bell pepper into fridge",
+                "inventory",
+                "look",
+                "put cookbook on counter",
+                "put cookbook on stove",
+                "put cookbook on table",
+                "put green bell pepper on counter",
+                "put green bell pepper on stove",
+                "put green bell pepper on table",
+                "take cilantro from fridge",
+                "take green hot pepper from counter",
+                "take knife from counter",
+                "take white onion from fridge",
+                "take white tuna from fridge",
+                "take yellow onion from fridge",
+                "take yellow potato from fridge"
+            ]
+        },
+        "action": "put cookbook on table",
+        "reward": 0,
+        "next_state": "You put the cookbook on the table. > -= Kitchen =-0/18",
+        "next_infos": {
+            "admissible_commands": [
+                "close fridge",
+                "close frosted-glass door",
+                "cook green bell pepper with oven",
+                "cook green bell pepper with stove",
+                "drop green bell pepper",
+                "eat green bell pepper",
+                "examine cilantro",
+                "examine cookbook",
+                "examine counter",
+                "examine fridge",
+                "examine green hot pepper",
+                "examine knife",
+                "examine oven",
+                "examine stove",
+                "examine table",
+                "examine white onion",
+                "examine white tuna",
+                "examine yellow onion",
+                "examine yellow potato",
+                "go south",
+                "go west",
+                "insert green bell pepper into fridge",
+                "inventory",
+                "look",
+                "put green bell pepper on counter",
+                "put green bell pepper on stove",
+                "put green bell pepper on table",
+                "take cilantro from fridge",
+                "take cookbook from table",
+                "take green hot pepper from counter",
+                "take knife from counter",
+                "take white onion from fridge",
+                "take white tuna from fridge",
+                "take yellow onion from fridge",
+                "take yellow potato from fridge"
+            ]
+        },
+        "done": false,
+        "next_action": "examine knife"
+    },
+    {
+        "state": "You put the cookbook on the table. > -= Kitchen =-0/18",
+        "infos": {
+            "admissible_commands": [
+                "close fridge",
+                "close frosted-glass door",
+                "cook green bell pepper with oven",
+                "cook green bell pepper with stove",
+                "drop green bell pepper",
+                "eat green bell pepper",
+                "examine cilantro",
+                "examine cookbook",
+                "examine counter",
+                "examine fridge",
+                "examine green hot pepper",
+                "examine knife",
+                "examine oven",
+                "examine stove",
+                "examine table",
+                "examine white onion",
+                "examine white tuna",
+                "examine yellow onion",
+                "examine yellow potato",
+                "go south",
+                "go west",
+                "insert green bell pepper into fridge",
+                "inventory",
+                "look",
+                "put green bell pepper on counter",
+                "put green bell pepper on stove",
+                "put green bell pepper on table",
+                "take cilantro from fridge",
+                "take cookbook from table",
+                "take green hot pepper from counter",
+                "take knife from counter",
+                "take white onion from fridge",
+                "take white tuna from fridge",
+                "take yellow onion from fridge",
+                "take yellow potato from fridge"
+            ]
+        },
+        "action": "examine knife",
+        "reward": 0,
+        "next_state": "The knife would seem to be out of place here > -= Kitchen =-0/19",
+        "next_infos": {
+            "admissible_commands": [
+                "close fridge",
+                "close frosted-glass door",
+                "cook green bell pepper with oven",
+                "cook green bell pepper with stove",
+                "drop green bell pepper",
+                "eat green bell pepper",
+                "examine cilantro",
+                "examine cookbook",
+                "examine counter",
+                "examine fridge",
+                "examine green hot pepper",
+                "examine knife",
+                "examine oven",
+                "examine stove",
+                "examine table",
+                "examine white onion",
+                "examine white tuna",
+                "examine yellow onion",
+                "examine yellow potato",
+                "go south",
+                "go west",
+                "insert green bell pepper into fridge",
+                "inventory",
+                "look",
+                "put green bell pepper on counter",
+                "put green bell pepper on stove",
+                "put green bell pepper on table",
+                "take cilantro from fridge",
+                "take cookbook from table",
+                "take green hot pepper from counter",
+                "take knife from counter",
+                "take white onion from fridge",
+                "take white tuna from fridge",
+                "take yellow onion from fridge",
+                "take yellow potato from fridge"
+            ]
+        },
+        "done": false,
+        "next_action": "take white tuna from fridge"
+    },
+    {
+        "state": "The knife would seem to be out of place here > -= Kitchen =-0/19",
+        "infos": {
+            "admissible_commands": [
+                "close fridge",
+                "close frosted-glass door",
+                "cook green bell pepper with oven",
+                "cook green bell pepper with stove",
+                "drop green bell pepper",
+                "eat green bell pepper",
+                "examine cilantro",
+                "examine cookbook",
+                "examine counter",
+                "examine fridge",
+                "examine green hot pepper",
+                "examine knife",
+                "examine oven",
+                "examine stove",
+                "examine table",
+                "examine white onion",
+                "examine white tuna",
+                "examine yellow onion",
+                "examine yellow potato",
+                "go south",
+                "go west",
+                "insert green bell pepper into fridge",
+                "inventory",
+                "look",
+                "put green bell pepper on counter",
+                "put green bell pepper on stove",
+                "put green bell pepper on table",
+                "take cilantro from fridge",
+                "take cookbook from table",
+                "take green hot pepper from counter",
+                "take knife from counter",
+                "take white onion from fridge",
+                "take white tuna from fridge",
+                "take yellow onion from fridge",
+                "take yellow potato from fridge"
+            ]
+        },
+        "action": "take white tuna from fridge",
+        "reward": 0,
+        "next_state": "You take the white tuna from the fridge. > -= Kitchen =-0/20",
+        "next_infos": {
+            "admissible_commands": [
+                "close fridge",
+                "close frosted-glass door",
+                "cook green bell pepper with oven",
+                "cook green bell pepper with stove",
+                "cook white tuna with oven",
+                "cook white tuna with stove",
+                "drop green bell pepper",
+                "drop white tuna",
+                "eat green bell pepper",
+                "examine cilantro",
+                "examine cookbook",
+                "examine counter",
+                "examine fridge",
+                "examine green hot pepper",
+                "examine knife",
+                "examine oven",
+                "examine stove",
+                "examine table",
+                "examine white onion",
+                "examine yellow onion",
+                "examine yellow potato",
+                "go south",
+                "go west",
+                "insert green bell pepper into fridge",
+                "insert white tuna into fridge",
+                "inventory",
+                "look",
+                "put green bell pepper on counter",
+                "put green bell pepper on stove",
+                "put green bell pepper on table",
+                "put white tuna on counter",
+                "put white tuna on stove",
+                "put white tuna on table",
+                "take cilantro from fridge",
+                "take cookbook from table",
+                "take green hot pepper from counter",
+                "take knife from counter",
+                "take white onion from fridge",
+                "take yellow onion from fridge",
+                "take yellow potato from fridge"
+            ]
+        },
+        "done": false,
+        "next_action": "cook white tuna with oven"
+    },
+    {
+        "state": "You take the white tuna from the fridge. > -= Kitchen =-0/20",
+        "infos": {
+            "admissible_commands": [
+                "close fridge",
+                "close frosted-glass door",
+                "cook green bell pepper with oven",
+                "cook green bell pepper with stove",
+                "cook white tuna with oven",
+                "cook white tuna with stove",
+                "drop green bell pepper",
+                "drop white tuna",
+                "eat green bell pepper",
+                "examine cilantro",
+                "examine cookbook",
+                "examine counter",
+                "examine fridge",
+                "examine green hot pepper",
+                "examine knife",
+                "examine oven",
+                "examine stove",
+                "examine table",
+                "examine white onion",
+                "examine yellow onion",
+                "examine yellow potato",
+                "go south",
+                "go west",
+                "insert green bell pepper into fridge",
+                "insert white tuna into fridge",
+                "inventory",
+                "look",
+                "put green bell pepper on counter",
+                "put green bell pepper on stove",
+                "put green bell pepper on table",
+                "put white tuna on counter",
+                "put white tuna on stove",
+                "put white tuna on table",
+                "take cilantro from fridge",
+                "take cookbook from table",
+                "take green hot pepper from counter",
+                "take knife from counter",
+                "take white onion from fridge",
+                "take yellow onion from fridge",
+                "take yellow potato from fridge"
+            ]
+        },
+        "action": "cook white tuna with oven",
+        "reward": 0,
+        "next_state": "You roasted the white tuna. > -= Kitchen =-0/21",
+        "next_infos": {
+            "admissible_commands": [
+                "close fridge",
+                "close frosted-glass door",
+                "cook green bell pepper with oven",
+                "cook green bell pepper with stove",
+                "cook white tuna with oven",
+                "cook white tuna with stove",
+                "drop green bell pepper",
+                "drop white tuna",
+                "eat green bell pepper",
+                "eat white tuna",
+                "examine cilantro",
+                "examine cookbook",
+                "examine counter",
+                "examine fridge",
+                "examine green hot pepper",
+                "examine knife",
+                "examine oven",
+                "examine stove",
+                "examine table",
+                "examine white onion",
+                "examine yellow onion",
+                "examine yellow potato",
+                "go south",
+                "go west",
+                "insert green bell pepper into fridge",
+                "insert white tuna into fridge",
+                "inventory",
+                "look",
+                "put green bell pepper on counter",
+                "put green bell pepper on stove",
+                "put green bell pepper on table",
+                "put white tuna on counter",
+                "put white tuna on stove",
+                "put white tuna on table",
+                "take cilantro from fridge",
+                "take cookbook from table",
+                "take green hot pepper from counter",
+                "take knife from counter",
+                "take white onion from fridge",
+                "take yellow onion from fridge",
+                "take yellow potato from fridge"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "You roasted the white tuna. > -= Kitchen =-0/21",
+        "infos": {
+            "admissible_commands": [
+                "close fridge",
+                "close frosted-glass door",
+                "cook green bell pepper with oven",
+                "cook green bell pepper with stove",
+                "cook white tuna with oven",
+                "cook white tuna with stove",
+                "drop green bell pepper",
+                "drop white tuna",
+                "eat green bell pepper",
+                "eat white tuna",
+                "examine cilantro",
+                "examine cookbook",
+                "examine counter",
+                "examine fridge",
+                "examine green hot pepper",
+                "examine knife",
+                "examine oven",
+                "examine stove",
+                "examine table",
+                "examine white onion",
+                "examine yellow onion",
+                "examine yellow potato",
+                "go south",
+                "go west",
+                "insert green bell pepper into fridge",
+                "insert white tuna into fridge",
+                "inventory",
+                "look",
+                "put green bell pepper on counter",
+                "put green bell pepper on stove",
+                "put green bell pepper on table",
+                "put white tuna on counter",
+                "put white tuna on stove",
+                "put white tuna on table",
+                "take cilantro from fridge",
+                "take cookbook from table",
+                "take green hot pepper from counter",
+                "take knife from counter",
+                "take white onion from fridge",
+                "take yellow onion from fridge",
+                "take yellow potato from fridge"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Livingroom =- You've entered a livingroom. You can see a sofa. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it? You don't like doors? Why not try going east, that entranceway is not blocked by one. You need an exit without a door? You should try going west. > -= Livingroom =-0/22",
+        "next_infos": {
+            "admissible_commands": [
+                "drop green bell pepper",
+                "drop white tuna",
+                "eat green bell pepper",
+                "eat white tuna",
+                "examine sofa",
+                "go east",
+                "go west",
+                "inventory",
+                "look",
+                "put green bell pepper on sofa",
+                "put white tuna on sofa"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "-= Livingroom =- You've entered a livingroom. You can see a sofa. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it? You don't like doors? Why not try going east, that entranceway is not blocked by one. You need an exit without a door? You should try going west. > -= Livingroom =-0/22",
+        "infos": {
+            "admissible_commands": [
+                "drop green bell pepper",
+                "drop white tuna",
+                "eat green bell pepper",
+                "eat white tuna",
+                "examine sofa",
+                "go east",
+                "go west",
+                "inventory",
+                "look",
+                "put green bell pepper on sofa",
+                "put white tuna on sofa"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Livingroom =- You've entered a livingroom. You can see a sofa. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it? You don't like doors? Why not try going east, that entranceway is not blocked by one. You need an exit without a door? You should try going west. > -= Livingroom =-0/23",
+        "next_infos": {
+            "admissible_commands": [
+                "drop green bell pepper",
+                "drop white tuna",
+                "eat green bell pepper",
+                "eat white tuna",
+                "examine sofa",
+                "go east",
+                "go west",
+                "inventory",
+                "look",
+                "put green bell pepper on sofa",
+                "put white tuna on sofa"
+            ]
+        },
+        "done": false,
+        "next_action": "put green bell pepper on sofa"
+    },
+    {
+        "state": "-= Livingroom =- You've entered a livingroom. You can see a sofa. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it? You don't like doors? Why not try going east, that entranceway is not blocked by one. You need an exit without a door? You should try going west. > -= Livingroom =-0/23",
+        "infos": {
+            "admissible_commands": [
+                "drop green bell pepper",
+                "drop white tuna",
+                "eat green bell pepper",
+                "eat white tuna",
+                "examine sofa",
+                "go east",
+                "go west",
+                "inventory",
+                "look",
+                "put green bell pepper on sofa",
+                "put white tuna on sofa"
+            ]
+        },
+        "action": "put green bell pepper on sofa",
+        "reward": 0,
+        "next_state": "You put the green bell pepper on the sofa. > -= Livingroom =-0/24",
+        "next_infos": {
+            "admissible_commands": [
+                "drop white tuna",
+                "eat white tuna",
+                "examine green bell pepper",
+                "examine sofa",
+                "go east",
+                "go west",
+                "inventory",
+                "look",
+                "put white tuna on sofa",
+                "take green bell pepper from sofa"
+            ]
+        },
+        "done": false,
+        "next_action": "inventory"
+    },
+    {
+        "state": "You put the green bell pepper on the sofa. > -= Livingroom =-0/24",
+        "infos": {
+            "admissible_commands": [
+                "drop white tuna",
+                "eat white tuna",
+                "examine green bell pepper",
+                "examine sofa",
+                "go east",
+                "go west",
+                "inventory",
+                "look",
+                "put white tuna on sofa",
+                "take green bell pepper from sofa"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying: a roasted white tuna. > -= Livingroom =-0/25",
+        "next_infos": {
+            "admissible_commands": [
+                "drop white tuna",
+                "eat white tuna",
+                "examine green bell pepper",
+                "examine sofa",
+                "go east",
+                "go west",
+                "inventory",
+                "look",
+                "put white tuna on sofa",
+                "take green bell pepper from sofa"
+            ]
+        },
+        "done": false,
+        "next_action": "examine green bell pepper"
+    },
+    {
+        "state": "You are carrying: a roasted white tuna. > -= Livingroom =-0/25",
+        "infos": {
+            "admissible_commands": [
+                "drop white tuna",
+                "eat white tuna",
+                "examine green bell pepper",
+                "examine sofa",
+                "go east",
+                "go west",
+                "inventory",
+                "look",
+                "put white tuna on sofa",
+                "take green bell pepper from sofa"
+            ]
+        },
+        "action": "examine green bell pepper",
+        "reward": 0,
+        "next_state": "That's a green bell pepper! > -= Livingroom =-0/26",
+        "next_infos": {
+            "admissible_commands": [
+                "drop white tuna",
+                "eat white tuna",
+                "examine green bell pepper",
+                "examine sofa",
+                "go east",
+                "go west",
+                "inventory",
+                "look",
+                "put white tuna on sofa",
+                "take green bell pepper from sofa"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

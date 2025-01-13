@@ -1,0 +1,512 @@
+[
+    {
+        "state": "You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal! -= Pantry =- You've entered a pantry. You can make out a shelf! The shelf is wooden. But the thing is empty, unfortunately. What, you think everything in TextWorld should have stuff on it? There is an open frosted-glass door leading south. > -= Pantry =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop red apple",
+                "drop red onion",
+                "drop yellow onion",
+                "eat red apple",
+                "eat red onion",
+                "eat yellow onion",
+                "examine shelf",
+                "go south",
+                "inventory",
+                "look",
+                "put red apple on shelf",
+                "put red onion on shelf",
+                "put yellow onion on shelf"
+            ]
+        },
+        "action": "drop red apple",
+        "reward": 0,
+        "next_state": "You drop the red apple on the ground. > -= Pantry =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop red onion",
+                "drop yellow onion",
+                "eat red onion",
+                "eat yellow onion",
+                "examine red apple",
+                "examine shelf",
+                "go south",
+                "inventory",
+                "look",
+                "put red onion on shelf",
+                "put yellow onion on shelf",
+                "take red apple"
+            ]
+        },
+        "done": false,
+        "next_action": "put yellow onion on shelf"
+    },
+    {
+        "state": "You drop the red apple on the ground. > -= Pantry =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop red onion",
+                "drop yellow onion",
+                "eat red onion",
+                "eat yellow onion",
+                "examine red apple",
+                "examine shelf",
+                "go south",
+                "inventory",
+                "look",
+                "put red onion on shelf",
+                "put yellow onion on shelf",
+                "take red apple"
+            ]
+        },
+        "action": "put yellow onion on shelf",
+        "reward": 0,
+        "next_state": "You put the yellow onion on the shelf. > -= Pantry =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop red onion",
+                "eat red onion",
+                "examine red apple",
+                "examine shelf",
+                "examine yellow onion",
+                "go south",
+                "inventory",
+                "look",
+                "put red onion on shelf",
+                "take red apple",
+                "take yellow onion from shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "You put the yellow onion on the shelf. > -= Pantry =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop red onion",
+                "eat red onion",
+                "examine red apple",
+                "examine shelf",
+                "examine yellow onion",
+                "go south",
+                "inventory",
+                "look",
+                "put red onion on shelf",
+                "take red apple",
+                "take yellow onion from shelf"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Pantry =- You've entered a pantry. You can make out a shelf! The shelf is wooden. On the shelf you make out a yellow onion. There is an open frosted-glass door leading south. There is a red apple on the floor. > -= Pantry =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop red onion",
+                "eat red onion",
+                "examine red apple",
+                "examine shelf",
+                "examine yellow onion",
+                "go south",
+                "inventory",
+                "look",
+                "put red onion on shelf",
+                "take red apple",
+                "take yellow onion from shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "inventory"
+    },
+    {
+        "state": "-= Pantry =- You've entered a pantry. You can make out a shelf! The shelf is wooden. On the shelf you make out a yellow onion. There is an open frosted-glass door leading south. There is a red apple on the floor. > -= Pantry =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop red onion",
+                "eat red onion",
+                "examine red apple",
+                "examine shelf",
+                "examine yellow onion",
+                "go south",
+                "inventory",
+                "look",
+                "put red onion on shelf",
+                "take red apple",
+                "take yellow onion from shelf"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying: a roasted red onion. > -= Pantry =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop red onion",
+                "eat red onion",
+                "examine red apple",
+                "examine shelf",
+                "examine yellow onion",
+                "go south",
+                "inventory",
+                "look",
+                "put red onion on shelf",
+                "take red apple",
+                "take yellow onion from shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "examine shelf"
+    },
+    {
+        "state": "You are carrying: a roasted red onion. > -= Pantry =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop red onion",
+                "eat red onion",
+                "examine red apple",
+                "examine shelf",
+                "examine yellow onion",
+                "go south",
+                "inventory",
+                "look",
+                "put red onion on shelf",
+                "take red apple",
+                "take yellow onion from shelf"
+            ]
+        },
+        "action": "examine shelf",
+        "reward": 0,
+        "next_state": "The shelf is durable. On the shelf is a yellow onion. > -= Pantry =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop red onion",
+                "eat red onion",
+                "examine red apple",
+                "examine shelf",
+                "examine yellow onion",
+                "go south",
+                "inventory",
+                "look",
+                "put red onion on shelf",
+                "take red apple",
+                "take yellow onion from shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "take yellow onion from shelf"
+    },
+    {
+        "state": "The shelf is durable. On the shelf is a yellow onion. > -= Pantry =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop red onion",
+                "eat red onion",
+                "examine red apple",
+                "examine shelf",
+                "examine yellow onion",
+                "go south",
+                "inventory",
+                "look",
+                "put red onion on shelf",
+                "take red apple",
+                "take yellow onion from shelf"
+            ]
+        },
+        "action": "take yellow onion from shelf",
+        "reward": 0,
+        "next_state": "You take the yellow onion from the shelf. > -= Pantry =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop red onion",
+                "drop yellow onion",
+                "eat red onion",
+                "eat yellow onion",
+                "examine red apple",
+                "examine shelf",
+                "go south",
+                "inventory",
+                "look",
+                "put red onion on shelf",
+                "put yellow onion on shelf",
+                "take red apple"
+            ]
+        },
+        "done": false,
+        "next_action": "put yellow onion on shelf"
+    },
+    {
+        "state": "You take the yellow onion from the shelf. > -= Pantry =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop red onion",
+                "drop yellow onion",
+                "eat red onion",
+                "eat yellow onion",
+                "examine red apple",
+                "examine shelf",
+                "go south",
+                "inventory",
+                "look",
+                "put red onion on shelf",
+                "put yellow onion on shelf",
+                "take red apple"
+            ]
+        },
+        "action": "put yellow onion on shelf",
+        "reward": 0,
+        "next_state": "You put the yellow onion on the shelf. > -= Pantry =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop red onion",
+                "eat red onion",
+                "examine red apple",
+                "examine shelf",
+                "examine yellow onion",
+                "go south",
+                "inventory",
+                "look",
+                "put red onion on shelf",
+                "take red apple",
+                "take yellow onion from shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "take red apple"
+    },
+    {
+        "state": "You put the yellow onion on the shelf. > -= Pantry =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop red onion",
+                "eat red onion",
+                "examine red apple",
+                "examine shelf",
+                "examine yellow onion",
+                "go south",
+                "inventory",
+                "look",
+                "put red onion on shelf",
+                "take red apple",
+                "take yellow onion from shelf"
+            ]
+        },
+        "action": "take red apple",
+        "reward": 0,
+        "next_state": "You pick up the red apple from the ground. > -= Pantry =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop red apple",
+                "drop red onion",
+                "eat red apple",
+                "eat red onion",
+                "examine shelf",
+                "examine yellow onion",
+                "go south",
+                "inventory",
+                "look",
+                "put red apple on shelf",
+                "put red onion on shelf",
+                "take yellow onion from shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "close frosted-glass door"
+    },
+    {
+        "state": "You pick up the red apple from the ground. > -= Pantry =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop red apple",
+                "drop red onion",
+                "eat red apple",
+                "eat red onion",
+                "examine shelf",
+                "examine yellow onion",
+                "go south",
+                "inventory",
+                "look",
+                "put red apple on shelf",
+                "put red onion on shelf",
+                "take yellow onion from shelf"
+            ]
+        },
+        "action": "close frosted-glass door",
+        "reward": 0,
+        "next_state": "You close frosted-glass door. > -= Pantry =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red apple",
+                "drop red onion",
+                "eat red apple",
+                "eat red onion",
+                "examine shelf",
+                "examine yellow onion",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "put red apple on shelf",
+                "put red onion on shelf",
+                "take yellow onion from shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "You close frosted-glass door. > -= Pantry =-0/10",
+        "infos": {
+            "admissible_commands": [
+                "drop red apple",
+                "drop red onion",
+                "eat red apple",
+                "eat red onion",
+                "examine shelf",
+                "examine yellow onion",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "put red apple on shelf",
+                "put red onion on shelf",
+                "take yellow onion from shelf"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Pantry =- You've entered a pantry. You can make out a shelf! The shelf is wooden. On the shelf you make out a yellow onion. There is a closed frosted-glass door leading south. > -= Pantry =-0/11",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red apple",
+                "drop red onion",
+                "eat red apple",
+                "eat red onion",
+                "examine shelf",
+                "examine yellow onion",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "put red apple on shelf",
+                "put red onion on shelf",
+                "take yellow onion from shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "eat red apple"
+    },
+    {
+        "state": "-= Pantry =- You've entered a pantry. You can make out a shelf! The shelf is wooden. On the shelf you make out a yellow onion. There is a closed frosted-glass door leading south. > -= Pantry =-0/11",
+        "infos": {
+            "admissible_commands": [
+                "drop red apple",
+                "drop red onion",
+                "eat red apple",
+                "eat red onion",
+                "examine shelf",
+                "examine yellow onion",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "put red apple on shelf",
+                "put red onion on shelf",
+                "take yellow onion from shelf"
+            ]
+        },
+        "action": "eat red apple",
+        "reward": 0,
+        "next_state": "You eat the red apple. Not bad. > -= Pantry =-0/12",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red onion",
+                "eat red onion",
+                "examine shelf",
+                "examine yellow onion",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "put red onion on shelf",
+                "take yellow onion from shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "examine yellow onion"
+    },
+    {
+        "state": "You eat the red apple. Not bad. > -= Pantry =-0/12",
+        "infos": {
+            "admissible_commands": [
+                "drop red onion",
+                "eat red onion",
+                "examine shelf",
+                "examine yellow onion",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "put red onion on shelf",
+                "take yellow onion from shelf"
+            ]
+        },
+        "action": "examine yellow onion",
+        "reward": 0,
+        "next_state": "The yellow onion looks delectable. > -= Pantry =-0/13",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red onion",
+                "eat red onion",
+                "examine shelf",
+                "examine yellow onion",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "put red onion on shelf",
+                "take yellow onion from shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "eat red onion"
+    },
+    {
+        "state": "The yellow onion looks delectable. > -= Pantry =-0/13",
+        "infos": {
+            "admissible_commands": [
+                "drop red onion",
+                "eat red onion",
+                "examine shelf",
+                "examine yellow onion",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "put red onion on shelf",
+                "take yellow onion from shelf"
+            ]
+        },
+        "action": "eat red onion",
+        "reward": 0,
+        "next_state": "You eat the red onion. Not bad. *** You lost! *** You scored 0 out of a possible 7, in 13 turns. Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command? > -= Pantry =-0/13",
+        "next_infos": {
+            "admissible_commands": [
+                "examine shelf",
+                "examine yellow onion",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "take yellow onion from shelf"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

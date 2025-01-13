@@ -1,0 +1,95 @@
+[
+    {
+        "state": "Get ready to pick stuff up and put it in places, because you've just entered TextWorld! Here is your task for today. First of all, you could, like, head west. After that, make an effort to go to the west. After that, move west. Okay, and then, go south. After that, attempt to travel west. And then, attempt to move west. After that, try to go west. After that, make an attempt to venture south. Once you get through with that, go west. Following that, travel north. After that, go to the west. Once you finish that, take a trip west. And then, move south. Next, make an effort to go east. Then, recover the coin from the floor of the restroom. Got that? Good! -= Launderette =- Look at that notice! What does it say? It says Welcome to the launderette? Well that's cool. You need an unblocked exit? You should try going west. > -= Launderette =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Launderette =- Look at that notice! What does it say? It says Welcome to the launderette? Well that's cool. You need an unblocked exit? You should try going west. > -= Launderette =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Launderette =- Look at that notice! What does it say? It says Welcome to the launderette? Well that's cool. You need an unblocked exit? You should try going west. > -= Launderette =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Recreation Zone =- You are in an ordinary kind of place. That is to say, you're in a recreation zone. You need an unblocked exit? You should try going east. There is an exit to the west. Don't worry, it is unblocked. > -= Recreation Zone =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "go east",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "-= Recreation Zone =- You are in an ordinary kind of place. That is to say, you're in a recreation zone. You need an unblocked exit? You should try going east. There is an exit to the west. Don't worry, it is unblocked. > -= Recreation Zone =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "go east",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Recreation Zone =- You are in an ordinary kind of place. That is to say, you're in a recreation zone. You need an unblocked exit? You should try going east. There is an exit to the west. Don't worry, it is unblocked. > -= Recreation Zone =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "go east",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Recreation Zone =- You are in an ordinary kind of place. That is to say, you're in a recreation zone. You need an unblocked exit? You should try going east. There is an exit to the west. Don't worry, it is unblocked. > -= Recreation Zone =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "go east",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Cookhouse =- Well, here we are in the cookhouse. There is an exit to the east. Don't worry, it is unblocked. There is an unblocked exit to the west. > -= Cookhouse =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "go east",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": null
+    }
+]

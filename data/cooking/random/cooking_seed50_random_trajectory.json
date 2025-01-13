@@ -1,0 +1,302 @@
+[
+    {
+        "state": "You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal! -= Bathroom =- You're now in a bathroom. You can barely contain your excitement. You need an exit without a door? You should try going west. > -= Bathroom =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "drop red hot pepper",
+                "drop yellow apple",
+                "drop yellow bell pepper",
+                "eat red hot pepper",
+                "eat yellow apple",
+                "eat yellow bell pepper",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying: a roasted yellow bell pepper, a yellow apple and a red hot pepper. > -= Bathroom =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red hot pepper",
+                "drop yellow apple",
+                "drop yellow bell pepper",
+                "eat red hot pepper",
+                "eat yellow apple",
+                "eat yellow bell pepper",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "drop yellow bell pepper"
+    },
+    {
+        "state": "You are carrying: a roasted yellow bell pepper, a yellow apple and a red hot pepper. > -= Bathroom =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "drop red hot pepper",
+                "drop yellow apple",
+                "drop yellow bell pepper",
+                "eat red hot pepper",
+                "eat yellow apple",
+                "eat yellow bell pepper",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "drop yellow bell pepper",
+        "reward": 0,
+        "next_state": "You drop the yellow bell pepper on the ground. > -= Bathroom =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red hot pepper",
+                "drop yellow apple",
+                "eat red hot pepper",
+                "eat yellow apple",
+                "examine yellow bell pepper",
+                "go west",
+                "inventory",
+                "look",
+                "take yellow bell pepper"
+            ]
+        },
+        "done": false,
+        "next_action": "inventory"
+    },
+    {
+        "state": "You drop the yellow bell pepper on the ground. > -= Bathroom =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "drop red hot pepper",
+                "drop yellow apple",
+                "eat red hot pepper",
+                "eat yellow apple",
+                "examine yellow bell pepper",
+                "go west",
+                "inventory",
+                "look",
+                "take yellow bell pepper"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying: a yellow apple and a red hot pepper. > -= Bathroom =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red hot pepper",
+                "drop yellow apple",
+                "eat red hot pepper",
+                "eat yellow apple",
+                "examine yellow bell pepper",
+                "go west",
+                "inventory",
+                "look",
+                "take yellow bell pepper"
+            ]
+        },
+        "done": false,
+        "next_action": "take yellow bell pepper"
+    },
+    {
+        "state": "You are carrying: a yellow apple and a red hot pepper. > -= Bathroom =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "drop red hot pepper",
+                "drop yellow apple",
+                "eat red hot pepper",
+                "eat yellow apple",
+                "examine yellow bell pepper",
+                "go west",
+                "inventory",
+                "look",
+                "take yellow bell pepper"
+            ]
+        },
+        "action": "take yellow bell pepper",
+        "reward": 0,
+        "next_state": "You pick up the yellow bell pepper from the ground. > -= Bathroom =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red hot pepper",
+                "drop yellow apple",
+                "drop yellow bell pepper",
+                "eat red hot pepper",
+                "eat yellow apple",
+                "eat yellow bell pepper",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "You pick up the yellow bell pepper from the ground. > -= Bathroom =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "drop red hot pepper",
+                "drop yellow apple",
+                "drop yellow bell pepper",
+                "eat red hot pepper",
+                "eat yellow apple",
+                "eat yellow bell pepper",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Corridor =- You find yourself in a corridor. A typical one. There is an exit to the east. Don't worry, there is no door. You need an exit without a door? You should try going south. > -= Corridor =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red hot pepper",
+                "drop yellow apple",
+                "drop yellow bell pepper",
+                "eat red hot pepper",
+                "eat yellow apple",
+                "eat yellow bell pepper",
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "inventory"
+    },
+    {
+        "state": "-= Corridor =- You find yourself in a corridor. A typical one. There is an exit to the east. Don't worry, there is no door. You need an exit without a door? You should try going south. > -= Corridor =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "drop red hot pepper",
+                "drop yellow apple",
+                "drop yellow bell pepper",
+                "eat red hot pepper",
+                "eat yellow apple",
+                "eat yellow bell pepper",
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying: a roasted yellow bell pepper, a yellow apple and a red hot pepper. > -= Corridor =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red hot pepper",
+                "drop yellow apple",
+                "drop yellow bell pepper",
+                "eat red hot pepper",
+                "eat yellow apple",
+                "eat yellow bell pepper",
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "eat red hot pepper"
+    },
+    {
+        "state": "You are carrying: a roasted yellow bell pepper, a yellow apple and a red hot pepper. > -= Corridor =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "drop red hot pepper",
+                "drop yellow apple",
+                "drop yellow bell pepper",
+                "eat red hot pepper",
+                "eat yellow apple",
+                "eat yellow bell pepper",
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "eat red hot pepper",
+        "reward": 0,
+        "next_state": "You eat the red hot pepper. Not bad. > -= Corridor =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "drop yellow apple",
+                "drop yellow bell pepper",
+                "eat yellow apple",
+                "eat yellow bell pepper",
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "You eat the red hot pepper. Not bad. > -= Corridor =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "drop yellow apple",
+                "drop yellow bell pepper",
+                "eat yellow apple",
+                "eat yellow bell pepper",
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Bathroom =- You're now in a bathroom. You can barely contain your excitement. You need an exit without a door? You should try going west. > -= Bathroom =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "drop yellow apple",
+                "drop yellow bell pepper",
+                "eat yellow apple",
+                "eat yellow bell pepper",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "eat yellow bell pepper"
+    },
+    {
+        "state": "-= Bathroom =- You're now in a bathroom. You can barely contain your excitement. You need an exit without a door? You should try going west. > -= Bathroom =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "drop yellow apple",
+                "drop yellow bell pepper",
+                "eat yellow apple",
+                "eat yellow bell pepper",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "eat yellow bell pepper",
+        "reward": 0,
+        "next_state": "You eat the yellow bell pepper. Not bad. *** You lost! *** You scored 0 out of a possible 7, in 9 turns. Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command? > -= Bathroom =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "drop yellow apple",
+                "eat yellow apple",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

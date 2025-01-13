@@ -1,0 +1,741 @@
+[
+    {
+        "state": "You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal! -= Pantry =- You've entered a pantry. I guess you better just go and list everything you see here. You can make out a shelf. But oh no! there's nothing on this piece of trash. There is an open frosted-glass door leading west. > -= Pantry =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop red bell pepper",
+                "drop red hot pepper",
+                "drop yellow bell pepper",
+                "eat red bell pepper",
+                "eat red hot pepper",
+                "eat yellow bell pepper",
+                "examine shelf",
+                "go west",
+                "inventory",
+                "look",
+                "put red bell pepper on shelf",
+                "put red hot pepper on shelf",
+                "put yellow bell pepper on shelf"
+            ]
+        },
+        "action": "drop red bell pepper",
+        "reward": 0,
+        "next_state": "You drop the red bell pepper on the ground. > -= Pantry =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop red hot pepper",
+                "drop yellow bell pepper",
+                "eat red hot pepper",
+                "eat yellow bell pepper",
+                "examine red bell pepper",
+                "examine shelf",
+                "go west",
+                "inventory",
+                "look",
+                "put red hot pepper on shelf",
+                "put yellow bell pepper on shelf",
+                "take red bell pepper"
+            ]
+        },
+        "done": false,
+        "next_action": "drop red hot pepper"
+    },
+    {
+        "state": "You drop the red bell pepper on the ground. > -= Pantry =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop red hot pepper",
+                "drop yellow bell pepper",
+                "eat red hot pepper",
+                "eat yellow bell pepper",
+                "examine red bell pepper",
+                "examine shelf",
+                "go west",
+                "inventory",
+                "look",
+                "put red hot pepper on shelf",
+                "put yellow bell pepper on shelf",
+                "take red bell pepper"
+            ]
+        },
+        "action": "drop red hot pepper",
+        "reward": 0,
+        "next_state": "You drop the red hot pepper on the ground. > -= Pantry =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop yellow bell pepper",
+                "eat yellow bell pepper",
+                "examine red bell pepper",
+                "examine red hot pepper",
+                "examine shelf",
+                "go west",
+                "inventory",
+                "look",
+                "put yellow bell pepper on shelf",
+                "take red bell pepper",
+                "take red hot pepper"
+            ]
+        },
+        "done": false,
+        "next_action": "take red hot pepper"
+    },
+    {
+        "state": "You drop the red hot pepper on the ground. > -= Pantry =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop yellow bell pepper",
+                "eat yellow bell pepper",
+                "examine red bell pepper",
+                "examine red hot pepper",
+                "examine shelf",
+                "go west",
+                "inventory",
+                "look",
+                "put yellow bell pepper on shelf",
+                "take red bell pepper",
+                "take red hot pepper"
+            ]
+        },
+        "action": "take red hot pepper",
+        "reward": 0,
+        "next_state": "You pick up the red hot pepper from the ground. > -= Pantry =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop red hot pepper",
+                "drop yellow bell pepper",
+                "eat red hot pepper",
+                "eat yellow bell pepper",
+                "examine red bell pepper",
+                "examine shelf",
+                "go west",
+                "inventory",
+                "look",
+                "put red hot pepper on shelf",
+                "put yellow bell pepper on shelf",
+                "take red bell pepper"
+            ]
+        },
+        "done": false,
+        "next_action": "drop red hot pepper"
+    },
+    {
+        "state": "You pick up the red hot pepper from the ground. > -= Pantry =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop red hot pepper",
+                "drop yellow bell pepper",
+                "eat red hot pepper",
+                "eat yellow bell pepper",
+                "examine red bell pepper",
+                "examine shelf",
+                "go west",
+                "inventory",
+                "look",
+                "put red hot pepper on shelf",
+                "put yellow bell pepper on shelf",
+                "take red bell pepper"
+            ]
+        },
+        "action": "drop red hot pepper",
+        "reward": 0,
+        "next_state": "You drop the red hot pepper on the ground. > -= Pantry =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop yellow bell pepper",
+                "eat yellow bell pepper",
+                "examine red bell pepper",
+                "examine red hot pepper",
+                "examine shelf",
+                "go west",
+                "inventory",
+                "look",
+                "put yellow bell pepper on shelf",
+                "take red bell pepper",
+                "take red hot pepper"
+            ]
+        },
+        "done": false,
+        "next_action": "inventory"
+    },
+    {
+        "state": "You drop the red hot pepper on the ground. > -= Pantry =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop yellow bell pepper",
+                "eat yellow bell pepper",
+                "examine red bell pepper",
+                "examine red hot pepper",
+                "examine shelf",
+                "go west",
+                "inventory",
+                "look",
+                "put yellow bell pepper on shelf",
+                "take red bell pepper",
+                "take red hot pepper"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying: a yellow bell pepper. > -= Pantry =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop yellow bell pepper",
+                "eat yellow bell pepper",
+                "examine red bell pepper",
+                "examine red hot pepper",
+                "examine shelf",
+                "go west",
+                "inventory",
+                "look",
+                "put yellow bell pepper on shelf",
+                "take red bell pepper",
+                "take red hot pepper"
+            ]
+        },
+        "done": false,
+        "next_action": "put yellow bell pepper on shelf"
+    },
+    {
+        "state": "You are carrying: a yellow bell pepper. > -= Pantry =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop yellow bell pepper",
+                "eat yellow bell pepper",
+                "examine red bell pepper",
+                "examine red hot pepper",
+                "examine shelf",
+                "go west",
+                "inventory",
+                "look",
+                "put yellow bell pepper on shelf",
+                "take red bell pepper",
+                "take red hot pepper"
+            ]
+        },
+        "action": "put yellow bell pepper on shelf",
+        "reward": 0,
+        "next_state": "You put the yellow bell pepper on the shelf. > -= Pantry =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "examine red bell pepper",
+                "examine red hot pepper",
+                "examine shelf",
+                "examine yellow bell pepper",
+                "go west",
+                "inventory",
+                "look",
+                "take red bell pepper",
+                "take red hot pepper",
+                "take yellow bell pepper from shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "examine red hot pepper"
+    },
+    {
+        "state": "You put the yellow bell pepper on the shelf. > -= Pantry =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "examine red bell pepper",
+                "examine red hot pepper",
+                "examine shelf",
+                "examine yellow bell pepper",
+                "go west",
+                "inventory",
+                "look",
+                "take red bell pepper",
+                "take red hot pepper",
+                "take yellow bell pepper from shelf"
+            ]
+        },
+        "action": "examine red hot pepper",
+        "reward": 0,
+        "next_state": "The red hot pepper looks delicious. > -= Pantry =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "examine red bell pepper",
+                "examine red hot pepper",
+                "examine shelf",
+                "examine yellow bell pepper",
+                "go west",
+                "inventory",
+                "look",
+                "take red bell pepper",
+                "take red hot pepper",
+                "take yellow bell pepper from shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "The red hot pepper looks delicious. > -= Pantry =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "examine red bell pepper",
+                "examine red hot pepper",
+                "examine shelf",
+                "examine yellow bell pepper",
+                "go west",
+                "inventory",
+                "look",
+                "take red bell pepper",
+                "take red hot pepper",
+                "take yellow bell pepper from shelf"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Pantry =- You've entered a pantry. I guess you better just go and list everything you see here. You can make out a shelf. On the shelf you make out a yellow bell pepper. There is an open frosted-glass door leading west. There is a red hot pepper and a fried red bell pepper on the floor. > -= Pantry =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "examine red bell pepper",
+                "examine red hot pepper",
+                "examine shelf",
+                "examine yellow bell pepper",
+                "go west",
+                "inventory",
+                "look",
+                "take red bell pepper",
+                "take red hot pepper",
+                "take yellow bell pepper from shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "examine red bell pepper"
+    },
+    {
+        "state": "-= Pantry =- You've entered a pantry. I guess you better just go and list everything you see here. You can make out a shelf. On the shelf you make out a yellow bell pepper. There is an open frosted-glass door leading west. There is a red hot pepper and a fried red bell pepper on the floor. > -= Pantry =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "examine red bell pepper",
+                "examine red hot pepper",
+                "examine shelf",
+                "examine yellow bell pepper",
+                "go west",
+                "inventory",
+                "look",
+                "take red bell pepper",
+                "take red hot pepper",
+                "take yellow bell pepper from shelf"
+            ]
+        },
+        "action": "examine red bell pepper",
+        "reward": 0,
+        "next_state": "That's a fried red bell pepper! > -= Pantry =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "examine red bell pepper",
+                "examine red hot pepper",
+                "examine shelf",
+                "examine yellow bell pepper",
+                "go west",
+                "inventory",
+                "look",
+                "take red bell pepper",
+                "take red hot pepper",
+                "take yellow bell pepper from shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "examine shelf"
+    },
+    {
+        "state": "That's a fried red bell pepper! > -= Pantry =-0/10",
+        "infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "examine red bell pepper",
+                "examine red hot pepper",
+                "examine shelf",
+                "examine yellow bell pepper",
+                "go west",
+                "inventory",
+                "look",
+                "take red bell pepper",
+                "take red hot pepper",
+                "take yellow bell pepper from shelf"
+            ]
+        },
+        "action": "examine shelf",
+        "reward": 0,
+        "next_state": "The shelf is unstable. On the shelf is a yellow bell pepper. > -= Pantry =-0/11",
+        "next_infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "examine red bell pepper",
+                "examine red hot pepper",
+                "examine shelf",
+                "examine yellow bell pepper",
+                "go west",
+                "inventory",
+                "look",
+                "take red bell pepper",
+                "take red hot pepper",
+                "take yellow bell pepper from shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "examine yellow bell pepper"
+    },
+    {
+        "state": "The shelf is unstable. On the shelf is a yellow bell pepper. > -= Pantry =-0/11",
+        "infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "examine red bell pepper",
+                "examine red hot pepper",
+                "examine shelf",
+                "examine yellow bell pepper",
+                "go west",
+                "inventory",
+                "look",
+                "take red bell pepper",
+                "take red hot pepper",
+                "take yellow bell pepper from shelf"
+            ]
+        },
+        "action": "examine yellow bell pepper",
+        "reward": 0,
+        "next_state": "You couldn't pay me to eat that yellow bell pepper. > -= Pantry =-0/12",
+        "next_infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "examine red bell pepper",
+                "examine red hot pepper",
+                "examine shelf",
+                "examine yellow bell pepper",
+                "go west",
+                "inventory",
+                "look",
+                "take red bell pepper",
+                "take red hot pepper",
+                "take yellow bell pepper from shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "inventory"
+    },
+    {
+        "state": "You couldn't pay me to eat that yellow bell pepper. > -= Pantry =-0/12",
+        "infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "examine red bell pepper",
+                "examine red hot pepper",
+                "examine shelf",
+                "examine yellow bell pepper",
+                "go west",
+                "inventory",
+                "look",
+                "take red bell pepper",
+                "take red hot pepper",
+                "take yellow bell pepper from shelf"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying nothing. > -= Pantry =-0/13",
+        "next_infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "examine red bell pepper",
+                "examine red hot pepper",
+                "examine shelf",
+                "examine yellow bell pepper",
+                "go west",
+                "inventory",
+                "look",
+                "take red bell pepper",
+                "take red hot pepper",
+                "take yellow bell pepper from shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "take red hot pepper"
+    },
+    {
+        "state": "You are carrying nothing. > -= Pantry =-0/13",
+        "infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "examine red bell pepper",
+                "examine red hot pepper",
+                "examine shelf",
+                "examine yellow bell pepper",
+                "go west",
+                "inventory",
+                "look",
+                "take red bell pepper",
+                "take red hot pepper",
+                "take yellow bell pepper from shelf"
+            ]
+        },
+        "action": "take red hot pepper",
+        "reward": 0,
+        "next_state": "You pick up the red hot pepper from the ground. > -= Pantry =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop red hot pepper",
+                "eat red hot pepper",
+                "examine red bell pepper",
+                "examine shelf",
+                "examine yellow bell pepper",
+                "go west",
+                "inventory",
+                "look",
+                "put red hot pepper on shelf",
+                "take red bell pepper",
+                "take yellow bell pepper from shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "examine shelf"
+    },
+    {
+        "state": "You pick up the red hot pepper from the ground. > -= Pantry =-0/14",
+        "infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop red hot pepper",
+                "eat red hot pepper",
+                "examine red bell pepper",
+                "examine shelf",
+                "examine yellow bell pepper",
+                "go west",
+                "inventory",
+                "look",
+                "put red hot pepper on shelf",
+                "take red bell pepper",
+                "take yellow bell pepper from shelf"
+            ]
+        },
+        "action": "examine shelf",
+        "reward": 0,
+        "next_state": "The shelf is unstable. On the shelf is a yellow bell pepper. > -= Pantry =-0/15",
+        "next_infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop red hot pepper",
+                "eat red hot pepper",
+                "examine red bell pepper",
+                "examine shelf",
+                "examine yellow bell pepper",
+                "go west",
+                "inventory",
+                "look",
+                "put red hot pepper on shelf",
+                "take red bell pepper",
+                "take yellow bell pepper from shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "take yellow bell pepper from shelf"
+    },
+    {
+        "state": "The shelf is unstable. On the shelf is a yellow bell pepper. > -= Pantry =-0/15",
+        "infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop red hot pepper",
+                "eat red hot pepper",
+                "examine red bell pepper",
+                "examine shelf",
+                "examine yellow bell pepper",
+                "go west",
+                "inventory",
+                "look",
+                "put red hot pepper on shelf",
+                "take red bell pepper",
+                "take yellow bell pepper from shelf"
+            ]
+        },
+        "action": "take yellow bell pepper from shelf",
+        "reward": 0,
+        "next_state": "You take the yellow bell pepper from the shelf. > -= Pantry =-0/16",
+        "next_infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop red hot pepper",
+                "drop yellow bell pepper",
+                "eat red hot pepper",
+                "eat yellow bell pepper",
+                "examine red bell pepper",
+                "examine shelf",
+                "go west",
+                "inventory",
+                "look",
+                "put red hot pepper on shelf",
+                "put yellow bell pepper on shelf",
+                "take red bell pepper"
+            ]
+        },
+        "done": false,
+        "next_action": "eat red hot pepper"
+    },
+    {
+        "state": "You take the yellow bell pepper from the shelf. > -= Pantry =-0/16",
+        "infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop red hot pepper",
+                "drop yellow bell pepper",
+                "eat red hot pepper",
+                "eat yellow bell pepper",
+                "examine red bell pepper",
+                "examine shelf",
+                "go west",
+                "inventory",
+                "look",
+                "put red hot pepper on shelf",
+                "put yellow bell pepper on shelf",
+                "take red bell pepper"
+            ]
+        },
+        "action": "eat red hot pepper",
+        "reward": 0,
+        "next_state": "You eat the red hot pepper. Not bad. > -= Pantry =-0/17",
+        "next_infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop yellow bell pepper",
+                "eat yellow bell pepper",
+                "examine red bell pepper",
+                "examine shelf",
+                "go west",
+                "inventory",
+                "look",
+                "put yellow bell pepper on shelf",
+                "take red bell pepper"
+            ]
+        },
+        "done": false,
+        "next_action": "take red bell pepper"
+    },
+    {
+        "state": "You eat the red hot pepper. Not bad. > -= Pantry =-0/17",
+        "infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop yellow bell pepper",
+                "eat yellow bell pepper",
+                "examine red bell pepper",
+                "examine shelf",
+                "go west",
+                "inventory",
+                "look",
+                "put yellow bell pepper on shelf",
+                "take red bell pepper"
+            ]
+        },
+        "action": "take red bell pepper",
+        "reward": 0,
+        "next_state": "You pick up the red bell pepper from the ground. > -= Pantry =-0/18",
+        "next_infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop red bell pepper",
+                "drop yellow bell pepper",
+                "eat red bell pepper",
+                "eat yellow bell pepper",
+                "examine shelf",
+                "go west",
+                "inventory",
+                "look",
+                "put red bell pepper on shelf",
+                "put yellow bell pepper on shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "drop yellow bell pepper"
+    },
+    {
+        "state": "You pick up the red bell pepper from the ground. > -= Pantry =-0/18",
+        "infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop red bell pepper",
+                "drop yellow bell pepper",
+                "eat red bell pepper",
+                "eat yellow bell pepper",
+                "examine shelf",
+                "go west",
+                "inventory",
+                "look",
+                "put red bell pepper on shelf",
+                "put yellow bell pepper on shelf"
+            ]
+        },
+        "action": "drop yellow bell pepper",
+        "reward": 0,
+        "next_state": "You drop the yellow bell pepper on the ground. > -= Pantry =-0/19",
+        "next_infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop red bell pepper",
+                "eat red bell pepper",
+                "examine shelf",
+                "examine yellow bell pepper",
+                "go west",
+                "inventory",
+                "look",
+                "put red bell pepper on shelf",
+                "take yellow bell pepper"
+            ]
+        },
+        "done": false,
+        "next_action": "eat red bell pepper"
+    },
+    {
+        "state": "You drop the yellow bell pepper on the ground. > -= Pantry =-0/19",
+        "infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop red bell pepper",
+                "eat red bell pepper",
+                "examine shelf",
+                "examine yellow bell pepper",
+                "go west",
+                "inventory",
+                "look",
+                "put red bell pepper on shelf",
+                "take yellow bell pepper"
+            ]
+        },
+        "action": "eat red bell pepper",
+        "reward": 0,
+        "next_state": "You eat the red bell pepper. Not bad. *** You lost! *** You scored 0 out of a possible 7, in 19 turns. Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command? > -= Pantry =-0/19",
+        "next_infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "examine shelf",
+                "examine yellow bell pepper",
+                "go west",
+                "inventory",
+                "look",
+                "take yellow bell pepper"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

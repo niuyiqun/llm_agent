@@ -1,0 +1,355 @@
+[
+    {
+        "state": "You are now playing a profound round of TextWorld! First off, if it's not too much trouble, I need you to try to venture east. Then, venture south. After that, try to go to the south. Once you succeed at that, try to go west. If you can finish that, try to move north. That done, make an effort to take a trip east. After that, try to take a trip south. Okay, and then, try to travel south. Then, travel south. And then, venture south. After that, attempt to go east. Then, venture south. With that done, travel west. And then, attempt to take a trip north. That done, retrieve the coin from the floor of the restroom. And once you've done that, you win! -= Spare Room =- I am sorry to announce that you are now in the spare room. There is an exit to the east. Don't worry, it is unblocked. > -= Spare Room =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "go east",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Spare Room =- I am sorry to announce that you are now in the spare room. There is an exit to the east. Don't worry, it is unblocked. > -= Spare Room =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "go east",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Spare Room =- I am sorry to announce that you are now in the spare room. There is an exit to the east. Don't worry, it is unblocked. > -= Spare Room =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "go east",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Attic =- Well I'll be, you are in a place we're calling an attic. You need an unguarded exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked. > -= Attic =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Attic =- Well I'll be, you are in a place we're calling an attic. You need an unguarded exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked. > -= Attic =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Dish-Pit =- You arrive in a dish-pit. A standard kind of place. You don't like doors? Why not try going north, that entranceway is unblocked. There is an unblocked exit to the south. > -= Dish-Pit =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "-= Dish-Pit =- You arrive in a dish-pit. A standard kind of place. You don't like doors? Why not try going north, that entranceway is unblocked. There is an unblocked exit to the south. > -= Dish-Pit =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Dish-Pit =- You arrive in a dish-pit. A standard kind of place. You don't like doors? Why not try going north, that entranceway is unblocked. There is an unblocked exit to the south. > -= Dish-Pit =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Dish-Pit =- You arrive in a dish-pit. A standard kind of place. You don't like doors? Why not try going north, that entranceway is unblocked. There is an unblocked exit to the south. > -= Dish-Pit =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Attic =- Well I'll be, you are in a place we're calling an attic. You need an unguarded exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked. > -= Attic =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Attic =- Well I'll be, you are in a place we're calling an attic. You need an unguarded exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked. > -= Attic =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Spare Room =- I am sorry to announce that you are now in the spare room. There is an exit to the east. Don't worry, it is unblocked. > -= Spare Room =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "go east",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "-= Spare Room =- I am sorry to announce that you are now in the spare room. There is an exit to the east. Don't worry, it is unblocked. > -= Spare Room =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "go east",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Spare Room =- I am sorry to announce that you are now in the spare room. There is an exit to the east. Don't worry, it is unblocked. > -= Spare Room =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "go east",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Spare Room =- I am sorry to announce that you are now in the spare room. There is an exit to the east. Don't worry, it is unblocked. > -= Spare Room =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "go east",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Attic =- Well I'll be, you are in a place we're calling an attic. You need an unguarded exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked. > -= Attic =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Attic =- Well I'll be, you are in a place we're calling an attic. You need an unguarded exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked. > -= Attic =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Dish-Pit =- You arrive in a dish-pit. A standard kind of place. You don't like doors? Why not try going north, that entranceway is unblocked. There is an unblocked exit to the south. > -= Dish-Pit =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "-= Dish-Pit =- You arrive in a dish-pit. A standard kind of place. You don't like doors? Why not try going north, that entranceway is unblocked. There is an unblocked exit to the south. > -= Dish-Pit =-0/10",
+        "infos": {
+            "admissible_commands": [
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Dish-Pit =- You arrive in a dish-pit. A standard kind of place. You don't like doors? Why not try going north, that entranceway is unblocked. There is an unblocked exit to the south. > -= Dish-Pit =-0/11",
+        "next_infos": {
+            "admissible_commands": [
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Dish-Pit =- You arrive in a dish-pit. A standard kind of place. You don't like doors? Why not try going north, that entranceway is unblocked. There is an unblocked exit to the south. > -= Dish-Pit =-0/11",
+        "infos": {
+            "admissible_commands": [
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Attic =- Well I'll be, you are in a place we're calling an attic. You need an unguarded exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked. > -= Attic =-0/12",
+        "next_infos": {
+            "admissible_commands": [
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Attic =- Well I'll be, you are in a place we're calling an attic. You need an unguarded exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked. > -= Attic =-0/12",
+        "infos": {
+            "admissible_commands": [
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Dish-Pit =- You arrive in a dish-pit. A standard kind of place. You don't like doors? Why not try going north, that entranceway is unblocked. There is an unblocked exit to the south. > -= Dish-Pit =-0/13",
+        "next_infos": {
+            "admissible_commands": [
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Dish-Pit =- You arrive in a dish-pit. A standard kind of place. You don't like doors? Why not try going north, that entranceway is unblocked. There is an unblocked exit to the south. > -= Dish-Pit =-0/13",
+        "infos": {
+            "admissible_commands": [
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Steam Room =- You are in a steam room. A standard kind of place. There is an exit to the north. Don't worry, it is unguarded. You need an unblocked exit? You should try going west. > -= Steam Room =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "-= Steam Room =- You are in a steam room. A standard kind of place. There is an exit to the north. Don't worry, it is unguarded. You need an unblocked exit? You should try going west. > -= Steam Room =-0/14",
+        "infos": {
+            "admissible_commands": [
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Steam Room =- You are in a steam room. A standard kind of place. There is an exit to the north. Don't worry, it is unguarded. You need an unblocked exit? You should try going west. > -= Steam Room =-0/15",
+        "next_infos": {
+            "admissible_commands": [
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Steam Room =- You are in a steam room. A standard kind of place. There is an exit to the north. Don't worry, it is unguarded. You need an unblocked exit? You should try going west. > -= Steam Room =-0/15",
+        "infos": {
+            "admissible_commands": [
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Dish-Pit =- You arrive in a dish-pit. A standard kind of place. You don't like doors? Why not try going north, that entranceway is unblocked. There is an unblocked exit to the south. > -= Dish-Pit =-0/16",
+        "next_infos": {
+            "admissible_commands": [
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

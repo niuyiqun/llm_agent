@@ -13,8 +13,8 @@ import random
 import shutil
 
 # 输入和输出目录路径
-input_directory = './data/treasure/oracle/'
-output_directory = './simple_test/treasure/'
+input_directory = './data/coin/oracle/'
+output_directory = './simple_test/coin/'
 
 # 确保输出目录存在，如果不存在则创建
 os.makedirs(output_directory, exist_ok=True)

@@ -9,6 +9,7 @@
 import logging
 import os
 import subprocess
+import random
 
 import textworld.gym
 from textworld import EnvInfos
@@ -263,7 +264,7 @@ def generate_one_lm_trajectories(game_file, agent, output_file):
 
 
     # 注册游戏环境
-    env_id = textworld.gym.register_game(game_file, max_episode_steps=20, request_infos=request_infos)
+    env_id = textworld.gym.register_game(game_file, max_episode_steps=15, request_infos=request_infos)
     env = textworld.gym.make(env_id)  # 启动环境
 
 
@@ -350,7 +351,7 @@ def generate_lm_trajectory(config):
         try:
             # 定义文件名
             seed = game_id
-            name = f"cooking_seed{seed}"
+            name = f"coin_seed{seed}"
             game_file = os.path.join(game_file_path, f"{name}.z8")
 
             # 检查游戏文件是否存在
@@ -360,7 +361,7 @@ def generate_lm_trajectory(config):
 
             # 定义 LM 轨迹保存文件名
             '''用于生成额外的轨迹'''
-            name = f"extra_seed{seed}"
+            # name = f"extra_seed{seed}"
             '''用于生成额外的轨迹'''
             lm_output_file = os.path.join(lm_file_path, f"{name}_lm_trajectory.json")
 
@@ -402,7 +403,7 @@ def add_next_action_to_oracle_trajectory(config):
     """
 
 
-    oracle_file_path = config.get("lm_file_path", "")
+    oracle_file_path = config.get("random_file_path", "")
     if not os.path.exists(oracle_file_path):
         print(f"[ERROR] Directory {oracle_file_path} does not exist.")
         return
@@ -491,8 +492,148 @@ def generate_games_and_trajectories(config):
             print(f"[ERROR] Unexpected error for game {game_id}: {e}")
 
     print("[INFO] All games and Oracle trajectories have been generated!")
+
+
+
+
+
+
+
+def generate_random_trajectory(config):
+    """
+    搜集随机轨迹并保存为五元组。
+    :param config: 配置字典，包括文件路径等信息。
+    """
+    # 文件路径配置
+    game_file_path = config.get("game_file_path", "")
+    random_file_path = config.get("random_file_path", "")
+    num_games = config.get("num_games", 100)  # 默认生成 100 个轨迹
+
+    # 确保 LM 轨迹保存路径存在
+    os.makedirs(random_file_path, exist_ok=True)
+
+    # 遍历现有游戏文件生成随机轨迹
+    for game_id in range(1, num_games + 1):
+        try:
+            # 定义文件名
+            seed = game_id
+            name = f"cooking_seed{seed}"
+            game_file = os.path.join(game_file_path, f"{name}.z8")
+
+            # 检查游戏文件是否存在
+            if not os.path.exists(game_file):
+                print(f"[WARNING] Game file not found: {game_file}. Skipping.")
+                continue
+
+            # 定义轨迹保存文件名
+            random_output_file = os.path.join(random_file_path, f"{name}_random_trajectory.json")
+
+            # 如果轨迹文件已经存在，跳过
+            if os.path.exists(random_output_file):
+                print(f"[INFO] Random trajectory already exists: {random_output_file}. Skipping.")
+                continue
+
+            # 输出当前正在处理的游戏
+            print(f"[INFO] Generating random trajectory for game: {name} ({game_id}/{num_games})")
+
+            # 生成并保存随机轨迹
+            generate_one_random_trajectory(game_file, random_output_file)
+
+        except Exception as e:
+            print(f"[ERROR] Unexpected error for game {game_id}: {e}")
+
+    print("[INFO] All random trajectories have been generated!")
+
+
+def generate_one_random_trajectory(game_file, output_file):
+    """
+    使用随机策略生成轨迹并保存为五元组。
+    :param game_file: 游戏文件路径
+    :param output_file: 轨迹保存路径
+    """
+    # 请求环境信息
+    request_infos = EnvInfos(
+        admissible_commands=True,  # 获取所有可执行动作
+        objective=True,  # 游戏目标描述
+        description=True  # 当前状态的描述
+    )
+
+    # 注册游戏环境
+    env_id = textworld.gym.register_game(game_file, max_episode_steps=25, request_infos=request_infos)
+    env = textworld.gym.make(env_id)  # 启动环境
+
+    obs, infos = env.reset()  # 初始化环境
+    obs: str = get_reset(obs)
+    score: float = 0
+    done: bool = False
+    trajectory = []  # 保存五元组轨迹
+
+    i = 1
+    last_reward = 0
+    while not done:
+        print(f"[INFO] Step {i}: Generating random action...")
+        i += 1
+
+        # 当前状态格式化
+        formatted_state = format_text(obs)
+        current_infos = {"admissible_commands": infos["admissible_commands"]}
+
+        # 随机选择一个动作
+        try:
+            admissible_commands = infos.get("admissible_commands", [])
+            if not admissible_commands:
+                print("[WARNING] No admissible commands available. Stopping.")
+                break
+            command = random.choice(admissible_commands)
+        except Exception as e:
+            print(f"[ERROR] Failed to generate random action: {e}")
+            break
+        print(f"Random action: {command}")
+
+        # 执行动作
+        try:
+            next_obs, reward, done, next_infos = env.step(command)
+        except Exception as e:
+            print(f"[ERROR] Environment step error: {e}")
+            break
+
+        # 计算即时奖励
+        current_reward = reward - last_reward if reward != last_reward else 0
+        last_reward = reward
+
+        # 更新下一状态和信息
+        formatted_next_state = format_text(next_obs)
+        next_info = {"admissible_commands": next_infos["admissible_commands"]}
+
+        # 保存五元组
+        trajectory.append({
+            "state": formatted_state,
+            "infos": current_infos,
+            "action": command,
+            "reward": current_reward,
+            "next_state": formatted_next_state,
+            "next_infos": next_info,
+            "done": done
+        })
+
+        # 更新当前状态
+        obs = next_obs
+        infos = next_infos
+
+    # 保存轨迹到文件
+    try:
+        with open(output_file, "w") as f:
+            json.dump(trajectory, f, indent=4)
+        print(f"[INFO] Random trajectory saved to {output_file}")
+    except Exception as e:
+        print(f"[ERROR] Failed to save trajectory: {e}")
+
+    env.close()
+
+
+
 def main(config):
-    generate_lm_trajectory(config)
+    add_next_action_to_oracle_trajectory(config)
 
 
 if __name__ == "__main__":
@@ -504,6 +645,7 @@ if __name__ == "__main__":
         all_config = yaml.safe_load(config_file)
 
     main(all_config.get("cooking"))
+
 
 
 

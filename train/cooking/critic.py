@@ -692,6 +692,7 @@ if __name__ == "__main__":
     parser.add_argument('--device', type=str, required=True, help="Name of the gpu to run")
     args = parser.parse_args()
 
+
     with open('./config/train.yaml', 'r', encoding='utf-8') as f:
         config = yaml.safe_load(f)
 
@@ -700,6 +701,8 @@ if __name__ == "__main__":
 
     # 获取device
     device = args.device
+
+
 
 
 

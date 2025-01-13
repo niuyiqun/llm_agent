@@ -1,0 +1,1189 @@
+[
+    {
+        "state": "You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal! -= Bedroom =- You are in a bedroom. A normal kind of place. You start to take note of what's in the room. Oh, great. Here's a bed. You shudder, but continue examining the bed. But there isn't a thing on it. Silly bed, silly, empty, good for nothing bed. There is an exit to the south. > -= Bedroom =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "drop green apple",
+                "drop yellow apple",
+                "drop yellow onion",
+                "eat green apple",
+                "eat yellow apple",
+                "eat yellow onion",
+                "examine bed",
+                "go south",
+                "inventory",
+                "look",
+                "put green apple on bed",
+                "put yellow apple on bed",
+                "put yellow onion on bed"
+            ]
+        },
+        "action": "put yellow onion on bed",
+        "reward": 0,
+        "next_state": "You put the yellow onion on the bed. > -= Bedroom =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "drop green apple",
+                "drop yellow apple",
+                "eat green apple",
+                "eat yellow apple",
+                "examine bed",
+                "examine yellow onion",
+                "go south",
+                "inventory",
+                "look",
+                "put green apple on bed",
+                "put yellow apple on bed",
+                "take yellow onion from bed"
+            ]
+        },
+        "done": false,
+        "next_action": "put yellow apple on bed"
+    },
+    {
+        "state": "You put the yellow onion on the bed. > -= Bedroom =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "drop green apple",
+                "drop yellow apple",
+                "eat green apple",
+                "eat yellow apple",
+                "examine bed",
+                "examine yellow onion",
+                "go south",
+                "inventory",
+                "look",
+                "put green apple on bed",
+                "put yellow apple on bed",
+                "take yellow onion from bed"
+            ]
+        },
+        "action": "put yellow apple on bed",
+        "reward": 0,
+        "next_state": "You put the yellow apple on the bed. > -= Bedroom =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "drop green apple",
+                "eat green apple",
+                "examine bed",
+                "examine yellow apple",
+                "examine yellow onion",
+                "go south",
+                "inventory",
+                "look",
+                "put green apple on bed",
+                "take yellow apple from bed",
+                "take yellow onion from bed"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "You put the yellow apple on the bed. > -= Bedroom =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "drop green apple",
+                "eat green apple",
+                "examine bed",
+                "examine yellow apple",
+                "examine yellow onion",
+                "go south",
+                "inventory",
+                "look",
+                "put green apple on bed",
+                "take yellow apple from bed",
+                "take yellow onion from bed"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Livingroom =- You've just shown up in a livingroom. You make out a sofa. The sofa is comfy. But oh no! there's nothing on this piece of junk. Hm. Oh well You don't like doors? Why not try going east, that entranceway is not blocked by one. There is an exit to the north. You need an exit without a door? You should try going west. > -= Livingroom =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "drop green apple",
+                "eat green apple",
+                "examine sofa",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "put green apple on sofa"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "-= Livingroom =- You've just shown up in a livingroom. You make out a sofa. The sofa is comfy. But oh no! there's nothing on this piece of junk. Hm. Oh well You don't like doors? Why not try going east, that entranceway is not blocked by one. There is an exit to the north. You need an exit without a door? You should try going west. > -= Livingroom =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "drop green apple",
+                "eat green apple",
+                "examine sofa",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "put green apple on sofa"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Livingroom =- You've just shown up in a livingroom. You make out a sofa. The sofa is comfy. But oh no! there's nothing on this piece of junk. Hm. Oh well You don't like doors? Why not try going east, that entranceway is not blocked by one. There is an exit to the north. You need an exit without a door? You should try going west. > -= Livingroom =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "drop green apple",
+                "eat green apple",
+                "examine sofa",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "put green apple on sofa"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Livingroom =- You've just shown up in a livingroom. You make out a sofa. The sofa is comfy. But oh no! there's nothing on this piece of junk. Hm. Oh well You don't like doors? Why not try going east, that entranceway is not blocked by one. There is an exit to the north. You need an exit without a door? You should try going west. > -= Livingroom =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "drop green apple",
+                "eat green apple",
+                "examine sofa",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "put green apple on sofa"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Bedroom =- You are in a bedroom. A normal kind of place. You start to take note of what's in the room. Oh, great. Here's a bed. You shudder, but continue examining the bed. You see a roasted yellow apple and a yellow onion on the bed. There is an exit to the south. > -= Bedroom =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "drop green apple",
+                "eat green apple",
+                "examine bed",
+                "examine yellow apple",
+                "examine yellow onion",
+                "go south",
+                "inventory",
+                "look",
+                "put green apple on bed",
+                "take yellow apple from bed",
+                "take yellow onion from bed"
+            ]
+        },
+        "done": false,
+        "next_action": "drop green apple"
+    },
+    {
+        "state": "-= Bedroom =- You are in a bedroom. A normal kind of place. You start to take note of what's in the room. Oh, great. Here's a bed. You shudder, but continue examining the bed. You see a roasted yellow apple and a yellow onion on the bed. There is an exit to the south. > -= Bedroom =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "drop green apple",
+                "eat green apple",
+                "examine bed",
+                "examine yellow apple",
+                "examine yellow onion",
+                "go south",
+                "inventory",
+                "look",
+                "put green apple on bed",
+                "take yellow apple from bed",
+                "take yellow onion from bed"
+            ]
+        },
+        "action": "drop green apple",
+        "reward": 0,
+        "next_state": "You drop the green apple on the ground. > -= Bedroom =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine green apple",
+                "examine yellow apple",
+                "examine yellow onion",
+                "go south",
+                "inventory",
+                "look",
+                "take green apple",
+                "take yellow apple from bed",
+                "take yellow onion from bed"
+            ]
+        },
+        "done": false,
+        "next_action": "take green apple"
+    },
+    {
+        "state": "You drop the green apple on the ground. > -= Bedroom =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine green apple",
+                "examine yellow apple",
+                "examine yellow onion",
+                "go south",
+                "inventory",
+                "look",
+                "take green apple",
+                "take yellow apple from bed",
+                "take yellow onion from bed"
+            ]
+        },
+        "action": "take green apple",
+        "reward": 0,
+        "next_state": "You pick up the green apple from the ground. > -= Bedroom =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "drop green apple",
+                "eat green apple",
+                "examine bed",
+                "examine yellow apple",
+                "examine yellow onion",
+                "go south",
+                "inventory",
+                "look",
+                "put green apple on bed",
+                "take yellow apple from bed",
+                "take yellow onion from bed"
+            ]
+        },
+        "done": false,
+        "next_action": "examine yellow onion"
+    },
+    {
+        "state": "You pick up the green apple from the ground. > -= Bedroom =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "drop green apple",
+                "eat green apple",
+                "examine bed",
+                "examine yellow apple",
+                "examine yellow onion",
+                "go south",
+                "inventory",
+                "look",
+                "put green apple on bed",
+                "take yellow apple from bed",
+                "take yellow onion from bed"
+            ]
+        },
+        "action": "examine yellow onion",
+        "reward": 0,
+        "next_state": "The yellow onion looks savory. > -= Bedroom =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "drop green apple",
+                "eat green apple",
+                "examine bed",
+                "examine yellow apple",
+                "examine yellow onion",
+                "go south",
+                "inventory",
+                "look",
+                "put green apple on bed",
+                "take yellow apple from bed",
+                "take yellow onion from bed"
+            ]
+        },
+        "done": false,
+        "next_action": "take yellow onion from bed"
+    },
+    {
+        "state": "The yellow onion looks savory. > -= Bedroom =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "drop green apple",
+                "eat green apple",
+                "examine bed",
+                "examine yellow apple",
+                "examine yellow onion",
+                "go south",
+                "inventory",
+                "look",
+                "put green apple on bed",
+                "take yellow apple from bed",
+                "take yellow onion from bed"
+            ]
+        },
+        "action": "take yellow onion from bed",
+        "reward": 0,
+        "next_state": "You take the yellow onion from the bed. > -= Bedroom =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "drop green apple",
+                "drop yellow onion",
+                "eat green apple",
+                "eat yellow onion",
+                "examine bed",
+                "examine yellow apple",
+                "go south",
+                "inventory",
+                "look",
+                "put green apple on bed",
+                "put yellow onion on bed",
+                "take yellow apple from bed"
+            ]
+        },
+        "done": false,
+        "next_action": "examine yellow apple"
+    },
+    {
+        "state": "You take the yellow onion from the bed. > -= Bedroom =-0/10",
+        "infos": {
+            "admissible_commands": [
+                "drop green apple",
+                "drop yellow onion",
+                "eat green apple",
+                "eat yellow onion",
+                "examine bed",
+                "examine yellow apple",
+                "go south",
+                "inventory",
+                "look",
+                "put green apple on bed",
+                "put yellow onion on bed",
+                "take yellow apple from bed"
+            ]
+        },
+        "action": "examine yellow apple",
+        "reward": 0,
+        "next_state": "That's a roasted yellow apple! > -= Bedroom =-0/11",
+        "next_infos": {
+            "admissible_commands": [
+                "drop green apple",
+                "drop yellow onion",
+                "eat green apple",
+                "eat yellow onion",
+                "examine bed",
+                "examine yellow apple",
+                "go south",
+                "inventory",
+                "look",
+                "put green apple on bed",
+                "put yellow onion on bed",
+                "take yellow apple from bed"
+            ]
+        },
+        "done": false,
+        "next_action": "examine yellow apple"
+    },
+    {
+        "state": "That's a roasted yellow apple! > -= Bedroom =-0/11",
+        "infos": {
+            "admissible_commands": [
+                "drop green apple",
+                "drop yellow onion",
+                "eat green apple",
+                "eat yellow onion",
+                "examine bed",
+                "examine yellow apple",
+                "go south",
+                "inventory",
+                "look",
+                "put green apple on bed",
+                "put yellow onion on bed",
+                "take yellow apple from bed"
+            ]
+        },
+        "action": "examine yellow apple",
+        "reward": 0,
+        "next_state": "That's a roasted yellow apple! > -= Bedroom =-0/12",
+        "next_infos": {
+            "admissible_commands": [
+                "drop green apple",
+                "drop yellow onion",
+                "eat green apple",
+                "eat yellow onion",
+                "examine bed",
+                "examine yellow apple",
+                "go south",
+                "inventory",
+                "look",
+                "put green apple on bed",
+                "put yellow onion on bed",
+                "take yellow apple from bed"
+            ]
+        },
+        "done": false,
+        "next_action": "examine yellow apple"
+    },
+    {
+        "state": "That's a roasted yellow apple! > -= Bedroom =-0/12",
+        "infos": {
+            "admissible_commands": [
+                "drop green apple",
+                "drop yellow onion",
+                "eat green apple",
+                "eat yellow onion",
+                "examine bed",
+                "examine yellow apple",
+                "go south",
+                "inventory",
+                "look",
+                "put green apple on bed",
+                "put yellow onion on bed",
+                "take yellow apple from bed"
+            ]
+        },
+        "action": "examine yellow apple",
+        "reward": 0,
+        "next_state": "That's a roasted yellow apple! > -= Bedroom =-0/13",
+        "next_infos": {
+            "admissible_commands": [
+                "drop green apple",
+                "drop yellow onion",
+                "eat green apple",
+                "eat yellow onion",
+                "examine bed",
+                "examine yellow apple",
+                "go south",
+                "inventory",
+                "look",
+                "put green apple on bed",
+                "put yellow onion on bed",
+                "take yellow apple from bed"
+            ]
+        },
+        "done": false,
+        "next_action": "put green apple on bed"
+    },
+    {
+        "state": "That's a roasted yellow apple! > -= Bedroom =-0/13",
+        "infos": {
+            "admissible_commands": [
+                "drop green apple",
+                "drop yellow onion",
+                "eat green apple",
+                "eat yellow onion",
+                "examine bed",
+                "examine yellow apple",
+                "go south",
+                "inventory",
+                "look",
+                "put green apple on bed",
+                "put yellow onion on bed",
+                "take yellow apple from bed"
+            ]
+        },
+        "action": "put green apple on bed",
+        "reward": 0,
+        "next_state": "You put the green apple on the bed. > -= Bedroom =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "drop yellow onion",
+                "eat yellow onion",
+                "examine bed",
+                "examine green apple",
+                "examine yellow apple",
+                "go south",
+                "inventory",
+                "look",
+                "put yellow onion on bed",
+                "take green apple from bed",
+                "take yellow apple from bed"
+            ]
+        },
+        "done": false,
+        "next_action": "examine yellow apple"
+    },
+    {
+        "state": "You put the green apple on the bed. > -= Bedroom =-0/14",
+        "infos": {
+            "admissible_commands": [
+                "drop yellow onion",
+                "eat yellow onion",
+                "examine bed",
+                "examine green apple",
+                "examine yellow apple",
+                "go south",
+                "inventory",
+                "look",
+                "put yellow onion on bed",
+                "take green apple from bed",
+                "take yellow apple from bed"
+            ]
+        },
+        "action": "examine yellow apple",
+        "reward": 0,
+        "next_state": "That's a roasted yellow apple! > -= Bedroom =-0/15",
+        "next_infos": {
+            "admissible_commands": [
+                "drop yellow onion",
+                "eat yellow onion",
+                "examine bed",
+                "examine green apple",
+                "examine yellow apple",
+                "go south",
+                "inventory",
+                "look",
+                "put yellow onion on bed",
+                "take green apple from bed",
+                "take yellow apple from bed"
+            ]
+        },
+        "done": false,
+        "next_action": "drop yellow onion"
+    },
+    {
+        "state": "That's a roasted yellow apple! > -= Bedroom =-0/15",
+        "infos": {
+            "admissible_commands": [
+                "drop yellow onion",
+                "eat yellow onion",
+                "examine bed",
+                "examine green apple",
+                "examine yellow apple",
+                "go south",
+                "inventory",
+                "look",
+                "put yellow onion on bed",
+                "take green apple from bed",
+                "take yellow apple from bed"
+            ]
+        },
+        "action": "drop yellow onion",
+        "reward": 0,
+        "next_state": "You drop the yellow onion on the ground. > -= Bedroom =-0/16",
+        "next_infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine green apple",
+                "examine yellow apple",
+                "examine yellow onion",
+                "go south",
+                "inventory",
+                "look",
+                "take green apple from bed",
+                "take yellow apple from bed",
+                "take yellow onion"
+            ]
+        },
+        "done": false,
+        "next_action": "examine yellow onion"
+    },
+    {
+        "state": "You drop the yellow onion on the ground. > -= Bedroom =-0/16",
+        "infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine green apple",
+                "examine yellow apple",
+                "examine yellow onion",
+                "go south",
+                "inventory",
+                "look",
+                "take green apple from bed",
+                "take yellow apple from bed",
+                "take yellow onion"
+            ]
+        },
+        "action": "examine yellow onion",
+        "reward": 0,
+        "next_state": "The yellow onion looks savory. > -= Bedroom =-0/17",
+        "next_infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine green apple",
+                "examine yellow apple",
+                "examine yellow onion",
+                "go south",
+                "inventory",
+                "look",
+                "take green apple from bed",
+                "take yellow apple from bed",
+                "take yellow onion"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "The yellow onion looks savory. > -= Bedroom =-0/17",
+        "infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine green apple",
+                "examine yellow apple",
+                "examine yellow onion",
+                "go south",
+                "inventory",
+                "look",
+                "take green apple from bed",
+                "take yellow apple from bed",
+                "take yellow onion"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Livingroom =- You've just shown up in a livingroom. You make out a sofa. The sofa is comfy. But oh no! there's nothing on this piece of junk. Hm. Oh well You don't like doors? Why not try going east, that entranceway is not blocked by one. There is an exit to the north. You need an exit without a door? You should try going west. > -= Livingroom =-0/18",
+        "next_infos": {
+            "admissible_commands": [
+                "examine sofa",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Livingroom =- You've just shown up in a livingroom. You make out a sofa. The sofa is comfy. But oh no! there's nothing on this piece of junk. Hm. Oh well You don't like doors? Why not try going east, that entranceway is not blocked by one. There is an exit to the north. You need an exit without a door? You should try going west. > -= Livingroom =-0/18",
+        "infos": {
+            "admissible_commands": [
+                "examine sofa",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Kitchen =- You are in a kitchen. A normal kind of place. You make out a fridge. You look at the price tag that's still affixed to the fridge. A hundred bucks?! Where'd they buy this fridge, some kind of expensive place? The fridge contains a roasted red tuna, a cilantro, a block of cheese, a red onion, a lettuce, a yellow bell pepper, an orange bell pepper, a raw pork chop, a red hot pepper, a raw white tuna, a carrot, a white onion and a parsley. You see a closed oven in the room. You can make out a table. The table is massive. Looks like someone's already been here and taken everything off it, though. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a counter. On the counter you can make out a raw purple potato, a banana, a green hot pepper, a cookbook and a knife. You can make out a stove. But the thing is empty. There is an open plain door leading north. There is an exit to the west. > -= Kitchen =-0/19",
+        "next_infos": {
+            "admissible_commands": [
+                "close fridge",
+                "close plain door",
+                "examine banana",
+                "examine block of cheese",
+                "examine carrot",
+                "examine cilantro",
+                "examine cookbook",
+                "examine counter",
+                "examine fridge",
+                "examine green hot pepper",
+                "examine knife",
+                "examine lettuce",
+                "examine orange bell pepper",
+                "examine oven",
+                "examine parsley",
+                "examine pork chop",
+                "examine purple potato",
+                "examine red hot pepper",
+                "examine red onion",
+                "examine red tuna",
+                "examine stove",
+                "examine table",
+                "examine white onion",
+                "examine white tuna",
+                "examine yellow bell pepper",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "take banana from counter",
+                "take block of cheese from fridge",
+                "take carrot from fridge",
+                "take cilantro from fridge",
+                "take cookbook from counter",
+                "take green hot pepper from counter",
+                "take knife from counter",
+                "take lettuce from fridge",
+                "take orange bell pepper from fridge",
+                "take parsley from fridge",
+                "take pork chop from fridge",
+                "take purple potato from counter",
+                "take red hot pepper from fridge",
+                "take red onion from fridge",
+                "take red tuna from fridge",
+                "take white onion from fridge",
+                "take white tuna from fridge",
+                "take yellow bell pepper from fridge"
+            ]
+        },
+        "done": false,
+        "next_action": "examine stove"
+    },
+    {
+        "state": "-= Kitchen =- You are in a kitchen. A normal kind of place. You make out a fridge. You look at the price tag that's still affixed to the fridge. A hundred bucks?! Where'd they buy this fridge, some kind of expensive place? The fridge contains a roasted red tuna, a cilantro, a block of cheese, a red onion, a lettuce, a yellow bell pepper, an orange bell pepper, a raw pork chop, a red hot pepper, a raw white tuna, a carrot, a white onion and a parsley. You see a closed oven in the room. You can make out a table. The table is massive. Looks like someone's already been here and taken everything off it, though. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a counter. On the counter you can make out a raw purple potato, a banana, a green hot pepper, a cookbook and a knife. You can make out a stove. But the thing is empty. There is an open plain door leading north. There is an exit to the west. > -= Kitchen =-0/19",
+        "infos": {
+            "admissible_commands": [
+                "close fridge",
+                "close plain door",
+                "examine banana",
+                "examine block of cheese",
+                "examine carrot",
+                "examine cilantro",
+                "examine cookbook",
+                "examine counter",
+                "examine fridge",
+                "examine green hot pepper",
+                "examine knife",
+                "examine lettuce",
+                "examine orange bell pepper",
+                "examine oven",
+                "examine parsley",
+                "examine pork chop",
+                "examine purple potato",
+                "examine red hot pepper",
+                "examine red onion",
+                "examine red tuna",
+                "examine stove",
+                "examine table",
+                "examine white onion",
+                "examine white tuna",
+                "examine yellow bell pepper",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "take banana from counter",
+                "take block of cheese from fridge",
+                "take carrot from fridge",
+                "take cilantro from fridge",
+                "take cookbook from counter",
+                "take green hot pepper from counter",
+                "take knife from counter",
+                "take lettuce from fridge",
+                "take orange bell pepper from fridge",
+                "take parsley from fridge",
+                "take pork chop from fridge",
+                "take purple potato from counter",
+                "take red hot pepper from fridge",
+                "take red onion from fridge",
+                "take red tuna from fridge",
+                "take white onion from fridge",
+                "take white tuna from fridge",
+                "take yellow bell pepper from fridge"
+            ]
+        },
+        "action": "examine stove",
+        "reward": 0,
+        "next_state": "Useful for frying things. > -= Kitchen =-0/20",
+        "next_infos": {
+            "admissible_commands": [
+                "close fridge",
+                "close plain door",
+                "examine banana",
+                "examine block of cheese",
+                "examine carrot",
+                "examine cilantro",
+                "examine cookbook",
+                "examine counter",
+                "examine fridge",
+                "examine green hot pepper",
+                "examine knife",
+                "examine lettuce",
+                "examine orange bell pepper",
+                "examine oven",
+                "examine parsley",
+                "examine pork chop",
+                "examine purple potato",
+                "examine red hot pepper",
+                "examine red onion",
+                "examine red tuna",
+                "examine stove",
+                "examine table",
+                "examine white onion",
+                "examine white tuna",
+                "examine yellow bell pepper",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "take banana from counter",
+                "take block of cheese from fridge",
+                "take carrot from fridge",
+                "take cilantro from fridge",
+                "take cookbook from counter",
+                "take green hot pepper from counter",
+                "take knife from counter",
+                "take lettuce from fridge",
+                "take orange bell pepper from fridge",
+                "take parsley from fridge",
+                "take pork chop from fridge",
+                "take purple potato from counter",
+                "take red hot pepper from fridge",
+                "take red onion from fridge",
+                "take red tuna from fridge",
+                "take white onion from fridge",
+                "take white tuna from fridge",
+                "take yellow bell pepper from fridge"
+            ]
+        },
+        "done": false,
+        "next_action": "examine orange bell pepper"
+    },
+    {
+        "state": "Useful for frying things. > -= Kitchen =-0/20",
+        "infos": {
+            "admissible_commands": [
+                "close fridge",
+                "close plain door",
+                "examine banana",
+                "examine block of cheese",
+                "examine carrot",
+                "examine cilantro",
+                "examine cookbook",
+                "examine counter",
+                "examine fridge",
+                "examine green hot pepper",
+                "examine knife",
+                "examine lettuce",
+                "examine orange bell pepper",
+                "examine oven",
+                "examine parsley",
+                "examine pork chop",
+                "examine purple potato",
+                "examine red hot pepper",
+                "examine red onion",
+                "examine red tuna",
+                "examine stove",
+                "examine table",
+                "examine white onion",
+                "examine white tuna",
+                "examine yellow bell pepper",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "take banana from counter",
+                "take block of cheese from fridge",
+                "take carrot from fridge",
+                "take cilantro from fridge",
+                "take cookbook from counter",
+                "take green hot pepper from counter",
+                "take knife from counter",
+                "take lettuce from fridge",
+                "take orange bell pepper from fridge",
+                "take parsley from fridge",
+                "take pork chop from fridge",
+                "take purple potato from counter",
+                "take red hot pepper from fridge",
+                "take red onion from fridge",
+                "take red tuna from fridge",
+                "take white onion from fridge",
+                "take white tuna from fridge",
+                "take yellow bell pepper from fridge"
+            ]
+        },
+        "action": "examine orange bell pepper",
+        "reward": 0,
+        "next_state": "You couldn't pay me to eat that orange bell pepper. > -= Kitchen =-0/21",
+        "next_infos": {
+            "admissible_commands": [
+                "close fridge",
+                "close plain door",
+                "examine banana",
+                "examine block of cheese",
+                "examine carrot",
+                "examine cilantro",
+                "examine cookbook",
+                "examine counter",
+                "examine fridge",
+                "examine green hot pepper",
+                "examine knife",
+                "examine lettuce",
+                "examine orange bell pepper",
+                "examine oven",
+                "examine parsley",
+                "examine pork chop",
+                "examine purple potato",
+                "examine red hot pepper",
+                "examine red onion",
+                "examine red tuna",
+                "examine stove",
+                "examine table",
+                "examine white onion",
+                "examine white tuna",
+                "examine yellow bell pepper",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "take banana from counter",
+                "take block of cheese from fridge",
+                "take carrot from fridge",
+                "take cilantro from fridge",
+                "take cookbook from counter",
+                "take green hot pepper from counter",
+                "take knife from counter",
+                "take lettuce from fridge",
+                "take orange bell pepper from fridge",
+                "take parsley from fridge",
+                "take pork chop from fridge",
+                "take purple potato from counter",
+                "take red hot pepper from fridge",
+                "take red onion from fridge",
+                "take red tuna from fridge",
+                "take white onion from fridge",
+                "take white tuna from fridge",
+                "take yellow bell pepper from fridge"
+            ]
+        },
+        "done": false,
+        "next_action": "examine red onion"
+    },
+    {
+        "state": "You couldn't pay me to eat that orange bell pepper. > -= Kitchen =-0/21",
+        "infos": {
+            "admissible_commands": [
+                "close fridge",
+                "close plain door",
+                "examine banana",
+                "examine block of cheese",
+                "examine carrot",
+                "examine cilantro",
+                "examine cookbook",
+                "examine counter",
+                "examine fridge",
+                "examine green hot pepper",
+                "examine knife",
+                "examine lettuce",
+                "examine orange bell pepper",
+                "examine oven",
+                "examine parsley",
+                "examine pork chop",
+                "examine purple potato",
+                "examine red hot pepper",
+                "examine red onion",
+                "examine red tuna",
+                "examine stove",
+                "examine table",
+                "examine white onion",
+                "examine white tuna",
+                "examine yellow bell pepper",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "take banana from counter",
+                "take block of cheese from fridge",
+                "take carrot from fridge",
+                "take cilantro from fridge",
+                "take cookbook from counter",
+                "take green hot pepper from counter",
+                "take knife from counter",
+                "take lettuce from fridge",
+                "take orange bell pepper from fridge",
+                "take parsley from fridge",
+                "take pork chop from fridge",
+                "take purple potato from counter",
+                "take red hot pepper from fridge",
+                "take red onion from fridge",
+                "take red tuna from fridge",
+                "take white onion from fridge",
+                "take white tuna from fridge",
+                "take yellow bell pepper from fridge"
+            ]
+        },
+        "action": "examine red onion",
+        "reward": 0,
+        "next_state": "You couldn't pay me to eat that red onion. > -= Kitchen =-0/22",
+        "next_infos": {
+            "admissible_commands": [
+                "close fridge",
+                "close plain door",
+                "examine banana",
+                "examine block of cheese",
+                "examine carrot",
+                "examine cilantro",
+                "examine cookbook",
+                "examine counter",
+                "examine fridge",
+                "examine green hot pepper",
+                "examine knife",
+                "examine lettuce",
+                "examine orange bell pepper",
+                "examine oven",
+                "examine parsley",
+                "examine pork chop",
+                "examine purple potato",
+                "examine red hot pepper",
+                "examine red onion",
+                "examine red tuna",
+                "examine stove",
+                "examine table",
+                "examine white onion",
+                "examine white tuna",
+                "examine yellow bell pepper",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "take banana from counter",
+                "take block of cheese from fridge",
+                "take carrot from fridge",
+                "take cilantro from fridge",
+                "take cookbook from counter",
+                "take green hot pepper from counter",
+                "take knife from counter",
+                "take lettuce from fridge",
+                "take orange bell pepper from fridge",
+                "take parsley from fridge",
+                "take pork chop from fridge",
+                "take purple potato from counter",
+                "take red hot pepper from fridge",
+                "take red onion from fridge",
+                "take red tuna from fridge",
+                "take white onion from fridge",
+                "take white tuna from fridge",
+                "take yellow bell pepper from fridge"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "You couldn't pay me to eat that red onion. > -= Kitchen =-0/22",
+        "infos": {
+            "admissible_commands": [
+                "close fridge",
+                "close plain door",
+                "examine banana",
+                "examine block of cheese",
+                "examine carrot",
+                "examine cilantro",
+                "examine cookbook",
+                "examine counter",
+                "examine fridge",
+                "examine green hot pepper",
+                "examine knife",
+                "examine lettuce",
+                "examine orange bell pepper",
+                "examine oven",
+                "examine parsley",
+                "examine pork chop",
+                "examine purple potato",
+                "examine red hot pepper",
+                "examine red onion",
+                "examine red tuna",
+                "examine stove",
+                "examine table",
+                "examine white onion",
+                "examine white tuna",
+                "examine yellow bell pepper",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "take banana from counter",
+                "take block of cheese from fridge",
+                "take carrot from fridge",
+                "take cilantro from fridge",
+                "take cookbook from counter",
+                "take green hot pepper from counter",
+                "take knife from counter",
+                "take lettuce from fridge",
+                "take orange bell pepper from fridge",
+                "take parsley from fridge",
+                "take pork chop from fridge",
+                "take purple potato from counter",
+                "take red hot pepper from fridge",
+                "take red onion from fridge",
+                "take red tuna from fridge",
+                "take white onion from fridge",
+                "take white tuna from fridge",
+                "take yellow bell pepper from fridge"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Livingroom =- You've just shown up in a livingroom. You make out a sofa. The sofa is comfy. But oh no! there's nothing on this piece of junk. Hm. Oh well You don't like doors? Why not try going east, that entranceway is not blocked by one. There is an exit to the north. You need an exit without a door? You should try going west. > -= Livingroom =-0/23",
+        "next_infos": {
+            "admissible_commands": [
+                "examine sofa",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "inventory"
+    },
+    {
+        "state": "-= Livingroom =- You've just shown up in a livingroom. You make out a sofa. The sofa is comfy. But oh no! there's nothing on this piece of junk. Hm. Oh well You don't like doors? Why not try going east, that entranceway is not blocked by one. There is an exit to the north. You need an exit without a door? You should try going west. > -= Livingroom =-0/23",
+        "infos": {
+            "admissible_commands": [
+                "examine sofa",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying nothing. > -= Livingroom =-0/24",
+        "next_infos": {
+            "admissible_commands": [
+                "examine sofa",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "You are carrying nothing. > -= Livingroom =-0/24",
+        "infos": {
+            "admissible_commands": [
+                "examine sofa",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Corridor =- Well, here we are in the corridor. There is an exit to the east. Don't worry, there is no door. You don't like doors? Why not try going south, that entranceway is not blocked by one. > -= Corridor =-0/25",
+        "next_infos": {
+            "admissible_commands": [
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Corridor =- Well, here we are in the corridor. There is an exit to the east. Don't worry, there is no door. You don't like doors? Why not try going south, that entranceway is not blocked by one. > -= Corridor =-0/25",
+        "infos": {
+            "admissible_commands": [
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Livingroom =- You've just shown up in a livingroom. You make out a sofa. The sofa is comfy. But oh no! there's nothing on this piece of junk. Hm. Oh well You don't like doors? Why not try going east, that entranceway is not blocked by one. There is an exit to the north. You need an exit without a door? You should try going west. > -= Livingroom =-0/26",
+        "next_infos": {
+            "admissible_commands": [
+                "examine sofa",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

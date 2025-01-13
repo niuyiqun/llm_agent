@@ -1,0 +1,318 @@
+[
+    {
+        "state": "You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal! -= Corridor =- Well, here we are in a corridor. You don't like doors? Why not try going north, that entranceway is not blocked by one. There is an exit to the south. > -= Corridor =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "drop red bell pepper",
+                "drop red onion",
+                "drop yellow onion",
+                "eat red bell pepper",
+                "eat red onion",
+                "eat yellow onion",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "eat yellow onion",
+        "reward": 0,
+        "next_state": "You eat the yellow onion. Not bad. > -= Corridor =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red bell pepper",
+                "drop red onion",
+                "eat red bell pepper",
+                "eat red onion",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "You eat the yellow onion. Not bad. > -= Corridor =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "drop red bell pepper",
+                "drop red onion",
+                "eat red bell pepper",
+                "eat red onion",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Livingroom =- This might come as a shock to you, but you've just walked into a livingroom. You begin to take stock of what's in the room. You can see a sofa. The sofa is comfy. But the thing hasn't got anything on it. Aw, and here you were, all excited for there to be things on it! There is an exit to the east. Don't worry, there is no door. There is an exit to the north. There is an exit to the south. Don't worry, there is no door. > -= Livingroom =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red bell pepper",
+                "drop red onion",
+                "eat red bell pepper",
+                "eat red onion",
+                "examine sofa",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "put red bell pepper on sofa",
+                "put red onion on sofa"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Livingroom =- This might come as a shock to you, but you've just walked into a livingroom. You begin to take stock of what's in the room. You can see a sofa. The sofa is comfy. But the thing hasn't got anything on it. Aw, and here you were, all excited for there to be things on it! There is an exit to the east. Don't worry, there is no door. There is an exit to the north. There is an exit to the south. Don't worry, there is no door. > -= Livingroom =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "drop red bell pepper",
+                "drop red onion",
+                "eat red bell pepper",
+                "eat red onion",
+                "examine sofa",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "put red bell pepper on sofa",
+                "put red onion on sofa"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Bedroom =- You find yourself in a bedroom. A typical kind of place. You see a bed. The bed is large. But the thing is empty, unfortunately. Silly bed, silly, empty, good for nothing bed. You need an exit without a door? You should try going north. > -= Bedroom =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red bell pepper",
+                "drop red onion",
+                "eat red bell pepper",
+                "eat red onion",
+                "examine bed",
+                "go north",
+                "inventory",
+                "look",
+                "put red bell pepper on bed",
+                "put red onion on bed"
+            ]
+        },
+        "done": false,
+        "next_action": "examine bed"
+    },
+    {
+        "state": "-= Bedroom =- You find yourself in a bedroom. A typical kind of place. You see a bed. The bed is large. But the thing is empty, unfortunately. Silly bed, silly, empty, good for nothing bed. You need an exit without a door? You should try going north. > -= Bedroom =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "drop red bell pepper",
+                "drop red onion",
+                "eat red bell pepper",
+                "eat red onion",
+                "examine bed",
+                "go north",
+                "inventory",
+                "look",
+                "put red bell pepper on bed",
+                "put red onion on bed"
+            ]
+        },
+        "action": "examine bed",
+        "reward": 0,
+        "next_state": "The bed is unstable. > -= Bedroom =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red bell pepper",
+                "drop red onion",
+                "eat red bell pepper",
+                "eat red onion",
+                "examine bed",
+                "go north",
+                "inventory",
+                "look",
+                "put red bell pepper on bed",
+                "put red onion on bed"
+            ]
+        },
+        "done": false,
+        "next_action": "examine bed"
+    },
+    {
+        "state": "The bed is unstable. > -= Bedroom =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "drop red bell pepper",
+                "drop red onion",
+                "eat red bell pepper",
+                "eat red onion",
+                "examine bed",
+                "go north",
+                "inventory",
+                "look",
+                "put red bell pepper on bed",
+                "put red onion on bed"
+            ]
+        },
+        "action": "examine bed",
+        "reward": 0,
+        "next_state": "The bed is unstable. > -= Bedroom =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red bell pepper",
+                "drop red onion",
+                "eat red bell pepper",
+                "eat red onion",
+                "examine bed",
+                "go north",
+                "inventory",
+                "look",
+                "put red bell pepper on bed",
+                "put red onion on bed"
+            ]
+        },
+        "done": false,
+        "next_action": "inventory"
+    },
+    {
+        "state": "The bed is unstable. > -= Bedroom =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "drop red bell pepper",
+                "drop red onion",
+                "eat red bell pepper",
+                "eat red onion",
+                "examine bed",
+                "go north",
+                "inventory",
+                "look",
+                "put red bell pepper on bed",
+                "put red onion on bed"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying: a red onion and a red bell pepper. > -= Bedroom =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red bell pepper",
+                "drop red onion",
+                "eat red bell pepper",
+                "eat red onion",
+                "examine bed",
+                "go north",
+                "inventory",
+                "look",
+                "put red bell pepper on bed",
+                "put red onion on bed"
+            ]
+        },
+        "done": false,
+        "next_action": "put red bell pepper on bed"
+    },
+    {
+        "state": "You are carrying: a red onion and a red bell pepper. > -= Bedroom =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "drop red bell pepper",
+                "drop red onion",
+                "eat red bell pepper",
+                "eat red onion",
+                "examine bed",
+                "go north",
+                "inventory",
+                "look",
+                "put red bell pepper on bed",
+                "put red onion on bed"
+            ]
+        },
+        "action": "put red bell pepper on bed",
+        "reward": 0,
+        "next_state": "You put the red bell pepper on the bed. > -= Bedroom =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red onion",
+                "eat red onion",
+                "examine bed",
+                "examine red bell pepper",
+                "go north",
+                "inventory",
+                "look",
+                "put red onion on bed",
+                "take red bell pepper from bed"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "You put the red bell pepper on the bed. > -= Bedroom =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "drop red onion",
+                "eat red onion",
+                "examine bed",
+                "examine red bell pepper",
+                "go north",
+                "inventory",
+                "look",
+                "put red onion on bed",
+                "take red bell pepper from bed"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Livingroom =- This might come as a shock to you, but you've just walked into a livingroom. You begin to take stock of what's in the room. You can see a sofa. The sofa is comfy. But the thing hasn't got anything on it. Aw, and here you were, all excited for there to be things on it! There is an exit to the east. Don't worry, there is no door. There is an exit to the north. There is an exit to the south. Don't worry, there is no door. > -= Livingroom =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red onion",
+                "eat red onion",
+                "examine sofa",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "put red onion on sofa"
+            ]
+        },
+        "done": false,
+        "next_action": "eat red onion"
+    },
+    {
+        "state": "-= Livingroom =- This might come as a shock to you, but you've just walked into a livingroom. You begin to take stock of what's in the room. You can see a sofa. The sofa is comfy. But the thing hasn't got anything on it. Aw, and here you were, all excited for there to be things on it! There is an exit to the east. Don't worry, there is no door. There is an exit to the north. There is an exit to the south. Don't worry, there is no door. > -= Livingroom =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "drop red onion",
+                "eat red onion",
+                "examine sofa",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "put red onion on sofa"
+            ]
+        },
+        "action": "eat red onion",
+        "reward": 0,
+        "next_state": "You eat the red onion. Not bad. *** You lost! *** You scored 0 out of a possible 7, in 9 turns. Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command? > -= Livingroom =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "examine sofa",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

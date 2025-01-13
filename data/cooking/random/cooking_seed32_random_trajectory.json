@@ -1,0 +1,449 @@
+[
+    {
+        "state": "You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal! -= Corridor =- You've entered a corridor. You need an exit without a door? You should try going east. There is an exit to the north. Don't worry, there is no door. There is an exit to the south. Don't worry, there is no door. > -= Corridor =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "drop block of cheese",
+                "eat block of cheese",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "drop block of cheese",
+        "reward": 0,
+        "next_state": "You drop the block of cheese on the ground. > -= Corridor =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "examine block of cheese",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "take block of cheese"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "You drop the block of cheese on the ground. > -= Corridor =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "examine block of cheese",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "take block of cheese"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Corridor =- You've entered a corridor. You need an exit without a door? You should try going east. There is an exit to the north. Don't worry, there is no door. There is an exit to the south. Don't worry, there is no door. There is a fried block of cheese on the floor. > -= Corridor =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "examine block of cheese",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "take block of cheese"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Corridor =- You've entered a corridor. You need an exit without a door? You should try going east. There is an exit to the north. Don't worry, there is no door. There is an exit to the south. Don't worry, there is no door. There is a fried block of cheese on the floor. > -= Corridor =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "examine block of cheese",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "take block of cheese"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Bedroom =- You arrive in a bedroom. A standard one. You can see a bed. I guess it's true what they say, if you're looking for a bed, go to TextWorld. However, the bed, like an empty bed, has nothing on it. There is an exit to the east. Don't worry, there is no door. There is an exit to the west. Don't worry, there is no door. > -= Bedroom =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "examine bed",
+                "go east",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Bedroom =- You arrive in a bedroom. A standard one. You can see a bed. I guess it's true what they say, if you're looking for a bed, go to TextWorld. However, the bed, like an empty bed, has nothing on it. There is an exit to the east. Don't worry, there is no door. There is an exit to the west. Don't worry, there is no door. > -= Bedroom =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "examine bed",
+                "go east",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Corridor =- You've entered a corridor. You need an exit without a door? You should try going east. There is an exit to the north. Don't worry, there is no door. There is an exit to the south. Don't worry, there is no door. There is a fried block of cheese on the floor. > -= Corridor =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "examine block of cheese",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "take block of cheese"
+            ]
+        },
+        "done": false,
+        "next_action": "examine block of cheese"
+    },
+    {
+        "state": "-= Corridor =- You've entered a corridor. You need an exit without a door? You should try going east. There is an exit to the north. Don't worry, there is no door. There is an exit to the south. Don't worry, there is no door. There is a fried block of cheese on the floor. > -= Corridor =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "examine block of cheese",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "take block of cheese"
+            ]
+        },
+        "action": "examine block of cheese",
+        "reward": 0,
+        "next_state": "The fried block of cheese looks tasty. > -= Corridor =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "examine block of cheese",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "take block of cheese"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "The fried block of cheese looks tasty. > -= Corridor =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "examine block of cheese",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "take block of cheese"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Bathroom =- You are in a bathroom. A normal one. There is an exit to the north. Don't worry, there is no door. > -= Bathroom =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Bathroom =- You are in a bathroom. A normal one. There is an exit to the north. Don't worry, there is no door. > -= Bathroom =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Corridor =- You've entered a corridor. You need an exit without a door? You should try going east. There is an exit to the north. Don't worry, there is no door. There is an exit to the south. Don't worry, there is no door. There is a fried block of cheese on the floor. > -= Corridor =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "examine block of cheese",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "take block of cheese"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Corridor =- You've entered a corridor. You need an exit without a door? You should try going east. There is an exit to the north. Don't worry, there is no door. There is an exit to the south. Don't worry, there is no door. There is a fried block of cheese on the floor. > -= Corridor =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "examine block of cheese",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "take block of cheese"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Kitchen =- You are in a kitchen. An usual kind of place. You begin looking for stuff. You can make out an opened conventional looking fridge here. The fridge contains a parsley and a fried pork chop. You can see a closed oven nearby. What's that over there? It looks like it's a table. Wow, isn't TextWorld just the best? The table is massive. On the table you can see a cookbook. Were you looking for a counter? Because look over there, it's a counter. You see a knife on the counter. As if things weren't amazing enough already, you can even see a stove. The stove is conventional. Unfortunately, there isn't a thing on it. There is an open plain door leading north. You need an exit without a door? You should try going south. > -= Kitchen =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "close fridge",
+                "close plain door",
+                "examine cookbook",
+                "examine counter",
+                "examine fridge",
+                "examine knife",
+                "examine oven",
+                "examine parsley",
+                "examine pork chop",
+                "examine stove",
+                "examine table",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "take cookbook from table",
+                "take knife from counter",
+                "take parsley from fridge",
+                "take pork chop from fridge"
+            ]
+        },
+        "done": false,
+        "next_action": "take parsley from fridge"
+    },
+    {
+        "state": "-= Kitchen =- You are in a kitchen. An usual kind of place. You begin looking for stuff. You can make out an opened conventional looking fridge here. The fridge contains a parsley and a fried pork chop. You can see a closed oven nearby. What's that over there? It looks like it's a table. Wow, isn't TextWorld just the best? The table is massive. On the table you can see a cookbook. Were you looking for a counter? Because look over there, it's a counter. You see a knife on the counter. As if things weren't amazing enough already, you can even see a stove. The stove is conventional. Unfortunately, there isn't a thing on it. There is an open plain door leading north. You need an exit without a door? You should try going south. > -= Kitchen =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "close fridge",
+                "close plain door",
+                "examine cookbook",
+                "examine counter",
+                "examine fridge",
+                "examine knife",
+                "examine oven",
+                "examine parsley",
+                "examine pork chop",
+                "examine stove",
+                "examine table",
+                "go north",
+                "go south",
+                "inventory",
+                "look",
+                "take cookbook from table",
+                "take knife from counter",
+                "take parsley from fridge",
+                "take pork chop from fridge"
+            ]
+        },
+        "action": "take parsley from fridge",
+        "reward": 1,
+        "next_state": "You take the parsley from the fridge. Your score has just gone up by one point. > -= Kitchen =-1/10",
+        "next_infos": {
+            "admissible_commands": [
+                "close fridge",
+                "close plain door",
+                "cook parsley with oven",
+                "cook parsley with stove",
+                "drop parsley",
+                "eat parsley",
+                "examine cookbook",
+                "examine counter",
+                "examine fridge",
+                "examine knife",
+                "examine oven",
+                "examine pork chop",
+                "examine stove",
+                "examine table",
+                "go north",
+                "go south",
+                "insert parsley into fridge",
+                "inventory",
+                "look",
+                "put parsley on counter",
+                "put parsley on stove",
+                "put parsley on table",
+                "take cookbook from table",
+                "take knife from counter",
+                "take pork chop from fridge"
+            ]
+        },
+        "done": false,
+        "next_action": "take knife from counter"
+    },
+    {
+        "state": "You take the parsley from the fridge. Your score has just gone up by one point. > -= Kitchen =-1/10",
+        "infos": {
+            "admissible_commands": [
+                "close fridge",
+                "close plain door",
+                "cook parsley with oven",
+                "cook parsley with stove",
+                "drop parsley",
+                "eat parsley",
+                "examine cookbook",
+                "examine counter",
+                "examine fridge",
+                "examine knife",
+                "examine oven",
+                "examine pork chop",
+                "examine stove",
+                "examine table",
+                "go north",
+                "go south",
+                "insert parsley into fridge",
+                "inventory",
+                "look",
+                "put parsley on counter",
+                "put parsley on stove",
+                "put parsley on table",
+                "take cookbook from table",
+                "take knife from counter",
+                "take pork chop from fridge"
+            ]
+        },
+        "action": "take knife from counter",
+        "reward": 0,
+        "next_state": "You take the knife from the counter. > -= Kitchen =-1/11",
+        "next_infos": {
+            "admissible_commands": [
+                "chop parsley with knife",
+                "close fridge",
+                "close plain door",
+                "cook parsley with oven",
+                "cook parsley with stove",
+                "dice parsley with knife",
+                "drop knife",
+                "drop parsley",
+                "eat parsley",
+                "examine cookbook",
+                "examine counter",
+                "examine fridge",
+                "examine oven",
+                "examine pork chop",
+                "examine stove",
+                "examine table",
+                "go north",
+                "go south",
+                "insert knife into fridge",
+                "insert parsley into fridge",
+                "inventory",
+                "look",
+                "put knife on counter",
+                "put knife on stove",
+                "put knife on table",
+                "put parsley on counter",
+                "put parsley on stove",
+                "put parsley on table",
+                "slice parsley with knife",
+                "take cookbook from table",
+                "take pork chop from fridge"
+            ]
+        },
+        "done": false,
+        "next_action": "dice parsley with knife"
+    },
+    {
+        "state": "You take the knife from the counter. > -= Kitchen =-1/11",
+        "infos": {
+            "admissible_commands": [
+                "chop parsley with knife",
+                "close fridge",
+                "close plain door",
+                "cook parsley with oven",
+                "cook parsley with stove",
+                "dice parsley with knife",
+                "drop knife",
+                "drop parsley",
+                "eat parsley",
+                "examine cookbook",
+                "examine counter",
+                "examine fridge",
+                "examine oven",
+                "examine pork chop",
+                "examine stove",
+                "examine table",
+                "go north",
+                "go south",
+                "insert knife into fridge",
+                "insert parsley into fridge",
+                "inventory",
+                "look",
+                "put knife on counter",
+                "put knife on stove",
+                "put knife on table",
+                "put parsley on counter",
+                "put parsley on stove",
+                "put parsley on table",
+                "slice parsley with knife",
+                "take cookbook from table",
+                "take pork chop from fridge"
+            ]
+        },
+        "action": "dice parsley with knife",
+        "reward": 0,
+        "next_state": "You dice the parsley. *** You lost! *** You scored 1 out of a possible 7, in 11 turns. Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command? > -= Kitchen =-1/11",
+        "next_infos": {
+            "admissible_commands": [
+                "close fridge",
+                "close plain door",
+                "cook parsley with oven",
+                "cook parsley with stove",
+                "drop knife",
+                "drop parsley",
+                "eat parsley",
+                "examine cookbook",
+                "examine counter",
+                "examine fridge",
+                "examine oven",
+                "examine pork chop",
+                "examine stove",
+                "examine table",
+                "go north",
+                "go south",
+                "insert knife into fridge",
+                "insert parsley into fridge",
+                "inventory",
+                "look",
+                "put knife on counter",
+                "put knife on stove",
+                "put knife on table",
+                "put parsley on counter",
+                "put parsley on stove",
+                "put parsley on table",
+                "take cookbook from table",
+                "take pork chop from fridge"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

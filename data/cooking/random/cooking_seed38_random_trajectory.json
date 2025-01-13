@@ -1,0 +1,31 @@
+[
+    {
+        "state": "You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal! -= Pantry =- You are in a pantry. A typical kind of place. You decide to start listing off everything you see in the room, as if you were in a text adventure. You can see a shelf. The shelf is wooden. But the thing is empty, unfortunately. There is an open plain door leading west. > -= Pantry =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "close plain door",
+                "drop parsley",
+                "eat parsley",
+                "examine shelf",
+                "go west",
+                "inventory",
+                "look",
+                "put parsley on shelf"
+            ]
+        },
+        "action": "eat parsley",
+        "reward": 0,
+        "next_state": "You eat the parsley. Not bad. *** You lost! *** You scored 0 out of a possible 7, in 1 turn. Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command? > -= Pantry =-0/1",
+        "next_infos": {
+            "admissible_commands": [
+                "close plain door",
+                "examine shelf",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

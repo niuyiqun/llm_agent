@@ -1,0 +1,448 @@
+[
+    {
+        "state": "You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal! -= Pantry =- I am so happy to announce that you are now in the pantry. As if things weren't amazing enough already, you can even see a shelf. Looks like someone's already been here and taken everything off it, though. Aw, here you were, all excited for there to be things on it! There is an open frosted-glass door leading south. > -= Pantry =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop purple potato",
+                "drop red potato",
+                "drop red tuna",
+                "eat red potato",
+                "examine shelf",
+                "go south",
+                "inventory",
+                "look",
+                "put purple potato on shelf",
+                "put red potato on shelf",
+                "put red tuna on shelf"
+            ]
+        },
+        "action": "drop purple potato",
+        "reward": 0,
+        "next_state": "You drop the purple potato on the ground. > -= Pantry =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop red potato",
+                "drop red tuna",
+                "eat red potato",
+                "examine purple potato",
+                "examine shelf",
+                "go south",
+                "inventory",
+                "look",
+                "put red potato on shelf",
+                "put red tuna on shelf",
+                "take purple potato"
+            ]
+        },
+        "done": false,
+        "next_action": "put red potato on shelf"
+    },
+    {
+        "state": "You drop the purple potato on the ground. > -= Pantry =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop red potato",
+                "drop red tuna",
+                "eat red potato",
+                "examine purple potato",
+                "examine shelf",
+                "go south",
+                "inventory",
+                "look",
+                "put red potato on shelf",
+                "put red tuna on shelf",
+                "take purple potato"
+            ]
+        },
+        "action": "put red potato on shelf",
+        "reward": 0,
+        "next_state": "You put the red potato on the shelf. > -= Pantry =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop red tuna",
+                "examine purple potato",
+                "examine red potato",
+                "examine shelf",
+                "go south",
+                "inventory",
+                "look",
+                "put red tuna on shelf",
+                "take purple potato",
+                "take red potato from shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "examine shelf"
+    },
+    {
+        "state": "You put the red potato on the shelf. > -= Pantry =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop red tuna",
+                "examine purple potato",
+                "examine red potato",
+                "examine shelf",
+                "go south",
+                "inventory",
+                "look",
+                "put red tuna on shelf",
+                "take purple potato",
+                "take red potato from shelf"
+            ]
+        },
+        "action": "examine shelf",
+        "reward": 0,
+        "next_state": "The shelf is balanced. On the shelf is a fried red potato. > -= Pantry =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop red tuna",
+                "examine purple potato",
+                "examine red potato",
+                "examine shelf",
+                "go south",
+                "inventory",
+                "look",
+                "put red tuna on shelf",
+                "take purple potato",
+                "take red potato from shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "inventory"
+    },
+    {
+        "state": "The shelf is balanced. On the shelf is a fried red potato. > -= Pantry =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop red tuna",
+                "examine purple potato",
+                "examine red potato",
+                "examine shelf",
+                "go south",
+                "inventory",
+                "look",
+                "put red tuna on shelf",
+                "take purple potato",
+                "take red potato from shelf"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying: a raw red tuna. > -= Pantry =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop red tuna",
+                "examine purple potato",
+                "examine red potato",
+                "examine shelf",
+                "go south",
+                "inventory",
+                "look",
+                "put red tuna on shelf",
+                "take purple potato",
+                "take red potato from shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "close frosted-glass door"
+    },
+    {
+        "state": "You are carrying: a raw red tuna. > -= Pantry =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop red tuna",
+                "examine purple potato",
+                "examine red potato",
+                "examine shelf",
+                "go south",
+                "inventory",
+                "look",
+                "put red tuna on shelf",
+                "take purple potato",
+                "take red potato from shelf"
+            ]
+        },
+        "action": "close frosted-glass door",
+        "reward": 0,
+        "next_state": "You close frosted-glass door. > -= Pantry =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "examine purple potato",
+                "examine red potato",
+                "examine shelf",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "put red tuna on shelf",
+                "take purple potato",
+                "take red potato from shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "examine red potato"
+    },
+    {
+        "state": "You close frosted-glass door. > -= Pantry =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "examine purple potato",
+                "examine red potato",
+                "examine shelf",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "put red tuna on shelf",
+                "take purple potato",
+                "take red potato from shelf"
+            ]
+        },
+        "action": "examine red potato",
+        "reward": 0,
+        "next_state": "The fried red potato looks heavenly. > -= Pantry =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "examine purple potato",
+                "examine red potato",
+                "examine shelf",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "put red tuna on shelf",
+                "take purple potato",
+                "take red potato from shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "take purple potato"
+    },
+    {
+        "state": "The fried red potato looks heavenly. > -= Pantry =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "examine purple potato",
+                "examine red potato",
+                "examine shelf",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "put red tuna on shelf",
+                "take purple potato",
+                "take red potato from shelf"
+            ]
+        },
+        "action": "take purple potato",
+        "reward": 0,
+        "next_state": "You pick up the purple potato from the ground. > -= Pantry =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "drop purple potato",
+                "drop red tuna",
+                "examine red potato",
+                "examine shelf",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "put purple potato on shelf",
+                "put red tuna on shelf",
+                "take red potato from shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "drop purple potato"
+    },
+    {
+        "state": "You pick up the purple potato from the ground. > -= Pantry =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "drop purple potato",
+                "drop red tuna",
+                "examine red potato",
+                "examine shelf",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "put purple potato on shelf",
+                "put red tuna on shelf",
+                "take red potato from shelf"
+            ]
+        },
+        "action": "drop purple potato",
+        "reward": 0,
+        "next_state": "You drop the purple potato on the ground. > -= Pantry =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "examine purple potato",
+                "examine red potato",
+                "examine shelf",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "put red tuna on shelf",
+                "take purple potato",
+                "take red potato from shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "take purple potato"
+    },
+    {
+        "state": "You drop the purple potato on the ground. > -= Pantry =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "examine purple potato",
+                "examine red potato",
+                "examine shelf",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "put red tuna on shelf",
+                "take purple potato",
+                "take red potato from shelf"
+            ]
+        },
+        "action": "take purple potato",
+        "reward": 0,
+        "next_state": "You pick up the purple potato from the ground. > -= Pantry =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "drop purple potato",
+                "drop red tuna",
+                "examine red potato",
+                "examine shelf",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "put purple potato on shelf",
+                "put red tuna on shelf",
+                "take red potato from shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "take red potato from shelf"
+    },
+    {
+        "state": "You pick up the purple potato from the ground. > -= Pantry =-0/10",
+        "infos": {
+            "admissible_commands": [
+                "drop purple potato",
+                "drop red tuna",
+                "examine red potato",
+                "examine shelf",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "put purple potato on shelf",
+                "put red tuna on shelf",
+                "take red potato from shelf"
+            ]
+        },
+        "action": "take red potato from shelf",
+        "reward": 0,
+        "next_state": "You take the red potato from the shelf. > -= Pantry =-0/11",
+        "next_infos": {
+            "admissible_commands": [
+                "drop purple potato",
+                "drop red potato",
+                "drop red tuna",
+                "eat red potato",
+                "examine shelf",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "put purple potato on shelf",
+                "put red potato on shelf",
+                "put red tuna on shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "You take the red potato from the shelf. > -= Pantry =-0/11",
+        "infos": {
+            "admissible_commands": [
+                "drop purple potato",
+                "drop red potato",
+                "drop red tuna",
+                "eat red potato",
+                "examine shelf",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "put purple potato on shelf",
+                "put red potato on shelf",
+                "put red tuna on shelf"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Pantry =- I am so happy to announce that you are now in the pantry. As if things weren't amazing enough already, you can even see a shelf. Looks like someone's already been here and taken everything off it, though. Aw, here you were, all excited for there to be things on it! There is a closed frosted-glass door leading south. > -= Pantry =-0/12",
+        "next_infos": {
+            "admissible_commands": [
+                "drop purple potato",
+                "drop red potato",
+                "drop red tuna",
+                "eat red potato",
+                "examine shelf",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "put purple potato on shelf",
+                "put red potato on shelf",
+                "put red tuna on shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "eat red potato"
+    },
+    {
+        "state": "-= Pantry =- I am so happy to announce that you are now in the pantry. As if things weren't amazing enough already, you can even see a shelf. Looks like someone's already been here and taken everything off it, though. Aw, here you were, all excited for there to be things on it! There is a closed frosted-glass door leading south. > -= Pantry =-0/12",
+        "infos": {
+            "admissible_commands": [
+                "drop purple potato",
+                "drop red potato",
+                "drop red tuna",
+                "eat red potato",
+                "examine shelf",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "put purple potato on shelf",
+                "put red potato on shelf",
+                "put red tuna on shelf"
+            ]
+        },
+        "action": "eat red potato",
+        "reward": 0,
+        "next_state": "You eat the red potato. Not bad. *** You lost! *** You scored 0 out of a possible 7, in 12 turns. Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command? > -= Pantry =-0/12",
+        "next_infos": {
+            "admissible_commands": [
+                "drop purple potato",
+                "drop red tuna",
+                "examine shelf",
+                "inventory",
+                "look",
+                "open frosted-glass door",
+                "put purple potato on shelf",
+                "put red tuna on shelf"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

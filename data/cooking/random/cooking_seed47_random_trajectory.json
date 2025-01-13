@@ -1,0 +1,35 @@
+[
+    {
+        "state": "You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal! -= Bathroom =- Look around you. Take it all in. It's not every day someone gets to be in a bathroom. You can see a toilet. But oh no! there's nothing on this piece of junk. What, you think everything in TextWorld should have stuff on it? There is an exit to the south. Don't worry, there is no door. > -= Bathroom =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "drop green bell pepper",
+                "drop orange bell pepper",
+                "eat green bell pepper",
+                "eat orange bell pepper",
+                "examine toilet",
+                "go south",
+                "inventory",
+                "look",
+                "put green bell pepper on toilet",
+                "put orange bell pepper on toilet"
+            ]
+        },
+        "action": "eat orange bell pepper",
+        "reward": 0,
+        "next_state": "You eat the orange bell pepper. Not bad. *** You lost! *** You scored 0 out of a possible 7, in 1 turn. Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command? > -= Bathroom =-0/1",
+        "next_infos": {
+            "admissible_commands": [
+                "drop green bell pepper",
+                "eat green bell pepper",
+                "examine toilet",
+                "go south",
+                "inventory",
+                "look",
+                "put green bell pepper on toilet"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

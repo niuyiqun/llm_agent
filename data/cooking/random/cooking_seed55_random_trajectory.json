@@ -1,0 +1,217 @@
+[
+    {
+        "state": "You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal! -= Livingroom =- You find yourself in a livingroom. A typical kind of place. You see a sofa. The sofa is comfy. Looks like someone's already been here and taken everything off it, though. There is an exit to the north. You don't like doors? Why not try going west, that entranceway is not blocked by one. > -= Livingroom =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "drop green apple",
+                "drop green bell pepper",
+                "drop green hot pepper",
+                "eat green apple",
+                "eat green bell pepper",
+                "eat green hot pepper",
+                "examine sofa",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "put green apple on sofa",
+                "put green bell pepper on sofa",
+                "put green hot pepper on sofa"
+            ]
+        },
+        "action": "eat green apple",
+        "reward": 0,
+        "next_state": "You eat the green apple. Not bad. > -= Livingroom =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "drop green bell pepper",
+                "drop green hot pepper",
+                "eat green bell pepper",
+                "eat green hot pepper",
+                "examine sofa",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "put green bell pepper on sofa",
+                "put green hot pepper on sofa"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "You eat the green apple. Not bad. > -= Livingroom =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "drop green bell pepper",
+                "drop green hot pepper",
+                "eat green bell pepper",
+                "eat green hot pepper",
+                "examine sofa",
+                "go north",
+                "go west",
+                "inventory",
+                "look",
+                "put green bell pepper on sofa",
+                "put green hot pepper on sofa"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Corridor =- You find yourself in a corridor. A standard kind of place. You begin to take stock of what's in the room. You need an exit without a door? You should try going east. You don't like doors? Why not try going north, that entranceway is not blocked by one. There is an exit to the south. Don't worry, there is no door. > -= Corridor =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "drop green bell pepper",
+                "drop green hot pepper",
+                "eat green bell pepper",
+                "eat green hot pepper",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "-= Corridor =- You find yourself in a corridor. A standard kind of place. You begin to take stock of what's in the room. You need an exit without a door? You should try going east. You don't like doors? Why not try going north, that entranceway is not blocked by one. There is an exit to the south. Don't worry, there is no door. > -= Corridor =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "drop green bell pepper",
+                "drop green hot pepper",
+                "eat green bell pepper",
+                "eat green hot pepper",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Corridor =- You find yourself in a corridor. A standard kind of place. You begin to take stock of what's in the room. You need an exit without a door? You should try going east. You don't like doors? Why not try going north, that entranceway is not blocked by one. There is an exit to the south. Don't worry, there is no door. > -= Corridor =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "drop green bell pepper",
+                "drop green hot pepper",
+                "eat green bell pepper",
+                "eat green hot pepper",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Corridor =- You find yourself in a corridor. A standard kind of place. You begin to take stock of what's in the room. You need an exit without a door? You should try going east. You don't like doors? Why not try going north, that entranceway is not blocked by one. There is an exit to the south. Don't worry, there is no door. > -= Corridor =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "drop green bell pepper",
+                "drop green hot pepper",
+                "eat green bell pepper",
+                "eat green hot pepper",
+                "go east",
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Bathroom =- Of every bathroom you could have shown up in, you had to come round a standard one. You begin to take stock of what's here. Were you looking for a toilet? Because look over there, it's a toilet. The toilet is white. But the thing is empty, unfortunately. You need an exit without a door? You should try going south. > -= Bathroom =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "drop green bell pepper",
+                "drop green hot pepper",
+                "eat green bell pepper",
+                "eat green hot pepper",
+                "examine toilet",
+                "go south",
+                "inventory",
+                "look",
+                "put green bell pepper on toilet",
+                "put green hot pepper on toilet"
+            ]
+        },
+        "done": false,
+        "next_action": "examine toilet"
+    },
+    {
+        "state": "-= Bathroom =- Of every bathroom you could have shown up in, you had to come round a standard one. You begin to take stock of what's here. Were you looking for a toilet? Because look over there, it's a toilet. The toilet is white. But the thing is empty, unfortunately. You need an exit without a door? You should try going south. > -= Bathroom =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "drop green bell pepper",
+                "drop green hot pepper",
+                "eat green bell pepper",
+                "eat green hot pepper",
+                "examine toilet",
+                "go south",
+                "inventory",
+                "look",
+                "put green bell pepper on toilet",
+                "put green hot pepper on toilet"
+            ]
+        },
+        "action": "examine toilet",
+        "reward": 0,
+        "next_state": "The toilet is balanced. > -= Bathroom =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "drop green bell pepper",
+                "drop green hot pepper",
+                "eat green bell pepper",
+                "eat green hot pepper",
+                "examine toilet",
+                "go south",
+                "inventory",
+                "look",
+                "put green bell pepper on toilet",
+                "put green hot pepper on toilet"
+            ]
+        },
+        "done": false,
+        "next_action": "eat green bell pepper"
+    },
+    {
+        "state": "The toilet is balanced. > -= Bathroom =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "drop green bell pepper",
+                "drop green hot pepper",
+                "eat green bell pepper",
+                "eat green hot pepper",
+                "examine toilet",
+                "go south",
+                "inventory",
+                "look",
+                "put green bell pepper on toilet",
+                "put green hot pepper on toilet"
+            ]
+        },
+        "action": "eat green bell pepper",
+        "reward": 0,
+        "next_state": "You eat the green bell pepper. Not bad. *** You lost! *** You scored 0 out of a possible 7, in 6 turns. Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command? > -= Bathroom =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "drop green hot pepper",
+                "eat green hot pepper",
+                "examine toilet",
+                "go south",
+                "inventory",
+                "look",
+                "put green hot pepper on toilet"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

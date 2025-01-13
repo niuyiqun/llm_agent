@@ -1,0 +1,847 @@
+[
+    {
+        "state": "You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal! -= Corridor =- You've just walked into a corridor. You begin looking for stuff. You don't like doors? Why not try going east, that entranceway is not blocked by one. There is an exit to the north. You don't like doors? Why not try going west, that entranceway is not blocked by one. > -= Corridor =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop white onion",
+                "drop white tuna",
+                "eat white onion",
+                "eat white tuna",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying: a fried white tuna, a white onion and a raw red tuna. > -= Corridor =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop white onion",
+                "drop white tuna",
+                "eat white onion",
+                "eat white tuna",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "You are carrying: a fried white tuna, a white onion and a raw red tuna. > -= Corridor =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop white onion",
+                "drop white tuna",
+                "eat white onion",
+                "eat white tuna",
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Bathroom =- You are in a bathroom. An ordinary kind of place. You hear a noise behind you and spin around, but you can't see anything other than a toilet. But the thing is empty, unfortunately. There is an exit to the east. > -= Bathroom =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop white onion",
+                "drop white tuna",
+                "eat white onion",
+                "eat white tuna",
+                "examine toilet",
+                "go east",
+                "inventory",
+                "look",
+                "put red tuna on toilet",
+                "put white onion on toilet",
+                "put white tuna on toilet"
+            ]
+        },
+        "done": false,
+        "next_action": "drop white tuna"
+    },
+    {
+        "state": "-= Bathroom =- You are in a bathroom. An ordinary kind of place. You hear a noise behind you and spin around, but you can't see anything other than a toilet. But the thing is empty, unfortunately. There is an exit to the east. > -= Bathroom =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop white onion",
+                "drop white tuna",
+                "eat white onion",
+                "eat white tuna",
+                "examine toilet",
+                "go east",
+                "inventory",
+                "look",
+                "put red tuna on toilet",
+                "put white onion on toilet",
+                "put white tuna on toilet"
+            ]
+        },
+        "action": "drop white tuna",
+        "reward": 0,
+        "next_state": "You drop the white tuna on the ground. > -= Bathroom =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop white onion",
+                "eat white onion",
+                "examine toilet",
+                "examine white tuna",
+                "go east",
+                "inventory",
+                "look",
+                "put red tuna on toilet",
+                "put white onion on toilet",
+                "take white tuna"
+            ]
+        },
+        "done": false,
+        "next_action": "examine white tuna"
+    },
+    {
+        "state": "You drop the white tuna on the ground. > -= Bathroom =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop white onion",
+                "eat white onion",
+                "examine toilet",
+                "examine white tuna",
+                "go east",
+                "inventory",
+                "look",
+                "put red tuna on toilet",
+                "put white onion on toilet",
+                "take white tuna"
+            ]
+        },
+        "action": "examine white tuna",
+        "reward": 0,
+        "next_state": "That's a fried white tuna! > -= Bathroom =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop white onion",
+                "eat white onion",
+                "examine toilet",
+                "examine white tuna",
+                "go east",
+                "inventory",
+                "look",
+                "put red tuna on toilet",
+                "put white onion on toilet",
+                "take white tuna"
+            ]
+        },
+        "done": false,
+        "next_action": "examine white tuna"
+    },
+    {
+        "state": "That's a fried white tuna! > -= Bathroom =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop white onion",
+                "eat white onion",
+                "examine toilet",
+                "examine white tuna",
+                "go east",
+                "inventory",
+                "look",
+                "put red tuna on toilet",
+                "put white onion on toilet",
+                "take white tuna"
+            ]
+        },
+        "action": "examine white tuna",
+        "reward": 0,
+        "next_state": "That's a fried white tuna! > -= Bathroom =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop white onion",
+                "eat white onion",
+                "examine toilet",
+                "examine white tuna",
+                "go east",
+                "inventory",
+                "look",
+                "put red tuna on toilet",
+                "put white onion on toilet",
+                "take white tuna"
+            ]
+        },
+        "done": false,
+        "next_action": "drop red tuna"
+    },
+    {
+        "state": "That's a fried white tuna! > -= Bathroom =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop white onion",
+                "eat white onion",
+                "examine toilet",
+                "examine white tuna",
+                "go east",
+                "inventory",
+                "look",
+                "put red tuna on toilet",
+                "put white onion on toilet",
+                "take white tuna"
+            ]
+        },
+        "action": "drop red tuna",
+        "reward": 0,
+        "next_state": "You drop the red tuna on the ground. > -= Bathroom =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "drop white onion",
+                "eat white onion",
+                "examine red tuna",
+                "examine toilet",
+                "examine white tuna",
+                "go east",
+                "inventory",
+                "look",
+                "put white onion on toilet",
+                "take red tuna",
+                "take white tuna"
+            ]
+        },
+        "done": false,
+        "next_action": "examine red tuna"
+    },
+    {
+        "state": "You drop the red tuna on the ground. > -= Bathroom =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "drop white onion",
+                "eat white onion",
+                "examine red tuna",
+                "examine toilet",
+                "examine white tuna",
+                "go east",
+                "inventory",
+                "look",
+                "put white onion on toilet",
+                "take red tuna",
+                "take white tuna"
+            ]
+        },
+        "action": "examine red tuna",
+        "reward": 0,
+        "next_state": "You couldn't pay me to eat that raw red tuna. > -= Bathroom =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "drop white onion",
+                "eat white onion",
+                "examine red tuna",
+                "examine toilet",
+                "examine white tuna",
+                "go east",
+                "inventory",
+                "look",
+                "put white onion on toilet",
+                "take red tuna",
+                "take white tuna"
+            ]
+        },
+        "done": false,
+        "next_action": "drop white onion"
+    },
+    {
+        "state": "You couldn't pay me to eat that raw red tuna. > -= Bathroom =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "drop white onion",
+                "eat white onion",
+                "examine red tuna",
+                "examine toilet",
+                "examine white tuna",
+                "go east",
+                "inventory",
+                "look",
+                "put white onion on toilet",
+                "take red tuna",
+                "take white tuna"
+            ]
+        },
+        "action": "drop white onion",
+        "reward": 0,
+        "next_state": "You drop the white onion on the ground. > -= Bathroom =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "examine red tuna",
+                "examine toilet",
+                "examine white onion",
+                "examine white tuna",
+                "go east",
+                "inventory",
+                "look",
+                "take red tuna",
+                "take white onion",
+                "take white tuna"
+            ]
+        },
+        "done": false,
+        "next_action": "examine white onion"
+    },
+    {
+        "state": "You drop the white onion on the ground. > -= Bathroom =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "examine red tuna",
+                "examine toilet",
+                "examine white onion",
+                "examine white tuna",
+                "go east",
+                "inventory",
+                "look",
+                "take red tuna",
+                "take white onion",
+                "take white tuna"
+            ]
+        },
+        "action": "examine white onion",
+        "reward": 0,
+        "next_state": "The white onion looks savory. > -= Bathroom =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "examine red tuna",
+                "examine toilet",
+                "examine white onion",
+                "examine white tuna",
+                "go east",
+                "inventory",
+                "look",
+                "take red tuna",
+                "take white onion",
+                "take white tuna"
+            ]
+        },
+        "done": false,
+        "next_action": "take red tuna"
+    },
+    {
+        "state": "The white onion looks savory. > -= Bathroom =-0/10",
+        "infos": {
+            "admissible_commands": [
+                "examine red tuna",
+                "examine toilet",
+                "examine white onion",
+                "examine white tuna",
+                "go east",
+                "inventory",
+                "look",
+                "take red tuna",
+                "take white onion",
+                "take white tuna"
+            ]
+        },
+        "action": "take red tuna",
+        "reward": 0,
+        "next_state": "You pick up the red tuna from the ground. > -= Bathroom =-0/11",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "examine toilet",
+                "examine white onion",
+                "examine white tuna",
+                "go east",
+                "inventory",
+                "look",
+                "put red tuna on toilet",
+                "take white onion",
+                "take white tuna"
+            ]
+        },
+        "done": false,
+        "next_action": "take white onion"
+    },
+    {
+        "state": "You pick up the red tuna from the ground. > -= Bathroom =-0/11",
+        "infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "examine toilet",
+                "examine white onion",
+                "examine white tuna",
+                "go east",
+                "inventory",
+                "look",
+                "put red tuna on toilet",
+                "take white onion",
+                "take white tuna"
+            ]
+        },
+        "action": "take white onion",
+        "reward": 0,
+        "next_state": "You pick up the white onion from the ground. > -= Bathroom =-0/12",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop white onion",
+                "eat white onion",
+                "examine toilet",
+                "examine white tuna",
+                "go east",
+                "inventory",
+                "look",
+                "put red tuna on toilet",
+                "put white onion on toilet",
+                "take white tuna"
+            ]
+        },
+        "done": false,
+        "next_action": "examine white tuna"
+    },
+    {
+        "state": "You pick up the white onion from the ground. > -= Bathroom =-0/12",
+        "infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop white onion",
+                "eat white onion",
+                "examine toilet",
+                "examine white tuna",
+                "go east",
+                "inventory",
+                "look",
+                "put red tuna on toilet",
+                "put white onion on toilet",
+                "take white tuna"
+            ]
+        },
+        "action": "examine white tuna",
+        "reward": 0,
+        "next_state": "That's a fried white tuna! > -= Bathroom =-0/13",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop white onion",
+                "eat white onion",
+                "examine toilet",
+                "examine white tuna",
+                "go east",
+                "inventory",
+                "look",
+                "put red tuna on toilet",
+                "put white onion on toilet",
+                "take white tuna"
+            ]
+        },
+        "done": false,
+        "next_action": "eat white onion"
+    },
+    {
+        "state": "That's a fried white tuna! > -= Bathroom =-0/13",
+        "infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop white onion",
+                "eat white onion",
+                "examine toilet",
+                "examine white tuna",
+                "go east",
+                "inventory",
+                "look",
+                "put red tuna on toilet",
+                "put white onion on toilet",
+                "take white tuna"
+            ]
+        },
+        "action": "eat white onion",
+        "reward": 0,
+        "next_state": "You eat the white onion. Not bad. > -= Bathroom =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "examine toilet",
+                "examine white tuna",
+                "go east",
+                "inventory",
+                "look",
+                "put red tuna on toilet",
+                "take white tuna"
+            ]
+        },
+        "done": false,
+        "next_action": "inventory"
+    },
+    {
+        "state": "You eat the white onion. Not bad. > -= Bathroom =-0/14",
+        "infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "examine toilet",
+                "examine white tuna",
+                "go east",
+                "inventory",
+                "look",
+                "put red tuna on toilet",
+                "take white tuna"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying: a raw red tuna. > -= Bathroom =-0/15",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "examine toilet",
+                "examine white tuna",
+                "go east",
+                "inventory",
+                "look",
+                "put red tuna on toilet",
+                "take white tuna"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "You are carrying: a raw red tuna. > -= Bathroom =-0/15",
+        "infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "examine toilet",
+                "examine white tuna",
+                "go east",
+                "inventory",
+                "look",
+                "put red tuna on toilet",
+                "take white tuna"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Bathroom =- You are in a bathroom. An ordinary kind of place. You hear a noise behind you and spin around, but you can't see anything other than a toilet. But the thing is empty, unfortunately. There is an exit to the east. There is a fried white tuna on the floor. > -= Bathroom =-0/16",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "examine toilet",
+                "examine white tuna",
+                "go east",
+                "inventory",
+                "look",
+                "put red tuna on toilet",
+                "take white tuna"
+            ]
+        },
+        "done": false,
+        "next_action": "examine white tuna"
+    },
+    {
+        "state": "-= Bathroom =- You are in a bathroom. An ordinary kind of place. You hear a noise behind you and spin around, but you can't see anything other than a toilet. But the thing is empty, unfortunately. There is an exit to the east. There is a fried white tuna on the floor. > -= Bathroom =-0/16",
+        "infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "examine toilet",
+                "examine white tuna",
+                "go east",
+                "inventory",
+                "look",
+                "put red tuna on toilet",
+                "take white tuna"
+            ]
+        },
+        "action": "examine white tuna",
+        "reward": 0,
+        "next_state": "That's a fried white tuna! > -= Bathroom =-0/17",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "examine toilet",
+                "examine white tuna",
+                "go east",
+                "inventory",
+                "look",
+                "put red tuna on toilet",
+                "take white tuna"
+            ]
+        },
+        "done": false,
+        "next_action": "take white tuna"
+    },
+    {
+        "state": "That's a fried white tuna! > -= Bathroom =-0/17",
+        "infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "examine toilet",
+                "examine white tuna",
+                "go east",
+                "inventory",
+                "look",
+                "put red tuna on toilet",
+                "take white tuna"
+            ]
+        },
+        "action": "take white tuna",
+        "reward": 0,
+        "next_state": "You pick up the white tuna from the ground. > -= Bathroom =-0/18",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop white tuna",
+                "eat white tuna",
+                "examine toilet",
+                "go east",
+                "inventory",
+                "look",
+                "put red tuna on toilet",
+                "put white tuna on toilet"
+            ]
+        },
+        "done": false,
+        "next_action": "examine toilet"
+    },
+    {
+        "state": "You pick up the white tuna from the ground. > -= Bathroom =-0/18",
+        "infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop white tuna",
+                "eat white tuna",
+                "examine toilet",
+                "go east",
+                "inventory",
+                "look",
+                "put red tuna on toilet",
+                "put white tuna on toilet"
+            ]
+        },
+        "action": "examine toilet",
+        "reward": 0,
+        "next_state": "The toilet is unstable. > -= Bathroom =-0/19",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop white tuna",
+                "eat white tuna",
+                "examine toilet",
+                "go east",
+                "inventory",
+                "look",
+                "put red tuna on toilet",
+                "put white tuna on toilet"
+            ]
+        },
+        "done": false,
+        "next_action": "drop white tuna"
+    },
+    {
+        "state": "The toilet is unstable. > -= Bathroom =-0/19",
+        "infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop white tuna",
+                "eat white tuna",
+                "examine toilet",
+                "go east",
+                "inventory",
+                "look",
+                "put red tuna on toilet",
+                "put white tuna on toilet"
+            ]
+        },
+        "action": "drop white tuna",
+        "reward": 0,
+        "next_state": "You drop the white tuna on the ground. > -= Bathroom =-0/20",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "examine toilet",
+                "examine white tuna",
+                "go east",
+                "inventory",
+                "look",
+                "put red tuna on toilet",
+                "take white tuna"
+            ]
+        },
+        "done": false,
+        "next_action": "drop red tuna"
+    },
+    {
+        "state": "You drop the white tuna on the ground. > -= Bathroom =-0/20",
+        "infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "examine toilet",
+                "examine white tuna",
+                "go east",
+                "inventory",
+                "look",
+                "put red tuna on toilet",
+                "take white tuna"
+            ]
+        },
+        "action": "drop red tuna",
+        "reward": 0,
+        "next_state": "You drop the red tuna on the ground. > -= Bathroom =-0/21",
+        "next_infos": {
+            "admissible_commands": [
+                "examine red tuna",
+                "examine toilet",
+                "examine white tuna",
+                "go east",
+                "inventory",
+                "look",
+                "take red tuna",
+                "take white tuna"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "You drop the red tuna on the ground. > -= Bathroom =-0/21",
+        "infos": {
+            "admissible_commands": [
+                "examine red tuna",
+                "examine toilet",
+                "examine white tuna",
+                "go east",
+                "inventory",
+                "look",
+                "take red tuna",
+                "take white tuna"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Corridor =- You've just walked into a corridor. You begin looking for stuff. You don't like doors? Why not try going east, that entranceway is not blocked by one. There is an exit to the north. You don't like doors? Why not try going west, that entranceway is not blocked by one. > -= Corridor =-0/22",
+        "next_infos": {
+            "admissible_commands": [
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "-= Corridor =- You've just walked into a corridor. You begin looking for stuff. You don't like doors? Why not try going east, that entranceway is not blocked by one. There is an exit to the north. You don't like doors? Why not try going west, that entranceway is not blocked by one. > -= Corridor =-0/22",
+        "infos": {
+            "admissible_commands": [
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Corridor =- You've just walked into a corridor. You begin looking for stuff. You don't like doors? Why not try going east, that entranceway is not blocked by one. There is an exit to the north. You don't like doors? Why not try going west, that entranceway is not blocked by one. > -= Corridor =-0/23",
+        "next_infos": {
+            "admissible_commands": [
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "-= Corridor =- You've just walked into a corridor. You begin looking for stuff. You don't like doors? Why not try going east, that entranceway is not blocked by one. There is an exit to the north. You don't like doors? Why not try going west, that entranceway is not blocked by one. > -= Corridor =-0/23",
+        "infos": {
+            "admissible_commands": [
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Corridor =- You've just walked into a corridor. You begin looking for stuff. You don't like doors? Why not try going east, that entranceway is not blocked by one. There is an exit to the north. You don't like doors? Why not try going west, that entranceway is not blocked by one. > -= Corridor =-0/24",
+        "next_infos": {
+            "admissible_commands": [
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "inventory"
+    },
+    {
+        "state": "-= Corridor =- You've just walked into a corridor. You begin looking for stuff. You don't like doors? Why not try going east, that entranceway is not blocked by one. There is an exit to the north. You don't like doors? Why not try going west, that entranceway is not blocked by one. > -= Corridor =-0/24",
+        "infos": {
+            "admissible_commands": [
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying nothing. > -= Corridor =-0/25",
+        "next_infos": {
+            "admissible_commands": [
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "You are carrying nothing. > -= Corridor =-0/25",
+        "infos": {
+            "admissible_commands": [
+                "go east",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Livingroom =- You're now in the livingroom. You can see a sofa. However, the sofa, like an empty sofa, has nothing on it. You don't like doors? Why not try going north, that entranceway is not blocked by one. You need an exit without a door? You should try going west. > -= Livingroom =-0/26",
+        "next_infos": {
+            "admissible_commands": [
+                "examine sofa",
+                "go north",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

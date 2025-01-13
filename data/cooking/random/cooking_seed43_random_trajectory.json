@@ -1,0 +1,190 @@
+[
+    {
+        "state": "You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal! -= Bedroom =- You arrive in a bedroom. A typical one. You begin looking for stuff. You scan the room for a bed, and you find a bed. But oh no! there's nothing on this piece of junk. You don't like doors? Why not try going east, that entranceway is not blocked by one. You need an exit without a door? You should try going south. > -= Bedroom =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "drop red apple",
+                "drop yellow apple",
+                "drop yellow bell pepper",
+                "eat red apple",
+                "eat yellow apple",
+                "eat yellow bell pepper",
+                "examine bed",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "put red apple on bed",
+                "put yellow apple on bed",
+                "put yellow bell pepper on bed"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Bedroom =- You arrive in a bedroom. A typical one. You begin looking for stuff. You scan the room for a bed, and you find a bed. But oh no! there's nothing on this piece of junk. You don't like doors? Why not try going east, that entranceway is not blocked by one. You need an exit without a door? You should try going south. > -= Bedroom =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red apple",
+                "drop yellow apple",
+                "drop yellow bell pepper",
+                "eat red apple",
+                "eat yellow apple",
+                "eat yellow bell pepper",
+                "examine bed",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "put red apple on bed",
+                "put yellow apple on bed",
+                "put yellow bell pepper on bed"
+            ]
+        },
+        "done": false,
+        "next_action": "eat yellow bell pepper"
+    },
+    {
+        "state": "-= Bedroom =- You arrive in a bedroom. A typical one. You begin looking for stuff. You scan the room for a bed, and you find a bed. But oh no! there's nothing on this piece of junk. You don't like doors? Why not try going east, that entranceway is not blocked by one. You need an exit without a door? You should try going south. > -= Bedroom =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "drop red apple",
+                "drop yellow apple",
+                "drop yellow bell pepper",
+                "eat red apple",
+                "eat yellow apple",
+                "eat yellow bell pepper",
+                "examine bed",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "put red apple on bed",
+                "put yellow apple on bed",
+                "put yellow bell pepper on bed"
+            ]
+        },
+        "action": "eat yellow bell pepper",
+        "reward": 0,
+        "next_state": "You eat the yellow bell pepper. Not bad. > -= Bedroom =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red apple",
+                "drop yellow apple",
+                "eat red apple",
+                "eat yellow apple",
+                "examine bed",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "put red apple on bed",
+                "put yellow apple on bed"
+            ]
+        },
+        "done": false,
+        "next_action": "inventory"
+    },
+    {
+        "state": "You eat the yellow bell pepper. Not bad. > -= Bedroom =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "drop red apple",
+                "drop yellow apple",
+                "eat red apple",
+                "eat yellow apple",
+                "examine bed",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "put red apple on bed",
+                "put yellow apple on bed"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying: a yellow apple and a red apple. > -= Bedroom =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red apple",
+                "drop yellow apple",
+                "eat red apple",
+                "eat yellow apple",
+                "examine bed",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "put red apple on bed",
+                "put yellow apple on bed"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "You are carrying: a yellow apple and a red apple. > -= Bedroom =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "drop red apple",
+                "drop yellow apple",
+                "eat red apple",
+                "eat yellow apple",
+                "examine bed",
+                "go east",
+                "go south",
+                "inventory",
+                "look",
+                "put red apple on bed",
+                "put yellow apple on bed"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Livingroom =- You find yourself in a livingroom. A standard one. You need an exit without a door? You should try going east. There is an exit to the north. > -= Livingroom =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red apple",
+                "drop yellow apple",
+                "eat red apple",
+                "eat yellow apple",
+                "go east",
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "eat yellow apple"
+    },
+    {
+        "state": "-= Livingroom =- You find yourself in a livingroom. A standard one. You need an exit without a door? You should try going east. There is an exit to the north. > -= Livingroom =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "drop red apple",
+                "drop yellow apple",
+                "eat red apple",
+                "eat yellow apple",
+                "go east",
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "eat yellow apple",
+        "reward": 0,
+        "next_state": "You eat the yellow apple. Not bad. *** You lost! *** You scored 0 out of a possible 7, in 5 turns. Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command? > -= Livingroom =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red apple",
+                "eat red apple",
+                "go east",
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

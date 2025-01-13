@@ -1,0 +1,122 @@
+[
+    {
+        "state": "You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal! -= Livingroom =- Well, here we are in the livingroom. You see a sofa. But there isn't a thing on it. Silly sofa, silly, empty, good for nothing sofa. There is an exit to the south. Don't worry, there is no door. You need an exit without a door? You should try going west. > -= Livingroom =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "drop green hot pepper",
+                "drop red bell pepper",
+                "drop red potato",
+                "eat green hot pepper",
+                "eat red bell pepper",
+                "examine sofa",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put green hot pepper on sofa",
+                "put red bell pepper on sofa",
+                "put red potato on sofa"
+            ]
+        },
+        "action": "put red potato on sofa",
+        "reward": 0,
+        "next_state": "You put the red potato on the sofa. > -= Livingroom =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "drop green hot pepper",
+                "drop red bell pepper",
+                "eat green hot pepper",
+                "eat red bell pepper",
+                "examine red potato",
+                "examine sofa",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put green hot pepper on sofa",
+                "put red bell pepper on sofa",
+                "take red potato from sofa"
+            ]
+        },
+        "done": false,
+        "next_action": "drop green hot pepper"
+    },
+    {
+        "state": "You put the red potato on the sofa. > -= Livingroom =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "drop green hot pepper",
+                "drop red bell pepper",
+                "eat green hot pepper",
+                "eat red bell pepper",
+                "examine red potato",
+                "examine sofa",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put green hot pepper on sofa",
+                "put red bell pepper on sofa",
+                "take red potato from sofa"
+            ]
+        },
+        "action": "drop green hot pepper",
+        "reward": 0,
+        "next_state": "You drop the green hot pepper on the ground. > -= Livingroom =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red bell pepper",
+                "eat red bell pepper",
+                "examine green hot pepper",
+                "examine red potato",
+                "examine sofa",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put red bell pepper on sofa",
+                "take green hot pepper",
+                "take red potato from sofa"
+            ]
+        },
+        "done": false,
+        "next_action": "eat red bell pepper"
+    },
+    {
+        "state": "You drop the green hot pepper on the ground. > -= Livingroom =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "drop red bell pepper",
+                "eat red bell pepper",
+                "examine green hot pepper",
+                "examine red potato",
+                "examine sofa",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "put red bell pepper on sofa",
+                "take green hot pepper",
+                "take red potato from sofa"
+            ]
+        },
+        "action": "eat red bell pepper",
+        "reward": 0,
+        "next_state": "You eat the red bell pepper. Not bad. *** You lost! *** You scored 0 out of a possible 7, in 3 turns. Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command? > -= Livingroom =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "examine green hot pepper",
+                "examine red potato",
+                "examine sofa",
+                "go south",
+                "go west",
+                "inventory",
+                "look",
+                "take green hot pepper",
+                "take red potato from sofa"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

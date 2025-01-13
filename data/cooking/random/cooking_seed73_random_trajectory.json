@@ -1,0 +1,117 @@
+[
+    {
+        "state": "You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal! -= Livingroom =- You're now in a livingroom. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. You can see a sofa. The sofa is comfy. Looks like someone's already been here and taken everything off it, though. You swear loudly. You don't like doors? Why not try going south, that entranceway is not blocked by one. > -= Livingroom =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "drop purple potato",
+                "drop red apple",
+                "drop red potato",
+                "eat red apple",
+                "eat red potato",
+                "examine sofa",
+                "go south",
+                "inventory",
+                "look",
+                "put purple potato on sofa",
+                "put red apple on sofa",
+                "put red potato on sofa"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Livingroom =- You're now in a livingroom. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. You can see a sofa. The sofa is comfy. Looks like someone's already been here and taken everything off it, though. You swear loudly. You don't like doors? Why not try going south, that entranceway is not blocked by one. > -= Livingroom =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "drop purple potato",
+                "drop red apple",
+                "drop red potato",
+                "eat red apple",
+                "eat red potato",
+                "examine sofa",
+                "go south",
+                "inventory",
+                "look",
+                "put purple potato on sofa",
+                "put red apple on sofa",
+                "put red potato on sofa"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Livingroom =- You're now in a livingroom. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. You can see a sofa. The sofa is comfy. Looks like someone's already been here and taken everything off it, though. You swear loudly. You don't like doors? Why not try going south, that entranceway is not blocked by one. > -= Livingroom =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "drop purple potato",
+                "drop red apple",
+                "drop red potato",
+                "eat red apple",
+                "eat red potato",
+                "examine sofa",
+                "go south",
+                "inventory",
+                "look",
+                "put purple potato on sofa",
+                "put red apple on sofa",
+                "put red potato on sofa"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Corridor =- You arrive in a corridor. An usual kind of place. You need an exit without a door? You should try going east. You don't like doors? Why not try going north, that entranceway is not blocked by one. You don't like doors? Why not try going south, that entranceway is not blocked by one. You don't like doors? Why not try going west, that entranceway is not blocked by one. > -= Corridor =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "drop purple potato",
+                "drop red apple",
+                "drop red potato",
+                "eat red apple",
+                "eat red potato",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "eat red potato"
+    },
+    {
+        "state": "-= Corridor =- You arrive in a corridor. An usual kind of place. You need an exit without a door? You should try going east. You don't like doors? Why not try going north, that entranceway is not blocked by one. You don't like doors? Why not try going south, that entranceway is not blocked by one. You don't like doors? Why not try going west, that entranceway is not blocked by one. > -= Corridor =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "drop purple potato",
+                "drop red apple",
+                "drop red potato",
+                "eat red apple",
+                "eat red potato",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "eat red potato",
+        "reward": 0,
+        "next_state": "You eat the red potato. Not bad. *** You lost! *** You scored 0 out of a possible 7, in 3 turns. Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command? > -= Corridor =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "drop purple potato",
+                "drop red apple",
+                "eat red apple",
+                "go east",
+                "go north",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

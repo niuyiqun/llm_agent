@@ -9,6 +9,7 @@
 import torch
 import json
 import os
+
 from train.cooking.critic import AC_Agent
 
 
@@ -134,7 +135,7 @@ def main():
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
     # 初始化代理（或 CriticModel）
-    agent = AC_Agent(config_path='../../config/agent.yaml')
+    agent = AC_Agent(device, config_path='./config/agent.yaml')
     agent.device = device
     agent.critic_1.to(device)
     agent.critic_2.to(device)
@@ -142,11 +143,11 @@ def main():
     agent.target_critic_2.to(device)
 
     # 加载训练好的模型
-    model_save_path = './model/critic/treasure/final_model_20241231_021628.pth'
+    model_save_path = './model/critic/cooking/dynamic/final_model_20250113_015043.pth'
     load_model_and_info(agent, model_save_path, device)
 
     # 从目录加载测试数据（包含奖励信息）
-    test_data_directory = './simple_test/treasure/'
+    test_data_directory = './simple_test/cooking/'
     test_data = load_test_data_from_directory(test_data_directory)
 
     total_correct = 0  # 总正确数量
@@ -154,7 +155,7 @@ def main():
     total_states = 0  # 总状态数量
 
     # 对每个文件进行测试
-    for file_name, data in test_data:
+    for file_name, data in test_data[:2]:
         file_accuracy, file_top3_accuracy, file_total = test_actions_with_q_values(agent, data, file_name, device)
         total_correct += file_accuracy * file_total  # 累加正确的状态数量
         total_correct_top3 += file_top3_accuracy * file_total  # 累加前三正确的状态数量
@@ -170,9 +171,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-
-
-
-

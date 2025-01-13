@@ -184,9 +184,9 @@ class ReplayBuffer:
         random.shuffle(sampled_transitions)
 
         # 更新动态比例
-        self.current_dynamic_ratio = min(
+        self.current_dynamic_ratio = max(
             self.dynamic_ratio_max,
-            self.current_dynamic_ratio + self.dynamic_step
+            self.current_dynamic_ratio - self.dynamic_step
         )
 
         return self._unpack_transitions(sampled_transitions)
@@ -251,14 +251,16 @@ import json
 
 def construct_replay_buffer(oracle_file_path, lm_file_path, config):
     """
-    从 oracle_file_path 目录中读取 JSON 文件构建 Replay Buffer。
+        从 oracle_file_path、lm_file_path 和 optional random_file_path 构建 Replay Buffer。
 
-    Args:
-        oracle_file_path (str): 存放 JSON 文件的目录路径。
+        Args:
+            oracle_file_path (str): 存放 oracle JSON 文件的目录路径。
+            lm_file_path (str): 存放语言模型轨迹 JSON 文件的目录路径。
+            config (dict): 配置字典，包含 random_file_path 的可选路径。
 
-    Returns:
-        ReplayBuffer: 构建完成的 Replay Buffer。
-    """
+        Returns:
+            ReplayBuffer: 构建完成的 Replay Buffer。
+        """
     # 初始化 Replay Buffer
     replay_buffer = ReplayBuffer(config)
 
@@ -303,6 +305,30 @@ def construct_replay_buffer(oracle_file_path, lm_file_path, config):
 
                     # 添加样本到 Replay Buffer
                     replay_buffer.add(state, action, reward, next_state, done, infos, next_infos, next_actions)
+
+    # 检查 config 中是否存在 random_file_path
+    random_file_path = config.get("random_file_path", None)
+    if random_file_path:
+        # 遍历random目录下的所有 JSON 文件
+        for file_name in os.listdir(random_file_path):
+            if file_name.endswith('.json'):  # 确保只处理 JSON 文件
+                file_path = os.path.join(random_file_path, file_name)
+                with open(file_path, 'r', encoding='utf-8') as f:
+                    data = json.load(f)  # 加载 JSON 数据
+
+                    # 将每个样本添加到 Replay Buffer 中
+                    for sample in data:
+                        state = sample['state']
+                        action = sample['action']
+                        reward = sample['reward']
+                        next_state = sample['next_state']
+                        done = sample['done']
+                        infos = sample.get('infos', {})
+                        next_infos = sample.get('next_infos', {})
+                        next_actions = sample.get('next_action', {})
+
+                        # 添加样本到 Replay Buffer
+                        replay_buffer.add(state, action, reward, next_state, done, infos, next_infos, next_actions)
 
     return replay_buffer
 

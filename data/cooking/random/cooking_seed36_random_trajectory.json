@@ -1,0 +1,102 @@
+[
+    {
+        "state": "You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal! -= Corridor =- You find yourself in a corridor. A typical kind of place. You can barely contain your excitement. You need an exit without a door? You should try going east. There is an exit to the north. Don't worry, there is no door. > -= Corridor =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "drop red onion",
+                "drop white onion",
+                "drop white tuna",
+                "eat red onion",
+                "eat white onion",
+                "go east",
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "drop red onion",
+        "reward": 0,
+        "next_state": "You drop the red onion on the ground. > -= Corridor =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "drop white onion",
+                "drop white tuna",
+                "eat white onion",
+                "examine red onion",
+                "go east",
+                "go north",
+                "inventory",
+                "look",
+                "take red onion"
+            ]
+        },
+        "done": false,
+        "next_action": "take red onion"
+    },
+    {
+        "state": "You drop the red onion on the ground. > -= Corridor =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "drop white onion",
+                "drop white tuna",
+                "eat white onion",
+                "examine red onion",
+                "go east",
+                "go north",
+                "inventory",
+                "look",
+                "take red onion"
+            ]
+        },
+        "action": "take red onion",
+        "reward": 0,
+        "next_state": "You pick up the red onion from the ground. > -= Corridor =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red onion",
+                "drop white onion",
+                "drop white tuna",
+                "eat red onion",
+                "eat white onion",
+                "go east",
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "eat white onion"
+    },
+    {
+        "state": "You pick up the red onion from the ground. > -= Corridor =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "drop red onion",
+                "drop white onion",
+                "drop white tuna",
+                "eat red onion",
+                "eat white onion",
+                "go east",
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "eat white onion",
+        "reward": 0,
+        "next_state": "You eat the white onion. Not bad. *** You lost! *** You scored 0 out of a possible 7, in 3 turns. Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command? > -= Corridor =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red onion",
+                "drop white tuna",
+                "eat red onion",
+                "go east",
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

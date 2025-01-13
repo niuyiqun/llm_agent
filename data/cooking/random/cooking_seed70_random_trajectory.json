@@ -1,0 +1,68 @@
+[
+    {
+        "state": "You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal! -= Corridor =- Well, here we are in the corridor. You don't like doors? Why not try going east, that entranceway is not blocked by one. You need an exit without a door? You should try going south. There is an exit to the west. > -= Corridor =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop red tuna",
+                "drop yellow potato",
+                "eat red potato",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying: a roasted red potato, a raw red tuna and a raw yellow potato. > -= Corridor =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop red tuna",
+                "drop yellow potato",
+                "eat red potato",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "eat red potato"
+    },
+    {
+        "state": "You are carrying: a roasted red potato, a raw red tuna and a raw yellow potato. > -= Corridor =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "drop red potato",
+                "drop red tuna",
+                "drop yellow potato",
+                "eat red potato",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "eat red potato",
+        "reward": 0,
+        "next_state": "You eat the red potato. Not bad. *** You lost! *** You scored 0 out of a possible 7, in 2 turns. Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command? > -= Corridor =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "drop red tuna",
+                "drop yellow potato",
+                "go east",
+                "go south",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

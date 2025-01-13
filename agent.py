@@ -88,7 +88,7 @@ class Agent:
 
     def get_init_prompt(self, infos: Dict[str, Any]) -> None:
         # todo: 这里应该把Goal加进来
-        prompt_path = './config/prompt_short.yaml'
+        prompt_path = './config/prompt_explore.yaml'
         with open(prompt_path, 'r', encoding='utf-8') as file:
             self.messages = yaml.safe_load(file)
 

@@ -1,0 +1,87 @@
+[
+    {
+        "state": "You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal! -= Bedroom =- You arrive in a bedroom. You can see a bed. But the thing hasn't got anything on it. What, you think everything in TextWorld should have stuff on it? You need an exit without a door? You should try going north. > -= Bedroom =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "drop tomato",
+                "eat tomato",
+                "examine bed",
+                "go north",
+                "inventory",
+                "look",
+                "put tomato on bed"
+            ]
+        },
+        "action": "drop tomato",
+        "reward": 0,
+        "next_state": "You drop the tomato on the ground. > -= Bedroom =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine tomato",
+                "go north",
+                "inventory",
+                "look",
+                "take tomato"
+            ]
+        },
+        "done": false,
+        "next_action": "take tomato"
+    },
+    {
+        "state": "You drop the tomato on the ground. > -= Bedroom =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "examine bed",
+                "examine tomato",
+                "go north",
+                "inventory",
+                "look",
+                "take tomato"
+            ]
+        },
+        "action": "take tomato",
+        "reward": 0,
+        "next_state": "You pick up the tomato from the ground. > -= Bedroom =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "drop tomato",
+                "eat tomato",
+                "examine bed",
+                "go north",
+                "inventory",
+                "look",
+                "put tomato on bed"
+            ]
+        },
+        "done": false,
+        "next_action": "eat tomato"
+    },
+    {
+        "state": "You pick up the tomato from the ground. > -= Bedroom =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "drop tomato",
+                "eat tomato",
+                "examine bed",
+                "go north",
+                "inventory",
+                "look",
+                "put tomato on bed"
+            ]
+        },
+        "action": "eat tomato",
+        "reward": 0,
+        "next_state": "You eat the tomato. Not bad. *** You lost! *** You scored 0 out of a possible 7, in 3 turns. Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command? > -= Bedroom =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "examine bed",
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

@@ -1,0 +1,350 @@
+[
+    {
+        "state": "Hey, thanks for coming over to the TextWorld today, there is something I need you to do for me. First stop, head north. And then, make an attempt to go east. With that done, go east. Next, move south. Then, attempt to travel west. Then, try to take a trip west. With that done, go north. After that, head north. Then, head east. Following that, make an attempt to go to the north. After that, head west. That done, make an attempt to go south. That done, go east. And then, travel south. With that over with, lift the coin from the floor of the cellar. And if you do that, you're the winner! -= Vault =- You're now in the vault. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. You don't like doors? Why not try going north, that entranceway is unguarded. > -= Vault =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Vault =- You're now in the vault. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. You don't like doors? Why not try going north, that entranceway is unguarded. > -= Vault =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Vault =- You're now in the vault. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. You don't like doors? Why not try going north, that entranceway is unguarded. > -= Vault =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Office =- You find yourself in an office. A normal kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. There is an unblocked exit to the east. You need an unguarded exit? You should try going south. > -= Office =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "-= Office =- You find yourself in an office. A normal kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. There is an unblocked exit to the east. You need an unguarded exit? You should try going south. > -= Office =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Office =- You find yourself in an office. A normal kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. There is an unblocked exit to the east. You need an unguarded exit? You should try going south. > -= Office =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Office =- You find yourself in an office. A normal kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. There is an unblocked exit to the east. You need an unguarded exit? You should try going south. > -= Office =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Cubicle =- You've entered a cubicle. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. You need an unblocked exit? You should try going east. There is an unguarded exit to the west. > -= Cubicle =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "go east",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "-= Cubicle =- You've entered a cubicle. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. You need an unblocked exit? You should try going east. There is an unguarded exit to the west. > -= Cubicle =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "go east",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Cubicle =- You've entered a cubicle. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. You need an unblocked exit? You should try going east. There is an unguarded exit to the west. > -= Cubicle =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "go east",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Cubicle =- You've entered a cubicle. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. You need an unblocked exit? You should try going east. There is an unguarded exit to the west. > -= Cubicle =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "go east",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Office =- You find yourself in an office. A normal kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. There is an unblocked exit to the east. You need an unguarded exit? You should try going south. > -= Office =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Office =- You find yourself in an office. A normal kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. There is an unblocked exit to the east. You need an unguarded exit? You should try going south. > -= Office =-0/7",
+        "infos": {
+            "admissible_commands": [
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Vault =- You're now in the vault. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. You don't like doors? Why not try going north, that entranceway is unguarded. > -= Vault =-0/8",
+        "next_infos": {
+            "admissible_commands": [
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "inventory"
+    },
+    {
+        "state": "-= Vault =- You're now in the vault. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. You don't like doors? Why not try going north, that entranceway is unguarded. > -= Vault =-0/8",
+        "infos": {
+            "admissible_commands": [
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying nothing. > -= Vault =-0/9",
+        "next_infos": {
+            "admissible_commands": [
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "You are carrying nothing. > -= Vault =-0/9",
+        "infos": {
+            "admissible_commands": [
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Vault =- You're now in the vault. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. You don't like doors? Why not try going north, that entranceway is unguarded. > -= Vault =-0/10",
+        "next_infos": {
+            "admissible_commands": [
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Vault =- You're now in the vault. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. You don't like doors? Why not try going north, that entranceway is unguarded. > -= Vault =-0/10",
+        "infos": {
+            "admissible_commands": [
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Office =- You find yourself in an office. A normal kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. There is an unblocked exit to the east. You need an unguarded exit? You should try going south. > -= Office =-0/11",
+        "next_infos": {
+            "admissible_commands": [
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "-= Office =- You find yourself in an office. A normal kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. There is an unblocked exit to the east. You need an unguarded exit? You should try going south. > -= Office =-0/11",
+        "infos": {
+            "admissible_commands": [
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Office =- You find yourself in an office. A normal kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. There is an unblocked exit to the east. You need an unguarded exit? You should try going south. > -= Office =-0/12",
+        "next_infos": {
+            "admissible_commands": [
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go east"
+    },
+    {
+        "state": "-= Office =- You find yourself in an office. A normal kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. There is an unblocked exit to the east. You need an unguarded exit? You should try going south. > -= Office =-0/12",
+        "infos": {
+            "admissible_commands": [
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go east",
+        "reward": 0,
+        "next_state": "-= Cubicle =- You've entered a cubicle. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. You need an unblocked exit? You should try going east. There is an unguarded exit to the west. > -= Cubicle =-0/13",
+        "next_infos": {
+            "admissible_commands": [
+                "go east",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go west"
+    },
+    {
+        "state": "-= Cubicle =- You've entered a cubicle. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. You need an unblocked exit? You should try going east. There is an unguarded exit to the west. > -= Cubicle =-0/13",
+        "infos": {
+            "admissible_commands": [
+                "go east",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go west",
+        "reward": 0,
+        "next_state": "-= Office =- You find yourself in an office. A normal kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. There is an unblocked exit to the east. You need an unguarded exit? You should try going south. > -= Office =-0/14",
+        "next_infos": {
+            "admissible_commands": [
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Office =- You find yourself in an office. A normal kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. There is an unblocked exit to the east. You need an unguarded exit? You should try going south. > -= Office =-0/14",
+        "infos": {
+            "admissible_commands": [
+                "go east",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Vault =- You're now in the vault. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. You don't like doors? Why not try going north, that entranceway is unguarded. > -= Vault =-0/15",
+        "next_infos": {
+            "admissible_commands": [
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "inventory"
+    },
+    {
+        "state": "-= Vault =- You're now in the vault. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. You don't like doors? Why not try going north, that entranceway is unguarded. > -= Vault =-0/15",
+        "infos": {
+            "admissible_commands": [
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying nothing. > -= Vault =-0/16",
+        "next_infos": {
+            "admissible_commands": [
+                "go north",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

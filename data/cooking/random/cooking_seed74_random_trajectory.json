@@ -1,0 +1,93 @@
+[
+    {
+        "state": "You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal! -= Pantry =- You've entered a pantry. You begin to take stock of what's here. You see a gleam over in a corner, where you can see a shelf. What a coincidence, weren't you just thinking about a shelf? The shelf is wooden. But oh no! there's nothing on this piece of garbage. There is an open frosted-glass door leading west. > -= Pantry =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop block of cheese",
+                "eat block of cheese",
+                "examine shelf",
+                "go west",
+                "inventory",
+                "look",
+                "put block of cheese on shelf"
+            ]
+        },
+        "action": "put block of cheese on shelf",
+        "reward": 0,
+        "next_state": "You put the block of cheese on the shelf. > -= Pantry =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "examine block of cheese",
+                "examine shelf",
+                "go west",
+                "inventory",
+                "look",
+                "take block of cheese from shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "take block of cheese from shelf"
+    },
+    {
+        "state": "You put the block of cheese on the shelf. > -= Pantry =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "examine block of cheese",
+                "examine shelf",
+                "go west",
+                "inventory",
+                "look",
+                "take block of cheese from shelf"
+            ]
+        },
+        "action": "take block of cheese from shelf",
+        "reward": 0,
+        "next_state": "You take the block of cheese from the shelf. > -= Pantry =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop block of cheese",
+                "eat block of cheese",
+                "examine shelf",
+                "go west",
+                "inventory",
+                "look",
+                "put block of cheese on shelf"
+            ]
+        },
+        "done": false,
+        "next_action": "eat block of cheese"
+    },
+    {
+        "state": "You take the block of cheese from the shelf. > -= Pantry =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "drop block of cheese",
+                "eat block of cheese",
+                "examine shelf",
+                "go west",
+                "inventory",
+                "look",
+                "put block of cheese on shelf"
+            ]
+        },
+        "action": "eat block of cheese",
+        "reward": 0,
+        "next_state": "You eat the block of cheese. Not bad. *** You lost! *** You scored 0 out of a possible 7, in 3 turns. Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command? > -= Pantry =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "close frosted-glass door",
+                "examine shelf",
+                "go west",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": true,
+        "next_action": null
+    }
+]

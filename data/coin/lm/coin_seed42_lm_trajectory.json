@@ -1,0 +1,139 @@
+[
+    {
+        "state": "Get ready to pick stuff up and put it in places, because you've just entered TextWorld! Here is your task for today. First step, go south. With that over with, take a trip south. Okay, and then, travel south. Then, head west. After that, travel south. After that, make an attempt to venture east. Then, make an attempt to take a trip east. Following that, move north. And then, go to the east. Then, make an effort to venture north. And then, attempt to move west. With that accomplished, attempt to go to the west. And then, move south. Okay, and then, attempt to take a trip east. Following that, recover the coin from the floor of the steam room. That's it! -= Shower =- You're now in a shower. You start to take note of what's in the room. You need an unguarded exit? You should try going south. > -= Shower =-0/1",
+        "infos": {
+            "admissible_commands": [
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Shower =- You're now in a shower. You start to take note of what's in the room. You need an unguarded exit? You should try going south. > -= Shower =-0/2",
+        "next_infos": {
+            "admissible_commands": [
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "inventory"
+    },
+    {
+        "state": "-= Shower =- You're now in a shower. You start to take note of what's in the room. You need an unguarded exit? You should try going south. > -= Shower =-0/2",
+        "infos": {
+            "admissible_commands": [
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "inventory",
+        "reward": 0,
+        "next_state": "You are carrying nothing. > -= Shower =-0/3",
+        "next_infos": {
+            "admissible_commands": [
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "You are carrying nothing. > -= Shower =-0/3",
+        "infos": {
+            "admissible_commands": [
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Bathroom =- You are in a bathroom. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked. > -= Bathroom =-0/4",
+        "next_infos": {
+            "admissible_commands": [
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "look"
+    },
+    {
+        "state": "-= Bathroom =- You are in a bathroom. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked. > -= Bathroom =-0/4",
+        "infos": {
+            "admissible_commands": [
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "look",
+        "reward": 0,
+        "next_state": "-= Bathroom =- You are in a bathroom. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked. > -= Bathroom =-0/5",
+        "next_infos": {
+            "admissible_commands": [
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go north"
+    },
+    {
+        "state": "-= Bathroom =- You are in a bathroom. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked. > -= Bathroom =-0/5",
+        "infos": {
+            "admissible_commands": [
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go north",
+        "reward": 0,
+        "next_state": "-= Shower =- You're now in a shower. You start to take note of what's in the room. You need an unguarded exit? You should try going south. > -= Shower =-0/6",
+        "next_infos": {
+            "admissible_commands": [
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": "go south"
+    },
+    {
+        "state": "-= Shower =- You're now in a shower. You start to take note of what's in the room. You need an unguarded exit? You should try going south. > -= Shower =-0/6",
+        "infos": {
+            "admissible_commands": [
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "action": "go south",
+        "reward": 0,
+        "next_state": "-= Bathroom =- You are in a bathroom. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked. > -= Bathroom =-0/7",
+        "next_infos": {
+            "admissible_commands": [
+                "go north",
+                "go south",
+                "inventory",
+                "look"
+            ]
+        },
+        "done": false,
+        "next_action": null
+    }
+]
