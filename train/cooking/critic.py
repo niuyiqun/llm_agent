@@ -33,6 +33,8 @@ import matplotlib.pyplot as plt
 import time  # 引入时间模块
 
 
+
+
 def load_test_data_from_directory(directory):
     """
     从目录中读取所有测试文件
@@ -469,7 +471,6 @@ def train_off_policy_agent(agent, replay_buffer, num_epochs, batch_size):
     Returns:
         List: 每个 epoch 的平均损失值。
     """
-    import numpy as np
 
     # 开始离线训练
 
@@ -542,6 +543,8 @@ def plot_critic_losses(critic_losses, save_path):
 def main(task_config, timestamp, device):
     # 加载配置文件
 
+
+
     # 读取路径和超参数
     oracle_file_path = task_config.get('oracle_file_path')
     lm_file_path = task_config.get('lm_file_path')
@@ -570,6 +573,8 @@ def main(task_config, timestamp, device):
     # 保存模型信息
     final_model_path = os.path.join(model_save_path, f'final_model_{timestamp}.pth')
     save_model_info(task_config, agent, replay_buffer.size(), final_model_path, timestamp)
+
+
 
     # 开始训练
     print(f"Starting training for {num_epochs} epochs with batch size {batch_size}.")
@@ -627,7 +632,6 @@ def main(task_config, timestamp, device):
         'critic_losses': critic_losses
     }, final_model_path)
     print(f"Training completed. Final model saved at: {final_model_path}")
-
     # 保存损失曲线
     loss_curve_path = os.path.join(model_save_path, f'critic_loss_curve_{timestamp}.png')
     plot_critic_losses(critic_losses, loss_curve_path)

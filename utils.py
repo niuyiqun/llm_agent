@@ -345,12 +345,12 @@ def set_random_seed(seed: int = 42):
 
 # 测试函数
 def test_replay_buffer_consistency():
-    set_random_seed(42)  # 设置全局随机种子
+    set_random_seed(42)  # 设置全局随机种子，以确保结果可复现
 
-    # 初始化 ReplayBuffer
+    # 初始化 ReplayBuffer 实例
     replay_buffer = ReplayBuffer()
 
-    # 添加固定数据到 ReplayBuffer
+    # 添加固定数据到 ReplayBuffer，模拟状态转移
     fixed_transitions = [
         ("state1", "action1", 1.0, "next_state1", False, {}, {}, "next_action1"),
         ("state2", "action2", 0.0, "next_state2", True, {}, {}, "next_action2"),
@@ -358,23 +358,23 @@ def test_replay_buffer_consistency():
         ("state4", "action4", 0.0, "next_state4", True, {}, {}, "next_action4")
     ]
     for transition in fixed_transitions:
-        replay_buffer.add(*transition)
+        replay_buffer.add(*transition)  # 将每个状态转移添加到 ReplayBuffer
 
-    # 多次采样
-    batch_size = 2
+    # 多次采样以测试一致性
+    batch_size = 2  # 设置每次采样的批量大小
     results = []
-    for i in range(3):  # 采样3次
-        set_random_seed(42)  # 每次采样前重设随机数种子
-        sampled_batch = replay_buffer.sample(batch_size)
-        results.append(sampled_batch)
-        print(f"Sampling {i + 1}: {sampled_batch}\n")
+    for i in range(3):  # 进行3次采样
+        set_random_seed(42)  # 每次采样前重设随机数种子，确保结果一致
+        sampled_batch = replay_buffer.sample(batch_size)  # 从 ReplayBuffer 中采样
+        results.append(sampled_batch)  # 记录采样结果
+        print(f"Sampling {i + 1}: {sampled_batch}\n")  # 打印当前采样结果
 
-    # 检查一致性
-    all_equal = all(results[0] == result for result in results)
+    # 检查采样结果的一致性
+    all_equal = all(results[0] == result for result in results)  # 检查所有采样结果是否相同
     if all_equal:
-        print("ReplayBuffer sampling is consistent across runs.")
+        print("ReplayBuffer sampling is consistent across runs.")  # 一致性检查通过
     else:
-        print("ReplayBuffer sampling is NOT consistent. Check random seed settings.")
+        print("ReplayBuffer sampling is NOT consistent. Check random seed settings.")  # 一致性检查失败，提示检查随机种子设置
 
 
 class Logger:
@@ -385,6 +385,8 @@ class Logger:
     def __init__(self, log_file_path):
         self.terminal = sys.stdout  # 保留原来的终端输出
         self.log = open(log_file_path, "a", encoding="utf-8")  # 打开日志文件
+
+        
 
     def write(self, message):
         self.terminal.write(message)  # 输出到终端
@@ -403,3 +405,9 @@ if __name__ == "__main__":
     print(f"Sampled states: {states}")
     print(f"Sampled actions: {actions}")
     print(f"Sampled rewards: {rewards}")
+    print(f"Sampled next_states: {next_states}")
+    print(f"Sampled dones: {dones}")
+    print(f"Sampled infos: {infos}")
+    print(f"Sampled next_infos: {next_infos}")
+    print(f"Sampled next_actions: {next_actions}")
+    
