@@ -1,0 +1,32 @@
+{
+    "timestamp": "20241226_023013",
+    "train_config": {
+        "game_file_path": "./data/simple/mock_game/",
+        "walkthroughs_file_path": "./data/simple/walkthroughs/",
+        "oracle_file_path": "./data/simple/oracle/",
+        "lm_file_path": "./data/simple/lm/",
+        "model_save_path": "./model/critic/simple/sample_ratio",
+        "checkpoint_interval": 10,
+        "num_epochs": 50,
+        "batch_size": 32,
+        "device": "cuda",
+        "bert_path": "./bert/",
+        "seed": 1224,
+        "reward_sample_ratio": 0.7,
+        "validate_file_path": "./simple_test/simple"
+    },
+    "agent_config": {
+        "llm_type": "ZhipuChat",
+        "device": "cuda",
+        "bert_lr": 1e-05,
+        "classifier_lr": 0.0001,
+        "weight_decay": 0.01,
+        "gamma": 0.9
+    },
+    "replay_buffer_size": 2383,
+    "device": "cuda",
+    "critic_1_params": 109581569,
+    "critic_2_params": 109581569,
+    "optimizer_critic_1": "AdamW (\nParameter Group 0\n    amsgrad: False\n    betas: (0.9, 0.999)\n    capturable: False\n    differentiable: False\n    eps: 1e-08\n    foreach: None\n    fused: None\n    lr: 0.0001\n    maximize: False\n    weight_decay: 0.01\n\nParameter Group 1\n    amsgrad: False\n    betas: (0.9, 0.999)\n    capturable: False\n    differentiable: False\n    eps: 1e-08\n    foreach: None\n    fused: None\n    lr: 1e-05\n    maximize: False\n    weight_decay: 0.01\n)",
+    "optimizer_critic_2": "AdamW (\nParameter Group 0\n    amsgrad: False\n    betas: (0.9, 0.999)\n    capturable: False\n    differentiable: False\n    eps: 1e-08\n    foreach: None\n    fused: None\n    lr: 0.0001\n    maximize: False\n    weight_decay: 0.01\n\nParameter Group 1\n    amsgrad: False\n    betas: (0.9, 0.999)\n    capturable: False\n    differentiable: False\n    eps: 1e-08\n    foreach: None\n    fused: None\n    lr: 1e-05\n    maximize: False\n    weight_decay: 0.01\n)"
+}
