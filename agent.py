@@ -13,12 +13,38 @@ import textworld
 import textworld.gym
 import yaml
 from textworld import EnvInfos
+import torch
 
+from critic import CriticModel
 from model import LlamaChat, ZhipuChat
 from utils import get_command, get_reset
 
 
-def initialize_model(llm_type: str):
+def initialize_critic(model_path: str, device: str = "cuda") -> CriticModel:
+    """
+    初始化 Critic 模型并加载预训练权重
+
+    :param model_path: 预训练模型的路径
+    :param device: 设备类型（如 "cuda" 或 "cpu"）
+    :return: 初始化后的 CriticModel 实例
+    """
+    # 创建 CriticModel 实例
+    critic_model = CriticModel().to(device)
+
+    # 加载预训练权重
+    try:
+        critic_model.load_state_dict(torch.load(model_path, map_location=device))
+        critic_model.eval()  # 设置为评估模式
+        print(f"成功加载 Critic 模型权重: {model_path}")
+    except Exception as e:
+        print(f"加载 Critic 模型权重失败: {e}")
+        raise e
+
+    return critic_model
+
+
+
+def initialize_llm(llm_type: str):
     """
     根据指定的 LLM 类型初始化模型实例
     :param llm_type: LLM 的类型名称
@@ -33,12 +59,13 @@ def initialize_model(llm_type: str):
 
 
 class Agent:
-    def __init__(self, infos: Dict[str, Any], llm_type: str = "ZhipuChat") -> None:
+    def __init__(self, infos: Dict[str, Any], llm_type: str = "ZhipuChat", model_path: str = "") -> None:
         """
-
         :param goal: 任务目标
         """
-        self.model = initialize_model(llm_type)  # 初始化指定的 LLM
+        assert model_path != "", "预训练模型路径不能为空"
+        self.model = initialize_llm(llm_type)  # 初始化指定的 LLM
+        self.critic_model = initialize_critic(model_path)
         self.messages = None
         # 加入系统提示
         self.get_init_prompt(infos)
@@ -88,7 +115,7 @@ class Agent:
 
     def get_init_prompt(self, infos: Dict[str, Any]) -> None:
         # todo: 这里应该把Goal加进来
-        prompt_path = './config/prompt_short.yaml'
+        prompt_path = './config/prompt_ac.yaml'
         with open(prompt_path, 'r', encoding='utf-8') as file:
             self.messages = yaml.safe_load(file)
 
@@ -106,6 +133,8 @@ class Agent:
         """
         content = {"State": obs, "Admissible commands": infos.get('admissible_commands', [])}
         self.messages.append({"role": "user", "content": json.dumps(content)})
+
+
 
 
 if __name__ == '__main__':

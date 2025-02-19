@@ -8,6 +8,9 @@
 """
 import argparse
 
+import textworld
+from textworld import EnvInfos
+import textworld.gym
 DEBUG_MODE = False  # 打开调试模式，设置为 False 时不打印调试信息
 
 
@@ -228,7 +231,7 @@ def initialize_model(llm_type: str):
 
 
 class AC_Agent:
-    def __init__(self, device, config_path: str = './config/agent.yaml') -> None:
+    def __init__(self, device, config_path: str = './config/agent.yaml', evaluate: bool = False, model_path: str = None) -> None:
         """
             由于需要bert参与评分，所以这里改成单轮的对话形式，避免上下文过长难以处理
         """
@@ -247,6 +250,38 @@ class AC_Agent:
         self.target_critic_2.load_state_dict(self.critic_2.state_dict())
         # bert和classifier配置不同的lr
         self.critic_1_optimizer, self.critic_2_optimizer = self.configure_optimizers()
+
+        if evaluate:
+            # 如果evaluate为True，则加载模型权重
+            if model_path:
+                self.load_model(model_path)
+            else:
+                raise ValueError("Model path must be provided for evaluation.")
+
+    def load_model(self, model_path: str):
+        """
+        从指定路径加载模型权重和优化器状态。
+        """
+        checkpoint = torch.load(model_path, map_location=self.device)
+        self.critic_1.load_state_dict(checkpoint['critic_1_state_dict'])
+        self.critic_2.load_state_dict(checkpoint['critic_2_state_dict'])
+        self.target_critic_1.load_state_dict(checkpoint['target_critic_1_state_dict'])
+        self.target_critic_2.load_state_dict(checkpoint['target_critic_2_state_dict'])
+
+        self.critic_1_optimizer.load_state_dict(checkpoint['critic_1_optimizer_state_dict'])
+        self.critic_2_optimizer.load_state_dict(checkpoint['critic_2_optimizer_state_dict'])
+        print(f"Model loaded from {model_path}.")
+
+        # 加载训练信息
+        model_info_path = model_path.replace(".pth", "_info.json")
+        print(f"[DEBUG] model_info_path: {model_info_path}")
+        try:
+            with open(model_info_path, "r", encoding="utf-8") as f:
+                model_info = json.load(f)
+                print(f"Model info loaded from {model_info_path}:")
+                print(json.dumps(model_info, indent=4))
+        except Exception as e:
+            print(f"[ERROR] Failed to load model info from {model_info_path}: {e}")
 
     def load_config(self, config_path: str = './config/agent.yaml') -> Dict[str, Any]:
         """
@@ -273,7 +308,6 @@ class AC_Agent:
         :param infos: 内含可行动作
         :return: 下一步的action，可以直接用于进行env的step操作
         """
-
         # 从配置文件初始化系统提示
         system: List[Dict[str, str]] = self.get_init_prompt()
         # 添加用户消息到对话历史
@@ -296,12 +330,30 @@ class AC_Agent:
 
     def add_user_message(self, obs: str, infos: Dict[str, List[str]]) -> Dict[str, str]:
         """
-        将用户消息添加到对话历史，并拼接任务相关信息
-        :param user_msg: 用户输入
-        :param infos: {'admissible_commands': ['command1', 'command2']}
-        :return: 用户对话
+            将用户消息添加到对话历史，并拼接任务相关信息
+            :param messages: 当前对话历史
+            :param user_msg: 用户输入
+            :param infos: {'admissible_commands': ['command1', 'command2']}
+            :return: 更新后的 messages 列表
         """
         content = {"State": obs, "Admissible commands": infos.get('admissible_commands', [])}
+        # 获取Admissible commands并计算Q值
+        admissible_commands = infos.get('admissible_commands', [])
+        q_values = []
+        with torch.no_grad():
+            # 对每个动作计算Q值
+            self.critic_1.eval()
+            for action in admissible_commands:
+                state_input = [obs]  # 当前状态
+                action_input = [action]  # 当前动作
+                q_value = self.critic_1(state_input, action_input).item()  # 获取Q值
+                q_values.append((action, q_value))
+        # 按照Q值对动作排序，取前三个动作
+        q_values.sort(key=lambda x: x[1], reverse=True)
+        recommended_actions = [action for action, _ in q_values[:3]]  # 取前三个Q值最高的动作
+        print(f"[recommended_actions] {recommended_actions}")
+        # 将Recommended actions加入到content中
+        content["Recommended actions"] = recommended_actions
         return {"role": "user", "content": json.dumps(content)}
 
     def configure_optimizers(self):
@@ -355,14 +407,14 @@ class AC_Agent:
     #     td_target = rewards + self.gamma * next_value * (1 - dones)
     #     return td_target
 
-    def get_next_action(self, next_states: List[str], next_infos: List[Dict[str, Any]]) -> List[str]:
-        # todo：待修改 done 不用这个了
-        assert len(next_infos) == len(next_states), 'next_infos和next_states长度不等'
-        next_actions = []
-        for i in range(len(next_states)):
-            action = self.round(next_states[i], next_infos[i])
-            next_actions.append(action)
-        return next_actions
+    # def get_next_action(self, next_states: List[str], next_infos: List[Dict[str, Any]]) -> List[str]:
+    #     # todo：待修改 done 不用这个了
+    #     assert len(next_infos) == len(next_states), 'next_infos和next_states长度不等'
+    #     next_actions = []
+    #     for i in range(len(next_states)):
+    #         action = self.round(next_states[i], next_infos[i])
+    #         next_actions.append(action)
+    #     return next_actions
 
     def soft_update(self, net, target_net):
         i = 0
@@ -511,7 +563,7 @@ from tqdm import tqdm
 import os
 import torch
 import yaml
-from utils import construct_replay_buffer, Logger
+from utils import construct_replay_buffer, Logger, get_reset
 
 
 def plot_critic_losses(critic_losses, save_path):
@@ -683,6 +735,33 @@ def set_random_seed(seed: int = 42):
     torch.backends.cudnn.benchmark = False
 
 
+
+def evaluate(device, model_path):
+    request_infos = EnvInfos(admissible_commands=True, objective=True, description=True)
+    env_id = textworld.gym.register_game("./data/simple/mock_game/simple_seed2.z8",
+                                         max_episode_steps=20,
+                                         request_infos=request_infos,
+                                         )
+
+    env = textworld.gym.make(env_id)  # Start the environment.
+
+    obs, infos = env.reset()  # Start new episode.
+    # print('infos:', infos)
+    obs: str = get_reset(obs)
+    agent: AC_Agent = AC_Agent(device, config_path='./config/agent.yaml', evaluate=True, model_path=model_path)
+    score: float = 0
+    done: bool = False
+    i = 1
+    while not done:
+        print('----------------------第{}回合--------------------------'.format(i))
+        i += 1
+        print(f"[obs] {obs}")
+        command = agent.round(obs, infos=infos)
+        print(f"[command] {command}")
+        obs, score, done, infos = env.step(command)
+    print(obs)
+
+
 if __name__ == "__main__":
     import sys
 
@@ -690,6 +769,8 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Run a specific task with configuration.")
     parser.add_argument('--task', type=str, required=True, help="Name of the task to run")
     parser.add_argument('--device', type=str, required=True, help="Name of the gpu to run")
+    parser.add_argument('--eval', action='store_true', help="If provided, evaluate the agent instead of training")
+    parser.add_argument('--model_path', type=str, default=None, help="Path to the saved model for evaluation")
     args = parser.parse_args()
 
     with open('./config/train.yaml', 'r', encoding='utf-8') as f:
@@ -701,7 +782,9 @@ if __name__ == "__main__":
     # 获取device
     device = args.device
 
-
+    # 获取eval和model_path
+    eval = args.eval
+    model_path = args.model_path
 
     # 检查 task 是否在允许范围内
     assert task in valid_tasks, f"Invalid task name '{task}'. Allowed tasks are: {', '.join(valid_tasks)}"
@@ -714,20 +797,18 @@ if __name__ == "__main__":
     # 确定模型保存路径和日志文件路径
     model_save_path = task_config.get('model_save_path', './checkpoints')
     os.makedirs(model_save_path, exist_ok=True)
-    # 动态生成日志文件名，时间戳统一
     log_file_path = os.path.join(model_save_path, f'log_{timestamp}.log')
 
-    # 重定向 stdout 和 stderr 到日志文件
     sys.stdout = Logger(log_file_path)
     sys.stderr = sys.stdout  # 同时重定向错误信息
 
-    #
-    # sys.stdout.reconfigure(line_buffering=True)
-    main(task_config, timestamp, device)
-    # 需要debug咯，看看如何比较好
-    # 嘿嘿
-    # 不嘿嘿
-    # 不嘿嘿
-    # 嘿嘿
-    # 嘿嘿
-    # 嘿嘿
+    if eval:
+        # 如果是评估模式，执行 evaluate
+        if model_path is None:
+            print("Error: --model_path must be provided for evaluation.")
+        else:
+            print(model_path)
+            evaluate(device, model_path=model_path)
+    else:
+        # 否则，执行训练
+        main(task_config, timestamp, device)
