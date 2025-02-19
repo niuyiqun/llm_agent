@@ -32,9 +32,9 @@ cooking:
   batch_size: 16
   device: "cuda"
   bert_path: "./bert/"
-  seed: 1224
+  seed: 7823
   validate_file_path: "./simple_test/cooking"
-  sampling_strategy: "fixed"
+  sampling_strategy: "dynamic"
   reward_sample_ratio: 0.9
   dynamic_ratio_min: 0.2
   dynamic_ratio_max: 0.9

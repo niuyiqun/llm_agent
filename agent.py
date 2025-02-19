@@ -88,7 +88,7 @@ class Agent:
 
     def get_init_prompt(self, infos: Dict[str, Any]) -> None:
         # todo: 这里应该把Goal加进来
-        prompt_path = './config/prompt_explore.yaml'
+        prompt_path = './config/prompt_short.yaml'
         with open(prompt_path, 'r', encoding='utf-8') as file:
             self.messages = yaml.safe_load(file)
 
@@ -110,8 +110,8 @@ class Agent:
 
 if __name__ == '__main__':
     request_infos = EnvInfos(admissible_commands=True, objective=True, description=True)
-    env_id = textworld.gym.register_game("./tw_games/advanced_cooking_game.z8",
-                                         max_episode_steps=60,
+    env_id = textworld.gym.register_game("/Users/nyq/Desktop/dl/llm_agent/data/coin/mock_game/coin_seed1.z8",
+                                         max_episode_steps=20,
                                          request_infos=request_infos,
                                          )
 

@@ -632,6 +632,7 @@ def generate_one_random_trajectory(game_file, output_file):
 
 
 
+
 def main(config):
     add_next_action_to_oracle_trajectory(config)
 
@@ -647,12 +648,3 @@ if __name__ == "__main__":
     main(all_config.get("cooking"))
 
 
-
-
-
-# if __name__ == '__main__':
-#     import sys
-#
-#     sys.stdout.reconfigure(line_buffering=True)
-#
-#     generate_lm_trajectory()

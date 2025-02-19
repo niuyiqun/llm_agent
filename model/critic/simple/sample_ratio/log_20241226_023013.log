@@ -1,289 +1,0 @@
-Constructing Replay Buffer...
-Replay Buffer size: 2383
-Initializing Agent...
-[DEBUG] Config parsed: {'llm_type': 'ZhipuChat', 'device': 'cuda', 'bert_lr': 1e-05, 'classifier_lr': 0.0001, 'weight_decay': 0.01, 'gamma': 0.9}
-[DEBUG] bert_lr type: <class 'float'>, value: 1e-05
-[DEBUG] weight_decay type: <class 'float'>, value: 0.01
-================ Loading ZhipuAI client ================
-================ ZhipuAI client loaded ================
-[DEBUG] Initializing CriticModel...
-[DEBUG] Loading BERT model and tokenizer...
-[DEBUG] BERT model and tokenizer loaded successfully.
-[DEBUG] CriticModel initialization took 0.71s
-[DEBUG] Initializing CriticModel...
-[DEBUG] Loading BERT model and tokenizer...
-[DEBUG] BERT model and tokenizer loaded successfully.
-[DEBUG] CriticModel initialization took 0.71s
-[DEBUG] Initializing CriticModel...
-[DEBUG] Loading BERT model and tokenizer...
-[DEBUG] BERT model and tokenizer loaded successfully.
-[DEBUG] CriticModel initialization took 0.71s
-[DEBUG] Initializing CriticModel...
-[DEBUG] Loading BERT model and tokenizer...
-[DEBUG] BERT model and tokenizer loaded successfully.
-[DEBUG] CriticModel initialization took 0.68s
-Model info saved at: ./model/critic/simple/sample_ratio/final_model_20241226_023013_info.json
-Starting training for 50 epochs with batch size 32.
-Training Progress:   0%|          | 0/50 [00:00<?, ?it/s]Training Progress:   0%|          | 0/50 [00:54<?, ?it/s, Epoch=1, Critic_1_Loss=0.0947, Critic_2_Loss=0.0846]Training Progress:   2%|2         | 1/50 [00:54<44:11, 54.10s/it, Epoch=1, Critic_1_Loss=0.0947, Critic_2_Loss=0.0846]Training Progress:   2%|2         | 1/50 [01:47<44:11, 54.10s/it, Epoch=2, Critic_1_Loss=0.0200, Critic_2_Loss=0.0212]Training Progress:   4%|4         | 2/50 [01:47<42:54, 53.63s/it, Epoch=2, Critic_1_Loss=0.0200, Critic_2_Loss=0.0212]Training Progress:   4%|4         | 2/50 [02:40<42:54, 53.63s/it, Epoch=3, Critic_1_Loss=0.0293, Critic_2_Loss=0.0304]Training Progress:   6%|6         | 3/50 [02:40<41:56, 53.54s/it, Epoch=3, Critic_1_Loss=0.0293, Critic_2_Loss=0.0304]Training Progress:   6%|6         | 3/50 [03:34<41:56, 53.54s/it, Epoch=4, Critic_1_Loss=0.0247, Critic_2_Loss=0.0311]Training Progress:   8%|8         | 4/50 [03:34<40:57, 53.42s/it, Epoch=4, Critic_1_Loss=0.0247, Critic_2_Loss=0.0311]Training Progress:   8%|8         | 4/50 [04:27<40:57, 53.42s/it, Epoch=5, Critic_1_Loss=0.0257, Critic_2_Loss=0.0268]Training Progress:  10%|#         | 5/50 [04:27<40:02, 53.38s/it, Epoch=5, Critic_1_Loss=0.0257, Critic_2_Loss=0.0268]Training Progress:  10%|#         | 5/50 [05:21<40:02, 53.38s/it, Epoch=6, Critic_1_Loss=0.0311, Critic_2_Loss=0.0284]Training Progress:  12%|#2        | 6/50 [05:21<39:17, 53.57s/it, Epoch=6, Critic_1_Loss=0.0311, Critic_2_Loss=0.0284]Training Progress:  12%|#2        | 6/50 [06:14<39:17, 53.57s/it, Epoch=7, Critic_1_Loss=0.0235, Critic_2_Loss=0.0264]Training Progress:  14%|#4        | 7/50 [06:14<38:24, 53.59s/it, Epoch=7, Critic_1_Loss=0.0235, Critic_2_Loss=0.0264]Training Progress:  14%|#4        | 7/50 [07:08<38:24, 53.59s/it, Epoch=8, Critic_1_Loss=0.0272, Critic_2_Loss=0.0276]Training Progress:  16%|#6        | 8/50 [07:08<37:25, 53.46s/it, Epoch=8, Critic_1_Loss=0.0272, Critic_2_Loss=0.0276]Training Progress:  16%|#6        | 8/50 [08:01<37:25, 53.46s/it, Epoch=9, Critic_1_Loss=0.0234, Critic_2_Loss=0.0236]Training Progress:  18%|#8        | 9/50 [08:01<36:25, 53.31s/it, Epoch=9, Critic_1_Loss=0.0234, Critic_2_Loss=0.0236]Training Progress:  18%|#8        | 9/50 [08:54<36:25, 53.31s/it, Epoch=10, Critic_1_Loss=0.0219, Critic_2_Loss=0.0210]Training Progress:  20%|##        | 10/50 [08:54<35:32, 53.30s/it, Epoch=10, Critic_1_Loss=0.0219, Critic_2_Loss=0.0210]
-Testing file: simple_seed16_trajectory.json
-Accuracy for simple_seed16_trajectory.json: 58.33%
-Top-3 Accuracy for simple_seed16_trajectory.json: 66.67%
-============================================================================================================================================
-
-Testing file: simple_seed17_trajectory.json
-Accuracy for simple_seed17_trajectory.json: 58.33%
-Top-3 Accuracy for simple_seed17_trajectory.json: 66.67%
-============================================================================================================================================
-
-Testing file: simple_seed36_trajectory.json
-Accuracy for simple_seed36_trajectory.json: 50.00%
-Top-3 Accuracy for simple_seed36_trajectory.json: 75.00%
-============================================================================================================================================
-
-Testing file: simple_seed3_trajectory.json
-Accuracy for simple_seed3_trajectory.json: 87.50%
-Top-3 Accuracy for simple_seed3_trajectory.json: 87.50%
-============================================================================================================================================
-
-Testing file: simple_seed51_trajectory.json
-Accuracy for simple_seed51_trajectory.json: 87.50%
-Top-3 Accuracy for simple_seed51_trajectory.json: 87.50%
-============================================================================================================================================
-
-Testing file: simple_seed52_trajectory.json
-Accuracy for simple_seed52_trajectory.json: 77.78%
-Top-3 Accuracy for simple_seed52_trajectory.json: 88.89%
-============================================================================================================================================
-
-Testing file: simple_seed77_trajectory.json
-Accuracy for simple_seed77_trajectory.json: 58.33%
-Top-3 Accuracy for simple_seed77_trajectory.json: 75.00%
-============================================================================================================================================
-
-Testing file: simple_seed88_trajectory.json
-Accuracy for simple_seed88_trajectory.json: 75.00%
-Top-3 Accuracy for simple_seed88_trajectory.json: 87.50%
-============================================================================================================================================
-
-Testing file: simple_seed8_trajectory.json
-Accuracy for simple_seed8_trajectory.json: 58.33%
-Top-3 Accuracy for simple_seed8_trajectory.json: 66.67%
-============================================================================================================================================
-
-Testing file: simple_seed98_trajectory.json
-Accuracy for simple_seed98_trajectory.json: 50.00%
-Top-3 Accuracy for simple_seed98_trajectory.json: 75.00%
-============================================================================================================================================
-Overall accuracy: 63.81%
-Overall Top-3 accuracy: 76.19%
-Training Progress:  20%|##        | 10/50 [09:59<35:32, 53.30s/it, Epoch=11, Critic_1_Loss=0.0316, Critic_2_Loss=0.0227]Training Progress:  22%|##2       | 11/50 [09:59<36:58, 56.88s/it, Epoch=11, Critic_1_Loss=0.0316, Critic_2_Loss=0.0227]Training Progress:  22%|##2       | 11/50 [10:52<36:58, 56.88s/it, Epoch=12, Critic_1_Loss=0.0327, Critic_2_Loss=0.0235]Training Progress:  24%|##4       | 12/50 [10:52<35:20, 55.80s/it, Epoch=12, Critic_1_Loss=0.0327, Critic_2_Loss=0.0235]Training Progress:  24%|##4       | 12/50 [11:46<35:20, 55.80s/it, Epoch=13, Critic_1_Loss=0.0249, Critic_2_Loss=0.0185]Training Progress:  26%|##6       | 13/50 [11:46<34:05, 55.28s/it, Epoch=13, Critic_1_Loss=0.0249, Critic_2_Loss=0.0185]Training Progress:  26%|##6       | 13/50 [12:40<34:05, 55.28s/it, Epoch=14, Critic_1_Loss=0.0351, Critic_2_Loss=0.0268]Training Progress:  28%|##8       | 14/50 [12:40<32:49, 54.71s/it, Epoch=14, Critic_1_Loss=0.0351, Critic_2_Loss=0.0268]Training Progress:  28%|##8       | 14/50 [13:33<32:49, 54.71s/it, Epoch=15, Critic_1_Loss=0.0286, Critic_2_Loss=0.0227]Training Progress:  30%|###       | 15/50 [13:33<31:38, 54.25s/it, Epoch=15, Critic_1_Loss=0.0286, Critic_2_Loss=0.0227]Training Progress:  30%|###       | 15/50 [14:26<31:38, 54.25s/it, Epoch=16, Critic_1_Loss=0.0314, Critic_2_Loss=0.0242]Training Progress:  32%|###2      | 16/50 [14:26<30:38, 54.06s/it, Epoch=16, Critic_1_Loss=0.0314, Critic_2_Loss=0.0242]Training Progress:  32%|###2      | 16/50 [15:20<30:38, 54.06s/it, Epoch=17, Critic_1_Loss=0.0346, Critic_2_Loss=0.0269]Training Progress:  34%|###4      | 17/50 [15:20<29:38, 53.88s/it, Epoch=17, Critic_1_Loss=0.0346, Critic_2_Loss=0.0269]Training Progress:  34%|###4      | 17/50 [16:15<29:38, 53.88s/it, Epoch=18, Critic_1_Loss=0.0301, Critic_2_Loss=0.0235]Training Progress:  36%|###6      | 18/50 [16:15<28:52, 54.14s/it, Epoch=18, Critic_1_Loss=0.0301, Critic_2_Loss=0.0235]Training Progress:  36%|###6      | 18/50 [17:08<28:52, 54.14s/it, Epoch=19, Critic_1_Loss=0.0291, Critic_2_Loss=0.0224]Training Progress:  38%|###8      | 19/50 [17:08<27:48, 53.82s/it, Epoch=19, Critic_1_Loss=0.0291, Critic_2_Loss=0.0224]Training Progress:  38%|###8      | 19/50 [18:02<27:48, 53.82s/it, Epoch=20, Critic_1_Loss=0.0401, Critic_2_Loss=0.0321]Training Progress:  40%|####      | 20/50 [18:02<26:54, 53.83s/it, Epoch=20, Critic_1_Loss=0.0401, Critic_2_Loss=0.0321]
-Testing file: simple_seed16_trajectory.json
-Accuracy for simple_seed16_trajectory.json: 50.00%
-Top-3 Accuracy for simple_seed16_trajectory.json: 66.67%
-============================================================================================================================================
-
-Testing file: simple_seed17_trajectory.json
-Accuracy for simple_seed17_trajectory.json: 58.33%
-Top-3 Accuracy for simple_seed17_trajectory.json: 75.00%
-============================================================================================================================================
-
-Testing file: simple_seed36_trajectory.json
-Accuracy for simple_seed36_trajectory.json: 33.33%
-Top-3 Accuracy for simple_seed36_trajectory.json: 75.00%
-============================================================================================================================================
-
-Testing file: simple_seed3_trajectory.json
-Accuracy for simple_seed3_trajectory.json: 37.50%
-Top-3 Accuracy for simple_seed3_trajectory.json: 75.00%
-============================================================================================================================================
-
-Testing file: simple_seed51_trajectory.json
-Accuracy for simple_seed51_trajectory.json: 62.50%
-Top-3 Accuracy for simple_seed51_trajectory.json: 75.00%
-============================================================================================================================================
-
-Testing file: simple_seed52_trajectory.json
-Accuracy for simple_seed52_trajectory.json: 55.56%
-Top-3 Accuracy for simple_seed52_trajectory.json: 66.67%
-============================================================================================================================================
-
-Testing file: simple_seed77_trajectory.json
-Accuracy for simple_seed77_trajectory.json: 50.00%
-Top-3 Accuracy for simple_seed77_trajectory.json: 75.00%
-============================================================================================================================================
-
-Testing file: simple_seed88_trajectory.json
-Accuracy for simple_seed88_trajectory.json: 62.50%
-Top-3 Accuracy for simple_seed88_trajectory.json: 87.50%
-============================================================================================================================================
-
-Testing file: simple_seed8_trajectory.json
-Accuracy for simple_seed8_trajectory.json: 58.33%
-Top-3 Accuracy for simple_seed8_trajectory.json: 75.00%
-============================================================================================================================================
-
-Testing file: simple_seed98_trajectory.json
-Accuracy for simple_seed98_trajectory.json: 41.67%
-Top-3 Accuracy for simple_seed98_trajectory.json: 66.67%
-============================================================================================================================================
-Overall accuracy: 50.48%
-Overall Top-3 accuracy: 73.33%
-Training Progress:  40%|####      | 20/50 [19:07<26:54, 53.83s/it, Epoch=21, Critic_1_Loss=0.0357, Critic_2_Loss=0.0308]Training Progress:  42%|####2     | 21/50 [19:07<27:40, 57.25s/it, Epoch=21, Critic_1_Loss=0.0357, Critic_2_Loss=0.0308]Training Progress:  42%|####2     | 21/50 [20:01<27:40, 57.25s/it, Epoch=22, Critic_1_Loss=0.0334, Critic_2_Loss=0.0271]Training Progress:  44%|####4     | 22/50 [20:01<26:13, 56.19s/it, Epoch=22, Critic_1_Loss=0.0334, Critic_2_Loss=0.0271]Training Progress:  44%|####4     | 22/50 [20:54<26:13, 56.19s/it, Epoch=23, Critic_1_Loss=0.0305, Critic_2_Loss=0.0235]Training Progress:  46%|####6     | 23/50 [20:54<24:58, 55.48s/it, Epoch=23, Critic_1_Loss=0.0305, Critic_2_Loss=0.0235]Training Progress:  46%|####6     | 23/50 [21:48<24:58, 55.48s/it, Epoch=24, Critic_1_Loss=0.0319, Critic_2_Loss=0.0271]Training Progress:  48%|####8     | 24/50 [21:48<23:49, 55.00s/it, Epoch=24, Critic_1_Loss=0.0319, Critic_2_Loss=0.0271]Training Progress:  48%|####8     | 24/50 [22:42<23:49, 55.00s/it, Epoch=25, Critic_1_Loss=0.0355, Critic_2_Loss=0.0310]Training Progress:  50%|#####     | 25/50 [22:42<22:46, 54.64s/it, Epoch=25, Critic_1_Loss=0.0355, Critic_2_Loss=0.0310]Training Progress:  50%|#####     | 25/50 [23:36<22:46, 54.64s/it, Epoch=26, Critic_1_Loss=0.0371, Critic_2_Loss=0.0333]Training Progress:  52%|#####2    | 26/50 [23:36<21:44, 54.35s/it, Epoch=26, Critic_1_Loss=0.0371, Critic_2_Loss=0.0333]Training Progress:  52%|#####2    | 26/50 [24:29<21:44, 54.35s/it, Epoch=27, Critic_1_Loss=0.0336, Critic_2_Loss=0.0297]Training Progress:  54%|#####4    | 27/50 [24:29<20:43, 54.08s/it, Epoch=27, Critic_1_Loss=0.0336, Critic_2_Loss=0.0297]Training Progress:  54%|#####4    | 27/50 [25:24<20:43, 54.08s/it, Epoch=28, Critic_1_Loss=0.0296, Critic_2_Loss=0.0310]Training Progress:  56%|#####6    | 28/50 [25:24<19:52, 54.21s/it, Epoch=28, Critic_1_Loss=0.0296, Critic_2_Loss=0.0310]Training Progress:  56%|#####6    | 28/50 [26:17<19:52, 54.21s/it, Epoch=29, Critic_1_Loss=0.0358, Critic_2_Loss=0.0303]Training Progress:  58%|#####8    | 29/50 [26:17<18:55, 54.08s/it, Epoch=29, Critic_1_Loss=0.0358, Critic_2_Loss=0.0303]Training Progress:  58%|#####8    | 29/50 [27:11<18:55, 54.08s/it, Epoch=30, Critic_1_Loss=0.0352, Critic_2_Loss=0.0316]Training Progress:  60%|######    | 30/50 [27:11<17:59, 53.97s/it, Epoch=30, Critic_1_Loss=0.0352, Critic_2_Loss=0.0316]
-Testing file: simple_seed16_trajectory.json
-Accuracy for simple_seed16_trajectory.json: 58.33%
-Top-3 Accuracy for simple_seed16_trajectory.json: 83.33%
-============================================================================================================================================
-
-Testing file: simple_seed17_trajectory.json
-Accuracy for simple_seed17_trajectory.json: 50.00%
-Top-3 Accuracy for simple_seed17_trajectory.json: 83.33%
-============================================================================================================================================
-
-Testing file: simple_seed36_trajectory.json
-Accuracy for simple_seed36_trajectory.json: 50.00%
-Top-3 Accuracy for simple_seed36_trajectory.json: 75.00%
-============================================================================================================================================
-
-Testing file: simple_seed3_trajectory.json
-Accuracy for simple_seed3_trajectory.json: 50.00%
-Top-3 Accuracy for simple_seed3_trajectory.json: 87.50%
-============================================================================================================================================
-
-Testing file: simple_seed51_trajectory.json
-Accuracy for simple_seed51_trajectory.json: 62.50%
-Top-3 Accuracy for simple_seed51_trajectory.json: 87.50%
-============================================================================================================================================
-
-Testing file: simple_seed52_trajectory.json
-Accuracy for simple_seed52_trajectory.json: 55.56%
-Top-3 Accuracy for simple_seed52_trajectory.json: 77.78%
-============================================================================================================================================
-
-Testing file: simple_seed77_trajectory.json
-Accuracy for simple_seed77_trajectory.json: 58.33%
-Top-3 Accuracy for simple_seed77_trajectory.json: 91.67%
-============================================================================================================================================
-
-Testing file: simple_seed88_trajectory.json
-Accuracy for simple_seed88_trajectory.json: 75.00%
-Top-3 Accuracy for simple_seed88_trajectory.json: 87.50%
-============================================================================================================================================
-
-Testing file: simple_seed8_trajectory.json
-Accuracy for simple_seed8_trajectory.json: 58.33%
-Top-3 Accuracy for simple_seed8_trajectory.json: 91.67%
-============================================================================================================================================
-
-Testing file: simple_seed98_trajectory.json
-Accuracy for simple_seed98_trajectory.json: 58.33%
-Top-3 Accuracy for simple_seed98_trajectory.json: 83.33%
-============================================================================================================================================
-Overall accuracy: 57.14%
-Overall Top-3 accuracy: 84.76%
-Training Progress:  60%|######    | 30/50 [28:15<17:59, 53.97s/it, Epoch=31, Critic_1_Loss=0.0329, Critic_2_Loss=0.0293]Training Progress:  62%|######2   | 31/50 [28:15<18:03, 57.04s/it, Epoch=31, Critic_1_Loss=0.0329, Critic_2_Loss=0.0293]Training Progress:  62%|######2   | 31/50 [29:09<18:03, 57.04s/it, Epoch=32, Critic_1_Loss=0.0303, Critic_2_Loss=0.0310]Training Progress:  64%|######4   | 32/50 [29:09<16:50, 56.14s/it, Epoch=32, Critic_1_Loss=0.0303, Critic_2_Loss=0.0310]Training Progress:  64%|######4   | 32/50 [30:03<16:50, 56.14s/it, Epoch=33, Critic_1_Loss=0.0290, Critic_2_Loss=0.0264]Training Progress:  66%|######6   | 33/50 [30:03<15:43, 55.48s/it, Epoch=33, Critic_1_Loss=0.0290, Critic_2_Loss=0.0264]Training Progress:  66%|######6   | 33/50 [30:57<15:43, 55.48s/it, Epoch=34, Critic_1_Loss=0.0321, Critic_2_Loss=0.0286]Training Progress:  68%|######8   | 34/50 [30:57<14:36, 54.77s/it, Epoch=34, Critic_1_Loss=0.0321, Critic_2_Loss=0.0286]Training Progress:  68%|######8   | 34/50 [31:51<14:36, 54.77s/it, Epoch=35, Critic_1_Loss=0.0326, Critic_2_Loss=0.0275]Training Progress:  70%|#######   | 35/50 [31:51<13:38, 54.59s/it, Epoch=35, Critic_1_Loss=0.0326, Critic_2_Loss=0.0275]Training Progress:  70%|#######   | 35/50 [32:44<13:38, 54.59s/it, Epoch=36, Critic_1_Loss=0.0298, Critic_2_Loss=0.0244]Training Progress:  72%|#######2  | 36/50 [32:44<12:40, 54.29s/it, Epoch=36, Critic_1_Loss=0.0298, Critic_2_Loss=0.0244]Training Progress:  72%|#######2  | 36/50 [33:38<12:40, 54.29s/it, Epoch=37, Critic_1_Loss=0.0263, Critic_2_Loss=0.0234]Training Progress:  74%|#######4  | 37/50 [33:38<11:44, 54.20s/it, Epoch=37, Critic_1_Loss=0.0263, Critic_2_Loss=0.0234]Training Progress:  74%|#######4  | 37/50 [34:32<11:44, 54.20s/it, Epoch=38, Critic_1_Loss=0.0285, Critic_2_Loss=0.0252]Training Progress:  76%|#######6  | 38/50 [34:32<10:49, 54.09s/it, Epoch=38, Critic_1_Loss=0.0285, Critic_2_Loss=0.0252]Training Progress:  76%|#######6  | 38/50 [35:26<10:49, 54.09s/it, Epoch=39, Critic_1_Loss=0.0321, Critic_2_Loss=0.0274]Training Progress:  78%|#######8  | 39/50 [35:26<09:53, 53.98s/it, Epoch=39, Critic_1_Loss=0.0321, Critic_2_Loss=0.0274]Training Progress:  78%|#######8  | 39/50 [36:19<09:53, 53.98s/it, Epoch=40, Critic_1_Loss=0.0306, Critic_2_Loss=0.0261]Training Progress:  80%|########  | 40/50 [36:19<08:58, 53.87s/it, Epoch=40, Critic_1_Loss=0.0306, Critic_2_Loss=0.0261]
-Testing file: simple_seed16_trajectory.json
-Accuracy for simple_seed16_trajectory.json: 50.00%
-Top-3 Accuracy for simple_seed16_trajectory.json: 83.33%
-============================================================================================================================================
-
-Testing file: simple_seed17_trajectory.json
-Accuracy for simple_seed17_trajectory.json: 58.33%
-Top-3 Accuracy for simple_seed17_trajectory.json: 83.33%
-============================================================================================================================================
-
-Testing file: simple_seed36_trajectory.json
-Accuracy for simple_seed36_trajectory.json: 58.33%
-Top-3 Accuracy for simple_seed36_trajectory.json: 75.00%
-============================================================================================================================================
-
-Testing file: simple_seed3_trajectory.json
-Accuracy for simple_seed3_trajectory.json: 62.50%
-Top-3 Accuracy for simple_seed3_trajectory.json: 75.00%
-============================================================================================================================================
-
-Testing file: simple_seed51_trajectory.json
-Accuracy for simple_seed51_trajectory.json: 62.50%
-Top-3 Accuracy for simple_seed51_trajectory.json: 75.00%
-============================================================================================================================================
-
-Testing file: simple_seed52_trajectory.json
-Accuracy for simple_seed52_trajectory.json: 55.56%
-Top-3 Accuracy for simple_seed52_trajectory.json: 66.67%
-============================================================================================================================================
-
-Testing file: simple_seed77_trajectory.json
-Accuracy for simple_seed77_trajectory.json: 58.33%
-Top-3 Accuracy for simple_seed77_trajectory.json: 83.33%
-============================================================================================================================================
-
-Testing file: simple_seed88_trajectory.json
-Accuracy for simple_seed88_trajectory.json: 62.50%
-Top-3 Accuracy for simple_seed88_trajectory.json: 75.00%
-============================================================================================================================================
-
-Testing file: simple_seed8_trajectory.json
-Accuracy for simple_seed8_trajectory.json: 50.00%
-Top-3 Accuracy for simple_seed8_trajectory.json: 83.33%
-============================================================================================================================================
-
-Testing file: simple_seed98_trajectory.json
-Accuracy for simple_seed98_trajectory.json: 50.00%
-Top-3 Accuracy for simple_seed98_trajectory.json: 75.00%
-============================================================================================================================================
-Overall accuracy: 56.19%
-Overall Top-3 accuracy: 78.10%
-Training Progress:  80%|########  | 40/50 [37:24<08:58, 53.87s/it, Epoch=41, Critic_1_Loss=0.0319, Critic_2_Loss=0.0306]Training Progress:  82%|########2 | 41/50 [37:24<08:34, 57.15s/it, Epoch=41, Critic_1_Loss=0.0319, Critic_2_Loss=0.0306]Training Progress:  82%|########2 | 41/50 [38:18<08:34, 57.15s/it, Epoch=42, Critic_1_Loss=0.0278, Critic_2_Loss=0.0243]Training Progress:  84%|########4 | 42/50 [38:18<07:29, 56.22s/it, Epoch=42, Critic_1_Loss=0.0278, Critic_2_Loss=0.0243]Training Progress:  84%|########4 | 42/50 [39:12<07:29, 56.22s/it, Epoch=43, Critic_1_Loss=0.0324, Critic_2_Loss=0.0269]Training Progress:  86%|########6 | 43/50 [39:12<06:27, 55.35s/it, Epoch=43, Critic_1_Loss=0.0324, Critic_2_Loss=0.0269]Training Progress:  86%|########6 | 43/50 [40:05<06:27, 55.35s/it, Epoch=44, Critic_1_Loss=0.0318, Critic_2_Loss=0.0285]Training Progress:  88%|########8 | 44/50 [40:05<05:29, 54.87s/it, Epoch=44, Critic_1_Loss=0.0318, Critic_2_Loss=0.0285]Training Progress:  88%|########8 | 44/50 [40:59<05:29, 54.87s/it, Epoch=45, Critic_1_Loss=0.0254, Critic_2_Loss=0.0214]Training Progress:  90%|######### | 45/50 [40:59<04:32, 54.43s/it, Epoch=45, Critic_1_Loss=0.0254, Critic_2_Loss=0.0214]Training Progress:  90%|######### | 45/50 [41:53<04:32, 54.43s/it, Epoch=46, Critic_1_Loss=0.0287, Critic_2_Loss=0.0254]Training Progress:  92%|#########2| 46/50 [41:53<03:37, 54.31s/it, Epoch=46, Critic_1_Loss=0.0287, Critic_2_Loss=0.0254]Training Progress:  92%|#########2| 46/50 [42:46<03:37, 54.31s/it, Epoch=47, Critic_1_Loss=0.0283, Critic_2_Loss=0.0258]Training Progress:  94%|#########3| 47/50 [42:46<02:41, 53.99s/it, Epoch=47, Critic_1_Loss=0.0283, Critic_2_Loss=0.0258]Training Progress:  94%|#########3| 47/50 [43:40<02:41, 53.99s/it, Epoch=48, Critic_1_Loss=0.0262, Critic_2_Loss=0.0226]Training Progress:  96%|#########6| 48/50 [43:40<01:47, 53.90s/it, Epoch=48, Critic_1_Loss=0.0262, Critic_2_Loss=0.0226]Training Progress:  96%|#########6| 48/50 [44:35<01:47, 53.90s/it, Epoch=49, Critic_1_Loss=0.0321, Critic_2_Loss=0.0273]Training Progress:  98%|#########8| 49/50 [44:35<00:54, 54.17s/it, Epoch=49, Critic_1_Loss=0.0321, Critic_2_Loss=0.0273]Training Progress:  98%|#########8| 49/50 [45:28<00:54, 54.17s/it, Epoch=50, Critic_1_Loss=0.0344, Critic_2_Loss=0.0305]Training Progress: 100%|##########| 50/50 [45:28<00:00, 54.10s/it, Epoch=50, Critic_1_Loss=0.0344, Critic_2_Loss=0.0305]
-Testing file: simple_seed16_trajectory.json
-Accuracy for simple_seed16_trajectory.json: 66.67%
-Top-3 Accuracy for simple_seed16_trajectory.json: 83.33%
-============================================================================================================================================
-
-Testing file: simple_seed17_trajectory.json
-Accuracy for simple_seed17_trajectory.json: 58.33%
-Top-3 Accuracy for simple_seed17_trajectory.json: 75.00%
-============================================================================================================================================
-
-Testing file: simple_seed36_trajectory.json
-Accuracy for simple_seed36_trajectory.json: 50.00%
-Top-3 Accuracy for simple_seed36_trajectory.json: 75.00%
-============================================================================================================================================
-
-Testing file: simple_seed3_trajectory.json
-Accuracy for simple_seed3_trajectory.json: 50.00%
-Top-3 Accuracy for simple_seed3_trajectory.json: 75.00%
-============================================================================================================================================
-
-Testing file: simple_seed51_trajectory.json
-Accuracy for simple_seed51_trajectory.json: 75.00%
-Top-3 Accuracy for simple_seed51_trajectory.json: 87.50%
-============================================================================================================================================
-
-Testing file: simple_seed52_trajectory.json
-Accuracy for simple_seed52_trajectory.json: 55.56%
-Top-3 Accuracy for simple_seed52_trajectory.json: 77.78%
-============================================================================================================================================
-
-Testing file: simple_seed77_trajectory.json
-Accuracy for simple_seed77_trajectory.json: 58.33%
-Top-3 Accuracy for simple_seed77_trajectory.json: 83.33%
-============================================================================================================================================
-
-Testing file: simple_seed88_trajectory.json
-Accuracy for simple_seed88_trajectory.json: 75.00%
-Top-3 Accuracy for simple_seed88_trajectory.json: 87.50%
-============================================================================================================================================
-
-Testing file: simple_seed8_trajectory.json
-Accuracy for simple_seed8_trajectory.json: 58.33%
-Top-3 Accuracy for simple_seed8_trajectory.json: 83.33%
-============================================================================================================================================
-
-Testing file: simple_seed98_trajectory.json
-Accuracy for simple_seed98_trajectory.json: 58.33%
-Top-3 Accuracy for simple_seed98_trajectory.json: 75.00%
-============================================================================================================================================
-Overall accuracy: 60.00%
-Overall Top-3 accuracy: 80.00%
-Training Progress: 100%|##########| 50/50 [45:40<00:00, 54.80s/it, Epoch=50, Critic_1_Loss=0.0344, Critic_2_Loss=0.0305]
-Training completed. Final model saved at: ./model/critic/simple/sample_ratio/final_model_20241226_023013.pth
-Loss curve saved at: ./model/critic/simple/sample_ratio/critic_loss_curve_20241226_023013.png

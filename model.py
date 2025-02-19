@@ -148,7 +148,7 @@ class LlamaChat(BaseModel):
     def load_model(self) -> None:
         """
                 This function is a placeholder since the model is no longer loaded locally.
-                """
+        """
         print('================ Model API ready ================')
         print("LlamaChat initialized with API URL:", self.api_url)
 

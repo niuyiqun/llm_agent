@@ -1,3 +1,4 @@
 bert/
 __pycache__/
 .idea/
+model/

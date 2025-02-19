@@ -399,7 +399,7 @@ class Logger:
 
 if __name__ == "__main__":
     print("Constructing Replay Buffer...")
-    replay_buffer = construct_replay_buffer('./data/simple/oracle_dense/', "./data/simple/lm/")
+    replay_buffer = construct_replay_buffer('./data/simple/oracle_dense/', "./data/simple/lm/",{})
     print(f"Replay Buffer size: {replay_buffer.size()}")
     states, actions, rewards, next_states, dones, infos, next_infos, next_actions = replay_buffer.sample(16)
     print(f"Sampled states: {states}")
