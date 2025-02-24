@@ -1,7 +1,37 @@
 #!/bin/bash
 
-# 使用 nohup 后台运行，并将输出重定向到指定的日志文件
-nohup python -m train.cooking.critic --task cooking --device cuda:0 > critic_train2.log 2>&1 &
+# 设置初始 seed 值
+seed=1789
+iterations=5
 
-# 输出提示信息
-echo "Training script has started. Logs are being written to critic_train.log"
+# Conda 环境名称
+env_name="text"
+
+# 循环开始训练
+for ((i=0; i<$iterations; i++))
+do
+    # 激活 Conda 环境
+    # 如果是 micromamba
+#    source /data3/micromamba/bin/activate $env_name
+    # 如果是 conda（可以替换上一行）
+     conda activate $env_name
+
+    # 生成一个随机数，可以控制随机范围，比如 1 到 1000
+    random_addition=$((RANDOM % 1000 + 1))
+
+    # 新的 seed 是原来的 seed 加上随机数
+    new_seed=$((seed + random_addition))
+
+    # 使用 python -m 来运行训练脚本
+    nohup python -m train.cooking.critic --task cooking --seed $new_seed --device cuda:0 > critic_train_${new_seed}.log 2>&1 &
+
+    echo "Training with seed $new_seed started. Logs are being written to critic_train_${new_seed}.log"
+
+    # 使用新的 seed 进行下次迭代
+    seed=$new_seed
+
+    # 等待当前任务完成
+    wait
+done
+
+echo "All training jobs have finished."

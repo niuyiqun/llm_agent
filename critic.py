@@ -228,7 +228,7 @@ def initialize_model(llm_type: str):
         return ZhipuChat()
     else:
         raise ValueError(f"Unsupported LLM type: {llm_type}")
-
+from collections import deque
 
 class AC_Agent:
     def __init__(self, device, config_path: str = './config/agent.yaml', evaluate: bool = False, model_path: str = None) -> None:
@@ -250,6 +250,10 @@ class AC_Agent:
         self.target_critic_2.load_state_dict(self.critic_2.state_dict())
         # bert和classifier配置不同的lr
         self.critic_1_optimizer, self.critic_2_optimizer = self.configure_optimizers()
+
+        # 初始化队列存储历史动作和得分
+        self.history_actions = deque(maxlen=5)  # 保存最近的5个动作和评分
+        self.current_goal = None  # 整体目标初始化为空
 
         if evaluate:
             # 如果evaluate为True，则加载模型权重
@@ -319,16 +323,39 @@ class AC_Agent:
         # 调用模型生成回复
         answer: Dict[str, str] = self.model.chat(message)
 
-        return answer["action"]
+        # 获取生成的动作
+        action = answer["action"]
+        # print(f"Generated action: {action}")
+
+        return action
+
 
     def get_init_prompt(self) -> List[Dict[str, str]]:
-        # todo: 这里应该把Goal加进来
-        prompt_path = './config/prompt_short.yaml'
+        """
+            初始化提示词，加入整体目标
+        """
+        prompt_path = './config/prompt_ac.yaml'
         with open(prompt_path, 'r', encoding='utf-8') as file:
             messages = yaml.safe_load(file)
             return messages
 
+    def set_goal(self, goal: str):
+        """
+        设置整体目标，可以在环境初始化后调用
+        """
+        self.current_goal = goal
+
+    def add_action_score(self, action: str, score: float):
+        """
+        在执行完动作并得到评分后，直接更新队列
+        :param action: 执行的动作
+        :param score: 动作的评分
+        """
+        # 直接在队列中更新对应的动作得分
+        self.history_actions.append((action, score))
+
     def add_user_message(self, obs: str, infos: Dict[str, List[str]]) -> Dict[str, str]:
+        # todo：这里需要考虑维护额外的信息
         """
             将用户消息添加到对话历史，并拼接任务相关信息
             :param messages: 当前对话历史
@@ -354,6 +381,13 @@ class AC_Agent:
         print(f"[recommended_actions] {recommended_actions}")
         # 将Recommended actions加入到content中
         content["Recommended actions"] = recommended_actions
+
+        # 在消息中加入历史动作
+        content["Historical actions"] = [{"action": act, "score": score} for act, score in self.history_actions]
+
+        # 加入当前目标（Current Goal）到user prompt
+        content["Current Goal"] = self.current_goal if self.current_goal else "No current goal set."
+
         return {"role": "user", "content": json.dumps(content)}
 
     def configure_optimizers(self):
@@ -738,7 +772,7 @@ def set_random_seed(seed: int = 42):
 
 def evaluate(device, model_path):
     request_infos = EnvInfos(admissible_commands=True, objective=True, description=True)
-    env_id = textworld.gym.register_game("./data/simple/mock_game/simple_seed2.z8",
+    env_id = textworld.gym.register_game("./data/treasure/mock_game/treasure_seed1.z8",
                                          max_episode_steps=20,
                                          request_infos=request_infos,
                                          )
@@ -748,7 +782,11 @@ def evaluate(device, model_path):
     obs, infos = env.reset()  # Start new episode.
     # print('infos:', infos)
     obs: str = get_reset(obs)
+    print('-----load AC_agent-----')
     agent: AC_Agent = AC_Agent(device, config_path='./config/agent.yaml', evaluate=True, model_path=model_path)
+    print('-----loaded AC_agent-----')
+    # 设置整体目标
+    agent.set_goal(obs)
     score: float = 0
     done: bool = False
     i = 1
@@ -759,6 +797,7 @@ def evaluate(device, model_path):
         command = agent.round(obs, infos=infos)
         print(f"[command] {command}")
         obs, score, done, infos = env.step(command)
+        agent.add_action_score(command, score)  # 更新动作及其评分
     print(obs)
 
 
@@ -769,6 +808,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Run a specific task with configuration.")
     parser.add_argument('--task', type=str, required=True, help="Name of the task to run")
     parser.add_argument('--device', type=str, required=True, help="Name of the gpu to run")
+    parser.add_argument('--seed', type=int, default=1224, help="Seed of model training")
     parser.add_argument('--eval', action='store_true', help="If provided, evaluate the agent instead of training")
     parser.add_argument('--model_path', type=str, default=None, help="Path to the saved model for evaluation")
     args = parser.parse_args()
@@ -782,6 +822,9 @@ if __name__ == "__main__":
     # 获取device
     device = args.device
 
+    # 获取seed
+    seed = args.seed
+
     # 获取eval和model_path
     eval = args.eval
     model_path = args.model_path
@@ -790,7 +833,8 @@ if __name__ == "__main__":
     assert task in valid_tasks, f"Invalid task name '{task}'. Allowed tasks are: {', '.join(valid_tasks)}"
     task_config = config[task]
 
-    set_random_seed(task_config['seed'])  # 设置全局随机种子
+    # 这里没有使用配置文件中的seed配置，而是直接使用的传参数的seed
+    set_random_seed(seed)  # 设置全局随机种子
 
     # 生成统一的时间戳
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")

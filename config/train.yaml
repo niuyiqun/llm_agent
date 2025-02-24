@@ -26,13 +26,13 @@ cooking:
   oracle_file_path: "./data/cooking/oracle/"
   lm_file_path: "./data/cooking/lm/"
   random_file_path: "./data/cooking/random/"
-  model_save_path: "./model/critic/cooking/"
+  model_save_path: "./model/critic/cooking/sep"
   checkpoint_interval: 10
   num_epochs: 50
   batch_size: 16
   device: "cuda"
   bert_path: "./bert/"
-  seed: 7789
+  seed: 8888
   validate_file_path: "./simple_test/cooking"
   sampling_strategy: "dynamic"
   reward_sample_ratio: 0.9

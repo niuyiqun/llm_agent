@@ -205,7 +205,7 @@ class CriticModel(nn.Module):
 
         # 将上下文和动作合并为一个字符串，并进行BERT编码
         context_action = [
-            f"State:{o}[NXT]Action:{a}" for o, a in zip(obs, action)
+            f"State:{o}[SEP]Action:{a}" for o, a in zip(obs, action)
         ]
         # context_action = obs + ' [NXT] ' + action
         # context_action = f"State: {obs} [NXT] Action: {action}"
@@ -694,6 +694,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Run a specific task with configuration.")
     parser.add_argument('--task', type=str, required=True, help="Name of the task to run")
     parser.add_argument('--device', type=str, required=True, help="Name of the gpu to run")
+    parser.add_argument('--seed', type=int, default=1224, help="Seed of model training")
     args = parser.parse_args()
 
 
@@ -706,7 +707,8 @@ if __name__ == "__main__":
     # 获取device
     device = args.device
 
-
+    # 获取seed
+    seed = args.seed
 
 
 
@@ -714,7 +716,7 @@ if __name__ == "__main__":
     assert task in valid_tasks, f"Invalid task name '{task}'. Allowed tasks are: {', '.join(valid_tasks)}"
     task_config = config[task]
 
-    set_random_seed(task_config['seed'])  # 设置全局随机种子
+    set_random_seed(seed)  # 设置全局随机种子
 
     # 生成统一的时间戳
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
