@@ -60,70 +60,166 @@ def read_file(file_path):
     return data
 
 
-def test_actions_with_q_values(agent, data, file_name):
+def test_actions_with_q_values(i, agent, data, file_name):
     """
     对读取的文件内容进行测试，计算 Q 值并输出
     """
-    agent.critic_1.eval()
+    if i == 1:
 
-    correct_count = 0  # 统计最优动作为 Q 值最高的次数
-    correct_top3_count = 0  # 统计最优动作排在 Q 值前三的次数
-    total_count = 0  # 总状态数量
+        agent.critic_1.eval()
 
-    # 打印正在测试的文件
-    print(f"\nTesting file: {file_name}")
+        correct_count = 0  # 统计最优动作为 Q 值最高的次数
+        correct_top3_count = 0  # 统计最优动作排在 Q 值前三的次数
+        total_count = 0  # 总状态数量
 
-    # 遍历每个条目
-    for entry in data:
-        # 提取当前条目中的信息
-        state = entry['state']
-        optimal_action = entry['optimal_action']
-        reward = entry['reward']
-        admissible_commands = entry['admissible_commands']
+        # 打印正在测试的文件
+        print(f"\nTesting file: {file_name}")
 
-        # 计算每个动作的 Q 值
-        q_values = []
-        with torch.no_grad():
-            for action in admissible_commands:
-                state_input = [state]  # 输入状态
-                action_input = [action]  # 输入动作
-                q_value = agent.critic_1(state_input, action_input).item()  # 计算 Q 值
-                q_values.append((action, q_value))
+        # 遍历每个条目
+        for entry in data:
+            # 提取当前条目中的信息
+            state = entry['state']
+            optimal_action = entry['optimal_action']
+            reward = entry['reward']
+            admissible_commands = entry['admissible_commands']
 
-        # 按 Q 值排序动作
-        q_values.sort(key=lambda x: x[1], reverse=True)
+            # 计算每个动作的 Q 值
+            q_values = []
+            with torch.no_grad():
+                for action in admissible_commands:
+                    state_input = [state]  # 输入状态
+                    action_input = [action]  # 输入动作
+                    q_value = agent.critic_1(state_input, action_input).item()  # 计算 Q 值
+                    q_values.append((action, q_value))
 
-        # 找到 Q 值最高的动作
-        best_action_by_q = q_values[0][0]  # Q 值最高的动作
+            # 按 Q 值排序动作
+            q_values.sort(key=lambda x: x[1], reverse=True)
 
-        # 检查最优动作是否为 Q 值最高的动作
-        if best_action_by_q == optimal_action:
-            correct_count += 1
+            # 找到 Q 值最高的动作
+            best_action_by_q = q_values[0][0]  # Q 值最高的动作
 
-        # 检查最优动作是否在前三名中
-        top_3_actions = [action for action, _ in q_values[:3]]  # 提取前三名动作
-        if optimal_action in top_3_actions:
-            correct_top3_count += 1
+            # 检查最优动作是否为 Q 值最高的动作
+            if best_action_by_q == optimal_action:
+                correct_count += 1
 
-        total_count += 1
+            # 检查最优动作是否在前三名中
+            top_3_actions = [action for action, _ in q_values[:3]]  # 提取前三名动作
+            if optimal_action in top_3_actions:
+                correct_top3_count += 1
 
-        # 打印输出
-        # print(f"State: {state}")
-        # print(f"Best action: {optimal_action}")
-        # print(f"Best action by Q value: {best_action_by_q}")
-        # print(f"reward: {reward}")
-        # print("Actions sorted by Q value:")
-        # for action, q_value in q_values:
-        #     print(f"  Action: {action}, Q value: {q_value}")
-        # print("=" * 80)  # 使用80个等号分隔
+            total_count += 1
 
-    agent.critic_1.train()
-    # 计算准确率
-    accuracy = correct_count / total_count if total_count > 0 else 0
-    top3_accuracy = correct_top3_count / total_count if total_count > 0 else 0
-    print(f"Accuracy for {file_name}: {accuracy * 100:.2f}%")
-    print(f"Top-3 Accuracy for {file_name}: {top3_accuracy * 100:.2f}%")
-    return accuracy, top3_accuracy, total_count
+        agent.critic_1.train()
+        # 计算准确率
+        accuracy = correct_count / total_count if total_count > 0 else 0
+        top3_accuracy = correct_top3_count / total_count if total_count > 0 else 0
+        print(f"Accuracy for {file_name}: {accuracy * 100:.2f}%")
+        print(f"Top-3 Accuracy for {file_name}: {top3_accuracy * 100:.2f}%")
+        return accuracy, top3_accuracy, total_count
+    elif i == 2:
+        agent.critic_2.eval()
+
+        correct_count = 0  # 统计最优动作为 Q 值最高的次数
+        correct_top3_count = 0  # 统计最优动作排在 Q 值前三的次数
+        total_count = 0  # 总状态数量
+
+        # 打印正在测试的文件
+        print(f"\nTesting file: {file_name}")
+
+        # 遍历每个条目
+        for entry in data:
+            # 提取当前条目中的信息
+            state = entry['state']
+            optimal_action = entry['optimal_action']
+            reward = entry['reward']
+            admissible_commands = entry['admissible_commands']
+
+            # 计算每个动作的 Q 值
+            q_values = []
+            with torch.no_grad():
+                for action in admissible_commands:
+                    state_input = [state]  # 输入状态
+                    action_input = [action]  # 输入动作
+                    q_value = agent.critic_2(state_input, action_input).item()  # 计算 Q 值
+                    q_values.append((action, q_value))
+
+            # 按 Q 值排序动作
+            q_values.sort(key=lambda x: x[1], reverse=True)
+
+            # 找到 Q 值最高的动作
+            best_action_by_q = q_values[0][0]  # Q 值最高的动作
+
+            # 检查最优动作是否为 Q 值最高的动作
+            if best_action_by_q == optimal_action:
+                correct_count += 1
+
+            # 检查最优动作是否在前三名中
+            top_3_actions = [action for action, _ in q_values[:3]]  # 提取前三名动作
+            if optimal_action in top_3_actions:
+                correct_top3_count += 1
+
+            total_count += 1
+
+        agent.critic_2.train()
+        # 计算准确率
+        accuracy = correct_count / total_count if total_count > 0 else 0
+        top3_accuracy = correct_top3_count / total_count if total_count > 0 else 0
+        print(f"Accuracy for {file_name}: {accuracy * 100:.2f}%")
+        print(f"Top-3 Accuracy for {file_name}: {top3_accuracy * 100:.2f}%")
+        return accuracy, top3_accuracy, total_count
+    else:
+        agent.critic_1.eval()
+        agent.critic_2.eval()
+
+        correct_count = 0  # 统计最优动作为 Q 值最高的次数
+        correct_top3_count = 0  # 统计最优动作排在 Q 值前三的次数
+        total_count = 0  # 总状态数量
+
+        # 打印正在测试的文件
+        print(f"\nTesting file: {file_name}")
+
+        # 遍历每个条目
+        for entry in data:
+            # 提取当前条目中的信息
+            state = entry['state']
+            optimal_action = entry['optimal_action']
+            reward = entry['reward']
+            admissible_commands = entry['admissible_commands']
+
+            # 计算每个动作的 Q 值
+            q_values = []
+            with torch.no_grad():
+                for action in admissible_commands:
+                    state_input = [state]  # 输入状态
+                    action_input = [action]  # 输入动作
+                    q_value = min(agent.critic_2(state_input, action_input).item(), agent.critic_1(state_input, action_input).item())
+                    q_values.append((action, q_value))
+
+            # 按 Q 值排序动作
+            q_values.sort(key=lambda x: x[1], reverse=True)
+
+            # 找到 Q 值最高的动作
+            best_action_by_q = q_values[0][0]  # Q 值最高的动作
+
+            # 检查最优动作是否为 Q 值最高的动作
+            if best_action_by_q == optimal_action:
+                correct_count += 1
+
+            # 检查最优动作是否在前三名中
+            top_3_actions = [action for action, _ in q_values[:3]]  # 提取前三名动作
+            if optimal_action in top_3_actions:
+                correct_top3_count += 1
+
+            total_count += 1
+
+        agent.critic_1.train()
+        agent.critic_2.train()
+        # 计算准确率
+        accuracy = correct_count / total_count if total_count > 0 else 0
+        top3_accuracy = correct_top3_count / total_count if total_count > 0 else 0
+        print(f"Accuracy for {file_name}: {accuracy * 100:.2f}%")
+        print(f"Top-3 Accuracy for {file_name}: {top3_accuracy * 100:.2f}%")
+        return accuracy, top3_accuracy, total_count
 
 
 # 记录时间的辅助函数
@@ -205,7 +301,7 @@ class CriticModel(nn.Module):
 
         # 将上下文和动作合并为一个字符串，并进行BERT编码
         context_action = [
-            f"State:{o}[SEP]Action:{a}" for o, a in zip(obs, action)
+            f"State:{o}[NXT]Action:{a}" for o, a in zip(obs, action)
         ]
         # context_action = obs + ' [NXT] ' + action
         # context_action = f"State: {obs} [NXT] Action: {action}"
@@ -597,27 +693,29 @@ def main(task_config, timestamp, device):
 
             # 定期测试模型
             if epoch % checkpoint_interval == 0:
-                # 从目录加载测试数据（包含奖励信息）
-                test_data_directory = task_config['validate_file_path']
-                test_data = load_test_data_from_directory(test_data_directory)
+                for i in range(1, 4):
 
-                total_correct = 0  # 总正确数量
-                total_correct_top3 = 0  # 总前三正确数量
-                total_states = 0  # 总状态数量
+                    # 从目录加载测试数据（包含奖励信息）
+                    test_data_directory = task_config['validate_file_path']
+                    test_data = load_test_data_from_directory(test_data_directory)
 
-                # 对每个文件进行测试
-                for file_name, data in test_data:
-                    file_accuracy, file_top3_accuracy, file_total = test_actions_with_q_values(agent, data, file_name)
-                    total_correct += file_accuracy * file_total  # 累加正确的状态数量
-                    total_correct_top3 += file_top3_accuracy * file_total  # 累加前三正确的状态数量
-                    total_states += file_total  # 累加总状态数量
-                    print("=" * 140)  # 使用140个等号分隔
+                    total_correct = 0  # 总正确数量
+                    total_correct_top3 = 0  # 总前三正确数量
+                    total_states = 0  # 总状态数量
 
-                # 计算整体准确率
-                overall_accuracy = total_correct / total_states if total_states > 0 else 0
-                overall_top3_accuracy = total_correct_top3 / total_states if total_states > 0 else 0
-                print(f"Overall accuracy: {overall_accuracy * 100:.2f}%")
-                print(f"Overall Top-3 accuracy: {overall_top3_accuracy * 100:.2f}%")
+                    # 对每个文件进行测试
+                    for file_name, data in test_data:
+                        file_accuracy, file_top3_accuracy, file_total = test_actions_with_q_values(i, agent, data, file_name)
+                        total_correct += file_accuracy * file_total  # 累加正确的状态数量
+                        total_correct_top3 += file_top3_accuracy * file_total  # 累加前三正确的状态数量
+                        total_states += file_total  # 累加总状态数量
+                        print("=" * 140)  # 使用140个等号分隔
+
+                    # 计算整体准确率
+                    overall_accuracy = total_correct / total_states if total_states > 0 else 0
+                    overall_top3_accuracy = total_correct_top3 / total_states if total_states > 0 else 0
+                    print(f"Overall accuracy: {overall_accuracy * 100:.2f}%")
+                    print(f"Overall Top-3 accuracy: {overall_top3_accuracy * 100:.2f}%")
 
     # 保存最终模型
     final_model_path = os.path.join(model_save_path, f'final_model_{timestamp}.pth')

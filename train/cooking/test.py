@@ -51,6 +51,7 @@ def test_actions_with_q_values(agent, data, file_name, device):
     对读取的文件内容进行测试，计算 Q 值并输出
     """
     agent.critic_1.eval()
+    agent.critic_2.eval()
 
     correct_count = 0  # 统计最优动作为 Q 值最高的次数
     correct_top3_count = 0  # 统计最优动作排在 Q 值前三的次数
@@ -73,7 +74,8 @@ def test_actions_with_q_values(agent, data, file_name, device):
             for action in admissible_commands:
                 state_input = [state]  # 输入状态
                 action_input = [action]  # 输入动作
-                q_value = agent.critic_1(state_input, action_input).item()  # 计算 Q 值
+                # q_value = min(agent.critic_2(state_input, action_input).item(), agent.critic_1(state_input, action_input).item())  # 计算 Q 值
+                q_value = agent.critic_2(state_input, action_input).item()
                 q_values.append((action, q_value))
 
         # 按 Q 值排序动作
@@ -143,7 +145,7 @@ def main():
     agent.target_critic_2.to(device)
 
     # 加载训练好的模型
-    model_save_path = './model/critic/cooking/final_model_20250120_023154.pth'
+    model_save_path = './model/critic/cooking/seeds/final_model_20250221_105840.pth'
     load_model_and_info(agent, model_save_path, device)
 
     # 从目录加载测试数据（包含奖励信息）

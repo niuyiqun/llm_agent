@@ -18,189 +18,45 @@
 
     示例:
       Step1：
-        输入：
-        State:
-          The dinner is almost ready! It's only missing a grilled milk. -= Bedroom =- You make a grand eccentric entrance into a bedroom. You see a closed normal looking chest drawer right there by you. You can see an antique trunk. You see a king-size bed. But the thing is empty. There is a closed wooden door leading east. > -= Bedroom =-0/1
-    
-        Historical Actions:
-          []
-    
-        Admissible commands:
-          ['examine antique trunk', 'examine chest drawer', 'examine king-size bed', 'examine wooden door', 'inventory', 'look', 'open antique trunk', 'open chest drawer']
-    
-        Recommended actions:
-          ['examine antique trunk', 'examine wooden door', 'open antique trunk']
-    
-        Current Goal:
-          You open the antique trunk, revealing an old key. > -= Bedroom =-0/2
-    
-        ----------------------------------------
-        输出：
-          {
-            "sub_goal": "open antique trunk",
-            "action": "open antique trunk"
-          }
-  
+          输入：
+          State:
+            You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal! -= Bedroom =- Ah, the bedroom. This is some kind of bedroom, really great usual vibes in this place, a wonderful usual atmosphere. You can barely contain your excitement. You see a bed. The bed is large. But oh no! there's nothing on this piece of garbage. You need an exit without a door? You should try going north. > -= Bedroom =-0/1
+      
+          Historical Actions:
+            []
+      
+          Admissible commands:
+            ['drop green apple', 'drop green hot pepper', 'drop red hot pepper', 'eat green apple', 'eat green hot pepper', 'eat red hot pepper', 'examine bed', 'go north', 'inventory', 'look', 'put green apple on bed', 'put green hot pepper on bed', 'put red hot pepper on bed']
+      
+          Recommended actions:
+            ['drop green apple', 'drop green hot pepper', 'inventory']
+      
+          Current Goal:
+            You are carrying: a green hot pepper, a green apple and a red hot pepper. > -= Bedroom =-0/2
+      
+          ----------------------------------------
+          输出：
+            {
+              "sub_goal": "inventory",
+              "action": "inventory"
+            }
+
       Step2：
           输入：
           State:
-            You open the antique trunk, revealing an old key. > -= Bedroom =-0/2
+            You are carrying: a green hot pepper, a green apple and a red hot pepper. > -= Bedroom =-0/2
       
           Historical Actions:
-            [{ "action": "open antique trunk", "score": "0" }]
+            [{ "action": "inventory", "score": "0" }]
       
           Admissible commands:
-            ['close antique trunk', 'examine antique trunk', 'examine chest drawer', 'examine king-size bed', 'examine old key', 'examine wooden door', 'inventory', 'look', 'open chest drawer', 'take old key from antique trunk']
+            ['drop green apple', 'drop green hot pepper', 'drop red hot pepper', 'eat green apple', 'eat green hot pepper', 'eat red hot pepper', 'examine bed', 'go north', 'inventory', 'look', 'put green apple on bed', 'put green hot pepper on bed', 'put red hot pepper on bed']
       
           Recommended actions:
-            ['examine old key', 'take old key from antique trunk', 'look']
+            ['go north', 'eat green apple', 'look']
       
           Current Goal:
-            You take the old key from the antique trunk. > -= Bedroom =-0/3
-      
-          ----------------------------------------
-          输出：
-            {
-              "sub_goal": "take old key from antique trunk",
-              "action": "take old key from antique trunk"
-            }
-      
-      Step3：
-          输入：
-          State:
-            You take the old key from the antique trunk. > -= Bedroom =-0/3
-      
-          Historical Actions:
-            [{ "action": "open antique trunk", "score": "0" }, { "action": "take old key from antique trunk", "score": "0" }]
-      
-          Admissible commands:
-            ['close antique trunk', 'drop old key', 'examine antique trunk', 'examine chest drawer', 'examine king-size bed', 'examine old key', 'examine wooden door', 'insert old key into antique trunk', 'inventory', 'look', 'open chest drawer', 'put old key on king-size bed', 'unlock wooden door with old key']
-      
-          Recommended actions:
-            ['unlock wooden door with old key', 'drop old key', 'examine old key']
-      
-          Current Goal:
-            You unlock wooden door. > -= Bedroom =-0/4
-      
-          ----------------------------------------
-          输出：
-            {
-              "sub_goal": "unlock wooden door with old key",
-              "action": "unlock wooden door with old key"
-            }
-      
-      Step4：
-          输入：
-          State:
-            You unlock wooden door. > -= Bedroom =-0/4
-      
-          Historical Actions:
-            [{ "action": "open antique trunk", "score": "0" }, { "action": "take old key from antique trunk", "score": "0" }, { "action": "unlock wooden door with old key", "score": "0" }]
-      
-          Admissible commands:
-            ['close antique trunk', 'drop old key', 'examine antique trunk', 'examine chest drawer', 'examine king-size bed', 'examine old key', 'examine wooden door', 'insert old key into antique trunk', 'inventory', 'lock wooden door with old key', 'look', 'open chest drawer', 'open wooden door', 'put old key on king-size bed']
-      
-          Recommended actions:
-            ['open wooden door', 'lock wooden door with old key', 'examine chest drawer']
-      
-          Current Goal:
-            You open wooden door. > -= Bedroom =-0/5
-      
-          ----------------------------------------
-          输出：
-            {
-              "sub_goal": "open wooden door",
-              "action": "open wooden door"
-            }
-      
-      Step5：
-          输入：
-          State:
-            You open wooden door. > -= Bedroom =-0/5
-      
-          Historical Actions:
-            [{ "action": "open antique trunk", "score": "0" }, { "action": "take old key from antique trunk", "score": "0" }, { "action": "unlock wooden door with old key", "score": "0" }, { "action": "open wooden door", "score": "0" }]
-      
-          Admissible commands:
-            ['close antique trunk', 'close wooden door', 'drop old key', 'examine antique trunk', 'examine chest drawer', 'examine king-size bed', 'examine old key', 'examine wooden door', 'go east', 'insert old key into antique trunk', 'inventory', 'look', 'open chest drawer', 'put old key on king-size bed']
-      
-          Recommended actions:
-            ['go east', 'examine wooden door', 'examine old key']
-      
-          Current Goal:
-            -= Kitchen =- Well how about that, you are in a place we're calling a kitchen. The room is well lit. You make out a closed refrigerator nearby. You can see a counter. The counter is normal. But the thing hasn't got anything on it. You rest your hand against a wall, but you miss the wall and fall onto a stove. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the stove. You see a kitchen island. On the kitchen island you can see a note. There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. You need an unguarded exit? You should try going south. Your score has just gone up by one point. > -= Kitchen =-1/6
-      
-          ----------------------------------------
-          输出：
-            {
-              "sub_goal": "go east",
-              "action": "go east"
-            }
-      
-      Step6：
-          输入：
-          State:
-            -= Kitchen =- Well how about that, you are in a place we're calling a kitchen. The room is well lit. You make out a closed refrigerator nearby. You can see a counter. The counter is normal. But the thing hasn't got anything on it. You rest your hand against a wall, but you miss the wall and fall onto a stove. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the stove. You see a kitchen island. On the kitchen island you can see a note. There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. You need an unguarded exit? You should try going south. Your score has just gone up by one point. > -= Kitchen =-1/6
-      
-          Historical Actions:
-            [{ "action": "open antique trunk", "score": "0" }, { "action": "take old key from antique trunk", "score": "0" }, { "action": "unlock wooden door with old key", "score": "0" }, { "action": "open wooden door", "score": "0" }, { "action": "go east", "score": "1" }]
-      
-          Admissible commands:
-            ['close wooden door', 'drop old key', 'examine counter', 'examine kitchen island', 'examine note', 'examine old key', 'examine refrigerator', 'examine screen door', 'examine stove', 'examine wooden door', 'go north', 'go south', 'go west', 'inventory', 'look', 'open refrigerator', 'open screen door', 'put old key on counter', 'put old key on kitchen island', 'put old key on stove', 'take note from kitchen island']
-      
-          Recommended actions:
-            ['go south', 'examine old key', 'go west']
-      
-          Current Goal:
-            -= Living Room =- Well I'll be, you are in the place we're calling the living room. You bend down to tie your shoe. When you stand up, you notice a couch. You see a milk on the couch. You see a low table. The low table is standard. On the low table you see a remote. You scan the room for a tv, and you find a tv. The tv is ordinary. Unfortunately, there isn't a thing on it. There is an exit to the north. Don't worry, it is unblocked. > -= Living Room =-1/7
-      
-          ----------------------------------------
-          输出：
-            {
-              "sub_goal": "go south",
-              "action": "go south"
-            }
-      
-      Step7：
-          输入：
-          State:
-            -= Living Room =- Well I'll be, you are in the place we're calling the living room. You bend down to tie your shoe. When you stand up, you notice a couch. You see a milk on the couch. You see a low table. The low table is standard. On the low table you see a remote. You scan the room for a tv, and you find a tv. The tv is ordinary. Unfortunately, there isn't a thing on it. There is an exit to the north. Don't worry, it is unblocked. > -= Living Room =-1/7
-      
-          Historical Actions:
-            [{ "action": "take old key from antique trunk", "score": "0" }, { "action": "unlock wooden door with old key", "score": "0" }, { "action": "open wooden door", "score": "0" }, { "action": "go east", "score": "1" }, { "action": "go south", "score": "0" }]
-      
-          Admissible commands:
-            ['drop old key', 'examine couch', 'examine low table', 'examine milk', 'examine old key', 'examine remote', 'examine tv', 'go north', 'inventory', 'look', 'put old key on couch', 'put old key on low table', 'put old key on tv', 'take milk from couch', 'take remote from low table']
-      
-          Recommended actions:
-            ['examine tv', 'look', 'take milk from couch']
-      
-          Current Goal:
-            You take the milk from the couch. Your score has just gone up by one point. > -= Living Room =-2/8
-      
-          ----------------------------------------
-          输出：
-            {
-              "sub_goal": "take milk from couch",
-              "action": "take milk from couch"
-            }
-      
-      Step8：
-          输入：
-          State:
-            You take the milk from the couch. Your score has just gone up by one point. > -= Living Room =-2/8
-      
-          Historical Actions:
-            [{ "action": "unlock wooden door with old key", "score": "0" }, { "action": "open wooden door", "score": "0" }, { "action": "go east", "score": "1" }, { "action": "go south", "score": "0" }, { "action": "take milk from couch", "score": "1" }]
-      
-          Admissible commands:
-            ['drop milk', 'drop old key', 'eat milk', 'examine couch', 'examine low table', 'examine milk', 'examine old key', 'examine remote', 'examine tv', 'go north', 'inventory', 'look', 'put milk on couch', 'put milk on low table', 'put milk on tv', 'put old key on couch', 'put old key on low table', 'put old key on tv', 'take remote from low table']
-      
-          Recommended actions:
-            ['go north', 'examine old key', 'put old key on tv']
-      
-          Current Goal:
-            -= Kitchen =- Well how about that, you are in a place we're calling a kitchen. The room is well lit. You make out a closed refrigerator nearby. You can see a counter. The counter is normal. But the thing hasn't got anything on it. You rest your hand against a wall, but you miss the wall and fall onto a stove. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the stove. You see a kitchen island. On the kitchen island you can see a note. There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. You need an unguarded exit? You should try going south. > -= Kitchen =-2/9
+            -= Livingroom =- You're now in a livingroom. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. You see a sofa. The sofa is comfy. But the thing is empty. You don't like doors? Why not try going east, that entranceway is not blocked by one. You don't like doors? Why not try going south, that entranceway is not blocked by one. There is an exit to the west. > -= Livingroom =-0/3
       
           ----------------------------------------
           输出：
@@ -209,28 +65,412 @@
               "action": "go north"
             }
       
-      Step9：
+      Step3：
           输入：
           State:
-            -= Kitchen =- Well how about that, you are in a place we're calling a kitchen. The room is well lit. You make out a closed refrigerator nearby. You can see a counter. The counter is normal. But the thing hasn't got anything on it. You rest your hand against a wall, but you miss the wall and fall onto a stove. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the stove. You see a kitchen island. On the kitchen island you can see a note. There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. You need an unguarded exit? You should try going south. > -= Kitchen =-2/9
+            -= Livingroom =- You're now in a livingroom. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. You see a sofa. The sofa is comfy. But the thing is empty. You don't like doors? Why not try going east, that entranceway is not blocked by one. You don't like doors? Why not try going south, that entranceway is not blocked by one. There is an exit to the west. > -= Livingroom =-0/3
       
           Historical Actions:
-            [{ "action": "open wooden door", "score": "0" }, { "action": "go east", "score": "1" }, { "action": "go south", "score": "0" }, { "action": "take milk from couch", "score": "1" }, { "action": "go north", "score": "0" }]
+            [{ "action": "inventory", "score": "0" }, { "action": "go north", "score": "0" }]
       
           Admissible commands:
-            ['close wooden door', 'drop milk', 'drop old key', 'eat milk', 'examine counter', 'examine kitchen island', 'examine milk', 'examine note', 'examine old key', 'examine refrigerator', 'examine screen door', 'examine stove', 'examine wooden door', 'go north', 'go south', 'go west', 'inventory', 'look', 'open refrigerator', 'open screen door', 'put milk on counter', 'put milk on kitchen island', 'put milk on stove', 'put old key on counter', 'put old key on kitchen island', 'put old key on stove', 'take note from kitchen island']
+            ['drop green apple', 'drop green hot pepper', 'drop red hot pepper', 'eat green apple', 'eat green hot pepper', 'eat red hot pepper', 'examine sofa', 'go east', 'go south', 'go west', 'inventory', 'look', 'put green apple on sofa', 'put green hot pepper on sofa', 'put red hot pepper on sofa']
       
           Recommended actions:
-            ['put milk on stove', 'go south', 'drop milk']
+            ['eat green apple', 'go west', 'go east']
       
           Current Goal:
-            You put the milk on the stove. Your score has just gone up by one point. *** The End *** You scored 3 out of a possible 3, in 10 turns. Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command? > -= Kitchen =-2/9
+            -= Kitchen =- Well I'll be, you are in the place we're calling the kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. You can make out a fridge. The fridge contains a parsley, a red bell pepper, a yellow bell pepper and a white onion. You can make out a closed oven. You make out a table. On the table you make out a cookbook! You can make out a counter. You see a tomato and a knife on the counter. You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it! There is an open frosted-glass door leading north. You don't like doors? Why not try going east, that entranceway is not blocked by one. > -= Kitchen =-0/4
       
           ----------------------------------------
           输出：
             {
-              "sub_goal": "put milk on stove",
-              "action": "put milk on stove"
+              "sub_goal": "go west",
+              "action": "go west"
+            }
+      
+      Step4：
+          输入：
+          State:
+            -= Kitchen =- Well I'll be, you are in the place we're calling the kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. You can make out a fridge. The fridge contains a parsley, a red bell pepper, a yellow bell pepper and a white onion. You can make out a closed oven. You make out a table. On the table you make out a cookbook! You can make out a counter. You see a tomato and a knife on the counter. You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it! There is an open frosted-glass door leading north. You don't like doors? Why not try going east, that entranceway is not blocked by one. > -= Kitchen =-0/4
+      
+          Historical Actions:
+            [{ "action": "inventory", "score": "0" }, { "action": "go north", "score": "0" }, { "action": "go west", "score": "0" }]
+      
+          Admissible commands:
+            ['close fridge', 'close frosted-glass door', 'cook green apple with oven', 'cook green apple with stove', 'cook green hot pepper with oven', 'cook green hot pepper with stove', 'cook red hot pepper with oven', 'cook red hot pepper with stove', 'drop green apple', 'drop green hot pepper', 'drop red hot pepper', 'eat green apple', 'eat green hot pepper', 'eat red hot pepper', 'examine cookbook', 'examine counter', 'examine fridge', 'examine knife', 'examine oven', 'examine parsley', 'examine red bell pepper', 'examine stove', 'examine table', 'examine tomato', 'examine white onion', 'examine yellow bell pepper', 'go east', 'go north', 'insert green apple into fridge', 'insert green hot pepper into fridge', 'insert red hot pepper into fridge', 'inventory', 'look', 'prepare meal', 'put green apple on counter', 'put green apple on stove', 'put green apple on table', 'put green hot pepper on counter', 'put green hot pepper on stove', 'put green hot pepper on table', 'put red hot pepper on counter', 'put red hot pepper on stove', 'put red hot pepper on table', 'take cookbook from table', 'take knife from counter', 'take parsley from fridge', 'take red bell pepper from fridge', 'take tomato from counter', 'take white onion from fridge', 'take yellow bell pepper from fridge']
+      
+          Recommended actions:
+            ['examine cookbook', 'look', 'examine parsley']
+      
+          Current Goal:
+            You open the copy of "Cooking: A Modern Approach (3rd Ed.)" and start reading: Recipe #1 --------- Gather all following ingredients and follow the directions to prepare this tasty meal. Ingredients: green hot pepper parsley tomato Directions: dice the green hot pepper chop the parsley dice the tomato prepare meal > -= Kitchen =-0/5
+      
+          ----------------------------------------
+          输出：
+            {
+              "sub_goal": "examine cookbook",
+              "action": "examine cookbook"
+            }
+      
+      Step5：
+          输入：
+          State:
+            You open the copy of "Cooking: A Modern Approach (3rd Ed.)" and start reading: Recipe #1 --------- Gather all following ingredients and follow the directions to prepare this tasty meal. Ingredients: green hot pepper parsley tomato Directions: dice the green hot pepper chop the parsley dice the tomato prepare meal > -= Kitchen =-0/5
+      
+          Historical Actions:
+            [{ "action": "inventory", "score": "0" }, { "action": "go north", "score": "0" }, { "action": "go west", "score": "0" }, { "action": "examine cookbook", "score": "0" }]
+      
+          Admissible commands:
+            ['close fridge', 'close frosted-glass door', 'cook green apple with oven', 'cook green apple with stove', 'cook green hot pepper with oven', 'cook green hot pepper with stove', 'cook red hot pepper with oven', 'cook red hot pepper with stove', 'drop green apple', 'drop green hot pepper', 'drop red hot pepper', 'eat green apple', 'eat green hot pepper', 'eat red hot pepper', 'examine cookbook', 'examine counter', 'examine fridge', 'examine knife', 'examine oven', 'examine parsley', 'examine red bell pepper', 'examine stove', 'examine table', 'examine tomato', 'examine white onion', 'examine yellow bell pepper', 'go east', 'go north', 'insert green apple into fridge', 'insert green hot pepper into fridge', 'insert red hot pepper into fridge', 'inventory', 'look', 'prepare meal', 'put green apple on counter', 'put green apple on stove', 'put green apple on table', 'put green hot pepper on counter', 'put green hot pepper on stove', 'put green hot pepper on table', 'put red hot pepper on counter', 'put red hot pepper on stove', 'put red hot pepper on table', 'take cookbook from table', 'take knife from counter', 'take parsley from fridge', 'take red bell pepper from fridge', 'take tomato from counter', 'take white onion from fridge', 'take yellow bell pepper from fridge']
+      
+          Recommended actions:
+            ['examine white onion', 'examine red bell pepper', 'drop green apple']
+      
+          Current Goal:
+            You drop the green apple on the ground. > -= Kitchen =-0/6
+      
+          ----------------------------------------
+          输出：
+            {
+              "sub_goal": "drop green apple",
+              "action": "drop green apple"
+            }
+      
+      Step6：
+          输入：
+          State:
+            You drop the green apple on the ground. > -= Kitchen =-0/6
+      
+          Historical Actions:
+            [{ "action": "inventory", "score": "0" }, { "action": "go north", "score": "0" }, { "action": "go west", "score": "0" }, { "action": "examine cookbook", "score": "0" }, { "action": "drop green apple", "score": "0" }]
+      
+          Admissible commands:
+            ['close fridge', 'close frosted-glass door', 'cook green hot pepper with oven', 'cook green hot pepper with stove', 'cook red hot pepper with oven', 'cook red hot pepper with stove', 'drop green hot pepper', 'drop red hot pepper', 'eat green hot pepper', 'eat red hot pepper', 'examine cookbook', 'examine counter', 'examine fridge', 'examine green apple', 'examine knife', 'examine oven', 'examine parsley', 'examine red bell pepper', 'examine stove', 'examine table', 'examine tomato', 'examine white onion', 'examine yellow bell pepper', 'go east', 'go north', 'insert green hot pepper into fridge', 'insert red hot pepper into fridge', 'inventory', 'look', 'prepare meal', 'put green hot pepper on counter', 'put green hot pepper on stove', 'put green hot pepper on table', 'put red hot pepper on counter', 'put red hot pepper on stove', 'put red hot pepper on table', 'take cookbook from table', 'take green apple', 'take knife from counter', 'take parsley from fridge', 'take red bell pepper from fridge', 'take tomato from counter', 'take white onion from fridge', 'take yellow bell pepper from fridge']
+      
+          Recommended actions:
+            ['drop red hot pepper', 'prepare meal', 'put red hot pepper on stove']
+      
+          Current Goal:
+            You drop the red hot pepper on the ground. > -= Kitchen =-0/7
+      
+          ----------------------------------------
+          输出：
+            {
+              "sub_goal": "drop red hot pepper",
+              "action": "drop red hot pepper"
+            }
+      
+      Step7：
+          输入：
+          State:
+            You drop the red hot pepper on the ground. > -= Kitchen =-0/7
+      
+          Historical Actions:
+            [{ "action": "go north", "score": "0" }, { "action": "go west", "score": "0" }, { "action": "examine cookbook", "score": "0" }, { "action": "drop green apple", "score": "0" }, { "action": "drop red hot pepper", "score": "0" }]
+      
+          Admissible commands:
+            ['close fridge', 'close frosted-glass door', 'cook green hot pepper with oven', 'cook green hot pepper with stove', 'drop green hot pepper', 'eat green hot pepper', 'examine cookbook', 'examine counter', 'examine fridge', 'examine green apple', 'examine knife', 'examine oven', 'examine parsley', 'examine red bell pepper', 'examine red hot pepper', 'examine stove', 'examine table', 'examine tomato', 'examine white onion', 'examine yellow bell pepper', 'go east', 'go north', 'insert green hot pepper into fridge', 'inventory', 'look', 'prepare meal', 'put green hot pepper on counter', 'put green hot pepper on stove', 'put green hot pepper on table', 'take cookbook from table', 'take green apple', 'take knife from counter', 'take parsley from fridge', 'take red bell pepper from fridge', 'take red hot pepper', 'take tomato from counter', 'take white onion from fridge', 'take yellow bell pepper from fridge']
+      
+          Recommended actions:
+            ['examine red hot pepper', 'look', 'take parsley from fridge']
+      
+          Current Goal:
+            You take the parsley from the fridge. Your score has just gone up by one point. > -= Kitchen =-1/8
+      
+          ----------------------------------------
+          输出：
+            {
+              "sub_goal": "take parsley from fridge",
+              "action": "take parsley from fridge"
+            }
+      
+      Step8：
+          输入：
+          State:
+            You take the parsley from the fridge. Your score has just gone up by one point. > -= Kitchen =-1/8
+      
+          Historical Actions:
+            [{ "action": "go west", "score": "0" }, { "action": "examine cookbook", "score": "0" }, { "action": "drop green apple", "score": "0" }, { "action": "drop red hot pepper", "score": "0" }, { "action": "take parsley from fridge", "score": "1" }]
+      
+          Admissible commands:
+            ['close fridge', 'close frosted-glass door', 'cook green hot pepper with oven', 'cook green hot pepper with stove', 'cook parsley with oven', 'cook parsley with stove', 'drop green hot pepper', 'drop parsley', 'eat green hot pepper', 'eat parsley', 'examine cookbook', 'examine counter', 'examine fridge', 'examine green apple', 'examine knife', 'examine oven', 'examine red bell pepper', 'examine red hot pepper', 'examine stove', 'examine table', 'examine tomato', 'examine white onion', 'examine yellow bell pepper', 'go east', 'go north', 'insert green hot pepper into fridge', 'insert parsley into fridge', 'inventory', 'look', 'prepare meal', 'put green hot pepper on counter', 'put green hot pepper on stove', 'put green hot pepper on table', 'put parsley on counter', 'put parsley on stove', 'put parsley on table', 'take cookbook from table', 'take green apple', 'take knife from counter', 'take red bell pepper from fridge', 'take red hot pepper', 'take tomato from counter', 'take white onion from fridge', 'take yellow bell pepper from fridge']
+      
+          Recommended actions:
+            ['take yellow bell pepper from fridge', 'examine table', 'take tomato from counter']
+      
+          Current Goal:
+            You take the tomato from the counter. Your score has just gone up by one point. > -= Kitchen =-2/9
+      
+          ----------------------------------------
+          输出：
+            {
+              "sub_goal": "take tomato from counter",
+              "action": "take tomato from counter"
+            }
+      
+      Step9：
+          输入：
+          State:
+            You take the tomato from the counter. Your score has just gone up by one point. > -= Kitchen =-2/9
+      
+          Historical Actions:
+            [{ "action": "examine cookbook", "score": "0" }, { "action": "drop green apple", "score": "0" }, { "action": "drop red hot pepper", "score": "0" }, { "action": "take parsley from fridge", "score": "1" }, { "action": "take tomato from counter", "score": "1" }]
+      
+          Admissible commands:
+            ['close fridge', 'close frosted-glass door', 'cook green hot pepper with oven', 'cook green hot pepper with stove', 'cook parsley with oven', 'cook parsley with stove', 'cook tomato with oven', 'cook tomato with stove', 'drop green hot pepper', 'drop parsley', 'drop tomato', 'eat green hot pepper', 'eat parsley', 'eat tomato', 'examine cookbook', 'examine counter', 'examine fridge', 'examine green apple', 'examine knife', 'examine oven', 'examine red bell pepper', 'examine red hot pepper', 'examine stove', 'examine table', 'examine white onion', 'examine yellow bell pepper', 'go east', 'go north', 'insert green hot pepper into fridge', 'insert parsley into fridge', 'insert tomato into fridge', 'inventory', 'look', 'prepare meal', 'put green hot pepper on counter', 'put green hot pepper on stove', 'put green hot pepper on table', 'put parsley on counter', 'put parsley on stove', 'put parsley on table', 'put tomato on counter', 'put tomato on stove', 'put tomato on table', 'take cookbook from table', 'take green apple', 'take knife from counter', 'take red bell pepper from fridge', 'take red hot pepper', 'take white onion from fridge', 'take yellow bell pepper from fridge']
+      
+          Recommended actions:
+            ['cook parsley with stove', 'take knife from counter', 'go north']
+      
+          Current Goal:
+            You take the knife from the counter. > -= Kitchen =-2/10
+      
+          ----------------------------------------
+          输出：
+            {
+              "sub_goal": "take knife from counter",
+              "action": "take knife from counter"
+            }
+      
+      Step10：
+          输入：
+          State:
+            You take the knife from the counter. > -= Kitchen =-2/10
+      
+          Historical Actions:
+            [{ "action": "drop green apple", "score": "0" }, { "action": "drop red hot pepper", "score": "0" }, { "action": "take parsley from fridge", "score": "1" }, { "action": "take tomato from counter", "score": "1" }, { "action": "take knife from counter", "score": "0" }]
+      
+          Admissible commands:
+            ['chop green hot pepper with knife', 'chop parsley with knife', 'chop tomato with knife', 'close fridge', 'close frosted-glass door', 'cook green hot pepper with oven', 'cook green hot pepper with stove', 'cook parsley with oven', 'cook parsley with stove', 'cook tomato with oven', 'cook tomato with stove', 'dice green hot pepper with knife', 'dice parsley with knife', 'dice tomato with knife', 'drop green hot pepper', 'drop knife', 'drop parsley', 'drop tomato', 'eat green hot pepper', 'eat parsley', 'eat tomato', 'examine cookbook', 'examine counter', 'examine fridge', 'examine green apple', 'examine oven', 'examine red bell pepper', 'examine red hot pepper', 'examine stove', 'examine table', 'examine white onion', 'examine yellow bell pepper', 'go east', 'go north', 'insert green hot pepper into fridge', 'insert knife into fridge', 'insert parsley into fridge', 'insert tomato into fridge', 'inventory', 'look', 'prepare meal', 'put green hot pepper on counter', 'put green hot pepper on stove', 'put green hot pepper on table', 'put knife on counter', 'put knife on stove', 'put knife on table', 'put parsley on counter', 'put parsley on stove', 'put parsley on table', 'put tomato on counter', 'put tomato on stove', 'put tomato on table', 'slice green hot pepper with knife', 'slice parsley with knife', 'slice tomato with knife', 'take cookbook from table', 'take green apple', 'take red bell pepper from fridge', 'take red hot pepper', 'take white onion from fridge', 'take yellow bell pepper from fridge']
+      
+          Recommended actions:
+            ['dice green hot pepper with knife', 'examine counter', 'examine yellow bell pepper']
+      
+          Current Goal:
+            You dice the green hot pepper. Your score has just gone up by one point. > -= Kitchen =-3/11
+      
+          ----------------------------------------
+          输出：
+            {
+              "sub_goal": "dice green hot pepper with knife",
+              "action": "dice green hot pepper with knife"
+            }
+      
+      Step11：
+          输入：
+          State:
+            You dice the green hot pepper. Your score has just gone up by one point. > -= Kitchen =-3/11
+      
+          Historical Actions:
+            [{ "action": "drop red hot pepper", "score": "0" }, { "action": "take parsley from fridge", "score": "1" }, { "action": "take tomato from counter", "score": "1" }, { "action": "take knife from counter", "score": "0" }, { "action": "dice green hot pepper with knife", "score": "1" }]
+      
+          Admissible commands:
+            ['chop parsley with knife', 'chop tomato with knife', 'close fridge', 'close frosted-glass door', 'cook green hot pepper with oven', 'cook green hot pepper with stove', 'cook parsley with oven', 'cook parsley with stove', 'cook tomato with oven', 'cook tomato with stove', 'dice parsley with knife', 'dice tomato with knife', 'drop green hot pepper', 'drop knife', 'drop parsley', 'drop tomato', 'eat green hot pepper', 'eat parsley', 'eat tomato', 'examine cookbook', 'examine counter', 'examine fridge', 'examine green apple', 'examine oven', 'examine red bell pepper', 'examine red hot pepper', 'examine stove', 'examine table', 'examine white onion', 'examine yellow bell pepper', 'go east', 'go north', 'insert green hot pepper into fridge', 'insert knife into fridge', 'insert parsley into fridge', 'insert tomato into fridge', 'inventory', 'look', 'prepare meal', 'put green hot pepper on counter', 'put green hot pepper on stove', 'put green hot pepper on table', 'put knife on counter', 'put knife on stove', 'put knife on table', 'put parsley on counter', 'put parsley on stove', 'put parsley on table', 'put tomato on counter', 'put tomato on stove', 'put tomato on table', 'slice parsley with knife', 'slice tomato with knife', 'take cookbook from table', 'take green apple', 'take red bell pepper from fridge', 'take red hot pepper', 'take white onion from fridge', 'take yellow bell pepper from fridge']
+      
+          Recommended actions:
+            ['drop knife', 'examine white onion', 'go north']
+      
+          Current Goal:
+            You drop the knife on the ground. > -= Kitchen =-3/12
+      
+          ----------------------------------------
+          输出：
+            {
+              "sub_goal": "drop knife",
+              "action": "drop knife"
+            }
+      
+      Step12：
+          输入：
+          State:
+            You drop the knife on the ground. > -= Kitchen =-3/12
+      
+          Historical Actions:
+            [{ "action": "take parsley from fridge", "score": "1" }, { "action": "take tomato from counter", "score": "1" }, { "action": "take knife from counter", "score": "0" }, { "action": "dice green hot pepper with knife", "score": "1" }, { "action": "drop knife", "score": "0" }]
+      
+          Admissible commands:
+            ['close fridge', 'close frosted-glass door', 'cook green hot pepper with oven', 'cook green hot pepper with stove', 'cook parsley with oven', 'cook parsley with stove', 'cook tomato with oven', 'cook tomato with stove', 'drop green hot pepper', 'drop parsley', 'drop tomato', 'eat green hot pepper', 'eat parsley', 'eat tomato', 'examine cookbook', 'examine counter', 'examine fridge', 'examine green apple', 'examine knife', 'examine oven', 'examine red bell pepper', 'examine red hot pepper', 'examine stove', 'examine table', 'examine white onion', 'examine yellow bell pepper', 'go east', 'go north', 'insert green hot pepper into fridge', 'insert parsley into fridge', 'insert tomato into fridge', 'inventory', 'look', 'prepare meal', 'put green hot pepper on counter', 'put green hot pepper on stove', 'put green hot pepper on table', 'put parsley on counter', 'put parsley on stove', 'put parsley on table', 'put tomato on counter', 'put tomato on stove', 'put tomato on table', 'take cookbook from table', 'take green apple', 'take knife', 'take red bell pepper from fridge', 'take red hot pepper', 'take white onion from fridge', 'take yellow bell pepper from fridge']
+      
+          Recommended actions:
+            ['put tomato on table', 'take knife', 'cook green hot pepper with stove']
+      
+          Current Goal:
+            You pick up the knife from the ground. > -= Kitchen =-3/13
+      
+          ----------------------------------------
+          输出：
+            {
+              "sub_goal": "take knife",
+              "action": "take knife"
+            }
+      
+      Step13：
+          输入：
+          State:
+            You pick up the knife from the ground. > -= Kitchen =-3/13
+      
+          Historical Actions:
+            [{ "action": "take tomato from counter", "score": "1" }, { "action": "take knife from counter", "score": "0" }, { "action": "dice green hot pepper with knife", "score": "1" }, { "action": "drop knife", "score": "0" }, { "action": "take knife", "score": "0" }]
+      
+          Admissible commands:
+            ['chop parsley with knife', 'chop tomato with knife', 'close fridge', 'close frosted-glass door', 'cook green hot pepper with oven', 'cook green hot pepper with stove', 'cook parsley with oven', 'cook parsley with stove', 'cook tomato with oven', 'cook tomato with stove', 'dice parsley with knife', 'dice tomato with knife', 'drop green hot pepper', 'drop knife', 'drop parsley', 'drop tomato', 'eat green hot pepper', 'eat parsley', 'eat tomato', 'examine cookbook', 'examine counter', 'examine fridge', 'examine green apple', 'examine oven', 'examine red bell pepper', 'examine red hot pepper', 'examine stove', 'examine table', 'examine white onion', 'examine yellow bell pepper', 'go east', 'go north', 'insert green hot pepper into fridge', 'insert knife into fridge', 'insert parsley into fridge', 'insert tomato into fridge', 'inventory', 'look', 'prepare meal', 'put green hot pepper on counter', 'put green hot pepper on stove', 'put green hot pepper on table', 'put knife on counter', 'put knife on stove', 'put knife on table', 'put parsley on counter', 'put parsley on stove', 'put parsley on table', 'put tomato on counter', 'put tomato on stove', 'put tomato on table', 'slice parsley with knife', 'slice tomato with knife', 'take cookbook from table', 'take green apple', 'take red bell pepper from fridge', 'take red hot pepper', 'take white onion from fridge', 'take yellow bell pepper from fridge']
+      
+          Recommended actions:
+            ['take yellow bell pepper from fridge', 'examine red bell pepper', 'chop parsley with knife']
+      
+          Current Goal:
+            You chop the parsley. Your score has just gone up by one point. > -= Kitchen =-4/14
+      
+          ----------------------------------------
+          输出：
+            {
+              "sub_goal": "chop parsley with knife",
+              "action": "chop parsley with knife"
+            }
+      
+      Step14：
+          输入：
+          State:
+            You chop the parsley. Your score has just gone up by one point. > -= Kitchen =-4/14
+      
+          Historical Actions:
+            [{ "action": "take knife from counter", "score": "0" }, { "action": "dice green hot pepper with knife", "score": "1" }, { "action": "drop knife", "score": "0" }, { "action": "take knife", "score": "0" }, { "action": "chop parsley with knife", "score": "1" }]
+      
+          Admissible commands:
+            ['chop tomato with knife', 'close fridge', 'close frosted-glass door', 'cook green hot pepper with oven', 'cook green hot pepper with stove', 'cook parsley with oven', 'cook parsley with stove', 'cook tomato with oven', 'cook tomato with stove', 'dice tomato with knife', 'drop green hot pepper', 'drop knife', 'drop parsley', 'drop tomato', 'eat green hot pepper', 'eat parsley', 'eat tomato', 'examine cookbook', 'examine counter', 'examine fridge', 'examine green apple', 'examine oven', 'examine red bell pepper', 'examine red hot pepper', 'examine stove', 'examine table', 'examine white onion', 'examine yellow bell pepper', 'go east', 'go north', 'insert green hot pepper into fridge', 'insert knife into fridge', 'insert parsley into fridge', 'insert tomato into fridge', 'inventory', 'look', 'prepare meal', 'put green hot pepper on counter', 'put green hot pepper on stove', 'put green hot pepper on table', 'put knife on counter', 'put knife on stove', 'put knife on table', 'put parsley on counter', 'put parsley on stove', 'put parsley on table', 'put tomato on counter', 'put tomato on stove', 'put tomato on table', 'slice tomato with knife', 'take cookbook from table', 'take green apple', 'take red bell pepper from fridge', 'take red hot pepper', 'take white onion from fridge', 'take yellow bell pepper from fridge']
+      
+          Recommended actions:
+            ['drop knife', 'examine counter', 'cook green hot pepper with stove']
+      
+          Current Goal:
+            You drop the knife on the ground. > -= Kitchen =-4/15
+      
+          ----------------------------------------
+          输出：
+            {
+              "sub_goal": "drop knife",
+              "action": "drop knife"
+            }
+      
+      Step15：
+          输入：
+          State:
+            You drop the knife on the ground. > -= Kitchen =-4/15
+      
+          Historical Actions:
+            [{ "action": "dice green hot pepper with knife", "score": "1" }, { "action": "drop knife", "score": "0" }, { "action": "take knife", "score": "0" }, { "action": "chop parsley with knife", "score": "1" }, { "action": "drop knife", "score": "0" }]
+      
+          Admissible commands:
+            ['close fridge', 'close frosted-glass door', 'cook green hot pepper with oven', 'cook green hot pepper with stove', 'cook parsley with oven', 'cook parsley with stove', 'cook tomato with oven', 'cook tomato with stove', 'drop green hot pepper', 'drop parsley', 'drop tomato', 'eat green hot pepper', 'eat parsley', 'eat tomato', 'examine cookbook', 'examine counter', 'examine fridge', 'examine green apple', 'examine knife', 'examine oven', 'examine red bell pepper', 'examine red hot pepper', 'examine stove', 'examine table', 'examine white onion', 'examine yellow bell pepper', 'go east', 'go north', 'insert green hot pepper into fridge', 'insert parsley into fridge', 'insert tomato into fridge', 'inventory', 'look', 'prepare meal', 'put green hot pepper on counter', 'put green hot pepper on stove', 'put green hot pepper on table', 'put parsley on counter', 'put parsley on stove', 'put parsley on table', 'put tomato on counter', 'put tomato on stove', 'put tomato on table', 'take cookbook from table', 'take green apple', 'take knife', 'take red bell pepper from fridge', 'take red hot pepper', 'take white onion from fridge', 'take yellow bell pepper from fridge']
+      
+          Recommended actions:
+            ['eat parsley', 'drop parsley', 'take knife']
+      
+          Current Goal:
+            You pick up the knife from the ground. > -= Kitchen =-4/16
+      
+          ----------------------------------------
+          输出：
+            {
+              "sub_goal": "take knife",
+              "action": "take knife"
+            }
+      
+      Step16：
+          输入：
+          State:
+            You pick up the knife from the ground. > -= Kitchen =-4/16
+      
+          Historical Actions:
+            [{ "action": "drop knife", "score": "0" }, { "action": "take knife", "score": "0" }, { "action": "chop parsley with knife", "score": "1" }, { "action": "drop knife", "score": "0" }, { "action": "take knife", "score": "0" }]
+      
+          Admissible commands:
+            ['chop tomato with knife', 'close fridge', 'close frosted-glass door', 'cook green hot pepper with oven', 'cook green hot pepper with stove', 'cook parsley with oven', 'cook parsley with stove', 'cook tomato with oven', 'cook tomato with stove', 'dice tomato with knife', 'drop green hot pepper', 'drop knife', 'drop parsley', 'drop tomato', 'eat green hot pepper', 'eat parsley', 'eat tomato', 'examine cookbook', 'examine counter', 'examine fridge', 'examine green apple', 'examine oven', 'examine red bell pepper', 'examine red hot pepper', 'examine stove', 'examine table', 'examine white onion', 'examine yellow bell pepper', 'go east', 'go north', 'insert green hot pepper into fridge', 'insert knife into fridge', 'insert parsley into fridge', 'insert tomato into fridge', 'inventory', 'look', 'prepare meal', 'put green hot pepper on counter', 'put green hot pepper on stove', 'put green hot pepper on table', 'put knife on counter', 'put knife on stove', 'put knife on table', 'put parsley on counter', 'put parsley on stove', 'put parsley on table', 'put tomato on counter', 'put tomato on stove', 'put tomato on table', 'slice tomato with knife', 'take cookbook from table', 'take green apple', 'take red bell pepper from fridge', 'take red hot pepper', 'take white onion from fridge', 'take yellow bell pepper from fridge']
+      
+          Recommended actions:
+            ['drop tomato', 'cook parsley with oven', 'dice tomato with knife']
+      
+          Current Goal:
+            You dice the tomato. Your score has just gone up by one point. > -= Kitchen =-5/17
+      
+          ----------------------------------------
+          输出：
+            {
+              "sub_goal": "dice tomato with knife",
+              "action": "dice tomato with knife"
+            }
+      
+      Step17：
+          输入：
+          State:
+            You dice the tomato. Your score has just gone up by one point. > -= Kitchen =-5/17
+      
+          Historical Actions:
+            [{ "action": "take knife", "score": "0" }, { "action": "chop parsley with knife", "score": "1" }, { "action": "drop knife", "score": "0" }, { "action": "take knife", "score": "0" }, { "action": "dice tomato with knife", "score": "1" }]
+      
+          Admissible commands:
+            ['close fridge', 'close frosted-glass door', 'cook green hot pepper with oven', 'cook green hot pepper with stove', 'cook parsley with oven', 'cook parsley with stove', 'cook tomato with oven', 'cook tomato with stove', 'drop green hot pepper', 'drop knife', 'drop parsley', 'drop tomato', 'eat green hot pepper', 'eat parsley', 'eat tomato', 'examine cookbook', 'examine counter', 'examine fridge', 'examine green apple', 'examine oven', 'examine red bell pepper', 'examine red hot pepper', 'examine stove', 'examine table', 'examine white onion', 'examine yellow bell pepper', 'go east', 'go north', 'insert green hot pepper into fridge', 'insert knife into fridge', 'insert parsley into fridge', 'insert tomato into fridge', 'inventory', 'look', 'prepare meal', 'put green hot pepper on counter', 'put green hot pepper on stove', 'put green hot pepper on table', 'put knife on counter', 'put knife on stove', 'put knife on table', 'put parsley on counter', 'put parsley on stove', 'put parsley on table', 'put tomato on counter', 'put tomato on stove', 'put tomato on table', 'take cookbook from table', 'take green apple', 'take red bell pepper from fridge', 'take red hot pepper', 'take white onion from fridge', 'take yellow bell pepper from fridge']
+      
+          Recommended actions:
+            ['put knife on table', 'drop knife', 'look']
+      
+          Current Goal:
+            You drop the knife on the ground. > -= Kitchen =-5/18
+      
+          ----------------------------------------
+          输出：
+            {
+              "sub_goal": "drop knife",
+              "action": "drop knife"
+            }
+      
+      Step18：
+          输入：
+          State:
+            You drop the knife on the ground. > -= Kitchen =-5/18
+      
+          Historical Actions:
+            [{ "action": "chop parsley with knife", "score": "1" }, { "action": "drop knife", "score": "0" }, { "action": "take knife", "score": "0" }, { "action": "dice tomato with knife", "score": "1" }, { "action": "drop knife", "score": "0" }]
+      
+          Admissible commands:
+            ['close fridge', 'close frosted-glass door', 'cook green hot pepper with oven', 'cook green hot pepper with stove', 'cook parsley with oven', 'cook parsley with stove', 'cook tomato with oven', 'cook tomato with stove', 'drop green hot pepper', 'drop parsley', 'drop tomato', 'eat green hot pepper', 'eat parsley', 'eat tomato', 'examine cookbook', 'examine counter', 'examine fridge', 'examine green apple', 'examine knife', 'examine oven', 'examine red bell pepper', 'examine red hot pepper', 'examine stove', 'examine table', 'examine white onion', 'examine yellow bell pepper', 'go east', 'go north', 'insert green hot pepper into fridge', 'insert parsley into fridge', 'insert tomato into fridge', 'inventory', 'look', 'prepare meal', 'put green hot pepper on counter', 'put green hot pepper on stove', 'put green hot pepper on table', 'put parsley on counter', 'put parsley on stove', 'put parsley on table', 'put tomato on counter', 'put tomato on stove', 'put tomato on table', 'take cookbook from table', 'take green apple', 'take knife', 'take red bell pepper from fridge', 'take red hot pepper', 'take white onion from fridge', 'take yellow bell pepper from fridge']
+      
+          Recommended actions:
+            ['insert parsley into fridge', 'prepare meal', 'eat tomato']
+      
+          Current Goal:
+            Adding the meal to your inventory. Your score has just gone up by one point. > -= Kitchen =-6/19
+      
+          ----------------------------------------
+          输出：
+            {
+              "sub_goal": "prepare meal",
+              "action": "prepare meal"
+            }
+      
+      Step19：
+          输入：
+          State:
+            Adding the meal to your inventory. Your score has just gone up by one point. > -= Kitchen =-6/19
+      
+          Historical Actions:
+            [{ "action": "drop knife", "score": "0" }, { "action": "take knife", "score": "0" }, { "action": "dice tomato with knife", "score": "1" }, { "action": "drop knife", "score": "0" }, { "action": "prepare meal", "score": "1" }]
+      
+          Admissible commands:
+            ['close fridge', 'close frosted-glass door', 'cook meal with oven', 'cook meal with stove', 'drop meal', 'eat meal', 'examine cookbook', 'examine counter', 'examine fridge', 'examine green apple', 'examine knife', 'examine oven', 'examine red bell pepper', 'examine red hot pepper', 'examine stove', 'examine table', 'examine white onion', 'examine yellow bell pepper', 'go east', 'go north', 'insert meal into fridge', 'inventory', 'look', 'put meal on counter', 'put meal on stove', 'put meal on table', 'take cookbook from table', 'take green apple', 'take knife', 'take red bell pepper from fridge', 'take red hot pepper', 'take white onion from fridge', 'take yellow bell pepper from fridge']
+      
+          Recommended actions:
+            ['examine yellow bell pepper', 'eat meal', 'look']
+      
+          Current Goal:
+            You eat the meal. Not bad. Your score has just gone up by one point. *** The End *** You scored 7 out of a possible 7, in 20 turns. Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command? > -= Kitchen =-6/19
+      
+          ----------------------------------------
+          输出：
+            {
+              "sub_goal": "eat meal",
+              "action": "eat meal"
             }
     
 

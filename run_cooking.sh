@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 设置初始 seed 值
-seed=1789
+seed=1224
 iterations=5
 
 # Conda 环境名称
@@ -23,9 +23,9 @@ do
     new_seed=$((seed + random_addition))
 
     # 使用 python -m 来运行训练脚本
-    nohup python -m train.cooking.critic --task cooking --seed $new_seed --device cuda:0 > critic_train_${new_seed}.log 2>&1 &
+    nohup python -m train.cooking.critic --task cooking --seed $new_seed --device cuda:0 > ./log/critic_train_${new_seed}.log 2>&1 &
 
-    echo "Training with seed $new_seed started. Logs are being written to critic_train_${new_seed}.log"
+    echo "Training with seed $new_seed started. Logs are being written to ./log/critic_train_${new_seed}.log"
 
     # 使用新的 seed 进行下次迭代
     seed=$new_seed

@@ -335,7 +335,7 @@ class AC_Agent:
         """
             初始化提示词，加入整体目标
         """
-        prompt_path = './config/prompt_ac.yaml'
+        prompt_path = './prompt/prompt_treasure.yaml'
         with open(prompt_path, 'r', encoding='utf-8') as file:
             messages = yaml.safe_load(file)
             return messages
@@ -773,7 +773,7 @@ def set_random_seed(seed: int = 42):
 
 def evaluate(device, model_path):
     request_infos = EnvInfos(admissible_commands=True, objective=True, description=True)
-    env_id = textworld.gym.register_game("./data/simple/mock_game/simple_seed2.z8",
+    env_id = textworld.gym.register_game("./data/treasure/mock_game/treasure_seed2.z8",
                                          max_episode_steps=20,
                                          request_infos=request_infos,
                                          )
