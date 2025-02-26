@@ -377,6 +377,94 @@ def test_replay_buffer_consistency():
         print("ReplayBuffer sampling is NOT consistent. Check random seed settings.")  # 一致性检查失败，提示检查随机种子设置
 
 
+import json
+
+
+import json
+
+import json
+from collections import deque
+
+def mock_recommended_actions(action, admissible_commands):
+    # 随机选择两个动作
+    random_actions = random.sample([cmd for cmd in admissible_commands if cmd != action], 2)
+    # 创建推荐动作列表
+    recommended_actions = [action] + random_actions
+    # 打乱推荐动作列表中的顺序
+    random.shuffle(recommended_actions)
+    return recommended_actions
+
+def process_trajectory(input_file_path, output_file_path):
+    # 加载JSON文件
+    with open(input_file_path, 'r') as file:
+        trajectory_data = json.load(file)
+
+    # 创建一个文本文件来存储输出
+    with open(output_file_path, 'w') as output_file:
+        # 初始化历史动作的队列，最多保存 5 个历史动作
+        historical_actions = deque(maxlen=5)
+
+        # 遍历每个步骤并生成格式化的文本
+        for step_index, step in enumerate(trajectory_data):
+            state = step['state']
+            action = step['action']
+            current_action = action
+            reward = step['reward']
+            admissible_commands = step['infos']['admissible_commands']
+            current_goal = step['next_state']  # 假设Current Goal是下一步的状态描述
+
+
+            # 生成Recommended actions
+            recommended_actions = mock_recommended_actions(action, admissible_commands)
+
+            # 写入 Step 输入部分
+            output_file.write(f"Step{step_index + 1}：\n")
+            output_file.write("    输入：\n")
+
+            # 写入State
+            output_file.write("    State:\n")
+            output_file.write(f"      {state}\n")
+
+            # 写入Historical Actions（包括action和score）
+            output_file.write("\n    Historical Actions:\n")
+            actions_str = "["
+            for action in historical_actions:
+                actions_str += f"{{ \"action\": \"{action['action']}\", \"score\": \"{action['score']}\" }}, "
+            actions_str = actions_str.rstrip(", ") + "]"
+            output_file.write(f"      {actions_str}\n")
+
+            # 写入Admissible commands
+            output_file.write("\n    Admissible commands:\n")
+            output_file.write(f"      {admissible_commands}\n")
+
+            # 写入Recommended actions
+            output_file.write("\n    Recommended actions:\n")
+            output_file.write(f"      {recommended_actions}\n")
+
+            # 写入Current Goal
+            output_file.write("\n    Current Goal:\n")
+            output_file.write(f"      {current_goal}\n")
+
+            # 输出步骤的分隔线
+            output_file.write("\n    ----------------------------------------\n")
+
+
+            # 写入 Step 输出部分，输出部分的action仅为动作名称
+            output_file.write("    输出：\n")
+            output_file.write(f"      {{\n")
+            output_file.write(f"        \"sub_goal\": \"{current_action}\",\n")
+            output_file.write(f"        \"action\": \"{current_action}\"\n")
+            output_file.write(f"      }}\n\n")
+
+            # 将当前动作和得分添加到历史动作队列
+            historical_actions.append({"action": current_action, "score": str(reward)})
+
+    print(f"Output written to '{output_file_path}'.")
+
+
+
+
+
 class Logger:
     """
     自定义日志记录器，支持将输出同时写入日志文件和终端。
@@ -385,8 +473,6 @@ class Logger:
     def __init__(self, log_file_path):
         self.terminal = sys.stdout  # 保留原来的终端输出
         self.log = open(log_file_path, "a", encoding="utf-8")  # 打开日志文件
-
-        
 
     def write(self, message):
         self.terminal.write(message)  # 输出到终端
@@ -398,16 +484,17 @@ class Logger:
 
 
 if __name__ == "__main__":
-    print("Constructing Replay Buffer...")
-    replay_buffer = construct_replay_buffer('./data/simple/oracle_dense/', "./data/simple/lm/",{})
-    print(f"Replay Buffer size: {replay_buffer.size()}")
-    states, actions, rewards, next_states, dones, infos, next_infos, next_actions = replay_buffer.sample(16)
-    print(f"Sampled states: {states}")
-    print(f"Sampled actions: {actions}")
-    print(f"Sampled rewards: {rewards}")
-    print(f"Sampled next_states: {next_states}")
-    print(f"Sampled dones: {dones}")
-    print(f"Sampled infos: {infos}")
-    print(f"Sampled next_infos: {next_infos}")
-    print(f"Sampled next_actions: {next_actions}")
-    
+    # print("Constructing Replay Buffer...")
+    # replay_buffer = construct_replay_buffer('./data/simple/oracle_dense/', "./data/simple/lm/", {})
+    # print(f"Replay Buffer size: {replay_buffer.size()}")
+    # states, actions, rewards, next_states, dones, infos, next_infos, next_actions = replay_buffer.sample(16)
+    # print(f"Sampled states: {states}")
+    # print(f"Sampled actions: {actions}")
+    # print(f"Sampled rewards: {rewards}")
+    # print(f"Sampled next_states: {next_states}")
+    # print(f"Sampled dones: {dones}")
+    # print(f"Sampled infos: {infos}")
+    # print(f"Sampled next_infos: {next_infos}")
+    # print(f"Sampled next_actions: {next_actions}")
+    # 示例调用
+    process_trajectory('./data/treasure/oracle/treasure_seed1_trajectory.json', 'treasure_example.txt')

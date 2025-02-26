@@ -1,0 +1,216 @@
+Step1：
+    输入：
+    State:
+      The dinner is almost ready! It's only missing a grilled milk. -= Bedroom =- You make a grand eccentric entrance into a bedroom. You see a closed normal looking chest drawer right there by you. You can see an antique trunk. You see a king-size bed. But the thing is empty. There is a closed wooden door leading east. > -= Bedroom =-0/1
+
+    Historical Actions:
+      []
+
+    Admissible commands:
+      ['examine antique trunk', 'examine chest drawer', 'examine king-size bed', 'examine wooden door', 'inventory', 'look', 'open antique trunk', 'open chest drawer']
+
+    Recommended actions:
+      ['examine antique trunk', 'examine wooden door', 'open antique trunk']
+
+    Current Goal:
+      You open the antique trunk, revealing an old key. > -= Bedroom =-0/2
+
+    ----------------------------------------
+    输出：
+      {
+        "sub_goal": "open antique trunk",
+        "action": "open antique trunk"
+      }
+
+Step2：
+    输入：
+    State:
+      You open the antique trunk, revealing an old key. > -= Bedroom =-0/2
+
+    Historical Actions:
+      [{ "action": "open antique trunk", "score": "0" }]
+
+    Admissible commands:
+      ['close antique trunk', 'examine antique trunk', 'examine chest drawer', 'examine king-size bed', 'examine old key', 'examine wooden door', 'inventory', 'look', 'open chest drawer', 'take old key from antique trunk']
+
+    Recommended actions:
+      ['examine old key', 'take old key from antique trunk', 'look']
+
+    Current Goal:
+      You take the old key from the antique trunk. > -= Bedroom =-0/3
+
+    ----------------------------------------
+    输出：
+      {
+        "sub_goal": "take old key from antique trunk",
+        "action": "take old key from antique trunk"
+      }
+
+Step3：
+    输入：
+    State:
+      You take the old key from the antique trunk. > -= Bedroom =-0/3
+
+    Historical Actions:
+      [{ "action": "open antique trunk", "score": "0" }, { "action": "take old key from antique trunk", "score": "0" }]
+
+    Admissible commands:
+      ['close antique trunk', 'drop old key', 'examine antique trunk', 'examine chest drawer', 'examine king-size bed', 'examine old key', 'examine wooden door', 'insert old key into antique trunk', 'inventory', 'look', 'open chest drawer', 'put old key on king-size bed', 'unlock wooden door with old key']
+
+    Recommended actions:
+      ['unlock wooden door with old key', 'drop old key', 'examine old key']
+
+    Current Goal:
+      You unlock wooden door. > -= Bedroom =-0/4
+
+    ----------------------------------------
+    输出：
+      {
+        "sub_goal": "unlock wooden door with old key",
+        "action": "unlock wooden door with old key"
+      }
+
+Step4：
+    输入：
+    State:
+      You unlock wooden door. > -= Bedroom =-0/4
+
+    Historical Actions:
+      [{ "action": "open antique trunk", "score": "0" }, { "action": "take old key from antique trunk", "score": "0" }, { "action": "unlock wooden door with old key", "score": "0" }]
+
+    Admissible commands:
+      ['close antique trunk', 'drop old key', 'examine antique trunk', 'examine chest drawer', 'examine king-size bed', 'examine old key', 'examine wooden door', 'insert old key into antique trunk', 'inventory', 'lock wooden door with old key', 'look', 'open chest drawer', 'open wooden door', 'put old key on king-size bed']
+
+    Recommended actions:
+      ['open wooden door', 'lock wooden door with old key', 'examine chest drawer']
+
+    Current Goal:
+      You open wooden door. > -= Bedroom =-0/5
+
+    ----------------------------------------
+    输出：
+      {
+        "sub_goal": "open wooden door",
+        "action": "open wooden door"
+      }
+
+Step5：
+    输入：
+    State:
+      You open wooden door. > -= Bedroom =-0/5
+
+    Historical Actions:
+      [{ "action": "open antique trunk", "score": "0" }, { "action": "take old key from antique trunk", "score": "0" }, { "action": "unlock wooden door with old key", "score": "0" }, { "action": "open wooden door", "score": "0" }]
+
+    Admissible commands:
+      ['close antique trunk', 'close wooden door', 'drop old key', 'examine antique trunk', 'examine chest drawer', 'examine king-size bed', 'examine old key', 'examine wooden door', 'go east', 'insert old key into antique trunk', 'inventory', 'look', 'open chest drawer', 'put old key on king-size bed']
+
+    Recommended actions:
+      ['go east', 'examine wooden door', 'examine old key']
+
+    Current Goal:
+      -= Kitchen =- Well how about that, you are in a place we're calling a kitchen. The room is well lit. You make out a closed refrigerator nearby. You can see a counter. The counter is normal. But the thing hasn't got anything on it. You rest your hand against a wall, but you miss the wall and fall onto a stove. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the stove. You see a kitchen island. On the kitchen island you can see a note. There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. You need an unguarded exit? You should try going south. Your score has just gone up by one point. > -= Kitchen =-1/6
+
+    ----------------------------------------
+    输出：
+      {
+        "sub_goal": "go east",
+        "action": "go east"
+      }
+
+Step6：
+    输入：
+    State:
+      -= Kitchen =- Well how about that, you are in a place we're calling a kitchen. The room is well lit. You make out a closed refrigerator nearby. You can see a counter. The counter is normal. But the thing hasn't got anything on it. You rest your hand against a wall, but you miss the wall and fall onto a stove. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the stove. You see a kitchen island. On the kitchen island you can see a note. There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. You need an unguarded exit? You should try going south. Your score has just gone up by one point. > -= Kitchen =-1/6
+
+    Historical Actions:
+      [{ "action": "open antique trunk", "score": "0" }, { "action": "take old key from antique trunk", "score": "0" }, { "action": "unlock wooden door with old key", "score": "0" }, { "action": "open wooden door", "score": "0" }, { "action": "go east", "score": "1" }]
+
+    Admissible commands:
+      ['close wooden door', 'drop old key', 'examine counter', 'examine kitchen island', 'examine note', 'examine old key', 'examine refrigerator', 'examine screen door', 'examine stove', 'examine wooden door', 'go north', 'go south', 'go west', 'inventory', 'look', 'open refrigerator', 'open screen door', 'put old key on counter', 'put old key on kitchen island', 'put old key on stove', 'take note from kitchen island']
+
+    Recommended actions:
+      ['go south', 'examine old key', 'go west']
+
+    Current Goal:
+      -= Living Room =- Well I'll be, you are in the place we're calling the living room. You bend down to tie your shoe. When you stand up, you notice a couch. You see a milk on the couch. You see a low table. The low table is standard. On the low table you see a remote. You scan the room for a tv, and you find a tv. The tv is ordinary. Unfortunately, there isn't a thing on it. There is an exit to the north. Don't worry, it is unblocked. > -= Living Room =-1/7
+
+    ----------------------------------------
+    输出：
+      {
+        "sub_goal": "go south",
+        "action": "go south"
+      }
+
+Step7：
+    输入：
+    State:
+      -= Living Room =- Well I'll be, you are in the place we're calling the living room. You bend down to tie your shoe. When you stand up, you notice a couch. You see a milk on the couch. You see a low table. The low table is standard. On the low table you see a remote. You scan the room for a tv, and you find a tv. The tv is ordinary. Unfortunately, there isn't a thing on it. There is an exit to the north. Don't worry, it is unblocked. > -= Living Room =-1/7
+
+    Historical Actions:
+      [{ "action": "take old key from antique trunk", "score": "0" }, { "action": "unlock wooden door with old key", "score": "0" }, { "action": "open wooden door", "score": "0" }, { "action": "go east", "score": "1" }, { "action": "go south", "score": "0" }]
+
+    Admissible commands:
+      ['drop old key', 'examine couch', 'examine low table', 'examine milk', 'examine old key', 'examine remote', 'examine tv', 'go north', 'inventory', 'look', 'put old key on couch', 'put old key on low table', 'put old key on tv', 'take milk from couch', 'take remote from low table']
+
+    Recommended actions:
+      ['examine tv', 'look', 'take milk from couch']
+
+    Current Goal:
+      You take the milk from the couch. Your score has just gone up by one point. > -= Living Room =-2/8
+
+    ----------------------------------------
+    输出：
+      {
+        "sub_goal": "take milk from couch",
+        "action": "take milk from couch"
+      }
+
+Step8：
+    输入：
+    State:
+      You take the milk from the couch. Your score has just gone up by one point. > -= Living Room =-2/8
+
+    Historical Actions:
+      [{ "action": "unlock wooden door with old key", "score": "0" }, { "action": "open wooden door", "score": "0" }, { "action": "go east", "score": "1" }, { "action": "go south", "score": "0" }, { "action": "take milk from couch", "score": "1" }]
+
+    Admissible commands:
+      ['drop milk', 'drop old key', 'eat milk', 'examine couch', 'examine low table', 'examine milk', 'examine old key', 'examine remote', 'examine tv', 'go north', 'inventory', 'look', 'put milk on couch', 'put milk on low table', 'put milk on tv', 'put old key on couch', 'put old key on low table', 'put old key on tv', 'take remote from low table']
+
+    Recommended actions:
+      ['go north', 'examine old key', 'put old key on tv']
+
+    Current Goal:
+      -= Kitchen =- Well how about that, you are in a place we're calling a kitchen. The room is well lit. You make out a closed refrigerator nearby. You can see a counter. The counter is normal. But the thing hasn't got anything on it. You rest your hand against a wall, but you miss the wall and fall onto a stove. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the stove. You see a kitchen island. On the kitchen island you can see a note. There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. You need an unguarded exit? You should try going south. > -= Kitchen =-2/9
+
+    ----------------------------------------
+    输出：
+      {
+        "sub_goal": "go north",
+        "action": "go north"
+      }
+
+Step9：
+    输入：
+    State:
+      -= Kitchen =- Well how about that, you are in a place we're calling a kitchen. The room is well lit. You make out a closed refrigerator nearby. You can see a counter. The counter is normal. But the thing hasn't got anything on it. You rest your hand against a wall, but you miss the wall and fall onto a stove. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the stove. You see a kitchen island. On the kitchen island you can see a note. There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. You need an unguarded exit? You should try going south. > -= Kitchen =-2/9
+
+    Historical Actions:
+      [{ "action": "open wooden door", "score": "0" }, { "action": "go east", "score": "1" }, { "action": "go south", "score": "0" }, { "action": "take milk from couch", "score": "1" }, { "action": "go north", "score": "0" }]
+
+    Admissible commands:
+      ['close wooden door', 'drop milk', 'drop old key', 'eat milk', 'examine counter', 'examine kitchen island', 'examine milk', 'examine note', 'examine old key', 'examine refrigerator', 'examine screen door', 'examine stove', 'examine wooden door', 'go north', 'go south', 'go west', 'inventory', 'look', 'open refrigerator', 'open screen door', 'put milk on counter', 'put milk on kitchen island', 'put milk on stove', 'put old key on counter', 'put old key on kitchen island', 'put old key on stove', 'take note from kitchen island']
+
+    Recommended actions:
+      ['put milk on stove', 'go south', 'drop milk']
+
+    Current Goal:
+      You put the milk on the stove. Your score has just gone up by one point. *** The End *** You scored 3 out of a possible 3, in 10 turns. Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command? > -= Kitchen =-2/9
+
+    ----------------------------------------
+    输出：
+      {
+        "sub_goal": "put milk on stove",
+        "action": "put milk on stove"
+      }
+

@@ -1,0 +1,240 @@
+Step1：
+    输入：
+    State:
+      Welcome to another exciting episode of TextWorld! Here is how to play! First stop, try to go to the east. Following that, travel south. And then, attempt to take a trip west. Then, pick up the American latchkey from the floor of the bedchamber. After that, take a trip east. Then, unlock the American gate. And then, make it so that the American gate within the cubicle is ajar. After that, make an attempt to go east. Then, travel east. After that, lift the keycard from the floor of the workshop. And if you do that, you're the winner! -= Spare Room =- I am sorry to announce that you are now in the spare room. You make out a workbench. Wow, isn't TextWorld just the best? The workbench is typical. However, the workbench, like an empty workbench, has nothing on it. You see a stand. The stand is ordinary. But oh no! there's nothing on this piece of trash. Oh! Why couldn't there just be stuff on it? There is an exit to the east. Don't worry, it is unguarded. You need an unblocked exit? You should try going north. There is an unblocked exit to the south. > -= Spare Room =-0/1
+
+    Historical Actions:
+      []
+
+    Admissible commands:
+      ['examine stand', 'examine workbench', 'go east', 'go north', 'go south', 'inventory', 'look']
+
+    Recommended actions:
+      ['look', 'go east', 'go south']
+
+    Current Goal:
+      -= Studio =- You are in a studio. An usual one. There is an exit to the north. Don't worry, it is unguarded. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked. There is a loaf of bread on the floor. > -= Studio =-0/2
+
+    ----------------------------------------
+    输出：
+      {
+        "sub_goal": "go east",
+        "action": "go east"
+      }
+
+Step2：
+    输入：
+    State:
+      -= Studio =- You are in a studio. An usual one. There is an exit to the north. Don't worry, it is unguarded. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked. There is a loaf of bread on the floor. > -= Studio =-0/2
+
+    Historical Actions:
+      [{ "action": "go east", "score": "0" }]
+
+    Admissible commands:
+      ['examine loaf of bread', 'go north', 'go south', 'go west', 'inventory', 'look', 'take loaf of bread']
+
+    Recommended actions:
+      ['go west', 'look', 'go south']
+
+    Current Goal:
+      -= Cubicle =- You are in a cubicle. It seems to be pretty standard here. You start to take note of what's in the room. There is a closed American gate leading east. There is an unguarded exit to the north. There is an unguarded exit to the west. > -= Cubicle =-0/3
+
+    ----------------------------------------
+    输出：
+      {
+        "sub_goal": "go south",
+        "action": "go south"
+      }
+
+Step3：
+    输入：
+    State:
+      -= Cubicle =- You are in a cubicle. It seems to be pretty standard here. You start to take note of what's in the room. There is a closed American gate leading east. There is an unguarded exit to the north. There is an unguarded exit to the west. > -= Cubicle =-0/3
+
+    Historical Actions:
+      [{ "action": "go east", "score": "0" }, { "action": "go south", "score": "0" }]
+
+    Admissible commands:
+      ['examine American gate', 'go north', 'go west', 'inventory', 'look']
+
+    Recommended actions:
+      ['inventory', 'go west', 'examine American gate']
+
+    Current Goal:
+      -= Bedchamber =- Well, here we are in the bedchamber. There is an exit to the east. Don't worry, it is unguarded. There is an exit to the north. Don't worry, it is unguarded. There is an American latchkey on the floor. > -= Bedchamber =-0/4
+
+    ----------------------------------------
+    输出：
+      {
+        "sub_goal": "go west",
+        "action": "go west"
+      }
+
+Step4：
+    输入：
+    State:
+      -= Bedchamber =- Well, here we are in the bedchamber. There is an exit to the east. Don't worry, it is unguarded. There is an exit to the north. Don't worry, it is unguarded. There is an American latchkey on the floor. > -= Bedchamber =-0/4
+
+    Historical Actions:
+      [{ "action": "go east", "score": "0" }, { "action": "go south", "score": "0" }, { "action": "go west", "score": "0" }]
+
+    Admissible commands:
+      ['examine American latchkey', 'go east', 'go north', 'inventory', 'look', 'take American latchkey']
+
+    Recommended actions:
+      ['look', 'take American latchkey', 'go east']
+
+    Current Goal:
+      You pick up the American latchkey from the ground. > -= Bedchamber =-0/5
+
+    ----------------------------------------
+    输出：
+      {
+        "sub_goal": "take American latchkey",
+        "action": "take American latchkey"
+      }
+
+Step5：
+    输入：
+    State:
+      You pick up the American latchkey from the ground. > -= Bedchamber =-0/5
+
+    Historical Actions:
+      [{ "action": "go east", "score": "0" }, { "action": "go south", "score": "0" }, { "action": "go west", "score": "0" }, { "action": "take American latchkey", "score": "0" }]
+
+    Admissible commands:
+      ['drop American latchkey', 'examine American latchkey', 'go east', 'go north', 'inventory', 'look']
+
+    Recommended actions:
+      ['look', 'go east', 'drop American latchkey']
+
+    Current Goal:
+      -= Cubicle =- You are in a cubicle. It seems to be pretty standard here. You start to take note of what's in the room. There is a closed American gate leading east. There is an unguarded exit to the north. There is an unguarded exit to the west. > -= Cubicle =-0/6
+
+    ----------------------------------------
+    输出：
+      {
+        "sub_goal": "go east",
+        "action": "go east"
+      }
+
+Step6：
+    输入：
+    State:
+      -= Cubicle =- You are in a cubicle. It seems to be pretty standard here. You start to take note of what's in the room. There is a closed American gate leading east. There is an unguarded exit to the north. There is an unguarded exit to the west. > -= Cubicle =-0/6
+
+    Historical Actions:
+      [{ "action": "go east", "score": "0" }, { "action": "go south", "score": "0" }, { "action": "go west", "score": "0" }, { "action": "take American latchkey", "score": "0" }, { "action": "go east", "score": "0" }]
+
+    Admissible commands:
+      ['drop American latchkey', 'examine American gate', 'examine American latchkey', 'go north', 'go west', 'inventory', 'look', 'unlock American gate with American latchkey']
+
+    Recommended actions:
+      ['drop American latchkey', 'unlock American gate with American latchkey', 'inventory']
+
+    Current Goal:
+      You unlock American gate. > -= Cubicle =-0/7
+
+    ----------------------------------------
+    输出：
+      {
+        "sub_goal": "unlock American gate with American latchkey",
+        "action": "unlock American gate with American latchkey"
+      }
+
+Step7：
+    输入：
+    State:
+      You unlock American gate. > -= Cubicle =-0/7
+
+    Historical Actions:
+      [{ "action": "go south", "score": "0" }, { "action": "go west", "score": "0" }, { "action": "take American latchkey", "score": "0" }, { "action": "go east", "score": "0" }, { "action": "unlock American gate with American latchkey", "score": "0" }]
+
+    Admissible commands:
+      ['drop American latchkey', 'examine American gate', 'examine American latchkey', 'go north', 'go west', 'inventory', 'lock American gate with American latchkey', 'look', 'open American gate']
+
+    Recommended actions:
+      ['open American gate', 'drop American latchkey', 'lock American gate with American latchkey']
+
+    Current Goal:
+      You open American gate. > -= Cubicle =-0/8
+
+    ----------------------------------------
+    输出：
+      {
+        "sub_goal": "open American gate",
+        "action": "open American gate"
+      }
+
+Step8：
+    输入：
+    State:
+      You open American gate. > -= Cubicle =-0/8
+
+    Historical Actions:
+      [{ "action": "go west", "score": "0" }, { "action": "take American latchkey", "score": "0" }, { "action": "go east", "score": "0" }, { "action": "unlock American gate with American latchkey", "score": "0" }, { "action": "open American gate", "score": "0" }]
+
+    Admissible commands:
+      ['close American gate', 'drop American latchkey', 'examine American gate', 'examine American latchkey', 'go east', 'go north', 'go west', 'inventory', 'look']
+
+    Recommended actions:
+      ['go east', 'close American gate', 'go north']
+
+    Current Goal:
+      -= Laundromat =- You find yourself in a laundromat. An usual kind of place. Let's see what's in here. There is an open American gate leading west. There is an open wooden passageway leading east. > -= Laundromat =-0/9
+
+    ----------------------------------------
+    输出：
+      {
+        "sub_goal": "go east",
+        "action": "go east"
+      }
+
+Step9：
+    输入：
+    State:
+      -= Laundromat =- You find yourself in a laundromat. An usual kind of place. Let's see what's in here. There is an open American gate leading west. There is an open wooden passageway leading east. > -= Laundromat =-0/9
+
+    Historical Actions:
+      [{ "action": "take American latchkey", "score": "0" }, { "action": "go east", "score": "0" }, { "action": "unlock American gate with American latchkey", "score": "0" }, { "action": "open American gate", "score": "0" }, { "action": "go east", "score": "0" }]
+
+    Admissible commands:
+      ['close American gate', 'close wooden passageway', 'drop American latchkey', 'examine American gate', 'examine American latchkey', 'examine wooden passageway', 'go east', 'go west', 'inventory', 'look']
+
+    Recommended actions:
+      ['examine wooden passageway', 'close American gate', 'go east']
+
+    Current Goal:
+      -= Workshop =- Well, here we are in a workshop. Okay, just remember what you're here to do, and everything will go great. There is an open pine door leading east. There is an open wooden passageway leading west. You need an unguarded exit? You should try going north. There is a keycard on the floor. > -= Workshop =-0/10
+
+    ----------------------------------------
+    输出：
+      {
+        "sub_goal": "go east",
+        "action": "go east"
+      }
+
+Step10：
+    输入：
+    State:
+      -= Workshop =- Well, here we are in a workshop. Okay, just remember what you're here to do, and everything will go great. There is an open pine door leading east. There is an open wooden passageway leading west. You need an unguarded exit? You should try going north. There is a keycard on the floor. > -= Workshop =-0/10
+
+    Historical Actions:
+      [{ "action": "go east", "score": "0" }, { "action": "unlock American gate with American latchkey", "score": "0" }, { "action": "open American gate", "score": "0" }, { "action": "go east", "score": "0" }, { "action": "go east", "score": "0" }]
+
+    Admissible commands:
+      ['close pine door', 'close wooden passageway', 'drop American latchkey', 'examine American latchkey', 'examine keycard', 'examine pine door', 'examine wooden passageway', 'go east', 'go north', 'go west', 'inventory', 'look', 'take keycard']
+
+    Recommended actions:
+      ['drop American latchkey', 'examine keycard', 'take keycard']
+
+    Current Goal:
+      You pick up the keycard from the ground. Your score has just gone up by one point. *** The End *** You scored 1 out of a possible 1, in 11 turns. Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command? > -= Workshop =-0/10
+
+    ----------------------------------------
+    输出：
+      {
+        "sub_goal": "take keycard",
+        "action": "take keycard"
+      }
+

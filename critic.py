@@ -319,6 +319,7 @@ class AC_Agent:
 
         system.append(user_msg)
         message: List[Dict[str, str]] = system
+        # print(json.dumps(message, indent=4, ensure_ascii=False))
 
         # 调用模型生成回复
         answer: Dict[str, str] = self.model.chat(message)
@@ -772,7 +773,7 @@ def set_random_seed(seed: int = 42):
 
 def evaluate(device, model_path):
     request_infos = EnvInfos(admissible_commands=True, objective=True, description=True)
-    env_id = textworld.gym.register_game("./data/treasure/mock_game/treasure_seed1.z8",
+    env_id = textworld.gym.register_game("./data/simple/mock_game/simple_seed2.z8",
                                          max_episode_steps=20,
                                          request_infos=request_infos,
                                          )
@@ -794,6 +795,8 @@ def evaluate(device, model_path):
         print('----------------------第{}回合--------------------------'.format(i))
         i += 1
         print(f"[obs] {obs}")
+        admissible_commands = infos.get('admissible_commands', [])
+        print(f"[admissible_commands] {admissible_commands}")
         command = agent.round(obs, infos=infos)
         print(f"[command] {command}")
         obs, score, done, infos = env.step(command)
