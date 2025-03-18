@@ -287,6 +287,7 @@ class AC_Agent:
         except Exception as e:
             print(f"[ERROR] Failed to load model info from {model_info_path}: {e}")
 
+
     def load_config(self, config_path: str = './config/agent.yaml') -> Dict[str, Any]:
         """
         从配置文件加载 YAML 配置
@@ -335,7 +336,7 @@ class AC_Agent:
         """
             初始化提示词，加入整体目标
         """
-        prompt_path = './prompt/prompt_treasure.yaml'
+        prompt_path = './prompt/prompt_simple.yaml'
         with open(prompt_path, 'r', encoding='utf-8') as file:
             messages = yaml.safe_load(file)
             return messages
@@ -773,7 +774,7 @@ def set_random_seed(seed: int = 42):
 
 def evaluate(device, model_path):
     request_infos = EnvInfos(admissible_commands=True, objective=True, description=True)
-    env_id = textworld.gym.register_game("./data/treasure/mock_game/treasure_seed2.z8",
+    env_id = textworld.gym.register_game("./data/simple/mock_game/simple_seed2.z8",
                                          max_episode_steps=20,
                                          request_infos=request_infos,
                                          )

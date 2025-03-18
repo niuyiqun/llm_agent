@@ -65,7 +65,7 @@ def test_actions_with_q_values(i, agent, data, file_name):
     对读取的文件内容进行测试，计算 Q 值并输出
     """
     if i == 1:
-
+        print("================agent.critic_1.eval()===================")
         agent.critic_1.eval()
 
         correct_count = 0  # 统计最优动作为 Q 值最高的次数
@@ -117,6 +117,7 @@ def test_actions_with_q_values(i, agent, data, file_name):
         print(f"Top-3 Accuracy for {file_name}: {top3_accuracy * 100:.2f}%")
         return accuracy, top3_accuracy, total_count
     elif i == 2:
+        print("================agent.critic_2.eval()===================")
         agent.critic_2.eval()
 
         correct_count = 0  # 统计最优动作为 Q 值最高的次数
@@ -168,6 +169,7 @@ def test_actions_with_q_values(i, agent, data, file_name):
         print(f"Top-3 Accuracy for {file_name}: {top3_accuracy * 100:.2f}%")
         return accuracy, top3_accuracy, total_count
     else:
+        print("================agent.critic_1.eval() and agent.critic_2.eval()===================")
         agent.critic_1.eval()
         agent.critic_2.eval()
 

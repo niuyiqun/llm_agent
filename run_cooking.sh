@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 设置初始 seed 值
-seed=1224
+seed=2001324
 iterations=5
 
 # Conda 环境名称

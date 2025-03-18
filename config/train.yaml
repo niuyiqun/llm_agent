@@ -20,6 +20,7 @@ simple:
   dynamic_ratio_max: 0.8
   dynamic_step: 0.05
 
+
 cooking:
   game_file_path: "./data/cooking/mock_game/"
   walkthroughs_file_path: "./data/cooking/walkthroughs/"

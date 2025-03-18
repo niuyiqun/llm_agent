@@ -497,4 +497,4 @@ if __name__ == "__main__":
     # print(f"Sampled next_infos: {next_infos}")
     # print(f"Sampled next_actions: {next_actions}")
     # 示例调用
-    process_trajectory('./data/treasure/oracle/treasure_seed1_trajectory.json', 'treasure_example.txt')
+    process_trajectory('./data/treasure/oracle/treasure_seed1_trajectory.json', 'prompt/treasure_example.txt')
