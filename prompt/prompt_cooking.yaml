@@ -15,6 +15,36 @@
         "sub_goal": "string", // 当前的短期目标，即通过本次行动希望实现的具体目标（英文）
         "action": "string"    // 从可执行命令中选择的下一步行动（英文）
       }
+    
+    ### 必备游戏知识
+      1. **环境认知命令**：
+         - `look`：获取当前房间的完整描述
+         - `examine <对象>`：查看物品的详细属性（如`examine trunk`查看箱子状态）
+         - `inventory`：显示当前携带的所有物品
+  
+      2. **物品管理命令**：
+         - `take <物品>`：从场景中拾取物品（需物品可见且可互动）
+         - `drop <物品>`：丢弃已持有的物品
+         - `use <物品A> with <物品B>`：组合使用两个物品（如钥匙与门）
+  
+      3. **空间移动命令**：
+         - `go <方向>`：向有效出口移动（需存在对应方向的出口）
+         - `open/close <对象>`：操作可开关的门/容器（如`open door`）
+      
+      4. **烹饪操作命令**
+         - `chop <食材>`：切割食材（需持有刀具，如chop tomato）
+         - `take <knife>`：从场景拿起刀
+    
+    ### 游戏核心机制
+      1. **任务流程**：
+         定位厨房 → 找到食谱cookbook → 根据cookbook完成食材制作 → 享用料理
+         (例：到厨房→查看食谱→切菜→享用食物)
+  
+      2. **关键物品链**：
+         cookbook → 原料清单 → 指定厨具 → 成品生成
+  
+      3. **空间逻辑**：
+         卧室（起点）→ 厨房
 
     示例:
       Step1：
@@ -32,12 +62,12 @@
             ['drop green apple', 'drop green hot pepper', 'inventory']
       
           Current Goal:
-            You are carrying: a green hot pepper, a green apple and a red hot pepper. > -= Bedroom =-0/2
+            Prepare and enjoy a meal by strictly following the cookbook's instructions
       
           ----------------------------------------
           输出：
             {
-              "sub_goal": "inventory",
+              "sub_goal": "Check current inventory to assess available items",
               "action": "inventory"
             }
 
@@ -56,12 +86,12 @@
             ['go north', 'eat green apple', 'look']
       
           Current Goal:
-            -= Livingroom =- You're now in a livingroom. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. You see a sofa. The sofa is comfy. But the thing is empty. You don't like doors? Why not try going east, that entranceway is not blocked by one. You don't like doors? Why not try going south, that entranceway is not blocked by one. There is an exit to the west. > -= Livingroom =-0/3
+            Prepare and enjoy a meal by strictly following the cookbook's instructions
       
           ----------------------------------------
           输出：
             {
-              "sub_goal": "go north",
+              "sub_goal": "Navigate to the kitchen area to access cooking tools",
               "action": "go north"
             }
       
@@ -80,12 +110,12 @@
             ['eat green apple', 'go west', 'go east']
       
           Current Goal:
-            -= Kitchen =- Well I'll be, you are in the place we're calling the kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. You can make out a fridge. The fridge contains a parsley, a red bell pepper, a yellow bell pepper and a white onion. You can make out a closed oven. You make out a table. On the table you make out a cookbook! You can make out a counter. You see a tomato and a knife on the counter. You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it! There is an open frosted-glass door leading north. You don't like doors? Why not try going east, that entranceway is not blocked by one. > -= Kitchen =-0/4
+            Prepare and enjoy a meal by strictly following the cookbook's instructions
       
           ----------------------------------------
           输出：
             {
-              "sub_goal": "go west",
+              "sub_goal": "Locate the cookbook on the table to read the recipe",
               "action": "go west"
             }
       
@@ -104,12 +134,12 @@
             ['examine cookbook', 'look', 'examine parsley']
       
           Current Goal:
-            You open the copy of "Cooking: A Modern Approach (3rd Ed.)" and start reading: Recipe #1 --------- Gather all following ingredients and follow the directions to prepare this tasty meal. Ingredients: green hot pepper parsley tomato Directions: dice the green hot pepper chop the parsley dice the tomato prepare meal > -= Kitchen =-0/5
+            Prepare and enjoy a meal by strictly following the cookbook's instructions
       
           ----------------------------------------
           输出：
             {
-              "sub_goal": "examine cookbook",
+              "sub_goal": "Acquire cooking instructions from the recipe book",
               "action": "examine cookbook"
             }
       
@@ -128,12 +158,12 @@
             ['examine white onion', 'examine red bell pepper', 'drop green apple']
       
           Current Goal:
-            You drop the green apple on the ground. > -= Kitchen =-0/6
+            Prepare and enjoy a meal by strictly following the cookbook's instructions
       
           ----------------------------------------
           输出：
             {
-              "sub_goal": "drop green apple",
+              "sub_goal": "Free inventory space for essential ingredients",
               "action": "drop green apple"
             }
       
@@ -152,12 +182,12 @@
             ['drop red hot pepper', 'prepare meal', 'put red hot pepper on stove']
       
           Current Goal:
-            You drop the red hot pepper on the ground. > -= Kitchen =-0/7
+            Prepare and enjoy a meal by strictly following the cookbook's instructions
       
           ----------------------------------------
           输出：
             {
-              "sub_goal": "drop red hot pepper",
+              "sub_goal": "Remove non-essential items to focus on recipe requirements",
               "action": "drop red hot pepper"
             }
       
@@ -176,12 +206,12 @@
             ['examine red hot pepper', 'look', 'take parsley from fridge']
       
           Current Goal:
-            You take the parsley from the fridge. Your score has just gone up by one point. > -= Kitchen =-1/8
+            Prepare and enjoy a meal by strictly following the cookbook's instructions
       
           ----------------------------------------
           输出：
             {
-              "sub_goal": "take parsley from fridge",
+              "sub_goal": "Collect parsley from fridge as first recipe ingredient",
               "action": "take parsley from fridge"
             }
       
@@ -200,12 +230,12 @@
             ['take yellow bell pepper from fridge', 'examine table', 'take tomato from counter']
       
           Current Goal:
-            You take the tomato from the counter. Your score has just gone up by one point. > -= Kitchen =-2/9
+            Prepare and enjoy a meal by strictly following the cookbook's instructions
       
           ----------------------------------------
           输出：
             {
-              "sub_goal": "take tomato from counter",
+              "sub_goal": "Gather tomato from counter as second recipe component",
               "action": "take tomato from counter"
             }
       
@@ -224,12 +254,12 @@
             ['cook parsley with stove', 'take knife from counter', 'go north']
       
           Current Goal:
-            You take the knife from the counter. > -= Kitchen =-2/10
+            Prepare and enjoy a meal by strictly following the cookbook's instructions
       
           ----------------------------------------
           输出：
             {
-              "sub_goal": "take knife from counter",
+              "sub_goal": "Obtain knife for food preparation tasks",
               "action": "take knife from counter"
             }
       
@@ -248,12 +278,12 @@
             ['dice green hot pepper with knife', 'examine counter', 'examine yellow bell pepper']
       
           Current Goal:
-            You dice the green hot pepper. Your score has just gone up by one point. > -= Kitchen =-3/11
+            Prepare and enjoy a meal by strictly following the cookbook's instructions
       
           ----------------------------------------
           输出：
             {
-              "sub_goal": "dice green hot pepper with knife",
+              "sub_goal": "Process green hot pepper according to recipe directions",
               "action": "dice green hot pepper with knife"
             }
       
@@ -272,12 +302,12 @@
             ['drop knife', 'examine white onion', 'go north']
       
           Current Goal:
-            You drop the knife on the ground. > -= Kitchen =-3/12
+            Prepare and enjoy a meal by strictly following the cookbook's instructions
       
           ----------------------------------------
           输出：
             {
-              "sub_goal": "drop knife",
+              "sub_goal": "Clear workspace by removing unused utensil",
               "action": "drop knife"
             }
       
@@ -296,12 +326,12 @@
             ['put tomato on table', 'take knife', 'cook green hot pepper with stove']
       
           Current Goal:
-            You pick up the knife from the ground. > -= Kitchen =-3/13
+            Prepare and enjoy a meal by strictly following the cookbook's instructions
       
           ----------------------------------------
           输出：
             {
-              "sub_goal": "take knife",
+              "sub_goal": "Retrieve knife for continued ingredient preparation",
               "action": "take knife"
             }
       
@@ -320,12 +350,12 @@
             ['take yellow bell pepper from fridge', 'examine red bell pepper', 'chop parsley with knife']
       
           Current Goal:
-            You chop the parsley. Your score has just gone up by one point. > -= Kitchen =-4/14
+            Prepare and enjoy a meal by strictly following the cookbook's instructions
       
           ----------------------------------------
           输出：
             {
-              "sub_goal": "chop parsley with knife",
+              "sub_goal": "Prepare parsley as specified in cooking instructions",
               "action": "chop parsley with knife"
             }
       
@@ -344,12 +374,12 @@
             ['drop knife', 'examine counter', 'cook green hot pepper with stove']
       
           Current Goal:
-            You drop the knife on the ground. > -= Kitchen =-4/15
+            Prepare and enjoy a meal by strictly following the cookbook's instructions
       
           ----------------------------------------
           输出：
             {
-              "sub_goal": "drop knife",
+              "sub_goal": "Maintain tidy workspace by storing unused tool",
               "action": "drop knife"
             }
       
@@ -368,12 +398,12 @@
             ['eat parsley', 'drop parsley', 'take knife']
       
           Current Goal:
-            You pick up the knife from the ground. > -= Kitchen =-4/16
+            Prepare and enjoy a meal by strictly following the cookbook's instructions
       
           ----------------------------------------
           输出：
             {
-              "sub_goal": "take knife",
+              "sub_goal": "Reacquire knife for final preparation step",
               "action": "take knife"
             }
       
@@ -392,12 +422,12 @@
             ['drop tomato', 'cook parsley with oven', 'dice tomato with knife']
       
           Current Goal:
-            You dice the tomato. Your score has just gone up by one point. > -= Kitchen =-5/17
+            Prepare and enjoy a meal by strictly following the cookbook's instructions
       
           ----------------------------------------
           输出：
             {
-              "sub_goal": "dice tomato with knife",
+              "sub_goal": "Process tomato to complete ingredient preparation",
               "action": "dice tomato with knife"
             }
       
@@ -416,12 +446,12 @@
             ['put knife on table', 'drop knife', 'look']
       
           Current Goal:
-            You drop the knife on the ground. > -= Kitchen =-5/18
+            Prepare and enjoy a meal by strictly following the cookbook's instructions
       
           ----------------------------------------
           输出：
             {
-              "sub_goal": "drop knife",
+              "sub_goal": "Finalize workspace cleanup after preparation",
               "action": "drop knife"
             }
       
@@ -440,12 +470,12 @@
             ['insert parsley into fridge', 'prepare meal', 'eat tomato']
       
           Current Goal:
-            Adding the meal to your inventory. Your score has just gone up by one point. > -= Kitchen =-6/19
+            Prepare and enjoy a meal by strictly following the cookbook's instructions
       
           ----------------------------------------
           输出：
             {
-              "sub_goal": "prepare meal",
+              "sub_goal": "Combine prepared ingredients to create meal",
               "action": "prepare meal"
             }
       
@@ -464,12 +494,12 @@
             ['examine yellow bell pepper', 'eat meal', 'look']
       
           Current Goal:
-            You eat the meal. Not bad. Your score has just gone up by one point. *** The End *** You scored 7 out of a possible 7, in 20 turns. Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command? > -= Kitchen =-6/19
+            Prepare and enjoy a meal by strictly following the cookbook's instructions
       
           ----------------------------------------
           输出：
             {
-              "sub_goal": "eat meal",
+              "sub_goal": "Consume prepared meal to complete objective",
               "action": "eat meal"
             }
     

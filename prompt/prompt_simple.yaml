@@ -15,8 +15,38 @@
         "sub_goal": "string", // 当前的短期目标，即通过本次行动希望实现的具体目标（英文）
         "action": "string"    // 从可执行命令中选择的下一步行动（英文）
       }
+    
+    ### 必备游戏知识
+      1. **环境认知命令**：
+         - `look`：获取当前房间的完整描述
+         - `examine <对象>`：查看物品的详细属性（如`examine trunk`查看箱子状态）
+         - `inventory`：显示当前携带的所有物品
+  
+      2. **物品管理命令**：
+         - `take <物品>`：从场景中拾取物品（需物品可见且可互动）
+         - `drop <物品>`：丢弃已持有的物品
+         - `use <物品A> with <物品B>`：组合使用两个物品（如钥匙与门）
+  
+      3. **空间移动命令**：
+         - `go <方向>`：向有效出口移动（需存在对应方向的出口）
+         - `open/close <对象>`：操作可开关的门/容器（如`open door`）
+      
+         
+    
+    ### 游戏核心机制
+      1. **任务流程**：
+         获取原料（如牛奶、生菜等） → 定位厨具 → 执行烹饪 → 完成料理
+         (例：找原料→到厨房→使用烤炉)
+  
+      2. **关键物品链**：
+         raw material → stove → grilled milk
+         （需按顺序：获得原料→找到烤炉→放置原料）
+  
+      3. **空间逻辑**：
+         卧室（起点）→厨房→客厅（原料位置）→返回厨房
+      
 
-    示例:
+    ### 示例:
       Step1：
         输入：
         State:
@@ -32,12 +62,12 @@
           ['examine antique trunk', 'examine wooden door', 'open antique trunk']
     
         Current Goal:
-          You open the antique trunk, revealing an old key. > -= Bedroom =-0/2
+          Prepare grilled milk
     
         ----------------------------------------
         输出：
           {
-            "sub_goal": "open antique trunk",
+            "sub_goal": "Access antique trunk for potential key",
             "action": "open antique trunk"
           }
   
@@ -56,12 +86,12 @@
             ['examine old key', 'take old key from antique trunk', 'look']
       
           Current Goal:
-            You take the old key from the antique trunk. > -= Bedroom =-0/3
+            Prepare grilled milk
       
           ----------------------------------------
           输出：
             {
-              "sub_goal": "take old key from antique trunk",
+              "sub_goal": "Secure old key for door access",
               "action": "take old key from antique trunk"
             }
       
@@ -80,12 +110,12 @@
             ['unlock wooden door with old key', 'drop old key', 'examine old key']
       
           Current Goal:
-            You unlock wooden door. > -= Bedroom =-0/4
+            Prepare grilled milk
       
           ----------------------------------------
           输出：
             {
-              "sub_goal": "unlock wooden door with old key",
+              "sub_goal": "Unlock eastward passage to kitchen",
               "action": "unlock wooden door with old key"
             }
       
@@ -104,12 +134,12 @@
             ['open wooden door', 'lock wooden door with old key', 'examine chest drawer']
       
           Current Goal:
-            You open wooden door. > -= Bedroom =-0/5
+            Prepare grilled milk
       
           ----------------------------------------
           输出：
             {
-              "sub_goal": "open wooden door",
+              "sub_goal": "Open cleared path to progress",
               "action": "open wooden door"
             }
       
@@ -128,12 +158,12 @@
             ['go east', 'examine wooden door', 'examine old key']
       
           Current Goal:
-            -= Kitchen =- Well how about that, you are in a place we're calling a kitchen. The room is well lit. You make out a closed refrigerator nearby. You can see a counter. The counter is normal. But the thing hasn't got anything on it. You rest your hand against a wall, but you miss the wall and fall onto a stove. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the stove. You see a kitchen island. On the kitchen island you can see a note. There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. You need an unguarded exit? You should try going south. Your score has just gone up by one point. > -= Kitchen =-1/6
+            Prepare grilled milk
       
           ----------------------------------------
           输出：
             {
-              "sub_goal": "go east",
+              "sub_goal": "Navigate to kitchen for next objective",
               "action": "go east"
             }
       
@@ -152,12 +182,12 @@
             ['go south', 'examine old key', 'go west']
       
           Current Goal:
-            -= Living Room =- Well I'll be, you are in the place we're calling the living room. You bend down to tie your shoe. When you stand up, you notice a couch. You see a milk on the couch. You see a low table. The low table is standard. On the low table you see a remote. You scan the room for a tv, and you find a tv. The tv is ordinary. Unfortunately, there isn't a thing on it. There is an exit to the north. Don't worry, it is unblocked. > -= Living Room =-1/7
+            Prepare grilled milk
       
           ----------------------------------------
           输出：
             {
-              "sub_goal": "go south",
+              "sub_goal": "Explore south area for milk source",
               "action": "go south"
             }
       
@@ -176,12 +206,12 @@
             ['examine tv', 'look', 'take milk from couch']
       
           Current Goal:
-            You take the milk from the couch. Your score has just gone up by one point. > -= Living Room =-2/8
+            Prepare grilled milk
       
           ----------------------------------------
           输出：
             {
-              "sub_goal": "take milk from couch",
+              "sub_goal": "Obtain milk required for grilling",
               "action": "take milk from couch"
             }
       
@@ -200,12 +230,12 @@
             ['go north', 'examine old key', 'put old key on tv']
       
           Current Goal:
-            -= Kitchen =- Well how about that, you are in a place we're calling a kitchen. The room is well lit. You make out a closed refrigerator nearby. You can see a counter. The counter is normal. But the thing hasn't got anything on it. You rest your hand against a wall, but you miss the wall and fall onto a stove. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the stove. You see a kitchen island. On the kitchen island you can see a note. There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. You need an unguarded exit? You should try going south. > -= Kitchen =-2/9
+            Prepare grilled milk
       
           ----------------------------------------
           输出：
             {
-              "sub_goal": "go north",
+              "sub_goal": "Return to kitchen preparation zone",
               "action": "go north"
             }
       
@@ -224,12 +254,12 @@
             ['put milk on stove', 'go south', 'drop milk']
       
           Current Goal:
-            You put the milk on the stove. Your score has just gone up by one point. *** The End *** You scored 3 out of a possible 3, in 10 turns. Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command? > -= Kitchen =-2/9
+            Prepare grilled milk
       
           ----------------------------------------
           输出：
             {
-              "sub_goal": "put milk on stove",
+              "sub_goal": "Initiate grilling process with stove",
               "action": "put milk on stove"
             }
     

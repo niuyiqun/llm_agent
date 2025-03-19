@@ -32,12 +32,12 @@
             ['look', 'go east', 'go south']
       
           Current Goal:
-            -= Studio =- You are in a studio. An usual one. There is an exit to the north. Don't worry, it is unguarded. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked. There is a loaf of bread on the floor. > -= Studio =-0/2
+            Retrieve the keycard from the workshop floor to achieve victory
       
           ----------------------------------------
           输出：
             {
-              "sub_goal": "go east",
+              "sub_goal": "Explore the eastward direction to reach the studio",
               "action": "go east"
             }
 
@@ -56,12 +56,12 @@
             ['go west', 'look', 'go south']
       
           Current Goal:
-            -= Cubicle =- You are in a cubicle. It seems to be pretty standard here. You start to take note of what's in the room. There is a closed American gate leading east. There is an unguarded exit to the north. There is an unguarded exit to the west. > -= Cubicle =-0/3
+            Retrieve the keycard from the workshop floor to achieve victory
       
           ----------------------------------------
           输出：
             {
-              "sub_goal": "go south",
+              "sub_goal": "Head southward to access new areas of the studio",
               "action": "go south"
             }
       
@@ -80,12 +80,12 @@
             ['inventory', 'go west', 'examine American gate']
       
           Current Goal:
-            -= Bedchamber =- Well, here we are in the bedchamber. There is an exit to the east. Don't worry, it is unguarded. There is an exit to the north. Don't worry, it is unguarded. There is an American latchkey on the floor. > -= Bedchamber =-0/4
+            Retrieve the keycard from the workshop floor to achieve victory
       
           ----------------------------------------
           输出：
             {
-              "sub_goal": "go west",
+              "sub_goal": "Return westward to investigate the cubicle's American gate",
               "action": "go west"
             }
       
@@ -104,12 +104,12 @@
             ['look', 'take American latchkey', 'go east']
       
           Current Goal:
-            You pick up the American latchkey from the ground. > -= Bedchamber =-0/5
+            Retrieve the keycard from the workshop floor to achieve victory
       
           ----------------------------------------
           输出：
             {
-              "sub_goal": "take American latchkey",
+              "sub_goal": "Acquire the American latchkey for future gate operations",
               "action": "take American latchkey"
             }
       
@@ -128,12 +128,12 @@
             ['look', 'go east', 'drop American latchkey']
       
           Current Goal:
-            -= Cubicle =- You are in a cubicle. It seems to be pretty standard here. You start to take note of what's in the room. There is a closed American gate leading east. There is an unguarded exit to the north. There is an unguarded exit to the west. > -= Cubicle =-0/6
+            Retrieve the keycard from the workshop floor to achieve victory
       
           ----------------------------------------
           输出：
             {
-              "sub_goal": "go east",
+              "sub_goal": "Return eastward to approach the locked American gate",
               "action": "go east"
             }
       
@@ -152,12 +152,12 @@
             ['drop American latchkey', 'unlock American gate with American latchkey', 'inventory']
       
           Current Goal:
-            You unlock American gate. > -= Cubicle =-0/7
+            Retrieve the keycard from the workshop floor to achieve victory
       
           ----------------------------------------
           输出：
             {
-              "sub_goal": "unlock American gate with American latchkey",
+              "sub_goal": "Use obtained latchkey to unlock the eastern passage",
               "action": "unlock American gate with American latchkey"
             }
       
@@ -176,12 +176,12 @@
             ['open American gate', 'drop American latchkey', 'lock American gate with American latchkey']
       
           Current Goal:
-            You open American gate. > -= Cubicle =-0/8
+            Retrieve the keycard from the workshop floor to achieve victory
       
           ----------------------------------------
           输出：
             {
-              "sub_goal": "open American gate",
+              "sub_goal": "Ensure the American gate is unlocked and ready for entry",
               "action": "open American gate"
             }
       
@@ -200,12 +200,12 @@
             ['go east', 'close American gate', 'go north']
       
           Current Goal:
-            -= Laundromat =- You find yourself in a laundromat. An usual kind of place. Let's see what's in here. There is an open American gate leading west. There is an open wooden passageway leading east. > -= Laundromat =-0/9
+            Retrieve the keycard from the workshop floor to achieve victory
       
           ----------------------------------------
           输出：
             {
-              "sub_goal": "go east",
+              "sub_goal": "Proceed eastward through the opened gate to laundromat",
               "action": "go east"
             }
       
@@ -224,12 +224,12 @@
             ['examine wooden passageway', 'close American gate', 'go east']
       
           Current Goal:
-            -= Workshop =- Well, here we are in a workshop. Okay, just remember what you're here to do, and everything will go great. There is an open pine door leading east. There is an open wooden passageway leading west. You need an unguarded exit? You should try going north. There is a keycard on the floor. > -= Workshop =-0/10
+            Retrieve the keycard from the workshop floor to achieve victory
       
           ----------------------------------------
           输出：
             {
-              "sub_goal": "go east",
+              "sub_goal": "Continue eastward to access the workshop area",
               "action": "go east"
             }
       
@@ -248,12 +248,12 @@
             ['drop American latchkey', 'examine keycard', 'take keycard']
       
           Current Goal:
-            You pick up the keycard from the ground. Your score has just gone up by one point. *** The End *** You scored 1 out of a possible 1, in 11 turns. Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command? > -= Workshop =-0/10
+            Retrieve the keycard from the workshop floor to achieve victory
       
           ----------------------------------------
           输出：
             {
-              "sub_goal": "take keycard",
+              "sub_goal": "Secure the keycard to complete the final objective",
               "action": "take keycard"
             }
 

@@ -7,6 +7,7 @@
 @Desc    ：
 """
 import argparse
+from collections import deque
 
 DEBUG_MODE = False  # 打开调试模式，设置为 False 时不打印调试信息
 
@@ -228,7 +229,7 @@ def initialize_model(llm_type: str):
 
 
 class AC_Agent:
-    def __init__(self, device, config_path: str = './config/agent.yaml') -> None:
+    def __init__(self, device, config_path: str = './config/agent.yaml', evaluate: bool = False, model_path: str = None) -> None:
         """
             由于需要bert参与评分，所以这里改成单轮的对话形式，避免上下文过长难以处理
         """
@@ -247,6 +248,43 @@ class AC_Agent:
         self.target_critic_2.load_state_dict(self.critic_2.state_dict())
         # bert和classifier配置不同的lr
         self.critic_1_optimizer, self.critic_2_optimizer = self.configure_optimizers()
+
+        # 初始化队列存储历史动作和得分
+        self.history_actions = deque(maxlen=5)  # 保存最近的5个动作和评分
+        self.current_goal = None  # 整体目标初始化为空
+
+        if evaluate:
+            # 如果evaluate为True，则加载模型权重
+            if model_path:
+                self.load_model(model_path)
+            else:
+                raise ValueError("Model path must be provided for evaluation.")
+
+    def load_model(self, model_path: str):
+        """
+        从指定路径加载模型权重和优化器状态。
+        """
+        checkpoint = torch.load(model_path, map_location=self.device)
+        self.critic_1.load_state_dict(checkpoint['critic_1_state_dict'])
+        self.critic_2.load_state_dict(checkpoint['critic_2_state_dict'])
+        self.target_critic_1.load_state_dict(checkpoint['target_critic_1_state_dict'])
+        self.target_critic_2.load_state_dict(checkpoint['target_critic_2_state_dict'])
+
+        self.critic_1_optimizer.load_state_dict(checkpoint['critic_1_optimizer_state_dict'])
+        self.critic_2_optimizer.load_state_dict(checkpoint['critic_2_optimizer_state_dict'])
+        print(f"Model loaded from {model_path}.")
+
+        # 加载训练信息
+        model_info_path = model_path.replace(".pth", "_info.json")
+        print(f"[DEBUG] model_info_path: {model_info_path}")
+        try:
+            with open(model_info_path, "r", encoding="utf-8") as f:
+                model_info = json.load(f)
+                print(f"Model info loaded from {model_info_path}:")
+                print(json.dumps(model_info, indent=4))
+        except Exception as e:
+            print(f"[ERROR] Failed to load model info from {model_info_path}: {e}")
+
 
     def load_config(self, config_path: str = './config/agent.yaml') -> Dict[str, Any]:
         """
@@ -285,23 +323,91 @@ class AC_Agent:
         # 调用模型生成回复
         answer: Dict[str, str] = self.model.chat(message)
 
-        return answer["action"]
+        # 获取生成的动作
+        action = answer["action"]
+        # print(f"Generated action: {action}")
+
+        return action
+
 
     def get_init_prompt(self) -> List[Dict[str, str]]:
-        # todo: 这里应该把Goal加进来
-        prompt_path = './config/prompt_short.yaml'
+        """
+            初始化提示词，加入整体目标
+        """
+        prompt_path = './prompt/prompt_coin.yaml'
         with open(prompt_path, 'r', encoding='utf-8') as file:
             messages = yaml.safe_load(file)
             return messages
 
-    def add_user_message(self, obs: str, infos: Dict[str, List[str]]) -> Dict[str, str]:
+    def reset(self) -> None:
         """
-        将用户消息添加到对话历史，并拼接任务相关信息
-        :param user_msg: 用户输入
-        :param infos: {'admissible_commands': ['command1', 'command2']}
-        :return: 用户对话
+        重置Agent状态，用于切换新环境时调用
+        需要重置的变量：
+        1. 历史动作队列
+        2. 当前目标
+        3. 其他与单局游戏相关的临时状态
+        """
+        # 清空历史动作队列
+        self.history_actions.clear()
+
+        # 重置当前目标
+        self.current_goal = None
+
+        # 可选：重置其他临时状态变量（如果有需要）
+        # self.temp_variable = initial_value
+
+        # 打印调试信息
+        print("[Agent Reset] History actions cleared, current goal reset.")
+
+    def set_goal(self, goal: str):
+        """
+        设置整体目标，可以在环境初始化后调用
+        """
+        self.current_goal = goal
+
+    def add_action_score(self, action: str, score: float):
+        """
+        在执行完动作并得到评分后，直接更新队列
+        :param action: 执行的动作
+        :param score: 动作的评分
+        """
+        # 直接在队列中更新对应的动作得分
+        self.history_actions.append((action, score))
+
+    def add_user_message(self, obs: str, infos: Dict[str, List[str]]) -> Dict[str, str]:
+        # todo：这里需要考虑维护额外的信息
+        """
+            将用户消息添加到对话历史，并拼接任务相关信息
+            :param messages: 当前对话历史
+            :param user_msg: 用户输入
+            :param infos: {'admissible_commands': ['command1', 'command2']}
+            :return: 更新后的 messages 列表
         """
         content = {"State": obs, "Admissible commands": infos.get('admissible_commands', [])}
+        # 获取Admissible commands并计算Q值
+        admissible_commands = infos.get('admissible_commands', [])
+        q_values = []
+        with torch.no_grad():
+            # 对每个动作计算Q值
+            self.critic_1.eval()
+            for action in admissible_commands:
+                state_input = [obs]  # 当前状态
+                action_input = [action]  # 当前动作
+                q_value = self.critic_1(state_input, action_input).item()  # 获取Q值
+                q_values.append((action, q_value))
+        # 按照Q值对动作排序，取前三个动作
+        q_values.sort(key=lambda x: x[1], reverse=True)
+        recommended_actions = [action for action, _ in q_values[:3]]  # 取前三个Q值最高的动作
+        print(f"[recommended_actions] {recommended_actions}")
+        # 将Recommended actions加入到content中
+        content["Recommended actions"] = recommended_actions
+
+        # 在消息中加入历史动作
+        content["Historical actions"] = [{"action": act, "score": score} for act, score in self.history_actions]
+
+        # 加入当前目标（Current Goal）到user prompt
+        content["Current Goal"] = self.current_goal if self.current_goal else "No current goal set."
+
         return {"role": "user", "content": json.dumps(content)}
 
     def configure_optimizers(self):
@@ -338,31 +444,6 @@ class AC_Agent:
 
         return [optimizer_critic_1, optimizer_critic_2]
 
-    # def calc_target(self, rewards, next_states, dones):  # 计算目标Q值
-    #     """
-    #
-    #     从经验池中取出一组数据来训练critic
-    #     :param rewards:  List[float]
-    #     :param next_states: List[str]
-    #     :param dones: List[bool]
-    #     :return:
-    #     """
-    #     next_actions: List[str] = self.get_next_action(next_states)
-    #     # todo: 这里应该要转tensor done
-    #     q1_value = self.target_critic_1(next_states, next_actions)
-    #     q2_value = self.target_critic_2(next_states, next_actions)
-    #     next_value = torch.min(q1_value, q2_value)
-    #     td_target = rewards + self.gamma * next_value * (1 - dones)
-    #     return td_target
-
-    def get_next_action(self, next_states: List[str], next_infos: List[Dict[str, Any]]) -> List[str]:
-        # todo：待修改 done 不用这个了
-        assert len(next_infos) == len(next_states), 'next_infos和next_states长度不等'
-        next_actions = []
-        for i in range(len(next_states)):
-            action = self.round(next_states[i], next_infos[i])
-            next_actions.append(action)
-        return next_actions
 
     def soft_update(self, net, target_net):
         i = 0
@@ -454,6 +535,8 @@ class AC_Agent:
             "critic_1_loss": critic_1_loss.item(),
             "critic_2_loss": critic_2_loss.item()
         }
+
+
 
 
 def train_off_policy_agent(agent, replay_buffer, num_epochs, batch_size):

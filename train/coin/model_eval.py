@@ -13,11 +13,11 @@ from textworld import EnvInfos
 import textworld.gym
 import yaml
 
-from train.simple.critic import AC_Agent
+from train.coin.critic import AC_Agent
 from utils import construct_replay_buffer, Logger, get_reset
 
 
-def evaluate(game_file_path, agent):
+def evaluate(device, model_path, game_file_path):
     request_infos = EnvInfos(admissible_commands=True, objective=True, description=True)
 
     env_id = textworld.gym.register_game(game_file_path,
@@ -29,6 +29,9 @@ def evaluate(game_file_path, agent):
     obs, infos = env.reset()  # Start new episode.
     obs: str = get_reset(obs)
     print(f"Evaluating {game_file_path}...")
+    print('-----load AC_agent-----')
+    agent: AC_Agent = AC_Agent(device, config_path='./config/agent.yaml', evaluate=True, model_path=model_path)
+    print('-----loaded AC_agent-----')
 
     # 设置整体目标
     agent.set_goal(obs)
@@ -62,7 +65,7 @@ if __name__ == '__main__':
     parser.add_argument('--device', type=str, required=True, help="Name of the gpu to run")
     parser.add_argument('--seed', type=int, default=1224, help="Seed of model training")
     parser.add_argument('--model_path', type=str,
-                        default='./model/critic/simple/sample_ratio/final_model_20241226_023013.pth',
+                        default='./model/critic/coin/final_model_20250102_065156.pth',
                         help="Path to the saved model for evaluation")
     args = parser.parse_args()
 
@@ -70,7 +73,7 @@ if __name__ == '__main__':
         config = yaml.safe_load(f)
 
     # 指定task
-    task = 'simple'
+    task = 'coin'
 
     device = args.device
     seed = args.seed
@@ -84,19 +87,13 @@ if __name__ == '__main__':
     game_folder = task_config['game_file_path']
     game_files = [os.path.join(game_folder, f"{task}_seed{num}.z8") for num in range(1, 11)]
 
-    # 初始化 Agent（只初始化一次）
-    print('-----load AC_agent-----')
-    agent = AC_Agent(device, config_path='./config/agent.yaml', evaluate=True, model_path=model_path)
-    print('-----loaded AC_agent-----')
-
     # 记录评估结果
     results = {}
 
     # 依次评估 10 个环境
     for game_file in game_files:
         if os.path.exists(game_file):  # 确保文件存在
-            agent.reset()
-            score, steps = evaluate(game_file, agent)
+            score, steps = evaluate(device, model_path, game_file)
             results[game_file] = {'score': score, 'steps': steps}
         else:
             print(f"Warning: Game file {game_file} not found, skipping.")

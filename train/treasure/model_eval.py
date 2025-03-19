@@ -13,7 +13,7 @@ from textworld import EnvInfos
 import textworld.gym
 import yaml
 
-from train.simple.critic import AC_Agent
+from train.treasure.critic import AC_Agent
 from utils import construct_replay_buffer, Logger, get_reset
 
 
@@ -62,7 +62,7 @@ if __name__ == '__main__':
     parser.add_argument('--device', type=str, required=True, help="Name of the gpu to run")
     parser.add_argument('--seed', type=int, default=1224, help="Seed of model training")
     parser.add_argument('--model_path', type=str,
-                        default='./model/critic/simple/sample_ratio/final_model_20241226_023013.pth',
+                        default='./model/critic/coin/final_model_20250102_065156.pth',
                         help="Path to the saved model for evaluation")
     args = parser.parse_args()
 
@@ -70,7 +70,7 @@ if __name__ == '__main__':
         config = yaml.safe_load(f)
 
     # 指定task
-    task = 'simple'
+    task = 'treasure'
 
     device = args.device
     seed = args.seed

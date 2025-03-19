@@ -287,6 +287,25 @@ class AC_Agent:
         except Exception as e:
             print(f"[ERROR] Failed to load model info from {model_info_path}: {e}")
 
+    def reset(self) -> None:
+        """
+        重置Agent状态，用于切换新环境时调用
+        需要重置的变量：
+        1. 历史动作队列
+        2. 当前目标
+        3. 其他与单局游戏相关的临时状态
+        """
+        # 清空历史动作队列
+        self.history_actions.clear()
+
+        # 重置当前目标
+        self.current_goal = None
+
+        # 可选：重置其他临时状态变量（如果有需要）
+        # self.temp_variable = initial_value
+
+        # 打印调试信息
+        print("[Agent Reset] History actions cleared, current goal reset.")
 
     def load_config(self, config_path: str = './config/agent.yaml') -> Dict[str, Any]:
         """
