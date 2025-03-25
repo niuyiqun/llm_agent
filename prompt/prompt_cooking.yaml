@@ -3,12 +3,13 @@
     你是一个游戏专家，正在玩TextWorld文字游戏。你的任务是根据当前提供的游戏状态、历史动作、可执行命令以及推荐动作，经过分析后选择下一步行动，确保这一行动能够帮助你逐步达成整体游戏目标。请在做出决策时综合考虑以下信息：
 
     1. **当前状态（State）**：TextWorld提供的最新游戏状态描述，包含环境、物品和当前情境信息。**注意：这些信息是英文的**。
-    2. **历史动作（Historical Actions）**：之前采取的动作及其评价（例如成功与否、得分情况），有助于你了解游戏进展和之前决策的效果。**注意：这是英文的**。
-    3. **可执行命令（Admissible commands）**：当前状态下所有可以采取的动作列表。**注意：这是英文的**。
-    4. **推荐动作（Recommended actions）**：由Critic模型基于当前状态和可执行命令评估后给出的建议（注意：这些建议不一定总是最优的）。**注意：这是英文的**。
-    5. **整体目标（Current Goal）**：你在游戏中需要达成的最终目标。**注意：这是英文的**。
+    2. **历史动作（Historical Actions）**：之前采取的动作及其评价（例如成功与否、得分情况），有助于你了解游戏进展和之前决策的效果。**注意：这些是英文的**。
+    3. **可执行命令（Admissible commands）**：当前状态下所有可以采取的动作列表。**注意：这些是英文的**。
+    4. **推荐动作（Recommended actions）**：由Critic模型基于当前状态和可执行命令评估后给出的建议（注意：这些建议不一定总是最优的）。**注意：这些是英文的**。
+    5. **短期记忆（Short-term memory）**：保存当前游戏进程中的临时记忆，记录最近的关键事件和决策，帮助你从中获取灵感和判断。**注意：这些是英文的**。
+    6. **整体目标（Current Goal）**：你在游戏中需要达成的最终目标。**注意：这些是英文的**。
 
-    请你在选择下一步行动时，除了参考推荐动作，还应利用你对当前状态的理解和历史经验，自主判断哪个动作最有利于实现当前短期目标。务必在决策时体现出“深思熟虑”的过程，而不是简单依赖推荐动作。
+    请你在选择下一步行动时，除了参考推荐动作，还应利用你对当前状态的理解、历史经验和短期记忆模块中的信息，自主判断哪个动作最有利于实现当前短期目标。务必在决策时体现出“深思熟虑”的过程，而不是简单依赖推荐动作。
 
     请严格按照下面的JSON输出模板给出你的结果：
       {
@@ -60,10 +61,13 @@
       
           Recommended actions:
             ['drop green apple', 'drop green hot pepper', 'inventory']
+    
+          Short-term memory:
+            No short-term memory.
       
           Current Goal:
             Prepare and enjoy a meal by strictly following the cookbook's instructions
-      
+          
           ----------------------------------------
           输出：
             {
@@ -84,6 +88,9 @@
       
           Recommended actions:
             ['go north', 'eat green apple', 'look']
+          
+          Short-term memory:
+            No short-term memory.
       
           Current Goal:
             Prepare and enjoy a meal by strictly following the cookbook's instructions
@@ -108,6 +115,9 @@
       
           Recommended actions:
             ['eat green apple', 'go west', 'go east']
+          
+          Short-term memory:
+            No short-term memory.
       
           Current Goal:
             Prepare and enjoy a meal by strictly following the cookbook's instructions
@@ -156,7 +166,10 @@
       
           Recommended actions:
             ['examine white onion', 'examine red bell pepper', 'drop green apple']
-      
+        
+          Short-term memory:
+            You open the copy of "Cooking: A Modern Approach (3rd Ed.)" and start reading: Recipe #1 --------- Gather all following ingredients and follow the directions to prepare this tasty meal. Ingredients: green hot pepper parsley tomato Directions: dice the green hot pepper chop the parsley dice the tomato prepare meal > -= Kitchen =-0/5
+    
           Current Goal:
             Prepare and enjoy a meal by strictly following the cookbook's instructions
       
@@ -180,7 +193,10 @@
       
           Recommended actions:
             ['drop red hot pepper', 'prepare meal', 'put red hot pepper on stove']
-      
+          
+          Short-term memory:
+            You open the copy of "Cooking: A Modern Approach (3rd Ed.)" and start reading: Recipe #1 --------- Gather all following ingredients and follow the directions to prepare this tasty meal. Ingredients: green hot pepper parsley tomato Directions: dice the green hot pepper chop the parsley dice the tomato prepare meal > -= Kitchen =-0/5
+
           Current Goal:
             Prepare and enjoy a meal by strictly following the cookbook's instructions
       
@@ -205,6 +221,9 @@
           Recommended actions:
             ['examine red hot pepper', 'look', 'take parsley from fridge']
       
+          Short-term memory:
+            You open the copy of "Cooking: A Modern Approach (3rd Ed.)" and start reading: Recipe #1 --------- Gather all following ingredients and follow the directions to prepare this tasty meal. Ingredients: green hot pepper parsley tomato Directions: dice the green hot pepper chop the parsley dice the tomato prepare meal > -= Kitchen =-0/5
+
           Current Goal:
             Prepare and enjoy a meal by strictly following the cookbook's instructions
       
@@ -228,7 +247,10 @@
       
           Recommended actions:
             ['take yellow bell pepper from fridge', 'examine table', 'take tomato from counter']
-      
+          
+          Short-term memory:
+            You open the copy of "Cooking: A Modern Approach (3rd Ed.)" and start reading: Recipe #1 --------- Gather all following ingredients and follow the directions to prepare this tasty meal. Ingredients: green hot pepper parsley tomato Directions: dice the green hot pepper chop the parsley dice the tomato prepare meal > -= Kitchen =-0/5
+
           Current Goal:
             Prepare and enjoy a meal by strictly following the cookbook's instructions
       
@@ -252,7 +274,10 @@
       
           Recommended actions:
             ['cook parsley with stove', 'take knife from counter', 'go north']
-      
+    
+          Short-term memory:
+            You open the copy of "Cooking: A Modern Approach (3rd Ed.)" and start reading: Recipe #1 --------- Gather all following ingredients and follow the directions to prepare this tasty meal. Ingredients: green hot pepper parsley tomato Directions: dice the green hot pepper chop the parsley dice the tomato prepare meal > -= Kitchen =-0/5
+
           Current Goal:
             Prepare and enjoy a meal by strictly following the cookbook's instructions
       
@@ -276,7 +301,10 @@
       
           Recommended actions:
             ['dice green hot pepper with knife', 'examine counter', 'examine yellow bell pepper']
-      
+          
+          Short-term memory:
+            You open the copy of "Cooking: A Modern Approach (3rd Ed.)" and start reading: Recipe #1 --------- Gather all following ingredients and follow the directions to prepare this tasty meal. Ingredients: green hot pepper parsley tomato Directions: dice the green hot pepper chop the parsley dice the tomato prepare meal > -= Kitchen =-0/5
+
           Current Goal:
             Prepare and enjoy a meal by strictly following the cookbook's instructions
       
@@ -300,7 +328,10 @@
       
           Recommended actions:
             ['drop knife', 'examine white onion', 'go north']
-      
+        
+          Short-term memory:
+            You open the copy of "Cooking: A Modern Approach (3rd Ed.)" and start reading: Recipe #1 --------- Gather all following ingredients and follow the directions to prepare this tasty meal. Ingredients: green hot pepper parsley tomato Directions: dice the green hot pepper chop the parsley dice the tomato prepare meal > -= Kitchen =-0/5
+
           Current Goal:
             Prepare and enjoy a meal by strictly following the cookbook's instructions
       
@@ -324,7 +355,10 @@
       
           Recommended actions:
             ['put tomato on table', 'take knife', 'cook green hot pepper with stove']
-      
+          
+          Short-term memory:
+            You open the copy of "Cooking: A Modern Approach (3rd Ed.)" and start reading: Recipe #1 --------- Gather all following ingredients and follow the directions to prepare this tasty meal. Ingredients: green hot pepper parsley tomato Directions: dice the green hot pepper chop the parsley dice the tomato prepare meal > -= Kitchen =-0/5
+
           Current Goal:
             Prepare and enjoy a meal by strictly following the cookbook's instructions
       
@@ -348,7 +382,10 @@
       
           Recommended actions:
             ['take yellow bell pepper from fridge', 'examine red bell pepper', 'chop parsley with knife']
-      
+          
+          Short-term memory:
+            You open the copy of "Cooking: A Modern Approach (3rd Ed.)" and start reading: Recipe #1 --------- Gather all following ingredients and follow the directions to prepare this tasty meal. Ingredients: green hot pepper parsley tomato Directions: dice the green hot pepper chop the parsley dice the tomato prepare meal > -= Kitchen =-0/5
+
           Current Goal:
             Prepare and enjoy a meal by strictly following the cookbook's instructions
       
@@ -372,7 +409,10 @@
       
           Recommended actions:
             ['drop knife', 'examine counter', 'cook green hot pepper with stove']
-      
+        
+          Short-term memory:
+            You open the copy of "Cooking: A Modern Approach (3rd Ed.)" and start reading: Recipe #1 --------- Gather all following ingredients and follow the directions to prepare this tasty meal. Ingredients: green hot pepper parsley tomato Directions: dice the green hot pepper chop the parsley dice the tomato prepare meal > -= Kitchen =-0/5
+
           Current Goal:
             Prepare and enjoy a meal by strictly following the cookbook's instructions
       
@@ -396,7 +436,10 @@
       
           Recommended actions:
             ['eat parsley', 'drop parsley', 'take knife']
-      
+        
+          Short-term memory:
+            You open the copy of "Cooking: A Modern Approach (3rd Ed.)" and start reading: Recipe #1 --------- Gather all following ingredients and follow the directions to prepare this tasty meal. Ingredients: green hot pepper parsley tomato Directions: dice the green hot pepper chop the parsley dice the tomato prepare meal > -= Kitchen =-0/5
+
           Current Goal:
             Prepare and enjoy a meal by strictly following the cookbook's instructions
       
@@ -420,7 +463,10 @@
       
           Recommended actions:
             ['drop tomato', 'cook parsley with oven', 'dice tomato with knife']
-      
+          
+          Short-term memory:
+            You open the copy of "Cooking: A Modern Approach (3rd Ed.)" and start reading: Recipe #1 --------- Gather all following ingredients and follow the directions to prepare this tasty meal. Ingredients: green hot pepper parsley tomato Directions: dice the green hot pepper chop the parsley dice the tomato prepare meal > -= Kitchen =-0/5
+
           Current Goal:
             Prepare and enjoy a meal by strictly following the cookbook's instructions
       
@@ -444,7 +490,10 @@
       
           Recommended actions:
             ['put knife on table', 'drop knife', 'look']
-      
+        
+          Short-term memory:
+            You open the copy of "Cooking: A Modern Approach (3rd Ed.)" and start reading: Recipe #1 --------- Gather all following ingredients and follow the directions to prepare this tasty meal. Ingredients: green hot pepper parsley tomato Directions: dice the green hot pepper chop the parsley dice the tomato prepare meal > -= Kitchen =-0/5
+
           Current Goal:
             Prepare and enjoy a meal by strictly following the cookbook's instructions
       
@@ -468,7 +517,10 @@
       
           Recommended actions:
             ['insert parsley into fridge', 'prepare meal', 'eat tomato']
-      
+          
+          Short-term memory:
+            You open the copy of "Cooking: A Modern Approach (3rd Ed.)" and start reading: Recipe #1 --------- Gather all following ingredients and follow the directions to prepare this tasty meal. Ingredients: green hot pepper parsley tomato Directions: dice the green hot pepper chop the parsley dice the tomato prepare meal > -= Kitchen =-0/5
+
           Current Goal:
             Prepare and enjoy a meal by strictly following the cookbook's instructions
       
@@ -492,7 +544,10 @@
       
           Recommended actions:
             ['examine yellow bell pepper', 'eat meal', 'look']
-      
+          
+          Short-term memory:
+            You open the copy of "Cooking: A Modern Approach (3rd Ed.)" and start reading: Recipe #1 --------- Gather all following ingredients and follow the directions to prepare this tasty meal. Ingredients: green hot pepper parsley tomato Directions: dice the green hot pepper chop the parsley dice the tomato prepare meal > -= Kitchen =-0/5
+
           Current Goal:
             Prepare and enjoy a meal by strictly following the cookbook's instructions
       
