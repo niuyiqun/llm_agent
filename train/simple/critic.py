@@ -332,23 +332,33 @@ class AC_Agent:
         :param infos: 内含可行动作
         :return: 下一步的action，可以直接用于进行env的step操作
         """
+        try:
+            # 从配置文件初始化系统提示
+            system: List[Dict[str, str]] = self.get_init_prompt()
+            # 添加用户消息到对话历史
+            user_msg: Dict[str, str] = self.add_user_message(obs, infos)
 
-        # 从配置文件初始化系统提示
-        system: List[Dict[str, str]] = self.get_init_prompt()
-        # 添加用户消息到对话历史
-        user_msg: Dict[str, str] = self.add_user_message(obs, infos)
+            system.append(user_msg)
+            message: List[Dict[str, str]] = system
 
-        system.append(user_msg)
-        message: List[Dict[str, str]] = system
+            # 调用模型生成回复
+            answer: Dict[str, str] = self.model.chat(message)
 
-        # 调用模型生成回复
-        answer: Dict[str, str] = self.model.chat(message)
+            # 获取生成的动作（添加异常处理）
+            action = answer["action"]
+            return action
 
-        # 获取生成的动作
-        action = answer["action"]
-        # print(f"Generated action: {action}")
-
-        return action
+        except KeyError:
+            # 专门捕获 KeyError 并打印 answer 内容
+            print(f"\n[DEBUG] 解析 action 失败，answer 完整内容：")
+            print(yaml.dump(answer, allow_unicode=True, sort_keys=False))  # 使用 yaml 格式更易读
+            raise  # 重新抛出异常让上层处理
+        except Exception as e:
+            # 其他异常也打印上下文信息
+            print(f"\n[DEBUG] 发生未预期异常: {str(e)}")
+            print("当前 message 内容：")
+            print(yaml.dump(message, allow_unicode=True, sort_keys=False))
+            raise
 
 
     def get_init_prompt(self) -> List[Dict[str, str]]:
