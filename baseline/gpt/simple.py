@@ -21,7 +21,7 @@ from utils import get_reset
 
 # 设置 API 基础地址和密钥
 base_url = "https://yunwu.ai/v1"
-api_key = "sk-VCG0GE1hXJgnzYXAc2QnsZjfzGivkv2DUlrYokByk6wDd078"
+api_key = ""
 task = 'simple'
 
 client = OpenAI(
