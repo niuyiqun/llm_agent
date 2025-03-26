@@ -17,7 +17,7 @@ from train.cooking.critic import AC_Agent
 from utils import construct_replay_buffer, Logger, get_reset
 
 
-def evaluate(device, model_path, game_file_path):
+def evaluate(game_file_path, agent):
     request_infos = EnvInfos(admissible_commands=True, objective=True, description=True)
 
     env_id = textworld.gym.register_game(game_file_path,
@@ -29,9 +29,7 @@ def evaluate(device, model_path, game_file_path):
     obs, infos = env.reset()  # Start new episode.
     obs: str = get_reset(obs)
     print(f"Evaluating {game_file_path}...")
-    print('-----load AC_agent-----')
-    agent: AC_Agent = AC_Agent(device, config_path='./config/agent.yaml', evaluate=True, model_path=model_path)
-    print('-----loaded AC_agent-----')
+
 
     # 设置整体目标
     agent.set_goal(obs)
@@ -87,14 +85,35 @@ if __name__ == '__main__':
     game_folder = task_config['game_file_path']
     game_files = [os.path.join(game_folder, f"{task}_seed{num}.z8") for num in range(1, 11)]
 
+    # 初始化 Agent（只初始化一次）
+    print('-----load AC_agent-----')
+    agent = AC_Agent(device, config_path='./config/agent.yaml', evaluate=True, model_path=model_path)
+    print('-----loaded AC_agent-----')
+
     # 记录评估结果
     results = {}
 
     # 依次评估 10 个环境
     for game_file in game_files:
         if os.path.exists(game_file):  # 确保文件存在
-            score, steps = evaluate(device, model_path, game_file)
-            results[game_file] = {'score': score, 'steps': steps}
+            max_retries = 3  # 最大重试次数
+            attempt = 0
+
+            while attempt <= max_retries:
+                try:
+                    agent.reset()
+                    score, steps = evaluate(game_file, agent)
+                    results[game_file] = {'score': score, 'steps': steps}
+                    break  # 成功则退出重试循环
+                except KeyError as e:
+                    print(f"发生关键错误 {e}，正在重试 ({attempt}/{max_retries})...")
+                    attempt += 1
+                    if attempt > max_retries:
+                        print(f"重试{max_retries}次后仍失败，跳过该环境: {game_file}")
+                        results[game_file] = {'score': 0, 'steps': 0}  # 记录失败
+                except Exception as e:
+                    print(f"发生未知错误: {e}")
+                    raise  # 其他异常直接抛出
         else:
             print(f"Warning: Game file {game_file} not found, skipping.")
 
