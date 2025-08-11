@@ -65,8 +65,8 @@
         <mxCell id="DURLl0zLTxqEiJGifbQc-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.005;entryY=0.545;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="DURLl0zLTxqEiJGifbQc-16" target="DURLl0zLTxqEiJGifbQc-11">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="DURLl0zLTxqEiJGifbQc-32" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;事实提取模块&lt;/span&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;container=0;" vertex="1" parent="1">
-          <mxGeometry x="361" y="260" width="106" height="30" as="geometry" />
+        <mxCell id="DURLl0zLTxqEiJGifbQc-32" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;事实记忆提取模块&lt;/span&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;container=0;" vertex="1" parent="1">
+          <mxGeometry x="361" y="260" width="119" height="30" as="geometry" />
         </mxCell>
         <mxCell id="DURLl0zLTxqEiJGifbQc-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="DURLl0zLTxqEiJGifbQc-33" target="DURLl0zLTxqEiJGifbQc-39">
           <mxGeometry relative="1" as="geometry" />
