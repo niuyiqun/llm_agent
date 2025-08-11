@@ -17,7 +17,7 @@
           <mxGeometry x="152.07000000000002" y="131.75" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="XBr7zlJAQNPRugilSRZH-21" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;事实提取模块&lt;/span&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;container=0;" parent="1" vertex="1">
-          <mxGeometry x="388.92" y="40" width="106" height="30" as="geometry" />
+          <mxGeometry x="360" y="101.75" width="106" height="30" as="geometry" />
         </mxCell>
         <mxCell id="XBr7zlJAQNPRugilSRZH-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="XBr7zlJAQNPRugilSRZH-23" target="XBr7zlJAQNPRugilSRZH-25" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -34,7 +34,7 @@
         <mxCell id="XBr7zlJAQNPRugilSRZH-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="XBr7zlJAQNPRugilSRZH-28" target="XBr7zlJAQNPRugilSRZH-33" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="XBr7zlJAQNPRugilSRZH-28" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;关键事实&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+        <mxCell id="XBr7zlJAQNPRugilSRZH-28" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;结构性记忆&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
           <mxGeometry x="527.9200000000001" y="325" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="XBr7zlJAQNPRugilSRZH-30" value="增加" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
