@@ -7,8 +7,11 @@
         <mxCell id="lbkrCyW7JgvVziHyOefL-79" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="lbkrCyW7JgvVziHyOefL-8" target="XBr7zlJAQNPRugilSRZH-25">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="lbkrCyW7JgvVziHyOefL-86" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="lbkrCyW7JgvVziHyOefL-8" target="XBr7zlJAQNPRugilSRZH-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="lbkrCyW7JgvVziHyOefL-8" value="" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;dashPattern=12 12;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry x="260" y="380" width="290" height="170" as="geometry" />
+          <mxGeometry x="256" y="380" width="290" height="170" as="geometry" />
         </mxCell>
         <mxCell id="lbkrCyW7JgvVziHyOefL-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="XBr7zlJAQNPRugilSRZH-1" target="XBr7zlJAQNPRugilSRZH-28">
           <mxGeometry relative="1" as="geometry" />
@@ -43,11 +46,11 @@
         <mxCell id="XBr7zlJAQNPRugilSRZH-28" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;关系型记忆&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
           <mxGeometry x="683.0000000000001" y="325" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="XBr7zlJAQNPRugilSRZH-30" value="增加" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
-          <mxGeometry x="720" y="70" width="46" height="20" as="geometry" />
+        <mxCell id="XBr7zlJAQNPRugilSRZH-30" value="增加节点" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="560" y="420.67" width="50" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="XBr7zlJAQNPRugilSRZH-31" value="删除" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
-          <mxGeometry x="720" y="100" width="46" height="20" as="geometry" />
+        <mxCell id="XBr7zlJAQNPRugilSRZH-31" value="删除节点" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="560" y="450.67" width="50" height="20" as="geometry" />
         </mxCell>
         <mxCell id="XBr7zlJAQNPRugilSRZH-33" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;记忆更新模块&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
           <mxGeometry x="683.0000000000001" y="415.66999999999996" width="120" height="60" as="geometry" />
@@ -144,6 +147,15 @@
         </mxCell>
         <mxCell id="lbkrCyW7JgvVziHyOefL-77" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
           <mxGeometry x="371.37999999999994" y="520.25" width="26" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="lbkrCyW7JgvVziHyOefL-80" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1.007;entryY=0.388;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="XBr7zlJAQNPRugilSRZH-33" target="lbkrCyW7JgvVziHyOefL-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lbkrCyW7JgvVziHyOefL-82" value="增加边" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="620" y="420.67" width="50" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lbkrCyW7JgvVziHyOefL-83" value="删除边" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="620" y="450.67" width="50" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
