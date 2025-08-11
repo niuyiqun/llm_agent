@@ -104,7 +104,7 @@
         <mxCell id="DURLl0zLTxqEiJGifbQc-48" value="增加" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="499" y="640" width="46" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="DURLl0zLTxqEiJGifbQc-49" value="增加" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+        <mxCell id="DURLl0zLTxqEiJGifbQc-49" value="删除" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
           <mxGeometry x="499" y="670" width="46" height="20" as="geometry" />
         </mxCell>
       </root>
