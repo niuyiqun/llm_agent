@@ -89,8 +89,23 @@
         <mxCell id="DURLl0zLTxqEiJGifbQc-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.156;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="DURLl0zLTxqEiJGifbQc-39" target="DURLl0zLTxqEiJGifbQc-11">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="DURLl0zLTxqEiJGifbQc-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="DURLl0zLTxqEiJGifbQc-42" target="DURLl0zLTxqEiJGifbQc-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="DURLl0zLTxqEiJGifbQc-42" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;关键事实&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="500" y="555" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="DURLl0zLTxqEiJGifbQc-46" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.807;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="DURLl0zLTxqEiJGifbQc-11" target="DURLl0zLTxqEiJGifbQc-42">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="660" y="550" as="sourcePoint" />
+            <mxPoint x="710" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DURLl0zLTxqEiJGifbQc-48" value="增加" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="499" y="640" width="46" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="DURLl0zLTxqEiJGifbQc-49" value="删除" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="499" y="670" width="46" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
