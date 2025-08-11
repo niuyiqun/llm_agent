@@ -4,7 +4,7 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="lbkrCyW7JgvVziHyOefL-8" value="" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;dashPattern=12 12;" vertex="1" parent="1">
+        <mxCell id="lbkrCyW7JgvVziHyOefL-8" value="" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;dashPattern=12 12;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="260" y="380" width="290" height="170" as="geometry" />
         </mxCell>
         <mxCell id="lbkrCyW7JgvVziHyOefL-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="XBr7zlJAQNPRugilSRZH-1" target="XBr7zlJAQNPRugilSRZH-28">
@@ -22,7 +22,7 @@
         <mxCell id="XBr7zlJAQNPRugilSRZH-11" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;交互信息&lt;/font&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;container=0;" parent="1" vertex="1">
           <mxGeometry x="152.07000000000002" y="131.75" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="XBr7zlJAQNPRugilSRZH-21" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;结构性记忆提取模块&lt;/span&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;container=0;" parent="1" vertex="1">
+        <mxCell id="XBr7zlJAQNPRugilSRZH-21" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;关系型记忆提取模块&lt;/span&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;container=0;" parent="1" vertex="1">
           <mxGeometry x="333" y="110" width="143.08" height="30" as="geometry" />
         </mxCell>
         <mxCell id="XBr7zlJAQNPRugilSRZH-23" value="" style="shape=image;imageAspect=0;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgdmlld0JveD0iODYuNTkxNjIxMzk4OTI1NzggMTE4LjM5MDM4ODQ4ODc2OTUzIDg1MC44MTU3MzQ4NjMyODEyIDc0NC40MzI3MzkyNTc4MTI1IiBoZWlnaHQ9IjE0NS4zOTcwMTkzODYyOTE1IiB3aWR0aD0iMTY2LjE3NDk0ODIxNTQ4NDYyIiBjbGFzcz0iaWNvbiI+PHBhdGggZmlsbD0iIzAwQkZCRiIgZD0iTTkzNy40MDczNTIgMzMxLjA4NTYwNEw1MTEuOTk5NDg4IDExOC4zOTAzODcgODYuNTkxNjI1IDMzMS4wODU2MDRsNDI1LjQwNzg2MyAyMTIuNjk1MjE3TDkzNy40MDczNTIgMzMxLjA4NTYwNHpNNTExLjk5OTQ4OCAxODguOTg1MjEybDI4NC4yMTE0MDUgMTQyLjEwMDM5Mkw1MTEuOTk5NDg4IDQ3My4xODQ5NzMgMjI3Ljc4ODA4MyAzMzEuMDg1NjA0IDUxMS45OTk0ODggMTg4Ljk4NTIxMnpNODUyLjE5MTEwNiA0NDguMDEyNjYzbDg1LjIxNjI0NSA0Mi41OTQwOTdMNTExLjk5OTQ4OCA3MDMuMzAxOTc3IDg2LjU5MTYyNSA0OTAuNjA2NzYxbDg1LjIxNjI0NS00Mi41OTQwOTcgMzQwLjE5MTYxOCAxNzAuMDc2NTZMODUyLjE5MTEwNiA0NDguMDEyNjYzek04NTIuMTkxMTA2IDYwNy41MzQ4NDNsODUuMjE2MjQ1IDQyLjU5NDA5N0w1MTEuOTk5NDg4IDg2Mi44MjMxMzQgODYuNTkxNjI1IDY1MC4xMjg5NDFsODUuMjE2MjQ1LTQyLjU5NDA5NyAzNDAuMTkxNjE4IDE3MC4wNzU1MzdMODUyLjE5MTEwNiA2MDcuNTM0ODQzeiIvPjwvc3ZnPg==;" parent="1" vertex="1">
